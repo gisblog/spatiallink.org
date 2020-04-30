@@ -1,0 +1,48 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: MyLeads.html,v 1.18 2005/02/09 07:08:55 andrew Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="listView">
+<!-- BEGIN: list_nav_row -->
+{PAGINATION}
+<!-- END: list_nav_row -->
+
+	<tr height="20" class="listViewThS1">
+		<td width="70%" class="listViewThS1"><slot><a href="{ORDER_BY}last_name" class="listViewThLinkS1">{MOD.LBL_LIST_NAME}{arrow_start}{first_name_arrow}{arrow_end}</span></a></slot></td>
+		<td width="30%" class="listViewThS1" nowrap><slot><a href="{ORDER_BY}leads.date_entered" class="listViewThLinkS1">{MOD.LBL_LIST_DATE_ENTERED}{arrow_start}{leads.date_entered_arrow}{arrow_end}</a></slot></td>
+	  </tr>
+
+<!-- BEGIN: row -->
+<tr height="20"  onmouseover="setPointer(this, '{LEAD.ID}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmouseout="setPointer(this, '{LEAD.ID}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmousedown="setPointer(this, '{LEAD.ID}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><a href="{URL_PREFIX}index.php?action=DetailView&module=Leads&record={LEAD.ID}" class="listViewTdLinkS1">{LEAD.FIRST_NAME} {LEAD.LAST_NAME}</a></slot></td>
+	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{LEAD.DATE_ENTERED}</slot></td>
+
+</tr>
+<tr><td colspan="20" class="listViewHRS1"></td></tr>
+<!-- END: row -->
+
+</table>
+<!-- END: main -->

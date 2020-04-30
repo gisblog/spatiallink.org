@@ -1,0 +1,77 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:18:"charl...@email.com";s:7:"updated";s:20:"2013-06-20T18:44:16Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/b0b973c51a35f91c";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/b0b973c51a35f91c";s:5:"title";s:33:"Problem with Java Required Sites?";s:7:"summary";s:397:"
+  I am running IEv10 on Win7, 64bit and am having a problem with Java <br> required sites. For instance, for the Yahtzee game, when I go to load <br> it at: <br> <p><a target="_blank" rel=nofollow href="http://www.tcastle.com/games/pwd/pwd.html#.UcNLPjfn85s">[link]</a> <br> <p>The game does not load and on the webpage it says: <br> <p>- Note: This Java applet requires a Java enabled browser
+  ";}i:1;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-19T23:00:01Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/94ce807569ff6be4";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/94ce807569ff6be4";s:5:"title";s:68:"FAQ Topic - How do I open a new window with javascript? (2013-06-20)";s:7:"summary";s:351:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I open a new window with javascript? <br> ------------------------------ ------------------------------ ----------- <br> <p>New windows can be opened on browsers that support the <br> `window.open` function and are not subject to the action of any
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:8:"justaguy";s:12:"author_email";s:22:"lichunshe...@gmail.com";s:7:"updated";s:20:"2013-06-19T18:14:09Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/dc52f0ec4f14eb32";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/dc52f0ec4f14eb32";s:5:"title";s:45:"How to clear/remove all the objects in a DIV?";s:7:"summary";s:332:"
+  Hi, <br> <p>I have this DIV below, <br> <p>&lt;DIV id=&quot;workspace&quot;&gt; ... lots of dynamically generated objects here... &lt;/DIV&gt; <br> <p>Now, i want this div to be empty, and attempted with document.getElementById('works pace').textContent = '' with no effects. <br> <p>What's the correct syntax? <br> <p>Thanks.
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:8:"justaguy";s:12:"author_email";s:22:"lichunshe...@gmail.com";s:7:"updated";s:20:"2013-06-19T15:09:51Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/6b77ebb0a70635a9";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/6b77ebb0a70635a9";s:5:"title";s:35:"Where have the select options gone?";s:7:"summary";s:430:"
+  Hi, <br> <p>I'm puzzled by the following or more likely I don't know better. <br> <p>I have this form with a select element and then I want to see what is selected on the same page, code is like this: <br> <p>&lt;select id=&quot;me&quot;&gt; <br> &lt;option&gt;apple <br> &lt;option&gt;orange <br> ... <br> &lt;/select&gt; <br> <p>&lt;span id=&quot;findme&quot;&gt;&lt;/span&gt; <br> <p>js after user has selected the above:
+  ";}i:4;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-18T23:00:00Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/d64282b3eadc70e0";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/d64282b3eadc70e0";s:5:"title";s:62:"FAQ Topic - How do I POST a form to a new window? (2013-06-19)";s:7:"summary";s:351:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I POST a form to a new window? <br> ------------------------------ ------------------------------ ----------- <br> <p>Use the target attribute on the form, opening a window with <br> that name and your feature string in the onsubmit handler of the
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:8:"justaguy";s:12:"author_email";s:22:"lichunshe...@gmail.com";s:7:"updated";s:20:"2013-06-18T21:33:28Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/37d45e3d12e1e9eb";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/37d45e3d12e1e9eb";s:5:"title";s:45:"What's wrong with the field value assignment?";s:7:"summary";s:471:"
+  Hi, <br> <p>I attempted to assign one field's value to anther but am not getting anywhere, and wonder what's wrong with the code below, see Line 3. <br> <p>&lt;form&gt; <br> &lt;input id=&quot;name1&quot;&gt; <br> &lt;input id=&quot;name2&quot;&gt; <br> ... <br> &lt;/form&gt; <br> <p>&lt;div id=&quot;nameX&quot;&gt;&lt;/div&gt; <br> <p>var n = 2; <br> var nm = document.getElementById('name' +n).value; <br> document.getElementById('nameX ').value = nm; // line 3
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-17T23:00:00Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/702bd5c93e221529";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/702bd5c93e221529";s:5:"title";s:68:"FAQ Topic - How do I modify the current browser window? (2013-06-18)";s:7:"summary";s:354:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I modify the current browser window? <br> ------------------------------ ------------------------------ ----------- <br> <p>In a default security environment you are very limited in how much <br> you can modify the current browser window. You can use
+  ";}i:7;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:12:"Stefan Weiss";s:12:"author_email";s:20:"krewech...@gmail.com";s:7:"updated";s:20:"2013-06-16T23:47:53Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/9f9ad69d0e48bc38";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/9f9ad69d0e48bc38";s:5:"title";s:19:"Identifying a regex";s:7:"summary";s:355:"
+  What do you think is the best way to identify a value as a regular <br> expression (reference to a RegExp object)? I can see at least four <br> different ways, each with its own drawbacks: <br> <p> A) val instanceof RegExp <br> B) val.constructor.name == &quot;RegExp&quot; <br> C) Object.prototype.toString.call (val) == &quot;[object RegExp]&quot;
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-16T23:00:00Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/22809181495d6b61";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/22809181495d6b61";s:5:"title";s:86:"FAQ Topic - How do I prompt a "Save As" dialog for an accepted mime type? (2013-06-17)";s:7:"summary";s:378:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I prompt a &quot;Save As&quot; dialog for an <br> accepted mime type? <br> ------------------------------ ------------------------------ ----------- <br> <p>It is not possible with client-side javascript. <br> <p>Some browsers accept the Content-Disposition header, but this
+  ";}i:9;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-15T23:00:00Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/f5ab2aeb2e171227";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/f5ab2aeb2e171227";s:5:"title";s:92:"FAQ Topic - How do I change the confirm box to say yes/no or default to cancel? (2013-06-16)";s:7:"summary";s:348:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I change the confirm box to say yes/no <br> or default to cancel? <br> ------------------------------ ------------------------------ ----------- <br> <p>The buttons on a confirm box cannot be changed, nor can a default <br> button be specified.
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:9:"Mel Smith";s:12:"author_email";s:25:"med_cutout_syn...@aol.com";s:7:"updated";s:20:"2013-06-15T02:36:50Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/e21ba3a6cc35d455";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/e21ba3a6cc35d455";s:5:"title";s:34:"Button doing work as a hot link ??";s:7:"summary";s:364:"
+  Hi: <br> <p> I'll be placing a 'hot link' on my developing page. <br> <p> But, I wish it to be a *button* (rather than an anchor &lt;a &gt;) whereby I <br> can capture the 'click', then do my 'click-counting' and other work, then <br> send the hot-link on its way to fruition. <br> <p> I googled around and found that the following code that looks promising,
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-14T23:00:00Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/a4263d996593841b";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/a4263d996593841b";s:5:"title";s:75:"FAQ Topic - How do I change print settings for window.print()? (2013-06-15)";s:7:"summary";s:348:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I change print settings for <br> window.print()? <br> ------------------------------ ------------------------------ ----------- <br> <p>In a normal security environment, you can't change anything. <br> <p>Print Stylesheet rules provide options.
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:4:"Neel";s:12:"author_email";s:21:"neelka...@knoldus.com";s:7:"updated";s:20:"2013-06-14T13:10:10Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/d45e1b261061c206";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/d45e1b261061c206";s:5:"title";s:35:"Recording the whole screen activity";s:7:"summary";s:137:"
+  Hi Guys , <br> <p>Is there a way to record whole screen activity along with audio in Chrome using java-script ? <br> <p>Thank you !
+  ";}i:13;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:2:"JT";s:12:"author_email";s:25:"jonas.thornv...@gmail.com";s:7:"updated";s:20:"2013-06-14T07:15:37Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/65840efd05b7508a";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/65840efd05b7508a";s:5:"title";s:18:"Javascript shift()";s:7:"summary";s:340:"
+  Can i somehow tell which javascript elements to shift? <br> Is something like following possible <br> element[i].shift() <br> <p>Many times one want to change items not necessarily at element[0], and <br> sometimes you want to swap them with another index. <br> <p>I think the shift function should take one or two parameters or a new
+  ";}i:14;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"FAQ server";s:12:"author_email";s:25:"javascr...@dotinternet.be";s:7:"updated";s:20:"2013-06-13T23:00:00Z";s:2:"id";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/7c0245853f06605c";s:5:"link_";s:89:"http://groups.google.com/group/comp.lang.javascript/browse_thread/thread/7c0245853f06605c";s:5:"title";s:57:"FAQ Topic - How do I make a 10 second delay? (2013-06-14)";s:7:"summary";s:348:"
+  ------------------------------ ------------------------------ ----------- <br> FAQ Topic - How do I make a 10 second delay? <br> ------------------------------ ------------------------------ ----------- <br> <p>There is no built-in way to pause execution in javascript such <br> as a sleep function, but hosts usually provide a method of some
+  ";}}s:7:"channel";a:6:{s:2:"id";s:51:"http://groups.google.com/group/comp.lang.javascript";s:5:"title";s:33:"comp.lang.javascript Google Group";s:8:"subtitle";s:58:"
+  Netscape Communications Corp.'s JavaScript language.
+  ";s:9:"link_self";s:53:"/group/comp.lang.javascript/feed/atom_v1_0_topics.xml";s:7:"updated";s:8:"-0-0T::Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

@@ -1,0 +1,1382 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:19:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=a45e1de9-a585-400f-9733-834026ec41eb";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,a45e1de9-a585-400f-9733-834026ec41eb.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,a45e1de9-a585-400f-9733-834026ec41eb.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=a45e1de9-a585-400f-9733-834026ec41eb";}s:4:"body";s:126:"
+        
+        
+        
+        
+        
+        
+        
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:8:"body_div";s:42:"
+          
+          
+          
+        ";s:10:"body_div_p";s:2477:"
+         So the DevSummit is packed. Really packed. Every session I went to was standing room
+         only. I must say that it's very cool to see that there are this many people who are
+         doing development work with ArcGIS.
+         Everything has been really good for a "version 1" event. Kudos to Brian Goldin and
+         everyone at ESRI for making this event happen.
+      
+         There were only two "odd" things:
+         This was consistent in almost every talk I attended -  I find this odd, because this is a "developer" conference, and I'd
+         assume that most people are here to hear about using those pesky ArcObjects. Additionally,
+         while I see how that can be useful for prototyping or quick one-off stuff,  but
+         how can it be more performant than using the finer-grained classes? And the case for
+         why I would add a geoprocessing model into an otherwise all .NET application
+         was never really made - beyond "less code". 
+      
+         I could see a use case where a non-developer GIS Analyst needed to be able to modify
+         aspects of the model without requiring recompiling the code, but I don't see that
+         as the most common use case for this audience (maybe at the User Conference...).
+         And as a developer, I explicily do not want the success / failure of my code to rely
+         on something that a user COULD edit.  Maybe we could compile the model into an
+         assembly as an embedded resource, thus avoiding the problem? Anyhow - I don't mean
+         to rant about this, but it did seem odd. Maybe today will be the  day. 
+         
+         I had expected more discussion of released software. I think the description of the
+         event even states that, and certainly Scott mentioned this in his keynote on Friday.
+         But the demos were a lot of click-drag-neato-presto 9.2 Visual Studio integration
+         & AFD stuff. While this is very, very, very cool (I wish we could blog about the
+         beta), the release is not next week, so it was not exactly pertinent to what
+         a developer will be doing on Monday morning. I did hear that there was a geoprocessing
+         session which was very 9.1 focused, so maybe I just happened to be in the 9.2 sessions.
+         Overall, this is a great event, with lots of great information and awesome interaction
+         with ESRI staff. If you did not make it here this year, start planning for next! 
+      ";s:12:"body_div_p_b";s:81:"1) "Use Coarse Grained Objects" Mantra2) "Look what you can do at nine-point-two"";s:17:"body_div_p_strong";s:169:""look how much less
+         code you'll write if you use a geoprocessing task instead of all that pesky ArcObjects
+         code"."fine grained
+         objects rock!"";s:6:"body_a";s:39:"
+         Creative
+   Commons License. ";s:6:"body_p";s:9:"
+        ";s:5:"title";s:22:"Developer Summit Day 1";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,a45e1de9-a585-400f-9733-834026ec41eb.aspx";s:4:"link";s:63:"http://blog.davebouwman.net/2006/03/18/DeveloperSummitDay1.aspx";s:7:"pubdate";s:29:"Sat, 18 Mar 2006 02:07:11 GMT";s:11:"description";s:3239:"<div class="itemBodyStyle">
+   <p>
+      So the DevSummit is packed. Really packed. Every session I went to was standing room
+      only. I must say that it's very cool to see that there are this many people who are
+      doing development work with ArcGIS.<br>
+      Everything has been really good for a "version 1" event. Kudos to Brian Goldin and
+      everyone at ESRI for making this event happen.
+   </p>
+   <p>
+      There were only two "odd" things:<br>
+      <br>
+      <b>1) "Use Coarse Grained Objects" Mantra</b>
+      <br>
+      This was consistent in almost every talk I attended - <strong>"look how much less
+      code you'll write if you use a geoprocessing task instead of&nbsp;all that pesky ArcObjects
+      code".</strong> I find this odd, because this is a "developer" conference, and I'd
+      assume that most people are here to hear about using those pesky ArcObjects. Additionally,
+      while I see how that can be useful for prototyping or quick one-off stuff,&nbsp; but
+      how can it be more performant than using the finer-grained classes? And the case for
+      why I would&nbsp;add a geoprocessing model into an otherwise all .NET application
+      was never really made - beyond "less code". 
+   </p>
+   <p>
+      I could see a use case where a non-developer GIS Analyst needed to be able to modify
+      aspects of the model without requiring recompiling the code, but I don't see that
+      as&nbsp;the most common use case for this audience (maybe at the User Conference...).
+      And as a developer, I explicily do not want the success / failure of my code to rely
+      on something that a user COULD edit.&nbsp; Maybe we could compile the model into an
+      assembly as an embedded resource, thus avoiding the problem? Anyhow - I don't mean
+      to rant about this, but it did seem odd. Maybe today will be the <strong>"fine grained
+      objects rock!"</strong> day. 
+      <br>
+      <br>
+      <b>2) "Look what you can do at nine-point-two"</b>
+      <br>
+      I had expected more discussion of released software. I think the description of the
+      event even states that, and certainly Scott mentioned this in his keynote on Friday.
+      But the demos were a lot of click-drag-neato-presto 9.2 Visual Studio integration
+      &amp; AFD stuff. While this is very, very, very cool (I wish we could blog about the
+      beta),&nbsp;the release is not next week, so it was not exactly pertinent to what
+      a developer will be doing on Monday morning. I did hear that there was a geoprocessing
+      session which was very 9.1 focused, so maybe I just happened to be in the 9.2 sessions.<br>
+      <br>
+      Overall, this is a great event, with lots of great information and awesome interaction
+      with ESRI staff. If you did not make it here this year, start planning for next! 
+   </p>
+</div>
+<a class="categoryLinkStyle" href="http://localhost/ad/CategoryView,category,ArcMap.aspx"></a>
+<p>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=a45e1de9-a585-400f-9733-834026ec41eb" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,a45e1de9-a585-400f-9733-834026ec41eb.aspx";s:8:"category";s:49:".NET;ArcGIS Devt;ArcGIS Server;ArcIMS;ArcSDE;ESRI";s:7:"summary";s:3239:"<div class="itemBodyStyle">
+   <p>
+      So the DevSummit is packed. Really packed. Every session I went to was standing room
+      only. I must say that it's very cool to see that there are this many people who are
+      doing development work with ArcGIS.<br>
+      Everything has been really good for a "version 1" event. Kudos to Brian Goldin and
+      everyone at ESRI for making this event happen.
+   </p>
+   <p>
+      There were only two "odd" things:<br>
+      <br>
+      <b>1) "Use Coarse Grained Objects" Mantra</b>
+      <br>
+      This was consistent in almost every talk I attended - <strong>"look how much less
+      code you'll write if you use a geoprocessing task instead of&nbsp;all that pesky ArcObjects
+      code".</strong> I find this odd, because this is a "developer" conference, and I'd
+      assume that most people are here to hear about using those pesky ArcObjects. Additionally,
+      while I see how that can be useful for prototyping or quick one-off stuff,&nbsp; but
+      how can it be more performant than using the finer-grained classes? And the case for
+      why I would&nbsp;add a geoprocessing model into an otherwise all .NET application
+      was never really made - beyond "less code". 
+   </p>
+   <p>
+      I could see a use case where a non-developer GIS Analyst needed to be able to modify
+      aspects of the model without requiring recompiling the code, but I don't see that
+      as&nbsp;the most common use case for this audience (maybe at the User Conference...).
+      And as a developer, I explicily do not want the success / failure of my code to rely
+      on something that a user COULD edit.&nbsp; Maybe we could compile the model into an
+      assembly as an embedded resource, thus avoiding the problem? Anyhow - I don't mean
+      to rant about this, but it did seem odd. Maybe today will be the <strong>"fine grained
+      objects rock!"</strong> day. 
+      <br>
+      <br>
+      <b>2) "Look what you can do at nine-point-two"</b>
+      <br>
+      I had expected more discussion of released software. I think the description of the
+      event even states that, and certainly Scott mentioned this in his keynote on Friday.
+      But the demos were a lot of click-drag-neato-presto 9.2 Visual Studio integration
+      &amp; AFD stuff. While this is very, very, very cool (I wish we could blog about the
+      beta),&nbsp;the release is not next week, so it was not exactly pertinent to what
+      a developer will be doing on Monday morning. I did hear that there was a geoprocessing
+      session which was very 9.1 focused, so maybe I just happened to be in the 9.2 sessions.<br>
+      <br>
+      Overall, this is a great event, with lots of great information and awesome interaction
+      with ESRI staff. If you did not make it here this year, start planning for next! 
+   </p>
+</div>
+<a class="categoryLinkStyle" href="http://localhost/ad/CategoryView,category,ArcMap.aspx"></a>
+<p>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=a45e1de9-a585-400f-9733-834026ec41eb" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:1;a:17:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=248e6c2e-d340-4fe4-9b91-54fd2127c82c";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,248e6c2e-d340-4fe4-9b91-54fd2127c82c.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,248e6c2e-d340-4fe4-9b91-54fd2127c82c.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=248e6c2e-d340-4fe4-9b91-54fd2127c82c";}s:4:"body";s:117:"
+        
+        
+        
+        
+        
+        
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:8:"body_div";s:31:"
+          
+          
+        ";s:10:"body_div_p";s:1245:"
+         For some time we've been working with SDE's multi-version views in order to allow
+         direct SQL access to versioned data stored in ArcSDE. We've used this exclusively
+         for reporting, and it has worked really well. We've got a new project on the go where
+         in we need to facilitate off-line (disconnected) editing of tabular data in a Geodatabase.
+         I'm just in the R & D phase right now, but it looks like we'll be able to use
+         these same views to do data editing. Granted, we can not facilitate editing of the
+         shapes this way, but this application does not require that. The nice thing is that
+         the data will still reside in a geodatabase, and thus will be accessible to all the
+         tools etc built into ArcMap/Catalog.
+      
+         The basic architecture follows a simple ADO.NET offline client application. The client
+         app contacts a web-service and requests a set of data (as a DataSet), and then switches
+         to off-line mode. The user makes edits as needed, and then re-connects, and the application
+         sends the DataSet diffgram to the web service, which re-sync's the data. I'll post
+         some code and links as I get further into this.
+      ";s:6:"body_p";s:9:"
+        ";s:6:"body_a";s:30:" Creative
+   Commons License. ";s:5:"title";s:32:"Direct SQL Access to ArcSDE Data";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,248e6c2e-d340-4fe4-9b91-54fd2127c82c.aspx";s:4:"link";s:71:"http://blog.davebouwman.net/2006/02/24/DirectSQLAccessToArcSDEData.aspx";s:7:"pubdate";s:29:"Fri, 24 Feb 2006 02:08:37 GMT";s:11:"description";s:1551:"<div class="itemBodyStyle">
+   <p>
+      For some time we've been working with SDE's multi-version views in order to allow
+      direct SQL access to versioned data stored in ArcSDE. We've used this exclusively
+      for reporting, and it has worked really well. We've got a new project on the go where
+      in we need to facilitate off-line (disconnected) editing of tabular data in a Geodatabase.
+      I'm just in the R &amp; D phase right now, but it looks like we'll be able to use
+      these same views to do data editing. Granted, we can not facilitate editing of the
+      shapes this way, but this application does not require that. The nice thing is that
+      the data will still reside in a geodatabase, and thus will be accessible to all the
+      tools etc built into ArcMap/Catalog.
+   </p>
+   <p>
+      The basic architecture follows a simple ADO.NET offline client application. The client
+      app contacts a web-service and requests a set of data (as a DataSet), and then switches
+      to off-line mode. The user makes edits as needed, and then re-connects, and the application
+      sends the DataSet diffgram to the web service, which re-sync's the data. I'll post
+      some code and links as I get further into this.
+   </p>
+</div>
+<p>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=248e6c2e-d340-4fe4-9b91-54fd2127c82c" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,248e6c2e-d340-4fe4-9b91-54fd2127c82c.aspx";s:8:"category";s:11:"ArcSDE;ESRI";s:7:"summary";s:1551:"<div class="itemBodyStyle">
+   <p>
+      For some time we've been working with SDE's multi-version views in order to allow
+      direct SQL access to versioned data stored in ArcSDE. We've used this exclusively
+      for reporting, and it has worked really well. We've got a new project on the go where
+      in we need to facilitate off-line (disconnected) editing of tabular data in a Geodatabase.
+      I'm just in the R &amp; D phase right now, but it looks like we'll be able to use
+      these same views to do data editing. Granted, we can not facilitate editing of the
+      shapes this way, but this application does not require that. The nice thing is that
+      the data will still reside in a geodatabase, and thus will be accessible to all the
+      tools etc built into ArcMap/Catalog.
+   </p>
+   <p>
+      The basic architecture follows a simple ADO.NET offline client application. The client
+      app contacts a web-service and requests a set of data (as a DataSet), and then switches
+      to off-line mode. The user makes edits as needed, and then re-connects, and the application
+      sends the DataSet diffgram to the web service, which re-sync's the data. I'll post
+      some code and links as I get further into this.
+   </p>
+</div>
+<p>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=248e6c2e-d340-4fe4-9b91-54fd2127c82c" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:2;a:12:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=b752c7a5-ccd8-42bf-842c-89f6a2d80372";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,b752c7a5-ccd8-42bf-842c-89f6a2d80372.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,b752c7a5-ccd8-42bf-842c-89f6a2d80372.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=b752c7a5-ccd8-42bf-842c-89f6a2d80372";}s:5:"title";s:50:"Edting ArcSDE data using SQL & Multi-Version Views";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,b752c7a5-ccd8-42bf-842c-89f6a2d80372.aspx";s:4:"link";s:85:"http://blog.davebouwman.net/2006/01/21/EdtingArcSDEDataUsingSQLMultiVersionViews.aspx";s:7:"pubdate";s:29:"Sat, 21 Jan 2006 02:13:04 GMT";s:11:"description";s:6059:"This is a run down of things to be aware of if you are trying to edit attribute data stored in ArcSDE via Multi-Version Views. <br>
+<br>
+I'm writing this up because the <a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&d=24647">ESRI
+documentation </a>on using multi-version views is rather lean, particularly with respect
+to managing ObjectID's and dealing with versions after you've made your updates.<br>
+<br>
+<b>Editing Data Via Multi-Version Views</b>
+<br>
+Multi-version views can be used to edit attribute data stored in ArcSDE via SQL statements,
+but some very specific conditions must exist for this to occur. The most important
+condition being that when doing inserts (creating new records, which will lack a spatial
+representation), the multi-version view can not be referencing a version currently
+in use by ArcMap. This is explicitly stated in the <a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&d=24647">Multi-Version
+View documentation</a>. 
+<br>
+<br>
+While no explanation is given, my investigation leads me to believe that this is related
+to the fact that ArcSDE controls the value of the ObjectID column, but that inserts
+through the multi-version view's do not automatically utilize this functionality.
+Rather, the developer must manage the ObjectIDs. The easiest way to deal with this
+is to use SQL and get MAX(ObjectID) from the multi-version view , and add 1. However,
+if there is an ArcMap session that is also editing this same layer in the same version,
+this scheme does not work. This is because ArcMap "checks out" a block of ObjectIDs
+as soon as an edit occurs on a feature in a particular feature class. (This is what
+those i[reg#]_get_ids stored procedure is for). 
+<br>
+<br>
+Thus, if edits are occurring in ArcMap, and an multi-version view&nbsp;is used to
+insert a record, assigning ObjectID to MAX(ObjectID) +1, this feature will be in conflict
+with any newly added features that are created in the ArcMap editing session. 
+<br>
+<br>
+<b>Overcoming ObjectID Issues</b>
+<br>
+After some digging around, I believe that you can use the i[reg#]_get_ids and i[reg#]_return_ids
+stored procedures to "check out" a block of ObjectID's just like ArcSDE does. I say
+"believe" because the application I'm building does not require this because of it's
+business process (inserts go into another set of tables, which are never loaded into
+ArcMap or anyother ArcSDE client - thus Max(ObjectID) + 1 works just fine. Anyhow,
+as long as you "get" a block of ID's (I'd suggest 1 at a time so that you avoid having
+to "return" them) you should be able to insert records.<br>
+<br>
+<b>Named Versions</b>
+<br>
+Another wrinkle, which is noted in the documentation, is that you can not make edits
+into a version currently in use by ArcGIS. If you try to run an UPDATE or INSERT query
+against the MVV while the version is open in ArcMap, an error is returned. If you
+run the query in SQL Analyzer, you'll get something like this:<br>
+<br>
+<font face="Courier New">Server: Msg 2627, Level 14, State 2, Procedure SDE_state_def_insert,
+Line 21 Violation of UNIQUE KEY constraint 'states_uk'. Cannot insert duplicate key
+in object 'SDE_states'. The statement has been terminated.</font> 
+<br>
+<br>
+Thus, if there is any chance that there may be an edit session underway, you will
+need to create a named version and run the queries against that version. This works
+as shown in the documentation - just make a call to the sde.CREATE_VERSION stored
+procedure. What the documentation leaves out is how to then post &amp; reconcile this
+named version back into the version that you actually wanted to work with!<br>
+<br>
+While there are not stored procedures that can deal with this, the developer kit has
+is a sample which can help out with this part - check out the "<a href="http://edndoc.esri.com/arcobjects/8.3/Samples/Geodatabase/Versioning/VersioningService/VersioningService.htm">Versioning
+Service</a>" sample. 
+<br>
+Essentially, you need to use some ArcObjects code to actually post and reconcile the
+newly created version. Again, this can be pretty simple, but if there are edits occuring
+in ArcMap, then there is a chance you will have conflicts, which leads to the question
+of how to resolve them. For my application, this is not a real problem the data being
+added via the multi-version view's is field data, and thus more correct than anything
+that would result from ArcMap edits. Additionally, the user who is adding this data
+into the system is the only user who actually has edit permission to the features
+that would be effected. (maybe I'll cook up a post on feature level security...) Anyhow,
+if a conflict occurs, the data from the multi-version view&nbsp;version always overwrites
+the other data.. However, this is just another fluke of our client's business process. 
+<br>
+<br>
+<b>Summary</b>
+<br>
+While Multi-Version views support editing, the limitations are onerous, and I suspect
+by design (I suspect someone wants you to use a pricy ArcSomething license to edit
+your ArcSDE data). However, for read-only usage, they are a really powerful way to
+create reports against your enterprise geodatabase.<br>
+<br>
+<font color="#ff0000">[UPDATE]</font>
+<br>
+In a comment on the original post when this was on ArcDeveloper.net, Neil noted the
+following:<br>
+<blockquote>Here's some additional stuff on the objectids issues you mentioned, at
+least for the version of sde I'm working with - 9.1 SP1 with MSSQL 2005. 
+<br>
+<br>
+It looks like you can just leave the OBJECTID column out of the insert statement. 
+<br>
+<br>
+There is an insert trigger on the multi-version view that calls the _get_ids &amp;
+_return_ids stored procedures that you mentioned to generate the objectid. </blockquote><img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=b752c7a5-ccd8-42bf-842c-89f6a2d80372" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,b752c7a5-ccd8-42bf-842c-89f6a2d80372.aspx";s:8:"category";s:11:"ArcSDE;ESRI";s:7:"summary";s:6059:"This is a run down of things to be aware of if you are trying to edit attribute data stored in ArcSDE via Multi-Version Views. <br>
+<br>
+I'm writing this up because the <a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&d=24647">ESRI
+documentation </a>on using multi-version views is rather lean, particularly with respect
+to managing ObjectID's and dealing with versions after you've made your updates.<br>
+<br>
+<b>Editing Data Via Multi-Version Views</b>
+<br>
+Multi-version views can be used to edit attribute data stored in ArcSDE via SQL statements,
+but some very specific conditions must exist for this to occur. The most important
+condition being that when doing inserts (creating new records, which will lack a spatial
+representation), the multi-version view can not be referencing a version currently
+in use by ArcMap. This is explicitly stated in the <a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&d=24647">Multi-Version
+View documentation</a>. 
+<br>
+<br>
+While no explanation is given, my investigation leads me to believe that this is related
+to the fact that ArcSDE controls the value of the ObjectID column, but that inserts
+through the multi-version view's do not automatically utilize this functionality.
+Rather, the developer must manage the ObjectIDs. The easiest way to deal with this
+is to use SQL and get MAX(ObjectID) from the multi-version view , and add 1. However,
+if there is an ArcMap session that is also editing this same layer in the same version,
+this scheme does not work. This is because ArcMap "checks out" a block of ObjectIDs
+as soon as an edit occurs on a feature in a particular feature class. (This is what
+those i[reg#]_get_ids stored procedure is for). 
+<br>
+<br>
+Thus, if edits are occurring in ArcMap, and an multi-version view&nbsp;is used to
+insert a record, assigning ObjectID to MAX(ObjectID) +1, this feature will be in conflict
+with any newly added features that are created in the ArcMap editing session. 
+<br>
+<br>
+<b>Overcoming ObjectID Issues</b>
+<br>
+After some digging around, I believe that you can use the i[reg#]_get_ids and i[reg#]_return_ids
+stored procedures to "check out" a block of ObjectID's just like ArcSDE does. I say
+"believe" because the application I'm building does not require this because of it's
+business process (inserts go into another set of tables, which are never loaded into
+ArcMap or anyother ArcSDE client - thus Max(ObjectID) + 1 works just fine. Anyhow,
+as long as you "get" a block of ID's (I'd suggest 1 at a time so that you avoid having
+to "return" them) you should be able to insert records.<br>
+<br>
+<b>Named Versions</b>
+<br>
+Another wrinkle, which is noted in the documentation, is that you can not make edits
+into a version currently in use by ArcGIS. If you try to run an UPDATE or INSERT query
+against the MVV while the version is open in ArcMap, an error is returned. If you
+run the query in SQL Analyzer, you'll get something like this:<br>
+<br>
+<font face="Courier New">Server: Msg 2627, Level 14, State 2, Procedure SDE_state_def_insert,
+Line 21 Violation of UNIQUE KEY constraint 'states_uk'. Cannot insert duplicate key
+in object 'SDE_states'. The statement has been terminated.</font> 
+<br>
+<br>
+Thus, if there is any chance that there may be an edit session underway, you will
+need to create a named version and run the queries against that version. This works
+as shown in the documentation - just make a call to the sde.CREATE_VERSION stored
+procedure. What the documentation leaves out is how to then post &amp; reconcile this
+named version back into the version that you actually wanted to work with!<br>
+<br>
+While there are not stored procedures that can deal with this, the developer kit has
+is a sample which can help out with this part - check out the "<a href="http://edndoc.esri.com/arcobjects/8.3/Samples/Geodatabase/Versioning/VersioningService/VersioningService.htm">Versioning
+Service</a>" sample. 
+<br>
+Essentially, you need to use some ArcObjects code to actually post and reconcile the
+newly created version. Again, this can be pretty simple, but if there are edits occuring
+in ArcMap, then there is a chance you will have conflicts, which leads to the question
+of how to resolve them. For my application, this is not a real problem the data being
+added via the multi-version view's is field data, and thus more correct than anything
+that would result from ArcMap edits. Additionally, the user who is adding this data
+into the system is the only user who actually has edit permission to the features
+that would be effected. (maybe I'll cook up a post on feature level security...) Anyhow,
+if a conflict occurs, the data from the multi-version view&nbsp;version always overwrites
+the other data.. However, this is just another fluke of our client's business process. 
+<br>
+<br>
+<b>Summary</b>
+<br>
+While Multi-Version views support editing, the limitations are onerous, and I suspect
+by design (I suspect someone wants you to use a pricy ArcSomething license to edit
+your ArcSDE data). However, for read-only usage, they are a really powerful way to
+create reports against your enterprise geodatabase.<br>
+<br>
+<font color="#ff0000">[UPDATE]</font>
+<br>
+In a comment on the original post when this was on ArcDeveloper.net, Neil noted the
+following:<br>
+<blockquote>Here's some additional stuff on the objectids issues you mentioned, at
+least for the version of sde I'm working with - 9.1 SP1 with MSSQL 2005. 
+<br>
+<br>
+It looks like you can just leave the OBJECTID column out of the insert statement. 
+<br>
+<br>
+There is an insert trigger on the multi-version view that calls the _get_ids &amp;
+_return_ids stored procedures that you mentioned to generate the objectid. </blockquote><img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=b752c7a5-ccd8-42bf-842c-89f6a2d80372" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:3;a:14:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=4e1d6cb7-a8b0-4602-ada9-64174d962129";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,4e1d6cb7-a8b0-4602-ada9-64174d962129.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,4e1d6cb7-a8b0-4602-ada9-64174d962129.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=4e1d6cb7-a8b0-4602-ada9-64174d962129";}s:4:"body";s:681:"It seems that some people have already
+   located it, but I'll make this the "formal" announcement of the . This will be a group blog (more authors = more posts!), dedicated to Arc
+   Developement topics. I think it's worth noting that although we all work together,
+   this blog is not affiliated with our employer in any way - so while we have "added
+   vitamin C", it will be "marketing free".
+   We'll be posting introductions, and some "real" content shortly. As for this blog,
+   I'll keep posting on general .NET, GIS solution architecture, and other less developer
+   centric topics. 
+   
+   See you over on ! 
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:6:"body_a";s:62:"ArcDeveloper
+   blogArcDeveloper Creative
+   Commons License. ";s:5:"title";s:35:"Announcing the ArcDeveloper Blog...";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,4e1d6cb7-a8b0-4602-ada9-64174d962129.aspx";s:4:"link";s:73:"http://blog.davebouwman.net/2005/12/15/AnnouncingTheArcDeveloperBlog.aspx";s:7:"pubdate";s:29:"Thu, 15 Dec 2005 20:32:27 GMT";s:11:"description";s:1016:"It seems that some people have already located it, but I'll make this the "formal" announcement of the <a href="http://www.arcdeveloper.net/blog">ArcDeveloper
+blog</a>. This will be a group blog (more authors = more posts!), dedicated to Arc
+Developement topics. I think it's worth noting that although we all work together,
+this blog is not affiliated with our employer in any way - so while we have "added
+vitamin C", it will be "marketing free".<br>
+<br>
+We'll be posting introductions, and some "real" content shortly. As for this blog,
+I'll keep posting on general .NET, GIS solution architecture, and other less developer
+centric topics. 
+<br>
+<br>
+See you over on <a href="http://www.arcdeveloper.net/blog">ArcDeveloper</a>! <img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=4e1d6cb7-a8b0-4602-ada9-64174d962129" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,4e1d6cb7-a8b0-4602-ada9-64174d962129.aspx";s:8:"category";s:49:"ArcGIS Devt;.NET;ArcGIS Server;ArcIMS;ArcSDE;ESRI";s:7:"summary";s:1016:"It seems that some people have already located it, but I'll make this the "formal" announcement of the <a href="http://www.arcdeveloper.net/blog">ArcDeveloper
+blog</a>. This will be a group blog (more authors = more posts!), dedicated to Arc
+Developement topics. I think it's worth noting that although we all work together,
+this blog is not affiliated with our employer in any way - so while we have "added
+vitamin C", it will be "marketing free".<br>
+<br>
+We'll be posting introductions, and some "real" content shortly. As for this blog,
+I'll keep posting on general .NET, GIS solution architecture, and other less developer
+centric topics. 
+<br>
+<br>
+See you over on <a href="http://www.arcdeveloper.net/blog">ArcDeveloper</a>! <img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=4e1d6cb7-a8b0-4602-ada9-64174d962129" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:4;a:20:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=35b0c835-cebe-436b-8144-ba7732107800";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,35b0c835-cebe-436b-8144-ba7732107800.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,35b0c835-cebe-436b-8144-ba7732107800.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=35b0c835-cebe-436b-8144-ba7732107800";}s:4:"body";s:117:"
+        
+        
+        
+        
+        
+        
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:8:"body_div";s:413:"So I upgraded our internal development ArcSDE serverfrom
+      8.3 to 9.0 (so it would be running on my EDN licenses and we could drop the "commercial"
+      license). Anyhow, all went well, and I moved on to other issues (ArcGIS Server development,
+      Ajax-ifying our GeoPortal etc). However, yesterday I noticed that one of our demo
+      sites ()
+      decided it was not going to make maps anymore. 
+      ";s:10:"body_div_a";s:26:"http://dev.sanborn.com/kls";s:10:"body_div_p";s:1363:"
+         Thus I followed the usual ArcIMS problem solving technique:
+         Step 1: Restart ArcIMS
+         Step 2: Re-boot the server.
+         Step 3: swear and threaten to kick the box
+         Actually step 3 was look at the logs, which non-specifically (I was only logging errors)
+         indicated the issue was with a map service using ArcSDE. Thus I tried to connect to
+         the instance from ArcCatalog, when low and behold - it popped up with a "No Connections
+         Availible" message.
+         Luckily, I'd been roaming the GIS blogosphere, and recalled  over at the about this very thing.
+         Apparently when you upgrade to 9.0, it handily sets the maximum number of connections
+         to 48. I'm sure that this is noted somewhere in the release notes or elsewhere that
+         any experienced ArcSDE person would completely ignore. Since this is a pretty critical
+         item (i.e. your system will not work as it used to) I'd suggest that ESRI puts this
+         on it's own dialog at the end of the install in bright red - i.e. 
+      
+         Anyhow, here's the quick solution:
+         Step 1: Open the SDE_SERVER_CONFIG table, 
+         
+         Step 2: set the CONNECTIONS value to whatever you want. 
+         
+         Step 3: Restart ArcSDE
+         This is easier than foolin with loading a defs file etc. 
+         ";s:12:"body_div_p_a";s:56:"a
+         post ROKTechnologies
+         developers blog";s:15:"body_div_p_font";s:151:"NOTICE: WE HAVE SET THE MAX CONNECTIONS TO 48. IF YOU CURRENTLY 
+         USE MORE THAN 48 CONNECTIONS TO ARCSDE, YOU MUST CHANGE
+         THIS SETTING";s:6:"body_p";s:9:"
+        ";s:6:"body_a";s:30:" Creative
+   Commons License. ";s:5:"title";s:10:"ArcSDE 9.0";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,35b0c835-cebe-436b-8144-ba7732107800.aspx";s:4:"link";s:52:"http://blog.davebouwman.net/2005/12/15/ArcSDE90.aspx";s:7:"pubdate";s:29:"Thu, 15 Dec 2005 02:14:01 GMT";s:11:"description";s:3026:"<div class="itemBodyStyle">So I upgraded our internal development ArcSDE serverfrom
+   8.3 to 9.0 (so it would be running on my EDN licenses and we could drop the "commercial"
+   license). Anyhow, all went well, and I moved on to other issues (ArcGIS Server development,
+   Ajax-ifying our GeoPortal etc). However, yesterday I noticed that one of our demo
+   sites (<a href="http://localhost/ad/ct.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f&amp;url=http%3a%2f%2fdev.sanborn.com%2fkls" target="_blank">http://dev.sanborn.com/kls</a>)
+   decided it was not going to make maps anymore. 
+   <br>
+   <div align="center"><img alt=":-o" src="http://localhost/ad/smilies/openmouth.gif">
+   </div>
+   <p>
+      <br>
+      Thus I followed the usual ArcIMS problem solving technique:<br>
+      Step 1: Restart ArcIMS<br>
+      Step 2: Re-boot the server.<br>
+      Step 3: swear and threaten to kick the box<br>
+      <br>
+      Actually step 3 was look at the logs, which non-specifically (I was only logging errors)
+      indicated the issue was with a map service using ArcSDE. Thus I tried to connect to
+      the instance from ArcCatalog, when low and behold - it popped up with a "No Connections
+      Availible" message.<br>
+      Luckily, I'd been roaming the GIS blogosphere, and recalled <a href="http://localhost/ad/ct.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f&amp;url=http%3a%2f%2fwww.roktech.net%2fdevblog%2f1%2f2005%2f07%2findex.cfm" target="_blank">a
+      post</a> over at the<a href="http://localhost/ad/ct.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f&amp;url=http%3a%2f%2fwww.roktech.net%2fdevblog%2f" target="_blank"> ROKTechnologies
+      developers blog</a> about this very thing.<br>
+      <br>
+      Apparently when you upgrade to 9.0, it handily sets the maximum number of connections
+      to 48. I'm sure that this is noted somewhere in the release notes or elsewhere that
+      any experienced ArcSDE person would completely ignore. Since this is a pretty critical
+      item (i.e. your system will not work as it used to) I'd suggest that ESRI puts this
+      on it's own dialog at the end of the install in bright red - i.e. 
+   </p>
+   <p align="left">
+      <br>
+      <font color="#ff0000">NOTICE: WE HAVE SET THE MAX CONNECTIONS TO 48. IF YOU CURRENTLY 
+      <br>
+      </font><font color="#ff0000">USE MORE THAN 48 CONNECTIONS TO ARCSDE, YOU MUST CHANGE
+      THIS SETTING</font>
+      <br>
+      <br>
+      Anyhow, here's the quick solution:<br>
+      Step 1: Open the SDE_SERVER_CONFIG table, 
+      <br>
+      Step 2: set the CONNECTIONS value to whatever you want. 
+      <br>
+      Step 3: Restart ArcSDE<br>
+      This is easier than foolin with loading a defs file etc. 
+      <br>
+   </p>
+</div>
+<p>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=35b0c835-cebe-436b-8144-ba7732107800" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,35b0c835-cebe-436b-8144-ba7732107800.aspx";s:8:"category";s:11:"ArcSDE;ESRI";s:7:"summary";s:3026:"<div class="itemBodyStyle">So I upgraded our internal development ArcSDE serverfrom
+   8.3 to 9.0 (so it would be running on my EDN licenses and we could drop the "commercial"
+   license). Anyhow, all went well, and I moved on to other issues (ArcGIS Server development,
+   Ajax-ifying our GeoPortal etc). However, yesterday I noticed that one of our demo
+   sites (<a href="http://localhost/ad/ct.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f&amp;url=http%3a%2f%2fdev.sanborn.com%2fkls" target="_blank">http://dev.sanborn.com/kls</a>)
+   decided it was not going to make maps anymore. 
+   <br>
+   <div align="center"><img alt=":-o" src="http://localhost/ad/smilies/openmouth.gif">
+   </div>
+   <p>
+      <br>
+      Thus I followed the usual ArcIMS problem solving technique:<br>
+      Step 1: Restart ArcIMS<br>
+      Step 2: Re-boot the server.<br>
+      Step 3: swear and threaten to kick the box<br>
+      <br>
+      Actually step 3 was look at the logs, which non-specifically (I was only logging errors)
+      indicated the issue was with a map service using ArcSDE. Thus I tried to connect to
+      the instance from ArcCatalog, when low and behold - it popped up with a "No Connections
+      Availible" message.<br>
+      Luckily, I'd been roaming the GIS blogosphere, and recalled <a href="http://localhost/ad/ct.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f&amp;url=http%3a%2f%2fwww.roktech.net%2fdevblog%2f1%2f2005%2f07%2findex.cfm" target="_blank">a
+      post</a> over at the<a href="http://localhost/ad/ct.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f&amp;url=http%3a%2f%2fwww.roktech.net%2fdevblog%2f" target="_blank"> ROKTechnologies
+      developers blog</a> about this very thing.<br>
+      <br>
+      Apparently when you upgrade to 9.0, it handily sets the maximum number of connections
+      to 48. I'm sure that this is noted somewhere in the release notes or elsewhere that
+      any experienced ArcSDE person would completely ignore. Since this is a pretty critical
+      item (i.e. your system will not work as it used to) I'd suggest that ESRI puts this
+      on it's own dialog at the end of the install in bright red - i.e. 
+   </p>
+   <p align="left">
+      <br>
+      <font color="#ff0000">NOTICE: WE HAVE SET THE MAX CONNECTIONS TO 48. IF YOU CURRENTLY 
+      <br>
+      </font><font color="#ff0000">USE MORE THAN 48 CONNECTIONS TO ARCSDE, YOU MUST CHANGE
+      THIS SETTING</font>
+      <br>
+      <br>
+      Anyhow, here's the quick solution:<br>
+      Step 1: Open the SDE_SERVER_CONFIG table, 
+      <br>
+      Step 2: set the CONNECTIONS value to whatever you want. 
+      <br>
+      Step 3: Restart ArcSDE<br>
+      This is easier than foolin with loading a defs file etc. 
+      <br>
+   </p>
+</div>
+<p>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=35b0c835-cebe-436b-8144-ba7732107800" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:5;a:15:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=da8f44c9-57ef-4ae0-a285-58727ce1df56";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,da8f44c9-57ef-4ae0-a285-58727ce1df56.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,da8f44c9-57ef-4ae0-a285-58727ce1df56.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=da8f44c9-57ef-4ae0-a285-58727ce1df56";}s:4:"body";s:2987:"The next step in the ongoing upgrade saga
+   was to load an existing feature class into a subtype of one of the new featureclasses.
+   Of course, the new schema has fields which are not in the original featureclass, or
+   which are now a different type.
+   The approach I took was to add some additional fields to the old featureclass, then
+   create a multi-version view for that feature class, and use SQL to populate the fields
+   in question, and then load the features into the new class using the Object Loader.
+   To get this done quickly, I simply added the new fields via ArcCatalog. Only hitch
+   here is un-versioning the data. Luckily for us, this application applies all edits
+   to the Default version, so there was no issue dropping the existing versions.
+   Once the fields were created, I fired up our ViewMaker tool. This tool simplifies
+   the creation of multi-version views by generating the sdetable commands for you. This
+   is very handy when you need to create views for an entire geodatabase. It also has
+   a companion tool which will generate lookup tables from all the domains in a geodatabase
+   - very handy when you want to generate reports using SQL. 
+   
+   Now, why do this when I could simply "calc" the fields in ArcMap? Well, multi-version
+   views allow you to update attribute data via SQL. Thus, I could write one SQL statement,
+   and run it in 3 seconds rather than fiddling with the field calculator. And I like
+   multi-version views. ;-) 
+   [SQL
+   in QueryAnalyzer]
+   I now had the data in a format that I could load using the Object Loader. For those
+   not familliar with this tool, it's in both ArcMap and ArcCatalog, and it allows you
+   to load data from one feature class into another, while defining field mappings.
+   This worked really nicely, the only beef I have is that the tool does not have any
+   messaging upon completion. I then refreshed the view of the layer, and saw no records,
+   and assumed something went wrong. So I ran it again. Again, there was no "X Records
+   loaded" or "Processing Complete" or "Done!" message. This time, I disconnected from
+   SDE and re-connected, where I saw that I had two copies of each record loaded. After
+   dropping all the records (via edit session in ArcMap), I re-loaded the data, and all
+   was well. Now I just need to get the data for the other 2 sub-types and load it ;-)
+   From here, the main tasks are systemic in nature. The schema changes that we applied
+   concern a critical component of the data hiearchy - actual land ownership boundaries.
+   It is at this level that we apply our spatial permissioning model - thus changes to
+   this layer will have major ripple effects across the application. At this point, I'm
+   mostly turning project over to other staff members, but I'll be posting on any hilights
+   or problems we run across. Maybe I'll be able to convince them to start blogging too!
+   ;-) 
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:6:"body_b";s:69:"Adding the FieldsCreating the ViewUpdating the fieldsLoading the Data";s:6:"body_a";s:30:" Creative
+   Commons License. ";s:5:"title";s:70:"Upgrading an Enterprise GIS System: Migrating data into the new schema";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,da8f44c9-57ef-4ae0-a285-58727ce1df56.aspx";s:4:"link";s:103:"http://blog.davebouwman.net/2005/11/29/UpgradingAnEnterpriseGISSystemMigratingDataIntoTheNewSchema.aspx";s:7:"pubdate";s:29:"Tue, 29 Nov 2005 16:12:11 GMT";s:11:"description";s:3659:"The next step in the ongoing upgrade saga was to load an existing feature class into a subtype of one of the new featureclasses. Of course, the new schema has fields which are not in the original featureclass, or which are now a different type.<br>
+<br>
+The approach I took was to add some additional fields to the old featureclass, then
+create a multi-version view for that feature class, and use SQL to populate the fields
+in question, and then load the features into the new class using the Object Loader.<br>
+<br>
+<b>Adding the Fields</b>
+<br>
+To get this done quickly, I simply added the new fields via ArcCatalog. Only hitch
+here is un-versioning the data. Luckily for us, this application applies all edits
+to the Default version, so there was no issue dropping the existing versions.<br>
+<br>
+<b>Creating the View</b>
+<br>
+Once the fields were created, I fired up our ViewMaker tool. This tool simplifies
+the creation of multi-version views by generating the sdetable commands for you. This
+is very handy when you need to create views for an entire geodatabase. It also has
+a companion tool which will generate lookup tables from all the domains in a geodatabase
+- very handy when you want to generate reports using SQL. 
+<br>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/ViewMaker.gif" width="567" height="697" alt="" border="0">
+<br>
+<br>
+<b>Updating the fields</b>
+<br>
+Now, why do this when I could simply "calc" the fields in ArcMap? Well, multi-version
+views allow you to update attribute data via SQL. Thus, I could write one SQL statement,
+and run it in 3 seconds rather than fiddling with the field calculator. And I like
+multi-version views. ;-) 
+<br>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/SQL-Update.gif" width="525" height="161" alt="" border="0">[SQL
+in QueryAnalyzer]<br>
+<br>
+<b>Loading the Data</b>
+<br>
+I now had the data in a format that I could load using the Object Loader. For those
+not familliar with this tool, it's in both ArcMap and ArcCatalog, and it allows you
+to load data from one feature class into another, while defining field mappings.<br>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/ObjectLoader.gif" width="447" height="391" alt="" border="0">
+<br>
+<br>
+This worked really nicely, the only beef I have is that the tool does not have any
+messaging upon completion. I then refreshed the view of the layer, and saw no records,
+and assumed something went wrong. So I ran it again. Again, there was no "X Records
+loaded" or "Processing Complete" or "Done!" message. This time, I disconnected from
+SDE and re-connected, where I saw that I had two copies of each record loaded. After
+dropping all the records (via edit session in ArcMap), I re-loaded the data, and all
+was well. Now I just need to get the data for the other 2 sub-types and load it ;-)<br>
+<br>
+From here, the main tasks are systemic in nature. The schema changes that we applied
+concern a critical component of the data hiearchy - actual land ownership boundaries.
+It is at this level that we apply our spatial permissioning model - thus changes to
+this layer will have major ripple effects across the application. At this point, I'm
+mostly turning project over to other staff members, but I'll be posting on any hilights
+or problems we run across. Maybe I'll be able to convince them to start blogging too!
+;-) <img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=da8f44c9-57ef-4ae0-a285-58727ce1df56" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,da8f44c9-57ef-4ae0-a285-58727ce1df56.aspx";s:8:"category";s:23:"ArcGIS Devt;ArcSDE;ESRI";s:7:"summary";s:3659:"The next step in the ongoing upgrade saga was to load an existing feature class into a subtype of one of the new featureclasses. Of course, the new schema has fields which are not in the original featureclass, or which are now a different type.<br>
+<br>
+The approach I took was to add some additional fields to the old featureclass, then
+create a multi-version view for that feature class, and use SQL to populate the fields
+in question, and then load the features into the new class using the Object Loader.<br>
+<br>
+<b>Adding the Fields</b>
+<br>
+To get this done quickly, I simply added the new fields via ArcCatalog. Only hitch
+here is un-versioning the data. Luckily for us, this application applies all edits
+to the Default version, so there was no issue dropping the existing versions.<br>
+<br>
+<b>Creating the View</b>
+<br>
+Once the fields were created, I fired up our ViewMaker tool. This tool simplifies
+the creation of multi-version views by generating the sdetable commands for you. This
+is very handy when you need to create views for an entire geodatabase. It also has
+a companion tool which will generate lookup tables from all the domains in a geodatabase
+- very handy when you want to generate reports using SQL. 
+<br>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/ViewMaker.gif" width="567" height="697" alt="" border="0">
+<br>
+<br>
+<b>Updating the fields</b>
+<br>
+Now, why do this when I could simply "calc" the fields in ArcMap? Well, multi-version
+views allow you to update attribute data via SQL. Thus, I could write one SQL statement,
+and run it in 3 seconds rather than fiddling with the field calculator. And I like
+multi-version views. ;-) 
+<br>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/SQL-Update.gif" width="525" height="161" alt="" border="0">[SQL
+in QueryAnalyzer]<br>
+<br>
+<b>Loading the Data</b>
+<br>
+I now had the data in a format that I could load using the Object Loader. For those
+not familliar with this tool, it's in both ArcMap and ArcCatalog, and it allows you
+to load data from one feature class into another, while defining field mappings.<br>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/ObjectLoader.gif" width="447" height="391" alt="" border="0">
+<br>
+<br>
+This worked really nicely, the only beef I have is that the tool does not have any
+messaging upon completion. I then refreshed the view of the layer, and saw no records,
+and assumed something went wrong. So I ran it again. Again, there was no "X Records
+loaded" or "Processing Complete" or "Done!" message. This time, I disconnected from
+SDE and re-connected, where I saw that I had two copies of each record loaded. After
+dropping all the records (via edit session in ArcMap), I re-loaded the data, and all
+was well. Now I just need to get the data for the other 2 sub-types and load it ;-)<br>
+<br>
+From here, the main tasks are systemic in nature. The schema changes that we applied
+concern a critical component of the data hiearchy - actual land ownership boundaries.
+It is at this level that we apply our spatial permissioning model - thus changes to
+this layer will have major ripple effects across the application. At this point, I'm
+mostly turning project over to other staff members, but I'll be posting on any hilights
+or problems we run across. Maybe I'll be able to convince them to start blogging too!
+;-) <img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=da8f44c9-57ef-4ae0-a285-58727ce1df56" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:6;a:13:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=cec8ad07-f135-43f2-bcdf-0dc63377a58b";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,cec8ad07-f135-43f2-bcdf-0dc63377a58b.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,cec8ad07-f135-43f2-bcdf-0dc63377a58b.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=cec8ad07-f135-43f2-bcdf-0dc63377a58b";}s:5:"slash";a:1:{s:8:"comments";s:1:"1";}s:5:"title";s:62:"Upgrading an Enterprise GIS System: Geodatabase Schema Changes";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,cec8ad07-f135-43f2-bcdf-0dc63377a58b.aspx";s:4:"link";s:98:"http://blog.davebouwman.net/2005/11/23/UpgradingAnEnterpriseGISSystemGeodatabaseSchemaChanges.aspx";s:7:"pubdate";s:29:"Wed, 23 Nov 2005 23:25:35 GMT";s:11:"description";s:3775:"<b>Problem: </b> 
+<br>
+We have a geodatabase which was originally modeled in UML, but the UML is out of synch
+with the geodatabase, and we don't have the time to update the model to match the
+geodatabase. But, we need to add some new featureclasses to the geodatabase, and we
+want to design and document these using UML. How do we get the new items into the
+old geodatabase?<br>
+<br>
+<b>Option 1: Import XMI into the geodatabase</b>
+<br>
+I'd hoped that this would work, but ArcCatalog simply crashed. After some head scratching
+(mostly because my other options seemed overly difficult), I seemed to have a vague
+recollection that you need to import models through a connection that attaches to
+the database as the SDE user. It seems that you can import a model as any user who
+has correct permissions, BUT, if you import a model which references a domain which
+already exists, then you need to be connected as SDE. If not, you'll get another informative
+error: 
+<br>
+<blockquote>Unable to aquire schema lock for {domain name}</blockquote>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/UML-001.gif" width="315" height="126" alt="" border="0"> 
+<br>
+<br>
+I really wish ESRI put some better messaging into the CASE Tools - how hard would
+it be to pop a message reminding you to connect as SDE when starting the model import
+tool? And while I'm in this topic, the first time I tried to import my XMI file, I
+got this error: 
+<br>
+<br>
+<blockquote>Unable to load model from XML file {path}<br>
+An error occured while parsing the XML document.<br>
+Error number: 516<br>
+</blockquote> 
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/UML-000.gif" width="678" height="133" alt="" border="0"> 
+<br>
+<br>
+How useless is this? You can <a href="http://www.google.com/search?sourceid=navclient&ie=UTF-8&rls=GGLG,GGLG:2005-37,GGLG:en&q=XMI+error+number+%3A+516">google
+this error</a>, and get to <a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&d=27008">this
+page</a> at ESRI that tells you the problem - you need the uml.dtd file in the same
+folder as your xmi file. Now, since the code clearly knows what's wrong (error 516)
+why not just tell me!<br>
+<br>
+Anyhow, turns out that you can apply a partial model into an existing geodatabase,
+if you connect as SDE. Of course this causes the newly created featureclass to be
+owned by SDE, and not the user you want to own it. So - back to the drawing board
+and...<br>
+<br>
+<b>Option 2: Import XMI into a new geodatabase, Export the featureclasses to XML schema,
+and import that into target geodatabase</b>
+<br>
+<br>
+This time, I created a new database in my SQL instance, set it up for SDE, and imported
+the model into it as SDE. Then exported an XML workspace document. And then attached
+to my target geodatabase as the 'owner', and imported the XML Workspace document.
+And it worked. In order to make sure I did not mess anything up, I had been working
+on a copy of the real geodatabase, so the real test was to try the same thing on the
+real one. It worked. Really. So, it appears that the XML schema stuff is the way to
+go. Hopefully ESRI will create a geodatabase designer which spits out this XML because
+it would be a whole lot better than messing with XMI/Visio/UML kludge.<br>
+Now this this is sorted out, I now have to figure out how to massage the existing
+data which is going to populate one of the 3 subytpes in one of the new feature classes.
+But that can wait for a few days. <img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=cec8ad07-f135-43f2-bcdf-0dc63377a58b" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,cec8ad07-f135-43f2-bcdf-0dc63377a58b.aspx";s:8:"category";s:23:"ArcGIS Devt;ArcSDE;ESRI";s:7:"summary";s:3775:"<b>Problem: </b> 
+<br>
+We have a geodatabase which was originally modeled in UML, but the UML is out of synch
+with the geodatabase, and we don't have the time to update the model to match the
+geodatabase. But, we need to add some new featureclasses to the geodatabase, and we
+want to design and document these using UML. How do we get the new items into the
+old geodatabase?<br>
+<br>
+<b>Option 1: Import XMI into the geodatabase</b>
+<br>
+I'd hoped that this would work, but ArcCatalog simply crashed. After some head scratching
+(mostly because my other options seemed overly difficult), I seemed to have a vague
+recollection that you need to import models through a connection that attaches to
+the database as the SDE user. It seems that you can import a model as any user who
+has correct permissions, BUT, if you import a model which references a domain which
+already exists, then you need to be connected as SDE. If not, you'll get another informative
+error: 
+<br>
+<blockquote>Unable to aquire schema lock for {domain name}</blockquote>
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/UML-001.gif" width="315" height="126" alt="" border="0"> 
+<br>
+<br>
+I really wish ESRI put some better messaging into the CASE Tools - how hard would
+it be to pop a message reminding you to connect as SDE when starting the model import
+tool? And while I'm in this topic, the first time I tried to import my XMI file, I
+got this error: 
+<br>
+<br>
+<blockquote>Unable to load model from XML file {path}<br>
+An error occured while parsing the XML document.<br>
+Error number: 516<br>
+</blockquote> 
+<br>
+<img src="http://www.davebouwman.net/blog/content/binary/UML-000.gif" width="678" height="133" alt="" border="0"> 
+<br>
+<br>
+How useless is this? You can <a href="http://www.google.com/search?sourceid=navclient&ie=UTF-8&rls=GGLG,GGLG:2005-37,GGLG:en&q=XMI+error+number+%3A+516">google
+this error</a>, and get to <a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&d=27008">this
+page</a> at ESRI that tells you the problem - you need the uml.dtd file in the same
+folder as your xmi file. Now, since the code clearly knows what's wrong (error 516)
+why not just tell me!<br>
+<br>
+Anyhow, turns out that you can apply a partial model into an existing geodatabase,
+if you connect as SDE. Of course this causes the newly created featureclass to be
+owned by SDE, and not the user you want to own it. So - back to the drawing board
+and...<br>
+<br>
+<b>Option 2: Import XMI into a new geodatabase, Export the featureclasses to XML schema,
+and import that into target geodatabase</b>
+<br>
+<br>
+This time, I created a new database in my SQL instance, set it up for SDE, and imported
+the model into it as SDE. Then exported an XML workspace document. And then attached
+to my target geodatabase as the 'owner', and imported the XML Workspace document.
+And it worked. In order to make sure I did not mess anything up, I had been working
+on a copy of the real geodatabase, so the real test was to try the same thing on the
+real one. It worked. Really. So, it appears that the XML schema stuff is the way to
+go. Hopefully ESRI will create a geodatabase designer which spits out this XML because
+it would be a whole lot better than messing with XMI/Visio/UML kludge.<br>
+Now this this is sorted out, I now have to figure out how to massage the existing
+data which is going to populate one of the 3 subytpes in one of the new feature classes.
+But that can wait for a few days. <img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=cec8ad07-f135-43f2-bcdf-0dc63377a58b" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:7;a:15:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=d2409ea1-f2e2-4f8d-909f-b66f88ef732a";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,d2409ea1-f2e2-4f8d-909f-b66f88ef732a.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,d2409ea1-f2e2-4f8d-909f-b66f88ef732a.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=d2409ea1-f2e2-4f8d-909f-b66f88ef732a";}s:4:"body";s:3971:"Next item in the upgrade is addressing
+   some schema changes.
+   When we started development, we designed a large geodatabase using Visio & UML.
+   Nice. Over the following years, we wrote the ArcMap tools and other applications which
+   use this geodatabase. Still nice. As is the case with most development, some changes
+   must be made to the database model. In most cases, we were good, and updated the Visio
+   UML model, but it's been a few years, and we're pretty sure they are now out of sync. 
+    Manually check the UML against the contents of the geodatabase
+   Ok, this is not an option because I need to do this in hours, not weeks. And I'm pretty
+   sure nobody on staff would actually do this!Reverse engineer the geodatabase back into UML.
+   Wishful thinking - this is still not possible. 
+    Compare XML Schemas
+   This is what I went with, and it should be straight-forward right? Just dump the workspace
+   schema from the existing geodatabase, and from a geodatabase generated from the current
+   UML model, and run them through a diff program, and see what's different? Oh were
+   it so simple. ;-)
+   As part of the workspace schema export, coded value domains are written out, and this
+   caused me some problems. Things may have been easier if we followed ALL geodatabase
+   UML design guidelines. And we do for most things - just not Coded Value Domains. It's
+   not that we don't create the domains in the model, we do. We just don't populate all
+   of them. In our experience we've found that the domain values you get from a client
+   at the beginning of a project are different from those needed at the end. Instead
+   of editing & re-applying the UML model a zillion times (which is a pain, and requires
+   that everything be un-versioned), we simply load the domains out of SQL tables that
+   hold the values. 
+   
+   Anyhow - the problem is that the "real" geodatabase has all the domain values which
+   have been loaded from the tables, and in the "new" geodatabase, the domains are empty,
+   which means I can't compare the XML files directly.
+   Since the XML schema has more information than I wanted, I figured I should be able
+   to just extract out the information I was interested in. ( I should say here that
+   I'm not an XML guru by any means). 
+   
+   After a little quality time with ,
+   I cooked up an  (XSLT) that parses out the information I want - Featureclass name, the
+   fields, their name, type, length, and domain if applicable.
+   After this, I thought I was good to go. Nope. Apparently the ESRI XML schema exporter
+   writes out the xml in some order other than alphebetical by featureclass name. Thus,
+   the order of the feature classes in the output files are not the same, so a simple
+   diff will not work. XML.com had a  in xsl, and after sorting the featureclasses by name, and the
+   fields by name I had something to work with.
+   So, here's what it outputs:
+   At this point I started looking for a simple diff tool so I could locate the differences
+   between the files. Before I got too far on that, I noticed that the XML from the "live"
+   geodatabase was 89k, and the XML from the geodatabase generated from the model was
+   59k. Not good. 
+   
+   It turns out that we had a whole bunch of new tables registered with the geodatabase.
+   Part of the system involves the collection of very detailed forest information - measurements
+   of indivudal trees. Once this data is loaded into the system, a bunch of processing
+   is applied to the raw tree values to calculate timber volumes. All the tables used
+   to hold the outputs from these processes were not modeled in the UML. Uggh. :-|
+   Since we don't have time to spend days entering all these tables into the model, and
+   updating the model is not a priority for our client, it was time to figure out how
+   to "nicely" merge two UML models into one operational Geodatabase...
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:6:"body_b";s:213:"The question is: How can we find these changes so we can easily update the model
+   so it's back in sync with the geodatabase?Option 1:Option 2: Option 3:The Coded Value Domain Problem:Transforming the XML Export:";s:6:"body_a";s:80:"XMLSpyxml
+   transformsimple
+   example of sorting Creative
+   Commons License. ";s:5:"title";s:68:"Upgrading an Enterprise GIS System: Comparing Geodatabase Schemas...";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,d2409ea1-f2e2-4f8d-909f-b66f88ef732a.aspx";s:4:"link";s:101:"http://blog.davebouwman.net/2005/11/23/UpgradingAnEnterpriseGISSystemComparingGeodatabaseSchemas.aspx";s:7:"pubdate";s:29:"Wed, 23 Nov 2005 23:22:53 GMT";s:11:"description";s:4816:"Next item in the upgrade is addressing some schema changes.<br>
+<br>
+When we started development, we designed a large geodatabase using Visio &amp; UML.
+Nice. Over the following years, we wrote the ArcMap tools and other applications which
+use this geodatabase. Still nice. As is the case with most development, some changes
+must be made to the database model. In most cases, we were good, and updated the Visio
+UML model, but it's been a few years, and we're pretty sure they are now out of sync. 
+<br>
+<br>
+<b>The question is: How can we find these changes so we can easily update the model
+so it's back in sync with the geodatabase?</b>
+<br>
+<br>
+<b>Option 1:</b> Manually check the UML against the contents of the geodatabase<br>
+Ok, this is not an option because I need to do this in hours, not weeks. And I'm pretty
+sure nobody on staff would actually do this!<br>
+<br>
+<b>Option 2: </b>Reverse engineer the geodatabase back into UML.<br>
+Wishful thinking - this is still not possible. 
+<br>
+<br>
+<b>Option 3:</b> Compare XML Schemas<br>
+This is what I went with, and it should be straight-forward right? Just dump the workspace
+schema from the existing geodatabase, and from a geodatabase generated from the current
+UML model, and run them through a diff program, and see what's different? Oh were
+it so simple. ;-)<br>
+<br>
+<b>The Coded Value Domain Problem:</b>
+<br>
+As part of the workspace schema export, coded value domains are written out, and this
+caused me some problems. Things may have been easier if we followed ALL geodatabase
+UML design guidelines. And we do for most things - just not Coded Value Domains. It's
+not that we don't create the domains in the model, we do. We just don't populate all
+of them. In our experience we've found that the domain values you get from a client
+at the beginning of a project are different from those needed at the end. Instead
+of editing &amp; re-applying the UML model a zillion times (which is a pain, and requires
+that everything be un-versioned), we simply load the domains out of SQL tables that
+hold the values. 
+<br>
+Anyhow - the problem is that the "real" geodatabase has all the domain values which
+have been loaded from the tables, and in the "new" geodatabase, the domains are empty,
+which means I can't compare the XML files directly.<br>
+<br>
+<b>Transforming the XML Export:</b>
+<br>
+Since the XML schema has more information than I wanted, I figured I should be able
+to just extract out the information I was interested in. ( I should say here that
+I'm not an XML guru by any means). 
+<br>
+After a little quality time with <a href="http://www.altova.com/products_ide.html">XMLSpy</a>,
+I cooked up an <a href="http://www.davebouwman.net/blog/content/binary/ESRI-SchemaTransform.xslt">xml
+transform</a> (XSLT) that parses out the information I want - Featureclass name, the
+fields, their name, type, length, and domain if applicable.<br>
+<br>
+After this, I thought I was good to go. Nope. Apparently the ESRI XML schema exporter
+writes out the xml in some order other than alphebetical by featureclass name. Thus,
+the order of the feature classes in the output files are not the same, so a simple
+diff will not work. XML.com had a <a href="http://www.xml.com/pub/a/2002/07/03/transform.html?page=4">simple
+example of sorting</a> in xsl, and after sorting the featureclasses by name, and the
+fields by name I had something to work with.<br>
+<br>
+So, here's what it outputs:<br>
+<img height=102 alt="" src="http://www.davebouwman.net/blog/content/binary/BLOG-000.gif" width=896 border=0>
+<br>
+<br>
+At this point I started looking for a simple diff tool so I could locate the differences
+between the files. Before I got too far on that, I noticed that the XML from the "live"
+geodatabase was 89k, and the XML from the geodatabase generated from the model was
+59k. Not good. 
+<br>
+<br>
+It turns out that we had a whole bunch of new tables registered with the geodatabase.
+Part of the system involves the collection of very detailed forest information - measurements
+of indivudal trees. Once this data is loaded into the system, a bunch of processing
+is applied to the raw tree values to calculate timber volumes. All the tables used
+to hold the outputs from these processes were not modeled in the UML. Uggh. :-|<br>
+<br>
+Since we don't have time to spend days entering all these tables into the model, and
+updating the model is not a priority for our client, it was time to figure out how
+to "nicely" merge two UML models into one operational Geodatabase...<br>
+<br>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=d2409ea1-f2e2-4f8d-909f-b66f88ef732a" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,d2409ea1-f2e2-4f8d-909f-b66f88ef732a.aspx";s:8:"category";s:23:"ArcGIS Devt;ArcSDE;ESRI";s:7:"summary";s:4816:"Next item in the upgrade is addressing some schema changes.<br>
+<br>
+When we started development, we designed a large geodatabase using Visio &amp; UML.
+Nice. Over the following years, we wrote the ArcMap tools and other applications which
+use this geodatabase. Still nice. As is the case with most development, some changes
+must be made to the database model. In most cases, we were good, and updated the Visio
+UML model, but it's been a few years, and we're pretty sure they are now out of sync. 
+<br>
+<br>
+<b>The question is: How can we find these changes so we can easily update the model
+so it's back in sync with the geodatabase?</b>
+<br>
+<br>
+<b>Option 1:</b> Manually check the UML against the contents of the geodatabase<br>
+Ok, this is not an option because I need to do this in hours, not weeks. And I'm pretty
+sure nobody on staff would actually do this!<br>
+<br>
+<b>Option 2: </b>Reverse engineer the geodatabase back into UML.<br>
+Wishful thinking - this is still not possible. 
+<br>
+<br>
+<b>Option 3:</b> Compare XML Schemas<br>
+This is what I went with, and it should be straight-forward right? Just dump the workspace
+schema from the existing geodatabase, and from a geodatabase generated from the current
+UML model, and run them through a diff program, and see what's different? Oh were
+it so simple. ;-)<br>
+<br>
+<b>The Coded Value Domain Problem:</b>
+<br>
+As part of the workspace schema export, coded value domains are written out, and this
+caused me some problems. Things may have been easier if we followed ALL geodatabase
+UML design guidelines. And we do for most things - just not Coded Value Domains. It's
+not that we don't create the domains in the model, we do. We just don't populate all
+of them. In our experience we've found that the domain values you get from a client
+at the beginning of a project are different from those needed at the end. Instead
+of editing &amp; re-applying the UML model a zillion times (which is a pain, and requires
+that everything be un-versioned), we simply load the domains out of SQL tables that
+hold the values. 
+<br>
+Anyhow - the problem is that the "real" geodatabase has all the domain values which
+have been loaded from the tables, and in the "new" geodatabase, the domains are empty,
+which means I can't compare the XML files directly.<br>
+<br>
+<b>Transforming the XML Export:</b>
+<br>
+Since the XML schema has more information than I wanted, I figured I should be able
+to just extract out the information I was interested in. ( I should say here that
+I'm not an XML guru by any means). 
+<br>
+After a little quality time with <a href="http://www.altova.com/products_ide.html">XMLSpy</a>,
+I cooked up an <a href="http://www.davebouwman.net/blog/content/binary/ESRI-SchemaTransform.xslt">xml
+transform</a> (XSLT) that parses out the information I want - Featureclass name, the
+fields, their name, type, length, and domain if applicable.<br>
+<br>
+After this, I thought I was good to go. Nope. Apparently the ESRI XML schema exporter
+writes out the xml in some order other than alphebetical by featureclass name. Thus,
+the order of the feature classes in the output files are not the same, so a simple
+diff will not work. XML.com had a <a href="http://www.xml.com/pub/a/2002/07/03/transform.html?page=4">simple
+example of sorting</a> in xsl, and after sorting the featureclasses by name, and the
+fields by name I had something to work with.<br>
+<br>
+So, here's what it outputs:<br>
+<img height=102 alt="" src="http://www.davebouwman.net/blog/content/binary/BLOG-000.gif" width=896 border=0>
+<br>
+<br>
+At this point I started looking for a simple diff tool so I could locate the differences
+between the files. Before I got too far on that, I noticed that the XML from the "live"
+geodatabase was 89k, and the XML from the geodatabase generated from the model was
+59k. Not good. 
+<br>
+<br>
+It turns out that we had a whole bunch of new tables registered with the geodatabase.
+Part of the system involves the collection of very detailed forest information - measurements
+of indivudal trees. Once this data is loaded into the system, a bunch of processing
+is applied to the raw tree values to calculate timber volumes. All the tables used
+to hold the outputs from these processes were not modeled in the UML. Uggh. :-|<br>
+<br>
+Since we don't have time to spend days entering all these tables into the model, and
+updating the model is not a priority for our client, it was time to figure out how
+to "nicely" merge two UML models into one operational Geodatabase...<br>
+<br>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=d2409ea1-f2e2-4f8d-909f-b66f88ef732a" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:8;a:19:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=465e082c-ad05-48fa-b769-b732acfbbd7f";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,465e082c-ad05-48fa-b769-b732acfbbd7f.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,465e082c-ad05-48fa-b769-b732acfbbd7f.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=465e082c-ad05-48fa-b769-b732acfbbd7f";}s:5:"slash";a:1:{s:8:"comments";s:1:"2";}s:4:"body";s:458:"So I upgraded our internal development
+   ArcSDE serverfrom 8.3 to 9.0 (so it would be running on my EDN licenses and we could
+   drop the "commercial" license). Anyhow, all went well, and I moved on to other issues
+   (ArcGIS Server development, Ajax-ifying our GeoPortal etc). However, yesterday I noticed
+   that one of our demo sites ()
+   decided it was not going to make maps anymore. 
+   
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:6:"body_a";s:56:"http://dev.sanborn.com/kls Creative
+   Commons License. ";s:8:"body_div";s:7:":-o
+   ";s:6:"body_p";s:1294:"
+      Thus I followed the usual ArcIMS problem solving technique:
+      Step 1: Restart ArcIMS
+      Step 2: Re-boot the server.
+      Step 3: swear and threaten to kick the box
+      Actually step 3 was look at the logs, which non-specifically (I was only logging errors)
+      indicated the issue was with a map service using ArcSDE. Thus I tried to connect to
+      the instance from ArcCatalog, when low and behold - it popped up with a "No Connections
+      Availible" message.
+      Luckily, I'd been roaming the GIS blogosphere, and recalled  over at the about this very thing.
+      Apparently when you upgrade to 9.0, it handily sets the maximum number of connections
+      to 48. I'm sure that this is noted somewhere in the release notes or elsewhere that
+      any experienced ArcSDE person would completely ignore. Since this is a pretty critical
+      item (i.e. your system will not work as it used to) I'd suggest that ESRI puts this
+      on it's own dialog at the end of the install in bright red - i.e. 
+   
+      Anyhow, here's the quick solution:
+      Step 1: Open the SDE_SERVER_CONFIG table, 
+      
+      Step 2: set the CONNECTIONS value to whatever you want. 
+      
+      Step 3: Restart ArcSDE
+      This is easier than foolin with loading a defs file etc. 
+      ";s:8:"body_p_a";s:50:"a
+      post ROKTechnologies
+      developers blog";s:11:"body_p_font";s:145:"NOTICE: WE HAVE SET THE MAX CONNECTIONS TO 48. IF YOU CURRENTLY 
+      USE MORE THAN 48 CONNECTIONS TO ARCSDE, YOU MUST CHANGE
+      THIS SETTING";s:5:"title";s:10:"ArcSDE 9.0";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,465e082c-ad05-48fa-b769-b732acfbbd7f.aspx";s:4:"link";s:52:"http://blog.davebouwman.net/2005/07/14/ArcSDE90.aspx";s:7:"pubdate";s:29:"Thu, 14 Jul 2005 14:31:37 GMT";s:11:"description";s:2509:"So I upgraded our internal development ArcSDE serverfrom 8.3 to 9.0 (so it would be running on my EDN licenses and we could drop the "commercial" license). Anyhow, all went well, and I moved on to other issues (ArcGIS Server development, Ajax-ifying our GeoPortal etc). However, yesterday I noticed that one of our demo sites (<a href="http://dev.sanborn.com/kls" target=_blank>http://dev.sanborn.com/kls</a>)
+decided it was not going to make maps anymore. 
+<br>
+<div align=center>:-o
+</div>
+<p>
+   <br>
+   Thus I followed the usual ArcIMS problem solving technique:<br>
+   Step 1: Restart ArcIMS<br>
+   Step 2: Re-boot the server.<br>
+   Step 3: swear and threaten to kick the box<br>
+   <br>
+   Actually step 3 was look at the logs, which non-specifically (I was only logging errors)
+   indicated the issue was with a map service using ArcSDE. Thus I tried to connect to
+   the instance from ArcCatalog, when low and behold - it popped up with a "No Connections
+   Availible" message.<br>
+   Luckily, I'd been roaming the GIS blogosphere, and recalled <a href="http://www.roktech.net/devblog/1/2005/07/index.cfm" target=_blank>a
+   post</a> over at the<a href="http://www.roktech.net/devblog/" target=_blank> ROKTechnologies
+   developers blog</a> about this very thing.<br>
+   <br>
+   Apparently when you upgrade to 9.0, it handily sets the maximum number of connections
+   to 48. I'm sure that this is noted somewhere in the release notes or elsewhere that
+   any experienced ArcSDE person would completely ignore. Since this is a pretty critical
+   item (i.e. your system will not work as it used to) I'd suggest that ESRI puts this
+   on it's own dialog at the end of the install in bright red - i.e. 
+</p>
+<p align=left>
+   <br>
+   <font color=#ff0000>NOTICE: WE HAVE SET THE MAX CONNECTIONS TO 48. IF YOU CURRENTLY 
+   <br>
+   </font><font color=#ff0000>USE MORE THAN 48 CONNECTIONS TO ARCSDE, YOU MUST CHANGE
+   THIS SETTING</font>
+   <br>
+   <br>
+   Anyhow, here's the quick solution:<br>
+   Step 1: Open the SDE_SERVER_CONFIG table, 
+   <br>
+   Step 2: set the CONNECTIONS value to whatever you want. 
+   <br>
+   Step 3: Restart ArcSDE<br>
+   This is easier than foolin with loading a defs file etc. 
+   <br>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,465e082c-ad05-48fa-b769-b732acfbbd7f.aspx";s:8:"category";s:6:"ArcSDE";s:7:"summary";s:2509:"So I upgraded our internal development ArcSDE serverfrom 8.3 to 9.0 (so it would be running on my EDN licenses and we could drop the "commercial" license). Anyhow, all went well, and I moved on to other issues (ArcGIS Server development, Ajax-ifying our GeoPortal etc). However, yesterday I noticed that one of our demo sites (<a href="http://dev.sanborn.com/kls" target=_blank>http://dev.sanborn.com/kls</a>)
+decided it was not going to make maps anymore. 
+<br>
+<div align=center>:-o
+</div>
+<p>
+   <br>
+   Thus I followed the usual ArcIMS problem solving technique:<br>
+   Step 1: Restart ArcIMS<br>
+   Step 2: Re-boot the server.<br>
+   Step 3: swear and threaten to kick the box<br>
+   <br>
+   Actually step 3 was look at the logs, which non-specifically (I was only logging errors)
+   indicated the issue was with a map service using ArcSDE. Thus I tried to connect to
+   the instance from ArcCatalog, when low and behold - it popped up with a "No Connections
+   Availible" message.<br>
+   Luckily, I'd been roaming the GIS blogosphere, and recalled <a href="http://www.roktech.net/devblog/1/2005/07/index.cfm" target=_blank>a
+   post</a> over at the<a href="http://www.roktech.net/devblog/" target=_blank> ROKTechnologies
+   developers blog</a> about this very thing.<br>
+   <br>
+   Apparently when you upgrade to 9.0, it handily sets the maximum number of connections
+   to 48. I'm sure that this is noted somewhere in the release notes or elsewhere that
+   any experienced ArcSDE person would completely ignore. Since this is a pretty critical
+   item (i.e. your system will not work as it used to) I'd suggest that ESRI puts this
+   on it's own dialog at the end of the install in bright red - i.e. 
+</p>
+<p align=left>
+   <br>
+   <font color=#ff0000>NOTICE: WE HAVE SET THE MAX CONNECTIONS TO 48. IF YOU CURRENTLY 
+   <br>
+   </font><font color=#ff0000>USE MORE THAN 48 CONNECTIONS TO ARCSDE, YOU MUST CHANGE
+   THIS SETTING</font>
+   <br>
+   <br>
+   Anyhow, here's the quick solution:<br>
+   Step 1: Open the SDE_SERVER_CONFIG table, 
+   <br>
+   Step 2: set the CONNECTIONS value to whatever you want. 
+   <br>
+   Step 3: Restart ArcSDE<br>
+   This is easier than foolin with loading a defs file etc. 
+   <br>
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=465e082c-ad05-48fa-b769-b732acfbbd7f" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}i:9;a:15:{s:9:"trackback";a:1:{s:4:"ping";s:84:"http://blog.davebouwman.net/Trackback.aspx?guid=1978d4f5-e6c6-4f77-9b17-212288afd788";}s:8:"pingback";a:2:{s:6:"server";s:41:"http://blog.davebouwman.net/pingback.aspx";s:6:"target";s:84:"http://blog.davebouwman.net/PermaLink,guid,1978d4f5-e6c6-4f77-9b17-212288afd788.aspx";}s:2:"dc";a:1:{s:7:"creator";s:7:"
+      ";}s:3:"wfw";a:2:{s:7:"comment";s:86:"http://blog.davebouwman.net/CommentView,guid,1978d4f5-e6c6-4f77-9b17-212288afd788.aspx";s:10:"commentrss";s:113:"http://blog.davebouwman.net/SyndicationService.asmx/GetEntryCommentsRss?guid=1978d4f5-e6c6-4f77-9b17-212288afd788";}s:4:"body";s:117:"
+        
+        
+        
+        
+        
+        
+   davebouwman.net weblog - copyright 2006 - licensed under a ";s:6:"body_p";s:1197:"
+      For some time we've been working with SDE's multi-version views in order to allow
+      direct SQL access to versioned data stored in ArcSDE. We've used this exclusively
+      for reporting, and it has worked really well. We've got a new project on the go where
+      in we need to facilitate off-line (disconnected) editing of tabular data in a Geodatabase.
+      I'm just in the R & D phase right now, but it looks like we'll be able to use
+      these same views to do data editing. Granted, we can not facilitate editing of the
+      shapes this way, but this application does not require that. The nice thing is that
+      the data will still reside in a geodatabase, and thus will be accessible to all the
+      tools etc built into ArcMap/Catalog.
+   
+      The basic architecture follows a simple ADO.NET offline client application. The client
+      app contacts a web-service and requests a set of data (as a DataSet), and then switches
+      to off-line mode. The user makes edits as needed, and then re-connects, and the application
+      sends the DataSet diffgram to the web service, which re-sync's the data. I'll post
+      some code and links as I get further into this.
+   ";s:6:"body_a";s:30:" Creative
+   Commons License. ";s:5:"title";s:32:"Direct SQL Access to ArcSDE Data";s:4:"guid";s:84:"http://blog.davebouwman.net/PermaLink,guid,1978d4f5-e6c6-4f77-9b17-212288afd788.aspx";s:4:"link";s:71:"http://blog.davebouwman.net/2005/02/23/DirectSQLAccessToArcSDEData.aspx";s:7:"pubdate";s:29:"Wed, 23 Feb 2005 14:25:40 GMT";s:11:"description";s:1453:"<p>
+   For some time we've been working with SDE's multi-version views in order to allow
+   direct SQL access to versioned data stored in ArcSDE. We've used this exclusively
+   for reporting, and it has worked really well. We've got a new project on the go where
+   in we need to facilitate off-line (disconnected) editing of tabular data in a Geodatabase.
+   I'm just in the R &amp; D phase right now, but it looks like we'll be able to use
+   these same views to do data editing. Granted, we can not facilitate editing of the
+   shapes this way, but this application does not require that. The nice thing is that
+   the data will still reside in a geodatabase, and thus will be accessible to all the
+   tools etc built into ArcMap/Catalog.
+</p>
+<p>
+   The basic architecture follows a simple ADO.NET offline client application. The client
+   app contacts a web-service and requests a set of data (as a DataSet), and then switches
+   to off-line mode. The user makes edits as needed, and then re-connects, and the application
+   sends the DataSet diffgram to the web service, which re-sync's the data. I'll post
+   some code and links as I get further into this.
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=1978d4f5-e6c6-4f77-9b17-212288afd788" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";s:8:"comments";s:86:"http://blog.davebouwman.net/CommentView,guid,1978d4f5-e6c6-4f77-9b17-212288afd788.aspx";s:8:"category";s:11:".NET;ArcSDE";s:7:"summary";s:1453:"<p>
+   For some time we've been working with SDE's multi-version views in order to allow
+   direct SQL access to versioned data stored in ArcSDE. We've used this exclusively
+   for reporting, and it has worked really well. We've got a new project on the go where
+   in we need to facilitate off-line (disconnected) editing of tabular data in a Geodatabase.
+   I'm just in the R &amp; D phase right now, but it looks like we'll be able to use
+   these same views to do data editing. Granted, we can not facilitate editing of the
+   shapes this way, but this application does not require that. The nice thing is that
+   the data will still reside in a geodatabase, and thus will be accessible to all the
+   tools etc built into ArcMap/Catalog.
+</p>
+<p>
+   The basic architecture follows a simple ADO.NET offline client application. The client
+   app contacts a web-service and requests a set of data (as a DataSet), and then switches
+   to off-line mode. The user makes edits as needed, and then re-connects, and the application
+   sends the DataSet diffgram to the web service, which re-sync's the data. I'll post
+   some code and links as I get further into this.
+</p>
+<img width="0" height="0" src="http://blog.davebouwman.net/aggbug.ashx?id=1978d4f5-e6c6-4f77-9b17-212288afd788" />
+<br />
+<hr />
+<hr>
+davebouwman.net weblog - copyright 2006 - licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"> Creative
+Commons License. </a>";}}s:7:"channel";a:9:{s:5:"title";s:12:"Dave Bouwman";s:4:"link";s:28:"http://blog.davebouwman.net/";s:11:"description";s:41:"Software Development :: .NET - GIS - ESRI";s:9:"copyright";s:12:"Dave Bouwman";s:13:"lastbuilddate";s:29:"Sat, 18 Mar 2006 02:07:11 GMT";s:9:"generator";s:32:"newtelligence dasBlog 1.8.5223.0";s:14:"managingeditor";s:20:"dave@davebouwman.com";s:9:"webmaster";s:20:"dave@davebouwman.com";s:7:"tagline";s:41:"Software Development :: .NET - GIS - ESRI";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

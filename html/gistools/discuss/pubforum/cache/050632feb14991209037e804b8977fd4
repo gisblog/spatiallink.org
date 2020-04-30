@@ -1,0 +1,73 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:14:{i:0;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:23:"tdbtdb tdb...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-30T09:09:15Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/0cb3f0c82b00c01b";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/0cb3f0c82b00c01b";s:5:"title";s:33:"simple web gui to display tables?";s:7:"summary";s:388:"
+  Is there some generic gui software that would let me display and maybe <br> even edit the contents of a mysql database? I've found some mentions of <br> mysql-navigator &amp; maybe some other dedicated tools. Anything like a <br> browser plugin or quick &amp; dirty server side module for apache? This may <br> even be part of the mysql package, I can't even find a good description
+  ";}i:1;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:23:"Arun arun....@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-28T04:23:43Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/602b82ea5c23cdf3";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/602b82ea5c23cdf3";s:5:"title";s:39:"problem with VirtualDocumentRoot config";s:7:"summary";s:352:"
+  I am trying to use mod_vhost_alias for mass vhosting in addition to the <br> present Namebased virtual hosting on my machine. <br> my mass vhost config is as below... <br> ------------------------------ ----start--------------------- ------------- <br> &lt;VirtualHost *:80&gt; <br> UseCanonicalName off <br> ServerAdmin r...@members.domain.ac.in
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:34:"syed athar smatharhus...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-28T02:50:26Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/66d484ea7a7867a0";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/66d484ea7a7867a0";s:5:"title";s:8:"thankyou";s:7:"summary";s:14:"
+  thankyou
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:31:"group manager slit...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-27T03:42:38Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/ece68cbffcf7f327";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/ece68cbffcf7f327";s:5:"title";s:29:"!UPDATE! Group topic modified";s:7:"summary";s:403:"
+  Dear members, <br> as you may or may not know topic as been modified to help let new or <br> potential members be aware that this group bans spammers to the full <br> extent. <br> Line added: ! Spam will be reported and users banned ! <br> Topic: <br> Discuss Apache, PHP, and mySQL configuration and language syntax here! <br> Need help? Want to help? Come here! ! Spam will be reported and users
+  ";}i:4;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:30:"Aaron aaronbrow...@hotmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-24T20:18:24Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/962bbd69d6ea452c";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/962bbd69d6ea452c";s:5:"title";s:11:"helpppppppp";s:7:"summary";s:441:"
+  I run <a target="_blank" href="http://www.fukenricen.ca">[link]</a> for my buddy I deal with the up keep of the <br> site and today we have one of our biggest shows and our boards went <br> down? <br> this is the error messages sent to email <br> Database error in vBulletin : <br> Link-ID == false, connect failed <br> mysql error: <br> mysql error number: 0 <br> Script: <a target="_blank" href="http://www.fukenricen.ca/">[link]</a>
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:27:"I_love_php moh...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-23T07:39:58Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/4489cf089ea08500";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/4489cf089ea08500";s:5:"title";s:24:"link between 2 databases";s:7:"summary";s:425:"
+  lets say i have 2 databases . <br> database1 and database2 <br> in each database there is table called (users) <br> Users (from database1) <br> --------------------- <br> id <br> name <br> users from database2 <br> --------------------------- <br> userid <br> username <br> all the infromation are in the users from database1 ... i want to make <br> a connection between these 2 tables ... the information will store in
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:19:"PD pd1...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-23T01:17:38Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/2f4708b54aa90001";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/2f4708b54aa90001";s:5:"title";s:71:"How can I achieve efficiency and speed for high traffic dating web site";s:7:"summary";s:293:"
+  I am currently making a dating website. <br> I want to have some information on how to structure the database and <br> the php files so that I can achieve speed and efficiency. <br> Can some one please give me suggestions and point me to references <br> where I can get this information.
+  ";}i:7;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:28:"roadrunner whyl...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-22T09:37:06Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/a06fbb5ecaa54578";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/a06fbb5ecaa54578";s:5:"title";s:56:"How to write a postfile for Apache's ab load test tool ?";s:7:"summary";s:395:"
+  Hi, <br> I'm trying to use the ab tool provided with Apache web server <br> (<a target="_blank" href="http://httpd.apache.org/docs/2.0/programs/ab.html">[link]</a>) to do some basic <br> load testing of a site, and would like to use the -p flag to supply a <br> link to a postfile containing data to POST to the server. <br> Does anyone know what format the data in this file should take ?
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:30:"nephalim nepha...@nephalim.org";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-19T10:53:30Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/84226e21adbe54bd";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/84226e21adbe54bd";s:5:"title";s:29:"Help with invisible redirect.";s:7:"summary";s:439:"
+  I have a wordpress blog hosted somewhere, but I want to to *appear* <br> that it is hosted elsewhere. I as of now have an invisible redirect, <br> but once they start using the new site it is lost. <br> Example: <br> Wordpress blog at <a target="_blank" href="http://myblog.com/wordpress/">[link]</a> (and to remain there) <br> Domain it should be invisibly a part of: <a target="_blank" href="http://myblog.newdomain.com">[link]</a>
+  ";}i:9;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:28:"Smith bruce.smi...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-16T18:46:40Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/2d78161f660316d2";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/2d78161f660316d2";s:5:"title";s:28:"Best Link for Perfect Career";s:7:"summary";s:435:"
+  Hello and Hi <br> Today, I tell you another Best Website for finding the best job. <br> Please check this link and enjoy your dream job. <br> <p><a target="_blank" href="http://www33.websamba.com/freecareer/index.asp">[link]</a> <br> <p>Special thing about this website is, they are presenting direct links to jobs. <br> They are using only Direct Employers and not using Staffing Companies, Contract firms, Agencies, recruiters.
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:28:"Kira Lake kiral...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-15T03:59:25Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/911eb3c0037391e0";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/911eb3c0037391e0";s:5:"title";s:27:"Resources for learning PHP?";s:7:"summary";s:360:"
+  Hi Group! <br> I am very new to PHP. I have set up an Apache Server with PHP5 and <br> everything seems to be working OK except for my understanding of PHP <br> itself. (I am not ready for MySQL yet.) <br> Can anyone please suggest some good resources for learning PHP. I learn <br> best through hands on experience with practical application, from there
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:26:"vene miz_lu...@hotmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-14T10:33:15Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/fc51318384ab648c";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/fc51318384ab648c";s:5:"title";s:40:"problem with displaying data - php/mysql";s:7:"summary";s:390:"
+  Hi guyz, <br> Im new to php and I need some help with data formatting. I have created <br> php script to search information from the database and it works but i <br> am having problems displaying data correctly. The heading is displayed <br> after the seach results. Also if someone guide me on how to display <br> search results correctly possibly in a table format (an example would
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:21:"Andreas age...@gmx.de";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-11T15:21:07Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/6a968f27548749a8";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/6a968f27548749a8";s:5:"title";s:20:"Quelltext in String!";s:7:"summary";s:408:"
+  Hallo! <br> Wie lese ich aus einer im Browser angezeigten Seite einen bestimmten <br> String aus? <br> file_get_contents ist verboten, ebenso wie fsockopen und open! <br> Problem: Ich möchte aus Wikipedia per Script und Variablen auswerten, <br> ob z.b. Christian männlich oder weiblich ist. Dazu muss ich im Text <br> nach &quot;Christian ist ein männlicher Vorname&quot; suchen und einfach das 10.
+  ";}i:13;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:45:"battle.chris@gmail.com battle.ch...@gmail.com";s:12:"author_email";s:33:"Apache-PHP-mysql@googlegroups.com";s:7:"updated";s:20:"2006-03-10T23:08:52Z";s:2:"id";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/984f15b25df5c12a";s:5:"link_";s:85:"http://groups.google.com/group/Apache-PHP-mysql/browse_thread/thread/984f15b25df5c12a";s:5:"title";s:24:"Slow Full Text Searching";s:7:"summary";s:363:"
+  Hi. <br> I'm writing a small app to make about 4000+ word and pdf documents <br> searchable. It stores all the text from the docs in a TEXT field. <br> CREATE TABLE `resumes` ( <br> `fid` int(11) NOT NULL auto_increment, <br> `filename` tinytext NOT NULL, <br> `file` mediumblob NOT NULL, <br> `filetype` varchar(50) NOT NULL, <br> `date` datetime NOT NULL,
+  ";}}s:7:"channel";a:6:{s:2:"id";s:47:"http://groups.google.com/group/Apache-PHP-mysql";s:5:"title";s:33:"Apache, PHP, & mySQL Google Group";s:8:"subtitle";s:154:"
+  Discuss Apache, PHP, and mySQL configuration and language syntax here! Need help? Want to help? Come here! ! Spam will be reported and users banned!
+  ";s:9:"link_self";s:73:"http://groups.google.com/group/Apache-PHP-mysql/feed/atom_v1_0_topics.xml";s:7:"updated";s:20:"2006-03-30T16:50:17Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

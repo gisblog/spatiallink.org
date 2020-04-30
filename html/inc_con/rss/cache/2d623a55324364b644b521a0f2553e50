@@ -1,0 +1,965 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:26:{i:0;a:6:{s:5:"title";s:56:"Andreas Scherbaum: The history of the European Usergroup";s:4:"guid";s:52:"http://ads.wars-nicht.de/blog/archives/154-guid.html";s:4:"link";s:85:"http://ads.wars-nicht.de/blog/archives/154-The-history-of-the-European-Usergroup.html";s:11:"description";s:786:"<br />
+<font><p>Susanne (<a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3776&amp;entry_id=154" title="Susannes Blog">miracee</a>) wrote a nice <a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3777&amp;entry_id=154" title="http://miracee.blog.de/2007/04/22/how_the_postgresql_user_group_europe_is_~2137980">article</a>, how the <a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3778&amp;entry_id=154" title="European Usergroup">European Usergroup</a> was founded:</p><p><font></font></p><p><br /><a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3777&amp;entry_id=154" title="http://miracee.blog.de/2007/04/22/how_the_postgresql_user_group_europe_is_~2137980">http://miracee.blog.de/2007/04/22/how_the_postgresql_user_group_europe_is_~2137980</a></p></font><br />";s:7:"pubdate";s:31:"Sun, 22 Apr 2007 13:30:51 +0000";s:7:"summary";s:786:"<br />
+<font><p>Susanne (<a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3776&amp;entry_id=154" title="Susannes Blog">miracee</a>) wrote a nice <a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3777&amp;entry_id=154" title="http://miracee.blog.de/2007/04/22/how_the_postgresql_user_group_europe_is_~2137980">article</a>, how the <a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3778&amp;entry_id=154" title="European Usergroup">European Usergroup</a> was founded:</p><p><font></font></p><p><br /><a href="http://ads.wars-nicht.de/blog/exit.php?url_id=3777&amp;entry_id=154" title="http://miracee.blog.de/2007/04/22/how_the_postgresql_user_group_europe_is_~2137980">http://miracee.blog.de/2007/04/22/how_the_postgresql_user_group_europe_is_~2137980</a></p></font><br />";}i:1;a:6:{s:5:"title";s:35:"John DeSoi: PostgreSQL Lisp library";s:4:"guid";s:41:"http://pgedit.com/67 at http://pgedit.com";s:4:"link";s:25:"http://pgedit.com/node/67";s:11:"description";s:894:"<p><a href="http://common-lisp.net/project/postmodern/">Postmodern</a> is a Common Lisp library for interacting with PostgreSQL. It uses the <a href="http://www.postgresql.org/docs/8.2/static/protocol.html">frontend/backend protocol</a> to communicate directly with PostgreSQL over a TCP/IP socket. Features include:</p>
+<ul>
+<li>Efficient communication with the database server without need for foreign libraries.</li>
+<li>Support for UTF-8 on Unicode-aware Lisp implementations.</li>
+<li>A lispy syntax for expressing SQL queries.</li>
+<li>Convenient support for prepared statements and stored procedures.</li>
+<li>Defclass-like definition of tables and associated accessor classes.</li>
+</ul>
+<p>For more details and downloads see <a href="http://common-lisp.net/project/postmodern/">http://common-lisp.net/project/postmodern/</a></p>
+<p><a href="http://pgedit.com/node/67">read more</a></p>";s:7:"pubdate";s:31:"Thu, 19 Apr 2007 02:18:52 +0000";s:7:"summary";s:894:"<p><a href="http://common-lisp.net/project/postmodern/">Postmodern</a> is a Common Lisp library for interacting with PostgreSQL. It uses the <a href="http://www.postgresql.org/docs/8.2/static/protocol.html">frontend/backend protocol</a> to communicate directly with PostgreSQL over a TCP/IP socket. Features include:</p>
+<ul>
+<li>Efficient communication with the database server without need for foreign libraries.</li>
+<li>Support for UTF-8 on Unicode-aware Lisp implementations.</li>
+<li>A lispy syntax for expressing SQL queries.</li>
+<li>Convenient support for prepared statements and stored procedures.</li>
+<li>Defclass-like definition of tables and associated accessor classes.</li>
+</ul>
+<p>For more details and downloads see <a href="http://common-lisp.net/project/postmodern/">http://common-lisp.net/project/postmodern/</a></p>
+<p><a href="http://pgedit.com/node/67">read more</a></p>";}i:2;a:6:{s:5:"title";s:52:"David Fetter: PostgreSQL Weekly News - April 15 2007";s:4:"guid";s:76:"http://people.planetpostgresql.org/dfetter/index.php?/archives/114-guid.html";s:4:"link";s:108:"http://people.planetpostgresql.org/dfetter/index.php?/archives/114-PostgreSQL-Weekly-News-April-15-2007.html";s:11:"description";s:1921:"<p><strong>PostgreSQL Weekly News - April 15 2007</strong></p>
+
+<p>Lots of lively discussions going on in this (we hope) brief<br />
+post-feature-freeze period.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>PgBouncer 1.0.6 released.<br />
+<a href="http://pgfoundry.org/projects/pgbouncer/">http://pgfoundry.org/projects/pgbouncer/</a></p>
+
+<p>PostgreSQL PHP Generator released.<br />
+<a href="http://www.sqlmaestro.com/products/postgresql/phpgenerator/">http://www.sqlmaestro.com/products/postgresql/phpgenerator/</a></p>
+
+<p>Skytools 2.1.3 released.<br />
+<a href="http://pgfoundry.org/projects/skytools/">http://pgfoundry.org/projects/skytools/</a></p>
+
+<p><strong>PostgreSQL Jobs for April</strong></p>
+
+<p><a href="http://archives.postgresql.org/pgsql-jobs/2007-04/threads.php">http://archives.postgresql.org/pgsql-jobs/2007-04/threads.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Get on the Road to PgDay!<br />
+<a href="http://www.pgday.it/en/node/95">http://www.pgday.it/en/node/95</a></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/114-PostgreSQL-Weekly-News-April-15-2007.html#extended">Continue reading "PostgreSQL Weekly News - April 15 2007"</a>";s:7:"pubdate";s:31:"Mon, 16 Apr 2007 03:27:35 +0000";s:7:"summary";s:1921:"<p><strong>PostgreSQL Weekly News - April 15 2007</strong></p>
+
+<p>Lots of lively discussions going on in this (we hope) brief<br />
+post-feature-freeze period.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>PgBouncer 1.0.6 released.<br />
+<a href="http://pgfoundry.org/projects/pgbouncer/">http://pgfoundry.org/projects/pgbouncer/</a></p>
+
+<p>PostgreSQL PHP Generator released.<br />
+<a href="http://www.sqlmaestro.com/products/postgresql/phpgenerator/">http://www.sqlmaestro.com/products/postgresql/phpgenerator/</a></p>
+
+<p>Skytools 2.1.3 released.<br />
+<a href="http://pgfoundry.org/projects/skytools/">http://pgfoundry.org/projects/skytools/</a></p>
+
+<p><strong>PostgreSQL Jobs for April</strong></p>
+
+<p><a href="http://archives.postgresql.org/pgsql-jobs/2007-04/threads.php">http://archives.postgresql.org/pgsql-jobs/2007-04/threads.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Get on the Road to PgDay!<br />
+<a href="http://www.pgday.it/en/node/95">http://www.pgday.it/en/node/95</a></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/114-PostgreSQL-Weekly-News-April-15-2007.html#extended">Continue reading "PostgreSQL Weekly News - April 15 2007"</a>";}i:3;a:6:{s:5:"title";s:36:"Robert Treat: Superstition suspicion";s:4:"guid";s:75:"http://people.planetpostgresql.org/xzilla/index.php?/archives/297-guid.html";s:4:"link";s:93:"http://people.planetpostgresql.org/xzilla/index.php?/archives/297-Superstition-suspicion.html";s:11:"description";s:2661:"So, today was <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2736&amp;entry_id=297" title="http://urbanlegends.about.com/cs/historical/a/friday_the_13th.htm">Friday the 13th</a>, which is a day that tends to strike fear in the hearts of many people. Personally I am not a very superstitious person, but I also don't spit in the eye of fate if I don't have to. In any case, AndrewSN made an interesting comment on IRC today how the 13th more often falls on Friday than any other day of the week.  A quick glance at this years calender did not bear that out, but AndrewSN is generally right about a lot of things so I thought a little SQL experiment was in order.   Basically all I needed to do was select all of the "13th days" for each month, and then count them based on which day of the week they were.  To get a fair comparison, I did it over a range of <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2737&amp;entry_id=297" title="http://www.merlyn.demon.co.uk/moredate.htm#GC">400 years</a>, and started in <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2738&amp;entry_id=297" title="http://www.ozdoba.net/swisswatch/year2000.html">the year 2000</a>. <br />
+<br />
+<div><code>pagila=# select extract(dow from mydate), to_char(mydate, 'DAY'), count(*) from <br />
+pagila=# (select ('2000-01-01'::date + x * '1 day'::interval) as mydate from (select generate_series as x from <br />
+pagila=# generate_series(0,365*400))x ) y where extract(day from mydate) = 13 group by extract(dow from mydate), <br />
+pagila=# to_char(mydate, 'DAY') order by 1;<br />
+ date_part |  to_char  | count<br />
+-----------+-----------+-------<br />
+         0 | SUNDAY    |   687<br />
+         1 | MONDAY    |   684<br />
+         2 | TUESDAY   |   685<br />
+         3 | WEDNESDAY |   686<br />
+         4 | THURSDAY  |   684<br />
+         5 | FRIDAY    |   688<br />
+         6 | SATURDAY  |   683<br />
+(7 rows)<br />
+Time: 769.227 ms<br />
+</code> </div><br />
+<br />
+Sure enough, Friday comes out way ahead.  One has to wonder if this is part of the reason for the success of this superstition, had they picked another date, maybe the lower frequency would have been an issue <img src="http://people.planetpostgresql.org/xzilla/templates/default/img/emoticons/smile.png" alt=":-)" class="emoticon" />  It makes me wonder if that other superstition really is true as well... you know, were they say if you think Friday the 13th is scary, wait until you see <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2739&amp;entry_id=297" title="http://www.imdb.com/title/tt0083033/">Saturday the 14th</a>.";s:7:"pubdate";s:31:"Sat, 14 Apr 2007 03:08:00 +0000";s:7:"summary";s:2661:"So, today was <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2736&amp;entry_id=297" title="http://urbanlegends.about.com/cs/historical/a/friday_the_13th.htm">Friday the 13th</a>, which is a day that tends to strike fear in the hearts of many people. Personally I am not a very superstitious person, but I also don't spit in the eye of fate if I don't have to. In any case, AndrewSN made an interesting comment on IRC today how the 13th more often falls on Friday than any other day of the week.  A quick glance at this years calender did not bear that out, but AndrewSN is generally right about a lot of things so I thought a little SQL experiment was in order.   Basically all I needed to do was select all of the "13th days" for each month, and then count them based on which day of the week they were.  To get a fair comparison, I did it over a range of <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2737&amp;entry_id=297" title="http://www.merlyn.demon.co.uk/moredate.htm#GC">400 years</a>, and started in <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2738&amp;entry_id=297" title="http://www.ozdoba.net/swisswatch/year2000.html">the year 2000</a>. <br />
+<br />
+<div><code>pagila=# select extract(dow from mydate), to_char(mydate, 'DAY'), count(*) from <br />
+pagila=# (select ('2000-01-01'::date + x * '1 day'::interval) as mydate from (select generate_series as x from <br />
+pagila=# generate_series(0,365*400))x ) y where extract(day from mydate) = 13 group by extract(dow from mydate), <br />
+pagila=# to_char(mydate, 'DAY') order by 1;<br />
+ date_part |  to_char  | count<br />
+-----------+-----------+-------<br />
+         0 | SUNDAY    |   687<br />
+         1 | MONDAY    |   684<br />
+         2 | TUESDAY   |   685<br />
+         3 | WEDNESDAY |   686<br />
+         4 | THURSDAY  |   684<br />
+         5 | FRIDAY    |   688<br />
+         6 | SATURDAY  |   683<br />
+(7 rows)<br />
+Time: 769.227 ms<br />
+</code> </div><br />
+<br />
+Sure enough, Friday comes out way ahead.  One has to wonder if this is part of the reason for the success of this superstition, had they picked another date, maybe the lower frequency would have been an issue <img src="http://people.planetpostgresql.org/xzilla/templates/default/img/emoticons/smile.png" alt=":-)" class="emoticon" />  It makes me wonder if that other superstition really is true as well... you know, were they say if you think Friday the 13th is scary, wait until you see <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2739&amp;entry_id=297" title="http://www.imdb.com/title/tt0083033/">Saturday the 14th</a>.";}i:4;a:6:{s:5:"title";s:47:"Kenneth Downs: Andromeda Now Running on Windows";s:4:"guid";s:75:"http://people.planetpostgresql.org/kenneth/index.php?/archives/10-guid.html";s:4:"link";s:103:"http://people.planetpostgresql.org/kenneth/index.php?/archives/10-Andromeda-Now-Running-on-Windows.html";s:11:"description";s:836:"Andromeda is a database application toolset that targets PostgreSQL, and is written in PHP.  In the past couple of weeks we have made a few changes to get it running on Windows.  It is fully functional on a single workstation, but source and version control still need some code changes.<br />
+<br />
+The project home page is <br />
+<br />
+<a href="http://www.andromeda-project.org" title="http://www.andromeda-project.org">http://www.andromeda-project.org</a><br />
+<br />
+with a special page just for Windows installs:<br />
+<br />
+<a href="http://www.andromeda-project.org/pages/cms/Running+On-Windows " title="http://www.andromeda-project.org/pages/cms/Running+On-Windows ">http://www.andromeda-project.org/pages/cms/Running+On-Windows </a><br />
+<br />
+Hats off to the Postgres team for such a painless Postgres install on Windows!";s:7:"pubdate";s:31:"Fri, 13 Apr 2007 11:59:11 +0000";s:7:"summary";s:836:"Andromeda is a database application toolset that targets PostgreSQL, and is written in PHP.  In the past couple of weeks we have made a few changes to get it running on Windows.  It is fully functional on a single workstation, but source and version control still need some code changes.<br />
+<br />
+The project home page is <br />
+<br />
+<a href="http://www.andromeda-project.org" title="http://www.andromeda-project.org">http://www.andromeda-project.org</a><br />
+<br />
+with a special page just for Windows installs:<br />
+<br />
+<a href="http://www.andromeda-project.org/pages/cms/Running+On-Windows " title="http://www.andromeda-project.org/pages/cms/Running+On-Windows ">http://www.andromeda-project.org/pages/cms/Running+On-Windows </a><br />
+<br />
+Hats off to the Postgres team for such a painless Postgres install on Windows!";}i:5;a:6:{s:5:"title";s:49:"Stefan Kaltenbrunner: it's done - wwwmaster moved";s:4:"guid";s:64:"http://www.kaltenbrunner.cc/blog/index.php?/archives/9-guid.html";s:4:"link";s:84:"http://www.kaltenbrunner.cc/blog/index.php?/archives/9-its-done-wwwmaster-moved.html";s:11:"description";s:1396:"<p>well it's done ... <a href="http://wwwmaster.postgresql.org">wwwmaster.postgresql.org</a> has now moved to <a href="http://www.postgresql.org/about/servers">tribble</a>.<br />
+While the urgency on this move got bumped due to the weird mail/dns related issues we experienced on the old host we are getting some nice additional benefits from that exercise.</p>
+
+<p>The most important one is probably that we are now running on FreeBSD 6.2/amd64 instead of the more or less EOLed 4.11 we had before.</p>
+
+<p>Some other goodies/improvements we are getting from that move:</p>
+
+<p>*) up-to-date versions of the installed ports and packages<br />
+*) better integration into our monitoring<br />
+*) faster <a href="http://archives.postgresql.org/pgsql-www/2007-04/msg00042.php">site builds</a><br />
+*) no more weird DNS/mail related errors (at least we hope so)<br />
+*) better documentation of the system and the processes involved</p>
+
+<p>special thanks to <a href="http://people.planetpostgresql.org/mha/">magnus</a> for  checking the sitebuilds on the new box and fixing a few  longstanding bugs [<a href="http://gborg.postgresql.org/pipermail/pgweb-commits/2007-April/001621.html">1</a>,<a href="http://gborg.postgresql.org/pipermail/pgweb-commits/2007-April/001620.html"> 2</a>,<a href="http://gborg.postgresql.org/pipermail/pgweb-commits/2007-April/001619.html"> 3</a>] in the process ;-)</p>";s:7:"pubdate";s:31:"Fri, 13 Apr 2007 08:20:00 +0000";s:7:"summary";s:1396:"<p>well it's done ... <a href="http://wwwmaster.postgresql.org">wwwmaster.postgresql.org</a> has now moved to <a href="http://www.postgresql.org/about/servers">tribble</a>.<br />
+While the urgency on this move got bumped due to the weird mail/dns related issues we experienced on the old host we are getting some nice additional benefits from that exercise.</p>
+
+<p>The most important one is probably that we are now running on FreeBSD 6.2/amd64 instead of the more or less EOLed 4.11 we had before.</p>
+
+<p>Some other goodies/improvements we are getting from that move:</p>
+
+<p>*) up-to-date versions of the installed ports and packages<br />
+*) better integration into our monitoring<br />
+*) faster <a href="http://archives.postgresql.org/pgsql-www/2007-04/msg00042.php">site builds</a><br />
+*) no more weird DNS/mail related errors (at least we hope so)<br />
+*) better documentation of the system and the processes involved</p>
+
+<p>special thanks to <a href="http://people.planetpostgresql.org/mha/">magnus</a> for  checking the sitebuilds on the new box and fixing a few  longstanding bugs [<a href="http://gborg.postgresql.org/pipermail/pgweb-commits/2007-April/001621.html">1</a>,<a href="http://gborg.postgresql.org/pipermail/pgweb-commits/2007-April/001620.html"> 2</a>,<a href="http://gborg.postgresql.org/pipermail/pgweb-commits/2007-April/001619.html"> 3</a>] in the process ;-)</p>";}i:6;a:6:{s:5:"title";s:40:"Devrim Gündüz: Up2date news about RPMs";s:4:"guid";s:74:"http://people.planetpostgresql.org/devrim/index.php?/archives/92-guid.html";s:4:"link";s:93:"http://people.planetpostgresql.org/devrim/index.php?/archives/92-Up2date-news-about-RPMs.html";s:11:"description";s:935:"<br />
+ I just <a target="_blank" href="https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=235929">pushed</a> <a target="_blank" href="http://projects.commandprompt.com/public/odbcng/">ODBCng</a> to Fedora for review. I have submitted about 10 packages so far. Let's wait for review. orafce is also in my queue for Fedora (probably before the end of this week).<br /><p>Also, last weekend, I have released PostgreSQL 8.2.3 packages for RHEL 5 x86 and x86_64.</p><p>Another news is about SuSE PostgreSQL packages. Per some requests from me, I will be releasing PostgreSQL packages for  OpenSuSE and SLES . I will build 8.2 and 8.1 packages. <a href="ftp://ftp.suse.com/pub/projects/postgresql/" target="_blank">AFAICS</a>,SuSE packages are not up2date. Over the last week, I have done some initial work (not public) and built 8.2.3 packages; but I need to work more to make them closer to PGDG RPMs. <br /><br />Stay tuned.<br /> </p>";s:7:"pubdate";s:31:"Tue, 10 Apr 2007 20:54:03 +0000";s:7:"summary";s:935:"<br />
+ I just <a target="_blank" href="https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=235929">pushed</a> <a target="_blank" href="http://projects.commandprompt.com/public/odbcng/">ODBCng</a> to Fedora for review. I have submitted about 10 packages so far. Let's wait for review. orafce is also in my queue for Fedora (probably before the end of this week).<br /><p>Also, last weekend, I have released PostgreSQL 8.2.3 packages for RHEL 5 x86 and x86_64.</p><p>Another news is about SuSE PostgreSQL packages. Per some requests from me, I will be releasing PostgreSQL packages for  OpenSuSE and SLES . I will build 8.2 and 8.1 packages. <a href="ftp://ftp.suse.com/pub/projects/postgresql/" target="_blank">AFAICS</a>,SuSE packages are not up2date. Over the last week, I have done some initial work (not public) and built 8.2.3 packages; but I need to work more to make them closer to PGDG RPMs. <br /><br />Stay tuned.<br /> </p>";}i:7;a:6:{s:5:"title";s:52:"David Fetter: PostgreSQL Weekly News - April 08 2007";s:4:"guid";s:76:"http://people.planetpostgresql.org/dfetter/index.php?/archives/113-guid.html";s:4:"link";s:108:"http://people.planetpostgresql.org/dfetter/index.php?/archives/113-PostgreSQL-Weekly-News-April-08-2007.html";s:11:"description";s:2028:"<p><strong>PostgreSQL Weekly News - April 08 2007</strong></p>
+
+<p>Now that feature freeze has frozen, new revisions are getting<br />
+discussed in a lively fashion.</p>
+
+<p>Kudos to Tom Dunstan for the new enum types.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Another PostgreSQL Diff Tool 1.0.0_beta20 released.<br />
+<a href="http://pgfoundry.org/projects/apgdiff/">http://pgfoundry.org/projects/apgdiff/</a></p>
+
+<p>GNUmed 0.2.5 released<br />
+<a href="http://wiki.gnumed.de">http://wiki.gnumed.de</a></p>
+
+<p>LedgerSMB 1.2.0 released.<br />
+<a href="http://www.ledgersmb.org/">http://www.ledgersmb.org/</a></p>
+
+<p>pgAdmin packages for Solaris available<br />
+<a href="http://www.pgadmin.org/download/solaris.php">http://www.pgadmin.org/download/solaris.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Get on the Road to PgDay!<br />
+<a href="http://www.pgday.it/en/node/95">http://www.pgday.it/en/node/95</a></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Josh Berkus, David Fetter, Euler Taveira de Oliveira, Fernando Ike de<br />
+Olivera, and Fabio Telles will be speaking at FISL 8.0 in Porto<br />
+Alegre, RS, Brazil April 12-14</p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/113-PostgreSQL-Weekly-News-April-08-2007.html#extended">Continue reading "PostgreSQL Weekly News - April 08 2007"</a>";s:7:"pubdate";s:31:"Mon, 09 Apr 2007 03:24:47 +0000";s:7:"summary";s:2028:"<p><strong>PostgreSQL Weekly News - April 08 2007</strong></p>
+
+<p>Now that feature freeze has frozen, new revisions are getting<br />
+discussed in a lively fashion.</p>
+
+<p>Kudos to Tom Dunstan for the new enum types.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Another PostgreSQL Diff Tool 1.0.0_beta20 released.<br />
+<a href="http://pgfoundry.org/projects/apgdiff/">http://pgfoundry.org/projects/apgdiff/</a></p>
+
+<p>GNUmed 0.2.5 released<br />
+<a href="http://wiki.gnumed.de">http://wiki.gnumed.de</a></p>
+
+<p>LedgerSMB 1.2.0 released.<br />
+<a href="http://www.ledgersmb.org/">http://www.ledgersmb.org/</a></p>
+
+<p>pgAdmin packages for Solaris available<br />
+<a href="http://www.pgadmin.org/download/solaris.php">http://www.pgadmin.org/download/solaris.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Get on the Road to PgDay!<br />
+<a href="http://www.pgday.it/en/node/95">http://www.pgday.it/en/node/95</a></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Josh Berkus, David Fetter, Euler Taveira de Oliveira, Fernando Ike de<br />
+Olivera, and Fabio Telles will be speaking at FISL 8.0 in Porto<br />
+Alegre, RS, Brazil April 12-14</p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/113-PostgreSQL-Weekly-News-April-08-2007.html#extended">Continue reading "PostgreSQL Weekly News - April 08 2007"</a>";}i:8;a:6:{s:5:"title";s:22:"Andrew Dunstan: *ahem*";s:4:"guid";s:74:"http://people.planetpostgresql.org/andrew/index.php?/archives/21-guid.html";s:4:"link";s:74:"http://people.planetpostgresql.org/andrew/index.php?/archives/21-ahem.html";s:11:"description";s:393:"<img width="264" height="343" src="http://people.planetpostgresql.org/andrew/uploads/ADSouthPark2.png" alt="" /><br />
+<br />
+Here's a little image that my son Tom (author of the recently merged enums patch) just made. Guess who it's meant to be?<br />
+<br />
+He likes this one better than the earlier effort, so in deference to his artistic sensibilities I replaced the one I had here before.";s:7:"pubdate";s:31:"Fri, 06 Apr 2007 21:17:21 +0000";s:7:"summary";s:393:"<img width="264" height="343" src="http://people.planetpostgresql.org/andrew/uploads/ADSouthPark2.png" alt="" /><br />
+<br />
+Here's a little image that my son Tom (author of the recently merged enums patch) just made. Guess who it's meant to be?<br />
+<br />
+He likes this one better than the earlier effort, so in deference to his artistic sensibilities I replaced the one I had here before.";}i:9;a:6:{s:5:"title";s:36:"Joshua Drake: LedgerSMB 1.2 released";s:4:"guid";s:74:"http://people.planetpostgresql.org/joshua/index.php?/archives/19-guid.html";s:4:"link";s:92:"http://people.planetpostgresql.org/joshua/index.php?/archives/19-LedgerSMB-1.2-released.html";s:11:"description";s:288:"So what the heck is LedgerSMB? It is a PostgreSQL based (only) Open Source accounting system. It is a fork of SQL-Ledger making gratuitous use of security and usability fixes over the aforementioned product.<br />
+<br />
+Take a look... it is coming along nicely: http://www.ledgersmb.org/";s:7:"pubdate";s:31:"Thu, 05 Apr 2007 02:24:05 +0000";s:7:"summary";s:288:"So what the heck is LedgerSMB? It is a PostgreSQL based (only) Open Source accounting system. It is a fork of SQL-Ledger making gratuitous use of security and usability fixes over the aforementioned product.<br />
+<br />
+Take a look... it is coming along nicely: http://www.ledgersmb.org/";}i:10;a:6:{s:5:"title";s:47:"Paul Silveria: PostgreSQL Clusters with DRBD...";s:4:"guid";s:71:"http://people.planetpostgresql.org/paul/index.php?/archives/8-guid.html";s:4:"link";s:99:"http://people.planetpostgresql.org/paul/index.php?/archives/8-PostgreSQL-Clusters-with-DRBD....html";s:11:"description";s:602:"We have configured PostgreSQL 8.2 to use HA and DRBD(Network RAID1) and I have to be honest, it works really smoothly.  The management commands are not that difficult to learn and configuring it is only semi-painful.  All in all, this solution works pretty well.   Additionally, We have started using Zabbix to monitor our PostgreSQL Systems and it has a really good "Maps" that tell us how our clusters are running.  Like peanut butter and jelly. <img src="http://people.planetpostgresql.org/paul/templates/default/img/emoticons/smile.png" alt=":-)" class="emoticon" /><br />
+<br />
+-Paul<br />
+<br />";s:7:"pubdate";s:31:"Wed, 04 Apr 2007 21:00:43 +0000";s:7:"summary";s:602:"We have configured PostgreSQL 8.2 to use HA and DRBD(Network RAID1) and I have to be honest, it works really smoothly.  The management commands are not that difficult to learn and configuring it is only semi-painful.  All in all, this solution works pretty well.   Additionally, We have started using Zabbix to monitor our PostgreSQL Systems and it has a really good "Maps" that tell us how our clusters are running.  Like peanut butter and jelly. <img src="http://people.planetpostgresql.org/paul/templates/default/img/emoticons/smile.png" alt=":-)" class="emoticon" /><br />
+<br />
+-Paul<br />
+<br />";}i:11;a:6:{s:5:"title";s:70:"Robert Treat: Monthly log rotations with PostgreSQL's built in logging";s:4:"guid";s:75:"http://people.planetpostgresql.org/xzilla/index.php?/archives/295-guid.html";s:4:"link";s:126:"http://people.planetpostgresql.org/xzilla/index.php?/archives/295-Monthly-log-rotations-with-PostgreSQLs-built-in-logging.html";s:11:"description";s:1222:"Today on <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2729&amp;entry_id=295" title="http://www.postgresql.org/community/irc">IRC</a> I was trying to figure out a way to set up monthly log rotation using PostgreSQL's <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2730&amp;entry_id=295" title="http://www.postgresql.org/docs/current/interactive/runtime-config-logging.html#RUNTIME-CONFIG-LOGGING-WHERE">built in logging</a> system, and what we came up with was the following: <br />
+<br />
+<div><code>log_filename = 'postgresql-%Y-%m.log'<br />
+<br />
+log_truncate_on_rotation = off<br />
+<br />
+log_rotation_age = 1d<br />
+</code></div><br />
+<br />
+This will name the log files by year and month, will append to existing logfiles if they exist, and will attempt log rotation every day. This works fine for a monthly log rotation, since all of the days in April will want to use postgresql-2007-04.log, while May 1st will start writing into postgresql-2007-05.log. <br />
+<br />
+Thanks to oicu for help researching, with special hat tip to AndrewSN who guessed the right solution. I verified it by running the above setup but using an hourly rotation and 10 minute timeouts.<br />";s:7:"pubdate";s:31:"Tue, 03 Apr 2007 22:22:00 +0000";s:7:"summary";s:1222:"Today on <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2729&amp;entry_id=295" title="http://www.postgresql.org/community/irc">IRC</a> I was trying to figure out a way to set up monthly log rotation using PostgreSQL's <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2730&amp;entry_id=295" title="http://www.postgresql.org/docs/current/interactive/runtime-config-logging.html#RUNTIME-CONFIG-LOGGING-WHERE">built in logging</a> system, and what we came up with was the following: <br />
+<br />
+<div><code>log_filename = 'postgresql-%Y-%m.log'<br />
+<br />
+log_truncate_on_rotation = off<br />
+<br />
+log_rotation_age = 1d<br />
+</code></div><br />
+<br />
+This will name the log files by year and month, will append to existing logfiles if they exist, and will attempt log rotation every day. This works fine for a monthly log rotation, since all of the days in April will want to use postgresql-2007-04.log, while May 1st will start writing into postgresql-2007-05.log. <br />
+<br />
+Thanks to oicu for help researching, with special hat tip to AndrewSN who guessed the right solution. I verified it by running the above setup but using an hourly rotation and 10 minute timeouts.<br />";}i:12;a:6:{s:5:"title";s:46:"Kenneth Downs: Biz Rules for Automated Columns";s:4:"guid";s:74:"http://people.planetpostgresql.org/kenneth/index.php?/archives/9-guid.html";s:4:"link";s:101:"http://people.planetpostgresql.org/kenneth/index.php?/archives/9-Biz-Rules-for-Automated-Columns.html";s:11:"description";s:3517:"If a description of a database is going to be complete, it must include automated values.  If the automated columns are specified precisely (rather than in a vague natural language), then the spec can be used to build code that implements them.  <br />
+<br />
+In this entry I'd like to propose an answer to the basic question, "What do those specs look like?"  What kind of automations can we support and how do we specify them?  This is not about implementation, triggers vs. views or what kind of views, but about specification, stating where the values come from and what they attach to.<br />
+<br />
+Consider the basic English statement that a customer may not exceed their credit limit.  If we translate this into a spec, we know we have two numbers, a credit limit, and some quantity I'll call "exposure" that is the customer's total balance.  It seems clear enough that we are saying the one cannot exceed the other, but where exactly did the "exposure" come from?<br />
+<br />
+I would suggest first that "exposure" is in fact a property of a customer, and so must be specified as a column in the customers table.  As far as the formula for "exposure", we will push the problem back by proposing a simple expression.  "exposure" = "orders_total" + "invoices_total".  This leaves us needing to define the "orders_total" and "invoices_total", which it should be clear are also properties of the customer table.  <br />
+<br />
+There is no mystery in defining "invoices_total" as SUM("orders.open"), taking for granted that the "open" amount of orders is itself determined by the status of the order ("invoices_total" follows the same basic idea).  This simple example actually reveals the shape of all non-trivial calculations, because it does two crucial things.  First it assumes a mechanism for copying values from table to table, and second, it reveals a scheme for building complex calculations through composition.  <br />
+<br />
+First lets look at composition.  If we want to convert complex program code to database specifications, we must not only be able to reduce the code to its most elemental formulas, but we must also rebuild that complexity using nothing but individual column definitions.  Clearly the first of two sine qua nons is to be able to express one calculated column in terms of another.<br />
+<br />
+The second sine qua non is the ability to specify a meaningful way to copy values from one table to another.  This turns out to be the foreign key.  In simple cases of one foreign key between two tables, we can specify a variety of operations.  At SDS we give the names "FETCH" and "DISTRIBUTE" to mechanisms for copying data from parent to child, and the familiar functions SUM, COUNT, MIN, etc. are used to aggregate data to parents.  There are others as well, but all of them are variations or modifications of these basic operations.<br />
+<br />
+So it turns out that if we want to be able to specify calculations that go beyond simple row extensions, all we have to do is follow the foreign key.  This should come as no surprise.  After all, if we specify a database with the correct keys, then the user's requests for calculated values and constraints ought to find easy expression by copying values from table to table along foreign keys and building complexity through composition.<br />
+<br />
+<div></div><br />
+The topics discussed on Ken's blog usually are related to the Andromeda project, http://www.andromeda-project.org, a postgres-based PHP database application toolset.";s:7:"pubdate";s:31:"Tue, 03 Apr 2007 15:19:44 +0000";s:7:"summary";s:3517:"If a description of a database is going to be complete, it must include automated values.  If the automated columns are specified precisely (rather than in a vague natural language), then the spec can be used to build code that implements them.  <br />
+<br />
+In this entry I'd like to propose an answer to the basic question, "What do those specs look like?"  What kind of automations can we support and how do we specify them?  This is not about implementation, triggers vs. views or what kind of views, but about specification, stating where the values come from and what they attach to.<br />
+<br />
+Consider the basic English statement that a customer may not exceed their credit limit.  If we translate this into a spec, we know we have two numbers, a credit limit, and some quantity I'll call "exposure" that is the customer's total balance.  It seems clear enough that we are saying the one cannot exceed the other, but where exactly did the "exposure" come from?<br />
+<br />
+I would suggest first that "exposure" is in fact a property of a customer, and so must be specified as a column in the customers table.  As far as the formula for "exposure", we will push the problem back by proposing a simple expression.  "exposure" = "orders_total" + "invoices_total".  This leaves us needing to define the "orders_total" and "invoices_total", which it should be clear are also properties of the customer table.  <br />
+<br />
+There is no mystery in defining "invoices_total" as SUM("orders.open"), taking for granted that the "open" amount of orders is itself determined by the status of the order ("invoices_total" follows the same basic idea).  This simple example actually reveals the shape of all non-trivial calculations, because it does two crucial things.  First it assumes a mechanism for copying values from table to table, and second, it reveals a scheme for building complex calculations through composition.  <br />
+<br />
+First lets look at composition.  If we want to convert complex program code to database specifications, we must not only be able to reduce the code to its most elemental formulas, but we must also rebuild that complexity using nothing but individual column definitions.  Clearly the first of two sine qua nons is to be able to express one calculated column in terms of another.<br />
+<br />
+The second sine qua non is the ability to specify a meaningful way to copy values from one table to another.  This turns out to be the foreign key.  In simple cases of one foreign key between two tables, we can specify a variety of operations.  At SDS we give the names "FETCH" and "DISTRIBUTE" to mechanisms for copying data from parent to child, and the familiar functions SUM, COUNT, MIN, etc. are used to aggregate data to parents.  There are others as well, but all of them are variations or modifications of these basic operations.<br />
+<br />
+So it turns out that if we want to be able to specify calculations that go beyond simple row extensions, all we have to do is follow the foreign key.  This should come as no surprise.  After all, if we specify a database with the correct keys, then the user's requests for calculated values and constraints ought to find easy expression by copying values from table to table along foreign keys and building complexity through composition.<br />
+<br />
+<div></div><br />
+The topics discussed on Ken's blog usually are related to the Andromeda project, http://www.andromeda-project.org, a postgres-based PHP database application toolset.";}i:13;a:6:{s:5:"title";s:51:"David Fetter: PostgreSQL Daily News - April 01 2007";s:4:"guid";s:76:"http://people.planetpostgresql.org/dfetter/index.php?/archives/112-guid.html";s:4:"link";s:107:"http://people.planetpostgresql.org/dfetter/index.php?/archives/112-PostgreSQL-Daily-News-April-01-2007.html";s:11:"description";s:1692:"<p><strong>PostgreSQL Daily News - April 01 2007</strong></p>
+
+<p>PostgreSQL 10.0, now called PREGRES, was released today.  Some new<br />
+features include:</p>
+
+<p>- Close integration with libdwim.</p>
+
+<p>- De-supporting SQL.  Postgres will now use POSTQUEL exclusively.<br />
+  &quot;Eleven years of SQL is enough,&quot; said Bruce Momjian,  &quot;It's time to<br />
+  get back to our roots.&quot;</p>
+
+<p>- A new table type: PgISAM.  Rather than using the cumbersome and<br />
+  complicated MVCC model, it simply acquires global database locks on<br />
+  read and write.  &quot;It took ten years to create a benchmark that would<br />
+  make this one look good,&quot; said Peter Eisentraut, in explanation for<br />
+  the delay.</p>
+
+<p>Devrim GUNDUZ has left Command Prompt for Oracle.  &quot;I sold my soul for<br />
+money,&quot; he cackled.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Products?  We don't need no steenkin' products!</p>
+
+<p><strong>PostgreSQL Jobs for April</strong></p>
+
+<p><a href="http://tbe.taleo.net/NA3/ats/careers/searchResults.jsp?org=MYSQL&amp;cws=1">http://tbe.taleo.net/NA3/ats/careers/searchResults.jsp?org=MYSQL&amp;cws=1</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>PostgreSQL 10.0 is the new engine for all of Microsoft's operations.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/112-PostgreSQL-Daily-News-April-01-2007.html#extended">Continue reading "PostgreSQL Daily News - April 01 2007"</a>";s:7:"pubdate";s:31:"Mon, 02 Apr 2007 01:35:58 +0000";s:7:"summary";s:1692:"<p><strong>PostgreSQL Daily News - April 01 2007</strong></p>
+
+<p>PostgreSQL 10.0, now called PREGRES, was released today.  Some new<br />
+features include:</p>
+
+<p>- Close integration with libdwim.</p>
+
+<p>- De-supporting SQL.  Postgres will now use POSTQUEL exclusively.<br />
+  &quot;Eleven years of SQL is enough,&quot; said Bruce Momjian,  &quot;It's time to<br />
+  get back to our roots.&quot;</p>
+
+<p>- A new table type: PgISAM.  Rather than using the cumbersome and<br />
+  complicated MVCC model, it simply acquires global database locks on<br />
+  read and write.  &quot;It took ten years to create a benchmark that would<br />
+  make this one look good,&quot; said Peter Eisentraut, in explanation for<br />
+  the delay.</p>
+
+<p>Devrim GUNDUZ has left Command Prompt for Oracle.  &quot;I sold my soul for<br />
+money,&quot; he cackled.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Products?  We don't need no steenkin' products!</p>
+
+<p><strong>PostgreSQL Jobs for April</strong></p>
+
+<p><a href="http://tbe.taleo.net/NA3/ats/careers/searchResults.jsp?org=MYSQL&amp;cws=1">http://tbe.taleo.net/NA3/ats/careers/searchResults.jsp?org=MYSQL&amp;cws=1</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>PostgreSQL 10.0 is the new engine for all of Microsoft's operations.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/112-PostgreSQL-Daily-News-April-01-2007.html#extended">Continue reading "PostgreSQL Daily News - April 01 2007"</a>";}i:14;a:6:{s:5:"title";s:52:"David Fetter: PostgreSQL Weekly News - March 31 2007";s:4:"guid";s:76:"http://people.planetpostgresql.org/dfetter/index.php?/archives/111-guid.html";s:4:"link";s:108:"http://people.planetpostgresql.org/dfetter/index.php?/archives/111-PostgreSQL-Weekly-News-March-31-2007.html";s:11:"description";s:2217:"<p><strong>PostgreSQL Weekly News - March 31 2007</strong></p>
+
+<p>As usual before feature freeze, a flurry of patches and discussion<br />
+around same has been going on.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Echoping 6 now has a PostgreSQL plugin.<br />
+<a href="http://echoping.sourceforge.net/">http://echoping.sourceforge.net/</a></p>
+
+<p>Devrim GUNDUZ pushed pgfouine, phpPgAdmin and python-psycopg to EPEL.<br />
+Both RHEL 4 and RHEL 5 users can download these new packages<br />
+<a href="http://download.fedora.redhat.com/pub/epel/">http://download.fedora.redhat.com/pub/epel/</a></p>
+
+<p>pagila-0.9.0 released.<br />
+<a href="http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570">http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570</a></p>
+
+<p>pgAdmin3 1.6.3 released.<br />
+<a href="http://www.pgadmin.org/download/">http://www.pgadmin.org/download/</a></p>
+
+<p>pgFouine 1.0 released.<br />
+<a href="http://pgfouine.projects.postgresql.org/">http://pgfouine.projects.postgresql.org/</a></p>
+
+<p><strong>PostgreSQL Jobs for March</strong></p>
+
+<p><a href="http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php">http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter,<br />
+Devrim GUNDUZ, and Robert Treat.</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/111-PostgreSQL-Weekly-News-March-31-2007.html#extended">Continue reading "PostgreSQL Weekly News - March 31 2007"</a>";s:7:"pubdate";s:31:"Sun, 01 Apr 2007 06:02:25 +0000";s:7:"summary";s:2217:"<p><strong>PostgreSQL Weekly News - March 31 2007</strong></p>
+
+<p>As usual before feature freeze, a flurry of patches and discussion<br />
+around same has been going on.</p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Echoping 6 now has a PostgreSQL plugin.<br />
+<a href="http://echoping.sourceforge.net/">http://echoping.sourceforge.net/</a></p>
+
+<p>Devrim GUNDUZ pushed pgfouine, phpPgAdmin and python-psycopg to EPEL.<br />
+Both RHEL 4 and RHEL 5 users can download these new packages<br />
+<a href="http://download.fedora.redhat.com/pub/epel/">http://download.fedora.redhat.com/pub/epel/</a></p>
+
+<p>pagila-0.9.0 released.<br />
+<a href="http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570">http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570</a></p>
+
+<p>pgAdmin3 1.6.3 released.<br />
+<a href="http://www.pgadmin.org/download/">http://www.pgadmin.org/download/</a></p>
+
+<p>pgFouine 1.0 released.<br />
+<a href="http://pgfouine.projects.postgresql.org/">http://pgfouine.projects.postgresql.org/</a></p>
+
+<p><strong>PostgreSQL Jobs for March</strong></p>
+
+<p><a href="http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php">http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Registration is open for PGCon 2007<br />
+<a href="http://www.pgcon.org/2007/registration.php">http://www.pgcon.org/2007/registration.php</a></p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter,<br />
+Devrim GUNDUZ, and Robert Treat.</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/111-PostgreSQL-Weekly-News-March-31-2007.html#extended">Continue reading "PostgreSQL Weekly News - March 31 2007"</a>";}i:15;a:6:{s:5:"title";s:35:"Robert Treat: pagila-0.9.0 Released";s:4:"guid";s:75:"http://people.planetpostgresql.org/xzilla/index.php?/archives/294-guid.html";s:4:"link";s:92:"http://people.planetpostgresql.org/xzilla/index.php?/archives/294-pagila-0.9.0-Released.html";s:11:"description";s:912:"A new version of Pagila, the postgresql sample database, has been released. The new version of the schema includes a partitioned table implementation using PostgreSQL's inheritence feature and rule system. You can download a copy of the database at <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3BnZm91bmRyeS5vcmcvZnJzLz9ncm91cF9pZD0xMDAwMTUwJnJlbGVhc2VfaWQ9NTcw&amp;entry_id=294" title="http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570">http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570</a><br />
+<br />
+Pagila is a fork of the MySQL "sakila" database, and is designed to show off features and implementation aspects of PostgreSQL. The current schema contains features including Views, Triggers, Functions, Table Partitioning and more.  It is made available under a BSD license, and it's use is encouraged in articles, tutorials, and other example literature.";s:7:"pubdate";s:31:"Sat, 31 Mar 2007 04:51:50 +0000";s:7:"summary";s:912:"A new version of Pagila, the postgresql sample database, has been released. The new version of the schema includes a partitioned table implementation using PostgreSQL's inheritence feature and rule system. You can download a copy of the database at <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3BnZm91bmRyeS5vcmcvZnJzLz9ncm91cF9pZD0xMDAwMTUwJnJlbGVhc2VfaWQ9NTcw&amp;entry_id=294" title="http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570">http://pgfoundry.org/frs/?group_id=1000150&amp;release_id=570</a><br />
+<br />
+Pagila is a fork of the MySQL "sakila" database, and is designed to show off features and implementation aspects of PostgreSQL. The current schema contains features including Views, Triggers, Functions, Table Partitioning and more.  It is made available under a BSD license, and it's use is encouraged in articles, tutorials, and other example literature.";}i:16;a:6:{s:5:"title";s:41:"Magnus Hagander: Pginstaller with msbuild";s:4:"guid";s:72:"http://people.planetpostgresql.org/mha/index.php?/archives/145-guid.html";s:4:"link";s:92:"http://people.planetpostgresql.org/mha/index.php?/archives/145-Pginstaller-with-msbuild.html";s:11:"description";s:2215:"As of yesterday, msys/mingw is no longer used to build the CVS tip of <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=223&amp;entry_id=145" title="http://pgfoundry.org/projects/pginstaller">pginstaller</a>. Instead, it builds completely using the tools of Visual Studio 2005. This includes both the actual installer, and the custom actions written in C. There is no change to the actual installer, it's still built using <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=224&amp;entry_id=145" title="http://wix.sourceforge.net">WiX</a> based on the same files, and the DLLs are built from the same source code (except for a few compatibility fixes).<br />
+<br />
+The build system for the pginstaller is fairly complex. Or at least, it's fairly weird. Mainly because of the need to deal with the translations, which are applied by first generating complete installers in different languages (which in turn is done by rewriting the whole source code and replacing translatable strings) and then doing a "binary diff" between them, which is finally embedded in the main installer.<br />
+<br />
+The drug of choice for this rewrite is <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=225&amp;entry_id=145" title="http://msdn2.microsoft.com/en-us/library/wea2sca5.aspx">msbuild</a>. While primarily geared for building managed code (that's Microsoft-speak for .Net code), it can be a pretty good Makefile replacement. While it can't do everything that your typical unix makefile can do (given that it can't run arbitrary commands), it has some good features for dealing with just the situation we have with our language code. Check it out - it's all in the <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=226&amp;entry_id=145" title="http://cvs.pgfoundry.org/cgi-bin/cvsweb.cgi/pginstaller/pginst/">pginstaller cvs</a>. It's always a matter of taste which is cleaner - I personally find the msbuild code a bit more readable.<br />
+<br />
+The best news is definitely that there is no need for a msys/mingw installation to build it anymore. And if it's used to create an installer for the msvc build of the backend, there's no need for msys/mingw at all anymore.";s:7:"pubdate";s:31:"Thu, 29 Mar 2007 18:53:26 +0000";s:7:"summary";s:2215:"As of yesterday, msys/mingw is no longer used to build the CVS tip of <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=223&amp;entry_id=145" title="http://pgfoundry.org/projects/pginstaller">pginstaller</a>. Instead, it builds completely using the tools of Visual Studio 2005. This includes both the actual installer, and the custom actions written in C. There is no change to the actual installer, it's still built using <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=224&amp;entry_id=145" title="http://wix.sourceforge.net">WiX</a> based on the same files, and the DLLs are built from the same source code (except for a few compatibility fixes).<br />
+<br />
+The build system for the pginstaller is fairly complex. Or at least, it's fairly weird. Mainly because of the need to deal with the translations, which are applied by first generating complete installers in different languages (which in turn is done by rewriting the whole source code and replacing translatable strings) and then doing a "binary diff" between them, which is finally embedded in the main installer.<br />
+<br />
+The drug of choice for this rewrite is <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=225&amp;entry_id=145" title="http://msdn2.microsoft.com/en-us/library/wea2sca5.aspx">msbuild</a>. While primarily geared for building managed code (that's Microsoft-speak for .Net code), it can be a pretty good Makefile replacement. While it can't do everything that your typical unix makefile can do (given that it can't run arbitrary commands), it has some good features for dealing with just the situation we have with our language code. Check it out - it's all in the <a href="http://people.planetpostgresql.org/mha/exit.php?url_id=226&amp;entry_id=145" title="http://cvs.pgfoundry.org/cgi-bin/cvsweb.cgi/pginstaller/pginst/">pginstaller cvs</a>. It's always a matter of taste which is cleaner - I personally find the msbuild code a bit more readable.<br />
+<br />
+The best news is definitely that there is no need for a msys/mingw installation to build it anymore. And if it's used to create an installer for the msvc build of the backend, there's no need for msys/mingw at all anymore.";}i:17;a:6:{s:5:"title";s:49:"David Wheeler: PostgreSQL Warm Standby Using Ruby";s:4:"guid";s:80:"http://www.justatheory.com/computers/databases/postgresql/ruby_warm_standby.html";s:4:"link";s:80:"http://www.justatheory.com/computers/databases/postgresql/ruby_warm_standby.html";s:11:"description";s:2032:"<p>The new PostgreSQL <a href="http://www.postgresql.org/docs/8.2/static/warm-standby.html">Warm Standby</a> support is pretty nice. Since my app doesn&#x2019;t currently require  read access to a slave database, I&#x2019;ve dumped Slony-I (and all of the <a href="http://www.justatheory.com/computers/databases/postgresql/rails_and_slony.html">headache</a> that went with it), and now have a warm failover server being updated a least once per minute. W00t!</p>
+
+<p>I used <a href="http://archives.postgresql.org/sydpug/2006-10/msg00001.php">Charles Duffy&#x2019;s</a> example, as well as the documentation, to build my warm standby configuration, but unfortunately, our server OS does not have the <code>usleep</code> utility, so rather than have 1 second sleeps, I ported Charles&#x2019;s shell script to Ruby. Here it is for your enjoyment:</p>
+
+<pre>
+#!/usr/bin/env ruby
+
+DELAY         = 0.01
+FAILOVER_FILE = &quot;/path/to/failover&quot;
+
+@@triggered = false
+
+require &#x2018;ftools&#x2019;
+
+def move (from, to)
+  # Do not overwrite! Throws an exception on failure, existing the script.
+  File.copy( from, to ) unless @@triggered || File.exists?( to )
+end
+
+from, to = ARGV
+
+# If PostgreSQL is asking for .history, just try to move it and exit.
+if from =~ /\.history$/
+  move from, to
+  exit
+end
+
+# Sleep while waiting for the file.
+while !File.exists?(from) &amp;&amp; !@@triggered
+  sleep DELAY
+  @@triggered = true if File.exists?( FAILOVER_FILE )
+end
+
+# Move the file.
+move from, to
+</pre>
+
+<p>Just change the <code>DELAY</code> value to the number of seconds you want to sleep, and the <code>FAILOVER_FILE</code> value to the location of a file that will trigger a failover.</p>
+
+<p>This is all well and good, but I ultimately ended up using the <code>pg_standby</code> utility that&#x2019;s a new contrib utility in PostgreSQL CVS (and will therefore ship with 8.3), as it has the nice feature of cleaning up old WAL log files. It also does not have subsecond precision, but hey, maybe we don&#x2019;t really need it.</p>";s:7:"pubdate";s:31:"Thu, 29 Mar 2007 00:44:00 +0000";s:7:"summary";s:2032:"<p>The new PostgreSQL <a href="http://www.postgresql.org/docs/8.2/static/warm-standby.html">Warm Standby</a> support is pretty nice. Since my app doesn&#x2019;t currently require  read access to a slave database, I&#x2019;ve dumped Slony-I (and all of the <a href="http://www.justatheory.com/computers/databases/postgresql/rails_and_slony.html">headache</a> that went with it), and now have a warm failover server being updated a least once per minute. W00t!</p>
+
+<p>I used <a href="http://archives.postgresql.org/sydpug/2006-10/msg00001.php">Charles Duffy&#x2019;s</a> example, as well as the documentation, to build my warm standby configuration, but unfortunately, our server OS does not have the <code>usleep</code> utility, so rather than have 1 second sleeps, I ported Charles&#x2019;s shell script to Ruby. Here it is for your enjoyment:</p>
+
+<pre>
+#!/usr/bin/env ruby
+
+DELAY         = 0.01
+FAILOVER_FILE = &quot;/path/to/failover&quot;
+
+@@triggered = false
+
+require &#x2018;ftools&#x2019;
+
+def move (from, to)
+  # Do not overwrite! Throws an exception on failure, existing the script.
+  File.copy( from, to ) unless @@triggered || File.exists?( to )
+end
+
+from, to = ARGV
+
+# If PostgreSQL is asking for .history, just try to move it and exit.
+if from =~ /\.history$/
+  move from, to
+  exit
+end
+
+# Sleep while waiting for the file.
+while !File.exists?(from) &amp;&amp; !@@triggered
+  sleep DELAY
+  @@triggered = true if File.exists?( FAILOVER_FILE )
+end
+
+# Move the file.
+move from, to
+</pre>
+
+<p>Just change the <code>DELAY</code> value to the number of seconds you want to sleep, and the <code>FAILOVER_FILE</code> value to the location of a file that will trigger a failover.</p>
+
+<p>This is all well and good, but I ultimately ended up using the <code>pg_standby</code> utility that&#x2019;s a new contrib utility in PostgreSQL CVS (and will therefore ship with 8.3), as it has the nice feature of cleaning up old WAL log files. It also does not have subsecond precision, but hey, maybe we don&#x2019;t really need it.</p>";}i:18;a:6:{s:5:"title";s:59:"Joshua Drake: PostgreSQL Party! July 22 @ OSCON in Portland";s:4:"guid";s:74:"http://people.planetpostgresql.org/joshua/index.php?/archives/18-guid.html";s:4:"link";s:113:"http://people.planetpostgresql.org/joshua/index.php?/archives/18-PostgreSQL-Party!-July-22-OSCON-in-Portland.html";s:11:"description";s:1100:"We are planning a PostgreSQL party for the weekend before OSCON in<br />
+Portland Oregon. The 22nd is a Sunday, with OSCON beginning on the 23rd<br />
+which is Monday. Although the exact venue has not been decided it will<br />
+likely be a hotel near the convention center.<br />
+<br />
+We are also reaching out to other communities, such as Python, Django,<br />
+PHP, LedgerSMB etc... If you are a FOSS member with ties to a community<br />
+that utilizes or supports our database, you are invited!<br />
+<br />
+Some outstanding questions:<br />
+<br />
+There will be food.<br />
+There will be adult entertainment of the liquid variety.<br />
+<br />
+If you are interested in attending please submit an RSVP to:<br />
+<br />
+register @> postgresqlparty.org<br />
+<br />
+Full Name<br />
+Email<br />
+Company (if you are representing)<br />
+<br />
+Would be appreciated.<br />
+<br />
+Sincerely,<br />
+<br />
+Joshua D. Drake<br />
+<br />
+P.S. There might be a nominal door charge (5.00) to help offset costs<br />
+any excess would of course be donated directly to the PostgreSQL project.<br />
+<br />
+<br />";s:7:"pubdate";s:31:"Wed, 28 Mar 2007 03:33:28 +0000";s:7:"summary";s:1100:"We are planning a PostgreSQL party for the weekend before OSCON in<br />
+Portland Oregon. The 22nd is a Sunday, with OSCON beginning on the 23rd<br />
+which is Monday. Although the exact venue has not been decided it will<br />
+likely be a hotel near the convention center.<br />
+<br />
+We are also reaching out to other communities, such as Python, Django,<br />
+PHP, LedgerSMB etc... If you are a FOSS member with ties to a community<br />
+that utilizes or supports our database, you are invited!<br />
+<br />
+Some outstanding questions:<br />
+<br />
+There will be food.<br />
+There will be adult entertainment of the liquid variety.<br />
+<br />
+If you are interested in attending please submit an RSVP to:<br />
+<br />
+register @> postgresqlparty.org<br />
+<br />
+Full Name<br />
+Email<br />
+Company (if you are representing)<br />
+<br />
+Would be appreciated.<br />
+<br />
+Sincerely,<br />
+<br />
+Joshua D. Drake<br />
+<br />
+P.S. There might be a nominal door charge (5.00) to help offset costs<br />
+any excess would of course be donated directly to the PostgreSQL project.<br />
+<br />
+<br />";}i:19;a:6:{s:5:"title";s:41:"Robert Treat: 8.2.3 stats bug and Solaris";s:4:"guid";s:75:"http://people.planetpostgresql.org/xzilla/index.php?/archives/293-guid.html";s:4:"link";s:98:"http://people.planetpostgresql.org/xzilla/index.php?/archives/293-8.2.3-stats-bug-and-Solaris.html";s:11:"description";s:4695:"I've been following reports of the 8.2.3 statistics bug for a few weeks now, mainly with intrest/concern as we run some 8.2.3 databases at <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3d3dy5vbW5pdGkuY29tL2hvbWU=&amp;entry_id=293" title="http://www.omniti.com/home">OmniTI</a>. The reports all seemed reasonable (see emails <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMi9tc2cwMTc1MS5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-02/msg01751.php">here</a>, <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMi9tc2cwMTkwMi5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-02/msg01902.php">here</a>, and <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMy9tc2cwMDA2OC5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-03/msg00068.php">here</a>), but it seemed odd because I haven't experienced such pains myself. I was kind of chalking it up to our 8.2.3 instances just not being heavily taxed (they can't all be TB databases <img src="http://people.planetpostgresql.org/xzilla/templates/default/img/emoticons/wink.png" alt=";-)" class="emoticon" /> ), but with some people <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMy9tc2cwMTUyOS5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-03/msg01529.php">swearing off the 8.2 branch</a> until this gets fixed, I thought it might be worth a closer look to make sure of what was going on.  I don't have answers per say, but I do have some information... I ran a few tests on our machines that run Solaris and PostgreSQL (compiled with Sun Studio, not GCC):<br />
+<br />
+<div><code>the test that <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3Blb3BsZS5wbGFuZXRwb3N0Z3Jlc3FsLm9yZy9qb3NodWEv&amp;entry_id=293" title="http://people.planetpostgresql.org/joshua/">Joshua Drake</a> used:<br />
+bash-3.00$ time for i in `bin/psql -d postgres -c "select<br />
+generate_series(1,10000)"`; do bin/psql -d postgres -qc "select 1<br />
+from pg_database where datname = 'postgres'"; done;<br />
+</code></div><br />
+Of course, this is Solaris, so I poked <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3d3dy5sZXRoYXJneS5vcmcvfmplc3VzLw==&amp;entry_id=293" title="http://www.lethargy.org/~jesus/">Theo</a> for some dtrace-fu, and (in the end) got the following results:<br />
+<div><code>bash-3.00# /usr/sbin/dtrace -n 'syscall:::entry/pid==22260/{@a[probefunc]=count();}'<br />
+dtrace: description 'syscall:::entry' matched 229 probes<br />
+^C<br />
+  close                                               10717<br />
+  getpid                                              10717<br />
+  ioctl                                               10717<br />
+  lwp_sigmask                                         10717<br />
+  open                                                10717<br />
+  rename                                              10717<br />
+  setcontext                                          10717<br />
+  setitimer                                           10717<br />
+  fstat                                               21434<br />
+  write                                               21434<br />
+  recv                                                80650<br />
+  pollsys                                             91336<br />
+</code></div><br />
+The first couple times I did this with a lower number of calls (1000 range) the numbers didnt seem so bad, but the ratio looked sketchy so I kicked it up a notch to get a better reproduction and sure enough, they start to look at lot like those reports on -hackers.  This makes more sense as the bug in question isn't something that should be able to be optimized away. <br />
+<br />
+So what does this mean?  I dunno... if you do a fair amount of testing to make sure your servers can handle the load you're going to be putting on them, I don't see much reason to avoid 8.2.3 (Again, our boxes are humming along fine).  Even if you think this will cause you a performance issue, testing your schema and application against any of the 8.2.x branch is a good way to spend time while you wait for 8.2.4 (the fix is in CVS now, so we should see a released fix soon), and in many cases resolving those types of fixes are generally more time consuming anyway.<br />";s:7:"pubdate";s:31:"Tue, 27 Mar 2007 16:53:00 +0000";s:7:"summary";s:4695:"I've been following reports of the 8.2.3 statistics bug for a few weeks now, mainly with intrest/concern as we run some 8.2.3 databases at <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3d3dy5vbW5pdGkuY29tL2hvbWU=&amp;entry_id=293" title="http://www.omniti.com/home">OmniTI</a>. The reports all seemed reasonable (see emails <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMi9tc2cwMTc1MS5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-02/msg01751.php">here</a>, <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMi9tc2cwMTkwMi5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-02/msg01902.php">here</a>, and <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMy9tc2cwMDA2OC5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-03/msg00068.php">here</a>), but it seemed odd because I haven't experienced such pains myself. I was kind of chalking it up to our 8.2.3 instances just not being heavily taxed (they can't all be TB databases <img src="http://people.planetpostgresql.org/xzilla/templates/default/img/emoticons/wink.png" alt=";-)" class="emoticon" /> ), but with some people <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL2FyY2hpdmVzLnBvc3RncmVzcWwub3JnL3Bnc3FsLWhhY2tlcnMvMjAwNy0wMy9tc2cwMTUyOS5waHA=&amp;entry_id=293" title="http://archives.postgresql.org/pgsql-hackers/2007-03/msg01529.php">swearing off the 8.2 branch</a> until this gets fixed, I thought it might be worth a closer look to make sure of what was going on.  I don't have answers per say, but I do have some information... I ran a few tests on our machines that run Solaris and PostgreSQL (compiled with Sun Studio, not GCC):<br />
+<br />
+<div><code>the test that <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3Blb3BsZS5wbGFuZXRwb3N0Z3Jlc3FsLm9yZy9qb3NodWEv&amp;entry_id=293" title="http://people.planetpostgresql.org/joshua/">Joshua Drake</a> used:<br />
+bash-3.00$ time for i in `bin/psql -d postgres -c "select<br />
+generate_series(1,10000)"`; do bin/psql -d postgres -qc "select 1<br />
+from pg_database where datname = 'postgres'"; done;<br />
+</code></div><br />
+Of course, this is Solaris, so I poked <a href="http://people.planetpostgresql.org/xzilla/exit.php?url=aHR0cDovL3d3dy5sZXRoYXJneS5vcmcvfmplc3VzLw==&amp;entry_id=293" title="http://www.lethargy.org/~jesus/">Theo</a> for some dtrace-fu, and (in the end) got the following results:<br />
+<div><code>bash-3.00# /usr/sbin/dtrace -n 'syscall:::entry/pid==22260/{@a[probefunc]=count();}'<br />
+dtrace: description 'syscall:::entry' matched 229 probes<br />
+^C<br />
+  close                                               10717<br />
+  getpid                                              10717<br />
+  ioctl                                               10717<br />
+  lwp_sigmask                                         10717<br />
+  open                                                10717<br />
+  rename                                              10717<br />
+  setcontext                                          10717<br />
+  setitimer                                           10717<br />
+  fstat                                               21434<br />
+  write                                               21434<br />
+  recv                                                80650<br />
+  pollsys                                             91336<br />
+</code></div><br />
+The first couple times I did this with a lower number of calls (1000 range) the numbers didnt seem so bad, but the ratio looked sketchy so I kicked it up a notch to get a better reproduction and sure enough, they start to look at lot like those reports on -hackers.  This makes more sense as the bug in question isn't something that should be able to be optimized away. <br />
+<br />
+So what does this mean?  I dunno... if you do a fair amount of testing to make sure your servers can handle the load you're going to be putting on them, I don't see much reason to avoid 8.2.3 (Again, our boxes are humming along fine).  Even if you think this will cause you a performance issue, testing your schema and application against any of the 8.2.x branch is a good way to spend time while you wait for 8.2.4 (the fix is in CVS now, so we should see a released fix soon), and in many cases resolving those types of fixes are generally more time consuming anyway.<br />";}i:20;a:6:{s:5:"title";s:73:"Devrim Gündüz: 8.2.3 RPMs for RHEL 5 released + some other package news";s:4:"guid";s:74:"http://people.planetpostgresql.org/devrim/index.php?/archives/90-guid.html";s:4:"link";s:126:"http://people.planetpostgresql.org/devrim/index.php?/archives/90-8.2.3-RPMs-for-RHEL-5-released-+-some-other-package-news.html";s:11:"description";s:716:"<br />
+I have just uploaded PostgreSQL 8.2.3 RHEL5 RPMs to main FTP site. The<br />
+set includes a compat-4 RPM, so that you will not get dependency<br />
+errors. Please follow the regular major upgrade procedure while you are<br />
+upgrading from 8.1 set that is shipped with RHEL5.<br /><br />
+<br /><br />
+More news... I pushed my first package (postgresql-dbi-link) to EPEL.<br />
+EPEL is Enterprise Linux Extras. With EPEL, RHEL 4 and 5 users can<br />
+install more packages that are community-supported. I also submitted<br />
+for inclusion of postgis, pgFouine, phpPgAdmin, python-psycopg2 in EPEL.<br /><br />
+<br /><br />
+I hope to add more packages that will help RHEL/Fedora+PostgreSQL users.<br />
+<br />";s:7:"pubdate";s:31:"Tue, 27 Mar 2007 07:19:56 +0000";s:7:"summary";s:716:"<br />
+I have just uploaded PostgreSQL 8.2.3 RHEL5 RPMs to main FTP site. The<br />
+set includes a compat-4 RPM, so that you will not get dependency<br />
+errors. Please follow the regular major upgrade procedure while you are<br />
+upgrading from 8.1 set that is shipped with RHEL5.<br /><br />
+<br /><br />
+More news... I pushed my first package (postgresql-dbi-link) to EPEL.<br />
+EPEL is Enterprise Linux Extras. With EPEL, RHEL 4 and 5 users can<br />
+install more packages that are community-supported. I also submitted<br />
+for inclusion of postgis, pgFouine, phpPgAdmin, python-psycopg2 in EPEL.<br /><br />
+<br /><br />
+I hope to add more packages that will help RHEL/Fedora+PostgreSQL users.<br />
+<br />";}i:21;a:6:{s:5:"title";s:43:"David Wheeler: Rails Migrations with Slony?";s:4:"guid";s:78:"http://www.justatheory.com/computers/databases/postgresql/rails_and_slony.html";s:4:"link";s:78:"http://www.justatheory.com/computers/databases/postgresql/rails_and_slony.html";s:11:"description";s:1299:"<p>The new app I&#x2019;m developing is written in Ruby on Rails and runs on PostgreSQL. We&#x2019;re replicating our production database using <a href="http://slony.info/" title="Slony-I PostgreSQL Replication">Slony-I</a>, but we&#x2019;ve run into a bit of a snag: database schema updates must be run as plain SQL through a Slony script in order to ensure proper replication of the schema changes within a transaction, but Rails migrations run as Ruby code updating the database via the Rails database adapter.</p>
+
+<p>So how do others handle Rails migrations with their Slony-I replication setups? How do you update the Slony-I configuration file for the changes? How do you synchronize changes to the master schema out to the slaves? Do you shut down your apps, shut down Slony-I, make the schema changes to both the master and the slaves, and then restart Slony-I and your apps?</p>
+
+<p>For that matter, people running Slony for their Bricolage databases must have the same issue, because the Bricolage upgrade scripts are just Perl using the DBI, not SQL files. Can anyone shed a little light on this for me?</p>
+
+<p>Oh, and one last question: Why is this such a PITA? Can&#x2019;t we have decent replication that replicates <em>everything</em>, including schema changes? <em>Please?</em></p>";s:7:"pubdate";s:31:"Mon, 26 Mar 2007 14:53:00 +0000";s:7:"summary";s:1299:"<p>The new app I&#x2019;m developing is written in Ruby on Rails and runs on PostgreSQL. We&#x2019;re replicating our production database using <a href="http://slony.info/" title="Slony-I PostgreSQL Replication">Slony-I</a>, but we&#x2019;ve run into a bit of a snag: database schema updates must be run as plain SQL through a Slony script in order to ensure proper replication of the schema changes within a transaction, but Rails migrations run as Ruby code updating the database via the Rails database adapter.</p>
+
+<p>So how do others handle Rails migrations with their Slony-I replication setups? How do you update the Slony-I configuration file for the changes? How do you synchronize changes to the master schema out to the slaves? Do you shut down your apps, shut down Slony-I, make the schema changes to both the master and the slaves, and then restart Slony-I and your apps?</p>
+
+<p>For that matter, people running Slony for their Bricolage databases must have the same issue, because the Bricolage upgrade scripts are just Perl using the DBI, not SQL files. Can anyone shed a little light on this for me?</p>
+
+<p>Oh, and one last question: Why is this such a PITA? Can&#x2019;t we have decent replication that replicates <em>everything</em>, including schema changes? <em>Please?</em></p>";}i:22;a:6:{s:5:"title";s:52:"David Fetter: PostgreSQL Weekly News - March 25 2007";s:4:"guid";s:76:"http://people.planetpostgresql.org/dfetter/index.php?/archives/110-guid.html";s:4:"link";s:108:"http://people.planetpostgresql.org/dfetter/index.php?/archives/110-PostgreSQL-Weekly-News-March-25-2007.html";s:11:"description";s:2515:"<p><strong>PostgreSQL Weekly News - March 25 2007</strong></p>
+
+<p>The deadline for Summer of Code projects has been extended to Monday,<br />
+March 26th.  Get your submissions in!<br />
+<a href="http://www.postgresql.org/developer/summerofcode">http://www.postgresql.org/developer/summerofcode</a></p>
+
+<p>Pavel Stehule has published his Czech language training materials.<br />
+<a href="http://www.pgsql.cz/index.php/Jednodenn%C3%AD_%C5%A1kolen%C3%AD_PostgreSQL">http://www.pgsql.cz/index.php/Jednodenn%C3%AD_%C5%A1kolen%C3%AD_PostgreSQL</a></p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Devrim GUNDUZ pushed postgresql-dbi-link to Fedora and Red Hat<br />
+Enterprise Linux Extras (EPEL).  This is the first PostgreSQL-related<br />
+package in EL.</p>
+
+<p>PostgreSQL Maestro 7.3 released.<br />
+<a href="http://www.sqlmaestro.com/products/postgresql/maestro/">http://www.sqlmaestro.com/products/postgresql/maestro/</a></p>
+
+<p>GT portalBase released.<br />
+<a href="http://www.gtportalbase.com">http://www.gtportalbase.com</a></p>
+
+<p>phpPgAdmin 4.1.1 released.<br />
+<a href="http://phppgadmin.sourceforge.net/">http://phppgadmin.sourceforge.net/</a></p>
+
+<p>Slony-I 1.1.9 and 1.2.9 are out.  Schedule those upgrades :)<br />
+<a href="http://main.slony.info/">http://main.slony.info/</a></p>
+
+<p>Sparsegraph 0.1 released.<br />
+<a href="http://pgfoundry.org/projects/sparsegraph/">http://pgfoundry.org/projects/sparsegraph/</a></p>
+
+<p><strong>PostgreSQL Jobs for March</strong></p>
+
+<p><a href="http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php">http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Everything this week was global.</p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter,<br />
+Devrim GUNDUZ and Robert Treat.</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/110-PostgreSQL-Weekly-News-March-25-2007.html#extended">Continue reading "PostgreSQL Weekly News - March 25 2007"</a>";s:7:"pubdate";s:31:"Mon, 26 Mar 2007 05:14:09 +0000";s:7:"summary";s:2515:"<p><strong>PostgreSQL Weekly News - March 25 2007</strong></p>
+
+<p>The deadline for Summer of Code projects has been extended to Monday,<br />
+March 26th.  Get your submissions in!<br />
+<a href="http://www.postgresql.org/developer/summerofcode">http://www.postgresql.org/developer/summerofcode</a></p>
+
+<p>Pavel Stehule has published his Czech language training materials.<br />
+<a href="http://www.pgsql.cz/index.php/Jednodenn%C3%AD_%C5%A1kolen%C3%AD_PostgreSQL">http://www.pgsql.cz/index.php/Jednodenn%C3%AD_%C5%A1kolen%C3%AD_PostgreSQL</a></p>
+
+<p><strong>PostgreSQL Product News</strong></p>
+
+<p>Devrim GUNDUZ pushed postgresql-dbi-link to Fedora and Red Hat<br />
+Enterprise Linux Extras (EPEL).  This is the first PostgreSQL-related<br />
+package in EL.</p>
+
+<p>PostgreSQL Maestro 7.3 released.<br />
+<a href="http://www.sqlmaestro.com/products/postgresql/maestro/">http://www.sqlmaestro.com/products/postgresql/maestro/</a></p>
+
+<p>GT portalBase released.<br />
+<a href="http://www.gtportalbase.com">http://www.gtportalbase.com</a></p>
+
+<p>phpPgAdmin 4.1.1 released.<br />
+<a href="http://phppgadmin.sourceforge.net/">http://phppgadmin.sourceforge.net/</a></p>
+
+<p>Slony-I 1.1.9 and 1.2.9 are out.  Schedule those upgrades :)<br />
+<a href="http://main.slony.info/">http://main.slony.info/</a></p>
+
+<p>Sparsegraph 0.1 released.<br />
+<a href="http://pgfoundry.org/projects/sparsegraph/">http://pgfoundry.org/projects/sparsegraph/</a></p>
+
+<p><strong>PostgreSQL Jobs for March</strong></p>
+
+<p><a href="http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php">http://archives.postgresql.org/pgsql-jobs/2007-03/threads.php</a></p>
+
+<p><strong>PostgreSQL Local</strong></p>
+
+<p>Everything this week was global.</p>
+
+<p><strong>PostgreSQL in the News</strong></p>
+
+<p>Planet PostgreSQL: <a href="http://www.planetpostgresql.org/">http://www.planetpostgresql.org/</a></p>
+
+<p>General Bits, Archives and occasional new articles:<br />
+<a href="http://www.varlena.com/GeneralBits/">http://www.varlena.com/GeneralBits/</a></p>
+
+<p>PostgreSQL Weekly News is brought to you this week by David Fetter,<br />
+Devrim GUNDUZ and Robert Treat.</p>
+
+<p>To get your submission into the upcoming issue, make sure it arrives<br />
+at david@fetter.org or in German at pwn@pgug.de by Sunday at 3:00pm<br />
+Pacific Time.</p>
+
+ <br /><a href="http://people.planetpostgresql.org/dfetter/index.php?/archives/110-PostgreSQL-Weekly-News-March-25-2007.html#extended">Continue reading "PostgreSQL Weekly News - March 25 2007"</a>";}i:23;a:6:{s:5:"title";s:40:"Gevik Babakhani: LIMIT ALL == LIMIT NULL";s:4:"guid";s:73:"http://people.planetpostgresql.org/gevik/index.php?/archives/51-guid.html";s:4:"link";s:89:"http://people.planetpostgresql.org/gevik/index.php?/archives/51-LIMIT-ALL-LIMIT-NULL.html";s:11:"description";s:1181:"This maybe trivial but I think it is worth sharing anyway<br />
+Consider using LIMIT/OFFSET in a function where as parameter you have to specify values for both. <br />
+In the following function both limit and offset parameters are integers. This will cause an error when you want to pass ALL  (for LIMIT ALL) as argument.<br />
+<br />
+<br />
+PostgreSQL function:<br />
+<pre>create or replace function sp_category_getlist(plimit integer,poffset integer) returns setof category as<br />$$<br />	select <br />		*<br />	from<br />		category<br />        order by <br />		caption<br />	limit <br />		$1 offset $2<br />$$<br />language sql;<br /></pre><br />
+<br />
+<strong>Fortunately PostgreSQL accepts NULL function arguments which in this case is treated as ALL</strong><br />
+<br />
+Example in PHP:<br />
+<pre>/* sp_filesystem_category_getlist */<br />public function sp_filesystem_category_getlist($puserid,$plimit=<strong>null</strong>,$poffset='0')<br />{<br />	$args = array($plimit,$poffset);<br />        $sql = "select * from sp_filesystem_category_getlist($1,$2)";<br />        $result=$this->query($sql,$args);<br />        return pg_fetch_all($result);<br />}</pre><br />";s:7:"pubdate";s:31:"Sun, 25 Mar 2007 23:58:53 +0000";s:7:"summary";s:1181:"This maybe trivial but I think it is worth sharing anyway<br />
+Consider using LIMIT/OFFSET in a function where as parameter you have to specify values for both. <br />
+In the following function both limit and offset parameters are integers. This will cause an error when you want to pass ALL  (for LIMIT ALL) as argument.<br />
+<br />
+<br />
+PostgreSQL function:<br />
+<pre>create or replace function sp_category_getlist(plimit integer,poffset integer) returns setof category as<br />$$<br />	select <br />		*<br />	from<br />		category<br />        order by <br />		caption<br />	limit <br />		$1 offset $2<br />$$<br />language sql;<br /></pre><br />
+<br />
+<strong>Fortunately PostgreSQL accepts NULL function arguments which in this case is treated as ALL</strong><br />
+<br />
+Example in PHP:<br />
+<pre>/* sp_filesystem_category_getlist */<br />public function sp_filesystem_category_getlist($puserid,$plimit=<strong>null</strong>,$poffset='0')<br />{<br />	$args = array($plimit,$poffset);<br />        $sql = "select * from sp_filesystem_category_getlist($1,$2)";<br />        $result=$this->query($sql,$args);<br />        return pg_fetch_all($result);<br />}</pre><br />";}i:24;a:6:{s:5:"title";s:39:"Robert Treat: phpPgAdmin 4.1.1 Released";s:4:"guid";s:75:"http://people.planetpostgresql.org/xzilla/index.php?/archives/292-guid.html";s:4:"link";s:96:"http://people.planetpostgresql.org/xzilla/index.php?/archives/292-phpPgAdmin-4.1.1-Released.html";s:11:"description";s:418:"The phpPgAdmin Team is proud to announce a new minor release of<br />
+phpPgAdmin. Version 4.1.1 fixes several bugs reported to use from <br />
+our users since the 4.1 release.  Everyone is encouraged to upgrade. <br />
+<br />
+For more information please see the <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2725&amp;entry_id=292" title="http://phppgadmin.sourceforge.net/">phpPgAdmin homepage</a>";s:7:"pubdate";s:31:"Sun, 25 Mar 2007 04:43:55 +0000";s:7:"summary";s:418:"The phpPgAdmin Team is proud to announce a new minor release of<br />
+phpPgAdmin. Version 4.1.1 fixes several bugs reported to use from <br />
+our users since the 4.1 release.  Everyone is encouraged to upgrade. <br />
+<br />
+For more information please see the <a href="http://people.planetpostgresql.org/xzilla/exit.php?url_id=2725&amp;entry_id=292" title="http://phppgadmin.sourceforge.net/">phpPgAdmin homepage</a>";}i:25;a:6:{s:5:"title";s:24:"Neil Conway: 25 Mar 2007";s:4:"guid";s:58:"http://www.advogato.org/person/nconway/diary.html?start=40";s:4:"link";s:58:"http://www.advogato.org/person/nconway/diary.html?start=40";s:11:"description";s:1798:"<b>Complexity and Life</b>
+
+<p> The <a href="http://en.wikipedia.org/wiki/Kolmogorov_complexity">Kolmogorov
+complexity</a> of a string <i>x</i> is the length of the
+description
+of the minimal computer program that outputs <i>x</i>,
+relative to a given model of computation. Hence, complexity
+describes the amount of redundant information, or structure,
+in the string: as the string's complexity approaches its
+length, the string becomes increasingly random. (A string's
+complexity can be no greater than an additive constant of
+its length, since we can always emit the string by embedding
+it in a Turing machine that just prints out the string).
+
+<p> I'd like to write more about Kolmogorov complexity later,
+but for now I'll just point to an interesting application
+of this idea to studying biological life. <a href="http://reznikova.net/">Zhanna Reznikova</a> has
+applied information theory to studying the communication
+between animals, in particular ants. <a href="http://reznikova.net/blackbox.pdf">This paper</a>
+describes an interesting result: an experiment was setup in
+which a "scout" ant communicates the location of some food
+to another group of "forager" ants. The path from the ants
+to the food is a binary maze, so the path can be represented
+as a series of left or right turns (e.g. "RRR", "RLR",
+etc.). Reznikova measured the time it took for the scout to
+transmit the location of the food to the other ants, and
+then varied the path, to see how the time of transmission
+varied with the complexity of the route. As it turns out (p.
+9, table 2), the ants were able to more
+efficiently communicate paths that could be encoded as
+strings with low complexity. For example, the path "RRRRRR"
+required a mean duration of 88 seconds to transmit, whereas
+"RLRLRL" took 135 seconds.</p></p>";s:7:"pubdate";s:31:"Sun, 25 Mar 2007 00:36:18 +0000";s:7:"summary";s:1798:"<b>Complexity and Life</b>
+
+<p> The <a href="http://en.wikipedia.org/wiki/Kolmogorov_complexity">Kolmogorov
+complexity</a> of a string <i>x</i> is the length of the
+description
+of the minimal computer program that outputs <i>x</i>,
+relative to a given model of computation. Hence, complexity
+describes the amount of redundant information, or structure,
+in the string: as the string's complexity approaches its
+length, the string becomes increasingly random. (A string's
+complexity can be no greater than an additive constant of
+its length, since we can always emit the string by embedding
+it in a Turing machine that just prints out the string).
+
+<p> I'd like to write more about Kolmogorov complexity later,
+but for now I'll just point to an interesting application
+of this idea to studying biological life. <a href="http://reznikova.net/">Zhanna Reznikova</a> has
+applied information theory to studying the communication
+between animals, in particular ants. <a href="http://reznikova.net/blackbox.pdf">This paper</a>
+describes an interesting result: an experiment was setup in
+which a "scout" ant communicates the location of some food
+to another group of "forager" ants. The path from the ants
+to the food is a binary maze, so the path can be represented
+as a series of left or right turns (e.g. "RRR", "RLR",
+etc.). Reznikova measured the time it took for the scout to
+transmit the location of the food to the other ants, and
+then varied the path, to see how the time of transmission
+varied with the complexity of the route. As it turns out (p.
+9, table 2), the ants were able to more
+efficiently communicate paths that could be encoded as
+strings with low complexity. For example, the path "RRRRRR"
+required a mean duration of 88 seconds to transmit, whereas
+"RLRLRL" took 135 seconds.</p></p>";}}s:7:"channel";a:5:{s:5:"title";s:21:"::Planet PostgreSQL::";s:4:"link";s:32:"http://www.planetpostgresql.org/";s:8:"language";s:2:"en";s:11:"description";s:56:"::Planet PostgreSQL:: - http://www.planetpostgresql.org/";s:7:"tagline";s:56:"::Planet PostgreSQL:: - http://www.planetpostgresql.org/";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Mon, 23 Apr 2007 02:30:54 GMT
+";s:4:"etag";s:24:""36e556-db9d-7554d380"
+";}

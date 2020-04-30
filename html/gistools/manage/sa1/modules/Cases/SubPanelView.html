@@ -1,0 +1,50 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: SubPanelView.html,v 1.25 2005/02/09 07:08:54 andrew Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="listView">
+	<tr height="20" >
+	<td scope="col" width="5%" class="listViewThS1"><slot>{MOD.LBL_LIST_NUMBER}</td>
+	<td scope="col" width="50%" class="listViewThS1"><slot>{MOD.LBL_LIST_SUBJECT}</td>
+	<td scope="col" width="30%" class="listViewThS1"><slot>{MOD.LBL_LIST_ACCOUNT_NAME}</td>
+	<td scope="col" width="10%" class="listViewThS1"><slot>{MOD.LBL_LIST_STATUS}</td>
+	<td scope="col" width="5%" class="listViewThS1"><slot>&nbsp;</td>
+	  </tr>
+
+<!-- BEGIN: row -->
+<tr height="20"  onmouseover="setPointer(this, '{CASE.ID}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmouseout="setPointer(this, '{CASE.ID}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmousedown="setPointer(this, '{CASE.ID}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+    	<td scope='row' valign=TOP bgcolor="{BG_COLOR}" class="{ROW_COLOR}S1" ><slot>{CASE.NUMBER}</slot></td>
+		<td valign=TOP bgcolor="{BG_COLOR}" class="{ROW_COLOR}S1" ><slot><a href="{URL_PREFIX}index.php?action=DetailView&module=Cases&record={CASE.ID}" class="listViewTdLinkS1">{CASE.NAME}</a></td>
+    	<td valign=TOP bgcolor="{BG_COLOR}" class="{ROW_COLOR}S1"><slot><a href="{URL_PREFIX}index.php?action=DetailView&module=Accounts&record={CASE.ACCOUNT_ID}" class="listViewTdLinkS1">{CASE.ACCOUNT_NAME}</A></td>
+    	<td valign=TOP bgcolor="{BG_COLOR}" class="{ROW_COLOR}S1" ><slot>{CASE.STATUS}</td>
+    	<td nowrap align="center" valign=TOP bgcolor="{BG_COLOR}" class="{ROW_COLOR}S1" ><slot><a class="listViewTdToolsS1" href="{URL_PREFIX}index.php?action=EditView&module=Cases&record={CASE.ID}{RETURN_URL}">{EDIT_INLINE_PNG}</a>&nbsp;<a class="listViewTdToolsS1" href="{URL_PREFIX}index.php?action=EditView&module=Cases&record={CASE.ID}{RETURN_URL}">{APP.LNK_EDIT}</a></td>
+
+</tr>
+<tr><td colspan="20" class="listViewHRS1"></td></tr>
+<!-- END: row -->
+
+</table>
+<!-- END: main -->

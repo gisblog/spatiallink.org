@@ -1,0 +1,169 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:17:"chung.ley@amd.com";s:12:"author_email";s:17:"chung....@amd.com";s:6:"issued";s:22:"
+2005-03-31T02:39:04Z
+";s:8:"modified";s:22:"
+2005-03-31T02:39:04Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/eed47cae8d474f69";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/eed47cae8d474f69";s:5:"title";s:41:"Options for passing Hash to a subroutine.";s:7:"summary";s:336:"
+Hi, <br> Another newbie question... <br> I have to write a program that process a huge amount of data; the end <br> results will be a number of different reports. I will prefer to write <br> a separate library/perl script for each of the reports to <br> separate/isolate them into their own files... However, how do I &quot;pass&quot;
+";s:11:"description";s:336:"
+Hi, <br> Another newbie question... <br> I have to write a program that process a huge amount of data; the end <br> results will be a number of different reports. I will prefer to write <br> a separate library/perl script for each of the reports to <br> separate/isolate them into their own files... However, how do I &quot;pass&quot;
+";}i:1;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:7:"J-miami";s:12:"author_email";s:28:"j...@thesouthbeachhostel.com";s:6:"issued";s:22:"
+2005-03-28T22:05:32Z
+";s:8:"modified";s:22:"
+2005-03-28T22:05:32Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/f43ffca872e7400f";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/f43ffca872e7400f";s:5:"title";s:53:"Perl - Internet Cafe Software for Linux - open source";s:7:"summary";s:359:"
+I am just starting to learn Perl. I had an idea that there should be <br> free open-source Internet Cafe management software for Linux. I <br> searched around online but couldn't find anything. The program would <br> be appealing to anyone wanting to offer Internet access to their <br> customers, from Internet Cafes to hotels. Who wants to pay hundreds or
+";s:11:"description";s:359:"
+I am just starting to learn Perl. I had an idea that there should be <br> free open-source Internet Cafe management software for Linux. I <br> searched around online but couldn't find anything. The program would <br> be appealing to anyone wanting to offer Internet access to their <br> customers, from Internet Cafes to hotels. Who wants to pay hundreds or
+";}i:2;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:17:"chung.ley@amd.com";s:12:"author_email";s:17:"chung....@amd.com";s:6:"issued";s:22:"
+2005-03-28T21:53:53Z
+";s:8:"modified";s:22:"
+2005-03-28T21:53:53Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/f1b48fe44b562a46";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/f1b48fe44b562a46";s:5:"title";s:62:"My option when a module is not available for my production OS.";s:7:"summary";s:340:"
+Hi, <br> I wanted to use the modules GDGraph-boxplot and GDGraph-XY to generate <br> boxplot and scatterplots. I am using my PC (windows2000) as a <br> development machine, but the production box is Linux. It seems that <br> these modules are not available in Linux. <br> What are my options? I am new to the perl world, but I have a perl
+";s:11:"description";s:340:"
+Hi, <br> I wanted to use the modules GDGraph-boxplot and GDGraph-XY to generate <br> boxplot and scatterplots. I am using my PC (windows2000) as a <br> development machine, but the production box is Linux. It seems that <br> these modules are not available in Linux. <br> What are my options? I am new to the perl world, but I have a perl
+";}i:3;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:5:"brett";s:12:"author_email";s:23:"brett_w2...@hotmail.com";s:6:"issued";s:22:"
+2005-03-28T21:46:43Z
+";s:8:"modified";s:22:"
+2005-03-28T21:46:43Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/28fa970d98274880";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/28fa970d98274880";s:5:"title";s:30:"perl library for C beautifier?";s:7:"summary";s:279:"
+Hi, <br> I am looking for a perl library that will allow me to &quot;beautify&quot; C code. I <br> am mainly interested in something that will convert between different number <br> of tab spaces and preserve the alignment of comments on mulitple lines. <br> Thanks, <br> Brett.
+";s:11:"description";s:279:"
+Hi, <br> I am looking for a perl library that will allow me to &quot;beautify&quot; C code. I <br> am mainly interested in something that will convert between different number <br> of tab spaces and preserve the alignment of comments on mulitple lines. <br> Thanks, <br> Brett.
+";}i:4;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:8:"Acebravo";s:12:"author_email";s:18:"nos...@nospam.land";s:6:"issued";s:22:"
+2005-03-28T06:16:58Z
+";s:8:"modified";s:22:"
+2005-03-28T06:16:58Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/9d575773969edcd7";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/9d575773969edcd7";s:5:"title";s:25:"About Encryption Question";s:7:"summary";s:352:"
+I'm just wondering how the server can read and execute an encrypted Perl <br> script! <br> if I have a script that I want to encrypt, will the server know how to <br> deal with it when it's run? how does that work exactly? does the server <br> (Apachi) has a decrypter or something? <br> Thanks you if you are able to give some teaching info on this.
+";s:11:"description";s:352:"
+I'm just wondering how the server can read and execute an encrypted Perl <br> script! <br> if I have a script that I want to encrypt, will the server know how to <br> deal with it when it's run? how does that work exactly? does the server <br> (Apachi) has a decrypter or something? <br> Thanks you if you are able to give some teaching info on this.
+";}i:5;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:1:"r";s:12:"author_email";s:18:"jk!tt...@mnpX$.net";s:6:"issued";s:22:"
+2005-03-28T04:09:51Z
+";s:8:"modified";s:22:"
+2005-03-28T04:09:51Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/ffabd0bd64a61d50";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/ffabd0bd64a61d50";s:5:"title";s:26:"find words not in an array";s:7:"summary";s:232:"
+if I have 2 arrays, @wordlist and @testlist, how can I create a third array <br> that contains the words from @testlist that are not common to @wordlist? <br> I thought I might use grep but can't figure it out. <br> Thanks, <br> r
+";s:11:"description";s:232:"
+if I have 2 arrays, @wordlist and @testlist, how can I create a third array <br> that contains the words from @testlist that are not common to @wordlist? <br> I thought I might use grep but can't figure it out. <br> Thanks, <br> r
+";}i:6;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:23:"martin.mrazek@gmail.com";s:12:"author_email";s:23:"martin.mra...@gmail.com";s:6:"issued";s:22:"
+2005-03-27T12:32:01Z
+";s:8:"modified";s:22:"
+2005-03-27T12:32:01Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/511cb19d3844ca57";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/511cb19d3844ca57";s:5:"title";s:20:"Installation problem";s:7:"summary";s:357:"
+Hello, <br> when installing the followin modulue from CPAN under MDK Linux I <br> receive the error message (in the end of STDERR output) which I don't <br> understand. Can you tell me what's wrong there? Shall I follow the <br> message and install it with force? <br> Regards <br> Martin <br> cpan&gt; install Number::Format <br> CPAN: Storable loaded ok
+";s:11:"description";s:357:"
+Hello, <br> when installing the followin modulue from CPAN under MDK Linux I <br> receive the error message (in the end of STDERR output) which I don't <br> understand. Can you tell me what's wrong there? Shall I follow the <br> message and install it with force? <br> Regards <br> Martin <br> cpan&gt; install Number::Format <br> CPAN: Storable loaded ok
+";}i:7;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:6:"ssmith";s:12:"author_email";s:21:"ssmith0...@rogers.com";s:6:"issued";s:22:"
+2005-03-27T04:57:58Z
+";s:8:"modified";s:22:"
+2005-03-27T04:57:58Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/25801f543b4cd867";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/25801f543b4cd867";s:5:"title";s:42:"DBI Error: no suitable installation target";s:7:"summary";s:355:"
+When attempting to install DBI, I get the following error message: <br> Error: no suitable installation target found for package DBI. <br> From the command prompt (WinXP), I type 'ppm'. <br> From the ppm shell, I type 'install DBI', and after a few seconds, the error <br> message appears. <br> My Perl installation is ActivePerl-5.6.1.638-MSWin32-x 86.
+";s:11:"description";s:355:"
+When attempting to install DBI, I get the following error message: <br> Error: no suitable installation target found for package DBI. <br> From the command prompt (WinXP), I type 'ppm'. <br> From the ppm shell, I type 'install DBI', and after a few seconds, the error <br> message appears. <br> My Perl installation is ActivePerl-5.6.1.638-MSWin32-x 86.
+";}i:8;a:9:{s:6:"author";s:4:"
+  
+";s:12:"author_email";s:24:"Ron_Grossi_...@yahoo.com";s:6:"issued";s:22:"
+2005-03-26T21:17:38Z
+";s:8:"modified";s:22:"
+2005-03-26T21:17:38Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/465532c5398df41e";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/465532c5398df41e";s:5:"title";s:23:"The Greatest News Ever!";s:7:"summary";s:100:"
+<a target="_blank" href="http://www.jcil.blogspot.com">[link]</a> &lt;&lt; The Greatest News Ever!
+";s:11:"description";s:100:"
+<a target="_blank" href="http://www.jcil.blogspot.com">[link]</a> &lt;&lt; The Greatest News Ever!
+";}i:9;a:9:{s:6:"author";s:4:"
+  
+";s:12:"author_email";s:16:"day...@gecko.org";s:6:"issued";s:22:"
+2005-03-26T20:05:43Z
+";s:8:"modified";s:22:"
+2005-03-26T20:05:43Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/fea65e8305c9e3fb";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/fea65e8305c9e3fb";s:5:"title";s:41:"Creating a variable using a for() loop???";s:7:"summary";s:336:"
+I have a form that is dynamiclly generated from a database. Using the <br> CGI module, I'm trying to parse the parameters returned, but since the <br> number of paramaters changes I can't get the variables assigned... <br> What I'm trying: <br> -------------- <br> $count='1'; <br> while (my(@data)=$table_data4-&gt;fetch row_array) {
+";s:11:"description";s:336:"
+I have a form that is dynamiclly generated from a database. Using the <br> CGI module, I'm trying to parse the parameters returned, but since the <br> number of paramaters changes I can't get the variables assigned... <br> What I'm trying: <br> -------------- <br> $count='1'; <br> while (my(@data)=$table_data4-&gt;fetch row_array) {
+";}i:10;a:9:{s:6:"author";s:4:"
+  
+";s:12:"author_email";s:23:"GooglePro1...@yahoo.com";s:6:"issued";s:22:"
+2005-03-26T11:49:23Z
+";s:8:"modified";s:22:"
+2005-03-26T11:49:23Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/9390d33c2204cc89";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/9390d33c2204cc89";s:5:"title";s:16:"Great News Blog!";s:7:"summary";s:101:"
+<a target="_blank" href="http://www.newsblog2005.blogspot.com">[link]</a> &lt;&lt; Great News Blog!
+";s:11:"description";s:101:"
+<a target="_blank" href="http://www.newsblog2005.blogspot.com">[link]</a> &lt;&lt; Great News Blog!
+";}i:11;a:9:{s:6:"author";s:4:"
+  
+";s:12:"author_email";s:21:"andy.t.c...@gmail.com";s:6:"issued";s:22:"
+2005-03-26T08:11:01Z
+";s:8:"modified";s:22:"
+2005-03-26T08:11:01Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/2f4fa00bb08bacfc";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/2f4fa00bb08bacfc";s:5:"title";s:41:"passing perl variable to output html file";s:7:"summary";s:441:"
+I need to be able to have a hidden field (signiture) with each output <br> html file generated. <br> $first_name = $q-&gt;param('FirstN'); <br> $last_name = $q-&gt;param('LastN'); <br> to be used as hidden info needed to use later. <br> print HISTORY ('&lt;INPUT TYPE=&quot;hidden&quot; name=&quot;TestFirstN&quot; <br> value=&quot;$first_name&quot;\&gt;'); <br> print HISTORY ('&lt;INPUT TYPE=&quot;hidden&quot; name=&quot;TestLastN&quot;
+";s:11:"description";s:441:"
+I need to be able to have a hidden field (signiture) with each output <br> html file generated. <br> $first_name = $q-&gt;param('FirstN'); <br> $last_name = $q-&gt;param('LastN'); <br> to be used as hidden info needed to use later. <br> print HISTORY ('&lt;INPUT TYPE=&quot;hidden&quot; name=&quot;TestFirstN&quot; <br> value=&quot;$first_name&quot;\&gt;'); <br> print HISTORY ('&lt;INPUT TYPE=&quot;hidden&quot; name=&quot;TestLastN&quot;
+";}i:12;a:9:{s:6:"author";s:4:"
+  
+";s:12:"author_email";s:23:"soup_or_po...@yahoo.com";s:6:"issued";s:22:"
+2005-03-25T22:46:35Z
+";s:8:"modified";s:22:"
+2005-03-25T22:46:35Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/6b86b26a7c6d5c08";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/6b86b26a7c6d5c08";s:5:"title";s:35:"[BEGINNER]Storable::dclone question";s:7:"summary";s:329:"
+Can someone explain this code especially what it is doing with <br> Storable::dclone? Thanks in advance <br> sub new { <br> my ($self, $hash) = @_; <br> # ------------------------------ ------------------------ <br> # Create new hash ref/obj ref (Copy Constructor) <br> # ------------------------------ ------------------------
+";s:11:"description";s:329:"
+Can someone explain this code especially what it is doing with <br> Storable::dclone? Thanks in advance <br> sub new { <br> my ($self, $hash) = @_; <br> # ------------------------------ ------------------------ <br> # Create new hash ref/obj ref (Copy Constructor) <br> # ------------------------------ ------------------------
+";}i:13;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:4:"Dima";s:12:"author_email";s:13:"_...@inbox.ru";s:6:"issued";s:22:"
+2005-03-24T13:45:44Z
+";s:8:"modified";s:22:"
+2005-03-24T13:45:44Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/b97c65282952d026";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/b97c65282952d026";s:5:"title";s:32:"Why not work POSIX::RT:Semaphore";s:7:"summary";s:435:"
+This is my simple code <br> use threads; <br> use threads::shared; <br> use POSIX::RT::Semaphore; <br> $sem = POSIX::RT::Semaphore-&gt;init(0, 0); <br> my $pid = fork; <br> if ( $pid == 0 ) <br> { <br> $sem-&gt;wait; <br> print &quot;CODE2\n&quot;; <br> exit; <br> } <br> print &quot;CODE1\n&quot;; <br> $sem-&gt;post; <br> Why I see only CODE1??? <br> Why after post in parent process semaphore value in child process was't changed?
+";s:11:"description";s:435:"
+This is my simple code <br> use threads; <br> use threads::shared; <br> use POSIX::RT::Semaphore; <br> $sem = POSIX::RT::Semaphore-&gt;init(0, 0); <br> my $pid = fork; <br> if ( $pid == 0 ) <br> { <br> $sem-&gt;wait; <br> print &quot;CODE2\n&quot;; <br> exit; <br> } <br> print &quot;CODE1\n&quot;; <br> $sem-&gt;post; <br> Why I see only CODE1??? <br> Why after post in parent process semaphore value in child process was't changed?
+";}i:14;a:10:{s:6:"author";s:7:"
+  
+  
+";s:11:"author_name";s:5:"gfs X";s:12:"author_email";s:16:"b...@grandma.com";s:6:"issued";s:22:"
+2005-03-23T09:34:53Z
+";s:8:"modified";s:22:"
+2005-03-23T09:34:53Z
+";s:2:"id";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/5378b298cc8e10ed";s:4:"link";s:88:"http://groups-beta.google.com/group/comp.lang.perl/browse_thread/thread/5378b298cc8e10ed";s:5:"title";s:17:"Array to strings?";s:7:"summary";s:401:"
+Hi, Im a complete noob to perl. <br> Is there a way to convert array values into a string? <br> For example <br> @myarr=(&quot;Sample&quot;,&quot;test&quot;,&quot;Array &quot;); <br> My desired output: &quot;SampletestArray&quot; <br> To then work with as a string. <br> I know I could just specify piece by piece but thats just too much and <br> very impractical (im using it to generate filenames)
+";s:11:"description";s:401:"
+Hi, Im a complete noob to perl. <br> Is there a way to convert array values into a string? <br> For example <br> @myarr=(&quot;Sample&quot;,&quot;test&quot;,&quot;Array &quot;); <br> My desired output: &quot;SampletestArray&quot; <br> To then work with as a string. <br> I know I could just specify piece by piece but thats just too much and <br> very impractical (im using it to generate filenames)
+";}}s:7:"channel";a:7:{s:5:"title";s:27:"comp.lang.perl Google Group";s:7:"tagline";s:1:"
+";s:4:"link";s:50:"http://groups-beta.google.com/group/comp.lang.perl";s:8:"modified";s:22:"
+2005-04-04T04:47:27Z
+";s:9:"generator";s:13:"Google Groups";s:4:"info";s:283:"
+<div xmlns="http://www.w3.org/1999/xhtml">This is an Atom formatted XML
+site feed. It is intended to be viewed in a Newsreader or syndicated to
+another site. Please visit the <a href="http://help.blogger.com/bin/answer.py?answer=697">Blogger Knowledge Base</a> for more info.</div>
+";s:10:"descripton";s:1:"
+";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";s:3:"0.3";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

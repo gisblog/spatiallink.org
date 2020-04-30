@@ -1,0 +1,129 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Header: /var/cvsroot/sugarcrm/modules/EmailTemplates/EditView.html,v 1.10 2005/04/28 19:04:27 robert Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td style="padding-bottom: 2px;">
+			<form name="EditView" method="POST" action="index.php" enctype="multipart/form-data">
+			<input type="hidden" name="module" value="EmailTemplates">
+			<input type="hidden" name="record" value="{ID}">
+			<input type="hidden" name="action">
+			<input type="hidden" name="form">
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_id" value="{RETURN_ID}">
+			<input type="hidden" name="return_action" value="{RETURN_ACTION}">
+		<input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save'; return check_form('EditView');" type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " > <input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='{RETURN_ACTION}'; this.form.module.value='{RETURN_MODULE}'; this.form.record.value='{RETURN_ID}'" type="submit" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "></td>
+	<td align="right" nowrap><span  class="required">{APP.LBL_REQUIRED_SYMBOL}</span> {APP.NTC_REQUIRED}</td>
+	<td align='right'>{ADMIN_EDIT}</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="tabForm">
+<tr>
+<td>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_NAME} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+	<td width="30%" class="dataField"><slot><input name='name' tabindex="1" type="text" size='30' maxlength="255" value="{NAME}"></slot></td>
+	<td colspan=2></td>
+<!--
+	<td width="15%" class="dataLabel" align='right'><slot>{MOD.LBL_PUBLISH}&nbsp;</slot></td>
+	<td width="30%" class="dataField"><slot><input name='published' tabindex="1" {PUBLISHED} type="checkbox"></slot></td>
+-->
+	</tr>
+<style>
+#subjectfield { height: 1.6em; }
+</style>
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_DESCRIPTION}</slot></td>
+	<td colspan="3"  class="dataField"><slot><textarea name='description' tabindex='1' cols="90" rows="1"  style="height: 1.6.em; overflow-y:auto; font-family:sans-serif,monospace; font-size:inherit;" id="subjectfield">{DESCRIPTION}</textarea></td>
+	</tr>
+	<tr><td colspan=4>&nbsp;</td></tr>
+	<tr>
+	<td width="15%" class="dataLabel" align='left'><slot>{MOD.LBL_INSERT_VARIABLE}&nbsp;</slot></td>
+<script>
+var focus_obj = false;
+
+function remember_place(obj)
+{
+  focus_obj = obj;
+}
+
+{FIELD_DEFS_JS}
+
+function addVariables(the_select,the_module)
+{
+	the_select.options.length = 0;
+	for(var i=0;i< field_defs[the_module].length;i++)
+	{
+		var new_option = document.createElement("option");
+		new_option.value = "$"+field_defs[the_module][i].name;
+		new_option.text= field_defs[the_module][i].value
+		the_select.options.add(new_option,i);
+	}
+}
+</script>
+	<td width="30%" class="dataField" colspan=3><slot>
+<select name='variable_module' tabindex="1" onChange="addVariables(document.EditView.variable_name,this.options[this.selectedIndex].value);">
+<option value="Accounts">{LBL_ACCOUNT}</option>
+<option value="Contacts">{MOD.LBL_CONTACT_AND_OTHERS}</option>
+</select>
+<select name='variable_name' tabindex="1" >
+</select>
+<script>
+
+addVariables(document.EditView.variable_name,'Accounts');
+
+</script>
+<input title="{MOD.LBL_INSERT}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="insert_at_cursor(focus_obj,document.EditView.variable_name[document.EditView.variable_name.selectedIndex].value);" type="button" name="button" value="  {MOD.LBL_INSERT}  ">
+</slot></td>
+	</tr>
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_SUBJECT}</slot></td>
+        <td colspan='4' class="dataField"><slot><textarea onblur="remember_place(this);" name='subject' tabindex='1' cols="90" rows="1"  style="height: 1.6.em; overflow-y:auto; font-family:sans-serif,monospace; font-size:inherit;" id="subjectfield">{SUBJECT}</textarea></slot></td>
+        </tr>
+	<tr>
+	<td valign="top" class="dataLabel"><slot>{MOD.LBL_BODY}</slot></td>
+	<td colspan="3"  class="dataField"><slot><textarea onblur="remember_place(this);" name='body' tabindex="4" cols="90" rows="10">{BODY}</textarea></slot></td>
+</tr></table>
+</td></tr></table>
+<script>
+focus_obj = document.EditView.body;
+</script>
+</form>
+
+<script>
+toggle_portal_flag();
+
+function toggle_portal_flag() {
+	{TOGGLE_JS}
+}
+	
+</script>
+{JAVASCRIPT}
+<!-- END: main -->

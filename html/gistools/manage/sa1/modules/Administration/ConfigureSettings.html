@@ -1,0 +1,110 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: ConfigureSettings.html,v 1.19.2.2 2005/05/17 22:38:06 majed Exp $
+ ********************************************************************************/
+-->
+
+<!-- BEGIN: main -->
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+			<form name="ConfigureSettings" method="POST" action="index.php" onSubmit="return (add_checks(document.ConfigureSettings) && check_form('ConfigureSettings'));">
+			<input type="hidden" name="module" value="Administration">
+			<input type="hidden" name="action">
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_action" value="{RETURN_ACTION}">
+
+		<td style="padding-bottom: 2px;"><input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save'; " type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " > <input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='{RETURN_ACTION}'; this.form.module.value='{RETURN_MODULE}'; this.form.record.value='{RETURN_ID}'" type="submit" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "></td>
+
+	<td align="right" nowrap><span class="required">{APP.LBL_REQUIRED_SYMBOL}</span> {APP.NTC_REQUIRED}</td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr><td>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><th align="left" class="dataLabel" colspan="4"><h4 class="dataLabel">{MOD.LBL_NOTIFY_TITLE}</h4></th>
+	</tr><tr>
+	<td width="15%" class="dataLabel">{MOD.LBL_NOTIFY_FROMNAME} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+	<td width="30%" class="dataField"><input name='notify_fromname' tabindex='1' size='25' maxlength='128' type="text" value="{NOTIFY_FROMNAME}"></td>
+	<td width="15%" class="dataLabel" valign='top'>{MOD.LBL_NOTIFY_ON}</td>
+	<td width="40%" class="dataField" valign='top'><input name="notify_on" tabindex='1' value="1" class="checkbox" type="checkbox" {NOTIFY_ON}>  <em>{MOD.LBL_NOTIFICATION_ON_DESC}</em></td>
+	</tr><tr>
+	<td class="dataLabel">{MOD.LBL_NOTIFY_FROMADDRESS} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+	<td class="dataField"><input name='notify_fromaddress' tabindex='1' size='25' maxlength='128' type="text" value="{NOTIFY_FROMADDRESS}"></td>
+	<td class="dataLabel">{MOD.LBL_NOTIFY_SEND_BY_DEFAULT}</td>
+	<td class="dataField"><input name='notify_send_by_default' value="2"  tabindex='1' class="checkbox" type="checkbox" {NOTIFY_SEND_BY_DEFAULT}></td>
+	</tr><tr>
+	<td  class="dataLabel">{MOD.LBL_MAIL_SENDTYPE}</td>
+	<td class="dataField"><select name="mail_sendtype" onChange="notify_setrequired(document.ConfigureSettings);" tabindex="1">{MAIL_SENDTYPE}</select></td>
+	<td  class="dataLabel"></td>
+	<td class="dataField"></td>
+	</tr>
+	</tr><tr><td colspan="4">
+	<div id="smtp_settings">
+	<table width="100%" cellpadding="0" cellspacing="0"><tr>
+		<td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPSERVER} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+		<td width="35%" class="dataField"><input type="text" name="mail_smtpserver" tabindex="1" size="25" maxlength="64" value="{MAIL_SMTPSERVER}"></td>
+		<td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPPORT} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+		<td width="35%" class="dataField"><input type="text" name="mail_smtpport" tabindex="1" size="5" maxlength="5" value="{MAIL_SMTPPORT}"></td>
+		</tr>
+		<tr><td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPAUTH_REQ}</td><td colspan="3"><input name='mail_smtpauth_req' type="checkbox" class="checkbox" value="1" tabindex='1' onClick="notify_setrequired(document.ConfigureSettings);" {MAIL_SMTPAUTH_REQ}></td></tr>
+		<tr><td colspan="4">
+		<div id="smtp_auth">
+		<table width="100%" cellpadding="0" cellspacing="0"><tr>
+		<td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPUSER} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+		<td width="35% class="dataField""><input type="text" name="mail_smtpuser" size="25" maxlength="64" value="{MAIL_SMTPUSER}" tabindex='1' ></td>
+		<td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPPASS} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+		<td width="35%" class="dataField"><input type="password" name="mail_smtppass" size="25" maxlength="64" value="{MAIL_SMTPPASS}" tabindex='1'></td>
+	</tr></table>
+	</div>
+  </td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<BR>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr><td>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><th align="left" class="dataLabel" colspan="4"><h4 class="dataLabel">{MOD.LBL_PORTAL_TITLE}</h4></th>
+	</tr><tr>
+	<td width="25%" class="dataLabel" valign='middle'>{MOD.LBL_PORTAL_ON}</td>
+	<td width="75%" align="left" class="dataField" valign='middle'><input name="portal_on" value="1" class="checkbox" tabindex='1' type="checkbox" {PORTAL_ON}> <em>{MOD.LBL_PORTAL_ON_DESC}</em></td>
+	</tr><tr>
+	<td colspan="4">
+	<div id="portal_config">
+		<table width="100%" cellpadding="0" cellspacing="0"><tr>
+		<td width="15%" class="dataLabel">&nbsp;</td>
+		<td width="35%" class="dataField">&nbsp;</td>
+		</tr></table>
+	</div>
+  </td></tr></table>
+</td></tr></table>
+<br>
+
+
+
+</form>
+{JAVASCRIPT}
+<!-- END: main -->

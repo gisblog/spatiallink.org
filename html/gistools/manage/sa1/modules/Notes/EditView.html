@@ -1,0 +1,105 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: EditView.html,v 1.38 2005/04/29 06:17:00 clint Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td style="padding-bottom: 2px;">
+			<form name="EditView" method="POST" action="index.php" enctype="multipart/form-data">
+			<input type="hidden" name="module" value="Notes">
+			<input type="hidden" name="record" value="{ID}">
+			<input type="hidden" name="action">
+			<input type="hidden" name="form">
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_id" value="{RETURN_ID}">
+			<input type="hidden" name="return_action" value="{RETURN_ACTION}">
+		<input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save'; return check_form('EditView');" type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " > <input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='{RETURN_ACTION}'; this.form.module.value='{RETURN_MODULE}'; this.form.record.value='{RETURN_ID}'" type="submit" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "></td>
+	<td align="right" nowrap><span  class="required">{APP.LBL_REQUIRED_SYMBOL}</span> {APP.NTC_REQUIRED}</td>
+	<td align='right'>{ADMIN_EDIT}</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="tabForm">
+<tr>
+<td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_CONTACT_NAME}</slot></td>
+	<td width="35%" class="dataField"><slot><input name='contact_name' readonly type='text' value='{CONTACT_NAME}'><input name='contact_id' type="hidden" value='{CONTACT_ID}'>&nbsp;<input title="{APP.LBL_CHANGE_BUTTON_TITLE}" accessKey="{APP.LBL_CHANGE_BUTTON_KEY}" tabindex="3" type="button" class="button" value='{APP.LBL_CHANGE_BUTTON_LABEL}' name='button' LANGUAGE=javascript onclick='return window.open("index.php?module=Contacts&action=Popup&html=Popup_picker&form=EditView{DEFAULT_SEARCH}","test","width=600,height=400,resizable=1,scrollbars=1");'></slot></td>
+	<td width="15%" class="dataField" valign="top"><slot><select id='parent_type' name='parent_type' onchange='document.EditView.parent_name.value="";document.EditView.parent_id.value="";toggle_portal_flag();' tabindex="3" onChange="toggle_portal_flag(); document.EditView.parent_name.value='';">{TYPE_OPTIONS}</select></slot></td>
+	<td width="35%" class="dataField"><slot><input name='parent_id' type="hidden" value='{PARENT_ID}'><input id='parent_name' name='parent_name' readonly type='text' value='{PARENT_NAME}'> {CHANGE_PARENT_BUTTON}</slot></td>
+	</tr><tr>
+
+
+
+
+
+
+	<!-- BEGIN: open_source -->
+	<td  class="dataLabel"><slot>&nbsp;</slot></td>
+	<td class="dataField"><slot>&nbsp;</slot></td>
+	<!-- END: open_source -->
+</tr></table>
+
+<div id='portal_flag_row' style='display:none'>
+<!-- BEGIN: portal_on -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+	<td width="15%" class="dataField"><slot>&nbsp;</slot></td>
+	<td width="35%" class="dataField"><slot>&nbsp;</slot></td>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_PORTAL_FLAG}</slot></td>
+	<td width="35%" class="dataField"><slot><input name="portal_flag" value="1" class="checkbox" type="checkbox" {PORTAL_FLAG}></slot></td>
+</tr></table>
+<!-- END: portal_on -->
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td colspan='4' class="dataLabel" valign="top"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_SUBJECT} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+	<td colspan="3"  class="dataField"><slot><input name='name' tabindex="1" type="text" size='100' maxlength="255" value="{NAME}"></slot></td>
+	</tr>
+	<tr>
+        <td class="dataLabel"><slot>{MOD.LBL_FILENAME}</slot></td>
+        <td colspan="3" class="dataField"><slot><input name="uploadfile" tabindex="2" type="file" size="60"/> {FILENAME_TEXT}<input type='hidden' name='old_filename' value='{FILENAME}'/><input type='hidden' name='old_id' value='{OLD_ID}'/></slot></td>
+        </tr>
+	<tr>
+	<td valign="top" class="dataLabel"><slot>{MOD.LBL_NOTE}</slot></td>
+	<td colspan="3"  class="dataField"><slot><textarea name='description' tabindex="3" cols="90" rows="30">{DESCRIPTION}</textarea></slot></td>
+</tr></table>
+</td></tr></table>
+</form>
+
+<script>
+toggle_portal_flag();
+
+function toggle_portal_flag() {
+	{TOGGLE_JS}
+}
+	
+</script>
+{JAVASCRIPT}
+<!-- END: main -->

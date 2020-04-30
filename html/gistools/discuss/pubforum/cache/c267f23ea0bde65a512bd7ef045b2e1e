@@ -1,0 +1,349 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:30:{i:0;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,686773,686773#msg-686773";s:5:"title";s:44:"Three Dimensional Points in WKB (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,686773,686773#msg-686773";s:11:"description";s:108:" It seems that MySQL does not yet support Z axis in WKB. Is there any way I can track when this will arrive?";s:2:"dc";a:1:{s:7:"creator";s:16:"Ephraim Khantsis";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Sat, 25 Apr 2020 20:47:35 +0000";s:7:"summary";s:108:" It seems that MySQL does not yet support Z axis in WKB. Is there any way I can track when this will arrive?";}i:1;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,686327,686327#msg-686327";s:5:"title";s:47:"Shape File import in mysql Database (2 replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,686327,686327#msg-686327";s:11:"description";s:167:" HI, i want to load shapefile in mysql db. Is there any inbuilt tools or utility that can import shapefile data in table.? don&#039;t wnat to use any third part tools.";s:2:"dc";a:1:{s:7:"creator";s:13:"Shreyas Kumar";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 13 Apr 2020 16:52:05 +0000";s:7:"summary";s:167:" HI, i want to load shapefile in mysql db. Is there any inbuilt tools or utility that can import shapefile data in table.? don&#039;t wnat to use any third part tools.";}i:2;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,674483,674483#msg-674483";s:5:"title";s:88:"MySQL 8.0 GIS Units of Measure - Meter, foot, Clarke's yard, or Indian Foot (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,674483,674483#msg-674483";s:11:"description";s:202:" <a href="https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-units-of-measure-meter.html"  rel="nofollow">https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-units-of-measure-meter.html</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 29 Apr 2019 16:42:03 +0000";s:7:"summary";s:202:" <a href="https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-units-of-measure-meter.html"  rel="nofollow">https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-units-of-measure-meter.html</a>";}i:3;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,673775,673775#msg-673775";s:5:"title";s:60:"MySQL 8.0 GIS -- Inserting Data & Fun Functions (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,673775,673775#msg-673775";s:11:"description";s:255:" MySQL 8.0 GIS -- Inserting Data &amp; Fun Functions <br />
+<a href="https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-inserting-data-fun.html"  rel="nofollow">https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-inserting-data-fun.html</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Wed, 03 Apr 2019 03:18:41 +0000";s:7:"summary";s:255:" MySQL 8.0 GIS -- Inserting Data &amp; Fun Functions <br />
+<a href="https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-inserting-data-fun.html"  rel="nofollow">https://elephantdolphin.blogspot.com/2019/04/mysql-80-gis-inserting-data-fun.html</a>";}i:4;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,673682,673682#msg-673682";s:5:"title";s:104:"MySQL 8.0 Geographic Information Systems (GIS) - How to get the distance between two cities (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,673682,673682#msg-673682";s:11:"description";s:320:" MySQL 8.0 Geographic Information Systems (GIS) - How to get the distance between two cities <br />
+<br />
+<a href="https://elephantdolphin.blogspot.com/2019/03/mysql-80-geographic-information-systems.html"  rel="nofollow">https://elephantdolphin.blogspot.com/2019/03/mysql-80-geographic-information-systems.html</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Wed, 27 Mar 2019 16:56:02 +0000";s:7:"summary";s:320:" MySQL 8.0 Geographic Information Systems (GIS) - How to get the distance between two cities <br />
+<br />
+<a href="https://elephantdolphin.blogspot.com/2019/03/mysql-80-geographic-information-systems.html"  rel="nofollow">https://elephantdolphin.blogspot.com/2019/03/mysql-80-geographic-information-systems.html</a>";}i:5;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,672110,672110#msg-672110";s:5:"title";s:63:"geometry number length limited to 6,how to change? (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,672110,672110#msg-672110";s:11:"description";s:343:" when I insert a geometry ，the number in geometry be limited to 6 length。<br />
+I input：select POINT(123456.78,1234.5678)<br />
+I got:POINT(123457 1234.57)<br />
+My spatial reference is customed，and I need to store longer numbers in the geometry，how can i change the limited of the number length？<br />
+thank you very much!";s:2:"dc";a:1:{s:7:"creator";s:7:"ysu whl";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Sun, 20 Jan 2019 03:46:46 +0000";s:7:"summary";s:343:" when I insert a geometry ，the number in geometry be limited to 6 length。<br />
+I input：select POINT(123456.78,1234.5678)<br />
+I got:POINT(123457 1234.57)<br />
+My spatial reference is customed，and I need to store longer numbers in the geometry，how can i change the limited of the number length？<br />
+thank you very much!";}i:6;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,670370,670370#msg-670370";s:5:"title";s:51:"The best way to locate, in MySQL 8 GIS (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,670370,670370#msg-670370";s:11:"description";s:186:" <a href="https://medium.com/maatwebsite/the-best-way-to-locate-in-mysql-8-e47a59892443"  rel="nofollow">https://medium.com/maatwebsite/the-best-way-to-locate-in-mysql-8-e47a59892443</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Thu, 08 Nov 2018 00:13:16 +0000";s:7:"summary";s:186:" <a href="https://medium.com/maatwebsite/the-best-way-to-locate-in-mysql-8-e47a59892443"  rel="nofollow">https://medium.com/maatwebsite/the-best-way-to-locate-in-mysql-8-e47a59892443</a>";}i:7;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,667421,667421#msg-667421";s:5:"title";s:53:"Upgrading to MySQL 8.0 with Spatial Data (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,667421,667421#msg-667421";s:11:"description";s:170:" <a href="https://mysqlserverteam.com/upgrading-to-mysql-8-0-with-spatial-data/"  rel="nofollow">https://mysqlserverteam.com/upgrading-to-mysql-8-0-with-spatial-data/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 02 Jul 2018 15:22:05 +0000";s:7:"summary";s:170:" <a href="https://mysqlserverteam.com/upgrading-to-mysql-8-0-with-spatial-data/"  rel="nofollow">https://mysqlserverteam.com/upgrading-to-mysql-8-0-with-spatial-data/</a>";}i:8;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,667349,667349#msg-667349";s:5:"title";s:90:"Detecting Incompatible Use of Spatial Functions before Upgrading to MySQL 8.0 (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,667349,667349#msg-667349";s:11:"description";s:244:" <a href="https://mysqlserverteam.com/detecting-incompatible-use-of-spatial-functions-before-upgrading-to-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/detecting-incompatible-use-of-spatial-functions-before-upgrading-to-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Thu, 28 Jun 2018 19:29:38 +0000";s:7:"summary";s:244:" <a href="https://mysqlserverteam.com/detecting-incompatible-use-of-spatial-functions-before-upgrading-to-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/detecting-incompatible-use-of-spatial-functions-before-upgrading-to-mysql-8-0/</a>";}i:9;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,667260,667260#msg-667260";s:5:"title";s:37:"Geo Coordinates calculating (1 reply)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,667260,667260#msg-667260";s:11:"description";s:2257:" Hi<br />
+<br />
+First of all ... I&#039;m new to mysql :)<br />
+<br />
+And here is my &quot;Problem&quot;.<br />
+<br />
+Lets say i have 5 tables (in reality a lot more).<br />
+Each table contains an ID , Latitude and Longitude (in decimal format).<br />
+The Tables gets updated every 30 seconds .... so the actual position is always in the last line of the table.<br />
+And there is also a timestamp in each line.<br />
+<br />
+Table1:<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:19:16&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:19:30&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:29:48&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:34:45&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:35:22&#039;<br />
+<br />
+Table2:<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:19:16&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:19:30&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:29:48&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:34:45&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:35:22&#039;<br />
+<br />
+Table3:<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:19:16&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:19:30&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:29:48&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:34:45&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:35:22&#039;<br />
+<br />
+what i would like to is:<br />
+calculate the distance from the most recent entry from 1 to 2 to 3 and from 2 to 1 to 3 and from 3 to 1 to 2 and so on<br />
+<br />
+<br />
+Thanks a lot for helping<br />
+rainer";s:2:"dc";a:1:{s:7:"creator";s:13:"Rainer Parzer";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Tue, 26 Jun 2018 13:41:45 +0000";s:7:"summary";s:2257:" Hi<br />
+<br />
+First of all ... I&#039;m new to mysql :)<br />
+<br />
+And here is my &quot;Problem&quot;.<br />
+<br />
+Lets say i have 5 tables (in reality a lot more).<br />
+Each table contains an ID , Latitude and Longitude (in decimal format).<br />
+The Tables gets updated every 30 seconds .... so the actual position is always in the last line of the table.<br />
+And there is also a timestamp in each line.<br />
+<br />
+Table1:<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:19:16&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:19:30&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:29:48&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:34:45&#039;<br />
+&#039;123456&#039;,&#039;10.34411&#039;,&#039;18.12345&#039;,&#039;2018-06-15 16:35:22&#039;<br />
+<br />
+Table2:<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:19:16&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:19:30&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:29:48&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:34:45&#039;<br />
+&#039;654321&#039;,&#039;12.34411&#039;,&#039;15.12345&#039;,&#039;2018-06-15 16:35:22&#039;<br />
+<br />
+Table3:<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:19:16&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:19:30&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:29:48&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:34:45&#039;<br />
+&#039;567891&#039;,&#039;17.34411&#039;,&#039;28.12345&#039;,&#039;2018-06-15 16:35:22&#039;<br />
+<br />
+what i would like to is:<br />
+calculate the distance from the most recent entry from 1 to 2 to 3 and from 2 to 1 to 3 and from 3 to 1 to 2 and so on<br />
+<br />
+<br />
+Thanks a lot for helping<br />
+rainer";}i:10;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666910,666910#msg-666910";s:5:"title";s:53:"POINT index is used in v5.7 but not in v8.0 (1 reply)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666910,666910#msg-666910";s:11:"description";s:1540:" Dear MySQL Forum users,<br />
+<br />
+I am encountering a problem with using spatial indices. I have a table with 2 rows: id and location. Location is a POINT type, NOT NULL.<br />
+<br />
+The CREATE code is as follows:<br />
+******************************<br />
+CREATE TABLE `test` (<br />
+	`id` INT(11) NOT NULL AUTO_INCREMENT,<br />
+	`location` POINT NOT NULL,<br />
+	`location2` GEOMETRY NOT NULL,<br />
+	INDEX `id` (`id`),<br />
+	SPATIAL INDEX `location` (`location`),<br />
+)<br />
+COLLATE=&#039;utf8_general_ci&#039;<br />
+ENGINE=InnoDB<br />
+AUTO_INCREMENT=16384<br />
+;<br />
+******************************<br />
+<br />
+Then, running the following query yields different results in MySQL v5.7 and v8.0:<br />
+<br />
+******************************<br />
+EXPLAIN SELECT * FROM test WHERE MBRContains(ST_GeomFromText(&#039;LINESTRING(4.848402825923472 51.985867267867974,5.562753957891971 52.205296088730535)&#039;, 4326), location) LIMIT 1;<br />
+******************************<br />
+<br />
+In v5.7 it works fine and the output is<br />
+&quot;1&quot;	&quot;SIMPLE&quot;	&quot;test&quot;	\N	&quot;range&quot;	&quot;location&quot;	&quot;location&quot;	&quot;34&quot;	\N	&quot;1&quot;	&quot;100,00&quot;	&quot;Using where&quot;.<br />
+<br />
+However, in v8.0, the entry for possible_keys is (null).  Why is this the case? I would like to use an index to speed up my query.<br />
+<br />
+Thanks in advance!<br />
+<br />
+(Sorry if I posted this in the wrong part of the forum)";s:2:"dc";a:1:{s:7:"creator";s:3:"J C";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Tue, 12 Jun 2018 07:18:13 +0000";s:7:"summary";s:1540:" Dear MySQL Forum users,<br />
+<br />
+I am encountering a problem with using spatial indices. I have a table with 2 rows: id and location. Location is a POINT type, NOT NULL.<br />
+<br />
+The CREATE code is as follows:<br />
+******************************<br />
+CREATE TABLE `test` (<br />
+	`id` INT(11) NOT NULL AUTO_INCREMENT,<br />
+	`location` POINT NOT NULL,<br />
+	`location2` GEOMETRY NOT NULL,<br />
+	INDEX `id` (`id`),<br />
+	SPATIAL INDEX `location` (`location`),<br />
+)<br />
+COLLATE=&#039;utf8_general_ci&#039;<br />
+ENGINE=InnoDB<br />
+AUTO_INCREMENT=16384<br />
+;<br />
+******************************<br />
+<br />
+Then, running the following query yields different results in MySQL v5.7 and v8.0:<br />
+<br />
+******************************<br />
+EXPLAIN SELECT * FROM test WHERE MBRContains(ST_GeomFromText(&#039;LINESTRING(4.848402825923472 51.985867267867974,5.562753957891971 52.205296088730535)&#039;, 4326), location) LIMIT 1;<br />
+******************************<br />
+<br />
+In v5.7 it works fine and the output is<br />
+&quot;1&quot;	&quot;SIMPLE&quot;	&quot;test&quot;	\N	&quot;range&quot;	&quot;location&quot;	&quot;location&quot;	&quot;34&quot;	\N	&quot;1&quot;	&quot;100,00&quot;	&quot;Using where&quot;.<br />
+<br />
+However, in v8.0, the entry for possible_keys is (null).  Why is this the case? I would like to use an index to speed up my query.<br />
+<br />
+Thanks in advance!<br />
+<br />
+(Sorry if I posted this in the wrong part of the forum)";}i:11;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666660,666660#msg-666660";s:5:"title";s:72:"MySQL 8.0:  GIS Creating Your Own Spatial Reference Systems (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666660,666660#msg-666660";s:11:"description";s:270:" MySQL 8.0:  GIS Creating Your Own Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/creating-your-own-spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/creating-your-own-spatial-reference-systems-in-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Fri, 01 Jun 2018 15:04:06 +0000";s:7:"summary";s:270:" MySQL 8.0:  GIS Creating Your Own Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/creating-your-own-spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/creating-your-own-spatial-reference-systems-in-mysql-8-0/</a>";}i:12;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666613,666613#msg-666613";s:5:"title";s:54:"MySQL 8.0:  GIS Upgrading Spatial Indexes (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666613,666613#msg-666613";s:11:"description";s:166:" <a href="https://mysqlserverteam.com/upgrading-spatial-indexes-to-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/upgrading-spatial-indexes-to-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Wed, 30 May 2018 19:30:55 +0000";s:7:"summary";s:166:" <a href="https://mysqlserverteam.com/upgrading-spatial-indexes-to-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/upgrading-spatial-indexes-to-mysql-8-0/</a>";}i:13;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666580,666580#msg-666580";s:5:"title";s:64:"MySQL 8.0:  GIS Projected Spatial Reference Systems (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666580,666580#msg-666580";s:11:"description";s:246:" MySQL 8.0:  GIS Projected Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/projected-spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/projected-spatial-reference-systems-in-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 28 May 2018 21:04:40 +0000";s:7:"summary";s:246:" MySQL 8.0:  GIS Projected Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/projected-spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/projected-spatial-reference-systems-in-mysql-8-0/</a>";}i:14;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666542,666542#msg-666542";s:5:"title";s:65:"MySQL 8.0:  GIS Geographic Spatial Reference Systems (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666542,666542#msg-666542";s:11:"description";s:249:" MySQL 8.0:  GIS Geographic Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/geographic-spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/geographic-spatial-reference-systems-in-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Fri, 25 May 2018 16:20:32 +0000";s:7:"summary";s:249:" MySQL 8.0:  GIS Geographic Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/geographic-spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/geographic-spatial-reference-systems-in-mysql-8-0/</a>";}i:15;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666110,666110#msg-666110";s:5:"title";s:57:"MySQL 8.0:  GIS Geographic Indexes in InnoDB (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666110,666110#msg-666110";s:11:"description";s:199:" MySQL 8.0:  GIS Geographic Indexes in InnoDB<br />
+<a href="https://mysqlserverteam.com/geographic-indexes-in-innodb/"  rel="nofollow">https://mysqlserverteam.com/geographic-indexes-in-innodb/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Fri, 04 May 2018 16:44:25 +0000";s:7:"summary";s:199:" MySQL 8.0:  GIS Geographic Indexes in InnoDB<br />
+<a href="https://mysqlserverteam.com/geographic-indexes-in-innodb/"  rel="nofollow">https://mysqlserverteam.com/geographic-indexes-in-innodb/</a>";}i:16;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666086,666086#msg-666086";s:5:"title";s:69:"MySQL 8.0:  GIS  Axis Order in Spatial Reference Systems (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666086,666086#msg-666086";s:11:"description";s:168:" <a href="https://mysqlserverteam.com/axis-order-in-spatial-reference-systems/"  rel="nofollow">https://mysqlserverteam.com/axis-order-in-spatial-reference-systems/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Thu, 03 May 2018 16:50:32 +0000";s:7:"summary";s:168:" <a href="https://mysqlserverteam.com/axis-order-in-spatial-reference-systems/"  rel="nofollow">https://mysqlserverteam.com/axis-order-in-spatial-reference-systems/</a>";}i:17;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666065,666065#msg-666065";s:5:"title";s:38:"MySQL 8.0:  GIS Geography (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666065,666065#msg-666065";s:11:"description";s:134:" <a href="https://mysqlserverteam.com/geography-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/geography-in-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Wed, 02 May 2018 15:20:05 +0000";s:7:"summary";s:134:" <a href="https://mysqlserverteam.com/geography-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/geography-in-mysql-8-0/</a>";}i:18;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,666020,666020#msg-666020";s:5:"title";s:54:"MySQL 8.0:  GIS Spatial Reference Systems (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,666020,666020#msg-666020";s:11:"description";s:216:" MySQL 8.0:  GIS Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/spatial-reference-systems-in-mysql-8-0/</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 30 Apr 2018 14:48:41 +0000";s:7:"summary";s:216:" MySQL 8.0:  GIS Spatial Reference Systems<br />
+<a href="https://mysqlserverteam.com/spatial-reference-systems-in-mysql-8-0/"  rel="nofollow">https://mysqlserverteam.com/spatial-reference-systems-in-mysql-8-0/</a>";}i:19;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,665260,665260#msg-665260";s:5:"title";s:61:"How do you handle unknown POINT values in MySQL? (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,665260,665260#msg-665260";s:11:"description";s:755:" I posted this in the InnoDB forum, but I think this is probably a better place for my question.<br />
+<br />
+MySQL 5.7 introduced Spatial Indexes on POINT columns. Apparently, you cannot have NULL values in a spatial index. At the same time, you cannot use a DEFAULT for POINT columns.<br />
+<br />
+So how do you handle the case where the value for POINT is unknown?<br />
+<br />
+I geocode every address in my database, but if the end user doesn&#039;t supply an address, what should I put there?<br />
+<br />
+In another question, someone suggested placing them at the North Pole POINT(0.0000,90.0000) but this takes 25 bytes for each unknown address.<br />
+<br />
+Is there a way to resolve this?<br />
+<br />
+FYI: I am not a DBA.";s:2:"dc";a:1:{s:7:"creator";s:12:"Peter Barney";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Thu, 29 Mar 2018 22:26:23 +0000";s:7:"summary";s:755:" I posted this in the InnoDB forum, but I think this is probably a better place for my question.<br />
+<br />
+MySQL 5.7 introduced Spatial Indexes on POINT columns. Apparently, you cannot have NULL values in a spatial index. At the same time, you cannot use a DEFAULT for POINT columns.<br />
+<br />
+So how do you handle the case where the value for POINT is unknown?<br />
+<br />
+I geocode every address in my database, but if the end user doesn&#039;t supply an address, what should I put there?<br />
+<br />
+In another question, someone suggested placing them at the North Pole POINT(0.0000,90.0000) but this takes 25 bytes for each unknown address.<br />
+<br />
+Is there a way to resolve this?<br />
+<br />
+FYI: I am not a DBA.";}i:20;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,664914,664914#msg-664914";s:5:"title";s:35:"MySQL 8.0 GIS Overview (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,664914,664914#msg-664914";s:11:"description";s:154:" <a href="https://www.slideshare.net/NorvaldRyeng/mysql-80-gis-overview"  rel="nofollow">https://www.slideshare.net/NorvaldRyeng/mysql-80-gis-overview</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Sat, 10 Mar 2018 05:43:01 +0000";s:7:"summary";s:154:" <a href="https://www.slideshare.net/NorvaldRyeng/mysql-80-gis-overview"  rel="nofollow">https://www.slideshare.net/NorvaldRyeng/mysql-80-gis-overview</a>";}i:21;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,659609,659609#msg-659609";s:5:"title";s:45:"Calculating distance using MySQL (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,659609,659609#msg-659609";s:11:"description";s:174:" <a href="https://tighten.co/blog/a-mysql-distance-function-you-should-know-about"  rel="nofollow">https://tighten.co/blog/a-mysql-distance-function-you-should-know-about</a>";s:2:"dc";a:1:{s:7:"creator";s:13:"Edwin Desouza";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Fri, 18 Aug 2017 00:10:11 +0000";s:7:"summary";s:174:" <a href="https://tighten.co/blog/a-mysql-distance-function-you-should-know-about"  rel="nofollow">https://tighten.co/blog/a-mysql-distance-function-you-should-know-about</a>";}i:22;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,655266,655266#msg-655266";s:5:"title";s:31:"GeomFromText error (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,655266,655266#msg-655266";s:11:"description";s:839:" I have a table with a Decimal degrees (-22.541100,30.719333) field. I altered the table and added a spatial data column (POINT) to the table. I am trying to update the POINT field with the point value of the Decimal degrees field but cannot get it to work.<br />
+<br />
+I use MySQl 5.7<br />
+<br />
+This is my sql:<br />
+SELECT @loc:= REPLACE(coordinates, &#039;,&#039;, &#039; &#039;) FROM interventions where id = 20;<br />
+UPDATE interventions SET location = ST_GeomFromText(&#039;POINT(&#039;@loc&#039;)&#039;) where id = 20;<br />
+<br />
+I keep on getting an error:<br />
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#039;@loc&#039;)&#039;) where id = 20&#039; at line 1<br />
+<br />
+Can you see what I am doing wrong?﻿";s:2:"dc";a:1:{s:7:"creator";s:15:"Carin Pretorius";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 20 Feb 2017 05:48:21 +0000";s:7:"summary";s:839:" I have a table with a Decimal degrees (-22.541100,30.719333) field. I altered the table and added a spatial data column (POINT) to the table. I am trying to update the POINT field with the point value of the Decimal degrees field but cannot get it to work.<br />
+<br />
+I use MySQl 5.7<br />
+<br />
+This is my sql:<br />
+SELECT @loc:= REPLACE(coordinates, &#039;,&#039;, &#039; &#039;) FROM interventions where id = 20;<br />
+UPDATE interventions SET location = ST_GeomFromText(&#039;POINT(&#039;@loc&#039;)&#039;) where id = 20;<br />
+<br />
+I keep on getting an error:<br />
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#039;@loc&#039;)&#039;) where id = 20&#039; at line 1<br />
+<br />
+Can you see what I am doing wrong?﻿";}i:23;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,653759,653759#msg-653759";s:5:"title";s:57:"Identifying geometry data type from CSV file (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,653759,653759#msg-653759";s:11:"description";s:523:" Hi there,<br />
+<br />
+I am not familiar to geometry data types yet, but I have got a csv file filled with the data as following... I believe it was generated from a mysql&#039;s database.<br />
+<br />
+route<br />
+-10363642.000|770146533.000|-10365899.000|770152619.000<br />
+<br />
+Could someone give me a tip about where to start the investigation looking forward to make this routes rightly stored in my database? And of course, how to find this route(?) in the maps?<br />
+<br />
+Thank you very much!";s:2:"dc";a:1:{s:7:"creator";s:12:"Neimar Oliva";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Sat, 24 Dec 2016 19:09:26 +0000";s:7:"summary";s:523:" Hi there,<br />
+<br />
+I am not familiar to geometry data types yet, but I have got a csv file filled with the data as following... I believe it was generated from a mysql&#039;s database.<br />
+<br />
+route<br />
+-10363642.000|770146533.000|-10365899.000|770152619.000<br />
+<br />
+Could someone give me a tip about where to start the investigation looking forward to make this routes rightly stored in my database? And of course, how to find this route(?) in the maps?<br />
+<br />
+Thank you very much!";}i:24;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,651774,651774#msg-651774";s:5:"title";s:51:"Function for scaling a geometry object (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,651774,651774#msg-651774";s:11:"description";s:125:" Is there an equivalent for OpenGIS&#039;s ST_Scale function (http://postgis.net/docs/manual-2.2/ST_Scale.html) in MySQL 5.7?";s:2:"dc";a:1:{s:7:"creator";s:13:"Baqer Mamouri";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Sun, 23 Oct 2016 13:15:34 +0000";s:7:"summary";s:125:" Is there an equivalent for OpenGIS&#039;s ST_Scale function (http://postgis.net/docs/manual-2.2/ST_Scale.html) in MySQL 5.7?";}i:25;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,645501,645501#msg-645501";s:5:"title";s:41:"Example Spatial Database SQL (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,645501,645501#msg-645501";s:11:"description";s:209:" I am working on making different spatial datatypes, but all I can find are example databases with just points. I wonder if anyone knows of examples with all the different types so I can debug my code. Thanks.";s:2:"dc";a:1:{s:7:"creator";s:16:"Charles Hamilton";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 09 May 2016 06:04:36 +0000";s:7:"summary";s:209:" I am working on making different spatial datatypes, but all I can find are example databases with just points. I wonder if anyone knows of examples with all the different types so I can debug my code. Thanks.";}i:26;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,644140,644140#msg-644140";s:5:"title";s:34:"Aggregate functions ? (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,644140,644140#msg-644140";s:11:"description";s:1310:" When can we expect the following functions ?  I really hate postgis.<br />
+<br />
+ST_3DExtent - an aggregate function that returns the box3D bounding box that bounds rows of geometries.<br />
+ST_Accum - Aggregate. Constructs an array of geometries.<br />
+ST_ClusterIntersecting - Aggregate. Returns an array with the connected components of a set of geometries<br />
+ST_ClusterWithin - Aggregate. Returns an array of GeometryCollections, where each GeometryCollection represents a set of geometries separated by no more than the specified distance.<br />
+ST_Collect - Return a specified ST_Geometry value from a collection of other geometries.<br />
+ST_Extent - an aggregate function that returns the bounding box that bounds rows of geometries.<br />
+ST_MakeLine - Creates a Linestring from point or line geometries.<br />
+ST_MemUnion - Same as ST_Union, only memory-friendly (uses less memory and more processor time).<br />
+ST_Polygonize - Aggregate. Creates a GeometryCollection containing possible polygons formed from the constituent linework of a set of geometries.<br />
+ST_SameAlignment - Returns true if rasters have same skew, scale, spatial ref, and offset (pixels can be put on same grid without cutting into pixels) and false if they don&#039;t with notice detailing issue.";s:2:"dc";a:1:{s:7:"creator";s:4:"m mm";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Sat, 02 Apr 2016 23:43:38 +0000";s:7:"summary";s:1310:" When can we expect the following functions ?  I really hate postgis.<br />
+<br />
+ST_3DExtent - an aggregate function that returns the box3D bounding box that bounds rows of geometries.<br />
+ST_Accum - Aggregate. Constructs an array of geometries.<br />
+ST_ClusterIntersecting - Aggregate. Returns an array with the connected components of a set of geometries<br />
+ST_ClusterWithin - Aggregate. Returns an array of GeometryCollections, where each GeometryCollection represents a set of geometries separated by no more than the specified distance.<br />
+ST_Collect - Return a specified ST_Geometry value from a collection of other geometries.<br />
+ST_Extent - an aggregate function that returns the bounding box that bounds rows of geometries.<br />
+ST_MakeLine - Creates a Linestring from point or line geometries.<br />
+ST_MemUnion - Same as ST_Union, only memory-friendly (uses less memory and more processor time).<br />
+ST_Polygonize - Aggregate. Creates a GeometryCollection containing possible polygons formed from the constituent linework of a set of geometries.<br />
+ST_SameAlignment - Returns true if rasters have same skew, scale, spatial ref, and offset (pixels can be put on same grid without cutting into pixels) and false if they don&#039;t with notice detailing issue.";}i:27;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,643650,643650#msg-643650";s:5:"title";s:79:"Finding places within a particular distance of a point using MySQL (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,643650,643650#msg-643650";s:11:"description";s:1776:" I&#039;m working on a task as part of a project which finds the places within a certain distance of a particular (lat, long) point. I know the way to get the result for a single row in my table which has the (Latitude, Longitude) point and the corresponding distance (given by Coverage_Norm_10km, in my case).<br />
+<br />
+My database table (Sorted_Range_Cap_Data) is of the following form:<br />
+<br />
+Place , Population, Latitude, Longitude, Altitude, Bandwidth_Required, Coverage_Range, Throughput_Range, Coverage_Norm_10km, Throughput_10km<br />
+<br />
+SELECT<br />
+  Place, (<br />
+   6371 * acos (<br />
+    cos ( radians(17.741150) )<br />
+    * cos( radians(Latitude) )<br />
+    * cos( radians(Longitude) - radians(73.149712) )<br />
+    + sin ( radians(17.741150) )<br />
+    * sin( radians(Latitude) )<br />
+   )<br />
+ ) AS Coverage_Norm_10km<br />
+ FROM Sorted_Range_Cap_Data<br />
+ HAVING Coverage_Norm_10km &lt; (The current row&#039;s &quot;Coverage_Norm_10km&quot; value)<br />
+ ORDER BY Coverage_Norm_10km<br />
+ LIMIT 0, 20;<br />
+(Source : <a href="http://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql"  rel="nofollow">http://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql</a>)<br />
+<br />
+Here, (17.741150, 73.149712) is a (lat, long) point in the first row of my database table. I want to find the set of all places which are within &quot;Coverage_Norm_10km&quot; distance from the (lat, long) point.<br />
+<br />
+I need to repeat this for each row in the table.<br />
+<br />
+Finally, I want to end up with the list of places for each (lat, long) point (every row) in my table.<br />
+<br />
+Any help would be highly appreciated.";s:2:"dc";a:1:{s:7:"creator";s:8:"Mahesh M";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Wed, 16 Mar 2016 13:03:45 +0000";s:7:"summary";s:1776:" I&#039;m working on a task as part of a project which finds the places within a certain distance of a particular (lat, long) point. I know the way to get the result for a single row in my table which has the (Latitude, Longitude) point and the corresponding distance (given by Coverage_Norm_10km, in my case).<br />
+<br />
+My database table (Sorted_Range_Cap_Data) is of the following form:<br />
+<br />
+Place , Population, Latitude, Longitude, Altitude, Bandwidth_Required, Coverage_Range, Throughput_Range, Coverage_Norm_10km, Throughput_10km<br />
+<br />
+SELECT<br />
+  Place, (<br />
+   6371 * acos (<br />
+    cos ( radians(17.741150) )<br />
+    * cos( radians(Latitude) )<br />
+    * cos( radians(Longitude) - radians(73.149712) )<br />
+    + sin ( radians(17.741150) )<br />
+    * sin( radians(Latitude) )<br />
+   )<br />
+ ) AS Coverage_Norm_10km<br />
+ FROM Sorted_Range_Cap_Data<br />
+ HAVING Coverage_Norm_10km &lt; (The current row&#039;s &quot;Coverage_Norm_10km&quot; value)<br />
+ ORDER BY Coverage_Norm_10km<br />
+ LIMIT 0, 20;<br />
+(Source : <a href="http://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql"  rel="nofollow">http://gis.stackexchange.com/questions/31628/find-points-within-a-distance-using-mysql</a>)<br />
+<br />
+Here, (17.741150, 73.149712) is a (lat, long) point in the first row of my database table. I want to find the set of all places which are within &quot;Coverage_Norm_10km&quot; distance from the (lat, long) point.<br />
+<br />
+I need to repeat this for each row in the table.<br />
+<br />
+Finally, I want to end up with the list of places for each (lat, long) point (every row) in my table.<br />
+<br />
+Any help would be highly appreciated.";}i:28;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,638090,638090#msg-638090";s:5:"title";s:50:"Intersects doesn't work with mixed SRIDs (1 reply)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,638090,638090#msg-638090";s:11:"description";s:608:" Hello!<br />
+<br />
+Since version 5.7.6 something seems to be changed. When I try to get do a st_intersects() or an intersects() on two geoms, I get an error message, that the spatial data should be in the same SRID.<br />
+<br />
+Why has this been changed?<br />
+<br />
+Because sometimes I want to get all data which intersects with a certain bounding box. But the data in my table can have different geometrical data in different srids.<br />
+<br />
+Is this a bug or is there any reason to cut off this functionality?<br />
+<br />
+Thanks in advance for any help,<br />
+<br />
+Sascha";s:2:"dc";a:1:{s:7:"creator";s:12:"Sascha Wolff";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Mon, 23 Nov 2015 12:46:09 +0000";s:7:"summary";s:608:" Hello!<br />
+<br />
+Since version 5.7.6 something seems to be changed. When I try to get do a st_intersects() or an intersects() on two geoms, I get an error message, that the spatial data should be in the same SRID.<br />
+<br />
+Why has this been changed?<br />
+<br />
+Because sometimes I want to get all data which intersects with a certain bounding box. But the data in my table can have different geometrical data in different srids.<br />
+<br />
+Is this a bug or is there any reason to cut off this functionality?<br />
+<br />
+Thanks in advance for any help,<br />
+<br />
+Sascha";}i:29;a:8:{s:4:"guid";s:61:"https://forums.mysql.com/read.php?23,637814,637814#msg-637814";s:5:"title";s:52:"Error Code: 1367. Illegal non geometric (no replies)";s:4:"link";s:61:"https://forums.mysql.com/read.php?23,637814,637814#msg-637814";s:11:"description";s:664:" Hello Guys i have a Question why is this Code not working ? <br />
+<br />
+SET @testAreaPointOben = POINT(51.061923 , 13.745996);<br />
+SET @testAreaPointRechts = POINT(51.059139 , 13.749607);<br />
+SET @testAreaPointUnten = POINT(51.055553 , 13.746724);<br />
+SET @testAreaPointLinks = POINT(51.058729 , 13.743083);<br />
+SET @testAreaLineString = linestring(@testAreaPointOben,@testAreaPointRechts,@testAreaPointUnten,@testAreaPointLinks);<br />
+<br />
+the Respons is : Error Code: 1367. Illegal non geometric &#039;(@`testAreaPointOben`)&#039; value found during parsing<br />
+<br />
+but i dont know why ? How i have to create Points right ?";s:2:"dc";a:1:{s:7:"creator";s:17:"Timon Sagichnicht";}s:8:"category";s:3:"GIS";s:7:"pubdate";s:31:"Thu, 19 Nov 2015 11:53:25 +0000";s:7:"summary";s:664:" Hello Guys i have a Question why is this Code not working ? <br />
+<br />
+SET @testAreaPointOben = POINT(51.061923 , 13.745996);<br />
+SET @testAreaPointRechts = POINT(51.059139 , 13.749607);<br />
+SET @testAreaPointUnten = POINT(51.055553 , 13.746724);<br />
+SET @testAreaPointLinks = POINT(51.058729 , 13.743083);<br />
+SET @testAreaLineString = linestring(@testAreaPointOben,@testAreaPointRechts,@testAreaPointUnten,@testAreaPointLinks);<br />
+<br />
+the Respons is : Error Code: 1367. Illegal non geometric &#039;(@`testAreaPointOben`)&#039; value found during parsing<br />
+<br />
+but i dont know why ? How i have to create Points right ?";}}s:7:"channel";a:6:{s:5:"title";s:18:"MySQL Forums - GIS";s:11:"description";s:30:"Forum for OpenGIS discussions.";s:4:"link";s:36:"https://forums.mysql.com/list.php?23";s:13:"lastbuilddate";s:31:"Wed, 29 Apr 2020 03:09:53 +0000";s:9:"generator";s:13:"Phorum 5.2.23";s:7:"tagline";s:30:"Forum for OpenGIS discussions.";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

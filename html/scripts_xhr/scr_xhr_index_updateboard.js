@@ -1,0 +1,1 @@
+function updateboard(){var url="http://www.spatiallink.org/inc_xhr/inc_xhr_index_updateboard.php?param=";var boardValue=document.getElementById("board").value;http.open("GET",url+escape(boardValue),true);http.onreadystatechange=handleHttpResponse;http.send(null);function handleHttpResponse(){}}

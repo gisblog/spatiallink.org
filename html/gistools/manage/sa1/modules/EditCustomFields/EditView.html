@@ -1,0 +1,188 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+-->
+<!-- $Id: EditView.html,v 1.4 2005/04/20 05:06:33 bob Exp $ -->
+<!-- BEGIN: popup -->
+<html>
+<head><title>Custom Field</title></head>
+<body>
+{header}
+<script>
+var height = 280;
+	if(typeof( window.outerHeight ) == 'number'){
+		var height = window.outerHeight;
+	}
+function typeChanged(obj)
+{
+	
+	if(obj.options[obj.selectedIndex].value == 'enum')
+	{
+		document.getElementById('enum').style.display = 'inline';
+		updatedroplist('listiframe');
+		
+		window.resizeTo(340, 510);
+		
+	}
+	else
+	{
+		window.resizeTo(320, height);
+		document.getElementById('enum').style.display = 'none';
+		
+	}
+
+}
+window.resizeTo(320, height);
+function updatedroplist(name){
+	document.getElementById(name).src = 'index.php?module=EditCustomFields&action=DisplayDropDownValues&to_pdf=true&list=' + document.getElementById('ext1').options[document.getElementById('ext1').selectedIndex].value;
+}
+function handle_cancel(){
+	window.close();
+}
+</script>
+<!-- END: popup -->
+
+<!-- BEGIN: embeded -->
+<script>
+function typeChanged(obj)
+{
+	
+	if(obj.options[obj.selectedIndex].value == 'enum')
+	{
+		document.getElementById('enum').style.display = 'inline';
+		updatedroplist('listiframe');
+	}
+	else
+	{
+		document.getElementById('enum').style.display = 'none';
+		
+	}
+
+}
+function updatedroplist(name){
+	document.getElementById(name).src = 'index.php?module=EditCustomFields&action=DisplayDropDownValues&to_pdf=true&list=' + document.getElementById('ext1').options[document.getElementById('ext1').selectedIndex].value;
+}
+function handle_cancel(){
+	document.location = 'index.php?module={RETURN_MODULE}&action={RETURN_ACTION}&module_name={custom_module}';	
+}
+function handle_duplicate(){
+	document.popup_form.action.value  = 'EditView';
+	document.popup_form.duplicate.value = 'true';
+	document.popup_form.submit();
+}
+</script>
+<!-- END: embeded -->
+
+<!-- BEGIN: body -->
+
+<form action="index.php" method="post" name="popup_form">
+<table  cellpadding="0" cellspacing="0" border="0">
+	<tr><td>
+	<table  cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding-bottom: 2px;">
+<input type="hidden" name="id" value="{custom_field_id}" />
+<input type="hidden" name="module" value="EditCustomFields" />
+<input type="hidden" name="action" value="Save"/>
+<input type="hidden" name="duplicate" value=""/>
+<input type="hidden" name="style" value="{STYLE}"/>
+<input type="hidden" name="form" value="{form}" />
+<input type="hidden" name="style" value="{STYLE}"/>
+<input type="hidden" name="module_name" value="{custom_module}"/>
+<input type="hidden" name="return_module" value="{RETURN_MODULE}" />
+<input type="hidden" name="return_action" value="{RETURN_ACTION}" />
+<input type="hidden" name="file_type" value="{FILE_TYPE}" />
+<input type="hidden" name="field_count" value="{FIELD_COUNT}" />
+	<!-- BEGIN: topsave -->
+<input type="submit" name="button" value="{APP.LBL_SAVE_BUTTON_LABEL}"
+	title="{APP.LBL_SAVE_BUTTON_TITLE}" accesskey="{APP.LBL_SAVE_BUTTON_KEY}"
+	class="button" onclick="return check_form('popup_form')"/>
+	<!-- END: topsave -->
+	<!-- BEGIN: cancel -->
+<input type="button" value="{APP.LBL_CANCEL_BUTTON_LABEL}"
+	title="{APP.LBL_CANCEL_BUTTON_TITLE}" accesskey="{APP.LBL_CANCEL_BUTTON_KEY}"
+	class="button" onclick="handle_cancel();" />
+	<!-- END: cancel -->
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+
+<tr><td nowrap="nowrap">{MOD.COLUMN_TITLE_NAME}:</td><td width="50%"><input type="text" name="name" value="{name}" {NOEDIT}/></td></tr>
+
+<tr><td nowrap="nowrap">{MOD.COLUMN_TITLE_LABEL}:</td><td><input type="text" name="label" value="{label}" {NOEDIT}/></td></tr>
+
+<tr><td nowrap="nowrap">{MOD.COLUMN_TITLE_DATA_TYPE}:</td><td><select name="data_type" id='data_type' onchange="typeChanged(this);" {NOEDIT}>{data_type_options}</select></td></tr>
+
+<tr><td nowrap="nowrap">{MOD.COLUMN_TITLE_MAX_SIZE}:</td><td><input type="text" name="max_size" value="{max_size}" /></td></tr>
+
+<tr><td nowrap="nowrap">{MOD.COLUMN_TITLE_REQUIRED_OPTION}:</td><td><input type="checkbox" name="required_option" value="{required_option}" {REQUIRED_CHECKED}/></td></tr>
+
+<tr><td nowrap="nowrap">{MOD.COLUMN_TITLE_DEFAULT_VALUE}:</td><td><input type="text" name="default_value" value="{default_value}" /></td></tr>
+<tr><td colspan='2'>	
+	<div id='enum' style='display:none'>
+
+	<table cellpadding="0" cellspacing="2" border="0" width="100%" class="tabForm">
+	<tr>
+	<td nowrap="nowrap">{MOD.LBL_DROP_DOWN_LIST}</td>
+	<td><select id='ext1' name='ext1' onchange="updatedroplist('listiframe');" {NOEDIT}>{ENUM_OPTIONS}</select></td>
+	</tr>
+	<tr  >
+	<td colspan = '2'> <iframe id='listiframe' frameborder="0"  width='280' marginwidth="0" marginheight="0" style="border: 1px solid #000000;" ></iframe></td>
+	</tr>
+	</table>
+</div>
+</td></tr>
+<!-- BEGIN: botsave -->
+	<tr><td><br>
+	<input type="submit" name="button" value="{APP.LBL_SAVE_BUTTON_LABEL}"
+	title="{APP.LBL_SAVE_BUTTON_TITLE}" accesskey="{APP.LBL_SAVE_BUTTON_KEY}"
+	class="button" onclick="return check_form('popup_form')"/>
+	</td><tr>
+	<!-- END: botsave --></table></td></tr>
+	
+</table>
+
+
+
+
+
+<!--
+<tr>
+<td nowrap="nowrap">{MOD.COLUMN_TITLE_EXT2}</td>
+<td><input type="text" name="ext2" value="{ext2}" /></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">{MOD.COLUMN_TITLE_EXT3}</td>
+<td><input type="text" name="ext3" value="{ext3}" /></td>
+</tr>
+-->
+
+<script>
+typeChanged(document.getElementById('data_type'));
+</script>
+
+</form>
+<!-- END: body -->
+

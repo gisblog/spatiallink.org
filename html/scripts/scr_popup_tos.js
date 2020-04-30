@@ -1,0 +1,1 @@
+function popup_tos(){window.open("/popup/popup_tos.php","popup","width=400,height=400,location=0,menubar=0,resizable=0,scrollbars=1,status=0,titlebar=0,toolbar=0")}

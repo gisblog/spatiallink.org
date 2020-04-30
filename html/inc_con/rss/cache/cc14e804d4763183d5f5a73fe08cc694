@@ -1,0 +1,211 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:7:{s:5:"title";s:81:"ESRI Applications (ArcIMS, ArcSDE, ArcGIS Server) in a Virtual Server Environment";s:4:"link";s:127:"http://www.roktech.net/devblog/index.cfm/2007/4/6/ESRI-Applications-ArcIMS-ArcSDE-ArcGIS-Server-in-a-Virtual-Server-Environment";s:11:"description";s:281:"
+				
+				
+				Over the years, we have amassed a motley assortment of servers.  We had a  mail server, ArcIMS production, ArcIMS Development, ArcSDE production, ArcSDE development, WINS/Domain Controller/VPN, File Server, ArcGIS Server, Webserver, etc etc etc.
+
+W...
+				
+				
+				";s:8:"category";s:18:"MiscArcGIS General";s:7:"pubdate";s:31:"Fri, 06 Apr 2007 08:30:00 -0400";s:4:"guid";s:127:"http://www.roktech.net/devblog/index.cfm/2007/4/6/ESRI-Applications-ArcIMS-ArcSDE-ArcGIS-Server-in-a-Virtual-Server-Environment";s:7:"summary";s:281:"
+				
+				
+				Over the years, we have amassed a motley assortment of servers.  We had a  mail server, ArcIMS production, ArcIMS Development, ArcSDE production, ArcSDE development, WINS/Domain Controller/VPN, File Server, ArcGIS Server, Webserver, etc etc etc.
+
+W...
+				
+				
+				";}i:1;a:7:{s:5:"title";s:30:"ArcMap Server Temp Directories";s:4:"link";s:81:"http://www.roktech.net/devblog/index.cfm/2007/3/30/ArcMap-Server-Temp-Directories";s:11:"description";s:280:"
+				
+				
+				I got a call this morning at around 7am from a client of ours that has a very high volume ArcMAP server based site.
+"The maps are down, the maps are down" the client says.  Yikes. 
+
+First off, I hate when I get calls like this.  They are few and f...
+				
+				
+				";s:8:"category";s:13:"ArcMAP Server";s:7:"pubdate";s:31:"Fri, 30 Mar 2007 09:02:00 -0400";s:4:"guid";s:81:"http://www.roktech.net/devblog/index.cfm/2007/3/30/ArcMap-Server-Temp-Directories";s:7:"summary";s:280:"
+				
+				
+				I got a call this morning at around 7am from a client of ours that has a very high volume ArcMAP server based site.
+"The maps are down, the maps are down" the client says.  Yikes. 
+
+First off, I hate when I get calls like this.  They are few and f...
+				
+				
+				";}i:2;a:7:{s:5:"title";s:43:"Update on the 9.2 Coldfusion  Connector bug";s:4:"link";s:93:"http://www.roktech.net/devblog/index.cfm/2007/3/23/Update-on-the-92-Coldfusion--Connector-bug";s:11:"description";s:281:"
+				
+				
+				Micheal Lippman has logged this issue with ESRI, and they have confirmed it as a bug:
+
+"I talked with the programmer assigned to look into this issue.  It appears that this issue is a bug in our software.  The mfc71.dll file should have been part o...
+				
+				
+				";s:8:"category";s:17:"ArcIMS Coldfusion";s:7:"pubdate";s:31:"Fri, 23 Mar 2007 09:35:00 -0400";s:4:"guid";s:93:"http://www.roktech.net/devblog/index.cfm/2007/3/23/Update-on-the-92-Coldfusion--Connector-bug";s:7:"summary";s:281:"
+				
+				
+				Micheal Lippman has logged this issue with ESRI, and they have confirmed it as a bug:
+
+"I talked with the programmer assigned to look into this issue.  It appears that this issue is a bug in our software.  The mfc71.dll file should have been part o...
+				
+				
+				";}i:3;a:7:{s:5:"title";s:39:"ArcIMS 9.2 Coldfusion Connector Big BUG";s:4:"link";s:88:"http://www.roktech.net/devblog/index.cfm/2007/2/2/ArcIMS-92-Coldfusion-Connector-Big-BUG";s:11:"description";s:283:"
+				
+				
+				Ok, here is a good one.  I now have a few ArcIMS 9.2 installs under my belt.  All went well, and for the most part, I am happy with 9.2.  Of course, readers of the blog may already know, I am a hard core Coldfusion advocate and user of the Coldfusion...
+				
+				
+				";s:8:"category";s:17:"ArcIMS Coldfusion";s:7:"pubdate";s:31:"Fri, 02 Feb 2007 11:12:00 -0400";s:4:"guid";s:88:"http://www.roktech.net/devblog/index.cfm/2007/2/2/ArcIMS-92-Coldfusion-Connector-Big-BUG";s:7:"summary";s:283:"
+				
+				
+				Ok, here is a good one.  I now have a few ArcIMS 9.2 installs under my belt.  All went well, and for the most part, I am happy with 9.2.  Of course, readers of the blog may already know, I am a hard core Coldfusion advocate and user of the Coldfusion...
+				
+				
+				";}i:4;a:7:{s:5:"title";s:10:"ArcIMS 9.2";s:4:"link";s:60:"http://www.roktech.net/devblog/index.cfm/2007/1/21/ArcIMS-92";s:11:"description";s:281:"
+				
+				
+				Just realized I had posted in quite sometime.  Things have beyond busy here at work.  We are all working as fast as we can to get things out the door, so sometimes the blog suffers.
+
+Anyway, I have finally moved my sites of to ArcIMS 9.2 for 2 reas...
+				
+				
+				";s:8:"category";s:14:"ArcIMS General";s:7:"pubdate";s:31:"Sun, 21 Jan 2007 22:01:00 -0400";s:4:"guid";s:60:"http://www.roktech.net/devblog/index.cfm/2007/1/21/ArcIMS-92";s:7:"summary";s:281:"
+				
+				
+				Just realized I had posted in quite sometime.  Things have beyond busy here at work.  We are all working as fast as we can to get things out the door, so sometimes the blog suffers.
+
+Anyway, I have finally moved my sites of to ArcIMS 9.2 for 2 reas...
+				
+				
+				";}i:5;a:6:{s:5:"title";s:34:"Updated ArcIMS Public Viewer Sites";s:4:"link";s:86:"http://www.roktech.net/devblog/index.cfm/2006/11/21/Updated-ArcIMS-Public-Viewer-Sites";s:11:"description";s:283:"
+				
+				
+				Finally, that day has come.  I was able to pull the plug on two very old, pop up infested, times new roman font based, and overall hideous ArcIMS viewer sites.  We are in the process of upgrading all of our clients to this new viewer.  These are the ...
+				
+				
+				";s:7:"pubdate";s:31:"Tue, 21 Nov 2006 19:38:00 -0400";s:4:"guid";s:86:"http://www.roktech.net/devblog/index.cfm/2006/11/21/Updated-ArcIMS-Public-Viewer-Sites";s:7:"summary";s:283:"
+				
+				
+				Finally, that day has come.  I was able to pull the plug on two very old, pop up infested, times new roman font based, and overall hideous ArcIMS viewer sites.  We are in the process of upgrading all of our clients to this new viewer.  These are the ...
+				
+				
+				";}i:6;a:7:{s:5:"title";s:51:"Advanced Tips and Tricks in ArcIMS Seminar at SCARC";s:4:"link";s:103:"http://www.roktech.net/devblog/index.cfm/2006/11/20/Advanced-Tips-and-Tricks-in-ArcIMS-Seminar-at-SCARC";s:11:"description";s:281:"
+				
+				
+				I'll be giving a half day seminar at this years SCARC conference in Charleston, SC.  Wednesday, January 24 from 8:30 AM - 12:00.
+
+This is a good local conference that draws a pretty decent crowd.  So, if any of you that are IMS users are interested...
+				
+				
+				";s:8:"category";s:14:"ArcIMS General";s:7:"pubdate";s:31:"Mon, 20 Nov 2006 16:46:00 -0400";s:4:"guid";s:103:"http://www.roktech.net/devblog/index.cfm/2006/11/20/Advanced-Tips-and-Tricks-in-ArcIMS-Seminar-at-SCARC";s:7:"summary";s:281:"
+				
+				
+				I'll be giving a half day seminar at this years SCARC conference in Charleston, SC.  Wednesday, January 24 from 8:30 AM - 12:00.
+
+This is a good local conference that draws a pretty decent crowd.  So, if any of you that are IMS users are interested...
+				
+				
+				";}i:7;a:7:{s:5:"title";s:30:"ArcMap Server Video Card specs";s:4:"link";s:82:"http://www.roktech.net/devblog/index.cfm/2006/11/16/ArcMap-Server-Video-Card-specs";s:11:"description";s:281:"
+				
+				
+				It has been a while since I last visited this issue.  A while back, I solicited some info on using ArcMap Server and its performance issues.  Many of the suggestions I got were to place a pretty high premium on a video card.
+
+Well, this site of min...
+				
+				
+				";s:8:"category";s:27:"ArcMAP ServerArcIMS General";s:7:"pubdate";s:31:"Thu, 16 Nov 2006 14:57:00 -0400";s:4:"guid";s:82:"http://www.roktech.net/devblog/index.cfm/2006/11/16/ArcMap-Server-Video-Card-specs";s:7:"summary";s:281:"
+				
+				
+				It has been a while since I last visited this issue.  A while back, I solicited some info on using ArcMap Server and its performance issues.  Many of the suggestions I got were to place a pretty high premium on a video card.
+
+Well, this site of min...
+				
+				
+				";}i:8;a:7:{s:5:"title";s:50:"ArcIMS 9.2 - Enable Full Logging without a restart";s:4:"link";s:100:"http://www.roktech.net/devblog/index.cfm/2006/11/13/ArcIMS-92--Enable-Full-Logging-without-a-restart";s:11:"description";s:283:"
+				
+				
+				I received my ArcIMS 9.2 final today.  I installed it right away, and my first surprise was that you can now enable full logging via the ArcIMS Admin without a restart.  That alone warrants a new release in my book.  I'll continue to post more this w...
+				
+				
+				";s:8:"category";s:14:"ArcIMS General";s:7:"pubdate";s:31:"Mon, 13 Nov 2006 16:09:00 -0400";s:4:"guid";s:100:"http://www.roktech.net/devblog/index.cfm/2006/11/13/ArcIMS-92--Enable-Full-Logging-without-a-restart";s:7:"summary";s:283:"
+				
+				
+				I received my ArcIMS 9.2 final today.  I installed it right away, and my first surprise was that you can now enable full logging via the ArcIMS Admin without a restart.  That alone warrants a new release in my book.  I'll continue to post more this w...
+				
+				
+				";}i:9;a:7:{s:5:"title";s:48:"Cfmail, 'Google Tools For Your Domain', and SPAM";s:4:"link";s:96:"http://www.roktech.net/devblog/index.cfm/2006/10/24/Cfmail-Google-Tools-For-Your-Domain-and-SPAM";s:11:"description";s:283:"
+				
+				
+				If you are like me, you hate spam.  You know what I hate more that that?  Managing my own mail server and dns.  We are a small shop that does GIS Application work, and have been running our own mail server since 1998.  As you probably know, spam was ...
+				
+				
+				";s:8:"category";s:14:"ColdfusionMisc";s:7:"pubdate";s:31:"Tue, 24 Oct 2006 15:44:00 -0400";s:4:"guid";s:96:"http://www.roktech.net/devblog/index.cfm/2006/10/24/Cfmail-Google-Tools-For-Your-Domain-and-SPAM";s:7:"summary";s:283:"
+				
+				
+				If you are like me, you hate spam.  You know what I hate more that that?  Managing my own mail server and dns.  We are a small shop that does GIS Application work, and have been running our own mail server since 1998.  As you probably know, spam was ...
+				
+				
+				";}i:10;a:7:{s:5:"title";s:35:"Windows Live Drawing Tools....Drool";s:4:"link";s:82:"http://www.roktech.net/devblog/index.cfm/2006/9/26/Windows-Live-Drawing-ToolsDrool";s:11:"description";s:282:"
+				
+				
+				Jack of all, master of none fits me like a glove.  I'll be the first to admit it, I am lousy with javascript.  Always have been.  I can muck my way around and do some simple stuff, and integrate other folks scripts into my apps, but thats about it. ...
+				
+				
+				";s:8:"category";s:17:"MiscExample Sites";s:7:"pubdate";s:31:"Tue, 26 Sep 2006 08:56:00 -0400";s:4:"guid";s:82:"http://www.roktech.net/devblog/index.cfm/2006/9/26/Windows-Live-Drawing-ToolsDrool";s:7:"summary";s:282:"
+				
+				
+				Jack of all, master of none fits me like a glove.  I'll be the first to admit it, I am lousy with javascript.  Always have been.  I can muck my way around and do some simple stuff, and integrate other folks scripts into my apps, but thats about it. ...
+				
+				
+				";}i:11;a:7:{s:5:"title";s:19:"When AJAX is useful";s:4:"link";s:70:"http://www.roktech.net/devblog/index.cfm/2006/8/15/When-AJAX-is-useful";s:11:"description";s:283:"
+				
+				
+				You can't get through a single day anymore without hearing something about AJAX and web 2.0, yada yada.  Personally, I think it is all nonsense.  Those useless cloud tags and whatever the latest 'feature' is, are worthless...people put AJAX on their ...
+				
+				
+				";s:8:"category";s:45:"ArcIMS GeneralArcIMS ColdfusionColdfusionMisc";s:7:"pubdate";s:31:"Tue, 15 Aug 2006 11:32:00 -0400";s:4:"guid";s:70:"http://www.roktech.net/devblog/index.cfm/2006/8/15/When-AJAX-is-useful";s:7:"summary";s:283:"
+				
+				
+				You can't get through a single day anymore without hearing something about AJAX and web 2.0, yada yada.  Personally, I think it is all nonsense.  Those useless cloud tags and whatever the latest 'feature' is, are worthless...people put AJAX on their ...
+				
+				
+				";}i:12;a:7:{s:5:"title";s:35:"Google Geocoding Service & Thoughts";s:4:"link";s:85:"http://www.roktech.net/devblog/index.cfm/2006/6/23/Google-Geocoding-Service--Thoughts";s:11:"description";s:283:"
+				
+				
+				I must say, as a GIS developer that uses almost exclusivley ESRI products, the inital thoughts of the exposure of the Google Maps api were that of trepidation.  However, after some time has passed, I think it has done nothing but good things for us E...
+				
+				
+				";s:8:"category";s:15:"ArcWeb Services";s:7:"pubdate";s:31:"Fri, 23 Jun 2006 15:21:00 -0400";s:4:"guid";s:85:"http://www.roktech.net/devblog/index.cfm/2006/6/23/Google-Geocoding-Service--Thoughts";s:7:"summary";s:283:"
+				
+				
+				I must say, as a GIS developer that uses almost exclusivley ESRI products, the inital thoughts of the exposure of the Google Maps api were that of trepidation.  However, after some time has passed, I think it has done nothing but good things for us E...
+				
+				
+				";}i:13;a:7:{s:5:"title";s:35:"ArcMap Server and Shapefile Locking";s:4:"link";s:86:"http://www.roktech.net/devblog/index.cfm/2006/6/21/ArcMap-Server-and-Shapefile-Locking";s:11:"description";s:283:"
+				
+				
+				Well, I will be the first to admit, I had almost no experience with ArcMap server for ArcIMS.  My first impressions, for the most part have held true.  It is somewhat slower than a imageserver, but not as bad as I thought.  It is a memory hog, no dou...
+				
+				
+				";s:8:"category";s:27:"ArcMAP ServerArcIMS General";s:7:"pubdate";s:31:"Wed, 21 Jun 2006 08:49:00 -0400";s:4:"guid";s:86:"http://www.roktech.net/devblog/index.cfm/2006/6/21/ArcMap-Server-and-Shapefile-Locking";s:7:"summary";s:283:"
+				
+				
+				Well, I will be the first to admit, I had almost no experience with ArcMap server for ArcIMS.  My first impressions, for the most part have held true.  It is somewhat slower than a imageserver, but not as bad as I thought.  It is a memory hog, no dou...
+				
+				
+				";}i:14;a:7:{s:5:"title";s:40:"New Coldfusion ArcIMS Based Mapping site";s:4:"link";s:90:"http://www.roktech.net/devblog/index.cfm/2006/6/8/New-Coldfusion-ArcIMS-Based-Mapping-site";s:11:"description";s:281:"
+				
+				
+				Well, the newest version of our public viewer is being released today.  It was built with Coldfusion 7, ArcIMS 9.1 and SqlServer 2000/SDE 9.1.  I have another instance of SqlServer 2005/SDE serving the imagery.
+
+The code is based off our intranet a...
+				
+				
+				";s:8:"category";s:44:"ArcIMS GeneralArcIMS ColdfusionExample Sites";s:7:"pubdate";s:31:"Thu, 08 Jun 2006 10:56:00 -0400";s:4:"guid";s:90:"http://www.roktech.net/devblog/index.cfm/2006/6/8/New-Coldfusion-ArcIMS-Based-Mapping-site";s:7:"summary";s:281:"
+				
+				
+				Well, the newest version of our public viewer is being released today.  It was built with Coldfusion 7, ArcIMS 9.1 and SqlServer 2000/SDE 9.1.  I have another instance of SqlServer 2005/SDE serving the imagery.
+
+The code is based off our intranet a...
+				
+				
+				";}}s:7:"channel";a:11:{s:5:"title";s:36:"ROK Technologies ESRI Developer Blog";s:4:"link";s:40:"http://www.roktech.net/devblog/index.cfm";s:11:"description";s:75:"Discussions of the ESRI Geographic Information Systems development platform";s:8:"language";s:5:"en-us";s:7:"pubdate";s:31:"Sun, 22 Apr 2007 22:34:44 -0400";s:13:"lastbuilddate";s:31:"Fri, 06 Apr 2007 08:30:00 -0400";s:9:"generator";s:7:"BlogCFC";s:4:"docs";s:37:"http://blogs.law.harvard.edu/tech/rss";s:14:"managingeditor";s:19:"jharris@roktech.net";s:9:"webmaster";s:19:"jharris@roktech.net";s:7:"tagline";s:75:"Discussions of the ESRI Geographic Information Systems development platform";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

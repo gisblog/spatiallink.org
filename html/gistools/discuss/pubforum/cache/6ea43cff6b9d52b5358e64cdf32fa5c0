@@ -1,0 +1,74 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:6:"Simona";s:12:"author_email";s:17:"sim...@hotmail.xx";s:7:"updated";s:20:"2013-06-18T06:10:50Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/51db20e27eb904c8";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/51db20e27eb904c8";s:5:"title";s:18:"sorry for the test";s:7:"summary";s:24:"
+  sorry for the test
+  ";}i:1;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:20:"hoekstr...@gmail.com";s:7:"updated";s:20:"2013-06-12T17:58:15Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/728a96c889784d47";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/728a96c889784d47";s:5:"title";s:32:"Stylesheet not applying, maybe??";s:7:"summary";s:488:"
+  Can a guru here tell what's wrong with my site just by looking at this? <br> <p>Site: <a target="_blank" rel=nofollow href="http://www.grkroccenter.org">[link]</a> <br> <p>Site should look more like: <a target="_blank" rel=nofollow href="http://www.kroccda.org">[link]</a> <br> <p>I was working in the stylesheet earlier today messing with the z-index numbers to try to get my drop-down menus to show up over the slider and page content, and I must have done something REALLY wrong.
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:7:"Shapper";s:12:"author_email";s:17:"mdmo...@gmail.com";s:7:"updated";s:20:"2013-06-06T14:49:35Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/dccc1717a1106cba";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/dccc1717a1106cba";s:5:"title";s:37:"Position UL on DIV's right top corner";s:7:"summary";s:459:"
+  Hello, <br> <p>I created a DIV which on the right top corner must have two links. <br> <p>The online example is in: <a target="_blank" rel=nofollow href="http://jsfiddle.net/y2hhm/3/">[link]</a> <br> <p>Each link text will be replace by an icon image using background-image. <br> <p>It looks fine on the first DIV. But on the second the table is pushed down. <br> <p>I also tried &quot;position:absolute&quot; but it makes hard to align it on the right.
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:6:"Tuxedo";s:12:"author_email";s:21:"tux...@mailinator.com";s:7:"updated";s:20:"2013-06-04T11:54:16Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/b41ecdfc53138f72";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/b41ecdfc53138f72";s:5:"title";s:36:"Position an image on top of another?";s:7:"summary";s:395:"
+  Hello, <br> <p>I have a 400x300px inline jpeg, such as &lt;img src=photo.jpg&gt; and would like <br> like to overlay smaller png, 30x30px, &lt;img src=enlarge.png&gt; <br> <p>The smaller image is a small magnifying glass indicating the image is <br> clickable. What is the simplest way to position the png on the top right <br> corner of the jpg? Or in any other corner over the jpeg area?
+  ";}i:4;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"Bob Smithe";s:12:"author_email";s:24:"robertsmith...@gmail.com";s:7:"updated";s:20:"2013-06-03T16:43:55Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/72fc2e77f62d0ad3";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/72fc2e77f62d0ad3";s:5:"title";s:35:"padding screwing up 2 column layout";s:7:"summary";s:836:"
+  I am trying to learn responsive web design as that seems to commonplace now. I am also seeing what all the hype about html5 and css3 is. I figured I would make a test baseball webpage. I have the header and navigation bar looking good and working well. The problem is the 2 column layout I am trying to use. The left column is for the article and the right column is for the aside which has contact info, team meeting location, etc. If I remove the padding from the article and aside in the css then the 2 columns line up like they are supposed to. However if I add padding to make the text look nice then I get 1 column and the second column starts at the end of the first. I tried switching from padding to a margin and that didn't help. The html code passes the w3 validator but that does not mean much. What have I screwed up?
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:14:"Philip Herlihy";s:12:"author_email";s:18:"bounceb...@you.com";s:7:"updated";s:20:"2013-06-01T12:36:24Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/f03b1186d9ba8f33";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/f03b1186d9ba8f33";s:5:"title";s:25:"Media queries for devices";s:7:"summary";s:368:"
+  I thought I'd finally get round to trying Media Queries for the next <br> site I work on, so that it'll look 'right' on both standard monitors and <br> on tablets and smartphones. Previous attempts to cater for wide <br> variations in screen width have seemed thwarted by mobile browsers' <br> tendency to shrink pages to fit, resulting in tiny text, rather than
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"Bob Smithe";s:12:"author_email";s:24:"robertsmith...@gmail.com";s:7:"updated";s:20:"2013-05-26T17:39:35Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/b6c15e3881d3aff7";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/b6c15e3881d3aff7";s:5:"title";s:26:"what is good html and css?";s:7:"summary";s:808:"
+  In college they taught us web programming using FrontPage. I have picked up enough html4 to write a decent webpage from scratch. All the code I write passes the validator at w3.org. I know that passing the validator does not mean it is good code. <br> <p>I have gotten several inquires about html5. I realize that the html5 specifications are not final. To update my skills I am attempting to write a simple webpage in html5 and css3 and it didn't go well. I started with the basics and am adding features until I get a finished full content page. I posted the code I started with in an earlier topic and with some help it works but I have a long way to go for a real webpage. One of the posters suggested I RTFM. So I am looking for books, articles, postings, etc on what good html and css looks like.
+  ";}i:7;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:7:"Jason C";s:12:"author_email";s:19:"jwcarl...@gmail.com";s:7:"updated";s:20:"2013-05-24T09:00:10Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/4a1d94bd19e39da0";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/4a1d94bd19e39da0";s:5:"title";s:46:"Floating elements, but don't want them to wrap";s:7:"summary";s:433:"
+  I have two elements, with one on the left and one on the right. Like so: <br> <p>&lt;div id=&quot;container&quot;&gt; <br> &lt;div style=&quot;float: left; overflow: hidden; height: 18px&quot;&gt; <br> ABCDEFGHIJKLMNOPQRSTUVWXYZ <br> &lt;/div&gt; <br> <p> &lt;div style=&quot;float: right; height: 18px; padding-left: 5px&quot;&gt; <br> 123456789 <br> &lt;/div&gt; <br> <p> &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:13:"Denis McMahon";s:12:"author_email";s:24:"denismfmcma...@gmail.com";s:7:"updated";s:20:"2013-05-23T15:25:14Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/3d8363192552b764";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/3d8363192552b764";s:5:"title";s:17:"inherited padding";s:7:"summary";s:378:"
+  I tried to do this: <br> <p>td {padding: inherit 1em} <br> <p>but found that instead I had to do this: <br> <p>td {padding-left: 1em;padding-right: 1em} <br> <p>I expected that 'inherit' would apply to individual values of the multi- <br> value list, but that doesn't seem to be the case. Does the assembled <br> expertise think it should? Firefox 21 / Ubuntu 12.04.2 LTS.
+  ";}i:9;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:24:"robertsmith...@gmail.com";s:7:"updated";s:20:"2013-05-22T17:43:08Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/991310abe2b024b2";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/991310abe2b024b2";s:5:"title";s:61:"ie9 not applying css to header or footer, firefox works great";s:7:"summary";s:538:"
+  Hi, <br> <p>I am trying to rewrite a website in html5. The code I have works in firefox, but it doesn't work in IE9. In IE9 the blue bars are missing and the header is left justified even though I told it right justification. I did a search for IE9 css problems only to find css problems for IE8 and below. I ran the code through validator.w3.org and it comes back clean. I am using IE9 fully patched on a fully patched Windows 7 x64 computer. IE10 won't be deployed until next year so I have to use IE9. Am I doing something wrong?
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:3:"emf";s:12:"author_email";s:16:"emf...@gmail.com";s:7:"updated";s:20:"2013-05-19T08:00:41Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/45bef7471dca7341";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/45bef7471dca7341";s:5:"title";s:23:"Alternating row classes";s:7:"summary";s:359:"
+  In the following table: <br> <p>&lt;!DOCTYPE HTML&gt; <br> &lt;html lang=&quot;en&quot;&gt; <br> &lt;head&gt; <br> &lt;meta charset=&quot;UTF-8&quot;&gt; <br> &lt;title&gt;table&lt;/title&gt; <br> &lt;style type=&quot;text/css&quot;&gt; <br> body { <br> background-color: black; <br> color:white; <br> } <br> table { <br> margin: auto; <br> width: 20em;
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:3:"emf";s:12:"author_email";s:16:"emf...@gmail.com";s:7:"updated";s:20:"2013-05-17T08:01:59Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/b2d51af44f6ec9f0";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/b2d51af44f6ec9f0";s:5:"title";s:20:"Class applied to col";s:7:"summary";s:409:"
+  ============= <br> &lt;!DOCTYPE HTML&gt; <br> &lt;html lang=&quot;en&quot;&gt; <br> &lt;head&gt; <br> &lt;meta charset=&quot;UTF-8&quot;&gt; <br> &lt;title&gt;Test&lt;/title&gt; <br> &lt;style type=&quot;text/css&quot;&gt; <br> td { width: 8em; } <br> .yll { background:yellow; text-align:center; } <br> &lt;/style&gt; <br> &lt;/head&gt; <br> &lt;body&gt; <br> Table 1 <br> &lt;table&gt; <br> &lt;tr&gt;
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:3:"emf";s:12:"author_email";s:16:"emf...@gmail.com";s:7:"updated";s:20:"2013-05-13T02:54:57Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/beda14227fb16cc4";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/beda14227fb16cc4";s:5:"title";s:11:"Table cells";s:7:"summary";s:377:"
+  In table 1 below, I tried to use td { width: } to set the width of cells <br> so that in the first row the first cell will be 5em, the 2nd, 3rd, and <br> 4th 10em, and the 5th 5em, while in the second row there will be 4 cells <br> of 10em, and I realized that it doesn't work: obviously the interpreter <br> gives priority to aligning columns than to the width property.
+  ";}i:13;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:24:"amani.abdulh...@mediu.ws";s:7:"updated";s:20:"2013-05-12T11:48:05Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/8cb8f6ab861b0706";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/8cb8f6ab861b0706";s:5:"title";s:71:"تعليم اللغه العربية لغير الناطقين بيها";s:7:"summary";s:337:"
+  تعليم اللغه العربية لغير الناطقين بيها <br> جديد جامعة المدينة العالميةتقدم جامعة المدينة العالمية كل ما هو جديد <br> معهد تعليم اللغة العربية <br> لتعليم اللغة العربية لغير الناطقين بها
+  ";}i:14;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:24:"amani.abdulh...@mediu.ws";s:7:"updated";s:20:"2013-05-12T11:44:08Z";s:2:"id";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/a4f63a8604b6366d";s:5:"link_";s:111:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/a4f63a8604b6366d";s:5:"title";s:6:"Oracle";s:7:"summary";s:530:"
+  Oracle <br> In Classical Antiquity, an oracle was a person or agency considered to be a source of wise counsel or prophetic predictions or precognition of the future, inspired by the gods. As such it is a form of divination. <br> The word oracle comes from the Latin verb ōrāre &quot;to speak&quot; and properly refers to the priest or priestess uttering the prediction. In extended use, oraclemay also refer to the site of the oracle, and to the oracular utterances themselves, called khrēsmoi (χρησμοί) in Greek.
+  ";}}s:7:"channel";a:6:{s:2:"id";s:73:"http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets";s:5:"title";s:55:"comp.infosystems.www.authoring.stylesheets Google Group";s:8:"subtitle";s:37:"
+  Layout/presentation on the WWW.
+  ";s:9:"link_self";s:75:"/group/comp.infosystems.www.authoring.stylesheets/feed/atom_v1_0_topics.xml";s:7:"updated";s:8:"-0-0T::Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

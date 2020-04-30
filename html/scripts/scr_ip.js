@@ -1,0 +1,1 @@
+var ip='<!--#echo var="REMOTE_ADDR"-->';document.write(ip);

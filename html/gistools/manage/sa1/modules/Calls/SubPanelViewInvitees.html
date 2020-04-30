@@ -1,0 +1,75 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * Header: /cvsroot/sugarcrm/sugarcrm/modules/Calls/SubPanelViewInvitees.html,v 1.2 2004/06/29 07:22:13 sugarclint Exp {APP.LBL_CURRENCY_SYM}
+ ********************************************************************************/
+-->
+<!-- BEGIN: users -->
+<p><h5 class="listViewSubHeadS1">{APP.LBL_USER_LIST}</h5>
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="listView">
+	<tr height="20">
+
+		<td scope="col" width="25%" class="listViewThS1"><slot>{APP.LBL_LIST_NAME}</slot></td>
+		<td scope="col" width="20%" class="listViewThS1"><slot>{APP.LBL_LIST_USER_NAME}</slot></td>
+		<td scope="col" width="30%" class="listViewThS1"><slot>{APP.LBL_LIST_EMAIL}</slot></td>
+		<td scope="col" width="15%" class="listViewThS1"><slot>{APP.LBL_LIST_PHONE}</slot></td>
+	  </tr>
+
+
+
+<!-- BEGIN: row -->
+<tr height="20"  onmouseover="setPointer(this, '{USER.ID}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmouseout="setPointer(this, '{USER.ID}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmousedown="setPointer(this, '{USER.ID}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+		<td scope='row' valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><a href="{URL_PREFIX}index.php?action=DetailView&module=Users&record={USER.ID}" class="listViewTdLinkS1">{USER.FIRST_NAME}&nbsp;{USER.LAST_NAME}</a></slot></td>
+    	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{USER.USER_NAME}</slot></td>
+    	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><A HREF="mailto:{USER.EMAIL1}" class="listViewTdLinkS1">{USER.EMAIL1}</A></slot></td>
+    	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"  nowrap><slot>{USER.PHONE_WORK}</slot></td>
+
+</tr>
+<tr><td colspan="20" class="listViewHRS1"></td></tr>
+<!-- END: row -->
+
+</table></p>
+<!-- END: users -->
+<!-- BEGIN: contacts -->
+<p><h5 class="listViewSubHeadS1">{APP.LBL_CONTACT_LIST}</h5>
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="listView">
+	<tr height="20">
+		<td width="20%" class="listViewThS1"><slot>{APP.LBL_LIST_CONTACT_NAME}</slot></td>
+		<td width="25%" class="listViewThS1"><slot>{APP.LBL_LIST_ACCOUNT_NAME}</slot></td>
+		<td width="30%" class="listViewThS1"><slot>{APP.LBL_LIST_EMAIL}</slot></td>
+		<td width="15%" class="listViewThS1"><slot>{APP.LBL_LIST_PHONE}</slot></td>
+	</tr>
+
+<!-- BEGIN: row -->
+<tr height="20"  onmouseover="setPointer(this, '{CONTACT.ID}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmouseout="setPointer(this, '{CONTACT.ID}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmousedown="setPointer(this, '{CONTACT.ID}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+		<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><a href="{URL_PREFIX}index.php?action=DetailView&module=Contacts&record={CONTACT.ID}" class="listViewTdLinkS1">{CONTACT.FIRST_NAME}&nbsp;{CONTACT.LAST_NAME}</a></slot></td>
+    	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{CONTACT.ACCOUNT_NAME}</slot></td>
+    	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><A HREF="mailto:{CONTACT.EMAIL1}" class="listViewTdLinkS1">{CONTACT.EMAIL1}</A></slot></td>
+    	<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"  nowrap><slot>{CONTACT.PHONE_WORK}</slot></td>
+
+</tr>
+<tr><td colspan="20" class="listViewHRS1"></td></tr>
+<!-- END: row -->
+
+</table></p>
+<!-- END: contacts -->

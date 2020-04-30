@@ -1,0 +1,347 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:24:{i:0;a:12:{s:5:"title";s:25:"We are Made of Star Stuff";s:4:"link";s:55:"http://zcologia.com/news/554/we-are-made-of-star-stuff/";s:7:"summary";s:125:"All the buzz about Google Sky has prompted me to re-up some image companions to my 18th blog post from April 2005. [more ...]";s:9:"published";s:25:"2007-08-24T11:51:37-06:00";s:7:"updated";s:25:"2007-08-24T11:51:37-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/554";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:651:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >All the <a class="reference" href="http://www.ogleearth.com/2007/08/google_earth_42.html">buzz</a> about Google Sky has prompted me to re-up some image companions to my <a class="reference" href="http://zcologia.com/news/18/celestial-cartographic-library/">18th</a> blog post from April 2005. I did those charts over again in color a year <a class="reference" href="http://zcologia.com/news/175/bivariate-cartographic-style/">later</a>. Google Sky is pretty cool, in a pre-<a class="reference" href="http://en.wikipedia.org/wiki/Copernicus">Copernican</a> way.</p>
+
+             </div>
+    ";}i:1;a:12:{s:5:"title";s:73:"NEH-CNR Conference on Using New Technologies to Explore Cultural Heritage";s:4:"link";s:103:"http://zcologia.com/news/553/neh-cnr-conference-on-using-new-technologies-to-explore-cultural-heritage/";s:7:"summary";s:191:"The National Endowment for the Humanities has invited Pleiades to help represent US projects at a joint NEH-CNR conference on "Using New Technologies to Explore Cultural Heritage". [more ...]";s:9:"published";s:25:"2007-08-24T10:45:23-06:00";s:7:"updated";s:25:"2007-08-24T10:45:23-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/553";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:763:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >I'm pleased to report that the National Endowment for the Humanities has invited <a class="reference" href="http://pleiades.stoa.org">Pleiades</a> to help represent US projects at a <a class="reference" href="http://www.neh.gov/news/archive/20070702.html">joint</a> NEH-CNR
+conference on "Using New Technologies to Explore Cultural Heritage". The new technologies we will be talking about include Open Source GIS, Plone, KML, WxS, Atom/Atompub, and maybe a little bit about <a class="reference" href="http://zcologia.com/mush">Mush</a>. I'll be in DC during 3-5 October, and have time to meet up with anyone in the area who's interested in finding out more about Pleiades.</p>
+
+             </div>
+    ";}i:2;a:12:{s:5:"title";s:34:"The Petty Bureaucrats of Wikipedia";s:4:"link";s:64:"http://zcologia.com/news/552/the-petty-bureaucrats-of-wikipedia/";s:7:"summary";s:196:"Apparently, once the crowd to which you are outsourcing grows large enough, it may spawn a
+class of self-appointed bureaucrats who are more concerned about the process than the
+results. [more ...]";s:9:"published";s:25:"2007-08-23T09:22:47-06:00";s:7:"updated";s:25:"2007-08-23T09:22:47-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/552";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1109:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Here's one for James Fee and all the other Wiki-haters: <a class="reference" href="http://www.roughtype.com/archives/2007/08/rise_of_the_wik.php">Rise of the Wikicrats</a>. Apparently, once the crowd to which you are outsourcing grows large enough, it may spawn a class of self-appointed bureaucrats who are more concerned about the process than the results. I don't think it is inevitable, but something that other efforts should try to monitor.</p>
+<p >For what it's worth, I have another anecdote. A colleague of mine attempted to start a Wikipedia page on the "Digital Classicist" forum and community [<a class="reference" href="http://en.wikipedia.org/w/index.php?title=Digital_Classicist&action=history">history</a>] and was made to jump through hoops by an editor whose Bachelor of Arts in Classics made them an expert in this area, and whose  <a class="reference" href="http://en.wikipedia.org/wiki/User:Merkinsmum">professed</a> "Chaotic Neutral alignment" jibes poorly with his or her bureaucratic practices.</p>
+
+             </div>
+    ";}i:3;a:12:{s:5:"title";s:44:"Geo-Atompub Meme Watch 2 (The Wrath of Khan)";s:4:"link";s:72:"http://zcologia.com/news/551/geo-atompub-meme-watch-2-the-wrath-of-khan/";s:7:"summary";s:129:"Andrew Turner points out the Atompub-shaped hole in mobile platforms. A couple weeks ago, Stefan Geens picked up on the meme too.";s:9:"published";s:25:"2007-08-21T10:46:01-06:00";s:7:"updated";s:25:"2007-08-21T10:46:01-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/551";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:406:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Andrew Turner points out the <a class="reference" href="http://highearthorbit.com/my-n95-applications-uses-and-should-haves/">Atompub-shaped hole</a> in mobile platforms. A couple weeks ago, Stefan Geens picked up on the meme <a class="reference" href="http://www.ogleearth.com/2007/08/links_atom_for.html">too</a>.</p>
+
+             </div>
+    ";}i:4;a:12:{s:5:"title";s:11:"Map Servers";s:4:"link";s:41:"http://zcologia.com/news/550/map-servers/";s:7:"summary";s:171:"Map servers -- the CGI programs and servlets that render infinitely customizable map images
+of any scale, size, and format -- remain useful in this tiled world. [more ...]";s:9:"published";s:25:"2007-08-21T10:28:59-06:00";s:7:"updated";s:25:"2007-08-21T10:28:59-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/550";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1117:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Map servers -- the CGI programs and servlets that render infinitely customizable map images of any scale, size, and format -- remain useful, even increasingly useful, in this <a class="reference" href="http://zcologia.com/news/545/tiles/">tiled</a> world. The <a class="reference" href="http://mapserver.gis.umn.edu">MapServer</a> project, for example, is climbing steadily up out of its own "trough of disillusionment" [see <a class="reference" href="http://en.wikipedia.org/wiki/Gartner's_Hype_Cycle">hype cycle</a>] towards a 5.0 release next month. Two use cases are driving it forward. Some data are so dynamic that caching is unfeasible or even undesirable. Aircraft traffic is an obvious case. The other growing role for MapServer is that of a tile engine for applications like <a class="reference" href="http://tilecache.org">TileCache</a>. Its already-good cartographic options are getting dramatically better, and longer rendering times become acceptable if your data changes on a time scale of several days or more.</p>
+
+             </div>
+    ";}i:5;a:12:{s:5:"title";s:9:"Plone 3.0";s:4:"link";s:39:"http://zcologia.com/news/549/plone-3-0/";s:7:"summary";s:92:"Plone 3.0 is released today. Built-in versioning, slick ajax interface, and more. [more ...]";s:9:"published";s:25:"2007-08-21T09:03:30-06:00";s:7:"updated";s:25:"2007-08-21T09:03:30-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/549";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:853:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Plone 3.0 is released <a class="reference" href="http://plone.org/news/plone-foundation-announces-plone-3.0">today</a>. Built-in versioning, slick ajax interface, and <a class="reference" href="http://plone.org/products/plone/features/3.0">more</a>. <a class="reference" href="http://pleiades.stoa.org">Pleiades</a> will be upgrading from 2.5 in October after I get back from <a class="reference" href="http://www.foss4g2007.org">FOSS4G</a> and an NEH meeting. I've already been testing our code against the Plone trunk since the start of this year and things are working pretty well. Remember, Kai has already brought PrimaGIS <a class="reference" href="http://blogs.hexagonit.fi/kai/2007/02/12/primagis-in-plone-30/">up to speed</a> with the new version Plone.</p>
+
+             </div>
+    ";}i:6;a:12:{s:5:"title";s:17:"GIS Certification";s:4:"link";s:47:"http://zcologia.com/news/548/gis-certification/";s:7:"summary";s:94:"I'm skeptical about gatekeepers and skeptical about the value of GIS certification. [more ...]";s:9:"published";s:25:"2007-08-17T11:33:37-06:00";s:7:"updated";s:25:"2007-08-17T11:33:37-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/548";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:792:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >I'm skeptical about gatekeepers and skeptical about the value of GIS <a class="reference" href="http://www.nsgic.org/blog/2007/08/fcw-naco-endorses-gisci.html">certification</a>. It seems so <a class="reference" href="http://en.wikipedia.org/wiki/Guild">medieval</a>. Hopefully somebody will watch and make sure they don't violate their own code of ethics by lobbying city, county, and state governments to ordain preference for, or requirement of, certification.</p>
+<p >I've paid $40 to the Red Cross for education and certification in child CPR, but for that money I received quality training from an experienced nurse. I exchanged money for skills, plus a piece of paper attesting to those skills.</p>
+
+             </div>
+    ";}i:7;a:12:{s:5:"title";s:21:"Tufte and Cartography";s:4:"link";s:51:"http://zcologia.com/news/547/tufte-and-cartography/";s:7:"summary";s:204:"stuff. My favorite Tufte tip is outlining regions with a slightly darker hue of the fill color.
+Because our visual system is non-linear, a difference as small as 5-6% can sharpen up your map
+dramatically.";s:9:"published";s:25:"2007-08-16T11:55:03-06:00";s:7:"updated";s:25:"2007-08-16T11:55:03-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/547";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:412:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Good <a class="reference" href="http://makingmaps.wordpress.com/2007/08/16/how-useful-is-tufte-for-making-maps/">stuff</a>. My favorite Tufte tip is outlining regions with a slightly darker hue of the fill color. Because our visual system is non-linear, a difference as small as 5-6% can sharpen up your map dramatically.</p>
+
+             </div>
+    ";}i:8;a:12:{s:5:"title";s:8:"Why WPS?";s:4:"link";s:37:"http://zcologia.com/news/546/why-wps/";s:7:"summary";s:71:"What exactly does one gain here by abstracting away the Web? [more ...]";s:9:"published";s:25:"2007-08-16T08:41:49-06:00";s:7:"updated";s:25:"2007-08-16T08:41:49-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/546";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:876:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >There are no less than <a class="reference" href="http://www.foss4g2007.org/presentations/html.php">five</a> presentations on web processing services (OGC WPS) at the upcoming FOSS4G conference. I'm looking forward to asking these people what exactly WPS does that can't be done with straight HTTP <a class="reference" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5">POST</a> and the <a class="reference" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.3">202</a> (Accepted) status code. What exactly does one gain here by abstracting away the Web?</p>
+<p >Related: Sebastian Good has more about "a sink" <a class="reference" href="http://www.palladiumconsulting.com/blog/sebastian/2007/08/what-can-restaurant-teach-you-about_15.html">here</a>.</p>
+
+             </div>
+    ";}i:9;a:12:{s:5:"title";s:5:"Tiles";s:4:"link";s:35:"http://zcologia.com/news/545/tiles/";s:7:"summary";s:139:"If you want to cache effectively, you must switch your design over to a finite number of view
+resources. Tiles, in another word. [more ...]";s:9:"published";s:25:"2007-08-15T12:01:37-06:00";s:7:"updated";s:25:"2007-08-15T12:01:37-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/545";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1309:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Here's something I've read a few times, including in my comments:</p>
+<blockquote >
+I'm still trying to get my head around the idea of specifying arbitrary BBOXes for image requests in REST format: seems utterly uncacheable, and thus against one of the REST goals.</blockquote>
+<p >If you seek to build a high performance, highly scalable map image or coverage service (such as the one Google needs to support Earth and Maps), exposing an infinite number of view resources is a design anti-pattern that you must avoid. (Note: a WMS doesn't expose a truly infinite number of resources, but a number <em >N</em> approximately equal to 10 to the power of 4<em >W</em>, the precision width in digits of the bounding box coordinates. <em >N</em> approaches infinity fairly quickly: <a class="reference" href="http://mapserver.gis.umn.edu/">MapServer</a> exposes something like 10<sup >66</sup> unique views of a world map.)</p>
+<p >If you want to cache effectively, you must switch your design over to a finite number of view resources. Tiles, in another word. There are other advantages to the REST architecture besides cacheability, so don't get the notion that REST fails for large values of resource number <em >N</em>.</p>
+
+             </div>
+    ";}i:10;a:12:{s:5:"title";s:15:"Explaining REST";s:4:"link";s:45:"http://zcologia.com/news/544/explaining-rest/";s:7:"summary";s:110:"Charlie's latest are good posts that don't require continual referral to the HTTP/1.1 or OWS
+specs. [more ...]";s:9:"published";s:25:"2007-08-14T16:57:18-06:00";s:7:"updated";s:25:"2007-08-14T16:57:18-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/544";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:809:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Charlie is on <a class="reference" href="http://cfis.savagexi.com/articles/2007/08/13/why-is-rest-so-hard-to-understand">a</a> <a class="reference" href="http://cfis.savagexi.com/articles/2007/08/14/resources-and-representations-redux">roll</a>. The difficulty with promoting REST is that we can't yet say "Products X, Y, and Z support it", or "Companies A, B, and C are standardizing on it, and so should you". The case has to be made for technical superiority (in many situations) of REST over the entrenched OGC architecture, and that means some jargon and details that seem esoteric to a lot of GIS practitioners. Charlie's latest are good posts that don't require continual reference to the HTTP/1.1 or WxS specs.</p>
+
+             </div>
+    ";}i:11;a:12:{s:5:"title";s:26:"That's not Agile Geography";s:4:"link";s:55:"http://zcologia.com/news/543/thats-not-agile-geography/";s:7:"summary";s:87:"Looks like the standards architects are not going for the KML + Atompub idea after all.";s:9:"published";s:25:"2007-08-14T09:19:08-06:00";s:7:"updated";s:25:"2007-08-14T09:19:08-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/543";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:367:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Looks like the standards architects are not going for the <a class="reference" href="http://groups.google.com/group/geo-web-rest/web/kml-gdata-ideas">KML + Atompub</a> idea <a class="reference" href="http://blog.mapufacture.com/2007/08/14/kml-modules-services/">after all</a>.</p>
+
+             </div>
+    ";}i:12;a:12:{s:5:"title";s:25:"Camping With Google Earth";s:4:"link";s:55:"http://zcologia.com/news/542/camping-with-google-earth/";s:7:"summary";s:111:"Last week I used Google Earth to scout sites for my 21 month-old daughter's first ever camping trip. [more ...]";s:9:"published";s:25:"2007-08-13T16:55:49-06:00";s:7:"updated";s:25:"2007-08-13T16:55:49-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/542";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:922:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Last week I used Google Earth to scout sites for my 21 month-old daughter's first ever camping trip. The imagery of the Never Summer Range is excellent, and I quickly found a couple good candidates. We used one of them Saturday night: it's marked along with a hiking trailhead and the spot where our little mountaineer announced she was too tired and hungry to continue in <a class="reference" href="http://zcologia.com/files/camping-debut.kml">camping-debut.kml</a>.</p>
+<p >One thing the imagery (2004? 2005?) doesn't show is how bad the mountain pine beetle <a class="reference" href="http://www.steamboatpilot.com/news/2007/jun/10/bettle_epidemic_raises_fire_threat/">epidemic</a> is in that part of the Routt National Forest. The slope facing our campsite was up to 10% dead. We saw large stands that might have been 20% dead.</p>
+
+             </div>
+    ";}i:13;a:12:{s:5:"title";s:40:"REST Can't Handle Rasters and Coverages?";s:4:"link";s:68:"http://zcologia.com/news/541/rest-cant-handle-rasters-and-coverages/";s:7:"summary";s:122:"There may be geospatial problems that REST can't tackle, but access to arbitrary regions of a
+coverage is not one of them.";s:9:"published";s:25:"2007-08-10T12:07:47-06:00";s:7:"updated";s:25:"2007-08-10T12:07:47-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/541";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:3320:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >That's what Raj Singh seems to be saying <a class="reference" href="http://www.rajsingh.org/blog/2007/08/10/rest-and-gis/">here</a>:</p>
+<blockquote >
+For example, most of the REST material I've read treats images as indivisible, binary resources. This won't work in the geo field, where images are in the gigabyte and terabyte range and you've got to design services that provide access to portions of those images. However, aside from imagery I don't see much of a problem with using a resource-oriented approach to information access. In fact, in the sensor web arena I think a REST approach makes a ton of sense.</blockquote>
+<p >Raj, you're reading the wrong material. No REST architect accepts that the image "file" is the only possible resource. If I had a global sea-surface temperature coverage resource at <em >/sst/current/</em>, I could easily treat individual pixels as resources of their own: <em >/sst/current/{pixel},{line}</em> is just one possible URL form. I could even interpolate to fractional positions within the coverage, or do lat/long: <em >/sst/current/{latitude},{longitude}</em>. Modes of an empirical orthogonal function decomposition (hot topic when I was in school) could be modeled as resources: <em >/sst/current/eof/{n}</em>. Simple temperature slices are another possible set of algorithmic resources: <em >/sst/current/?tmin=28</em> would be the warm waters that spawn tropical storms. All of the above are RESTful and no client needs to know whether I have a single file or multiple databases backing the resources. Furthermore, a resource-oriented approach scales better than an <a class="reference" href="http://cfis.savagexi.com/articles/2007/07/20/end-the-endpoint-madness">endpoint</a>-based protocol like WCS. As the number of resources grows, you simply spread them over more servers like Google has done with its Earth and Maps <a class="reference" href="http://intertwingly.net/blog/2006/06/05/Elevator-Pitch">tiles</a>.</p>
+<p >There may be geospatial problems that REST can't tackle, but access to arbitrary regions of a coverage is not one of them.</p>
+<p >I'm also a bit disappointed to read this:</p>
+<blockquote >
+After all this [research], I think I know what's going on, but I don't think there's any one clear explanation (despite some nice pieces of the puzzle here [<a class="reference" href="http://www.directionsmag.com/article.php?article_id=2515&trv=1">1</a>] and here [<a class="reference" href="http://www.geowebblog.org/?p=14">2</a>]) available, and there has certainly been little effort to analyze the REST architecture in relation to geographic information systems theory, so that's what I'll try to do now.</blockquote>
+<p >Of all the great posts and email threads which break GIS web services down in RESTful terms, he picks that muddled Directions article and another that only quotes one of my emails? This trivializes the geospatial community's conversation about REST, one that has been enlightening and amusing us for about a year now. The fact that there will be <a class="reference" href="http://groups.google.com/group/geo-web-rest/browse_frm/thread/53fa5ce1990e49fe/">three</a> REST related presentations at FOSS4G hints at the maturity of the topic.</p>
+
+             </div>
+    ";}i:14;a:12:{s:5:"title";s:21:"Buildouts for the Lab";s:4:"link";s:51:"http://zcologia.com/news/540/buildouts-for-the-lab/";s:7:"summary";s:90:"Ah, the benefits of collaborating with a real software engineer in an open source project.";s:9:"published";s:25:"2007-08-10T10:19:16-06:00";s:7:"updated";s:25:"2007-08-10T10:19:16-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/540";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:277:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Ah, the <a class="reference" href="http://blogs.hexagonit.fi/kai/2007/08/09/buildouts-and-recipes/">benefits</a> of collaborating with a real software engineer in an open source project.</p>
+
+             </div>
+    ";}i:15;a:12:{s:5:"title";s:29:"Stop Using Mapscript: Finally";s:4:"link";s:58:"http://zcologia.com/news/539/stop-using-mapscript-finally/";s:7:"summary";s:189:"I've explained the motivation previously. You can now transform the problem of writing intricate, error-prone mapscript code into a more tractable template interpolation problem. [more ...]";s:9:"published";s:25:"2007-08-09T17:06:29-06:00";s:7:"updated";s:25:"2007-08-09T17:06:29-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/539";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1361:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >MapServer 5.0 has some nice new features. Christopher Schmidt has been blogging the hell out of <a class="reference" href="http://crschmidt.net/blog/archives/244/mapserver-agg-rendering-now-with-fonts/">one</a>. <a class="reference" href="http://mapserver.gis.umn.edu/development/rfc/ms-rfc-17/">Dynamically allocated arrays</a> (culmination of my work on a container API -- msInsertLayer and friends) is a big one that doesn't get a lot of notice. I think my favorite is this: now you can pretty much stop using mapscript.</p>
+<p >Steve Lime did the work. I did the nagging, testing, and the final mapscript touch. Here's a Python usage excerpt from the <a class="reference" href="http://trac.osgeo.org/mapserver/browser/trunk/mapserver/mapscript/python/tests/fragments.txt">tests</a>:</p>
+<pre class="literal-block">
+>>> import mapscript
+>>> mo = mapscript.fromstring("""MAP NAME "test" END""")
+>>> mo # doctest: +ELLIPSIS
+<mapscript.mapObj; proxy of C mapObj instance at ...>
+>>> mo.name
+'test'
+</pre>
+<p >I've explained the motivation <a class="reference" href="http://zcologia.com/news/315/stop-using-mapscript/">previously</a>. You can now transform the problem of writing intricate, error-prone mapscript code into a more tractable template interpolation problem.</p>
+
+             </div>
+    ";}i:16;a:12:{s:5:"title";s:19:"OGC, GeoDRM, and Me";s:4:"link";s:47:"http://zcologia.com/news/538/ogc-geodrm-and-me/";s:7:"summary";s:201:"My hackles rise every time I read that GeoDRM is one of the OGC's advanced technologies. I simply do not find it easy to look past it to the other more sensible working groups and standards. [more ...]";s:9:"published";s:25:"2007-08-09T10:33:32-06:00";s:7:"updated";s:25:"2007-08-09T10:33:32-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/538";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:876:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >My hackles rise every time I read that GeoDRM is one of the OGC's <a class="reference" href="http://www.geospatialsemanticweb.com/2007/08/08/ogc-web-services-video-demo">advanced technologies</a>. I simply do not find it easy to look past it to the other more sensible working groups and standards. It's as though I'm in a strange city, getting directions from a helpful man. He's sharply dressed, <em >Wall Street Journal</em> tucked under his arm, speaking authoritatively about the neighborhood ... and then I notice that he's surreptitiously carrying a smoldering crack-pipe. When I ask, he's "just holding it for some other guy". Right.</p>
+<p >Or maybe I'm just the cook (near the end) in this <a class="reference" href="http://www.youtube.com/watch?v=b7p1Di1rXuk">classic</a> ;)</p>
+
+             </div>
+    ";}i:17;a:12:{s:5:"title";s:22:"Shorter Sebastian Good";s:4:"link";s:52:"http://zcologia.com/news/537/shorter-sebastian-good/";s:7:"summary";s:74:"Let's you and him fight. Nevertheless, I always enjoy Sebastian's writing.";s:9:"published";s:25:"2007-08-09T09:18:11-06:00";s:7:"updated";s:25:"2007-08-09T09:18:11-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/537";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:408:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Let's <a class="reference" href="http://spatialreference.org">you</a> and <a class="reference" href="http://www.galdos.com">him</a> <a class="reference" href="http://www.palladiumconsulting.com/blog/sebastian/2007/08/spatialreferenceorg-let-sun-shine.html">fight</a>. Nevertheless, I always enjoy Sebastian's writing.</p>
+
+             </div>
+    ";}i:18;a:12:{s:5:"title";s:16:"KML Module: Atom";s:4:"link";s:45:"http://zcologia.com/news/536/kml-module-atom/";s:7:"summary";s:155:"An Atom module would help developers implement Atompub clients and services by delineating a clear boundary between media and metadata elements. [more ...]";s:9:"published";s:25:"2007-08-08T16:58:53-06:00";s:7:"updated";s:25:"2007-08-08T16:58:53-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/536";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1031:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Since my employer isn't a member of the OGC, I'm stuck with blogging my ideas about KML in the hopes that they strike a chord with some insider and thereby tunnel through into the smoke-filled rooms where our industry standards are made.</p>
+<p >Andrew Turner wrote the other day about <a class="reference" href="http://highearthorbit.com/ogc-agile-geography-kick-off-discussion-of-kml-3/">KML modules</a> and listed five: core, styling, 3d, metadata, and services. I'd like to see the core divided one more time. All the KML elements that <a class="reference" href="http://groups.google.com/group/geo-web-rest/web/kml-gdata-ideas">overlap</a> with Atom need to be factored into a module of their own. This means <em >name</em>, <em >description</em>, <em >atom:author</em>, and <em >atom:link</em>. An Atom module would help developers implement Atompub clients and services by marking a clear boundary between media and metadata elements.</p>
+
+             </div>
+    ";}i:19;a:12:{s:5:"title";s:23:"Doctests for Javascript";s:4:"link";s:53:"http://zcologia.com/news/535/doctests-for-javascript/";s:7:"summary";s:11:"Doctest/JS.";s:9:"published";s:25:"2007-08-07T12:11:02-06:00";s:7:"updated";s:25:"2007-08-07T12:11:02-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/535";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:192:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><a class="reference" href="http://svn.colorstudy.com/doctestjs/trunk/docs/index.html">Doctest/JS</a>.</p>
+
+             </div>
+    ";}i:20;a:12:{s:5:"title";s:12:"OWSLib 0.2.1";s:4:"link";s:42:"http://zcologia.com/news/534/owslib-0-2-1/";s:7:"summary";s:68:"It now works with no external dependencies on Python 2.5. [more ...]";s:9:"published";s:25:"2007-08-06T10:50:06-06:00";s:7:"updated";s:25:"2007-08-06T10:50:06-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/534";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:515:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Kai Lautaportti just released OWSLib 0.2.1 [<a class="reference" href="http://cheeseshop.python.org/pypi/OWSLib/0.2.1">Cheeseshop</a>]. It now works with no external dependencies on Python 2.5. Get it from the Cheeseshop:</p>
+<pre class="literal-block">
+$ easy_install OWSLib
+</pre>
+<p >or our Subversion repository:</p>
+<pre class="literal-block">
+$ svn co http://svn.gispython.org/svn/gispy/OWSLib/tags/rel-0.2.1 OWSLib
+</pre>
+
+             </div>
+    ";}i:21;a:12:{s:5:"title";s:22:"Geo-Atompub Meme Watch";s:4:"link";s:52:"http://zcologia.com/news/533/geo-atompub-meme-watch/";s:7:"summary";s:16:"It is spreading.";s:9:"published";s:25:"2007-08-06T08:09:43-06:00";s:7:"updated";s:25:"2007-08-06T08:09:43-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/533";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:645:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><a class="reference" href="http://cfis.savagexi.com/articles/2007/04/26/atom-will-change-the-world">It</a> <a class="reference" href="http://zcologia.com/news/441/wfs-simple/">is</a> <a class="reference" href="http://www.geobliki.com/articles/2007/08/06/a-wfs-basic-as-a-geo-atom-store">spreading</a>. <a class="reference" href="http://www.spatialdatalogic.com/CS/blogs/brian_flood/archive/2007/08/07/Arc2Earth-V2-and-KML.aspx">And</a> <a class="reference" href="http://www.spatiallyadjusted.com/2007/08/07/brian-flood-demos-arc2earth-v2/">spreading</a>.</p>
+
+             </div>
+    ";}i:22;a:12:{s:5:"title";s:21:"Atompub and KML Demo ";s:4:"link";s:50:"http://zcologia.com/news/532/atompub-and-kml-demo/";s:7:"summary";s:123:"I have repurposed my Hammock application into a demonstration of the Atompub, KML, and Google
+Earth integration. [more ...]";s:9:"published";s:25:"2007-08-04T02:13:46-06:00";s:7:"updated";s:25:"2007-08-04T02:13:46-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/532";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:4356:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >I have repurposed my <a class="reference" href="http://zcologia.com/news/431/hammock/">Hammock</a> application into a demonstration of the Atompub, KML, and Google Earth <a class="reference" href="http://zcologia.com/news/528/atompub-kml-and-google-earth/">integration</a>. Now, from an Atom perspective there is a service document and one collection at:</p>
+<p ><a class="reference" href="http://zcologia.com/hammock/index.atom">http://zcologia.com/hammock/index.atom</a></p>
+<p ><a class="reference" href="http://zcologia.com/hammock/places/">http://zcologia.com/hammock/places/</a></p>
+<p >Subscribe to that second URL, it's an Atom feed. Any newsreader should be able to use it to monitor changes to the collection. Next, start Google Earth and in your temporary places container create a new network link to this URL:</p>
+<p ><a class="reference" href="http://zcologia.com/hammock/places.kml">http://zcologia.com/hammock/places.kml</a></p>
+<p >The same (very simplistic) data model supports both the Atom feed and the KML document.</p>
+<p >Ready to publish data to the Web, Atompub-style? All you need is a terminal, <em >curl</em> or another moderately sophisticated HTTP client, and a little make-believe. Imagine that Google Earth or another future geo-browser is doing all the POST and PUT dirty work for you.</p>
+<p >In the temporary places container, create a new <em >point</em> placemark anywhere. Give it a name and a plain text description. Save it to your filesystem as <em >hammock.kml</em>. To create a new, publicly-shared place within the collection based on your new placemark you send the contents of that file in the body of a request to the <em >collection URI</em>. I showed that URI above, but the sure place to find it is in the atom:link element of the KML file. View the source on that file and verify that there's a link to http://zcologia.com/hammock/places/. Now send a request like:</p>
+<pre class="literal-block">
+POST /hammock/places/ HTTP/1.1
+Host: zcologia.com
+Content-type: application/vnd.google-earth.kml+xml
+
+<kml>
+...
+</kml>
+</pre>
+<p >You can use curl to do it like this:</p>
+<pre class="literal-block">
+$ cat hammock.kml | curl -d @- --header
+Content-type:application/vnd.google-earth.kml+xml
+http://zcologia.com/hammock/places/
+</pre>
+<p >It's very important to specify the proper content type. If you've typed carefully, you will get response with a <em >Location</em> header containing the URL of the newly created resource. If you refresh the Atom feed and network link, you'll see the new resource reflected in each. You've seen this before in other apps like <a class="reference" href="http://featureserver.org">FeatureServer</a>. What's new is that the KML document itself carries a link to the collection URI, the <a class="reference" href="http://bitworking.org/projects/atom/draft-ietf-atompub-protocol-17.html#crwp">factory</a> for new placemark resources. That's Atompub in action.</p>
+<p >Furthermore, any placemark resource represented in <a class="reference" href="http://zcologia.com/hammock/places.kml">http://zcologia.com/hammock/places.kml</a> can be edited via its "edit" or "edit-media" (they are equivalent in this demo) atom:links using the HTTP PUT method. View the source to find the edit link for your newly created resource, and copy it (remember, one day Google Earth should do all this for you). Now, move the placemark in Google Earth or create a new one, and save it to the filesystem. Finally, <em >PUT</em> the saved placemark to the <em >edit URI</em> you copied using curl like:</p>
+<pre class="literal-block">
+$ cat edit.kml | curl -X PUT -d @- --header
+Content-type:application/vnd.google-earth.kml+xml
+http://zcologia.com/hammock/places/3
+</pre>
+<p >In this case, I've edited the third place. Note the use of the PUT method. If you typed carefully, the changes you made will be reflected in your newsreader and in the Google Earth network link.</p>
+<p >It almost seems too simple to work: serve KML to users that provides the very links by which users can add to, or modify, the web resources represented in the document. I'd be surprised if there is a tidier solution. I hope this simple demo can convince a few people to take a closer look at using Atompub for geospatial services.</p>
+
+             </div>
+    ";}i:23;a:12:{s:5:"title";s:21:"The Shapely Alchemist";s:4:"link";s:51:"http://zcologia.com/news/531/the-shapely-alchemist/";s:7:"summary";s:123:"Following the example at byCycle.org I've figured out how to use Shapely geometries with
+SQLAlchemy and PostGIS. [more ...]";s:9:"published";s:25:"2007-08-03T11:04:15-06:00";s:7:"updated";s:25:"2007-08-03T11:04:15-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/531";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1726:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Following the example at <a class="reference" href="http://trac.bycycle.org/browser/core/trunk/byCycle/model/data/sqltypes.py">byCycle.org</a> I've figured out how to use <a class="reference" href="http://trac.gispython.org/projects/PCL/wiki/ShapeLy">Shapely</a> geometries with SQLAlchemy and PostGIS. Here's the custom type:</p>
+<pre class="literal-block">
+from sqlalchemy import types
+from shapely.wkb import loads
+
+class Geometry(types.TypeEngine):
+
+    def __init__(self, srid, geom_type, dims=2):
+        super(Geometry, self).__init__()
+        self.srid = srid
+        self.geom_type = geom_type
+        self.dims = dims
+
+    def get_col_spec(self):
+        return 'GEOMETRY()'
+
+    def convert_bind_param(self, value, engine):
+        if value is None:
+            return None
+        else:
+            return "SRID=%s;%s" \
+            % (self.srid, value.wkb.encode('hex'))
+
+    def convert_result_value(self, value, engine):
+        if value is None:
+            return None
+        else:
+            return loads(value.decode('hex'))
+</pre>
+<p >Example:</p>
+<pre class="literal-block">
+>>> db = create_engine("postgres://localhost/the_db")
+>>> metadata = MetaData(db)
+>>> places = Table("places", metadata, 
+...     Column("the_geom", Geometry(4326, "POINT"))
+...     )
+>>> result = places.select().execute()
+>>> row = result.fetchone()
+>>> row
+(<shapely.geometry.point.Point object at 0xb771490c>,)
+>>> row.keys()
+['the_geom']
+>>> row.the_geom
+<shapely.geometry.point.Point object at 0xb771482c>
+>>> row.the_geom.wkt
+'POINT (-106.0000000000000000 40.0000000000000000)'
+>>> row.the_geom.x
+-106.0
+>>> row.the_geom.y
+40.0
+</pre>
+
+             </div>
+    ";}}s:7:"channel";a:11:{s:5:"title";s:30:"Entries for import cartography";s:9:"link_self";s:39:"http://zcologia.com/news/feeds/entries/";s:4:"link";s:25:"http://zcologia.com/news/";s:8:"subtitle";s:31:"Python, Geospatial, and The Web";s:4:"icon";s:38:"http://zcologia.com/images/favicon.ico";s:7:"updated";s:25:"2007-08-24T11:51:37-06:00";s:6:"author";s:13:"
+    
+    
+  ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:2:"id";s:38:"http://zcologia.com/news/feeds/entries";s:6:"rights";s:102:"This work is licensed under a Creative Commons license: http://creativecommons.org/licenses/by-sa/2.5/";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

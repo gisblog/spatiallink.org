@@ -1,0 +1,66 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: DetailView.html,v 1.4 2005/02/09 07:08:54 andrew Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+{PREFORM}
+<td style="padding-bottom: 2px;">
+<form action="index.php" method="post" name="DetailView" id="form">
+			<input type="hidden" name="module" value="Feeds">
+			<input type="hidden" name="record" value="{ID}">
+			<input type="hidden" name="isDuplicate" value=false>
+			<input type="hidden" name="action">
+			<input type="hidden" name="return_module">
+			<input type="hidden" name="return_action">
+			<input type="hidden" name="return_id" value="{ID}">
+			<input type="hidden" name="reports_to_id">
+			<input type="hidden" name="addtofavorites">
+			<input type="hidden" name="removefavorites">
+
+
+
+<!-- BEGIN: delete -->
+<input title="{APP.LBL_DELETE_BUTTON_TITLE}" accessKey="{APP.LBL_DELETE_BUTTON_KEY}" class="button" onclick="this.form.return_module.value='Feeds'; this.form.return_action.value='ListView'; this.form.action.value='Delete'; return confirm('{APP.NTC_DELETE_CONFIRMATION}')" type="submit" name="Delete" value=" {APP.LBL_DELETE_BUTTON_LABEL} ">
+<!-- END: delete -->
+<!-- BEGIN: delete_favorite -->
+<input title="{MOD.LBL_DELETE_FAV_BUTTON_TITLE}" accessKey="{MOD.LBL_DELETE_FAV_BUTTON_KEY}" class="button" onclick="this.form.return_module.value='Feeds'; this.form.return_action.value='DetailView'; this.form.action.value='DeleteFavorite'; " type="submit" name="deletefavorite" value=" {MOD.LBL_DELETE_FAV_BUTTON_LABEL} ">
+<!-- END: delete_favorite -->
+<!-- BEGIN: add_favorite -->
+<input title="{MOD.LBL_ADD_FAV_BUTTON_TITLE}" accessKey="{MOD.LBL_ADD_FAV_BUTTON_KEY}" class="button" onclick="this.form.return_module.value='Feeds'; this.form.return_action.value='DetailView'; this.form.action.value='AddFavorite';" type="submit" name="addfavorite" value=" {MOD.LBL_ADD_FAV_BUTTON_LABEL} ">
+<!-- END: add_favorite -->
+	</form>
+	</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellspacing="{GRIDLINE}" cellpadding="0" class="tabDetailView">
+	<tr>
+	<td class="tabDetailViewDF">{FEED}</td>
+</tr></table>
+
+<!-- END: main -->

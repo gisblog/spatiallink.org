@@ -1,0 +1,136 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * {APP.LBL_CURRENCY_SYM}Header: /cvsroot/sugarcrm/sugarcrm/modules/Accounts/Popup_picker.html,v 1.9 2004/07/03 23:34:33 sugarclint Exp {APP.LBL_CURRENCY_SYM}
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<!-- BEGIN: SearchHeader -->
+
+{SET_RETURN_JS}
+
+<script>
+		function toggleDisplay(id){
+		
+			if(this.document.getElementById( id).style.display=='none'){
+				this.document.getElementById( id).style.display='inline'
+				if(this.document.getElementById(id+"link") != undefined){
+					this.document.getElementById(id+"link").style.display='none';
+				}
+						
+			}else{
+				this.document.getElementById(  id).style.display='none'
+				if(this.document.getElementById(id+"link") != undefined){
+					this.document.getElementById(id+"link").style.display='inline';
+				}
+			}
+		}
+	</script>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"  class="tabForm">
+<tr>
+<td>
+<div id='divsearchform' style='display:inline'>
+<form>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		
+		<td class="dataLabel" noWrap width="40%">{MOD.LBL_ACCOUNT_NAME}&nbsp;&nbsp;<input type=text size="20" name="name" class=dataField  value="{NAME}" /></td>
+		<td class="dataLabel" noWrap width="40%">{MOD.LBL_CITY}&nbsp;&nbsp;<input type=text size="20" name="billing_address_city" class=dataField  value="{BILLING_ADDRESS_CITY}" /></td>
+		<td width="10%" align="right"><input type="hidden" name="action" value="Popup"/>
+			<input type="hidden" name="popup" value="Popup_picker"/>
+			<input type="hidden" name="query" value="true"/>
+			<input type="hidden" name="module" value="{MODULE_NAME}" />
+			<input type="hidden" name="form_submit" value="{FORM_SUBMIT}" />
+			<input type="hidden" name="form" value="{FORM}" />
+		<input title="{APP.LBL_SEARCH_BUTTON_TITLE}" accessKey="{APP.LBL_SEARCH_BUTTON_KEY}" class="button" type="submit" name="button" value="{APP.LBL_SEARCH_BUTTON_LABEL}"/>
+</td>
+
+	</tr>
+	</table>
+	</form></div>
+</td>
+</tr>
+
+</table>
+<p>
+<div id='addformlink'>{CREATEACCOUNT}</div>
+<div id='addform' style='display:none;position:relative;z-index:2;left:0px;top:0px;'>
+<form name="AccountSave" onSubmit="return check_form('AccountSave');" method="POST" action="index.php">
+{ADDFORMHEADER}
+<table cellpadding="0" cellspacing="0" border="0" width="100%"  class="tabForm">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+
+<input type="hidden" name="popup" value="Popup_picker"/>
+<input type="hidden" name="query" value="true"/>
+<input type="hidden" name="module" value="{MODULE_NAME}" />
+<input type="hidden" name="form_submit" value="{FORM_SUBMIT}" />
+<input type="hidden" name="form" value="{FORM}" />
+<input type="hidden" name="action" value="Popup"/>
+<input type="hidden" name="doAction" value="save" />
+{ADDFORM}
+<input type="hidden" name="action" value="Popup"/>
+</td></tr>
+</table></td></tr></table>
+</form>
+</div>
+</p>
+
+<!-- END: SearchHeader -->
+
+
+<!-- BEGIN: SearchHeaderEnd -->
+
+<!-- END: SearchHeaderEnd -->
+
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="listView">
+	<!-- BEGIN: list_nav_row -->
+{PAGINATION}
+	<!-- END: list_nav_row -->
+	<tr height="20" >
+	<td scope="col"  width="65%"  class="listViewThS1"><a href="{ORDER_BY}name" class="listViewThLinkS1">{MOD.LBL_LIST_ACCOUNT_NAME}{arrow_start}{name_arrow}{arrow_end}</a></td>
+	<td scope="col" width="35%"  class="listViewThS1"><a href="{ORDER_BY}BILLING_ADDRESS_CITY" class="listViewThLinkS1">{MOD.LBL_LIST_CITY}{arrow_start}{BILLING_ADDRESS_CITY_arrow}{arrow_end}</a></td>
+	</tr>
+
+
+<!-- BEGIN: row -->
+<tr height="20"  onmouseover="setPointer(this, '{ACCOUNT.ID}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmouseout="setPointer(this, '{ACCOUNT.ID}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmousedown="setPointer(this, '{ACCOUNT.ID}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+    	<td scope='row' valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><a href="#" onclick='set_return("{ACCOUNT.ID}", "{ACCOUNT.ENCODED_NAME}", "{ACCOUNT.BILLING_ADDRESS_STREET}", "{ACCOUNT.BILLING_ADDRESS_CITY}", "{ACCOUNT.BILLING_ADDRESS_STATE}", "{ACCOUNT.BILLING_ADDRESS_POSTALCODE}", "{ACCOUNT.BILLING_ADDRESS_COUNTRY}", "{ACCOUNT.SHIPPING_ADDRESS_STREET}", "{ACCOUNT.SHIPPING_ADDRESS_CITY}", "{ACCOUNT.SHIPPING_ADDRESS_STATE}", "{ACCOUNT.SHIPPING_ADDRESS_POSTALCODE}", "{ACCOUNT.SHIPPING_ADDRESS_COUNTRY}"); window.close()' class="listViewTdLinkS1">{ACCOUNT.NAME}</a></td>
+		<td valign=TOP  class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}">{ACCOUNT.CITY}</td>
+
+	</tr>
+<tr><td colspan="20" class="listViewHRS1"></td></tr>
+<!-- END: row -->
+
+	</table>
+
+
+
+
+
+<!-- END: main -->

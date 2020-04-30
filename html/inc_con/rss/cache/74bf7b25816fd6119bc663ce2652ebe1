@@ -1,0 +1,129 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:3:{i:0;a:12:{s:5:"title";s:28:"Topology vs. Simple Features";s:4:"link";s:67:"http://crschmidt.net/blog/archives/206/topology-vs-simple-features/";s:8:"comments";s:76:"http://crschmidt.net/blog/archives/206/topology-vs-simple-features/#comments";s:7:"pubdate";s:31:"Sun, 22 Apr 2007 00:41:20 +0000";s:2:"dc";a:1:{s:7:"creator";s:9:"crschmidt";}s:8:"category";s:13:"OpenStreetMap";s:4:"guid";s:67:"http://crschmidt.net/blog/archives/206/topology-vs-simple-features/";s:11:"description";s:319:"Lars Aronsson on the OSM list said:
+The result from this is Steve&#8217;s current data model and the fact that the rest of us accept this as a viable solution.  Those who don&#8217;t, because they know more of GIS, like Christopher Schmidt, are repelled by everything they find under the hood of OSM.
+
+
+Part of my [...]";s:7:"content";a:1:{s:7:"encoded";s:4509:"<p>Lars Aronsson on the OSM list <a href="http://lists.openstreetmap.org/pipermail/talk/2007-April/013069.html">said</a>:</p>
+<blockquote><p>The result from this is Steve&#8217;s current data model and the fact that the rest of us accept this as a viable solution.  Those who don&#8217;t, because they know more of GIS, like Christopher Schmidt, are repelled by everything they find under the hood of OSM.</p></blockquote>
+<p><em><br />
+</em></p>
+<p>Part of my response:</p>
+<p>I&#8217;m actually not repelled by everything. It&#8217;s simply a different choice than I would make. Specifically:</p>
+<ul>
+<li>OSM uses topology as its base storage. Topology is good for making graphs, which is important when you need to do routing. For this reason, (it seems to me) that OSM was built towards the goal of creating driving directions. Great goal for a project to have. However,</li>
+<li>Most geo-software uses Simple Features &#8212; not topology &#8212; for handling data. The result is very different &#8212; Simple Features are designed for making maps. If you&#8217;d like evidence, look at how the mapnik maps are built: the topology is turned into simple features, and stored in PostGIS. My MapServer demos just under a year ago worked the same way.</li>
+</ul>
+<p>The difference to me is simple:</p>
+<p>If I want to drawn an OSM feature on a map, I have to fetch a large number of pieces of data fromm the API individually, and combine them to create a geographic feature.</p>
+<p>Example:</p>
+<p>Way ID 4213747:</p>
+<ul>
+<li>1 way.</li>
+<li>21 segments.</li>
+<li>22 nodes.</li>
+</ul>
+<p>So, to visualize this one way, I have to make 44 fetches to the API.</p>
+<p>Now, if I switch to a simple features model:</p>
+<p><a href="http://hypercube.telascience.org/~crschmidt/featureserver/featureserver.cgi/osm-line/4213747">JSON Simple Feature output of same geometry<br />
+</a></p>
+<p>I&#8217;m given a geometry (&#8221;Line&#8221;), list of coordinates, and list of properties. (This is JSON output: you can also see it as html by adding &#8216;.html&#8217; to the end, or as atom by adding &#8216;.atom&#8217; to the end.)</p>
+<p>&#8220;Line&#8221; can also be &#8220;Polygon&#8221;, or &#8220;Point&#8221;. (Or &#8220;MULTIPOLYGON&#8221;, etc., though FeatureServer doesn&#8217;t support those.)</p>
+<p>This is one fetch. I can now draw the feature. I can also query for other features which have the same name, and get the information for those, too:</p>
+<p><a href="http://hypercube.telascience.org/~crschmidt/featureserver/featureserver.cgi/osm-line/all.html?queryable=name&#038;name=Al%20Jami'ah%20Street">Attribute query on name</a><br />
+This shows me that there is also a feature, ID 4213746, which has the same name. I can draw all these features on a map with the output of one query.</p>
+<p>In OSM, that would be 88. 88 queries to the API, just so I can display two features &#8212; not to mention the fact that at the moment, there&#8217;s no way to query attributes quickly.<br />
+If there was a strong reason for storing topology &#8212; that is, if OSM was really not about maps, and was instead about making driving directions &#8212; this could make sense. In fact, it may make sense: I may have a serious lack of understanding about how the project data is being used. However, I think that the most common usage of OSM is *making maps* &#8211;<br />
+in fact, Steve even backs me up on this, in <a href="http://hypercube.telascience.org/~crschmidt/featureserver/featureserver.cgi/osm-line/all.html?queryable=name&#038;name=Al%20Jami'ah%20Street">his post</a>:</p>
+<blockquote><p>OpenStreetMap is driven by this principle that we just want a fscking map.</p></blockquote>
+<p>Topology makes a graph, not a map. This is the reason why I&#8217;m in favor of a simple features-based data model: Features-based models are what you use for making maps. Topology is what you use for doing analysis.</p>
+<p>The upshot of this? The tools to make topology out of simple features *already exists*: GRASS will do it. PostGIS + pgdijkstra will do it. Any application out there which needs topology knows how to get it, because mapping data is almost always distributed as something that isn&#8217;t topological. These are all technical problems: mapping back and forth is possible. The best way to do it is hard to determine, but the OSM project has no shortage of hard-working participants, and I&#8217;m sure that over time we will see easier to use UIs and editors for editing and creating data.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:72:"http://crschmidt.net/blog/archives/206/topology-vs-simple-features/feed/";}s:7:"summary";s:319:"Lars Aronsson on the OSM list said:
+The result from this is Steve&#8217;s current data model and the fact that the rest of us accept this as a viable solution.  Those who don&#8217;t, because they know more of GIS, like Christopher Schmidt, are repelled by everything they find under the hood of OSM.
+
+
+Part of my [...]";s:12:"atom_content";s:4509:"<p>Lars Aronsson on the OSM list <a href="http://lists.openstreetmap.org/pipermail/talk/2007-April/013069.html">said</a>:</p>
+<blockquote><p>The result from this is Steve&#8217;s current data model and the fact that the rest of us accept this as a viable solution.  Those who don&#8217;t, because they know more of GIS, like Christopher Schmidt, are repelled by everything they find under the hood of OSM.</p></blockquote>
+<p><em><br />
+</em></p>
+<p>Part of my response:</p>
+<p>I&#8217;m actually not repelled by everything. It&#8217;s simply a different choice than I would make. Specifically:</p>
+<ul>
+<li>OSM uses topology as its base storage. Topology is good for making graphs, which is important when you need to do routing. For this reason, (it seems to me) that OSM was built towards the goal of creating driving directions. Great goal for a project to have. However,</li>
+<li>Most geo-software uses Simple Features &#8212; not topology &#8212; for handling data. The result is very different &#8212; Simple Features are designed for making maps. If you&#8217;d like evidence, look at how the mapnik maps are built: the topology is turned into simple features, and stored in PostGIS. My MapServer demos just under a year ago worked the same way.</li>
+</ul>
+<p>The difference to me is simple:</p>
+<p>If I want to drawn an OSM feature on a map, I have to fetch a large number of pieces of data fromm the API individually, and combine them to create a geographic feature.</p>
+<p>Example:</p>
+<p>Way ID 4213747:</p>
+<ul>
+<li>1 way.</li>
+<li>21 segments.</li>
+<li>22 nodes.</li>
+</ul>
+<p>So, to visualize this one way, I have to make 44 fetches to the API.</p>
+<p>Now, if I switch to a simple features model:</p>
+<p><a href="http://hypercube.telascience.org/~crschmidt/featureserver/featureserver.cgi/osm-line/4213747">JSON Simple Feature output of same geometry<br />
+</a></p>
+<p>I&#8217;m given a geometry (&#8221;Line&#8221;), list of coordinates, and list of properties. (This is JSON output: you can also see it as html by adding &#8216;.html&#8217; to the end, or as atom by adding &#8216;.atom&#8217; to the end.)</p>
+<p>&#8220;Line&#8221; can also be &#8220;Polygon&#8221;, or &#8220;Point&#8221;. (Or &#8220;MULTIPOLYGON&#8221;, etc., though FeatureServer doesn&#8217;t support those.)</p>
+<p>This is one fetch. I can now draw the feature. I can also query for other features which have the same name, and get the information for those, too:</p>
+<p><a href="http://hypercube.telascience.org/~crschmidt/featureserver/featureserver.cgi/osm-line/all.html?queryable=name&#038;name=Al%20Jami'ah%20Street">Attribute query on name</a><br />
+This shows me that there is also a feature, ID 4213746, which has the same name. I can draw all these features on a map with the output of one query.</p>
+<p>In OSM, that would be 88. 88 queries to the API, just so I can display two features &#8212; not to mention the fact that at the moment, there&#8217;s no way to query attributes quickly.<br />
+If there was a strong reason for storing topology &#8212; that is, if OSM was really not about maps, and was instead about making driving directions &#8212; this could make sense. In fact, it may make sense: I may have a serious lack of understanding about how the project data is being used. However, I think that the most common usage of OSM is *making maps* &#8211;<br />
+in fact, Steve even backs me up on this, in <a href="http://hypercube.telascience.org/~crschmidt/featureserver/featureserver.cgi/osm-line/all.html?queryable=name&#038;name=Al%20Jami'ah%20Street">his post</a>:</p>
+<blockquote><p>OpenStreetMap is driven by this principle that we just want a fscking map.</p></blockquote>
+<p>Topology makes a graph, not a map. This is the reason why I&#8217;m in favor of a simple features-based data model: Features-based models are what you use for making maps. Topology is what you use for doing analysis.</p>
+<p>The upshot of this? The tools to make topology out of simple features *already exists*: GRASS will do it. PostGIS + pgdijkstra will do it. Any application out there which needs topology knows how to get it, because mapping data is almost always distributed as something that isn&#8217;t topological. These are all technical problems: mapping back and forth is possible. The best way to do it is hard to determine, but the OSM project has no shortage of hard-working participants, and I&#8217;m sure that over time we will see easier to use UIs and editors for editing and creating data.
+</p>
+";}i:1;a:12:{s:5:"title";s:15:"OpenLayers Blog";s:4:"link";s:55:"http://crschmidt.net/blog/archives/205/openlayers-blog/";s:8:"comments";s:64:"http://crschmidt.net/blog/archives/205/openlayers-blog/#comments";s:7:"pubdate";s:31:"Wed, 28 Mar 2007 03:15:50 +0000";s:2:"dc";a:1:{s:7:"creator";s:9:"crschmidt";}s:8:"category";s:28:"Locality and SpaceOpenLayers";s:4:"guid";s:55:"http://crschmidt.net/blog/archives/205/openlayers-blog/";s:11:"description";s:124:"OpenLayers now has its own blog.
+Thank the creation of Planet OSGeo for the final inspiration to actually put it together.
+
+";s:7:"content";a:1:{s:7:"encoded";s:180:"<p>OpenLayers now has <a href="http://openlayers.org/blog/">its own blog</a>.</p>
+<p>Thank the creation of Planet OSGeo for the final inspiration to actually put it together.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:60:"http://crschmidt.net/blog/archives/205/openlayers-blog/feed/";}s:7:"summary";s:124:"OpenLayers now has its own blog.
+Thank the creation of Planet OSGeo for the final inspiration to actually put it together.
+
+";s:12:"atom_content";s:180:"<p>OpenLayers now has <a href="http://openlayers.org/blog/">its own blog</a>.</p>
+<p>Thank the creation of Planet OSGeo for the final inspiration to actually put it together.
+</p>
+";}i:2;a:12:{s:5:"title";s:20:"Fed up with PlanetGS";s:4:"link";s:60:"http://crschmidt.net/blog/archives/204/fed-up-with-planetgs/";s:8:"comments";s:69:"http://crschmidt.net/blog/archives/204/fed-up-with-planetgs/#comments";s:7:"pubdate";s:31:"Mon, 26 Mar 2007 13:12:33 +0000";s:2:"dc";a:1:{s:7:"creator";s:9:"crschmidt";}s:8:"category";s:18:"Locality and Space";s:4:"guid";s:60:"http://crschmidt.net/blog/archives/204/fed-up-with-planetgs/";s:11:"description";s:331:"I finally got fed up with Planet GeoSpatial this weekend. Too much Google, too many formatting mess ups, and in general, too much crap. Although I appreciate that those who are working in the GeoSpatial space have a large interest in ESRI, Google Earth and Maps, and the general &#8217;state of the industry&#8217;, my target [...]";s:7:"content";a:1:{s:7:"encoded";s:3057:"<p>I finally got fed up with Planet GeoSpatial this weekend. Too much Google, too many formatting mess ups, and in general, too much crap. Although I appreciate that those who are working in the GeoSpatial space have a large interest in ESRI, Google Earth and Maps, and the general &#8217;state of the industry&#8217;, my target interests are much smaller. I just want to know about what&#8217;s going on in the world which affects Open Source GeoSpatial software: I wanted what is essentially &#8220;Planet OSGeo&#8221;, rather than &#8220;Planet Geo&#8221;.</p>
+<p>(Note that this is a commentary mostly on my specific interests, rather than on Planet GeoSpatial, which James Fee has done a wonderful job on maintaining for the wider target audience he has.)</p>
+<p>To that end, and with Sean Gillies&#8217; excellent recommendation of <a href="http://intertwingly.net/code/venus/">Venus</a>  (omg, a version of Planet that *works*?), I&#8217;ve set up <a href="http://planetosgeo.crschmidt.net/">Planet OSGeo</a>, a collection of Open Source GIS blogs.</p>
+<p>Of note, I&#8217;ve not included several topics here, even though they are at least tangentially related to Open Source Geo:</p>
+<ul>
+<li>GeoRSS. There are a half dozen people who are regularly blogging about GeoRSS &#8212; not least, the GeoRSS blog. However, GeoRSS is not in and of itself &#8220;software&#8221;, which is my target interest, and I think the primary field in which OSGeo has thus far expressed an interest.</li>
+<li>OpenStreetMap. Although collection of Open Geodata is within the realm of OSGeo, at the moment I&#8217;m targeting software, and most of OSM&#8217;s blogging is not about software development.</li>
+</ul>
+<p>(I&#8217;m happy to take feedback on my choices &#8212; or suggestions for more blogs!)</p>
+<p>Notably lacking in this Planet:</p>
+<ul>
+<li>Blog for OpenLayers. Thus far, I&#8217;ve not set up a seperate infrastructure for OpenLayers blogging, sticking instead to the MetaCarta Labs blog. I think the time has come to grow out of that, and move into some OpenLayers infrastructure for blogging.</li>
+<li>Blog for GDAL. The library at the base of much of the Geo software on the web doesn&#8217;t have an RSS feed &#8212; for either announcements or general project discussion. Some of this is probably representative of the stability of the project: certainly after as many years as GDAL has been around, there&#8217;s limited content in terms of &#8220;Rapid Development&#8221; that many other tools like web mapping clients are still undergoing. Still, an announcements log with an RSS feed would be cool.</li>
+<li>MapServer. MapServer doesn&#8217;t seem to have a blog or RSS feed out of its website that provides interesting announcement-style updates, which would be good to see.</li>
+</ul>
+<p>I think the things I see as &#8216;missing&#8217; clearly demonstrate my bias in development and usage of tools &#8212; so I&#8217;m sure more people can point out what else I&#8217;m missing.</p>
+<p>Looking forward to any feedback you might have.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:65:"http://crschmidt.net/blog/archives/204/fed-up-with-planetgs/feed/";}s:7:"summary";s:331:"I finally got fed up with Planet GeoSpatial this weekend. Too much Google, too many formatting mess ups, and in general, too much crap. Although I appreciate that those who are working in the GeoSpatial space have a large interest in ESRI, Google Earth and Maps, and the general &#8217;state of the industry&#8217;, my target [...]";s:12:"atom_content";s:3057:"<p>I finally got fed up with Planet GeoSpatial this weekend. Too much Google, too many formatting mess ups, and in general, too much crap. Although I appreciate that those who are working in the GeoSpatial space have a large interest in ESRI, Google Earth and Maps, and the general &#8217;state of the industry&#8217;, my target interests are much smaller. I just want to know about what&#8217;s going on in the world which affects Open Source GeoSpatial software: I wanted what is essentially &#8220;Planet OSGeo&#8221;, rather than &#8220;Planet Geo&#8221;.</p>
+<p>(Note that this is a commentary mostly on my specific interests, rather than on Planet GeoSpatial, which James Fee has done a wonderful job on maintaining for the wider target audience he has.)</p>
+<p>To that end, and with Sean Gillies&#8217; excellent recommendation of <a href="http://intertwingly.net/code/venus/">Venus</a>  (omg, a version of Planet that *works*?), I&#8217;ve set up <a href="http://planetosgeo.crschmidt.net/">Planet OSGeo</a>, a collection of Open Source GIS blogs.</p>
+<p>Of note, I&#8217;ve not included several topics here, even though they are at least tangentially related to Open Source Geo:</p>
+<ul>
+<li>GeoRSS. There are a half dozen people who are regularly blogging about GeoRSS &#8212; not least, the GeoRSS blog. However, GeoRSS is not in and of itself &#8220;software&#8221;, which is my target interest, and I think the primary field in which OSGeo has thus far expressed an interest.</li>
+<li>OpenStreetMap. Although collection of Open Geodata is within the realm of OSGeo, at the moment I&#8217;m targeting software, and most of OSM&#8217;s blogging is not about software development.</li>
+</ul>
+<p>(I&#8217;m happy to take feedback on my choices &#8212; or suggestions for more blogs!)</p>
+<p>Notably lacking in this Planet:</p>
+<ul>
+<li>Blog for OpenLayers. Thus far, I&#8217;ve not set up a seperate infrastructure for OpenLayers blogging, sticking instead to the MetaCarta Labs blog. I think the time has come to grow out of that, and move into some OpenLayers infrastructure for blogging.</li>
+<li>Blog for GDAL. The library at the base of much of the Geo software on the web doesn&#8217;t have an RSS feed &#8212; for either announcements or general project discussion. Some of this is probably representative of the stability of the project: certainly after as many years as GDAL has been around, there&#8217;s limited content in terms of &#8220;Rapid Development&#8221; that many other tools like web mapping clients are still undergoing. Still, an announcements log with an RSS feed would be cool.</li>
+<li>MapServer. MapServer doesn&#8217;t seem to have a blog or RSS feed out of its website that provides interesting announcement-style updates, which would be good to see.</li>
+</ul>
+<p>I think the things I see as &#8216;missing&#8217; clearly demonstrate my bias in development and usage of tools &#8212; so I&#8217;m sure more people can point out what else I&#8217;m missing.</p>
+<p>Looking forward to any feedback you might have.
+</p>
+";}}s:7:"channel";a:7:{s:5:"title";s:19:"Technical Ramblings";s:4:"link";s:25:"http://crschmidt.net/blog";s:11:"description";s:25:"Ramblings of a GIS Hacker";s:7:"pubdate";s:31:"Sun, 22 Apr 2007 13:12:14 +0000";s:9:"generator";s:29:"http://wordpress.org/?v=2.0.7";s:8:"language";s:2:"en";s:7:"tagline";s:25:"Ramblings of a GIS Hacker";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Sun, 22 Apr 2007 13:12:14 GMT
+";s:4:"etag";s:36:""5f2ebd7fe77455d7f9011ec15989a585"
+";}

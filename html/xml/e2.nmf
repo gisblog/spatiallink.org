@@ -1,0 +1,28 @@
+<esri:ArcGISExplorerDocument xmlns:esri='http://www.esri.com/schemas/ArcGIS/9.2' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+	<E2Layers xsi:type='esri:ArrayOfE2Layer'>
+		<E2Layer xsi:type='esri:E2DataLayer'>
+			<DisplayName>e2</DisplayName>
+			<Visible>true</Visible>
+			<LODTileFetch>true</LODTileFetch>
+			<HideFromContents>false</HideFromContents>
+			<Transparency>0</Transparency>
+			<Workspace>C:\data\point</Workspace>
+			<Dataset>e2.shp</Dataset>
+			<E2GlobeLayerProperties xsi:type='esri:E2FeatureLayerProperties'>
+				<MinimumVisibleDistance>10</MinimumVisibleDistance>
+				<MaximumVisibleDistance>1000</MaximumVisibleDistance>
+				<CacheName>e2_7DF79761-65C3-4960-8392-271A7A001768</CacheName>
+				<CacheType>0</CacheType>
+				<CacheUpdateInterval>0</CacheUpdateInterval>
+				<IsDynamicallyRasterized>true</IsDynamicallyRasterized>
+				<MaximumFeatureLevelOfDetail>10</MaximumFeatureLevelOfDetail>
+				<DistancePerSymbolPoint>1000</DistancePerSymbolPoint>
+				<E2RendererDescription xsi:type='esri:E2RendererDescriptionSimpleSymbol'>
+					<E2SymbolDescription xsi:type='esri:E2SymbolDescription'>
+						<Name>Yellow</Name>
+					</E2SymbolDescription>
+				</E2RendererDescription>
+			</E2GlobeLayerProperties>
+		</E2Layer>
+	</E2Layers>
+</esri:ArcGISExplorerDocument>

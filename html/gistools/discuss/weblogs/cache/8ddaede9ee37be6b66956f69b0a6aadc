@@ -1,0 +1,353 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:12:{s:5:"title";s:21:"One chicken in action";s:4:"link";s:31:"http://www.molw.org/blog/?p=132";s:8:"comments";s:40:"http://www.molw.org/blog/?p=132#comments";s:7:"pubdate";s:31:"Thu, 30 Mar 2006 19:47:31 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:28:"Other life thingsGISJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=132";s:11:"description";s:41:"	Jeremy has the chicken doing GIS&#8230;
+";s:7:"content";a:1:{s:7:"encoded";s:99:"	<p>Jeremy has the <a href="http://www.flickr.com/photos/mapdex/">chicken doing GIS</a>&#8230;</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=132";}s:7:"summary";s:41:"	Jeremy has the chicken doing GIS&#8230;
+";s:12:"atom_content";s:99:"	<p>Jeremy has the <a href="http://www.flickr.com/photos/mapdex/">chicken doing GIS</a>&#8230;</p>
+";}i:1;a:12:{s:5:"title";s:33:"Sprint Wireless developer webcast";s:4:"link";s:31:"http://www.molw.org/blog/?p=131";s:8:"comments";s:40:"http://www.molw.org/blog/?p=131#comments";s:7:"pubdate";s:31:"Wed, 29 Mar 2006 18:57:14 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:21:"Other life thingsJava";s:4:"guid";s:31:"http://www.molw.org/blog/?p=131";s:11:"description";s:316:"	Attended the Sprint wireless developer web session today as a java developer who has a phone on the sprint network and I want to play.
+Interesting points:
+	 Intro
+They are focusing on high speed broadband to enable services on go - not on the tech they are using to do it.
+	EVDO has the upload speed as 1xRTT
+ [...]";s:7:"content";a:1:{s:7:"encoded";s:3192:"	<p>Attended the <a href="http://developer.sprint.com/site/global/home/p_home.jsp">Sprint wireless</a> developer <a href="http://events.streamlogics.com/2md/sprint/mar29-06/">web session</a> today as a java developer who has a phone on the sprint network and I want to play.<br />
+Interesting points:</p>
+	<p><strong> Intro</strong><br />
+They are focusing on high speed broadband to enable services on go - not on the tech they are using to do it.</p>
+	<p>EVDO has the upload speed as 1xRTT<br />
+    download peak 2Mbps<br />
+    upload peak 144 Kbps</p>
+	<p>My Treo 650 is not new network enabled but they claim a 700 Palm version will be coming.</p>
+	<p><strong>Power Vision Phone Capabilities</strong></p>
+	<p>Here is what they want to support on their new Power Vision phones<br />
+They expand midp 2.0 they support JSRs<br />
+75 (Access to memory card), 120, 135, 177, 179 (LBS), 184 (3-D)<br />
+Sprint 2.0 extensions<br />
+   external canvas of the flipphone and can do stuff with that<br />
+   detect type of network</p>
+	<p><strong>Java Development</strong></p>
+	<p>They have a customized plugin for netbeans with a graphical editor and pre-processor blocks to help with customizing for different handsets. They reccomend the mobile plugin pack as the way to develop apps for your phone</p>
+	<p>Looks like I need to get Sprint 3.0 to get JSR 179. I need to ask if they will unlock the phone. I also need to code sign to get access to the LBS api - but it costs $499 to get a Java cert from versign. Forget that - how unfriendly that I need to spend that much money just to play with LBS</p>
+	<p>With browsers: Their browser has a ECMA profile Mobile Profile. I would prefer the opera browser.  They also have multi-mime part for a page which will fetch multiple pieces at once.</p>
+	<p>Theming your phone - again requires a cert and you need to be a theme partner. </p>
+	<p><em>I wonder  what the thinking is on making this so restrictive. Doesn&#8217;t seem like this would make it friendly for variosu programmers to play but instead favors larger established shops.  Not much room for a &#8220;hey I wonder if I can do this cool thing with my phone&#8221; developer. Seems like some good innovation can come out of that space.<br />
+</em></p>
+	<p>They are going to give a demo at netbeans day and at JavaOne. </p>
+	<p><strong>Questions</strong></p>
+	<p>They had some serious problems with their question submitting software. I tried asking the following questions<br />
+<em><br />
+Are you going to unlock the treo so we can do LBS.<br />
+And you are saying that to play with LBS on my own phone I need to spend $500 - that is a really high barrier to entry<br />
+That is more than my phone costs. Why can&#8217;t we self sign?</em><br />
+I did submit them but they never got answered&#8230;</p>
+	<p><strong>Summary</strong><br />
+It sounds like they have LBS tightly locked down. Maybe I need to move off Sprint and look at someone else who is more LBS friendly. So instead of Nextel making sprint more lbs friendly it went the other way. I say this all as someone who doesn&#8217;t know anyone in our LBS group so it is my own desire to tinker at home NOT as part of work.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=131";}s:7:"summary";s:316:"	Attended the Sprint wireless developer web session today as a java developer who has a phone on the sprint network and I want to play.
+Interesting points:
+	 Intro
+They are focusing on high speed broadband to enable services on go - not on the tech they are using to do it.
+	EVDO has the upload speed as 1xRTT
+ [...]";s:12:"atom_content";s:3192:"	<p>Attended the <a href="http://developer.sprint.com/site/global/home/p_home.jsp">Sprint wireless</a> developer <a href="http://events.streamlogics.com/2md/sprint/mar29-06/">web session</a> today as a java developer who has a phone on the sprint network and I want to play.<br />
+Interesting points:</p>
+	<p><strong> Intro</strong><br />
+They are focusing on high speed broadband to enable services on go - not on the tech they are using to do it.</p>
+	<p>EVDO has the upload speed as 1xRTT<br />
+    download peak 2Mbps<br />
+    upload peak 144 Kbps</p>
+	<p>My Treo 650 is not new network enabled but they claim a 700 Palm version will be coming.</p>
+	<p><strong>Power Vision Phone Capabilities</strong></p>
+	<p>Here is what they want to support on their new Power Vision phones<br />
+They expand midp 2.0 they support JSRs<br />
+75 (Access to memory card), 120, 135, 177, 179 (LBS), 184 (3-D)<br />
+Sprint 2.0 extensions<br />
+   external canvas of the flipphone and can do stuff with that<br />
+   detect type of network</p>
+	<p><strong>Java Development</strong></p>
+	<p>They have a customized plugin for netbeans with a graphical editor and pre-processor blocks to help with customizing for different handsets. They reccomend the mobile plugin pack as the way to develop apps for your phone</p>
+	<p>Looks like I need to get Sprint 3.0 to get JSR 179. I need to ask if they will unlock the phone. I also need to code sign to get access to the LBS api - but it costs $499 to get a Java cert from versign. Forget that - how unfriendly that I need to spend that much money just to play with LBS</p>
+	<p>With browsers: Their browser has a ECMA profile Mobile Profile. I would prefer the opera browser.  They also have multi-mime part for a page which will fetch multiple pieces at once.</p>
+	<p>Theming your phone - again requires a cert and you need to be a theme partner. </p>
+	<p><em>I wonder  what the thinking is on making this so restrictive. Doesn&#8217;t seem like this would make it friendly for variosu programmers to play but instead favors larger established shops.  Not much room for a &#8220;hey I wonder if I can do this cool thing with my phone&#8221; developer. Seems like some good innovation can come out of that space.<br />
+</em></p>
+	<p>They are going to give a demo at netbeans day and at JavaOne. </p>
+	<p><strong>Questions</strong></p>
+	<p>They had some serious problems with their question submitting software. I tried asking the following questions<br />
+<em><br />
+Are you going to unlock the treo so we can do LBS.<br />
+And you are saying that to play with LBS on my own phone I need to spend $500 - that is a really high barrier to entry<br />
+That is more than my phone costs. Why can&#8217;t we self sign?</em><br />
+I did submit them but they never got answered&#8230;</p>
+	<p><strong>Summary</strong><br />
+It sounds like they have LBS tightly locked down. Maybe I need to move off Sprint and look at someone else who is more LBS friendly. So instead of Nextel making sprint more lbs friendly it went the other way. I say this all as someone who doesn&#8217;t know anyone in our LBS group so it is my own desire to tinker at home NOT as part of work.
+</p>
+";}i:2;a:12:{s:5:"title";s:44:"My effort to help people deal with Norton AV";s:4:"link";s:31:"http://www.molw.org/blog/?p=130";s:8:"comments";s:40:"http://www.molw.org/blog/?p=130#comments";s:7:"pubdate";s:31:"Wed, 29 Mar 2006 17:41:14 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:17:"Other life things";s:4:"guid";s:31:"http://www.molw.org/blog/?p=130";s:11:"description";s:284:"	We use norton at work and at times I find it &#8220;frustrating&#8221;. My laptop is doing a bunch of disk trashing and the CPU is pegged right after I log in. So I start taskmanager and I watch the SOCs spin up in a few seconds but then there is DoScan.exe spinning away for a [...]";s:7:"content";a:1:{s:7:"encoded";s:592:"	<p>We use norton at work and at times I find it &#8220;frustrating&#8221;. My laptop is doing a bunch of disk trashing and the CPU is pegged right after I log in. So I start taskmanager and I watch the SOCs spin up in a few seconds but then there is DoScan.exe spinning away for a couple of minutes. A quick google search and I have this tasty tidbit.<br />
+<a href="http://service1.symantec.com/SUPPORT/ent-security.nsf/docid/2005042710304248?Open&#038;src=w">DoScan.exe causes high CPU usage</a></p>
+	<p>Registry updated!</p>
+	<p>BTW this is also fixed with the upgrade to NAV 10.0.1
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=130";}s:7:"summary";s:284:"	We use norton at work and at times I find it &#8220;frustrating&#8221;. My laptop is doing a bunch of disk trashing and the CPU is pegged right after I log in. So I start taskmanager and I watch the SOCs spin up in a few seconds but then there is DoScan.exe spinning away for a [...]";s:12:"atom_content";s:592:"	<p>We use norton at work and at times I find it &#8220;frustrating&#8221;. My laptop is doing a bunch of disk trashing and the CPU is pegged right after I log in. So I start taskmanager and I watch the SOCs spin up in a few seconds but then there is DoScan.exe spinning away for a couple of minutes. A quick google search and I have this tasty tidbit.<br />
+<a href="http://service1.symantec.com/SUPPORT/ent-security.nsf/docid/2005042710304248?Open&#038;src=w">DoScan.exe causes high CPU usage</a></p>
+	<p>Registry updated!</p>
+	<p>BTW this is also fixed with the upgrade to NAV 10.0.1
+</p>
+";}i:3;a:12:{s:5:"title";s:14:"The Dev Summit";s:4:"link";s:31:"http://www.molw.org/blog/?p=129";s:8:"comments";s:40:"http://www.molw.org/blog/?p=129#comments";s:7:"pubdate";s:31:"Fri, 24 Mar 2006 05:32:14 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:11:"GISJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=129";s:11:"description";s:293:"	I just wanted to say thank you to everyone for coming to the dev summit (both internal and external to ESRI). I had a great time talking to all the developers, joking around, and thinking about all the cool ideas I heard. 
+	It seemed like the SIG was a hit with the Java developers (you [...]";s:7:"content";a:1:{s:7:"encoded";s:2789:"	<p>I just wanted to say thank you to everyone for coming to the dev summit (both internal and external to ESRI). I had a great time talking to all the developers, joking around, and thinking about all the cool ideas I heard. </p>
+	<p>It seemed like the SIG <a href="http://www.spatiallyadjusted.com/2006/03/18/the-java-sig-from-the-back-of-the-room/">was a hit</a> with <a href="http://edn.esri.com/index.cfm?fa=devSummit.detail&#038;guid=011D072E-AA06-441E-8A83-0DCCEBF82728">the Java developers</a> (you won&#8217;t believe how much I had to pay those guys for those comments). I really enjoyed the atmosphere of openess and brain-storming.  We are going to try and move forward on some of the ideas mentioned, such as a monthly newsletter and I may try to prototype the javadoc system soon here on my blog. I was thinking about starting with the SDE javadoc since it is relatively small and developers seemed very interested in contributing to it. If you have a better suggestion please let me know. I am going to be looking at the <a href="http://ashkelon.sourceforge.net/index.php?p=news">ashkelon project</a> written by Eitan Suez, who I met at the blogger meetup last year at JavaOne. What a nice guy&#8230;</p>
+	<p>Speaking of which - a bunch of us from ESRI are going to JavaOne. Should we have a meetup there? Ping me if you are going and we can meet at one of the local bars, I like <a href="http://www.thirstybear.com/">the thirsty bear</a>.  C&#8217;mon you know it will be fun. I will be going to sessions and working the booth some of the time, stop by and say hi.</p>
+	<p>Back to the dev summit, I really enjoyed my session and hope you guys got something out of it. You know, blogging about 9.2 stuff has me conflicted.  It won&#8217;t be out in the next month and so I don&#8217;t see much point in talking about it. For those of you who are interested in 9.2 I am only going to talk about things you might want to consider if you are writing applications with 9.1 now. All the presentations from the dev summit will be posted to the EDN site in the near future so you can see some of the 9l.2 features there as well.</p>
+	<p>What I think I am going to focus on right now if I post is working with ArcObjects and the Server API since that won&#8217;t be changing much going from 9.1 to 9.2. From reading the forums and talking to people I think there is a lot of work I can do to help elucidate some of the ways to work with ArcObjects and the Server API. So expect some posting on that in the near future.</p>
+	<p>Oh yeah, one more thing - now that I know how many of you there are I am fully expecting more java entries in the unofficial developer contest. No more excuses and start planning your apps now!</p>
+	<p>Again thanks for all the energy and enthusiasm.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=129";}s:7:"summary";s:293:"	I just wanted to say thank you to everyone for coming to the dev summit (both internal and external to ESRI). I had a great time talking to all the developers, joking around, and thinking about all the cool ideas I heard. 
+	It seemed like the SIG was a hit with the Java developers (you [...]";s:12:"atom_content";s:2789:"	<p>I just wanted to say thank you to everyone for coming to the dev summit (both internal and external to ESRI). I had a great time talking to all the developers, joking around, and thinking about all the cool ideas I heard. </p>
+	<p>It seemed like the SIG <a href="http://www.spatiallyadjusted.com/2006/03/18/the-java-sig-from-the-back-of-the-room/">was a hit</a> with <a href="http://edn.esri.com/index.cfm?fa=devSummit.detail&#038;guid=011D072E-AA06-441E-8A83-0DCCEBF82728">the Java developers</a> (you won&#8217;t believe how much I had to pay those guys for those comments). I really enjoyed the atmosphere of openess and brain-storming.  We are going to try and move forward on some of the ideas mentioned, such as a monthly newsletter and I may try to prototype the javadoc system soon here on my blog. I was thinking about starting with the SDE javadoc since it is relatively small and developers seemed very interested in contributing to it. If you have a better suggestion please let me know. I am going to be looking at the <a href="http://ashkelon.sourceforge.net/index.php?p=news">ashkelon project</a> written by Eitan Suez, who I met at the blogger meetup last year at JavaOne. What a nice guy&#8230;</p>
+	<p>Speaking of which - a bunch of us from ESRI are going to JavaOne. Should we have a meetup there? Ping me if you are going and we can meet at one of the local bars, I like <a href="http://www.thirstybear.com/">the thirsty bear</a>.  C&#8217;mon you know it will be fun. I will be going to sessions and working the booth some of the time, stop by and say hi.</p>
+	<p>Back to the dev summit, I really enjoyed my session and hope you guys got something out of it. You know, blogging about 9.2 stuff has me conflicted.  It won&#8217;t be out in the next month and so I don&#8217;t see much point in talking about it. For those of you who are interested in 9.2 I am only going to talk about things you might want to consider if you are writing applications with 9.1 now. All the presentations from the dev summit will be posted to the EDN site in the near future so you can see some of the 9l.2 features there as well.</p>
+	<p>What I think I am going to focus on right now if I post is working with ArcObjects and the Server API since that won&#8217;t be changing much going from 9.1 to 9.2. From reading the forums and talking to people I think there is a lot of work I can do to help elucidate some of the ways to work with ArcObjects and the Server API. So expect some posting on that in the near future.</p>
+	<p>Oh yeah, one more thing - now that I know how many of you there are I am fully expecting more java entries in the unofficial developer contest. No more excuses and start planning your apps now!</p>
+	<p>Again thanks for all the energy and enthusiasm.
+</p>
+";}i:4;a:12:{s:5:"title";s:24:"The chickens are in hand";s:4:"link";s:31:"http://www.molw.org/blog/?p=128";s:8:"comments";s:40:"http://www.molw.org/blog/?p=128#comments";s:7:"pubdate";s:31:"Tue, 14 Mar 2006 19:58:20 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:11:"GISJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=128";s:11:"description";s:304:"	
+	So we have the first prize awards for you lucky contestants - one for the best .NET application and one for the best Java application (you guys better not let me down). These chickens were hand selected and signed by a minor person on the development team at ESRI. 
+	We also have some prizes for [...]";s:7:"content";a:1:{s:7:"encoded";s:843:"	<p><a href="http://www.flickr.com/photos/thesteve0/112519580/" title="Photo Sharing"><img src="http://static.flickr.com/55/112519580_ba10b34272_m.jpg" width="240" height="180" alt="The Prize" /></a></p>
+	<p>So we have the first prize awards for you lucky contestants - one for the best .NET application and one for the best Java application (you guys better not let me down). These chickens were hand selected and signed by a minor person on the development team at ESRI. </p>
+	<p>We also have some prizes for the last place finishers as well - so there is something else to gun for.  These lucky contestants will receive books on &#8220;helping them improve their programming skills&#8221;.</p>
+	<p>Again it would be nice if people could ping us and let us know if they are planning on showing up.<br />
+Should be fun all around&#8230;
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=128";}s:7:"summary";s:304:"	
+	So we have the first prize awards for you lucky contestants - one for the best .NET application and one for the best Java application (you guys better not let me down). These chickens were hand selected and signed by a minor person on the development team at ESRI. 
+	We also have some prizes for [...]";s:12:"atom_content";s:843:"	<p><a href="http://www.flickr.com/photos/thesteve0/112519580/" title="Photo Sharing"><img src="http://static.flickr.com/55/112519580_ba10b34272_m.jpg" width="240" height="180" alt="The Prize" /></a></p>
+	<p>So we have the first prize awards for you lucky contestants - one for the best .NET application and one for the best Java application (you guys better not let me down). These chickens were hand selected and signed by a minor person on the development team at ESRI. </p>
+	<p>We also have some prizes for the last place finishers as well - so there is something else to gun for.  These lucky contestants will receive books on &#8220;helping them improve their programming skills&#8221;.</p>
+	<p>Again it would be nice if people could ping us and let us know if they are planning on showing up.<br />
+Should be fun all around&#8230;
+</p>
+";}i:5;a:12:{s:5:"title";s:26:"Java SIG moved to Saturday";s:4:"link";s:31:"http://www.molw.org/blog/?p=127";s:8:"comments";s:40:"http://www.molw.org/blog/?p=127#comments";s:7:"pubdate";s:31:"Mon, 06 Mar 2006 19:33:45 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:25:"Other life thingsJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=127";s:11:"description";s:203:"	The Java SIG at the dev summit has been moved to Saturday and we should have Scott Morehouse and Sud Menon attending. If you code in Java and use an ArcGIS product you better be there &#8212; or else.
+
+";s:7:"content";a:1:{s:7:"encoded";s:291:"	<p>The <a href="http://www.esri.com/events/devsummit/sessions/interest_groups.html">Java SIG at the dev summit</a> has been moved to Saturday and we should have Scott Morehouse and Sud Menon attending. If you code in Java and use an ArcGIS product you better be there &#8212; or else.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=127";}s:7:"summary";s:203:"	The Java SIG at the dev summit has been moved to Saturday and we should have Scott Morehouse and Sud Menon attending. If you code in Java and use an ArcGIS product you better be there &#8212; or else.
+
+";s:12:"atom_content";s:291:"	<p>The <a href="http://www.esri.com/events/devsummit/sessions/interest_groups.html">Java SIG at the dev summit</a> has been moved to Saturday and we should have Scott Morehouse and Sud Menon attending. If you code in Java and use an ArcGIS product you better be there &#8212; or else.
+</p>
+";}i:6;a:12:{s:5:"title";s:44:"Gaming with your kids at the Philly Inquirer";s:4:"link";s:31:"http://www.molw.org/blog/?p=126";s:8:"comments";s:40:"http://www.molw.org/blog/?p=126#comments";s:7:"pubdate";s:31:"Sun, 05 Mar 2006 18:55:35 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:12:"FamilyGaming";s:4:"guid";s:31:"http://www.molw.org/blog/?p=126";s:11:"description";s:239:"	Nice read on family gaming with the kids. Felix and I were playing Metal Arms Glitch in the system and Fay and I team play Rugrats or Donkey Konga. 
+	Philadelphia Inquirer &#166; 03/05/2006 &#166; Passing the joystick to a new generation
+";s:7:"content";a:1:{s:7:"encoded";s:316:"	<p>Nice read on family gaming with the kids. Felix and I were playing Metal Arms Glitch in the system and Fay and I team play Rugrats or Donkey Konga. </p>
+	<p><a href="http://www.philly.com/mld/inquirer/news/front/14022254.htm">Philadelphia Inquirer | 03/05/2006 | Passing the joystick to a new generation</a></p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=126";}s:7:"summary";s:239:"	Nice read on family gaming with the kids. Felix and I were playing Metal Arms Glitch in the system and Fay and I team play Rugrats or Donkey Konga. 
+	Philadelphia Inquirer &#166; 03/05/2006 &#166; Passing the joystick to a new generation
+";s:12:"atom_content";s:316:"	<p>Nice read on family gaming with the kids. Felix and I were playing Metal Arms Glitch in the system and Fay and I team play Rugrats or Donkey Konga. </p>
+	<p><a href="http://www.philly.com/mld/inquirer/news/front/14022254.htm">Philadelphia Inquirer | 03/05/2006 | Passing the joystick to a new generation</a></p>
+";}i:7;a:12:{s:5:"title";s:45:"And then Rahoul reminds me to look at the doc";s:4:"link";s:31:"http://www.molw.org/blog/?p=125";s:8:"comments";s:40:"http://www.molw.org/blog/?p=125#comments";s:7:"pubdate";s:31:"Wed, 15 Feb 2006 17:13:31 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:11:"GISJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=125";s:11:"description";s:315:"	So Rahoul responds to my post and reminds me that for all you server fans out there the MapServer can export quite a few formats:
+Supported image formats include: BMP, JPG, DIB, TIFF, PNG, PNG24, EMF, PS, PDF, AI, GIF,  SVG and SVGZ.,
+	To export PDF from the server, when you are making your imageType object [...]";s:7:"content";a:1:{s:7:"encoded";s:629:"	<p>So Rahoul responds to my post and reminds me that for all you server fans out there the MapServer can export quite a few formats:<br />
+<em>Supported image formats include: BMP, JPG, DIB, TIFF, PNG, PNG24, EMF, PS, <strong>PDF</strong>, AI, GIF,  SVG and SVGZ.,</em></p>
+	<p>To export PDF from the server, when you are making your imageType object make sure to do this:<br />
+<code>imageType.setFormat(esriImageFormat.esriImagePDF); </code><br />
+and you should be good to go.</p>
+	<p><strong>Update</strong><br />
+Being the gentleman that he is, Rahoul wrote to tell me that Ravi is the one who gave him the tip&#8230;
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=125";}s:7:"summary";s:315:"	So Rahoul responds to my post and reminds me that for all you server fans out there the MapServer can export quite a few formats:
+Supported image formats include: BMP, JPG, DIB, TIFF, PNG, PNG24, EMF, PS, PDF, AI, GIF,  SVG and SVGZ.,
+	To export PDF from the server, when you are making your imageType object [...]";s:12:"atom_content";s:629:"	<p>So Rahoul responds to my post and reminds me that for all you server fans out there the MapServer can export quite a few formats:<br />
+<em>Supported image formats include: BMP, JPG, DIB, TIFF, PNG, PNG24, EMF, PS, <strong>PDF</strong>, AI, GIF,  SVG and SVGZ.,</em></p>
+	<p>To export PDF from the server, when you are making your imageType object make sure to do this:<br />
+<code>imageType.setFormat(esriImageFormat.esriImagePDF); </code><br />
+and you should be good to go.</p>
+	<p><strong>Update</strong><br />
+Being the gentleman that he is, Rahoul wrote to tell me that Ravi is the one who gave him the tip&#8230;
+</p>
+";}i:8;a:12:{s:5:"title";s:31:"How to export PDF in ArcObjects";s:4:"link";s:31:"http://www.molw.org/blog/?p=124";s:8:"comments";s:40:"http://www.molw.org/blog/?p=124#comments";s:7:"pubdate";s:31:"Tue, 14 Feb 2006 18:55:06 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:11:"GISJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=124";s:11:"description";s:622:"	Based on a question from Rahoul and with code writing from the excellent Sam - here is some code to export to a PDF from ArcObjects in Java:
+Sorry about the funky formatting - it is the export to HTML from SciTE
+	import com.esri.arcgis.output.*;
+import com.esri.arcgis.carto.*;
+import com.esri.arcgis.display.*;
+import com.esri.arcgis.geometry.*;
+import java.io.*;
+public class Export {
+&#160;&#160;&#160;&#160;public Export() {
+&#160;&#160;&#160;&#160;}
+&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;public void exportToPDF(IActiveView pActiveView){
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//The various [...]";s:7:"content";a:1:{s:7:"encoded";s:13879:"	<p>Based on a question from Rahoul and with code writing from the excellent Sam - here is some code to export to a PDF from ArcObjects in Java:<br />
+Sorry about the funky formatting - it is the export to HTML from <a href="http://www.scintilla.org/SciTE.html">SciTE</a></p>
+	<p><span></span><span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>output<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>carto<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>display<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>geometry<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>java<span class="S10">.</span>io<span class="S10">.*;</span><br />
+<span class="S5">public</span><span class="S0"> </span><span class="S5">class</span><span class="S0"> </span>Export<span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">public</span><span class="S0"> </span>Export<span class="S10">()</span><span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">public</span><span class="S0"> </span><span class="S5">void</span><span class="S0"> </span>exportToPDF<span class="S10">(</span>IActiveView<span class="S0"> </span>pActiveView<span class="S10">){</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//The various interfaces implemented by the ExportPDF class</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExportPDF pExportPDF;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExport pExport;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExportVectorOptions pExportVector;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExportColorspaceSettings pColorSettings;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOutputRasterSettings pRasterSettings;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>IDisplayTransformation<span class="S0"> </span>pDisplayTrans<span class="S10">;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">int</span><span class="S0"> </span>lhDC<span class="S10">;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">try</span><span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ExportPDF<span class="S0"> </span>pExportPDF<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span><span class="S5">new</span><span class="S0"> </span>ExportPDF<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pDisplayTrans<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pActiveView<span class="S10">.</span>getScreenDisplay<span class="S10">().</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>getDisplayTransformation<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure colorspace</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setColorspace<span class="S10">(</span>esriExportColorspace<span class="S10">.</span>esriExportColorspaceRGB<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure raster settings. &nbsp;set to 1:1</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setResampleRatio<span class="S10">(</span><span class="S4">1</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure vector options</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setPolygonizeMarkers<span class="S10">(</span>false<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure PDF Export Options</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setCompressed<span class="S10">(</span>true<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setEmbedFonts<span class="S10">(</span>false<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setImageCompression<span class="S10">(</span>esriExportImageCompression<span class="S10">.</span>esriExportImageCompressionLZW<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//prepare the Exporter</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setExportFileName<span class="S10">(</span><span class="S6">&#8220;c:\\export.pdf&#8221;</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setResolution<span class="S10">(</span><span class="S4">300</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//get the bounds of the display in pixels</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>tagRECT<span class="S0"> </span>tRect<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pDisplayTrans<span class="S10">.</span>getDeviceFrame<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//set pixel bounds of the export surface. &nbsp;IExport::Pixel Bounds represents</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//the size of the output document in pixels</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//scale display bounds by ratio of output resolution to map resolution</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>IEnvelopeGEN<span class="S0"> </span>pEnv<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span><span class="S5">new</span><span class="S0"> </span>Envelope<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">double</span><span class="S0"> </span>ratio<span class="S10">;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ratio<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pExportPDF<span class="S10">.</span>getResolution<span class="S10">()</span><span class="S0"> </span><span class="S10">/</span><span class="S0"> </span>pDisplayTrans<span class="S10">.</span>getResolution<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pEnv<span class="S10">.</span>putCoords<span class="S10">(</span>tRect<span class="S10">.</span>left<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">.</span>top<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">.</span>right<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">.</span>bottom<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setPixelBounds<span class="S10">(</span><span class="S5">new</span><span class="S0"> </span>IEnvelopeProxy<span class="S10">(</span>pEnv<span class="S10">));</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//Start Exporting</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>lhDC<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pExportPDF<span class="S10">.</span>startExporting<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//the call to output draws to the pdf file. &nbsp;The parameters used below export the</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//current map extent.</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pActiveView<span class="S10">.</span>output<span class="S10">(</span>lhDC<span class="S10">,</span><span class="S0"> </span><span class="S4">300</span><span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">,</span><span class="S0"> </span>pDisplayTrans<span class="S10">.</span>getFittedBounds<span class="S10">(),</span><span class="S0"> </span><span class="S5">null</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>finishExporting<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>cleanup<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><span class="S0"> </span><span class="S5">catch</span><span class="S0"> </span><span class="S10">(</span><span class="S16">IOException</span><span class="S0"> </span>ex<span class="S10">)</span><span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><br />
+<span class="S10">}</span></p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=124";}s:7:"summary";s:622:"	Based on a question from Rahoul and with code writing from the excellent Sam - here is some code to export to a PDF from ArcObjects in Java:
+Sorry about the funky formatting - it is the export to HTML from SciTE
+	import com.esri.arcgis.output.*;
+import com.esri.arcgis.carto.*;
+import com.esri.arcgis.display.*;
+import com.esri.arcgis.geometry.*;
+import java.io.*;
+public class Export {
+&#160;&#160;&#160;&#160;public Export() {
+&#160;&#160;&#160;&#160;}
+&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;public void exportToPDF(IActiveView pActiveView){
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//The various [...]";s:12:"atom_content";s:13879:"	<p>Based on a question from Rahoul and with code writing from the excellent Sam - here is some code to export to a PDF from ArcObjects in Java:<br />
+Sorry about the funky formatting - it is the export to HTML from <a href="http://www.scintilla.org/SciTE.html">SciTE</a></p>
+	<p><span></span><span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>output<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>carto<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>display<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>com<span class="S10">.</span>esri<span class="S10">.</span>arcgis<span class="S10">.</span>geometry<span class="S10">.*;</span><br />
+<span class="S5">import</span><span class="S0"> </span>java<span class="S10">.</span>io<span class="S10">.*;</span><br />
+<span class="S5">public</span><span class="S0"> </span><span class="S5">class</span><span class="S0"> </span>Export<span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">public</span><span class="S0"> </span>Export<span class="S10">()</span><span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">public</span><span class="S0"> </span><span class="S5">void</span><span class="S0"> </span>exportToPDF<span class="S10">(</span>IActiveView<span class="S0"> </span>pActiveView<span class="S10">){</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//The various interfaces implemented by the ExportPDF class</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExportPDF pExportPDF;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExport pExport;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExportVectorOptions pExportVector;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IExportColorspaceSettings pColorSettings;</span><br />
+<span class="S2">// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOutputRasterSettings pRasterSettings;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>IDisplayTransformation<span class="S0"> </span>pDisplayTrans<span class="S10">;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">int</span><span class="S0"> </span>lhDC<span class="S10">;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">try</span><span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ExportPDF<span class="S0"> </span>pExportPDF<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span><span class="S5">new</span><span class="S0"> </span>ExportPDF<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pDisplayTrans<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pActiveView<span class="S10">.</span>getScreenDisplay<span class="S10">().</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>getDisplayTransformation<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure colorspace</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setColorspace<span class="S10">(</span>esriExportColorspace<span class="S10">.</span>esriExportColorspaceRGB<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure raster settings. &nbsp;set to 1:1</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setResampleRatio<span class="S10">(</span><span class="S4">1</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure vector options</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setPolygonizeMarkers<span class="S10">(</span>false<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//configure PDF Export Options</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setCompressed<span class="S10">(</span>true<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setEmbedFonts<span class="S10">(</span>false<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setImageCompression<span class="S10">(</span>esriExportImageCompression<span class="S10">.</span>esriExportImageCompressionLZW<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//prepare the Exporter</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setExportFileName<span class="S10">(</span><span class="S6">&#8220;c:\\export.pdf&#8221;</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setResolution<span class="S10">(</span><span class="S4">300</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//get the bounds of the display in pixels</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>tagRECT<span class="S0"> </span>tRect<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pDisplayTrans<span class="S10">.</span>getDeviceFrame<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//set pixel bounds of the export surface. &nbsp;IExport::Pixel Bounds represents</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//the size of the output document in pixels</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//scale display bounds by ratio of output resolution to map resolution</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>IEnvelopeGEN<span class="S0"> </span>pEnv<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span><span class="S5">new</span><span class="S0"> </span>Envelope<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S5">double</span><span class="S0"> </span>ratio<span class="S10">;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>ratio<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pExportPDF<span class="S10">.</span>getResolution<span class="S10">()</span><span class="S0"> </span><span class="S10">/</span><span class="S0"> </span>pDisplayTrans<span class="S10">.</span>getResolution<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pEnv<span class="S10">.</span>putCoords<span class="S10">(</span>tRect<span class="S10">.</span>left<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">.</span>top<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">.</span>right<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">.</span>bottom<span class="S0"> </span><span class="S10">*</span><span class="S0"> </span>ratio<span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>setPixelBounds<span class="S10">(</span><span class="S5">new</span><span class="S0"> </span>IEnvelopeProxy<span class="S10">(</span>pEnv<span class="S10">));</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//Start Exporting</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>lhDC<span class="S0"> </span><span class="S10">=</span><span class="S0"> </span>pExportPDF<span class="S10">.</span>startExporting<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//the call to output draws to the pdf file. &nbsp;The parameters used below export the</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S2">//current map extent.</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pActiveView<span class="S10">.</span>output<span class="S10">(</span>lhDC<span class="S10">,</span><span class="S0"> </span><span class="S4">300</span><span class="S10">,</span><span class="S0"> </span>tRect<span class="S10">,</span><span class="S0"> </span>pDisplayTrans<span class="S10">.</span>getFittedBounds<span class="S10">(),</span><span class="S0"> </span><span class="S5">null</span><span class="S10">);</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>finishExporting<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>pExportPDF<span class="S10">.</span>cleanup<span class="S10">();</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><span class="S0"> </span><span class="S5">catch</span><span class="S0"> </span><span class="S10">(</span><span class="S16">IOException</span><span class="S0"> </span>ex<span class="S10">)</span><span class="S0"> </span><span class="S10">{</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="S10">}</span><br />
+<span class="S10">}</span></p>
+";}i:9;a:12:{s:5:"title";s:29:"Props to the ColdFusion peeps";s:4:"link";s:31:"http://www.molw.org/blog/?p=123";s:8:"comments";s:40:"http://www.molw.org/blog/?p=123#comments";s:7:"pubdate";s:31:"Thu, 09 Feb 2006 05:16:12 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Steve";}s:8:"category";s:28:"Other life thingsGISJavaESRI";s:4:"guid";s:31:"http://www.molw.org/blog/?p=123";s:11:"description";s:309:"	So eventhough my friend James disrespects the ColdFusion (CF) developer I am gonna show some love&#8230;
+Today on email a question was asked about our Java Web ADF and CF. Antony, being the rock star that he is, posts this link to the macromedia/abobe site about CF and Java. I mosey on over and take a [...]";s:7:"content";a:1:{s:7:"encoded";s:1236:"	<p>So eventhough my friend James <a href="http://www.spatiallyadjusted.com/2006/01/19/more-on-the-dev-summit-contest/">disrespects the ColdFusion</a> (CF) developer I am gonna show some love&#8230;<br />
+Today on email a question was asked about our Java Web ADF and CF. Antony, being the rock star that he is, posts this link to the macromedia/abobe site about <a href="http://www.macromedia.com/devnet/coldfusion/java_j2ee.html">CF and Java</a>. I mosey on over and take a peek and lo and behold you should be able to use CF with our Web ADF. Since JSF is really just servlets, jsp, and Java on steroids (a.k.a. combined with a MVC framework, a great eventing model, and standard component specification) there should be no reason why you can&#8217;t use <a href="http://www.macromedia.com/devnet/coldfusion/articles/java.html">CF tags in our Web ADF pages</a>. So as long as Macromedia does what it says it does you should be good to go. I did some googling on JSF and ColdFusion and came up pretty bare, so I am not sure what happens with this combination in the wild. Our team has not tried it but if you have we would love to hear feedback. <a href="http://www.roktech.net/devblog/">Jeremy and Jason</a> are you listening??
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:41:"http://www.molw.org/blog/?feed=rss2&p=123";}s:7:"summary";s:309:"	So eventhough my friend James disrespects the ColdFusion (CF) developer I am gonna show some love&#8230;
+Today on email a question was asked about our Java Web ADF and CF. Antony, being the rock star that he is, posts this link to the macromedia/abobe site about CF and Java. I mosey on over and take a [...]";s:12:"atom_content";s:1236:"	<p>So eventhough my friend James <a href="http://www.spatiallyadjusted.com/2006/01/19/more-on-the-dev-summit-contest/">disrespects the ColdFusion</a> (CF) developer I am gonna show some love&#8230;<br />
+Today on email a question was asked about our Java Web ADF and CF. Antony, being the rock star that he is, posts this link to the macromedia/abobe site about <a href="http://www.macromedia.com/devnet/coldfusion/java_j2ee.html">CF and Java</a>. I mosey on over and take a peek and lo and behold you should be able to use CF with our Web ADF. Since JSF is really just servlets, jsp, and Java on steroids (a.k.a. combined with a MVC framework, a great eventing model, and standard component specification) there should be no reason why you can&#8217;t use <a href="http://www.macromedia.com/devnet/coldfusion/articles/java.html">CF tags in our Web ADF pages</a>. So as long as Macromedia does what it says it does you should be good to go. I did some googling on JSF and ColdFusion and came up pretty bare, so I am not sure what happens with this combination in the wild. Our team has not tried it but if you have we would love to hear feedback. <a href="http://www.roktech.net/devblog/">Jeremy and Jason</a> are you listening??
+</p>
+";}}s:7:"channel";a:7:{s:5:"title";s:19:"My Own Little World";s:4:"link";s:24:"http://www.molw.org/blog";s:11:"description";s:50:"Steve Citron-Pousty's particular take on his world";s:7:"pubdate";s:31:"Thu, 30 Mar 2006 19:47:31 +0000";s:9:"generator";s:31:"http://wordpress.org/?v=1.5.1.3";s:8:"language";s:2:"en";s:7:"tagline";s:50:"Steve Citron-Pousty's particular take on his world";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Thu, 30 Mar 2006 19:47:31 GMT
+";s:4:"etag";s:36:""751e8ae4caca769cf720efdf188e2198"
+";}

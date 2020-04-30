@@ -1,0 +1,10 @@
+XOOPS
+
+For the moment i do the minimum
+- header/footer
+- login filled
+- phpkaox theme
+
+Later if i have time and users are interested
+- synchronize database users
+- login auto

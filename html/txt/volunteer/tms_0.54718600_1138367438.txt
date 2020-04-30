@@ -1,0 +1,10 @@
+-86.45,36.89:smalldot:[1] College Student
+-87.99,42.96:smalldot:[2] Data Secretary
+-72.8,41.28:smalldot:[3] GIS Specialist
+-116.9,34.15:smalldot:[4] GIS Analyst
+-122.42,37.75:smalldot:[5] Senior Geographic Analyst
+-84.98,38.01:smalldot:[6] geographer
+-76.74,40.87:smalldot:[7] Conservation Support Assistant
+-86.13,39.82:smalldot:[8] Engineering Assistant
+-119.8,34.45:smalldot:[9] GIS Analyst
+-117.21,32.9:smalldot:[10] GIS Technician

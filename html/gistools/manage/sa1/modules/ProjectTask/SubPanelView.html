@@ -1,0 +1,63 @@
+<!--
+/*
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ */
+-->
+<!-- $Id: SubPanelView.html,v 1.10.2.1 2005/05/17 22:29:38 andrew Exp $ -->
+<!-- BEGIN: main -->
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="listView">
+
+<tr height="20" class="listViewThS1">
+<td scope="col" class="listViewThS1"><slot>{MOD.LBL_LIST_NAME}</slot></td>
+<td scope="col" class="listViewThS1"><slot>{MOD.LBL_LIST_PERCENT_COMPLETE}</slot></td>
+<td scope="col" class="listViewThS1"><slot>{MOD.LBL_LIST_STATUS}</slot></td>
+<td scope="col" class="listViewThS1"><slot>{MOD.LBL_LIST_ASSIGNED_USER_ID}</slot></td>
+<td scope="col" class="listViewThS1"><slot>{MOD.LBL_LIST_DATE_DUE}</slot></td>
+<td scope="col" class="listViewThS1"><slot>&nbsp;</slot></td>
+</tr>
+
+<!-- BEGIN: row -->
+<tr height="20"
+onmouseover="setPointer(this, '{project_task.id}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');"
+onmouseout="setPointer(this, '{project_task.id}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');"
+onmousedown="setPointer(this, '{project_task.id}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+
+<td scope="row" class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><a
+	href="{URL_PREFIX}index.php?module=ProjectTask&action=DetailView&record={project_task.ID}&return_module=Project&return_action=DetailView&return_id={project_task.PARENT_ID}"
+	class="listViewTdLinkS1">{project_task.NAME}</a></slot></td>
+<td class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{project_task.PERCENT_COMPLETE}</slot></td>
+<td class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{project_task.STATUS}</slot></td>
+<td class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{project_task.ASSIGNED_USER_NAME}</slot></td>
+<td class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot>{project_task.DATE_DUE}</slot></td>
+<td nowrap align="right" class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}"><slot><a class="listViewTdToolsS1"
+	href="{URL_PREFIX}index.php?module=ProjectTask&action=EditView&record={project_task.ID}{RETURN_URL}"
+	>{EDIT_INLINE_PNG}</a>&nbsp;<a class="listViewTdToolsS1"
+	href="{URL_PREFIX}index.php?module=ProjectTask&action=EditView&record={project_task.ID}{RETURN_URL}"
+	>{APP.LNK_EDIT}</a></slot></td>
+</tr>
+
+<tr>
+<td colspan="20" class="listViewHRS1"></td>
+</tr>
+<!-- END: row -->
+
+</table>
+<!-- END: main -->

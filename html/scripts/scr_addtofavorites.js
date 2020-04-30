@@ -1,0 +1,1 @@
+function addtofavorites(){favoriteurl="<?php print $favoriteurl; ?>";favoritetitle="<?php print $favoritetitle; ?>";if(document.all)window.external.AddFavorite(favoriteurl,favoritetitle);}

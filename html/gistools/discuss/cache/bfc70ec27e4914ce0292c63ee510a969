@@ -1,0 +1,44 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:5:{i:0;a:6:{s:5:"about";s:32:"http://portal.opengeospatial.org";s:5:"title";s:12:"May OGC User";s:11:"description";s:303:"In this issue of OGC User we look at a bold Spanish open source development project, a commercial weather data provider application, and a volunteer-driven weather data network. These stories illustrate two levels of weaving things together with standards. Each of these organizations utilizes softwa...";s:4:"link";s:67:"http://www.opengeospatial.org/press/?page=ogcuser&year=0&ogcuser=14";s:7:"pubdate";s:31:"Fri, 20 May 2005 00:00:00 -0500";s:7:"summary";s:303:"In this issue of OGC User we look at a bold Spanish open source development project, a commercial weather data provider application, and a volunteer-driven weather data network. These stories illustrate two levels of weaving things together with standards. Each of these organizations utilizes softwa...";}i:1;a:6:{s:5:"about";s:32:"http://portal.opengeospatial.org";s:5:"title";s:62:"OGC announces Sensor Alert Service Interoperability Experiment";s:11:"description";s:299:"Wayland, MA, 17 May, 2005 - The Open Geospatial Consortium Inc. (OGC)
+will soon begin an Interoperability Experiment to create a draft
+specification and implementations of a Sensor Alert Service (SAS). The
+OGC Sensor Web Enablement (SWE) Working Group has recognized that the
+SWE suite of standar...";s:4:"link";s:70:"http://www.opengeospatial.org/press/?page=pressrelease&year=0&prid=225";s:7:"pubdate";s:31:"Tue, 17 May 2005 00:00:00 -0500";s:7:"summary";s:299:"Wayland, MA, 17 May, 2005 - The Open Geospatial Consortium Inc. (OGC)
+will soon begin an Interoperability Experiment to create a draft
+specification and implementations of a Sensor Alert Service (SAS). The
+OGC Sensor Web Enablement (SWE) Working Group has recognized that the
+SWE suite of standar...";}i:2;a:6:{s:5:"about";s:32:"http://portal.opengeospatial.org";s:5:"title";s:46:"OGC Membership Approves Six New Specifications";s:11:"description";s:299:"Wayland, MA, May 5, 2005 - The Open Geospatial Consortium (OGC)
+announces that the OGC membership has adopted six OpenGIS(R)
+Specifications. Each of the newly adopted specifications enhances the
+existing open body of knowledge and furthers the OGC vision of a world
+where geographic data and serv...";s:4:"link";s:70:"http://www.opengeospatial.org/press/?page=pressrelease&year=0&prid=224";s:7:"pubdate";s:31:"Thu,  5 May 2005 00:00:00 -0500";s:7:"summary";s:299:"Wayland, MA, May 5, 2005 - The Open Geospatial Consortium (OGC)
+announces that the OGC membership has adopted six OpenGIS(R)
+Specifications. Each of the newly adopted specifications enhances the
+existing open body of knowledge and furthers the OGC vision of a world
+where geographic data and serv...";}i:3;a:6:{s:5:"about";s:32:"http://portal.opengeospatial.org";s:5:"title";s:59:"Global Spatial Data Infrastructure Conference held in Cairo";s:11:"description";s:299:"April 29, 2005, Boston, MA - `Spatial Data in an Information Society`
+was a primary theme of the 8th Global Spatial Data Infrastructure
+(GSDI) Conference held 16-21 April 2005 in Cairo, Egypt. The
+conference attracted over 1000 registrants from 80 different
+countries. Scientists, engineers, GIS ...";s:4:"link";s:70:"http://www.opengeospatial.org/press/?page=pressrelease&year=0&prid=222";s:7:"pubdate";s:31:"Fri, 29 Apr 2005 00:00:00 -0500";s:7:"summary";s:299:"April 29, 2005, Boston, MA - `Spatial Data in an Information Society`
+was a primary theme of the 8th Global Spatial Data Infrastructure
+(GSDI) Conference held 16-21 April 2005 in Cairo, Egypt. The
+conference attracted over 1000 registrants from 80 different
+countries. Scientists, engineers, GIS ...";}i:4;a:6:{s:5:"about";s:32:"http://portal.opengeospatial.org";s:5:"title";s:64:"OGC to Begin Geospatial Semantic Web Interoperability Experiment";s:11:"description";s:303:"Wayland, MA, April 12, 2005 - The Open Geospatial Consortium (OGC) Review Board has approved the launch of the Geospatial Semantic Web (GSW) Interoperability Experiment (IE). The Interoperability Experiment will take several important steps towards the development of the Geospatial Semantic Web, whe...";s:4:"link";s:70:"http://www.opengeospatial.org/press/?page=pressrelease&year=0&prid=220";s:7:"pubdate";s:31:"Tue, 12 Apr 2005 00:00:00 -0500";s:7:"summary";s:303:"Wayland, MA, April 12, 2005 - The Open Geospatial Consortium (OGC) Review Board has approved the launch of the Geospatial Semantic Web (GSW) Interoperability Experiment (IE). The Interoperability Experiment will take several important steps towards the development of the Geospatial Semantic Web, whe...";}}s:7:"channel";a:9:{s:5:"title";s:13:"OGC News Feed";s:4:"link";s:30:"http://www.opengeospatial.org/";s:11:"description";s:45:"Open Geospatial Consortium Related News Feeds";s:8:"language";s:5:"en-us";s:13:"lastbuilddate";s:31:"Thu,  2 Jun 2005 03:08:01 -0500";s:2:"sy";a:3:{s:12:"updateperiod";s:5:"daily";s:15:"updatefrequency";s:1:"2";s:10:"updatebase";s:22:"2004-01-01T12:00+00:00";}s:5:"items";s:38:"
+  
+     
+     
+     
+     
+     
+    ";s:9:"items_seq";s:65:"
+      
+     
+      
+     
+      
+     
+      
+     
+      
+     ";s:7:"tagline";s:45:"Open Geospatial Consortium Related News Feeds";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Thu, 02 Jun 2005 08:08:01 GMT
+";s:4:"etag";s:24:""21af41-1226-429ebe61"
+";}

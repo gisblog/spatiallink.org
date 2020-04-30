@@ -1,0 +1,7 @@
+-87.99,42.96:smalldot:[1] Data Secretary
+-111.81,41.8:smalldot:[2] Enviro Planner GIS Specialist
+-87.99,42.95:smalldot:[3] self employed
+-90.27,38.58:smalldot:[4] Data Management Coordinator
+-76.74,40.87:smalldot:[5] Conservation Support Assistant
+-86.13,39.82:smalldot:[6] Engineering Assistant
+-106.81,39.61:smalldot:[7] GIS Director

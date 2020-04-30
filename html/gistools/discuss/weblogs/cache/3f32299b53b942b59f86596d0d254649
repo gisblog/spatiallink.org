@@ -1,0 +1,485 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:4:{s:5:"title";s:31:"India Landsat 742 Mosaic (Asia)";s:11:"description";s:377:"Data is from year 2000 
+
+WGS84 Geodetic 
+
+You can view a thumbnail of this scene at: 
+
+http://www.earthetc.com/ecwp/ecw_img.dll?thumbnail?ecw=/images/geodetic/india/landsat742.ecw&sizey=800&sizex=800&quality=75 
+
+The file is in ECW format. 
+
+Most GIS software has native ECW support.  For a list of software, plus free readers and plugins go to: 
+
+www.ermapper.com/downloads/ 
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=73&hit=1";s:7:"summary";s:377:"Data is from year 2000 
+
+WGS84 Geodetic 
+
+You can view a thumbnail of this scene at: 
+
+http://www.earthetc.com/ecwp/ecw_img.dll?thumbnail?ecw=/images/geodetic/india/landsat742.ecw&sizey=800&sizex=800&quality=75 
+
+The file is in ECW format. 
+
+Most GIS software has native ECW support.  For a list of software, plus free readers and plugins go to: 
+
+www.ermapper.com/downloads/ 
+";}i:1;a:4:{s:5:"title";s:27:"Africa Landsat 742 (Africa)";s:11:"description";s:197:"Africa Landsat 742 
+
+You can view a thumbnail image of this scene at: 
+
+http://www.earthetc.com/ecwp/ecw_img.dll?thumbnail?ecw=/images/geodetic/Africa/landsat742.ecw&sizey=800&sizex=800&quality=75 ";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=72&hit=1";s:7:"summary";s:197:"Africa Landsat 742 
+
+You can view a thumbnail image of this scene at: 
+
+http://www.earthetc.com/ecwp/ecw_img.dll?thumbnail?ecw=/images/geodetic/Africa/landsat742.ecw&sizey=800&sizex=800&quality=75 ";}i:2;a:4:{s:5:"title";s:41:"South East Asia Landsat 742 Mosaic (Asia)";s:11:"description";s:423:"South East Asia  Landsat Mosaic 
+
+WGS84 Geodetic 
+
+Data is from year 2000 
+
+The file is in ECW format. 
+
+Most GIS software has native ECW support.  For a list of software, plus free readers and plugins go to: 
+
+www.ermapper.com/downloads/ 
+
+
+You can view a thumbnail image of this scene at: 
+
+http://www.earthetc.com/ecwp/ecw_img.dll?thumbnail?ecw=/images/geodetic/SouthEastAsia/SE-Asia.ecw&sizey=800&sizex=800&quality=75 
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=71&hit=1";s:7:"summary";s:423:"South East Asia  Landsat Mosaic 
+
+WGS84 Geodetic 
+
+Data is from year 2000 
+
+The file is in ECW format. 
+
+Most GIS software has native ECW support.  For a list of software, plus free readers and plugins go to: 
+
+www.ermapper.com/downloads/ 
+
+
+You can view a thumbnail image of this scene at: 
+
+http://www.earthetc.com/ecwp/ecw_img.dll?thumbnail?ecw=/images/geodetic/SouthEastAsia/SE-Asia.ecw&sizey=800&sizex=800&quality=75 
+";}i:3;a:4:{s:5:"title";s:59:"Australian continental Lansat 742 mosaic for 1989 (Oceania)";s:11:"description";s:332:"Australian continental mosaic for 1989 
+
+
+Information provided by the Australian Greenhouse Office http://www.greenhouse.gov.au/ 
+
+
+A thumbnail of this scene can be accessed at: 
+
+http://www.geoTorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/australia/australia_Landsat_1989/australia_1989.ecw&sizey=800&sizex=800&quality=75 ";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=70&hit=1";s:7:"summary";s:332:"Australian continental mosaic for 1989 
+
+
+Information provided by the Australian Greenhouse Office http://www.greenhouse.gov.au/ 
+
+
+A thumbnail of this scene can be accessed at: 
+
+http://www.geoTorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/australia/australia_Landsat_1989/australia_1989.ecw&sizey=800&sizex=800&quality=75 ";}i:4;a:4:{s:5:"title";s:52:"Delaware Topographic Map 24K - WGS84 (North America)";s:11:"description";s:51:"Delaware 24K Topo (DRG) WGS84/Geodetic ECW format 
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=69&hit=1";s:7:"summary";s:51:"Delaware 24K Topo (DRG) WGS84/Geodetic ECW format 
+";}i:5;a:4:{s:5:"title";s:81:"Point shapefile of all the US geographic names - 2 million points (North America)";s:11:"description";s:554:"About 2 million named places exist within US territory; everything from streams, churches, parks, mountains, etc. Of course they are all documented in a file format which is somewhat inaccessible to GIS applications. But using a nice bash shell script plus a python/ogr script, we can download all the wierd text files and convert them into one (huge) point shapefile. 
+
+This data was processed by Matthew Perry.  More information on the process used to create this dataset can be found at: 
+
+http://perrygeo.net/blog/index.php?entry=entry050823-143008 
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=68&hit=1";s:7:"summary";s:554:"About 2 million named places exist within US territory; everything from streams, churches, parks, mountains, etc. Of course they are all documented in a file format which is somewhat inaccessible to GIS applications. But using a nice bash shell script plus a python/ogr script, we can download all the wierd text files and convert them into one (huge) point shapefile. 
+
+This data was processed by Matthew Perry.  More information on the process used to create this dataset can be found at: 
+
+http://perrygeo.net/blog/index.php?entry=entry050823-143008 
+";}i:6;a:4:{s:5:"title";s:40:"NOAA ENC All.zip.torrent (North America)";s:11:"description";s:434:"Over 500 S-57 ENC files from NOAA.  These are all the current (Oct/2005) free ENC 
+format Nautical charts for the USA.  The charts are in S-57 format which can be 
+somewhat challenging to exploit, but are readable using the OGR library as well 
+as products such as FME, or the viewer software from SevenCs (http://www.sevencs.com). 
+
+Details on current data available at source: 
+
+  http://nauticalcharts.noaa.gov/mcd/enc/download.htm";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=67&hit=1";s:7:"summary";s:434:"Over 500 S-57 ENC files from NOAA.  These are all the current (Oct/2005) free ENC 
+format Nautical charts for the USA.  The charts are in S-57 format which can be 
+somewhat challenging to exploit, but are readable using the OGR library as well 
+as products such as FME, or the viewer software from SevenCs (http://www.sevencs.com). 
+
+Details on current data available at source: 
+
+  http://nauticalcharts.noaa.gov/mcd/enc/download.htm";}i:7;a:4:{s:5:"title";s:68:"Blue Marble Next Generation - World enhanced with topography (World)";s:11:"description";s:3131:"A sample snapshot of one of these images can be found at: 
+
+<a href="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo/world-topo-200402-3x86400x43200.ecw&sizey=800&sizex=800&quality=75"><img src="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo/world-topo-200402-3x86400x43200.ecw&sizey=100&sizex=100&quality=75 "></a> 
+
+
+This directory contains one of the three versions of the 2004 Blue Marble Next Generation sets of data.
+
+These are MODIS satellite derived images, one for each month in 2004.
+
+The different directories are:
+
+world				- base images
+world-with-topo		- enhanced with topography
+world-with-topo-bathy	- enhanced with topography and bathymetry
+
+Unless you need the base images for landuse classification, you will probably find the images in world-with-topo-bathy of most use (it has the best looking images).
+
+If you just need a single image, try the world-topo-bathy-200406-3x86400x43200.ecw image in the world-with-topo-bathy directory, as this has the least snow cover.
+
+NOTE: two images (world-topo-bathy-200405-3x86400x43200.ecw and world-topo-bathy-200405-3x86400x43200.ecw) are missing due to errors in the original GZIPED files. We are trying to get hold of good copies from NASA and will update the directories once done.
+
+Images are stored in the ECW image format, one per month for the year.  The original images were each 10GB in size.  The ECW images are about 200MB in size (about 50 times smaller than the original images).  A target compression rate of 5:1 was selected for compression, however due to the low level of information content in the images the ECW compression was able to achieve an actual compression rate of 50:1 (ECW uses fixed quality compression, so actual compression rate can be different from target compression rate.  An ECW compression rate of 5:1 as used here is of higher quality than JPEG compression).   ER Mapper 7.0 was used to create the compressed images, reducing the total size for all image from 345GB to 7GB.  See http://www.ermapper.com for more details on the ECW image format and ER Mapper.
+
+Most GIS and CAD products can directly read ECW images.  Free plugins and free viewers are also available from http://www.ermapper.com/downloads.
+
+Please note that the images are reasonably large (86,400 pixels across).  Some of the ECW plugins, such as for PhotoShop, allow you to read a reduced resolution version of the image that is small enough for limited applications to handle.
+
+The images are in the WGS84/GEODETIC map projection, with each pixel being 0.004166666666666 degrees in size (about 500 meters per pixel at the equator).
+
+Credits are as follows (from NASA):
+
+For all non-private uses, the terms of use are as follows:
+  1) The imagery is free of licensing fees
+  2) NASA requires that they be provided a credit as the owners of the
+     imagery
+
+Beyond that, we request that you provide, if possible, a credit 
+  for the Earth Observatory team for developing the imagery,
+  and include a URL (http://earthobservatory.nasa.gov/) if feasible.
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=66&hit=1";s:7:"summary";s:3131:"A sample snapshot of one of these images can be found at: 
+
+<a href="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo/world-topo-200402-3x86400x43200.ecw&sizey=800&sizex=800&quality=75"><img src="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo/world-topo-200402-3x86400x43200.ecw&sizey=100&sizex=100&quality=75 "></a> 
+
+
+This directory contains one of the three versions of the 2004 Blue Marble Next Generation sets of data.
+
+These are MODIS satellite derived images, one for each month in 2004.
+
+The different directories are:
+
+world				- base images
+world-with-topo		- enhanced with topography
+world-with-topo-bathy	- enhanced with topography and bathymetry
+
+Unless you need the base images for landuse classification, you will probably find the images in world-with-topo-bathy of most use (it has the best looking images).
+
+If you just need a single image, try the world-topo-bathy-200406-3x86400x43200.ecw image in the world-with-topo-bathy directory, as this has the least snow cover.
+
+NOTE: two images (world-topo-bathy-200405-3x86400x43200.ecw and world-topo-bathy-200405-3x86400x43200.ecw) are missing due to errors in the original GZIPED files. We are trying to get hold of good copies from NASA and will update the directories once done.
+
+Images are stored in the ECW image format, one per month for the year.  The original images were each 10GB in size.  The ECW images are about 200MB in size (about 50 times smaller than the original images).  A target compression rate of 5:1 was selected for compression, however due to the low level of information content in the images the ECW compression was able to achieve an actual compression rate of 50:1 (ECW uses fixed quality compression, so actual compression rate can be different from target compression rate.  An ECW compression rate of 5:1 as used here is of higher quality than JPEG compression).   ER Mapper 7.0 was used to create the compressed images, reducing the total size for all image from 345GB to 7GB.  See http://www.ermapper.com for more details on the ECW image format and ER Mapper.
+
+Most GIS and CAD products can directly read ECW images.  Free plugins and free viewers are also available from http://www.ermapper.com/downloads.
+
+Please note that the images are reasonably large (86,400 pixels across).  Some of the ECW plugins, such as for PhotoShop, allow you to read a reduced resolution version of the image that is small enough for limited applications to handle.
+
+The images are in the WGS84/GEODETIC map projection, with each pixel being 0.004166666666666 degrees in size (about 500 meters per pixel at the equator).
+
+Credits are as follows (from NASA):
+
+For all non-private uses, the terms of use are as follows:
+  1) The imagery is free of licensing fees
+  2) NASA requires that they be provided a credit as the owners of the
+     imagery
+
+Beyond that, we request that you provide, if possible, a credit 
+  for the Earth Observatory team for developing the imagery,
+  and include a URL (http://earthobservatory.nasa.gov/) if feasible.
+";}i:8;a:4:{s:5:"title";s:24:"BlueMarbleClouds (World)";s:11:"description";s:1032:"Blue Marble cloud layer
+
+-----------------------
+Dataset: MOD021KM, MOD03, MOD35_L2, MOD06_L2
+Format: 8bit cloud reflectance, 43200x21600, JPEG2000, lossless compression
+Compositing period: Day 210/2001 (day 320/2001 stitched at the south)
+
+When using these datasets please give credits to:
+-------------------------------------------------
+Author: 
+Reto Stöckli, NASA/Goddard Space Flight Center, stockli@cyberlink.ch
+
+Address of correspondance:
+Reto Stöckli                    Phone:  +41 (0)1 271 8463
+NASA GSFC/ SSAI                 Email:  stockli@cyberlink.ch
+Landenbergstr. 16a              Web:    http://visibleearth.nasa.gov
+8037 Z¸rich Switzerland                 http://earthobservatory.nasa.gov
+
+Supervisors: 
+Fritz Hasler and David Herring, NASA/Goddard Space Flight Center
+
+Funding:
+This project was realized under the SSAI subcontract 2101-01-027 (NAS5-01070)
+
+Original data sources
+---------------------
+Land,ocean,sea ice and clouds: MODIS Atmosphere, Land and Ocean Discipline Groups
+http://modarch.gsfc.nasa.gov/";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=65&hit=1";s:7:"summary";s:1032:"Blue Marble cloud layer
+
+-----------------------
+Dataset: MOD021KM, MOD03, MOD35_L2, MOD06_L2
+Format: 8bit cloud reflectance, 43200x21600, JPEG2000, lossless compression
+Compositing period: Day 210/2001 (day 320/2001 stitched at the south)
+
+When using these datasets please give credits to:
+-------------------------------------------------
+Author: 
+Reto Stöckli, NASA/Goddard Space Flight Center, stockli@cyberlink.ch
+
+Address of correspondance:
+Reto Stöckli                    Phone:  +41 (0)1 271 8463
+NASA GSFC/ SSAI                 Email:  stockli@cyberlink.ch
+Landenbergstr. 16a              Web:    http://visibleearth.nasa.gov
+8037 Z¸rich Switzerland                 http://earthobservatory.nasa.gov
+
+Supervisors: 
+Fritz Hasler and David Herring, NASA/Goddard Space Flight Center
+
+Funding:
+This project was realized under the SSAI subcontract 2101-01-027 (NAS5-01070)
+
+Original data sources
+---------------------
+Land,ocean,sea ice and clouds: MODIS Atmosphere, Land and Ocean Discipline Groups
+http://modarch.gsfc.nasa.gov/";}i:9;a:4:{s:5:"title";s:38:"World Landsat 742 - JP2 Format (World)";s:11:"description";s:30:"World Landsat 742 - JP2 Format";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=64&hit=1";s:7:"summary";s:30:"World Landsat 742 - JP2 Format";}i:10;a:4:{s:5:"title";s:52:"California airphoto mosaic (1 meter) (North America)";s:11:"description";s:1916:"Click on the thumbnail to see a larger view of this image:
+
+<a href="http://www.geoTorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent2/usa/CA_Airphoto_WGS84/CA_Airphoto_WGS84.ecw&sizey=1000&sizex=1000&quality=75"><img src="http://www.geoTorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent2/usa/CA_Airphoto_WGS84/CA_Airphoto_WGS84.ecw&sizey=100&sizex=100&quality=75"></a> 
+
+0.7TB of images compressed to 90GB
+
+This is a greyscale 1 meter mosaic of DOQQ airphotos for all of California, projected into the standard WGS84/GEODETIC map projection.
+
+Source data is from CASIL DOQQ downloads (casil-mirror1.ceres.ca.gov/casil/), using the latest DOQQs available (most produces in 2004 - see CASIL for details on individual DOQQ files).
+
+Source data was about 800GB, which has been compressed at 8:1 to a single 90GB mosaic covering all of California at 0.000001 degrees per pixel (about 1 meter per pixel).
+
+Roughly 12,000 individual DOQQ images were reprojected from two different state plane projections into the geodetic projection.  Each DOQQ was colorbalanced using ER Mapper and the 12,000 indivitual DOQQ images mosiaced into this single ECW file at 8:1 compression ratio again using ER Mapper.
+
+To give a pleasing looking image when zoomed out to all of California, the mosaic was slightly enhanced with a light enhancement using Landsat covering the entire state. This means that the mosaic shows good structure going from zoomed from the entire state down to individual streets.
+
+The CA topographic mosaic for all of California, available at:
+
+http://www.geotorrent.org/details.php?id=51
+
+is a handy companion image to this airphoto mosaic, together the two mosaics enable a detailed view of any part of california.
+
+Most GIS/CAD applications can directly read ECW files.  An ECW Viewer, and free ECW plugins for graphics, office and web applications are available for free from www.ermapper.com/downloads";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=63&hit=1";s:7:"summary";s:1916:"Click on the thumbnail to see a larger view of this image:
+
+<a href="http://www.geoTorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent2/usa/CA_Airphoto_WGS84/CA_Airphoto_WGS84.ecw&sizey=1000&sizex=1000&quality=75"><img src="http://www.geoTorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent2/usa/CA_Airphoto_WGS84/CA_Airphoto_WGS84.ecw&sizey=100&sizex=100&quality=75"></a> 
+
+0.7TB of images compressed to 90GB
+
+This is a greyscale 1 meter mosaic of DOQQ airphotos for all of California, projected into the standard WGS84/GEODETIC map projection.
+
+Source data is from CASIL DOQQ downloads (casil-mirror1.ceres.ca.gov/casil/), using the latest DOQQs available (most produces in 2004 - see CASIL for details on individual DOQQ files).
+
+Source data was about 800GB, which has been compressed at 8:1 to a single 90GB mosaic covering all of California at 0.000001 degrees per pixel (about 1 meter per pixel).
+
+Roughly 12,000 individual DOQQ images were reprojected from two different state plane projections into the geodetic projection.  Each DOQQ was colorbalanced using ER Mapper and the 12,000 indivitual DOQQ images mosiaced into this single ECW file at 8:1 compression ratio again using ER Mapper.
+
+To give a pleasing looking image when zoomed out to all of California, the mosaic was slightly enhanced with a light enhancement using Landsat covering the entire state. This means that the mosaic shows good structure going from zoomed from the entire state down to individual streets.
+
+The CA topographic mosaic for all of California, available at:
+
+http://www.geotorrent.org/details.php?id=51
+
+is a handy companion image to this airphoto mosaic, together the two mosaics enable a detailed view of any part of california.
+
+Most GIS/CAD applications can directly read ECW files.  An ECW Viewer, and free ECW plugins for graphics, office and web applications are available for free from www.ermapper.com/downloads";}i:11;a:4:{s:5:"title";s:26:"SRTM-3 for Africa (Africa)";s:11:"description";s:313:"This the full SRTM 3-arc-second dataset for Africa.  The only post-processing that has occured is that gaps in the data have been filled with simple interpolation, and each HGT file has been gzipped to reduce file size by 60% on average.  The other issues with SRTM data remain, such as noise on the ocean areas.
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=62&hit=1";s:7:"summary";s:313:"This the full SRTM 3-arc-second dataset for Africa.  The only post-processing that has occured is that gaps in the data have been filled with simple interpolation, and each HGT file has been gzipped to reduce file size by 60% on average.  The other issues with SRTM data remain, such as noise on the ocean areas.
+";}i:12;a:4:{s:5:"title";s:77:"Blue Marble next generation - enhanced with topography and bathymetry (World)";s:11:"description";s:2924:"A sample snapshot of one of these images can be found at: 
+
+<a href="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo-bathy/world-topo-bathy-200406-3x86400x43200.ecw&sizey=800&sizex=800&quality=75"><img src="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo-bathy/world-topo-bathy-200406-3x86400x43200.ecw&sizey=100&sizex=100&quality=75"></a> 
+
+This directory contains one of the three versions of the 2004 Blue Marble Next Generation sets of data.
+
+These are MODIS satellite derived images, one for each month in 2004.
+
+The different directories are:
+
+world				- base images
+world-with-topo		- enhanced with topography
+world-with-topo-bathy	- enhanced with topography and bathymetry
+
+Unless you need the base images for landuse classification, you will probably find the images in world-with-topo-bathy of most use (it has the best looking images).
+
+If you just need a single image, try the world-topo-bathy-200406-3x86400x43200.ecw image in the world-with-topo-bathy directory, as this has the least snow cover.
+
+NOTE: two images (world-topo-bathy-200405-3x86400x43200.ecw and world-topo-bathy-200405-3x86400x43200.ecw) are missing due to errors in the original GZIPED files. We are trying to get hold of good copies from NASA and will update the directories once done.
+
+Images are stored in the ECW image format, one per month for the year.  The original images were each 10GB in size.  The ECW images are about 200MB in size (about 50 times smaller than the original images).  A target compression rate of 5:1 was selected for compression, however due to the low level of information content in the images the ECW compression was able to achieve an actual compression rate of 50:1 (ECW uses fixed quality compression, so actual compression rate can be different from target compression rate).   ER Mapper 7.0 was used to create the compressed images.
+
+Most GIS and CAD products can directly read ECW images.  Free plugins and free viewers are also available from http://www.ermapper.com/downloads.
+
+Please note that the images are reasonably large (86,400 pixels across).  Some of the ECW plugins, such as for PhotoShop, allow you to read a reduced resolution version of the image that is small enough for limited applications to handle.
+
+The images are in the WGS84/GEODETIC map projection, with each pixel being 0.004166666666666 degrees in size (about 500 meters per pixel at the equator).
+
+Credits are as follows (from NASA):
+
+For all non-private uses, the terms of use are as follows:
+  1) The imagery is free of licensing fees
+  2) NASA requires that they be provided a credit as the owners of the
+     imagery
+
+Beyond that, we request that you provide, if possible, a credit 
+  for the Earth Observatory team for developing the imagery,
+  and include a URL (http://earthobservatory.nasa.gov/) if feasible.
+
+
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=61&hit=1";s:7:"summary";s:2924:"A sample snapshot of one of these images can be found at: 
+
+<a href="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo-bathy/world-topo-bathy-200406-3x86400x43200.ecw&sizey=800&sizex=800&quality=75"><img src="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world-with-topo-bathy/world-topo-bathy-200406-3x86400x43200.ecw&sizey=100&sizex=100&quality=75"></a> 
+
+This directory contains one of the three versions of the 2004 Blue Marble Next Generation sets of data.
+
+These are MODIS satellite derived images, one for each month in 2004.
+
+The different directories are:
+
+world				- base images
+world-with-topo		- enhanced with topography
+world-with-topo-bathy	- enhanced with topography and bathymetry
+
+Unless you need the base images for landuse classification, you will probably find the images in world-with-topo-bathy of most use (it has the best looking images).
+
+If you just need a single image, try the world-topo-bathy-200406-3x86400x43200.ecw image in the world-with-topo-bathy directory, as this has the least snow cover.
+
+NOTE: two images (world-topo-bathy-200405-3x86400x43200.ecw and world-topo-bathy-200405-3x86400x43200.ecw) are missing due to errors in the original GZIPED files. We are trying to get hold of good copies from NASA and will update the directories once done.
+
+Images are stored in the ECW image format, one per month for the year.  The original images were each 10GB in size.  The ECW images are about 200MB in size (about 50 times smaller than the original images).  A target compression rate of 5:1 was selected for compression, however due to the low level of information content in the images the ECW compression was able to achieve an actual compression rate of 50:1 (ECW uses fixed quality compression, so actual compression rate can be different from target compression rate).   ER Mapper 7.0 was used to create the compressed images.
+
+Most GIS and CAD products can directly read ECW images.  Free plugins and free viewers are also available from http://www.ermapper.com/downloads.
+
+Please note that the images are reasonably large (86,400 pixels across).  Some of the ECW plugins, such as for PhotoShop, allow you to read a reduced resolution version of the image that is small enough for limited applications to handle.
+
+The images are in the WGS84/GEODETIC map projection, with each pixel being 0.004166666666666 degrees in size (about 500 meters per pixel at the equator).
+
+Credits are as follows (from NASA):
+
+For all non-private uses, the terms of use are as follows:
+  1) The imagery is free of licensing fees
+  2) NASA requires that they be provided a credit as the owners of the
+     imagery
+
+Beyond that, we request that you provide, if possible, a credit 
+  for the Earth Observatory team for developing the imagery,
+  and include a URL (http://earthobservatory.nasa.gov/) if feasible.
+
+
+";}i:13;a:4:{s:5:"title";s:43:"Blue Marble Next Generation - World (World)";s:11:"description";s:2864:"A sample snapshot of one of these images can be found at:
+
+<a href="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world/world-200401-3x86400x43200.ecw&sizey=800&sizex=800&quality=75"><img src="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world/world-200401-3x86400x43200.ecw&sizey=100&sizex=100&quality=75"></a>
+
+This directory contains one of the three versions of the 2004 Blue Marble Next Generation sets of data.
+
+These are MODIS satellite derived images, one for each month in 2004.
+
+The different directories are:
+
+world			- base images
+world-with-topo		- enhanced with topography
+world-with-topo-bathy	- enhanced with topography and bathymetry
+
+Unless you need the base images for landuse classification, you will probably find the images in world-with-topo-bathy of most use (it has the best looking images).
+
+If you just need a single image, try the world-topo-bathy-200406-3x86400x43200.ecw image in the world-with-topo-bathy directory, as this has the least snow cover.
+
+NOTE: two images (world-topo-bathy-200405-3x86400x43200.ecw and world-topo-bathy-200405-3x86400x43200.ecw) are missing due to errors in the original GZIPED files. We are trying to get hold of good copies from NASA and will update the directories once done.
+
+Images are stored in the ECW image format, one per month for the year.  The original images were each 10GB in size.  The ECW images are about 200MB in size (about 50 times smaller than the original images).  A target compression rate of 5:1 was selected for compression, however due to the low level of information content in the images the ECW compression was able to achieve an actual compression rate of 50:1 (ECW uses fixed quality compression, so actual compression rate can be different from target compression rate).   ER Mapper 7.0 was used to create the compressed images.
+
+Most GIS and CAD products can directly read ECW images.  Free plugins and free viewers are also available from http://www.ermapper.com/downloads.
+
+Please note that the images are reasonably large (86,400 pixels across).  Some of the ECW plugins, such as for PhotoShop, allow you to read a reduced resolution version of the image that is small enough for limited applications to handle.
+
+The images are in the WGS84/GEODETIC map projection, with each pixel being 0.004166666666666 degrees in size (about 500 meters per pixel at the equator).
+
+Credits are as follows (from NASA):
+
+For all non-private uses, the terms of use are as follows:
+  1) The imagery is free of licensing fees
+  2) NASA requires that they be provided a credit as the owners of the
+     imagery
+
+Beyond that, we request that you provide, if possible, a credit 
+  for the Earth Observatory team for developing the imagery,
+  and include a URL (http://earthobservatory.nasa.gov/) if feasible.";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=59&hit=1";s:7:"summary";s:2864:"A sample snapshot of one of these images can be found at:
+
+<a href="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world/world-200401-3x86400x43200.ecw&sizey=800&sizex=800&quality=75"><img src="http://www.geotorrent.org/ecwp/ecw_img.dll?thumbnail?ecw=/geotorrent/world/bluemarble/world/world-200401-3x86400x43200.ecw&sizey=100&sizex=100&quality=75"></a>
+
+This directory contains one of the three versions of the 2004 Blue Marble Next Generation sets of data.
+
+These are MODIS satellite derived images, one for each month in 2004.
+
+The different directories are:
+
+world			- base images
+world-with-topo		- enhanced with topography
+world-with-topo-bathy	- enhanced with topography and bathymetry
+
+Unless you need the base images for landuse classification, you will probably find the images in world-with-topo-bathy of most use (it has the best looking images).
+
+If you just need a single image, try the world-topo-bathy-200406-3x86400x43200.ecw image in the world-with-topo-bathy directory, as this has the least snow cover.
+
+NOTE: two images (world-topo-bathy-200405-3x86400x43200.ecw and world-topo-bathy-200405-3x86400x43200.ecw) are missing due to errors in the original GZIPED files. We are trying to get hold of good copies from NASA and will update the directories once done.
+
+Images are stored in the ECW image format, one per month for the year.  The original images were each 10GB in size.  The ECW images are about 200MB in size (about 50 times smaller than the original images).  A target compression rate of 5:1 was selected for compression, however due to the low level of information content in the images the ECW compression was able to achieve an actual compression rate of 50:1 (ECW uses fixed quality compression, so actual compression rate can be different from target compression rate).   ER Mapper 7.0 was used to create the compressed images.
+
+Most GIS and CAD products can directly read ECW images.  Free plugins and free viewers are also available from http://www.ermapper.com/downloads.
+
+Please note that the images are reasonably large (86,400 pixels across).  Some of the ECW plugins, such as for PhotoShop, allow you to read a reduced resolution version of the image that is small enough for limited applications to handle.
+
+The images are in the WGS84/GEODETIC map projection, with each pixel being 0.004166666666666 degrees in size (about 500 meters per pixel at the equator).
+
+Credits are as follows (from NASA):
+
+For all non-private uses, the terms of use are as follows:
+  1) The imagery is free of licensing fees
+  2) NASA requires that they be provided a credit as the owners of the
+     imagery
+
+Beyond that, we request that you provide, if possible, a credit 
+  for the Earth Observatory team for developing the imagery,
+  and include a URL (http://earthobservatory.nasa.gov/) if feasible.";}i:14;a:4:{s:5:"title";s:52:"LS7 Panchromatic Mosaic of Australia - 15m (Oceania)";s:11:"description";s:897:"The mosaic was produced by Geoscience Australia's, Australian Centre for Remote Sensing (ACRES). The image is a mosaic of 166 orthorectified Landsat 7 ETM+ scenes (single, double and triple scenes) acquired between 2002 and 2003. Images were orthorectified using supplemental control points and a digital elevation model formed by merging Geoscience Australia's 9 and 3 second DEMs. The data are in Equirectangular projection, ~12.5m (0.000125 degree) pixel size. 
+
+Lineage: 
+Data was orthorectified using Supplemental Control Points and a combination of GA 9 second and 3 second DEMs.
+ 
+Numeric spatial scale denominator:
+0.00125 degrees 
+
+Positional accuracy: 
+Average RMS for individual scene: 15 metres 
+
+Attribute accuracy:
+Not applicable
+
+Datum / Projection:
+
+GDA 94 Geodetic / Equirectangular
+
+
+Thanks to Geoscience Australia for providing this data for distribution.
+http://www.ga.gov.au/
+";s:4:"link";s:49:"http://www.geotorrent.org/details.php?id=56&hit=1";s:7:"summary";s:897:"The mosaic was produced by Geoscience Australia's, Australian Centre for Remote Sensing (ACRES). The image is a mosaic of 166 orthorectified Landsat 7 ETM+ scenes (single, double and triple scenes) acquired between 2002 and 2003. Images were orthorectified using supplemental control points and a digital elevation model formed by merging Geoscience Australia's 9 and 3 second DEMs. The data are in Equirectangular projection, ~12.5m (0.000125 degree) pixel size. 
+
+Lineage: 
+Data was orthorectified using Supplemental Control Points and a combination of GA 9 second and 3 second DEMs.
+ 
+Numeric spatial scale denominator:
+0.00125 degrees 
+
+Positional accuracy: 
+Average RMS for individual scene: 15 metres 
+
+Attribute accuracy:
+Not applicable
+
+Datum / Projection:
+
+GDA 94 Geodetic / Equirectangular
+
+
+Thanks to Geoscience Australia for providing this data for distribution.
+http://www.ga.gov.au/
+";}}s:7:"channel";a:4:{s:5:"title";s:10:"geoTorrent";s:11:"description";s:12:"New torrents";s:4:"link";s:26:"http://www.geotorrent.org/";s:7:"tagline";s:12:"New torrents";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:4:"0.91";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Thu, 21 Feb 2008 16:44:35 GMT
+";s:4:"etag";s:23:""502e4eaa974c81:13fb"
+";}

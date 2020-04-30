@@ -1,0 +1,45 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:7:{i:0;a:6:{s:5:"about";s:27:"http://zcologia.com/news/41";s:5:"title";s:15:"Hobu in ArcUser";s:4:"link";s:27:"http://zcologia.com/news/41";s:11:"description";s:351:"The April-June 2005 issue of ArcUser contains an article by Hobu on pages 34-36. It's an
+introduction to Python and GIS, and vector, grid, and raster processing with ogr.py and
+gdal.py for users of ArcGIS 9, which includes Python and makes a small subset of its
+functionality scriptable. Good writing, too bad he seems to have retired from blogging ;)";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-24T16:58:33Z";}s:7:"summary";s:351:"The April-June 2005 issue of ArcUser contains an article by Hobu on pages 34-36. It's an
+introduction to Python and GIS, and vector, grid, and raster processing with ogr.py and
+gdal.py for users of ArcGIS 9, which includes Python and makes a small subset of its
+functionality scriptable. Good writing, too bad he seems to have retired from blogging ;)";}i:1;a:6:{s:5:"about";s:27:"http://zcologia.com/news/40";s:5:"title";s:24:"New ZCO and PCL releases";s:4:"link";s:27:"http://zcologia.com/news/40";s:11:"description";s:260:"ZCO 0.5.1 and PCL 0.8.2 releases are available from
+http://sourceforge.net/project/showfiles.php?group_id=71074. The major new feature
+(see issue12 in the new issue tracker) will help new users properly configure their data
+stores. The source for theweofije...";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-20T17:52:54Z";}s:7:"summary";s:260:"ZCO 0.5.1 and PCL 0.8.2 releases are available from
+http://sourceforge.net/project/showfiles.php?group_id=71074. The major new feature
+(see issue12 in the new issue tracker) will help new users properly configure their data
+stores. The source for theweofije...";}i:2;a:6:{s:5:"about";s:27:"http://zcologia.com/news/39";s:5:"title";s:28:"GDAL-Warping MOLA Topography";s:4:"link";s:27:"http://zcologia.com/news/39";s:11:"description";s:229:"In response to a post on the Matplotlib-users list I almost automatically responded that, of
+course, we can use GDAL for that; GDAL can read anything. Being Friday the 13th, I decided that
+maybe it should actually be tried first.";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-13T21:23:26Z";}s:7:"summary";s:229:"In response to a post on the Matplotlib-users list I almost automatically responded that, of
+course, we can use GDAL for that; GDAL can read anything. Being Friday the 13th, I decided that
+maybe it should actually be tried first.";}i:3;a:6:{s:5:"about";s:27:"http://zcologia.com/news/38";s:5:"title";s:20:"MapServer 4.6 Beta 2";s:4:"link";s:27:"http://zcologia.com/news/38";s:11:"description";s:60:"Daniel Morrisette has uploaded mapserver-4.6.0-beta2.tar.gz.";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-11T21:02:25Z";}s:7:"summary";s:60:"Daniel Morrisette has uploaded mapserver-4.6.0-beta2.tar.gz.";}i:4;a:6:{s:5:"about";s:27:"http://zcologia.com/news/37";s:5:"title";s:27:"Maps of Il Giro and Le Tour";s:4:"link";s:27:"http://zcologia.com/news/37";s:11:"description";s:185:"It's too wet to go out for a run or ride after work today, so I'm inside comparing the
+cartographic qualities of the official maps of the 88th Giro d'Italia and the 92nd Tour de
+France.";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-11T19:06:29Z";}s:7:"summary";s:185:"It's too wet to go out for a run or ride after work today, so I'm inside comparing the
+cartographic qualities of the official maps of the 88th Giro d'Italia and the 92nd Tour de
+France.";}i:5;a:6:{s:5:"about";s:27:"http://zcologia.com/news/36";s:5:"title";s:26:"Sensor Webs Snag The Times";s:4:"link";s:27:"http://zcologia.com/news/36";s:11:"description";s:169:"Nice article yesterday in the NY Times about sensor webs. We need more environmental
+applications of location technology, and fewer silly authoritarian applications. ...";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-11T16:59:37Z";}s:7:"summary";s:169:"Nice article yesterday in the NY Times about sensor webs. We need more environmental
+applications of location technology, and fewer silly authoritarian applications. ...";}i:6;a:6:{s:5:"about";s:27:"http://zcologia.com/news/35";s:5:"title";s:25:"PrimaGIS Preview Download";s:4:"link";s:27:"http://zcologia.com/news/35";s:11:"description";s:262:"PrimaGIS-0.1.0.tar.gz. Details and demo at primagis.technocore.fi. If you like what you
+see, send Kai some fan mail and find out how you can get involved. The preview requires ZCO 0.5
+and PCL 0.8, which can be downloaded from links at zmapserver.sourceforge.net.";s:2:"dc";a:2:{s:7:"creator";s:4:"Sean";s:4:"date";s:20:"2005-05-11T16:10:00Z";}s:7:"summary";s:262:"PrimaGIS-0.1.0.tar.gz. Details and demo at primagis.technocore.fi. If you like what you
+see, send Kai some fan mail and find out how you can get involved. The preview requires ZCO 0.5
+and PCL 0.8, which can be downloaded from links at zmapserver.sourceforge.net.";}}s:7:"channel";a:7:{s:5:"title";s:18:"import cartography";s:4:"link";s:24:"http://zcologia.com/news";s:11:"description";s:61:"Cartography, Geography, Information Systems, Python, and Zope";s:2:"dc";a:1:{s:4:"date";s:20:"2005-05-24T16:58:33Z";}s:5:"items";s:3:"
+ 
+";s:9:"items_seq";s:47:"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ ";s:7:"tagline";s:61:"Cartography, Geography, Information Systems, Python, and Zope";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

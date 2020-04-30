@@ -1,0 +1,1 @@
+function checktextarealength(fieldname,fieldcount,maxlimit){if(fieldname.value.length>maxlimit)fieldname.value=fieldname.value.substring(0,maxlimit);else fieldcount.value=maxlimit-fieldname.value.length}

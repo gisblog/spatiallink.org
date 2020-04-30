@@ -1,0 +1,301 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:50:{i:0;a:7:{s:4:"date";s:10:"2004-12-23";s:5:"title";s:48:"Location Intelligence Perspective: More than ROI";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=622";s:8:"category";s:7:"Article";s:11:"description";s:450:"ROI, or “return on investment,” is on everybody's mind these days, but I'm not sure it means exactly the same thing to everybody. A classic, common-sense approach to ROI is this: you invest in a technology, you implement it, you observe its effect on your practices, and you measure its results, 
+both in currency and in “softer” terms such as customer satisfaction. Read other examples by Bill Huber from existing examples from today's corporations.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/622.jpg";}s:7:"summary";s:450:"ROI, or “return on investment,” is on everybody's mind these days, but I'm not sure it means exactly the same thing to everybody. A classic, common-sense approach to ROI is this: you invest in a technology, you implement it, you observe its effect on your practices, and you measure its results, 
+both in currency and in “softer” terms such as customer satisfaction. Read other examples by Bill Huber from existing examples from today's corporations.";}i:1;a:7:{s:4:"date";s:10:"2004-12-22";s:5:"title";s:81:"Location Intelligence Perspective: Demonstrating the Value of Location Technology";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=621";s:8:"category";s:7:"Article";s:11:"description";s:501:"There has been plenty of discussion about “proving” the ROI (return on investment) of GIS and location technology.  Naturally, there are many differences of opinion 
+from vendors and users about what we're even talking about.  Yet, that does not prevent a consensus from emerging. This article is the first in a series entitled "Location Technology Perspecitive" by Bill Huber who will attack this subject from several angles and render his interpretation that will benefit both user and vendor alike.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/621.jpg";}s:7:"summary";s:501:"There has been plenty of discussion about “proving” the ROI (return on investment) of GIS and location technology.  Naturally, there are many differences of opinion 
+from vendors and users about what we're even talking about.  Yet, that does not prevent a consensus from emerging. This article is the first in a series entitled "Location Technology Perspecitive" by Bill Huber who will attack this subject from several angles and render his interpretation that will benefit both user and vendor alike.";}i:2;a:7:{s:4:"date";s:10:"2004-12-22";s:5:"title";s:57:"Executive Interview with Jean-Marc Nasr, Spot Image's CEO";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=720";s:8:"category";s:7:"Article";s:11:"description";s:336:"Joe Francica recently had the opportunity to interview Jean-Marc Nasr, CEO of Spot Image. Nasr discusses Spot's focus on being a data provider on the leading edge of customer service, rather than on the bleeding edge of technology. His focus is to "provide access for decision makers to reliable information in a dependable time frame."";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/720.jpg";}s:7:"summary";s:336:"Joe Francica recently had the opportunity to interview Jean-Marc Nasr, CEO of Spot Image. Nasr discusses Spot's focus on being a data provider on the leading edge of customer service, rather than on the bleeding edge of technology. His focus is to "provide access for decision makers to reliable information in a dependable time frame."";}i:3;a:7:{s:4:"date";s:10:"2004-12-21";s:5:"title";s:58:"Location Intelligence for Emerging Markets: Focus on China";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=721";s:8:"category";s:7:"Article";s:11:"description";s:295:"In Ian Clemens' last article, he talked about how location intelligence, the merging of GIS with business intelligence, can provide strategic advantage to companies looking to do business in emerging markets like China, Russia and India. This article begins with a focus on China, specifically. ";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/721.jpg";}s:7:"summary";s:295:"In Ian Clemens' last article, he talked about how location intelligence, the merging of GIS with business intelligence, can provide strategic advantage to companies looking to do business in emerging markets like China, Russia and India. This article begins with a focus on China, specifically. ";}i:4;a:7:{s:4:"date";s:10:"2004-12-20";s:5:"title";s:49:"Choropleth Mapping with Exploratory Data Analysis";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=718";s:8:"category";s:7:"Article";s:11:"description";s:401:"The choropleth mapping technique, which uses “ranges” or “graduated color,” is a type of thematic mapping that focuses usually on a single theme with data summarized by statistical or administrative areas. This purpose of this technical article, by Dr. Ela Dramowicz, 
+is to demonstrate how exploratory data analysis (EDA) can help in choosing the most appropriate method for creating choropleth maps.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/718.jpg";}s:7:"summary";s:401:"The choropleth mapping technique, which uses “ranges” or “graduated color,” is a type of thematic mapping that focuses usually on a single theme with data summarized by statistical or administrative areas. This purpose of this technical article, by Dr. Ela Dramowicz, 
+is to demonstrate how exploratory data analysis (EDA) can help in choosing the most appropriate method for creating choropleth maps.";}i:5;a:7:{s:4:"date";s:10:"2004-12-18";s:5:"title";s:26:"Santa Hal's Christmas List";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=723";s:8:"category";s:7:"Article";s:11:"description";s:334:"We asked Hal Reid to come up his Christmas Wish List, with the idea that if a geo-nerd like him would want it, a geo-nerd like you would probably want it too. So consider this a reader service for those of you whose friends and relatives are asking what you'd like. Just ask them to point their browser to this page for the full list!";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/723.jpg";}s:7:"summary";s:334:"We asked Hal Reid to come up his Christmas Wish List, with the idea that if a geo-nerd like him would want it, a geo-nerd like you would probably want it too. So consider this a reader service for those of you whose friends and relatives are asking what you'd like. Just ask them to point their browser to this page for the full list!";}i:6;a:7:{s:4:"date";s:10:"2004-12-17";s:5:"title";s:73:"An Executive Interview with Carsten Heiermann, CEO, LuraTech on JPEG 2000";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=722";s:8:"category";s:7:"Article";s:11:"description";s:390:"LuraTech was founded in 1997 and is headquartered in Germany with offices throughout Europe and the U.S. The company is a developer of JPEG2000 implementations and technology for the color compression of images, data and scanned documents. Editor-in-Chief, Joe Francica, interviewed Carsten Heiermann, CEO of LuraTech, to get a better understanding of the company's products and technology.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/722.jpg";}s:7:"summary";s:390:"LuraTech was founded in 1997 and is headquartered in Germany with offices throughout Europe and the U.S. The company is a developer of JPEG2000 implementations and technology for the color compression of images, data and scanned documents. Editor-in-Chief, Joe Francica, interviewed Carsten Heiermann, CEO of LuraTech, to get a better understanding of the company's products and technology.";}i:7;a:7:{s:4:"date";s:10:"2004-12-16";s:5:"title";s:64:"The Location Aware Enterprise: An Integrating Business Principle";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=719";s:8:"category";s:7:"Article";s:11:"description";s:335:"Ed. Note: Sue Kalweit of Booz Allen Hamilton offers the first in a series of articles about the "Location Aware Enterprise." She offers a challenge "to think, talk and act enterprise-wide in the broadest business context possible" as we begin planning for the second annual Location Technologies and Business Intelligence conference.
+
+";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/719.jpg";}s:7:"summary";s:335:"Ed. Note: Sue Kalweit of Booz Allen Hamilton offers the first in a series of articles about the "Location Aware Enterprise." She offers a challenge "to think, talk and act enterprise-wide in the broadest business context possible" as we begin planning for the second annual Location Technologies and Business Intelligence conference.
+
+";}i:8;a:7:{s:4:"date";s:10:"2004-12-15";s:5:"title";s:53:"Acquistions: Oracle/PeopleSoft, Telvent/Miner & Miner";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=725";s:8:"category";s:9:"Editorial";s:11:"description";s:319:"It took 18 months but Oracle finally threw the hammer down, upped their bid, and clinched the deal to buy PeopleSoft. Telvent, a company that went public this past October acquired a majority stake in Miner & Miner. Two seemingly unrelated acquistions may signal big moves in the Enterprise GIS marketplace...Read more.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/725.jpg";}s:7:"summary";s:319:"It took 18 months but Oracle finally threw the hammer down, upped their bid, and clinched the deal to buy PeopleSoft. Telvent, a company that went public this past October acquired a majority stake in Miner & Miner. Two seemingly unrelated acquistions may signal big moves in the Enterprise GIS marketplace...Read more.";}i:9;a:7:{s:4:"date";s:10:"2004-12-14";s:5:"title";s:75:"Call for Papers Issued for Location Technology & Business Intelligence 2005";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=724";s:8:"category";s:9:"Editorial";s:11:"description";s:688:"Last year's Location Technology & Business Intelligence meeting raised numerous issues about how to logically bring these two constituencies together to create solutions for business. The conversations were compelling, and we are now working on V2.0 of the meeting, to take place in Philadelphia, May 2-4. If you think you may have something to contribute on this subject, please review the Call for Papers and submit any ideas you might have that would be appropriate. As thought-joggers, I have included references to four articles written by Dr. Bill Huber, who attended the last meeting and provided insightful "perspectives" on some of the key themes that were raised at the meeting.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/724.jpg";}s:7:"summary";s:688:"Last year's Location Technology & Business Intelligence meeting raised numerous issues about how to logically bring these two constituencies together to create solutions for business. The conversations were compelling, and we are now working on V2.0 of the meeting, to take place in Philadelphia, May 2-4. If you think you may have something to contribute on this subject, please review the Call for Papers and submit any ideas you might have that would be appropriate. As thought-joggers, I have included references to four articles written by Dr. Bill Huber, who attended the last meeting and provided insightful "perspectives" on some of the key themes that were raised at the meeting.";}i:10;a:7:{s:4:"date";s:10:"2004-12-13";s:5:"title";s:60:"GIS Provides Customer Satisfaction for Hong Kong Bus Company";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=716";s:8:"category";s:7:"Article";s:11:"description";s:469:"For more than 25 years, Hong Kong has been developing its mass transit system, which has ultimately evolved into the primary means of transportation within the city. Components include subways, rail systems, ferryboats, taxis, trams, moving stairways and travelators, and a highly automated bus network that includes five different companies. This article describes how one of the largest providers of public transportation uses GIS in a customer service application...";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/716.jpg";}s:7:"summary";s:469:"For more than 25 years, Hong Kong has been developing its mass transit system, which has ultimately evolved into the primary means of transportation within the city. Components include subways, rail systems, ferryboats, taxis, trams, moving stairways and travelators, and a highly automated bus network that includes five different companies. This article describes how one of the largest providers of public transportation uses GIS in a customer service application...";}i:11;a:7:{s:4:"date";s:10:"2004-12-11";s:5:"title";s:57:"Autodesk University 2004: Las Vegas Valley Water District";s:4:"link";s:55:"http://www.directionsmag.com/article.php?article_id=715";s:8:"category";s:7:"Article";s:11:"description";s:199:"While Hal Reid was attending Autodesk University 2004, he was treated to a field trip to the Las Vegas Valley Water District to view CAD and GIS integration up close. Read more about what he learned.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/715.jpg";}s:7:"summary";s:199:"While Hal Reid was attending Autodesk University 2004, he was treated to a field trip to the Las Vegas Valley Water District to view CAD and GIS integration up close. Read more about what he learned.";}i:12;a:7:{s:4:"date";s:10:"2004-12-08";s:5:"title";s:58:"How MapInfo is Planning its Attack on Enterprise Computing";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=717";s:8:"category";s:9:"Editorial";s:11:"description";s:376:"MapInfo has radically altered their sales and solution focus over the last few years and the transformation is nearly complete. Software products that are platforms for custom solutions is a key part of MapInfo's strategy. In addition, strategic alliances with key business intelligence companies are contributing to a very different strategy than its competitors...Read more.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/717.jpg";}s:7:"summary";s:376:"MapInfo has radically altered their sales and solution focus over the last few years and the transformation is nearly complete. Software products that are platforms for custom solutions is a key part of MapInfo's strategy. In addition, strategic alliances with key business intelligence companies are contributing to a very different strategy than its competitors...Read more.";}i:13;a:6:{s:4:"date";s:10:"2004-12-06";s:5:"title";s:35:"Directions Launches PROFILES IN GIS";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=76";s:8:"category";s:6:"Column";s:11:"description";s:456:"It is a pet peeve of mine that college, and especially high
+school educators lack the resources to expose their students to the job
+possibilities that exist in the workplace. Too often, we funnel students
+into curriculum that are simply common pathways to commonplace jobs. A
+career in GIS is certainly not a common path to take for lifelong professional
+growth. So how does a student find out about the kinds of jobs that exist?
+That's where you come in. ";s:7:"summary";s:456:"It is a pet peeve of mine that college, and especially high
+school educators lack the resources to expose their students to the job
+possibilities that exist in the workplace. Too often, we funnel students
+into curriculum that are simply common pathways to commonplace jobs. A
+career in GIS is certainly not a common path to take for lifelong professional
+growth. So how does a student find out about the kinds of jobs that exist?
+That's where you come in. ";}i:14;a:7:{s:4:"date";s:10:"2004-12-01";s:5:"title";s:41:"By the Numbers - 2004 2nd Half Financials";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=713";s:8:"category";s:9:"Editorial";s:11:"description";s:365:"With only a month left of this year, its is an appropriate time to see how companies fared, financially that is, during the second half of 2004 and what we might expect in 2005. So far, several geospatial companies such as Garmin, Autodesk, and NAVTEQ have seen their stock prices rise significantly in the last five months. Will it continue into 2005? Read more...";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/713.jpg";}s:7:"summary";s:365:"With only a month left of this year, its is an appropriate time to see how companies fared, financially that is, during the second half of 2004 and what we might expect in 2005. So far, several geospatial companies such as Garmin, Autodesk, and NAVTEQ have seen their stock prices rise significantly in the last five months. Will it continue into 2005? Read more...";}i:15;a:7:{s:4:"date";s:10:"2004-11-04";s:5:"title";s:60:"The Media, Mapping and the U.S. Election - Just Plain Boring";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=697";s:8:"category";s:9:"Editorial";s:11:"description";s:367:"With apologies to our European, Asia Pacific, and other international readers, Directions Magazine's Editor-in-Chief, Joe Francica comments on the mapping technology used by the mainstream TV network media in the US presidential election coverage. He sums it up this way: BORING! Read more about why he was "underwhelmed" by their use of digital mapping technology...";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/697.jpg";}s:7:"summary";s:367:"With apologies to our European, Asia Pacific, and other international readers, Directions Magazine's Editor-in-Chief, Joe Francica comments on the mapping technology used by the mainstream TV network media in the US presidential election coverage. He sums it up this way: BORING! Read more about why he was "underwhelmed" by their use of digital mapping technology...";}i:16;a:7:{s:4:"date";s:10:"2004-10-29";s:5:"title";s:49:"Google Acquires Keyhole; CBS Enlists Help of ESRI";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=691";s:8:"category";s:9:"Editorial";s:11:"description";s:363:"The battle continues to rage fiercely as salvos are exchanged with no clear winner emerging. And that's just in the fight for consumer-based location services marketplace. Google's acquisition of Keyhole is a move to thwart attempts by AOL, Microsoft, and Yahoo, to gain the upper hand in using location-based information and possibly, location-enabled searching.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/691.jpg";}s:7:"summary";s:363:"The battle continues to rage fiercely as salvos are exchanged with no clear winner emerging. And that's just in the fight for consumer-based location services marketplace. Google's acquisition of Keyhole is a move to thwart attempts by AOL, Microsoft, and Yahoo, to gain the upper hand in using location-based information and possibly, location-enabled searching.";}i:17;a:7:{s:4:"date";s:10:"2004-10-28";s:5:"title";s:34:"Where’s the Innovation ... in GIS?";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=690";s:8:"category";s:9:"Editorial";s:11:"description";s:537:" I recently posed this question to a senior executive, who shall remain nameless, at a big name systems integrator in the defense industry. I was not impressed with the answer but suffice to say that when pressed to give an example of how GIS software has shown radical innovation in techniques or technology his recourse was to discuss how over the last ten years the technology has drastically improved in the ability to process lots of data. No doubt, but that was not the question. Where do you think the innovation lies...Read more.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/690.jpg";}s:7:"summary";s:537:" I recently posed this question to a senior executive, who shall remain nameless, at a big name systems integrator in the defense industry. I was not impressed with the answer but suffice to say that when pressed to give an example of how GIS software has shown radical innovation in techniques or technology his recourse was to discuss how over the last ten years the technology has drastically improved in the ability to process lots of data. No doubt, but that was not the question. Where do you think the innovation lies...Read more.";}i:18;a:6:{s:4:"date";s:10:"2004-10-18";s:5:"title";s:66:"Good News, Bad News for Salaries, Outsourcing, and Home Businesses";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=75";s:8:"category";s:6:"Column";s:11:"description";s:247:"
+
+
+   
+   
+
+
+On October 12th, TechWeb
+News reported that, "Offshore outsourcing is expected to grow nearly
+20 percent annually through 2008, with the average enterprise sending 60
+percent of its application work to low-wage countries by 2009, a ma";s:7:"summary";s:247:"
+
+
+   
+   
+
+
+On October 12th, TechWeb
+News reported that, "Offshore outsourcing is expected to grow nearly
+20 percent annually through 2008, with the average enterprise sending 60
+percent of its application work to low-wage countries by 2009, a ma";}i:19;a:7:{s:4:"date";s:10:"2004-09-29";s:5:"title";s:76:"Maps and the Net: A Marriage that Radically Altered GIS Software Development";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=669";s:8:"category";s:9:"Editorial";s:11:"description";s:717:"The growth of web mapping technology has altered the way that geospatial software development companies approach product planning and the manner in which 
+certain component technology has been developed to accommodate sales opportunities. Internet mapping software platforms are now available for the intended 
+purpose of supporting mainstream information technology systems for logistics, human resources, finance, and marketing. This week, Directions Magazine launches it second annual WEB MAPPING CONTEST sponsored with the help of Microsoft Corporation. Our intent is to both raise awareness of the myriad applications that are being developed in both government and private industry and to have some fun as well.";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/669.jpg";}s:7:"summary";s:717:"The growth of web mapping technology has altered the way that geospatial software development companies approach product planning and the manner in which 
+certain component technology has been developed to accommodate sales opportunities. Internet mapping software platforms are now available for the intended 
+purpose of supporting mainstream information technology systems for logistics, human resources, finance, and marketing. This week, Directions Magazine launches it second annual WEB MAPPING CONTEST sponsored with the help of Microsoft Corporation. Our intent is to both raise awareness of the myriad applications that are being developed in both government and private industry and to have some fun as well.";}i:20;a:6:{s:4:"date";s:10:"2004-09-22";s:5:"title";s:30:"Should You Get 'GIS Certified'";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=74";s:8:"category";s:6:"Column";s:11:"description";s:434:"
+According
+to the GIS Certification Institute, "the purpose of the GIS Certification
+Institute is to provide those professionals who work in the field of geographic
+information systems with a formal process that will:
+
+
+Allow  them to be recognized by their colleagues and peers for having
+demonstrated exemplary professional practice and integrity in the field
+
+
+Establish and maintain high standards of both professional practice an";s:7:"summary";s:434:"
+According
+to the GIS Certification Institute, "the purpose of the GIS Certification
+Institute is to provide those professionals who work in the field of geographic
+information systems with a formal process that will:
+
+
+Allow  them to be recognized by their colleagues and peers for having
+demonstrated exemplary professional practice and integrity in the field
+
+
+Establish and maintain high standards of both professional practice an";}i:21;a:6:{s:4:"date";s:10:"2004-09-15";s:5:"title";s:41:"Product Update - Mapinfo Professional 7.8";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=120";s:8:"category";s:14:"Product Review";s:11:"description";s:362:"MapInfo has announced an upgrade to its flagship desktop GIS product, MapInfo Professional-version 7.8. The 7.8 release of MapInfo Pro includes many enhancements of which existing users will want to take note. The product has received Microsoft Windows XP 
+certification and it was re-certified on Oracle 10g primarily to maintain database security. Read more...";s:7:"summary";s:362:"MapInfo has announced an upgrade to its flagship desktop GIS product, MapInfo Professional-version 7.8. The 7.8 release of MapInfo Pro includes many enhancements of which existing users will want to take note. The product has received Microsoft Windows XP 
+certification and it was re-certified on Oracle 10g primarily to maintain database security. Read more...";}i:22;a:6:{s:4:"date";s:10:"2004-09-09";s:5:"title";s:34:"Employment Picture Looks Promising";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=73";s:8:"category";s:6:"Column";s:11:"description";s:373:"
+
+
+   
+   
+
+
+Although it is not the official end of summer it appears by the mess on
+my desk it that my summer is over.  Fall tends to be an active hiring
+season and we are experiencing a healthy increase in recruitment demands.
+DeVry University, headquartered in Illinois, conducted a survey of employers
+recently.  They report that more than 81 percent across a diverse
+r";s:7:"summary";s:373:"
+
+
+   
+   
+
+
+Although it is not the official end of summer it appears by the mess on
+my desk it that my summer is over.  Fall tends to be an active hiring
+season and we are experiencing a healthy increase in recruitment demands.
+DeVry University, headquartered in Illinois, conducted a survey of employers
+recently.  They report that more than 81 percent across a diverse
+r";}i:23;a:6:{s:4:"date";s:10:"2004-09-06";s:5:"title";s:56:"Welcome to September and the start of a busy Fall Season";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=650";s:8:"category";s:9:"Editorial";s:11:"description";s:312:"Directions Magazine "tag line" is "Your GIS News Source" -- it is that and much more.  We take the opportunity to announce new changes and enhancements to Directions' Web Magazine, announce our all new Web Mapping Contest starting October 1, and highlight the key articles and interview of these past few months.";s:7:"summary";s:312:"Directions Magazine "tag line" is "Your GIS News Source" -- it is that and much more.  We take the opportunity to announce new changes and enhancements to Directions' Web Magazine, announce our all new Web Mapping Contest starting October 1, and highlight the key articles and interview of these past few months.";}i:24;a:6:{s:4:"date";s:10:"2004-09-03";s:5:"title";s:39:"Jobs for Geographers Who Don't Know GIS";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=72";s:8:"category";s:6:"Column";s:11:"description";s:576:"I received the following letter this week
+that I thought I would share with readers. Perhaps some of you have the
+same question:
+I would like to see an article about how Geographers and
+others outside of the GIS field can successfully find employment in the
+field with little training. Other than simply stating that course work
+or certification needs to be required, which is obvious, what companies
+and/or government organizations in the field are even willing to discuss
+even entry level job opportunities with individuals that are not currently
+in the field, but are geogr";s:7:"summary";s:576:"I received the following letter this week
+that I thought I would share with readers. Perhaps some of you have the
+same question:
+I would like to see an article about how Geographers and
+others outside of the GIS field can successfully find employment in the
+field with little training. Other than simply stating that course work
+or certification needs to be required, which is obvious, what companies
+and/or government organizations in the field are even willing to discuss
+even entry level job opportunities with individuals that are not currently
+in the field, but are geogr";}i:25;a:7:{s:4:"date";s:10:"2004-08-25";s:5:"title";s:103:"USGS Reorganizes Geospatial Technology Programs ... Is This Reorganization Focused on the Right Things?";s:4:"link";s:58:"http://www.directionsmag.com/editorials.php?article_id=649";s:8:"category";s:9:"Editorial";s:11:"description";s:442:"Last week, Chip Groat, Director of the U.S. Geological Survey, consolidated certain geographic information technology functions under a new National Geospatial Programs Office (NGPO). This reorganization was the result of recommendations from a report from the National Research Council, which stated that the USGS 
+should "give higher priority to fundamental geographic research. Read more of why these changes may not have the right focus. ";s:3:"img";a:1:{s:3:"src";s:63:"http://www.directionsmag.com/images/articles/thumbnails/649.jpg";}s:7:"summary";s:442:"Last week, Chip Groat, Director of the U.S. Geological Survey, consolidated certain geographic information technology functions under a new National Geospatial Programs Office (NGPO). This reorganization was the result of recommendations from a report from the National Research Council, which stated that the USGS 
+should "give higher priority to fundamental geographic research. Read more of why these changes may not have the right focus. ";}i:26;a:6:{s:4:"date";s:10:"2004-08-18";s:5:"title";s:36:"Directions Magazine Sponsors ESRI 5K";s:4:"link";s:56:"http://www.directionsmag.com/features.php?feature_id=119";s:8:"category";s:7:"Feature";s:11:"description";s:27:"
+
+
+   
+   
+   
+   ESRI5k
+
+
+";s:7:"summary";s:27:"
+
+
+   
+   
+   
+   ESRI5k
+
+
+";}i:27;a:6:{s:4:"date";s:10:"2004-08-07";s:5:"title";s:32:"Product Review: Anacubis Desktop";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=117";s:8:"category";s:14:"Product Review";s:11:"description";s:848:"Anacubis Desktop is a Competitive Intelligence set of tools and comes from the i2 Group that initially created similar (but more 
+comprehensive), software for Law Enforcement and Intelligence Analysts. The role in both cases is to show the relationships 
+between data as visual representations. As Business Geographers, we thoroughly understand that a picture is worth a 
+thousand words.  A thematic or dot density map can show things that the tabular data just can’t. This product does the same 
+thing, only uses icons, colored lines (e.g. red for competitor) and iconic filters to let the user visualize the relationships in data. 
+This might be sourced from industry information from Hoovers.com, patent information (as an intellectual property 
+visualization), data from subscription services like LexisNexis, D&B or your own Excel spreadsheet.";s:7:"summary";s:848:"Anacubis Desktop is a Competitive Intelligence set of tools and comes from the i2 Group that initially created similar (but more 
+comprehensive), software for Law Enforcement and Intelligence Analysts. The role in both cases is to show the relationships 
+between data as visual representations. As Business Geographers, we thoroughly understand that a picture is worth a 
+thousand words.  A thematic or dot density map can show things that the tabular data just can’t. This product does the same 
+thing, only uses icons, colored lines (e.g. red for competitor) and iconic filters to let the user visualize the relationships in data. 
+This might be sourced from industry information from Hoovers.com, patent information (as an intellectual property 
+visualization), data from subscription services like LexisNexis, D&B or your own Excel spreadsheet.";}i:28;a:6:{s:4:"date";s:10:"2004-07-30";s:5:"title";s:65:"U.S. Department of Labor Issues Report on Geospatial Technologies";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=71";s:8:"category";s:6:"Column";s:11:"description";s:571:"The U.S. Department of Labor issued a
+job growth profile of the Geospatial Technology sector this past May. In
+the report, they cited several reasons why this sector will experience
+higher than average job growth over the next several years:
+
+
+The worldwide market for geospatial technologies has enormous potential.
+Estimated at $5 Billion in 2001, the market is expected to have annual
+revenues of $30 Billion by 2005
+
+
+Increasing demand for readily available, consistent, accurate, complete,
+and current geographic information and the widespread use of advanced techno";s:7:"summary";s:571:"The U.S. Department of Labor issued a
+job growth profile of the Geospatial Technology sector this past May. In
+the report, they cited several reasons why this sector will experience
+higher than average job growth over the next several years:
+
+
+The worldwide market for geospatial technologies has enormous potential.
+Estimated at $5 Billion in 2001, the market is expected to have annual
+revenues of $30 Billion by 2005
+
+
+Increasing demand for readily available, consistent, accurate, complete,
+and current geographic information and the widespread use of advanced techno";}i:29;a:6:{s:4:"date";s:10:"2004-07-21";s:5:"title";s:46:"Product Overview: PCI Geomatics’ GeoRaster ETL";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=116";s:8:"category";s:14:"Product Review";s:11:"description";s:316:"PCI Geomatics is raster centric company and focuses on satellite image processing and digital air photo data manipulation. PCI’s GeoRaster ETL is a gateway to Oracle. ETL has access to the many formats that makes it an excellent supplemental tool for Oracle, which does not have native support for satellite formats.";s:7:"summary";s:316:"PCI Geomatics is raster centric company and focuses on satellite image processing and digital air photo data manipulation. PCI’s GeoRaster ETL is a gateway to Oracle. ETL has access to the many formats that makes it an excellent supplemental tool for Oracle, which does not have native support for satellite formats.";}i:30;a:6:{s:4:"date";s:10:"2004-07-14";s:5:"title";s:45:"Product Overview: Keigan System's Keigan GRID";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=115";s:8:"category";s:14:"Product Review";s:11:"description";s:370:"Keigan Grid is a collection of COM-compliant grid mapping and spatial analysis objects. It can be used to create custom spatial analysis solutions, or to expand and 
+enhance existing products. The key to Keigan’s product is the plethora of 
+map operations that were formally adopted from Dana Tomlin’s Map Algebra, to which Keigan add even more functionality. Read More.";s:7:"summary";s:370:"Keigan Grid is a collection of COM-compliant grid mapping and spatial analysis objects. It can be used to create custom spatial analysis solutions, or to expand and 
+enhance existing products. The key to Keigan’s product is the plethora of 
+map operations that were formally adopted from Dana Tomlin’s Map Algebra, to which Keigan add even more functionality. Read More.";}i:31;a:6:{s:4:"date";s:10:"2004-07-07";s:5:"title";s:37:"Product Review: Terrain Navigator Pro";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=113";s:8:"category";s:14:"Product Review";s:11:"description";s:570:"Terrain Navigator Pro is a software program that provides access to U.S. Geological Survey (USGS) topographic quadrangle maps and USGS Digital Ortho Quarter Quads (DOQQs). The 
+software and data are packaged together except for the aerial photography that must be downloaded using the Internet on a subscription basis. The 
+software does an excellent job of working seamlessly between the different quadrangle maps and the ability to display the quads in 3D is an extremely 
+powerful visualization of the information on the quadrangle maps.  Read the entire review here.";s:7:"summary";s:570:"Terrain Navigator Pro is a software program that provides access to U.S. Geological Survey (USGS) topographic quadrangle maps and USGS Digital Ortho Quarter Quads (DOQQs). The 
+software and data are packaged together except for the aerial photography that must be downloaded using the Internet on a subscription basis. The 
+software does an excellent job of working seamlessly between the different quadrangle maps and the ability to display the quads in 3D is an extremely 
+powerful visualization of the information on the quadrangle maps.  Read the entire review here.";}i:32;a:6:{s:4:"date";s:10:"2004-06-30";s:5:"title";s:61:"Product Overview: MapInfo's MapXtreme 2004 on Microsoft® .NET";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=114";s:8:"category";s:14:"Product Review";s:11:"description";s:359:"In May, MapInfo Corporation announced the release of MapXtreme 2004 on Microsoft® .NET. The product represents the merging of two products, 
+MapXtreme and MapX, into a single development platform and leverages the Microsoft Visual Studio .NET environment. Read more about the benefits of this software product for web and client-based application development.";s:7:"summary";s:359:"In May, MapInfo Corporation announced the release of MapXtreme 2004 on Microsoft® .NET. The product represents the merging of two products, 
+MapXtreme and MapX, into a single development platform and leverages the Microsoft Visual Studio .NET environment. Read more about the benefits of this software product for web and client-based application development.";}i:33;a:6:{s:4:"date";s:10:"2004-06-04";s:5:"title";s:51:"Product Review – TatukGIS Viewer, version 1.1.1.166";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=112";s:8:"category";s:14:"Product Review";s:11:"description";s:456:"The TatukGIS viewer is one of those products that you keep finding more and more functionality the more you use it. Because it reads so many file types, 
+both vector and raster, I have found it extremely useful in addition to what it is designed for just for viewing graphics files and for map files when you 
+didn’t want to load an entire desktop program just to see part of a project or an image. Read more about the latest functionality of this version.";s:7:"summary";s:456:"The TatukGIS viewer is one of those products that you keep finding more and more functionality the more you use it. Because it reads so many file types, 
+both vector and raster, I have found it extremely useful in addition to what it is designed for just for viewing graphics files and for map files when you 
+didn’t want to load an entire desktop program just to see part of a project or an image. Read more about the latest functionality of this version.";}i:34;a:6:{s:4:"date";s:10:"2004-05-14";s:5:"title";s:25:"Jobs – It’s All Good News";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=70";s:8:"category";s:6:"Column";s:11:"description";s:595:"Employers added jobs at a surprisingly rapid clip for the second straight month in April and the unemployment rate fell, a government report showed Friday, as the nation's labor market finally showed signs of sustained improvement. 
+
+Payrolls grew by 288,000 jobs last month, the Labor Department reported, well above the 173,000 economists had forecast, according to a survey by Reuters. The number even topped the highest forecasts of about 250,000. The unemployment rate eased to 5.6 percent from 5.7 percent in March. The department also revised its reading on March job growth to 337,000 jo";s:7:"summary";s:595:"Employers added jobs at a surprisingly rapid clip for the second straight month in April and the unemployment rate fell, a government report showed Friday, as the nation's labor market finally showed signs of sustained improvement. 
+
+Payrolls grew by 288,000 jobs last month, the Labor Department reported, well above the 173,000 economists had forecast, according to a survey by Reuters. The number even topped the highest forecasts of about 250,000. The unemployment rate eased to 5.6 percent from 5.7 percent in March. The department also revised its reading on March job growth to 337,000 jo";}i:35;a:6:{s:4:"date";s:10:"2004-05-06";s:5:"title";s:26:"Top 15 Interview Questions";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=69";s:8:"category";s:6:"Column";s:11:"description";s:514:"Interviewing for a job can be one of the most uncomfortable events in your
+life.  It is equally uncomfortable for many managers who must interview
+candidates for a position.  Preparation can make the task easier.  
+Here are some questions that are the most frequently asked, according to
+a ResumeDoctor.com survey of
+2000 corporate recruiters.
+You should have answers prepared for these questions.
+
+
+Describe your ideal job and/or boss.
+
+
+Why are you looking for a job? Why are leaving your current position?
+
+
+Wha";s:7:"summary";s:514:"Interviewing for a job can be one of the most uncomfortable events in your
+life.  It is equally uncomfortable for many managers who must interview
+candidates for a position.  Preparation can make the task easier.  
+Here are some questions that are the most frequently asked, according to
+a ResumeDoctor.com survey of
+2000 corporate recruiters.
+You should have answers prepared for these questions.
+
+
+Describe your ideal job and/or boss.
+
+
+Why are you looking for a job? Why are leaving your current position?
+
+
+Wha";}i:36;a:6:{s:4:"date";s:10:"2004-04-21";s:5:"title";s:21:"BusinessMAP, ver. 3.5";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=109";s:8:"category";s:14:"Product Review";s:11:"description";s:418:"BusinessMAP 3.5 has done a very good job of solving the issues of cost and ease of use in a desktop mapping product. It comes complete with a very robust amount of high quality data and also has built-in links to the web and your PDA. With the additional data support of aerial photographs, topographic maps, and international data BusinessMap is a very comprehensive software solution. Read the entire product review.";s:7:"summary";s:418:"BusinessMAP 3.5 has done a very good job of solving the issues of cost and ease of use in a desktop mapping product. It comes complete with a very robust amount of high quality data and also has built-in links to the web and your PDA. With the additional data support of aerial photographs, topographic maps, and international data BusinessMap is a very comprehensive software solution. Read the entire product review.";}i:37;a:6:{s:4:"date";s:10:"2004-04-20";s:5:"title";s:34:"Basic Resume Tips: Written vs. Web";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=68";s:8:"category";s:6:"Column";s:11:"description";s:585:"
+I’ve noticed that some people write a resume differently for website postings
+than they do for traditional paper versions.&nbsp;&nbsp; Here are a few
+tips to make your resume attractive to a potential employer on line.
+1)&nbsp; Write your resume in the same style as you would a paper resume.&nbsp;
+Be sure to use accepted English style, punctuation, and grammar.&nbsp;
+I still see too many resumes without capitalization and the use of basic
+principals of English language rules;
+2)&nbsp; I do not recommend using ‘bullets’ or other graphics in electronic
+resumes.&nbsp; The version ";s:7:"summary";s:585:"
+I’ve noticed that some people write a resume differently for website postings
+than they do for traditional paper versions.&nbsp;&nbsp; Here are a few
+tips to make your resume attractive to a potential employer on line.
+1)&nbsp; Write your resume in the same style as you would a paper resume.&nbsp;
+Be sure to use accepted English style, punctuation, and grammar.&nbsp;
+I still see too many resumes without capitalization and the use of basic
+principals of English language rules;
+2)&nbsp; I do not recommend using ‘bullets’ or other graphics in electronic
+resumes.&nbsp; The version ";}i:38;a:6:{s:4:"date";s:10:"2004-04-01";s:5:"title";s:42:"Industry Professional Offers Career Advice";s:4:"link";s:53:"http://www.directionsmag.com/columns.php?column_id=67";s:8:"category";s:6:"Column";s:11:"description";s:571:"I thought that Brian Soliday deserved to have
+his response to our College and University program question published this
+week.   Thanks Brian!
+
+
+Be active in professional societies - Attend meetings/social functions,
+Volunteer to support events, network with members, help organize a student
+chapter, participate on the regional board of directors.  Every professional
+society has regional chapters, which makes it very easy to get involved.
+
+
+Go to trade shows/conferences - Don't go to each booth and ask about job
+openings.   Find out about the company and the people ";s:7:"summary";s:571:"I thought that Brian Soliday deserved to have
+his response to our College and University program question published this
+week.   Thanks Brian!
+
+
+Be active in professional societies - Attend meetings/social functions,
+Volunteer to support events, network with members, help organize a student
+chapter, participate on the regional board of directors.  Every professional
+society has regional chapters, which makes it very easy to get involved.
+
+
+Go to trade shows/conferences - Don't go to each booth and ask about job
+openings.   Find out about the company and the people ";}i:39;a:6:{s:4:"date";s:10:"2004-03-18";s:5:"title";s:37:"FME Spatial Data Provider Server 2004";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=110";s:8:"category";s:14:"Product Review";s:11:"description";s:431:"The FME Spatial Data Provider (SDP) Server provides a direct link for reading and serving spatial data from native formats to ESRI’s ArcGIS v.8.3 and Autodesk’s MapGuide v.6.0 or higher without the need for translating the existing data source. The FME SDP Server is an Open GIS Consortium based OLE DB provider that supports over 100 spatial data source formats. Read more about the capabilities and limitations of this product...";s:7:"summary";s:431:"The FME Spatial Data Provider (SDP) Server provides a direct link for reading and serving spatial data from native formats to ESRI’s ArcGIS v.8.3 and Autodesk’s MapGuide v.6.0 or higher without the need for translating the existing data source. The FME SDP Server is an Open GIS Consortium based OLE DB provider that supports over 100 spatial data source formats. Read more about the capabilities and limitations of this product...";}i:40;a:6:{s:4:"date";s:10:"2004-02-27";s:5:"title";s:34:"GISConnect for AutoCAD Version 1.0";s:4:"link";s:63:"http://www.directionsmag.com/product_reviews.php?feature_id=107";s:8:"category";s:14:"Product Review";s:11:"description";s:500:"GISConnect version 1.0 for AutoCAD is an add-on tool for the AutoCAD environment that combines the power of ArcGIS’s advanced database and geospatial 
+capabilities with the extensive use of AutoCAD® drawing tools. GISConnect for AutoCAD provides a bridge of interoperability between the CAD environment and GIS datasources. The product allows CAD users to incorporate 
+geographically referenced data into their CAD drawings through the GISConnect toolbar and menu. Read the complete product review...";s:7:"summary";s:500:"GISConnect version 1.0 for AutoCAD is an add-on tool for the AutoCAD environment that combines the power of ArcGIS’s advanced database and geospatial 
+capabilities with the extensive use of AutoCAD® drawing tools. GISConnect for AutoCAD provides a bridge of interoperability between the CAD environment and GIS datasources. The product allows CAD users to incorporate 
+geographically referenced data into their CAD drawings through the GISConnect toolbar and menu. Read the complete product review...";}i:41;a:6:{s:4:"date";s:10:"2003-12-17";s:5:"title";s:34:"GEODiffusion 2003 - GIS in Quebec!";s:4:"link";s:56:"http://www.directionsmag.com/features.php?feature_id=104";s:8:"category";s:7:"Feature";s:11:"description";s:337:"Editor-in-Chief Joe Francica traveled to Quebec City to cover this gathering of MapInfo and Korem users as well as other geomatics professional. At the conference, a surprise announcement by MapInfo unveiled Korem, who was celebrating its 10-year anniversary, as the "master distributor" of MapInfo products in the province. Read more...";s:7:"summary";s:337:"Editor-in-Chief Joe Francica traveled to Quebec City to cover this gathering of MapInfo and Korem users as well as other geomatics professional. At the conference, a surprise announcement by MapInfo unveiled Korem, who was celebrating its 10-year anniversary, as the "master distributor" of MapInfo products in the province. Read more...";}i:42;a:6:{s:4:"date";s:10:"2003-12-16";s:5:"title";s:57:"Positive Disruption, Spreading Business Geographic Wealth";s:4:"link";s:56:"http://www.directionsmag.com/features.php?feature_id=105";s:8:"category";s:7:"Feature";s:11:"description";s:55:"Coming soon: BusinessMap and BusinessMap Travel Edition";s:7:"summary";s:55:"Coming soon: BusinessMap and BusinessMap Travel Edition";}i:43;a:6:{s:4:"date";s:10:"2003-08-08";s:5:"title";s:53:"Directions On GIS Careers: Have We Turned the Corner?";s:4:"link";s:56:"http://www.directionsmag.com/features.php?feature_id=101";s:8:"category";s:7:"Feature";s:11:"description";s:339:"Layoffs at United States companies dropped 53 percent in May to 68,623 from 146,399 in April. This is promising news and, hopefully, will signal an upturn in the 
+job market as the war in Iraq is over and as businesses begin a growth cycle with increased hiring. Companies may be ready to hire soon. Are you ready? Here's some sage advice.";s:7:"summary";s:339:"Layoffs at United States companies dropped 53 percent in May to 68,623 from 146,399 in April. This is promising news and, hopefully, will signal an upturn in the 
+job market as the war in Iraq is over and as businesses begin a growth cycle with increased hiring. Companies may be ready to hire soon. Are you ready? Here's some sage advice.";}i:44;a:6:{s:4:"date";s:10:"2003-07-26";s:5:"title";s:50:"Conference Overview: SVG Open Conference Vancouver";s:4:"link";s:55:"http://www.directionsmag.com/features.php?feature_id=97";s:8:"category";s:7:"Feature";s:11:"description";s:303:"This is a special report from the SVG Open Conference held in Vancouver British Columbia, Canada during the week of July 14. Contributing columnist, Jon Frost, and expert on SVG technology provides the following report on a specific presentation about SVG in HOMELAND SECURITY and MILITARY APPLICATIONS.";s:7:"summary";s:303:"This is a special report from the SVG Open Conference held in Vancouver British Columbia, Canada during the week of July 14. Contributing columnist, Jon Frost, and expert on SVG technology provides the following report on a specific presentation about SVG in HOMELAND SECURITY and MILITARY APPLICATIONS.";}i:45;a:6:{s:4:"date";s:10:"2003-07-11";s:5:"title";s:40:"ESRI International User Conference Recap";s:4:"link";s:55:"http://www.directionsmag.com/features.php?feature_id=96";s:8:"category";s:7:"Feature";s:11:"description";s:305:"Catch a wrap-up of all the news from the 23rd ESRI International. Over 11,000 attendees were in San Diego this week to hear the latest regarding ArcGIS, web services, and a full slate of application news. Read and see more by going <a href="http://nt1.directionsmag.com/weekly_email.asp?id=253"> here</a>.";s:7:"summary";s:305:"Catch a wrap-up of all the news from the 23rd ESRI International. Over 11,000 attendees were in San Diego this week to hear the latest regarding ArcGIS, web services, and a full slate of application news. Read and see more by going <a href="http://nt1.directionsmag.com/weekly_email.asp?id=253"> here</a>.";}i:46;a:6:{s:4:"date";s:10:"2003-07-09";s:5:"title";s:49:"Peter Hillary Delivers Keynote at ESRI Conference";s:4:"link";s:55:"http://www.directionsmag.com/features.php?feature_id=95";s:8:"category";s:7:"Feature";s:11:"description";s:465:"Peter Hillary, son of Mt. Everest conqueror Sir Edmund Hillary, and accomplished mountain 
+climber in his own right, was on hand as the keynote speaker to tell of his exploits with cohort Jamaling Norgay, son of his father's original expeditionary partner 
+Tenzing Norgay, as they commemorated the 50th anniversary of their fathers’ historical ascent. Hillary was an animated and passionate speaker as he regaled the 
+audience with tales of his ascent one year ago.";s:7:"summary";s:465:"Peter Hillary, son of Mt. Everest conqueror Sir Edmund Hillary, and accomplished mountain 
+climber in his own right, was on hand as the keynote speaker to tell of his exploits with cohort Jamaling Norgay, son of his father's original expeditionary partner 
+Tenzing Norgay, as they commemorated the 50th anniversary of their fathers’ historical ascent. Hillary was an animated and passionate speaker as he regaled the 
+audience with tales of his ascent one year ago.";}i:47;a:6:{s:4:"date";s:10:"2003-05-22";s:5:"title";s:86:"Autodesk Revenues Fall in Q1; SARS Cited for Stifling Sales Activities in Asia/Pacific";s:4:"link";s:55:"http://www.directionsmag.com/features.php?feature_id=94";s:8:"category";s:7:"Feature";s:11:"description";s:376:"Autodesk today reported revenues of $210.8 Million, down from $229 Million one year ago. Severe Acute Respiratory Syndrome (SARS) was cited for curtailing sales activities in the Asia-Pacific region where sales calls had to be halted altogether in Beijing. Although revenues were down, Carol
+Bartz stated emphatically that, "It is way, way too early to give up on
+this year."
+";s:7:"summary";s:376:"Autodesk today reported revenues of $210.8 Million, down from $229 Million one year ago. Severe Acute Respiratory Syndrome (SARS) was cited for curtailing sales activities in the Asia-Pacific region where sales calls had to be halted altogether in Beijing. Although revenues were down, Carol
+Bartz stated emphatically that, "It is way, way too early to give up on
+this year."
+";}i:48;a:6:{s:4:"date";s:10:"2003-05-21";s:5:"title";s:48:"Intergraph Continues to Build on Core Technology";s:4:"link";s:55:"http://www.directionsmag.com/features.php?feature_id=93";s:8:"category";s:7:"Feature";s:11:"description";s:335:"At the Intergraph User’s Conference,
+GeoSpatial World, this week in New Orleans, core technological strengths
+and a desire to serve their existing customers with consistent product
+improvements were emphasized. Solutions are key to this focused strategy
+that builds on Intergraph's fundamental belief in their core GeoMedia technology.";s:7:"summary";s:335:"At the Intergraph User’s Conference,
+GeoSpatial World, this week in New Orleans, core technological strengths
+and a desire to serve their existing customers with consistent product
+improvements were emphasized. Solutions are key to this focused strategy
+that builds on Intergraph's fundamental belief in their core GeoMedia technology.";}i:49;a:6:{s:4:"date";s:10:"2003-05-12";s:5:"title";s:47:"Mail-Order company saves $27,000 in one mailing";s:4:"link";s:55:"http://www.directionsmag.com/features.php?feature_id=92";s:8:"category";s:7:"Feature";s:11:"description";s:372:"Mail-Order company saves $27,000 in one mailing using QuickAddress Batch
+Brigade Quartermasters Ltd., a leading mail-order supplier of adventure
+gear and apparel to military and civilian customers, recently turned to
+QAS to help them save on catalog mailing costs to customers and prospects.
+ 
+The Problem – Bad Addresses Waste Printing and Mailing Dollars
+The Georgia-bas";s:7:"summary";s:372:"Mail-Order company saves $27,000 in one mailing using QuickAddress Batch
+Brigade Quartermasters Ltd., a leading mail-order supplier of adventure
+gear and apparel to military and civilian customers, recently turned to
+QAS to help them save on catalog mailing costs to customers and prospects.
+ 
+The Problem – Bad Addresses Waste Printing and Mailing Dollars
+The Georgia-bas";}}s:7:"channel";a:4:{s:5:"title";s:33:"Directions Magazine - Top Stories";s:4:"link";s:29:"http://www.directionsmag.com/";s:11:"description";s:20:"Your GIS News Source";s:7:"tagline";s:20:"Your GIS News Source";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Fri, 24 Dec 2004 20:25:03 GMT
+";s:4:"etag";s:24:""1e58b4-8bf5-41cc7b1f"
+";}

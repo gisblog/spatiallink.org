@@ -1,0 +1,13 @@
+<html>
+
+<head>
+</head>
+
+<body>
+Server Side Includes (SSIs)
+<!--Your System Administrator can set the file extension to anything he wants. You can figure out what it is by looking in the srm.conf file. Just look in the server root directory for the conf directory, and then look at the AddType that has the x-server-parsed command. The file extension after the AddType is the file extension for SSIs.-->
+Last Updated and Validated on 
+<!--#flastmod file="ssi1.shtml" -->
+</body>
+
+</html>

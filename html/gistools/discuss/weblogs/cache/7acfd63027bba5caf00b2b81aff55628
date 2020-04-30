@@ -1,0 +1,599 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:12:{s:5:"title";s:31:"The reliability of web services";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=57";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=57#comments";s:7:"pubdate";s:31:"Tue, 25 Jul 2006 05:24:52 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:3:"WMS";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=57";s:11:"description";s:296:"	A few months back I posted a link to my ten favorite Web Mapping Services. The post included live links directly to the WMS servers. At first I questioned this move as locally hosted images would be far more reliable. But I thought it would be a neat experiment to see the downtime of each [...]";s:7:"content";a:1:{s:7:"encoded";s:1208:"	<p>A few months back I posted a link to my <a href="http://www.perrygeo.net/wordpress/?p=35">ten favorite Web Mapping Services</a>. The post included live links directly to the WMS servers. At first I questioned this move as locally hosted images would be far more reliable. But I thought it would be a neat experiment to see the downtime of each site. So I checked it daily just out of curiosity&#8230;</p>
+	<p>Well with today&#8217;s apparent disappearance of the <a href="http://wms.jpl.nasa.gov/wms.cgi?request=GetCapabilities">NASA JPL site</a>, all but one of my WMS layers mentioned have been down for at least a significant portion of a day. (The only one that&#8217;s been consitently up has been http://mesonet.agron.iastate.edu) .</p>
+	<p>This echos back to what I was complaining about with the whole <a href="http://www.perrygeo.net/wordpress/?p=43">USGS National Map debacle</a>. The bottom line is that whenever we rely heavily on a web service to deliver essential data, we are risking the integrity of the end product. The chain is only as strong as it&#8217;s weakest link and, unfortunately as the USGS and NASA have shown, those links can and will fail completely from time to time.</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=57";}s:7:"summary";s:296:"	A few months back I posted a link to my ten favorite Web Mapping Services. The post included live links directly to the WMS servers. At first I questioned this move as locally hosted images would be far more reliable. But I thought it would be a neat experiment to see the downtime of each [...]";s:12:"atom_content";s:1208:"	<p>A few months back I posted a link to my <a href="http://www.perrygeo.net/wordpress/?p=35">ten favorite Web Mapping Services</a>. The post included live links directly to the WMS servers. At first I questioned this move as locally hosted images would be far more reliable. But I thought it would be a neat experiment to see the downtime of each site. So I checked it daily just out of curiosity&#8230;</p>
+	<p>Well with today&#8217;s apparent disappearance of the <a href="http://wms.jpl.nasa.gov/wms.cgi?request=GetCapabilities">NASA JPL site</a>, all but one of my WMS layers mentioned have been down for at least a significant portion of a day. (The only one that&#8217;s been consitently up has been http://mesonet.agron.iastate.edu) .</p>
+	<p>This echos back to what I was complaining about with the whole <a href="http://www.perrygeo.net/wordpress/?p=43">USGS National Map debacle</a>. The bottom line is that whenever we rely heavily on a web service to deliver essential data, we are risking the integrity of the end product. The chain is only as strong as it&#8217;s weakest link and, unfortunately as the USGS and NASA have shown, those links can and will fail completely from time to time.</p>
+";}i:1;a:12:{s:5:"title";s:39:"Converting Shapefiles (and more) to KML";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=56";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=56#comments";s:7:"pubdate";s:31:"Sat, 15 Jul 2006 02:27:03 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:13:"Uncategorized";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=56";s:11:"description";s:330:"	A while back I wrote about converting KML files into a shapefile for use with GIS apps other than GoogleEarth. I got a ton of emails and site traffic from people looking to go the opposite direction; getting their GIS data into KML. 
+	There are, of course, a couple of utilities already implemented: ArcMap-based extensions [...]";s:7:"content";a:1:{s:7:"encoded";s:2235:"	<p>A while back I wrote about converting <a href="http://www.perrygeo.net/wordpress/?p=3">KML files into a shapefile</a> for use with GIS apps other than GoogleEarth. I got a ton of emails and site traffic from people looking to go the opposite direction; getting their GIS data into KML. </p>
+	<p>There are, of course, a couple of utilities already implemented: ArcMap-based extensions including <a href="http://arcscripts.esri.com/details.asp?dbid=14344">KML Home Companion</a> and <a href="http://www.arc2earth.com/">Arc2Earth</a>, a nice MapWindow app called <a href="http://interactiveearth.blogspot.com/2006/06/download-shape2earth-beta-2.html"> Shape2Earth</a>, and the open source WMS <a href="http://docs.codehaus.org/display/GEOS/Home">Geoserver</a> all support KML output. </p>
+	<p>Not to be left behind, GDAL/OGR now supports KML output.  Oddly enough it does not yet read KML. But hand it any <a href="http://ogr.maptools.org/ogr_formats.html">OGR-readable vector dataset</a> and it can be converted into KML. It currently doesn&#8217;t offer as much control over the output as the above options but is quicker to implement, works with a wide variety of input formats and can be easily scripted.</p>
+	<p>This functionality is in CVS only at the moment but should be included in the next release. If you can&#8217;t wait and don&#8217;t feel like compiling from cvs source, try the 1.0.5 version of <a href="http://fwtools.maptools.org/">FWTools</a> (for Windows and Linux).</p>
+	<p>The conversion process is pretty straightforward. For example, the following will convert a shapefile (sbpoints.shp) to KML (mypoints.kml). </p>
+	<blockquote><p>ogr2ogr -f KML mypoints.kml sbpoints.shp sbpoints</p></blockquote>
+	<p>The KML format flys in the face of the GIS mantra stating that content should be seperate from styling. Since styling information is purposefully absent from most standard vector formats, it makes for pretty bland KML output. The attributes just get dumped out into one big text block and there is no classification or styling control.<br />
+<img border="1" src="/img/ogrkml.jpg"/></p>
+	<p> But in terms of getting your data into Google Earth quickly (esp. point data), the OGR method looks promising.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=56";}s:7:"summary";s:330:"	A while back I wrote about converting KML files into a shapefile for use with GIS apps other than GoogleEarth. I got a ton of emails and site traffic from people looking to go the opposite direction; getting their GIS data into KML. 
+	There are, of course, a couple of utilities already implemented: ArcMap-based extensions [...]";s:12:"atom_content";s:2235:"	<p>A while back I wrote about converting <a href="http://www.perrygeo.net/wordpress/?p=3">KML files into a shapefile</a> for use with GIS apps other than GoogleEarth. I got a ton of emails and site traffic from people looking to go the opposite direction; getting their GIS data into KML. </p>
+	<p>There are, of course, a couple of utilities already implemented: ArcMap-based extensions including <a href="http://arcscripts.esri.com/details.asp?dbid=14344">KML Home Companion</a> and <a href="http://www.arc2earth.com/">Arc2Earth</a>, a nice MapWindow app called <a href="http://interactiveearth.blogspot.com/2006/06/download-shape2earth-beta-2.html"> Shape2Earth</a>, and the open source WMS <a href="http://docs.codehaus.org/display/GEOS/Home">Geoserver</a> all support KML output. </p>
+	<p>Not to be left behind, GDAL/OGR now supports KML output.  Oddly enough it does not yet read KML. But hand it any <a href="http://ogr.maptools.org/ogr_formats.html">OGR-readable vector dataset</a> and it can be converted into KML. It currently doesn&#8217;t offer as much control over the output as the above options but is quicker to implement, works with a wide variety of input formats and can be easily scripted.</p>
+	<p>This functionality is in CVS only at the moment but should be included in the next release. If you can&#8217;t wait and don&#8217;t feel like compiling from cvs source, try the 1.0.5 version of <a href="http://fwtools.maptools.org/">FWTools</a> (for Windows and Linux).</p>
+	<p>The conversion process is pretty straightforward. For example, the following will convert a shapefile (sbpoints.shp) to KML (mypoints.kml). </p>
+	<blockquote><p>ogr2ogr -f KML mypoints.kml sbpoints.shp sbpoints</p></blockquote>
+	<p>The KML format flys in the face of the GIS mantra stating that content should be seperate from styling. Since styling information is purposefully absent from most standard vector formats, it makes for pretty bland KML output. The attributes just get dumped out into one big text block and there is no classification or styling control.<br />
+<img border="1" src="/img/ogrkml.jpg"/></p>
+	<p> But in terms of getting your data into Google Earth quickly (esp. point data), the OGR method looks promising.
+</p>
+";}i:2;a:12:{s:5:"title";s:45:"Wardriving with Ubuntu Linux and Google Earth";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=55";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=55#comments";s:7:"pubdate";s:31:"Tue, 04 Jul 2006 06:24:56 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:13:"Uncategorized";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=55";s:11:"description";s:322:"	Wardriving is fun. Going around the neighborhood and mapping all the wireless networks may be nothing more than a geeky hobby but it can sure teach you alot. And viewing the results in Google Earth is icing on the cake.
+	I&#8217;ve used NetStumbler on windows and this works great but since my computers at home are [...]";s:7:"content";a:1:{s:7:"encoded";s:3731:"	<p>Wardriving is fun. Going around the neighborhood and mapping all the wireless networks may be nothing more than a geeky hobby but it can sure teach you alot. And viewing the results in Google Earth is icing on the cake.</p>
+	<p>I&#8217;ve used NetStumbler on windows and this works great but since my computers at home are now nearly Microsoft-free, I had to relearn the process on Linux. It breaks down into a few easy steps:</p>
+	<ol>
+	<li> Install the <strong>drivers</strong> for you wireless card. On my HP laptop with a Broadcom card, I followed the instructions on the <a href="http://ubuntuforums.org/showthread.php?p=1071920&#038;mode=linear"> ubuntu forums </a> which worked great with one exception: the driver link on that page doesn&#8217;t have a valid md5 sum so you can download it from <a href="http://forums.fedoraforum.org/forum/attachment.php?attachmentid=7759">this url</a> instead</li>
+	<li>
+Install <strong>gpsd.</strong> This is the software that talks to your gps unit and is available in the ubuntu packages through apt. The one hitch is that I had to set up my Magellan GPS unit up for the correct baud rate and NMEA output. Once installed, I connected the GPS unit via a serial port, turned it on and ran <em> gpsd /dev/ttyS0 </em> to start the gpsd server.
+</li>
+	<li>
+Install <strong>kismet,</strong> the wireless packet sniffer. The version in the ubuntu repository is not recent enough to support my Broadcom driver so I had to download the latest source and compile it with the standard <em> configure, make, sudo make install </em>.  Then I had to edit the /usr/local/etc/kismet.conf to reflect my system configuration; I changed the <em>suiduser</em>, <em>source</em> and <em>logtemplate</em> variables. Once configured, you can start it with the command <em>sudo kismet</em>.
+</li>
+	<li>
+Now <strong>drive/bike/walk around</strong> for a bit with your laptop and gps unit. When you&#8217;re done, shutdown kismet and you&#8217;ll have a bunch of fresh logfiles to work with.
+</li>
+	<li>
+ The main kismet log is an xml file containing all the info on the available wireless networks including their SSID, their encryption sheme, transfer rater and their geographic position via gpsd. I worked up a small python script, <a href="http://perrygeo.net/download/kismet2kml.py">kismet2kml.py</a> (based on a blog entry at <a href="http://www.larsen-b.com/Article/204.html">jkx@Home</a>), to <strong>parse the logfile into a KML file</strong> for use with Google Earth. It could certainly use some tweaking but it&#8217;s a start. To run it, give it the kismet logfile and pipe the output to a kml file:<br /> <em> kismet2kml.py kismet-log-Jul-03-2006-1.xml > wardrive.kml </em></li>
+	<li>
+ Now fire up <strong>Google Earth</strong> (Linux version now available!) and load your KML file.
+</li>
+	</ol>
+	<p><img border="1" src="/img/kismetkml.jpg"/><br />
+<br />
+Also, as James Fee <a href="http://www.spatiallyadjusted.com/2006/07/03/help-me-think-of-a-good-mashup-to-create/">points out</a>, posting your data as KML files means that the data can be integrated into a growing number of kml-ready apps including google maps (just upload the kml and point your browser to <em>http://maps.google.com/maps?q=http://your.server/wardrive.kml</em>).</p>
+	<p>Another neat application I&#8217;ve found for dealing with kismet logs is the <a href="http://wiki.openstreetmap.org/index.php/User:Dutch#Converting_Kismet_.gps_files_to_gpx">kismet2gpx script</a> for converting the kismet gps tracklog into gpx. Since most gps units have pretty tight limitations on the length of stored tracks, logging them to your laptop with kismet could be an effective way of creating detailed tracks on very long trips.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=55";}s:7:"summary";s:322:"	Wardriving is fun. Going around the neighborhood and mapping all the wireless networks may be nothing more than a geeky hobby but it can sure teach you alot. And viewing the results in Google Earth is icing on the cake.
+	I&#8217;ve used NetStumbler on windows and this works great but since my computers at home are [...]";s:12:"atom_content";s:3731:"	<p>Wardriving is fun. Going around the neighborhood and mapping all the wireless networks may be nothing more than a geeky hobby but it can sure teach you alot. And viewing the results in Google Earth is icing on the cake.</p>
+	<p>I&#8217;ve used NetStumbler on windows and this works great but since my computers at home are now nearly Microsoft-free, I had to relearn the process on Linux. It breaks down into a few easy steps:</p>
+	<ol>
+	<li> Install the <strong>drivers</strong> for you wireless card. On my HP laptop with a Broadcom card, I followed the instructions on the <a href="http://ubuntuforums.org/showthread.php?p=1071920&#038;mode=linear"> ubuntu forums </a> which worked great with one exception: the driver link on that page doesn&#8217;t have a valid md5 sum so you can download it from <a href="http://forums.fedoraforum.org/forum/attachment.php?attachmentid=7759">this url</a> instead</li>
+	<li>
+Install <strong>gpsd.</strong> This is the software that talks to your gps unit and is available in the ubuntu packages through apt. The one hitch is that I had to set up my Magellan GPS unit up for the correct baud rate and NMEA output. Once installed, I connected the GPS unit via a serial port, turned it on and ran <em> gpsd /dev/ttyS0 </em> to start the gpsd server.
+</li>
+	<li>
+Install <strong>kismet,</strong> the wireless packet sniffer. The version in the ubuntu repository is not recent enough to support my Broadcom driver so I had to download the latest source and compile it with the standard <em> configure, make, sudo make install </em>.  Then I had to edit the /usr/local/etc/kismet.conf to reflect my system configuration; I changed the <em>suiduser</em>, <em>source</em> and <em>logtemplate</em> variables. Once configured, you can start it with the command <em>sudo kismet</em>.
+</li>
+	<li>
+Now <strong>drive/bike/walk around</strong> for a bit with your laptop and gps unit. When you&#8217;re done, shutdown kismet and you&#8217;ll have a bunch of fresh logfiles to work with.
+</li>
+	<li>
+ The main kismet log is an xml file containing all the info on the available wireless networks including their SSID, their encryption sheme, transfer rater and their geographic position via gpsd. I worked up a small python script, <a href="http://perrygeo.net/download/kismet2kml.py">kismet2kml.py</a> (based on a blog entry at <a href="http://www.larsen-b.com/Article/204.html">jkx@Home</a>), to <strong>parse the logfile into a KML file</strong> for use with Google Earth. It could certainly use some tweaking but it&#8217;s a start. To run it, give it the kismet logfile and pipe the output to a kml file:<br /> <em> kismet2kml.py kismet-log-Jul-03-2006-1.xml > wardrive.kml </em></li>
+	<li>
+ Now fire up <strong>Google Earth</strong> (Linux version now available!) and load your KML file.
+</li>
+	</ol>
+	<p><img border="1" src="/img/kismetkml.jpg"/><br />
+<br />
+Also, as James Fee <a href="http://www.spatiallyadjusted.com/2006/07/03/help-me-think-of-a-good-mashup-to-create/">points out</a>, posting your data as KML files means that the data can be integrated into a growing number of kml-ready apps including google maps (just upload the kml and point your browser to <em>http://maps.google.com/maps?q=http://your.server/wardrive.kml</em>).</p>
+	<p>Another neat application I&#8217;ve found for dealing with kismet logs is the <a href="http://wiki.openstreetmap.org/index.php/User:Dutch#Converting_Kismet_.gps_files_to_gpx">kismet2gpx script</a> for converting the kismet gps tracklog into gpx. Since most gps units have pretty tight limitations on the length of stored tracks, logging them to your laptop with kismet could be an effective way of creating detailed tracks on very long trips.
+</p>
+";}i:3;a:12:{s:5:"title";s:17:"Mapserver Include";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=54";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=54#comments";s:7:"pubdate";s:31:"Sun, 25 Jun 2006 23:29:13 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:13:"GIS Tutorials";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=54";s:11:"description";s:319:"	If you mange even a small number of Mapserver sites, eventually you notice that you use a number of identical layers in multiple mapfiles. The way this is typically done is to copy and paste the LAYER definition into each mapfile. But inevitably you&#8217;ll need to change the styling or the data source and you [...]";s:7:"content";a:1:{s:7:"encoded";s:1755:"	<p>If you mange even a small number of Mapserver sites, eventually you notice that you use a number of identical layers in multiple mapfiles. The way this is typically done is to copy and paste the LAYER definition into each mapfile. But inevitably you&#8217;ll need to change the styling or the data source and you have to manually go through each mapfile to sync the changes. Wouldn&#8217;t it be nice to define the layer in a single file and use it in many mapfiles?</p>
+	<p>While Mapserver has no concept of an &#8220;include&#8221;, the C preprocessor (cpp) does. This is mentioned on the Mapserver list every time the subject of includes comes up. Still I have yet to find an actual example so I thought I&#8217;d share my notes on how I accomplish a mapserver include:</p>
+	<ol>
+	<li>Create your mapfile as usual but leave out any LAYER definitions that you wish to share amongst mapfiles. Instead use something like :<br />
+	<blockquote><p>#include &#8220;landsat.layer&#8221;</p></blockquote>
+	</li>
+	<li> The C Preprocessor doesn&#8217;t deal well with &#8220;#&#8221; which is the mapfile&#8217;s chosen comment charachter. Instead replace with &#8220;##&#8221; to indicate a comment </li>
+	<li> Save this pseudo-mapfile as <em>mymap.template</em> </li>
+	<li> Create a file in the same directory called <em>landsat.layer</em> with the LAYER block. </li>
+	<li> Run the template through the preprocessor to generate the real mapfile :<br />
+	<blockquote><pre>cpp -P -C -o mymap.map mymap.template </pre></blockquote>
+	</li>
+	</ol>
+	<p>The next step would be to script the preprocessing of <em>all</em> your mapfiles so that changing a layer definition in multiple mapfiles was as simple as changing the *.layer file and running the script.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=54";}s:7:"summary";s:319:"	If you mange even a small number of Mapserver sites, eventually you notice that you use a number of identical layers in multiple mapfiles. The way this is typically done is to copy and paste the LAYER definition into each mapfile. But inevitably you&#8217;ll need to change the styling or the data source and you [...]";s:12:"atom_content";s:1755:"	<p>If you mange even a small number of Mapserver sites, eventually you notice that you use a number of identical layers in multiple mapfiles. The way this is typically done is to copy and paste the LAYER definition into each mapfile. But inevitably you&#8217;ll need to change the styling or the data source and you have to manually go through each mapfile to sync the changes. Wouldn&#8217;t it be nice to define the layer in a single file and use it in many mapfiles?</p>
+	<p>While Mapserver has no concept of an &#8220;include&#8221;, the C preprocessor (cpp) does. This is mentioned on the Mapserver list every time the subject of includes comes up. Still I have yet to find an actual example so I thought I&#8217;d share my notes on how I accomplish a mapserver include:</p>
+	<ol>
+	<li>Create your mapfile as usual but leave out any LAYER definitions that you wish to share amongst mapfiles. Instead use something like :<br />
+	<blockquote><p>#include &#8220;landsat.layer&#8221;</p></blockquote>
+	</li>
+	<li> The C Preprocessor doesn&#8217;t deal well with &#8220;#&#8221; which is the mapfile&#8217;s chosen comment charachter. Instead replace with &#8220;##&#8221; to indicate a comment </li>
+	<li> Save this pseudo-mapfile as <em>mymap.template</em> </li>
+	<li> Create a file in the same directory called <em>landsat.layer</em> with the LAYER block. </li>
+	<li> Run the template through the preprocessor to generate the real mapfile :<br />
+	<blockquote><pre>cpp -P -C -o mymap.map mymap.template </pre></blockquote>
+	</li>
+	</ol>
+	<p>The next step would be to script the preprocessing of <em>all</em> your mapfiles so that changing a layer definition in multiple mapfiles was as simple as changing the *.layer file and running the script.
+</p>
+";}i:4;a:12:{s:5:"title";s:26:"Some thoughts on Where 2.0";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=53";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=53#comments";s:7:"pubdate";s:31:"Thu, 15 Jun 2006 08:00:26 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:13:"Uncategorized";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=53";s:11:"description";s:298:"	Oh man, it&#8217;s a long drive from San Jose back to Santa Barbara! Anyways, just got back from where 2.0 and want to throw out my quick summary of the event.
+	
+	 There was alot of talk about all things open; open data, open source and open standards. There was lots of buzz around the open [...]";s:7:"content";a:1:{s:7:"encoded";s:6481:"	<p>Oh man, it&#8217;s a long drive from San Jose back to Santa Barbara! Anyways, just got back from where 2.0 and want to throw out my quick summary of the event.</p>
+	<ul>
+	<li> There was alot of talk about all things <b>open</b>; open data, open source and open standards. There was lots of buzz around the open street map project, osgeo applications like grass, ossim, gdal, mapbender, etc., and tons of discussion of WMS, WFS and other relevant standards. This is great as I think all three will be the cornerstone of the spatial industry in the near future.
+	<p>But, as I&#8217;ve mentioned before, people throw the word &#8220;open&#8221; around so much that it begins to loose meaning. From alot of conversations I had, I found many people were confused about the differences. Some folks seemed to think that the osgeo foundation was a data repository for open data (it may soon be! .. but not quite yet) and also that osgeo was an open standards organization trying to &#8220;compete&#8221; with the OGC. But that is what an event like this is for; to reach out and communicate, clarify and bridge the gaps between communities.</p>
+	<p>Of course I had to laugh as I heard a couple dozen people refer to Google Maps as an &#8220;open source&#8221; application&#8230;. it&#8217;s proprietary source code using proprietary data through a proprietary data transfer mechanism. It may be &#8220;free&#8221; as in beer but that&#8217;s about the extent of it&#8217;s openness.
+</li>
+	<li> <b>Social Data</b>: using location technology as the basis for sharing personal experiences and social networking was a powerful theme at Where 2.0. It ran the gammut from tagging locations to writing personal travelogs to mobile location-based games to virtual worlds to mobile apps that would could differentiate stangers vs aquantainces in range of your bluetooth device.
+</li>
+	<li> <b>Security and privacy</b>: There are implications to the web/where2.0 mindframe. Publishing your location and personal information in real time through the web and mobile devices brings up some frightening security and privacy issues. Who owns the data? What licenses are your personal data distributed under? Do you need others permission to post their photos or locations? Who decides what is acceptable and what gets taken down? How is spam dealt with? Only two speakers were brave enough to fully address these issues head on and the panel had some good discussion on these topics. Kudos to them.
+</li>
+	<li> Bringing location technology to <b>the masses</b>: This was repeated by a few speakers; that in order to be successful in spatial technologies you need to bring your service to the masses. Certainly if you&#8217;re trying to compete in the social networking space, this is true. But in general GIS and spatial tech has application that are far beyond the interests of the vast majority of people.. emergency management, infrastructure, environmental, real estate, etc.
+	<p>The mantra that spatial data and services must appeal to a wide audience is analogous to saying that family cars are the only successful type of motorized vehicle. In terms of numbers, they may be a majority. But in terms of utility, there is a reason that construction companies pay hundreds of thousands of dollars for heavy industrial machinery.. because trying to haul tons of earth and debris with a Toyota Camry just doesn&#8217;t work.  Likewise there is a similar reason most municipalities don&#8217;t use a Google Mashup to manage their parcel data.. it simply doesn&#8217;t work. So what is appropriate for mass consumption may have little applicabilty to business/government/industry/research. And vice versa.
+</li>
+	<li> <b>Mobile Applications</b>: So much potential here and some really cool innovations in geotagging content. Really, for the first time, I got a sense that these personal devices could become a means for creating a vast database of socially relevant information. But the lack of security and privacy safegaurds along with the domination of the cellular networks and the heterogenous environment of mobile platforms, I still view most of this as pie-in-the-sky.
+</li>
+	<li> Some new discoveries:
+	<ul>
+	<li> metacarta: A text parsing engine with a public API to extract geo info from plain text! </li>
+	<li>gutenkarte: An application of the above to classic works of literature.</li>
+	<li>open layers: A javascript application with a slick UI and simple API for displaying WMS and WFS</li>
+	<li> open street map: A fantastic project focussing on collaborative development of a public street database </li>
+	<li> mapstraction: A javascript layer on top of the &#8216;Big 3&#8242; Mapping APIs that allows yoiu to switch seamlessly between the service providers.</li>
+	<li>Google Earth &#038; Sketchup: GE for linux!!! Wooo-hooo!! There was also a sweet demo of creating 3D drawings in Sketchup and placing them in GE. Very slick.</li>
+	<li> Google Maps: Now with kml support! Just try http://maps.google.com/?q=http://path.to.your.kml </li>
+	<li>Mapguide: I am embarrased to say I have never tried out Autodesk&#8217;s open source offering but the demo was sweet.. a very high powered GIS for a web app. And the Autodesk folks were about the nicest group of guys you could meet.</li>
+	<li> ArcGIS/Server 9.2: Author a map in ArcMap. Save as .mxd. Drop into web server. Instant kml and wms server! </li>
+	<li> And while not new to me, there were alot of good overviews of some of my favorite software packages like OSSIM, GRASS, GDAL, Geoserver and World Wind (Java version coming this fall!!). </li>
+	</ul>
+	</li>
+	<li> Finally, the prize for most interesting talk goes to Chris Spurgeon who spoke about the best geohacks  of the last 3000 years. Long before computers, Chris showed how Eratosthenes measured the diameter of the earth, how the Polypenesian&#8217;s used the stars as an advanced navigation system, how the  post-renaissance world <em>re</em>discovered stars as a the key to navigation. And in more recent times he showed how Harry Beck reinvented the cartography of transportation with the London subway maps and how the VOR transmitters created highways in the featureless sky. This presentation really put current innovations in location technologies into perspective.
+	</li>
+	<p>OK sorry about the lack of links but it&#8217;s too late in the evening for that. Hope you enjoyed my rundown and I&#8217;m sure I&#8217;ll have more to say after I get some sleep!
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=53";}s:7:"summary";s:298:"	Oh man, it&#8217;s a long drive from San Jose back to Santa Barbara! Anyways, just got back from where 2.0 and want to throw out my quick summary of the event.
+	
+	 There was alot of talk about all things open; open data, open source and open standards. There was lots of buzz around the open [...]";s:12:"atom_content";s:6481:"	<p>Oh man, it&#8217;s a long drive from San Jose back to Santa Barbara! Anyways, just got back from where 2.0 and want to throw out my quick summary of the event.</p>
+	<ul>
+	<li> There was alot of talk about all things <b>open</b>; open data, open source and open standards. There was lots of buzz around the open street map project, osgeo applications like grass, ossim, gdal, mapbender, etc., and tons of discussion of WMS, WFS and other relevant standards. This is great as I think all three will be the cornerstone of the spatial industry in the near future.
+	<p>But, as I&#8217;ve mentioned before, people throw the word &#8220;open&#8221; around so much that it begins to loose meaning. From alot of conversations I had, I found many people were confused about the differences. Some folks seemed to think that the osgeo foundation was a data repository for open data (it may soon be! .. but not quite yet) and also that osgeo was an open standards organization trying to &#8220;compete&#8221; with the OGC. But that is what an event like this is for; to reach out and communicate, clarify and bridge the gaps between communities.</p>
+	<p>Of course I had to laugh as I heard a couple dozen people refer to Google Maps as an &#8220;open source&#8221; application&#8230;. it&#8217;s proprietary source code using proprietary data through a proprietary data transfer mechanism. It may be &#8220;free&#8221; as in beer but that&#8217;s about the extent of it&#8217;s openness.
+</li>
+	<li> <b>Social Data</b>: using location technology as the basis for sharing personal experiences and social networking was a powerful theme at Where 2.0. It ran the gammut from tagging locations to writing personal travelogs to mobile location-based games to virtual worlds to mobile apps that would could differentiate stangers vs aquantainces in range of your bluetooth device.
+</li>
+	<li> <b>Security and privacy</b>: There are implications to the web/where2.0 mindframe. Publishing your location and personal information in real time through the web and mobile devices brings up some frightening security and privacy issues. Who owns the data? What licenses are your personal data distributed under? Do you need others permission to post their photos or locations? Who decides what is acceptable and what gets taken down? How is spam dealt with? Only two speakers were brave enough to fully address these issues head on and the panel had some good discussion on these topics. Kudos to them.
+</li>
+	<li> Bringing location technology to <b>the masses</b>: This was repeated by a few speakers; that in order to be successful in spatial technologies you need to bring your service to the masses. Certainly if you&#8217;re trying to compete in the social networking space, this is true. But in general GIS and spatial tech has application that are far beyond the interests of the vast majority of people.. emergency management, infrastructure, environmental, real estate, etc.
+	<p>The mantra that spatial data and services must appeal to a wide audience is analogous to saying that family cars are the only successful type of motorized vehicle. In terms of numbers, they may be a majority. But in terms of utility, there is a reason that construction companies pay hundreds of thousands of dollars for heavy industrial machinery.. because trying to haul tons of earth and debris with a Toyota Camry just doesn&#8217;t work.  Likewise there is a similar reason most municipalities don&#8217;t use a Google Mashup to manage their parcel data.. it simply doesn&#8217;t work. So what is appropriate for mass consumption may have little applicabilty to business/government/industry/research. And vice versa.
+</li>
+	<li> <b>Mobile Applications</b>: So much potential here and some really cool innovations in geotagging content. Really, for the first time, I got a sense that these personal devices could become a means for creating a vast database of socially relevant information. But the lack of security and privacy safegaurds along with the domination of the cellular networks and the heterogenous environment of mobile platforms, I still view most of this as pie-in-the-sky.
+</li>
+	<li> Some new discoveries:
+	<ul>
+	<li> metacarta: A text parsing engine with a public API to extract geo info from plain text! </li>
+	<li>gutenkarte: An application of the above to classic works of literature.</li>
+	<li>open layers: A javascript application with a slick UI and simple API for displaying WMS and WFS</li>
+	<li> open street map: A fantastic project focussing on collaborative development of a public street database </li>
+	<li> mapstraction: A javascript layer on top of the &#8216;Big 3&#8242; Mapping APIs that allows yoiu to switch seamlessly between the service providers.</li>
+	<li>Google Earth &#038; Sketchup: GE for linux!!! Wooo-hooo!! There was also a sweet demo of creating 3D drawings in Sketchup and placing them in GE. Very slick.</li>
+	<li> Google Maps: Now with kml support! Just try http://maps.google.com/?q=http://path.to.your.kml </li>
+	<li>Mapguide: I am embarrased to say I have never tried out Autodesk&#8217;s open source offering but the demo was sweet.. a very high powered GIS for a web app. And the Autodesk folks were about the nicest group of guys you could meet.</li>
+	<li> ArcGIS/Server 9.2: Author a map in ArcMap. Save as .mxd. Drop into web server. Instant kml and wms server! </li>
+	<li> And while not new to me, there were alot of good overviews of some of my favorite software packages like OSSIM, GRASS, GDAL, Geoserver and World Wind (Java version coming this fall!!). </li>
+	</ul>
+	</li>
+	<li> Finally, the prize for most interesting talk goes to Chris Spurgeon who spoke about the best geohacks  of the last 3000 years. Long before computers, Chris showed how Eratosthenes measured the diameter of the earth, how the Polypenesian&#8217;s used the stars as an advanced navigation system, how the  post-renaissance world <em>re</em>discovered stars as a the key to navigation. And in more recent times he showed how Harry Beck reinvented the cartography of transportation with the London subway maps and how the VOR transmitters created highways in the featureless sky. This presentation really put current innovations in location technologies into perspective.
+	</li>
+	<p>OK sorry about the lack of links but it&#8217;s too late in the evening for that. Hope you enjoyed my rundown and I&#8217;m sure I&#8217;ll have more to say after I get some sleep!
+</ul>
+";}i:5;a:12:{s:5:"title";s:25:"Animating the Blue Marble";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=52";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=52#comments";s:7:"pubdate";s:31:"Sat, 10 Jun 2006 04:06:07 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:13:"Uncategorized";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=52";s:11:"description";s:315:"	A while back I posted my technique for creating an animated gif out of a time series of maps. While this may have been the pinnacle of web animation circa 1997, the animated gif just didn&#8217;t quite seem hip enough for this day and age.
+	Today I found a more modern example. This WorldKit interface, built [...]";s:7:"content";a:1:{s:7:"encoded";s:726:"	<p>A while back I posted my technique for creating an <a href="http://www.perrygeo.net/wordpress/?p=39">animated gif</a> out of a time series of maps. While this may have been the pinnacle of web animation circa 1997, the animated gif just didn&#8217;t quite seem hip enough for this day and age.</p>
+	<p>Today I found a more modern example. This <a href="http://worldkit.org/wmstimenav/">WorldKit interface</a>, built with Flash, shows the seasonal progression of snow and land cover changes courtesy of the next generation Blue marble images. Complete with time slider, image fading and full animation controls, this interface really shines at providing an interactive experience rather than a passive visual display.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=52";}s:7:"summary";s:315:"	A while back I posted my technique for creating an animated gif out of a time series of maps. While this may have been the pinnacle of web animation circa 1997, the animated gif just didn&#8217;t quite seem hip enough for this day and age.
+	Today I found a more modern example. This WorldKit interface, built [...]";s:12:"atom_content";s:726:"	<p>A while back I posted my technique for creating an <a href="http://www.perrygeo.net/wordpress/?p=39">animated gif</a> out of a time series of maps. While this may have been the pinnacle of web animation circa 1997, the animated gif just didn&#8217;t quite seem hip enough for this day and age.</p>
+	<p>Today I found a more modern example. This <a href="http://worldkit.org/wmstimenav/">WorldKit interface</a>, built with Flash, shows the seasonal progression of snow and land cover changes courtesy of the next generation Blue marble images. Complete with time slider, image fading and full animation controls, this interface really shines at providing an interactive experience rather than a passive visual display.
+</p>
+";}i:6;a:12:{s:5:"title";s:26:"HostGIS Linux 3.6 Released";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=51";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=51#comments";s:7:"pubdate";s:31:"Sat, 03 Jun 2006 23:15:31 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:8:"Software";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=51";s:11:"description";s:351:"	Though probably not as big of a news item as this week&#8217;s release of Ubuntu Dapper, there&#8217;s another Linux release that might be of interest to us GIS folk:
+	Built off of a Slackware base (one of the oldest, most stable linux distros), HostGIS Linux aims to be a &#8220;minimal yet complete&#8221; distribution specifically built with [...]";s:7:"content";a:1:{s:7:"encoded";s:3624:"	<p>Though probably not as big of a news item as this week&#8217;s <a href="http://www.ubuntu.com/news/606released">release of Ubuntu Dapper</a>, there&#8217;s another Linux release that might be of interest to us GIS folk:</p>
+	<p>Built off of a <a href="http://www.slackware.com/">Slackware</a> base (one of the oldest, most stable linux distros), <a href="http://www.hostgis.com/linux/">HostGIS Linux</a> aims to be a &#8220;minimal yet complete&#8221; distribution specifically built with GIS in mind. It is first and foremost a server platform; it does not include any window system at all. If you&#8217;re looking for desktop GIS applications out-of-box, it might not be the best for you. </p>
+	<p>But for a GIS server, it comes with most of the open source stack preinstalled and configured. This latest release has <a href="http://www.hostgis.com/linux/manual/changes.html">a few changes</a> and version upgrades for most of the components.</p>
+	<ul>
+	<li> PHP, Python and Perl Mapscript </li>
+	<li> GDAL/OGR with PHP, Python and perl bindings </li>
+	<li> Postgresql 8.1 with PostGIS 1.1 </li>
+	<li> drivers for many extra formats including jpeg2000 and ecw </li>
+	<li> Apache web server with Mapserver CGI </li>
+	</ul>
+	<p> The primary motivation for creating HGL was to speed up the installation of new gis-enabled servers. Gregor Mosheh, the head programmer for HostGIS, has done an excellent job pretty much single-handedly putting this together. ( In full disclosure, I do consulting work for HostGIS, though I wasn&#8217;t really involved in the creation of HostGIS Linux. )</p>
+	<p>The setup is your standard text-based install and is a piece of cake if you&#8217;ve ever installed Linux before. When you&#8217;re through, you have the good ole&#8217; black and white text console staring at you. Not very interesting&#8230; But the really satisfying part is to fire up a web browser after the install and be able to point it to a working webGIS application. Anyone who has spent the time to set up the mapserver stack and its seemingly infinite dependencies can appreciate the amount of work this saves! </p>
+	<p>If you&#8217;re not into learning a new distro, there is always the <a href="http://www.maptools.org/fgs/">FGS</a> linux installer which will set up a similar software stack on pretty much any linux.</p>
+	<p>And for Desktop GIS, many linux distros have a selection of GIS apps in their package repositories (You&#8217;ll want to certainly grab GRASS, GDAL and QGIS) . <a href="http://fwtools.maptools.org/">FWTools</a> can be a good option on both Linux and Windows to get you up and running quickly. Finally there are a number of other more desktop-oriented distros for GIS including <a href="http://www.sourcepole.com/gis-knoppix/"> Knoppix GIS</a> and <a href="http://www.geolivre.org.br/modules/news/">GeoLivre</a>, both of which run as a live-cd so you can check it out before you install.</p>
+	<p>Anyways, back to sum up HostGIS Linux: </p>
+	<p>If you need to set up a GIS server with minimal fuss and you have some experience with Linux, you might like to try it out. It will save lots of time. </p>
+	<p>If you&#8217;re a GIS user who needs a graphic windows environment to do GIS work on the Desktop, HostGIS Linux will not really make you happy out-of-the-box. Of course, since HGL is slackware based, you <em>can</em> use the slackware package management system to build an impressive Desktop system. But if you don&#8217;t need to run a server or really care about having the latest versions, Ubuntu comes with a solid desktop environment and packages for alot of good GIS apps. </p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=51";}s:7:"summary";s:351:"	Though probably not as big of a news item as this week&#8217;s release of Ubuntu Dapper, there&#8217;s another Linux release that might be of interest to us GIS folk:
+	Built off of a Slackware base (one of the oldest, most stable linux distros), HostGIS Linux aims to be a &#8220;minimal yet complete&#8221; distribution specifically built with [...]";s:12:"atom_content";s:3624:"	<p>Though probably not as big of a news item as this week&#8217;s <a href="http://www.ubuntu.com/news/606released">release of Ubuntu Dapper</a>, there&#8217;s another Linux release that might be of interest to us GIS folk:</p>
+	<p>Built off of a <a href="http://www.slackware.com/">Slackware</a> base (one of the oldest, most stable linux distros), <a href="http://www.hostgis.com/linux/">HostGIS Linux</a> aims to be a &#8220;minimal yet complete&#8221; distribution specifically built with GIS in mind. It is first and foremost a server platform; it does not include any window system at all. If you&#8217;re looking for desktop GIS applications out-of-box, it might not be the best for you. </p>
+	<p>But for a GIS server, it comes with most of the open source stack preinstalled and configured. This latest release has <a href="http://www.hostgis.com/linux/manual/changes.html">a few changes</a> and version upgrades for most of the components.</p>
+	<ul>
+	<li> PHP, Python and Perl Mapscript </li>
+	<li> GDAL/OGR with PHP, Python and perl bindings </li>
+	<li> Postgresql 8.1 with PostGIS 1.1 </li>
+	<li> drivers for many extra formats including jpeg2000 and ecw </li>
+	<li> Apache web server with Mapserver CGI </li>
+	</ul>
+	<p> The primary motivation for creating HGL was to speed up the installation of new gis-enabled servers. Gregor Mosheh, the head programmer for HostGIS, has done an excellent job pretty much single-handedly putting this together. ( In full disclosure, I do consulting work for HostGIS, though I wasn&#8217;t really involved in the creation of HostGIS Linux. )</p>
+	<p>The setup is your standard text-based install and is a piece of cake if you&#8217;ve ever installed Linux before. When you&#8217;re through, you have the good ole&#8217; black and white text console staring at you. Not very interesting&#8230; But the really satisfying part is to fire up a web browser after the install and be able to point it to a working webGIS application. Anyone who has spent the time to set up the mapserver stack and its seemingly infinite dependencies can appreciate the amount of work this saves! </p>
+	<p>If you&#8217;re not into learning a new distro, there is always the <a href="http://www.maptools.org/fgs/">FGS</a> linux installer which will set up a similar software stack on pretty much any linux.</p>
+	<p>And for Desktop GIS, many linux distros have a selection of GIS apps in their package repositories (You&#8217;ll want to certainly grab GRASS, GDAL and QGIS) . <a href="http://fwtools.maptools.org/">FWTools</a> can be a good option on both Linux and Windows to get you up and running quickly. Finally there are a number of other more desktop-oriented distros for GIS including <a href="http://www.sourcepole.com/gis-knoppix/"> Knoppix GIS</a> and <a href="http://www.geolivre.org.br/modules/news/">GeoLivre</a>, both of which run as a live-cd so you can check it out before you install.</p>
+	<p>Anyways, back to sum up HostGIS Linux: </p>
+	<p>If you need to set up a GIS server with minimal fuss and you have some experience with Linux, you might like to try it out. It will save lots of time. </p>
+	<p>If you&#8217;re a GIS user who needs a graphic windows environment to do GIS work on the Desktop, HostGIS Linux will not really make you happy out-of-the-box. Of course, since HGL is slackware based, you <em>can</em> use the slackware package management system to build an impressive Desktop system. But if you don&#8217;t need to run a server or really care about having the latest versions, Ubuntu comes with a solid desktop environment and packages for alot of good GIS apps. </p>
+";}i:7;a:12:{s:5:"title";s:18:"More on Mapnik WMS";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=50";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=50#comments";s:7:"pubdate";s:31:"Thu, 18 May 2006 23:38:49 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:9:"WMSPython";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=50";s:11:"description";s:341:"	One of my initial complaints about the Mapnik WMS server was that it would not accept any parameters that were not in the OGC WMS spec. Some WMS clients will tag on extra parameters for various reasons and the OGC supports this in relation to vendor-specific parameters. The fix was pretty simple;in mapnik/ogcserver/common.py you can [...]";s:7:"content";a:1:{s:7:"encoded";s:2871:"	<p>One of my initial complaints about the Mapnik WMS server was that it would not accept any parameters that were not in the OGC WMS spec. Some WMS clients will tag on extra parameters for various reasons and the OGC supports this in relation to vendor-specific parameters. The fix was pretty simple;in <strong>mapnik/ogcserver/common.py</strong> you can simply comment out         </p>
+	<blockquote>
+	<p>        #for paramname in params.keys():<br />
+        #    if paramname not in self.SERVICE_PARAMS[requestname].keys():<br />
+        #        raise OGCException(&#8217;Unknown request parameter &#8220;%s&#8221;.&#8217; % paramname)
+</p></blockquote>
+	<p>to get the desired effect.</p>
+	<hr />
+	<p>There was also the question of speed and how it compared to other WMS servers such as Mapserver. Since I already had both a Mapnik and Mapserver WMS set up using the exact same data source, styled in the same fashion, it was pretty simple to write a quick python script that would smack each WMS server with a given number of back-to-back WMS GetMap requests:</p>
+	<blockquote>
+	<pre>
+#!/usr/bin/env python
+import urllib
+	
+server = sys.argv[1]
+hits = int(sys.argv[2])
+	
+if server == 'mapnik':
+    url = \"http://localhost/fcgi-bin/wms?VERSION=1.1.1&#038;REQUEST=GetMap&#038;SERVICE=WMS&#038;LAYERS=world_borders&#038;SRS=EPSG:4326&#038;BBOX=-4.313249999999993,20.803500000000003,59.58675000000002,52.75350000000002&#038;WIDTH=800&#038;HEIGHT=400&#038;FORMAT=image/png&#038;STYLES=&#038;TRANSPARENT=TRUE&#038;UNIQUEID=\"
+elif server == 'mapserver':
+    url = \"http://localhost/cgi-bin/mapserv?map=/home/perrygeo/mapfiles/world.map&#038;VERSION=1.1.1&#038;REQUEST=GetMap&#038;SERVICE=WMS&#038;LAYERS=worldborders&#038;SRS=EPSG:4326&#038;BBOX=-4.313249999999993,20.803500000000003,59.58675000000002,52.75350000000002&#038;WIDTH=800&#038;HEIGHT=400&#038;FORMAT=image/png&#038;STYLES=&#038;TRANSPARENT=TRUE&#038;UNIQUEID=\"
+	
+for i in range(0,hits):
+    urllib.urlretrieve(url)
+</pre></blockquote>
+	<p>Then just run the script from the command line, specifying the server and number of hits, and wrap it in the <em>time</em> command. Here are the results:</p>
+	<p><img src="/img/manik_vs_mapserv_speed.png" border="1"/></p>
+	<p>Pretty close. Mapserver was just slightly faster in every case. Now this is just a preliminary test and it would be interested to see a comparison:</p>
+	<ul>
+	<li> With larger datasets and more complex styling including classification and text labelling</li>
+	<li> With data from other sources such as postgis where the connection overhead might be significant</li>
+	<li> With Mapserver running as a fastcgi </li>
+	<li> With concurrent requests as opposed to back-to-back requests </li>
+	</ul>
+	<p>Overall though, my opinion of Mapnik WMS remains high and I&#8217;d love to put it in production use in the near future. Stay tuned&#8230;
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=50";}s:7:"summary";s:341:"	One of my initial complaints about the Mapnik WMS server was that it would not accept any parameters that were not in the OGC WMS spec. Some WMS clients will tag on extra parameters for various reasons and the OGC supports this in relation to vendor-specific parameters. The fix was pretty simple;in mapnik/ogcserver/common.py you can [...]";s:12:"atom_content";s:2871:"	<p>One of my initial complaints about the Mapnik WMS server was that it would not accept any parameters that were not in the OGC WMS spec. Some WMS clients will tag on extra parameters for various reasons and the OGC supports this in relation to vendor-specific parameters. The fix was pretty simple;in <strong>mapnik/ogcserver/common.py</strong> you can simply comment out         </p>
+	<blockquote>
+	<p>        #for paramname in params.keys():<br />
+        #    if paramname not in self.SERVICE_PARAMS[requestname].keys():<br />
+        #        raise OGCException(&#8217;Unknown request parameter &#8220;%s&#8221;.&#8217; % paramname)
+</p></blockquote>
+	<p>to get the desired effect.</p>
+	<hr />
+	<p>There was also the question of speed and how it compared to other WMS servers such as Mapserver. Since I already had both a Mapnik and Mapserver WMS set up using the exact same data source, styled in the same fashion, it was pretty simple to write a quick python script that would smack each WMS server with a given number of back-to-back WMS GetMap requests:</p>
+	<blockquote>
+	<pre>
+#!/usr/bin/env python
+import urllib
+	
+server = sys.argv[1]
+hits = int(sys.argv[2])
+	
+if server == 'mapnik':
+    url = \"http://localhost/fcgi-bin/wms?VERSION=1.1.1&#038;REQUEST=GetMap&#038;SERVICE=WMS&#038;LAYERS=world_borders&#038;SRS=EPSG:4326&#038;BBOX=-4.313249999999993,20.803500000000003,59.58675000000002,52.75350000000002&#038;WIDTH=800&#038;HEIGHT=400&#038;FORMAT=image/png&#038;STYLES=&#038;TRANSPARENT=TRUE&#038;UNIQUEID=\"
+elif server == 'mapserver':
+    url = \"http://localhost/cgi-bin/mapserv?map=/home/perrygeo/mapfiles/world.map&#038;VERSION=1.1.1&#038;REQUEST=GetMap&#038;SERVICE=WMS&#038;LAYERS=worldborders&#038;SRS=EPSG:4326&#038;BBOX=-4.313249999999993,20.803500000000003,59.58675000000002,52.75350000000002&#038;WIDTH=800&#038;HEIGHT=400&#038;FORMAT=image/png&#038;STYLES=&#038;TRANSPARENT=TRUE&#038;UNIQUEID=\"
+	
+for i in range(0,hits):
+    urllib.urlretrieve(url)
+</pre></blockquote>
+	<p>Then just run the script from the command line, specifying the server and number of hits, and wrap it in the <em>time</em> command. Here are the results:</p>
+	<p><img src="/img/manik_vs_mapserv_speed.png" border="1"/></p>
+	<p>Pretty close. Mapserver was just slightly faster in every case. Now this is just a preliminary test and it would be interested to see a comparison:</p>
+	<ul>
+	<li> With larger datasets and more complex styling including classification and text labelling</li>
+	<li> With data from other sources such as postgis where the connection overhead might be significant</li>
+	<li> With Mapserver running as a fastcgi </li>
+	<li> With concurrent requests as opposed to back-to-back requests </li>
+	</ul>
+	<p>Overall though, my opinion of Mapnik WMS remains high and I&#8217;d love to put it in production use in the near future. Stay tuned&#8230;
+</p>
+";}i:8;a:12:{s:5:"title";s:17:"Mapnik WMS Server";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=49";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=49#comments";s:7:"pubdate";s:31:"Thu, 18 May 2006 07:37:30 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:22:"GIS TutorialsWMSPython";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=49";s:11:"description";s:332:"	A few months ago,  Mapnik came onto my radar and I was immediately impressed with the beautiful cartography. But, until recently, it was just a C++ libary with some python bindings that could be used to programmatically build nice map images from shapfiles, geotiffs or postgis layers. There were no common interfaces such as [...]";s:7:"content";a:1:{s:7:"encoded";s:7633:"	<p>A few months ago, <a href="http://mapnik.org/"> Mapnik</a> came onto my radar and I was immediately impressed with the <a href="http://mapnik.org/maps/">beautiful</a> <a href="http://static.flickr.com/35/106561736_afcdc30ddb_o.png">cartography</a>. But, until recently, it was just a C++ libary with some python bindings that could be used to programmatically build nice map images from shapfiles, geotiffs or postgis layers. There were no common interfaces such as WMS to access mapnik&#8230; until last month. Jean Francois Doyon recently added <a href="http://mapnik.org/news/2006/apr/18/wms/">a prototype WMS interface</a> to Mapnik. It runs as a fastcgi script under apache. It is still a bit rough around the edges but the result is well worth a little extra setup effort. </p>
+	<p>I set up Mapnik as a WMS server recently and would like to share my process and results. This tutorial assumes you already have python, postgresql/postgis, proj4, python imaging library and apache2 already running. The examples are for Ubuntu Dapper Drake.. they may work well on other versions of Ubuntu and Debian but for other *nixes (and certainly windows) many things may need to be tweaked.</p>
+	<p>First off, we have to install the base mapnik libs. These depend on the boost python bindings and the whole compile process is very simple (if a bit slow) in Ubuntu:</p>
+	<blockquote><pre>
+sudo apt-get install \
+ libboost-python1.33.1 libboost-python-dev \
+ libboost-regex1.33.1 libboost-regex-dev \
+ libboost-serialization-dev \
+ libboost-signals1.33.1 libboost-signals-dev \
+ libboost-thread1.33.1 libboost-thread-dev \
+ libboost-program-options1.33.1 libboost-program-options-dev \
+ libboost-filesystem1.33.1 libboost-filesystem-dev \
+ libboost-iostreams1.33.1 libboost-iostreams-dev
+cd ~/src
+svn checkout svn://svn.berlios.de/mapnik/trunk mapnik
+cd mapnik
+python scons/scons.py PYTHON=/usr/bin/python PGSQL_INCLUDES=/usr/local/include/postgresql \
+  PGSQL_LIBS=/usr/local/lib/postgresql BOOST_INCLUDES=/usr/include/boost BOOST_LIBS=/usr/lib
+sudo python scons/scons.py install PYTHON=/usr/bin/python PGSQL_INCLUDES=/usr/local/include/postgresql \
+  PGSQL_LIBS=/usr/local/lib/postgresql BOOST_INCLUDES=/usr/include/boost BOOST_LIBS=/usr/lib
+sudo ldconfig</pre></blockquote>
+	<p>Now we have to set up some additional libs in order to run the WMS:</p>
+	<blockquote>
+	<pre>
+cd ~/src
+wget http://easynews.dl.sourceforge.net/sourceforge/jonpy/jonpy-0.06.tar.gz
+tar -xzvf jonpy-0.06.tar.gz
+cd jonpy-0.06/
+sudo python setup.py install
+	</pre>
+	</blockquote>
+	<blockquote>
+	<pre>
+# copy the ogcserver stuff into its own dir
+mkdir /opt/mapnik; cd /opt/mapnik
+cp ~/src/mapnik/utils/ogcserver/* .
+	</pre>
+	</blockquote>
+	<p>Now you&#8217;ll want to edit the <strong>ogcserver.conf</strong> file and change the following lines. The <em>module</em> is essentially the name of a python file (minus the .py extension) that we&#8217;ll create later. The height and width just cutoff the maximum possible image size that can be requested.</p>
+	<blockquote>
+	<pre>
+	module=worldMapFactory
+	maxheight=2048
+	maxwidth=2048
+</pre>
+	</blockquote>
+	<p>Create our &#8220;map factory&#8221; module defining data sources, styles, etc.( <strong>worldMapFactory.py</strong> ). Most of this configuration is explained in the mapnik docs and well-commented examples. One thing to note is that the shapefile must be specified <em>without</em> the .shp extension :</p>
+	<blockquote>
+	<pre>
+from mapnik.ogcserver.WMS import BaseWMSFactory
+from mapnik import *
+	
+class WMSFactory(BaseWMSFactory):
+	
+        def __init__(self):
+                BaseWMSFactory.__init__(self)
+                sty = Style()
+	
+		rl = Rule()
+		rl.symbols.append(PolygonSymbolizer(Color(248,216,136)))
+		rl.symbols.append(LineSymbolizer(Color(0,0,0),1))
+                sty.rules.append( rl )
+	
+		self.register_style('style1', sty)
+	
+                lyr = Layer(name='world_borders', type='shape', \
+                            file='/opt/data/world_borders/world_borders')
+	
+                lyr.styles.append('style1')
+                self.register_layer(lyr)
+                self.finalize()
+</pre></blockquote>
+	<p>Now we need to set up apache2 to handle fastcgi:</p>
+	<blockquote>
+	<pre>
+sudo apt-get install libapache2-mod-fcgid
+sudo a2enmod fcgid
+</pre>
+	</blockquote>
+	<p>&#8230; and add some config lines to the apache config files, usually /etc/apache/httpd.conf but, in the case of this Ubuntu install, <strong>/etc/apache2/sites-enabled/default</strong> :</p>
+	<blockquote>
+	<pre>
+	
+        ScriptAlias /fcgi-bin/ /usr/lib/fcgi-bin/
+        &lt; Directory \"/usr/lib/fcgi-bin\" &gt;
+                AllowOverride All
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+                SetHandler fastcgi-script
+        &lt; Directory&gt;
+	</pre>
+	</blockquote>
+	<p>Create the fast-cgi directory refered to by apache</p>
+	<blockquote>
+	<pre>
+sudo mkdir /usr/lib/fcgi-bin
+</pre>
+	</blockquote>
+	<p>Now create the actual server script as <strong>/usr/lib/fcgi-bin/wms</strong></p>
+	<blockquote>
+	<pre>
+#!/usr/bin/env python
+	
+# Your mapnik dir containing the map factory
+# must be in the python path!
+	
+import sys
+sys.path.append('/opt/mapnik')
+	
+from mapnik.ogcserver.cgiserver import Handler
+import jon.fcgi as fcgi
+	
+class WMSHandler(Handler):
+    configpath = '/opt/mapnik/ogcserver.conf'
+	
+fcgi.Server({fcgi.FCGI_RESPONDER: WMSHandler}).run()
+</pre>
+	</blockquote>
+	<p>Finally restart the apache server </p>
+	<blockquote>
+	<pre>
+sudo /etc/init.d/apache2 force-reload
+</pre>
+	</blockquote>
+	<p>Now you can access it with a WMS request like so:</p>
+	<blockquote>
+	<pre>
+http://localhost/fcgi-bin/wms?VERSION=1.1.1&#038;REQUEST=GetMap&#038;LAYERS=world_borders&#038;
+FORMAT=image/png&#038;SRS=EPSG:4326&#038;STYLES=&#038;BBOX=-81.54375,-58.3125,-59.04375,-47.0625&#038;
+EXCEPTIONS=application/vnd.ogc.se_inimage&#038;width=600&#038;height=300
+</pre>
+	</blockquote>
+	<p><img src="/img/mapnik.png" border="1"/></p>
+	<p>Compare the linework with a comparable WMS service with UMN Mapserver on the backend. I&#8217;ll let the results speak for themselves&#8230;</p>
+	<p><img src="/img/mapserv.png" border="1"/></p>
+	<p>Even if it&#8217;s map rendering is smooth, Mapnik&#8217;s WMS server is still a bit rough around the edges:</p>
+	<ul>
+	<li>It does not support GetFeatureInfo requests</li>
+	<li>The server has trouble with extra parameters. For instance some WMS clients like mapbuilder like to<br />
+tag on an extra &#8216;UNIQUEID&#8217; parameter to the URL and this causes an unnecessary error with mapnik&#8217;s WMS server.</li>
+	<li>Mapnik intself does not support reprojection </li>
+	<li> It only supports shapefiles, geotiffs and postgis layers.</li>
+</ul>
+	<p>The readme.txt file in docs/ogcserver/ directory of the recent mapnik SVN checkout has a full list of known features and caveats so refer to them for the complete story.</p>
+	<p>But, all in all, I am <em>very</em> impressed with the quality of the Mapnik WMS server. I figured that, since Mapnik&#8217;s goal has been high-quality cartographic output, speed would be sacrificed but I didn&#8217;t notice any significant lag; on the contrary I think it was actually about on-par with Mapserver running as a CGI. If it was any slower, I didn&#8217; t notice it immediately. But then again it was only working with a relatively small shapefile and I was the only user. I&#8217;d like to do more rigourous stress tests on the Mapnik WMS to see how it compares to Mapserver and Geoserver under varying loads with greater volumes of data.</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=49";}s:7:"summary";s:332:"	A few months ago,  Mapnik came onto my radar and I was immediately impressed with the beautiful cartography. But, until recently, it was just a C++ libary with some python bindings that could be used to programmatically build nice map images from shapfiles, geotiffs or postgis layers. There were no common interfaces such as [...]";s:12:"atom_content";s:7633:"	<p>A few months ago, <a href="http://mapnik.org/"> Mapnik</a> came onto my radar and I was immediately impressed with the <a href="http://mapnik.org/maps/">beautiful</a> <a href="http://static.flickr.com/35/106561736_afcdc30ddb_o.png">cartography</a>. But, until recently, it was just a C++ libary with some python bindings that could be used to programmatically build nice map images from shapfiles, geotiffs or postgis layers. There were no common interfaces such as WMS to access mapnik&#8230; until last month. Jean Francois Doyon recently added <a href="http://mapnik.org/news/2006/apr/18/wms/">a prototype WMS interface</a> to Mapnik. It runs as a fastcgi script under apache. It is still a bit rough around the edges but the result is well worth a little extra setup effort. </p>
+	<p>I set up Mapnik as a WMS server recently and would like to share my process and results. This tutorial assumes you already have python, postgresql/postgis, proj4, python imaging library and apache2 already running. The examples are for Ubuntu Dapper Drake.. they may work well on other versions of Ubuntu and Debian but for other *nixes (and certainly windows) many things may need to be tweaked.</p>
+	<p>First off, we have to install the base mapnik libs. These depend on the boost python bindings and the whole compile process is very simple (if a bit slow) in Ubuntu:</p>
+	<blockquote><pre>
+sudo apt-get install \
+ libboost-python1.33.1 libboost-python-dev \
+ libboost-regex1.33.1 libboost-regex-dev \
+ libboost-serialization-dev \
+ libboost-signals1.33.1 libboost-signals-dev \
+ libboost-thread1.33.1 libboost-thread-dev \
+ libboost-program-options1.33.1 libboost-program-options-dev \
+ libboost-filesystem1.33.1 libboost-filesystem-dev \
+ libboost-iostreams1.33.1 libboost-iostreams-dev
+cd ~/src
+svn checkout svn://svn.berlios.de/mapnik/trunk mapnik
+cd mapnik
+python scons/scons.py PYTHON=/usr/bin/python PGSQL_INCLUDES=/usr/local/include/postgresql \
+  PGSQL_LIBS=/usr/local/lib/postgresql BOOST_INCLUDES=/usr/include/boost BOOST_LIBS=/usr/lib
+sudo python scons/scons.py install PYTHON=/usr/bin/python PGSQL_INCLUDES=/usr/local/include/postgresql \
+  PGSQL_LIBS=/usr/local/lib/postgresql BOOST_INCLUDES=/usr/include/boost BOOST_LIBS=/usr/lib
+sudo ldconfig</pre></blockquote>
+	<p>Now we have to set up some additional libs in order to run the WMS:</p>
+	<blockquote>
+	<pre>
+cd ~/src
+wget http://easynews.dl.sourceforge.net/sourceforge/jonpy/jonpy-0.06.tar.gz
+tar -xzvf jonpy-0.06.tar.gz
+cd jonpy-0.06/
+sudo python setup.py install
+	</pre>
+	</blockquote>
+	<blockquote>
+	<pre>
+# copy the ogcserver stuff into its own dir
+mkdir /opt/mapnik; cd /opt/mapnik
+cp ~/src/mapnik/utils/ogcserver/* .
+	</pre>
+	</blockquote>
+	<p>Now you&#8217;ll want to edit the <strong>ogcserver.conf</strong> file and change the following lines. The <em>module</em> is essentially the name of a python file (minus the .py extension) that we&#8217;ll create later. The height and width just cutoff the maximum possible image size that can be requested.</p>
+	<blockquote>
+	<pre>
+	module=worldMapFactory
+	maxheight=2048
+	maxwidth=2048
+</pre>
+	</blockquote>
+	<p>Create our &#8220;map factory&#8221; module defining data sources, styles, etc.( <strong>worldMapFactory.py</strong> ). Most of this configuration is explained in the mapnik docs and well-commented examples. One thing to note is that the shapefile must be specified <em>without</em> the .shp extension :</p>
+	<blockquote>
+	<pre>
+from mapnik.ogcserver.WMS import BaseWMSFactory
+from mapnik import *
+	
+class WMSFactory(BaseWMSFactory):
+	
+        def __init__(self):
+                BaseWMSFactory.__init__(self)
+                sty = Style()
+	
+		rl = Rule()
+		rl.symbols.append(PolygonSymbolizer(Color(248,216,136)))
+		rl.symbols.append(LineSymbolizer(Color(0,0,0),1))
+                sty.rules.append( rl )
+	
+		self.register_style('style1', sty)
+	
+                lyr = Layer(name='world_borders', type='shape', \
+                            file='/opt/data/world_borders/world_borders')
+	
+                lyr.styles.append('style1')
+                self.register_layer(lyr)
+                self.finalize()
+</pre></blockquote>
+	<p>Now we need to set up apache2 to handle fastcgi:</p>
+	<blockquote>
+	<pre>
+sudo apt-get install libapache2-mod-fcgid
+sudo a2enmod fcgid
+</pre>
+	</blockquote>
+	<p>&#8230; and add some config lines to the apache config files, usually /etc/apache/httpd.conf but, in the case of this Ubuntu install, <strong>/etc/apache2/sites-enabled/default</strong> :</p>
+	<blockquote>
+	<pre>
+	
+        ScriptAlias /fcgi-bin/ /usr/lib/fcgi-bin/
+        &lt; Directory \"/usr/lib/fcgi-bin\" &gt;
+                AllowOverride All
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+                SetHandler fastcgi-script
+        &lt; Directory&gt;
+	</pre>
+	</blockquote>
+	<p>Create the fast-cgi directory refered to by apache</p>
+	<blockquote>
+	<pre>
+sudo mkdir /usr/lib/fcgi-bin
+</pre>
+	</blockquote>
+	<p>Now create the actual server script as <strong>/usr/lib/fcgi-bin/wms</strong></p>
+	<blockquote>
+	<pre>
+#!/usr/bin/env python
+	
+# Your mapnik dir containing the map factory
+# must be in the python path!
+	
+import sys
+sys.path.append('/opt/mapnik')
+	
+from mapnik.ogcserver.cgiserver import Handler
+import jon.fcgi as fcgi
+	
+class WMSHandler(Handler):
+    configpath = '/opt/mapnik/ogcserver.conf'
+	
+fcgi.Server({fcgi.FCGI_RESPONDER: WMSHandler}).run()
+</pre>
+	</blockquote>
+	<p>Finally restart the apache server </p>
+	<blockquote>
+	<pre>
+sudo /etc/init.d/apache2 force-reload
+</pre>
+	</blockquote>
+	<p>Now you can access it with a WMS request like so:</p>
+	<blockquote>
+	<pre>
+http://localhost/fcgi-bin/wms?VERSION=1.1.1&#038;REQUEST=GetMap&#038;LAYERS=world_borders&#038;
+FORMAT=image/png&#038;SRS=EPSG:4326&#038;STYLES=&#038;BBOX=-81.54375,-58.3125,-59.04375,-47.0625&#038;
+EXCEPTIONS=application/vnd.ogc.se_inimage&#038;width=600&#038;height=300
+</pre>
+	</blockquote>
+	<p><img src="/img/mapnik.png" border="1"/></p>
+	<p>Compare the linework with a comparable WMS service with UMN Mapserver on the backend. I&#8217;ll let the results speak for themselves&#8230;</p>
+	<p><img src="/img/mapserv.png" border="1"/></p>
+	<p>Even if it&#8217;s map rendering is smooth, Mapnik&#8217;s WMS server is still a bit rough around the edges:</p>
+	<ul>
+	<li>It does not support GetFeatureInfo requests</li>
+	<li>The server has trouble with extra parameters. For instance some WMS clients like mapbuilder like to<br />
+tag on an extra &#8216;UNIQUEID&#8217; parameter to the URL and this causes an unnecessary error with mapnik&#8217;s WMS server.</li>
+	<li>Mapnik intself does not support reprojection </li>
+	<li> It only supports shapefiles, geotiffs and postgis layers.</li>
+</ul>
+	<p>The readme.txt file in docs/ogcserver/ directory of the recent mapnik SVN checkout has a full list of known features and caveats so refer to them for the complete story.</p>
+	<p>But, all in all, I am <em>very</em> impressed with the quality of the Mapnik WMS server. I figured that, since Mapnik&#8217;s goal has been high-quality cartographic output, speed would be sacrificed but I didn&#8217;t notice any significant lag; on the contrary I think it was actually about on-par with Mapserver running as a CGI. If it was any slower, I didn&#8217; t notice it immediately. But then again it was only working with a relatively small shapefile and I was the only user. I&#8217;d like to do more rigourous stress tests on the Mapnik WMS to see how it compares to Mapserver and Geoserver under varying loads with greater volumes of data.</p>
+";}i:9;a:12:{s:5:"title";s:35:"Educational ways to waste some time";s:4:"link";s:39:"http://www.perrygeo.net/wordpress/?p=48";s:8:"comments";s:48:"http://www.perrygeo.net/wordpress/?p=48#comments";s:7:"pubdate";s:31:"Sat, 13 May 2006 04:09:46 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"perrygeo";}s:8:"category";s:13:"Uncategorized";s:4:"guid";s:39:"http://www.perrygeo.net/wordpress/?p=48";s:11:"description";s:332:"	It&#8217;s always great to find fun internet-based games that actually challenge you in &#8220;real world&#8221; skills.  (And no, working on your wizard&#8217;s Ether Flame spell in EverQuest is NOT a real world skill). After all, if you going to waste some time, it might as well be educational, right. Can you tell that my [...]";s:7:"content";a:1:{s:7:"encoded";s:1928:"	<p>It&#8217;s always great to find fun internet-based games that actually challenge you in &#8220;real world&#8221; skills.  (And no, working on your wizard&#8217;s Ether Flame spell in EverQuest is NOT a real world skill). After all, if you going to waste some time, it might as well be educational, right. Can you tell that my mother is a school teacher?  Happy Mothers day!</p>
+	<p>Anyways, these might be old news to some folks but I&#8217;ve found two fun games that will keep your brain fresh.</p>
+	<p>First, there is <a href="http://geosense.net">GeoSense</a>. This is a fanstastic interactive game that pits users one-on-one in a timed geography quiz. You&#8217;re given a city and country and you have 10 seconds to click the map. The player with the best combination of speed and accuracy wins. Given <a href="http://news.nationalgeographic.com/news/2006/05/0502_060502_geography.html">American youth&#8217;s horrible knowledge of geography</a>, this site could be really helpful.  I would recommend it to children of all ages if it weren&#8217;t for the chatroom being infested with pubescent teen sex fiends. Just go use use myspace or something&#8230;</p>
+	<p>Secondly, for you Python programmers out there, there is the <a href="http://www.pythonchallenge.com/">Python Challenge</a>, a surprisingly challenging and mind-boggling course of puzzles that can be solved with Python. Actually some people have solved them with UNIX shell commands, perl or ruby, but many of the hints are python specific. They require a good dose of logic, persistence, knowledge of python libraries and a knack for finding patterns. Basically your goal is, given a minimal set of hints to find and process the data that will lead you to the next URL. I&#8217;m on level 9 right now and, well, I&#8217;m not going to admit to anyone how long it took to get there. Addictively challenging&#8230;</p>
+	<p>Thats it for now. Have fun.</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:49:"http://www.perrygeo.net/wordpress/?feed=rss2&p=48";}s:7:"summary";s:332:"	It&#8217;s always great to find fun internet-based games that actually challenge you in &#8220;real world&#8221; skills.  (And no, working on your wizard&#8217;s Ether Flame spell in EverQuest is NOT a real world skill). After all, if you going to waste some time, it might as well be educational, right. Can you tell that my [...]";s:12:"atom_content";s:1928:"	<p>It&#8217;s always great to find fun internet-based games that actually challenge you in &#8220;real world&#8221; skills.  (And no, working on your wizard&#8217;s Ether Flame spell in EverQuest is NOT a real world skill). After all, if you going to waste some time, it might as well be educational, right. Can you tell that my mother is a school teacher?  Happy Mothers day!</p>
+	<p>Anyways, these might be old news to some folks but I&#8217;ve found two fun games that will keep your brain fresh.</p>
+	<p>First, there is <a href="http://geosense.net">GeoSense</a>. This is a fanstastic interactive game that pits users one-on-one in a timed geography quiz. You&#8217;re given a city and country and you have 10 seconds to click the map. The player with the best combination of speed and accuracy wins. Given <a href="http://news.nationalgeographic.com/news/2006/05/0502_060502_geography.html">American youth&#8217;s horrible knowledge of geography</a>, this site could be really helpful.  I would recommend it to children of all ages if it weren&#8217;t for the chatroom being infested with pubescent teen sex fiends. Just go use use myspace or something&#8230;</p>
+	<p>Secondly, for you Python programmers out there, there is the <a href="http://www.pythonchallenge.com/">Python Challenge</a>, a surprisingly challenging and mind-boggling course of puzzles that can be solved with Python. Actually some people have solved them with UNIX shell commands, perl or ruby, but many of the hints are python specific. They require a good dose of logic, persistence, knowledge of python libraries and a knack for finding patterns. Basically your goal is, given a minimal set of hints to find and process the data that will lead you to the next URL. I&#8217;m on level 9 right now and, well, I&#8217;m not going to admit to anyone how long it took to get there. Addictively challenging&#8230;</p>
+	<p>Thats it for now. Have fun.</p>
+";}}s:7:"channel";a:7:{s:5:"title";s:8:"PerryGeo";s:4:"link";s:33:"http://www.perrygeo.net/wordpress";s:11:"description";s:51:"Matt Perry's random adventures with geospatial data";s:7:"pubdate";s:31:"Thu, 27 Jul 2006 22:40:00 +0000";s:9:"generator";s:29:"http://wordpress.org/?v=1.5.2";s:8:"language";s:2:"en";s:7:"tagline";s:51:"Matt Perry's random adventures with geospatial data";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:4:"etag";s:36:""0b588c919012bb6e2603dd4e80c3cafc"
+";s:13:"last_modified";s:31:"Thu, 27 Jul 2006 22:40:00 GMT
+";}

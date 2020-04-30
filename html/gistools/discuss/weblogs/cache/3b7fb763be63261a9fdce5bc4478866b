@@ -1,0 +1,657 @@
+O:9:"MagpieRSS":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:25:{i:0;a:10:{s:4:"info";s:171:"<id >tag:blogger.com,1999:blog-18549845.post-8039721773974334076</id><published >2008-05-28T17:20:00.000-07:00</published><updated >2008-05-28T19:22:28.574-07:00</updated>";s:5:"title";s:12:"Neo Geo Blog";s:12:"atom_content";s:1544:"<span class="byline-author">Posted by Michael Weiss-Malik, KML Product Manager</span>
+
+<p>I have good news and bad news. Let's start with the bad.
+
+<p><span style="font-weight: bold;">The bad:</span> After 2 years, 6 months, and 14 days of dedicated developer community service, the Official Google Maps API Blog is being retired. That's right... the blog you're reading right now, right here, is no more, starting today. No more news will be posted here.
+
+<p><span style="font-weight: bold;">The good:</span> All is not lost! A new blog is taking this blog's place: The <a href="http://googlegeodevelopers.blogspot.com/">Google Geo Developers Blog</a>. Hop on over there to see the first post and get the <a href="http://googlegeodevelopers.blogspot.com/2008/05/introducing-our-geo-developers-blog.html">full story on the change</a>.
+
+<p>So if you're reading this post in an RSS reader, be sure to subscribe to the new blog's <a href="http://googlegeodevelopers.blogspot.com/atom.xml">feed</a>. And if you're reading this post right on blogger itself, be sure to update your bookmark. Because there will still be plenty of continued Maps API news... you just won't be able to catch it here.
+
+<p>See you all over at the new blog!<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=SBYVwJzC"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/YBBDcNpTW6Q" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8039721773974334076";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8039721773974334076";s:4:"link";s:89:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/YBBDcNpTW6Q/neo-geo-blog.html";s:11:"author_name";s:19:"Michael Weiss-Malik";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15356003617980878435";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:59:"http://googlemapsapi.blogspot.com/2008/05/neo-geo-blog.html";}}i:1;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-3191077262940917444";s:9:"published";s:29:"2008-05-28T10:50:00.000-07:00";s:7:"updated";s:29:"2008-05-29T13:27:17.959-07:00";s:5:"title";s:68:"App Engine, Local Search, & Maps: Making Static Maps... Interactive?";s:12:"atom_content";s:4591:"<span class="byline-author">Posted by Ben Lisbakken, AJAX APIs Team</span>
+<p>
+JavaScript and Flash are great for putting Google Maps on your website, but sometimes they just won't do.  For mobile browsers or users with dial-up connections, simpler is better.  So I wrote an open source <a href="http://nonjslocalsearch.appspot.com">non-JavaScript version of Google Maps</a> which is designed to show how easy it is to write an application on App Engine that makes use of two new APIs from Google: The Static Maps API and the Local Search API's REST interface.  It doesn't have advanced features like street view and public transportation, but it gives you a searchable map that you can zoom in/out on as well as save locations.  It also automatically saves your last map view so that every time you go back to the site it will show you what you were last looking at.  Check out the <a href="http://code.google.com/p/google-ajax-examples/source/browse/trunk/nonjslocalsearch/localSearch.py">source code</a>.
+</p>
+<p>
+It uses <a href="http://code.google.com/appengine/">App Engine</a> to store saved points, the <a href="http://code.google.com/apis/ajaxsearch/documentation/#fonje">AJAX LocalSearch REST API</a> for search functionality, and the <a href="http://code.google.com/apis/maps/documentation/staticmaps/">Static Maps API</a> to display maps.  App Engine is easy to learn and the data store is useful for this kind of application.  The REST API for LocalSearch is also very simple.  For more information on it, go <a href="http://googleajaxsearchapi.blogspot.com/2008/05/non-javascript-localsearch.html">here</a>.
+</p>
+<p>
+To use the Static Maps API, you just need to create a URL with the proper parameters for your desired map view.  Keep in mind that you need to set the zoom level (unless you are specifying multiple points &mdash; then it's calculated for you).  In the vast majority of cases, this is completely fine.  In my case, though, I needed to know what the zoom level was, so that I could give the user the option to zoom in/out. That meant coming up with calculations of the zoom both for the multiple points and single point case, and that was the trickiest part of the app. 
+</p>
+<p>
+If you use the AJAX Local Search and it returns one result then there will be a viewport object returned with it.  This viewport contains the Northeast and Southwest latitude/longitude bounds that are optimal for displaying this point.  However, Static Maps only accept zoom levels and center points.  Here's the Python to generate that information:
+<pre class="code">viewport = json['responseData']['viewport']
+mercator_projection = MercatorProjection(18) # Checkout the MercatorProjection class
+southwest = [float(viewport['sw']['lat']),float(viewport['sw']['lng'])]
+northeast = [float(viewport['ne']['lat']),float(viewport['ne']['lng'])]
+bounds = [southwest, northeast]
+zoom_level = mercator_projection.CalculateBoundsZoomLevel(bounds, MAP_SIZE)</pre>At this point you will have everything you need to construct the map: the center point (the Local Search point), zoom level, marker point.
+</p>
+<p>
+Then there's the case where you have multiple points returned by the AJAX Local Search.  Since we will have a collection of latitudes and longitude points that we want to display we can just find the min/maxes, do some rounding, and voilà you get a bounding box.  With a bounding box and a calculated center point, you can repeat the same steps as before.
+<pre class="code">mercator_projection = MercatorProjection(18)
+bounds = CalcBoundsFromPoints(lats, lngs)
+center_point = CalcCenterFromBounds(bounds)
+zoom_level = mercator_projection.CalculateBoundsZoomLevel(bounds, MAP_SIZE)</pre>
+</p>
+<p>
+From line <a href="http://code.google.com/p/google-ajax-examples/source/browse/trunk/nonjslocalsearch/localSearch.py#121">121</a> to about <a href="http://code.google.com/p/google-ajax-examples/source/browse/trunk/nonjslocalsearch/localSearch.py#285">285</a> you'll find all the necessary functions for the situations described above. Try using this code to create your own interactive version of Static Maps, and let us know in <a href="http://groups.google.com/group/Google-Maps-API/">the forum</a> if you have questions or just want to show off your nifty app.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=JL1j5nqE"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/N4xxLMVQ2ys" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3191077262940917444";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3191077262940917444";s:4:"link";s:112:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/N4xxLMVQ2ys/app-engine-local-search-maps-making.html";s:11:"author_name";s:13:"Ben Lisbakken";s:10:"author_uri";s:51:"http://www.blogger.com/profile/08854985995362386095";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:82:"http://googlemapsapi.blogspot.com/2008/05/app-engine-local-search-maps-making.html";}}i:2;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8151042001319998318";s:9:"published";s:29:"2008-05-22T10:05:00.000-07:00";s:7:"updated";s:29:"2008-05-22T23:22:05.651-07:00";s:5:"title";s:33:"geo search 2.0: Data In, Data Out";s:12:"atom_content";s:4339:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+
+<p>
+Last week during the geo madness of Where2.0 and WhereCamp, we announced two enhancements in geo search to make it both easier for developers to get their data into our geo search index and easier for developers to get data back out of the index:
+</p>
+<ul>
+<li><b>Geo Sitemaps:</b> Sitemaps are a protocol that bots use to index content from websites. Last year, we announced the ability to include KML/GeoRSS files in regular sitemaps just like a normal web resource. This year, we announce a special extension for sitemaps that adds geo-specific tags and makes it easier for us to index. To get your geo content indexed as fast as possible, just submit the sitemap to <a href="http://www.google.com/webmasters/">Google Webmaster Central</a>. For more information on creating a KML file to include in a sitemap, read this article in the <a href="http://code.google.com/apis/kml/documentation/kmlSearch.html">KML documentation</a>. An example geo sitemap listing a KML and a GeoRSS file is shown below:</li>
+
+<pre>
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0"&gt;
+&lt;url&gt;
+   &lt;loc&gt;http://www.example.com/download?format=kml&lt;/loc&gt;
+   &lt;geo:geo&gt;
+       &lt;geo:format&gt;kml&lt;/geo:format&gt;
+   &lt;/geo:geo&gt;
+&lt;/url&gt;
+&lt;url&gt;
+   &lt;loc&gt;http://www.example.com/download?format=georss&lt;/loc&gt;
+   &lt;geo:geo&gt;
+       &lt;geo:format>georss&lt;/geo:format&gt;
+   &lt;/geo:geo&gt;
+&lt;/url&gt;
+&lt;/urlset&gt;
+</pre>
+<li><b>Geo search in the API: </b> The Local Search API has traditionally been used to return business listings and address geocodes. As of last week, it can now be used to retrieve any of the content we have in our geo index. There are a couple different ways to do this, depending on how you use the API. If you're using the LocalSearchControl, here's some sample code (and <a href="http://www.google.com/uds/solutions/localsearch/default.html">live example</a>) that will return blended results:
+</li>
+<pre>
+var options = {
+  listingTypes : GlocalSearch.TYPE_BLENDED_RESULTS
+}
+map.addControl(new google.maps.LocalSearch(options));
+</pre>
+
+If you're using the Local Search API from Javascript, here's some sample code to return only results from indexed geo files:
+<pre>
+var ls = new GlocalSearch();
+ls.setRestriction(GSearch.RESTRICT_TYPE, GlocalSearch.TYPE_KMLONLY_RESULTS);
+</pre>
+
+And finally, if you're using the Local Search API from somewhere other than Javascript - for example, with our new nifty Maps API for Flash - here's some sample AS3 code (and <a href="http://gmaps-samples-flash.googlecode.com/svn/trunk/examples/LocalSearcher.html">live example</a>) to return only results from indexed geo files PLUS add a site restrict operator to limit it to results from platial.com:
+
+<pre>
+service.url = 'http://ajax.googleapis.com/ajax/services/search/local';
+service.request.q = "site: platial.com" + " " +  address.text;
+service.request.mrt = "kmlonly";
+service.addEventListener(ResultEvent.RESULT, onServerResponse);
+service.send();
+</pre>
+
+</ul>
+
+<p>
+There are (atleast) two really cool consequences of this news: 1) you'll be able to enable users of your mashups to instantly find international results where previously none existed, and to be able to find results for non-standard searches (e.g. "dog parks"), and 2) by indexing your content, waiting a few weeks, and then using the local search with a "site:yourdomain.com" appended to the query, you get to leverage the power of google search on your own content with barely any code of your own. 
+</p>
+<p>
+So what are you waiting for? Give us your geo sitemap, use our API calls, and let us know what you think in the <a href="http://groups.google.com/group/Google-Maps-API/">Maps API</a>, <a href="http://groups.google.com/group/kml-support">KML</a>, or <a href="http://groups.google.com/group/Google-AJAX-Search-API">AJAX API</a> forums.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=U7J0N3TN"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/vYIjPkDg43s" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8151042001319998318";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8151042001319998318";s:4:"link";s:107:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/vYIjPkDg43s/geo-search-20-data-in-data-out.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:77:"http://googlemapsapi.blogspot.com/2008/05/geo-search-20-data-in-data-out.html";}}i:3;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8421343985912079291";s:9:"published";s:29:"2008-05-19T17:04:00.000-07:00";s:7:"updated";s:29:"2008-05-19T17:04:58.356-07:00";s:5:"title";s:18:"libkml Marches On!";s:12:"atom_content";s:3001:"<span class="byline-author">Posted by Mano Marks, Geo APIs Team</span>
+
+<p>Google has released version 0.2 of <a href="http://code.google.com/p/libkml/">libkml</a>, an open source library for serializing and deserializing KML files. libkml now uses a memory management scheme based on "smart pointers", and has deprecated the use of SCons. On Linux and Mac OS X it now use the traditional automake, and on Windows Microsoft Visual Studio. The "smart pointer" scheme presently restricts support for some alternate language bindings, so libkml 0.2 can only be called from C++, Java, and Python. Version 0.1 also supported PHP, Perl, and Ruby, and is still available in the subversion repository if you're interested. We plan on restoring the those bindings as soon as we can.</p>
+
+<p>Check out the <a href="http://code.google.com/p/libkml/wiki/UserGuide02x">User Guide</a>, and particularly the <a href="http://code.google.com/p/libkml/wiki/UserGuide02x#Future_development">future development list</a>.</p>
+
+Here's an example of what the code looks like:</p>
+<pre>
+// createkml.cc
+// This program uses the KmlFactory to create a Point Placemark and
+// prints the resultant KML on standard output.
+
+#include <iostream>
+#include <string>
+#include "kml/dom.h"
+
+// libkml types are in the kmldom namespace
+using kmldom::CoordinatesPtr;
+using kmldom::KmlPtr;
+using kmldom::KmlFactory;
+using kmldom::PlacemarkPtr;
+using kmldom::PointPtr;
+
+int main() {
+  // Get the factory singleton to create KML elements.
+  KmlFactory* factory = KmlFactory::GetFactory();
+
+  // Create <coordinates>.
+  CoordinatesPtr coordinates = factory->CreateCoordinates();
+  // Create <coordinates>-122.0816695,37.42052549<coordinates>
+  coordinates->add_point2(-122.0816695,37.42052549);
+
+  // Create <Point> and give it <coordinates>.
+  PointPtr point = factory->CreatePoint();
+  point->set_coordinates(coordinates); 
+
+  // Create <Placemark> and give it a <name> and the <Point>.
+  PlacemarkPtr placemark = factory->CreatePlacemark();
+  placemark->set_name("Cool Statue");
+  placemark->set_geometry(point);
+
+  // Create <kml> and give it <Placemark>.
+  KmlPtr kml = factory->CreateKml();
+  kml->set_feature(placemark);
+
+  // Serialize to XML
+  std::string xml = kmldom::SerializePretty(kml);
+
+  // Print to stdout
+  std::cout << xml;
+}</pre>
+<p>
+<p>The engineers who worked on it put a lot of thought into making it fast and light weight. However, it is an alpha release. We really would love to have comments and feedback on it, both in the <a href="http://groups.google.com/group/kml-support/">KML Developer Support forum</a> and in the <a href="http://code.google.com/p/libkml/issues/list">libkml issue tracker</a>.<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=3HzuDtdB"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/jUAyEVQW-a8" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8421343985912079291";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8421343985912079291";s:4:"link";s:94:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/jUAyEVQW-a8/libkml-marches-on.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:64:"http://googlemapsapi.blogspot.com/2008/05/libkml-marches-on.html";}}i:4;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-1067346797265518234";s:9:"published";s:29:"2008-05-16T16:30:00.000-07:00";s:7:"updated";s:29:"2008-05-20T10:45:28.406-07:00";s:5:"title";s:62:"Love My Maps? Use its Line and Shape Editing in your API Apps!";s:12:"atom_content";s:3019:"<span class="byline-author">Posted by Keith Golden, My Maps team</span>
+<p>
+When we launched the map editing tools in Google Maps, the reaction of developers was "This is cool, but how can I use it on my own site?"  As someone who was originally drawn to Google in part because of the Maps API and the great developer community around it, I committed to making the My Maps tools useful for developers on their own sites.
+</p>
+<p>
+Today, I'm pleased to announce that our user interface functionality for editable polylines and polygons is now part of the Maps API. 
+</p>
+<p>
+Say, for example, that you have a <code><a href="http://code.google.com/apis/maps/documentation/reference.html#GPolygon">GPolygon</a></code> you want users to be able to edit.  Simply call <code>GPolygon.enableEditing()</code> and the poly will have draggable edit control vertices when the user mouses over it. To later make it non-editable, call <code>GPolygon.disableEditing()</code>. 
+</p>
+<p>
+We've also exposed additional events for <code><a href="http://code.google.com/apis/maps/documentation/reference.html#GPolygon">GPolygon</a></code> and <code><a href="http://code.google.com/apis/maps/documentation/reference.html#GPolyline">GPolyline</a></code> so that you can easily mimic the MyMaps behavior (in mashups <b>or</b> <a href="http://maps.google.com/ig/add?pid=mpl&synd=mpl&moduleurl=http://gmaps-samples.googlecode.com/svn/trunk/poly/mymapstoolbar.xml">Mapplets</a>) by calling <code>enableEditing</code> on "mouseover" and <code>disableEditing</code> on "mouseout". To find out when the user makes an edit, listen for the "lineupdated" event.  And if you want users to be able to draw a new <code>GPolyline</code> completely from scratch, just use <code>enableDrawing</code> as shown below: 
+</p>
+
+<pre class="code">
+var polyline = new GPolyline([]);
+map.addOverlay(polyline);
+polyline.enableDrawing();
+</pre>
+
+<p>
+Every click on the map will add a new vertex to the polyline until the user double-clicks or clicks again on the last vertex.  You can also call <code>enableDrawing</code> to lets users append vertices to either end of an existing polyline.  And just because everyone likes pretty colors, we exposed methods to let you change the style of a polyline or polygon: <code>setStrokeStyle</code> and <code>setFillStyle</code>.  Have fun, and let us know what you think in <a href="http://groups.google.com/group/Google-Maps-API/">the forum</a>.
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/poly/mymapstoolbar.html" frameborder="0" width="550" height="450">
+</iframe>
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/poly/mymapstoolbar.html">View example in its own window.</a>
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=dSTWEAaM"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/oNPB6OjzoeI" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1067346797265518234";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1067346797265518234";s:4:"link";s:112:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/oNPB6OjzoeI/love-my-maps-use-its-line-and-shape.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:82:"http://googlemapsapi.blogspot.com/2008/05/love-my-maps-use-its-line-and-shape.html";}}i:5;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-5988079302169001701";s:9:"published";s:29:"2008-05-14T05:40:00.000-07:00";s:7:"updated";s:29:"2008-05-15T09:39:25.917-07:00";s:5:"title";s:41:"Introducing the Google Maps API for Flash";s:12:"atom_content";s:3231:"<span class="byline-author">Posted by Mike Jones, Maps API Team</span>
+
+<p>
+Here at Google, we receive a lot of feature requests  - and it feels great every time we fulfill one of them. The ability to utilize the power of Google Maps from Flash is one of those requests that has been popping up on blog posts and other forums since the beginning of time (or more accurately, the beginning of the Javascript Maps API). Over the past few hours, I've had the enjoyment of finally seeing this particular feature request - a Maps API for Flash - come to fruition. Tiredness will grab me soon, no doubt. If you're one of the first readers of this post, rest assured that I'm unlikely to still be awake: long hours have been worked; pre-launch nerves have jangled. Now it's time to let our baby loose into the world and see how the developer community will embrace it.
+</p>
+<p>
+So, what do I like about the API for Flash? Smoothness and speed are a <b>big</b> part of it. We've designed it so that Flash graphics can be used for each tile layer, marker and info window - opening up possibilities like dynamic shading, shadowing, animation, and video. When the user zooms the map, magnification changes happen smoothly and place names fade in. After the user drags a marker, it gently bounces to a halt. Generally, Flash allows for much greater embellishment, and, well... "flashiness." I get excited just thinking about the creative ways developers might take advantage of having a Flash API for Google Maps.
+</p>
+<p>
+What was one of our main design decisions for this project? We knew that version 1 of any software project is not perfect, so we opted to split the interface and implementation.  As a result, you can build against the current version of the API, and as we add enhancements and tweaks, your website benefits automatically from each update. When you wish to take advantage of new API functions, only then do you need to download the latest API and rebuild.
+</p>
+<p>
+What does it look like? We've played with it, thrown our ideas in, and also worked with outside companies to see how they use the API. It's been a pleasure to see some of the demos that have come back. Here's one from <a href="http://www.afcomponents.com/">AFComponents</a> that shows some of the possibilities:
+</p>
+<iframe width=625 height=275 frameborder=0 src="http://gmaps-samples-flash.googlecode.com/svn/trunk/demos/AFCVideoSyncMap/AFCVideoSyncMap.html"></iframe>
+
+<p>
+When I first joined Google in Sydney, I got to hear about the experience of the Maps team when they first watched the traffic and the buzz build for the launch of Google Maps. Well, now I'm ready to experience that with this new API. Do <a href="http://groups.google.com/group/google-maps-api-for-flash">send us feedback</a>, we're looking forward to it.
+</p>
+
+What remains? <a href="http://code.google.com/apis/maps/documentation/flash/index.html">Over to you</a>.<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=U2WNJllB"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/r0D8XGUKSwI" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/5988079302169001701";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/5988079302169001701";s:4:"link";s:114:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/r0D8XGUKSwI/introducing-google-maps-api-for-flash.html";s:11:"author_name";s:29:"Mickey Kataria, Google Sydney";s:10:"author_uri";s:51:"http://www.blogger.com/profile/12766005336748892615";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:84:"http://googlemapsapi.blogspot.com/2008/05/introducing-google-maps-api-for-flash.html";}}i:6;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4177580173371423652";s:9:"published";s:29:"2008-05-09T13:49:00.000-07:00";s:7:"updated";s:29:"2008-05-09T14:01:46.880-07:00";s:5:"title";s:15:"Upcoming Events";s:12:"atom_content";s:3522:"<span class="byline-author">Posted by Pamela Fox, Google Geo APIs Team</span>
+<br/>
+<p>There's four big Geo events in the San Francisco Bay Area this month, and Mano and I will be at all of them. Here's the details:</p>
+
+<h4><a href="http://en.oreilly.com/where2008/public/content/home">Where2.0</a>: May 12-14th</h4>
+<p><b>Sharing Your Content on the Google Maps API</b></p>
+<p>In this session, you'll roll up your sleeves and learn about publishing and sharing using the Maps API. Then we’ll hear from Google partners about what constitutes “great” content and how they expose it.</p>
+<p><b>Searching the Geoweb: Exposing Your Geo Data to Search Engines</b></p>
+<p>Have you been wondering how to drive traffic to that cool maps mashup you created recently? We’ll show you how to get your maps mashup crawled and indexed, and how best to optimize your content for user discovery via search using KML.</p>
+
+<h4><a href="http://wherecamp.pbwiki.com/">WhereCamp</a>: May 17-18th</h4>
+<p><b>No sessions planned!</b> This is an unconference - that means the participants do the session planning on the spot. So if there's a Maps API or KML topic you want to talk about, come on by and propose it! (And stay for the slumber party, there'll be lots of hacking and coffee). And, it'll be at the Googleplex! And it's free!</p>
+
+<h4><a href="http://web.meetup.com/49/calendar/7748489/">Web 2.0 Mapping and Social Networks Group</a>: May 20th</h4>
+<p><b>Communities +  Google Maps: Harder, Better, Faster, Stronger</b></p>
+<p>Pamela Fox will talk about the various ways of using Google Maps & the Maps API to create user-contributed maps, covering the spectrum from no-coding solutions to full custom databases and code, and showing examples of sites successfully using each technique.</p>
+
+<h4><a href="http://code.google.com/events/io/">Google I/O</a>: May 28-29th</h4>
+<p>There's lots of Geo sessions at Google I/O, here's just 3:</p>
+<p><b>Harnessing StreetView, Static Maps, and other New Additions to the Google Maps API:</b></p>
+<p>Ben Appleton will review some of the recent additions to the Maps API including how to use  Static Maps for fast page loads and printable maps, and how to incorporate Street View imagery in your app.</p>
+<p><b>Hosting Your Geo Data, an Overview of Design Options:</b></p>
+<p>Mano Marks will discuss the various options for hosting your Geo data, including Google App Engine, and explain how to choose the right data model for your project.</p>
+<p><b>The World's Information in Context:</b></p>
+<p>Michael T. Jones will discuss new product directions and key trends of importance to geo developers.</p>
+<p>
+<p>Be sure to visit the <a href="http://code.google.com/events/io">Google I/O website</a> to see the complete list of sessions and to
+<a href="https://www.weboom.com/sparks/google_io/forms/">register</a>. For those coming from out of town, we've arranged discounted room rates at nearby hotels.  Read the <a href="http://code.google.com/events/io/location.html">details</a> on the website to take advantage of the discount, but move fast because the hotel discount ends <b>May 13th</b>.</p>
+
+<p>We're looking forward to seeing you at some of these events soon.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=5pUU1OfK"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/MRfJe19Utpg" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4177580173371423652";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4177580173371423652";s:4:"link";s:92:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/MRfJe19Utpg/upcoming-events.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://googlemapsapi.blogspot.com/2008/05/upcoming-events.html";}}i:7;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-6268994213675303814";s:9:"published";s:29:"2008-05-07T17:47:00.000-07:00";s:7:"updated";s:29:"2008-05-07T17:47:08.467-07:00";s:5:"title";s:40:"Armageddon Pills and KML in Google Earth";s:12:"atom_content";s:2901:"<span class="byline-author">Guest post by Matt Brown, concept3D</span>
+<p>I’m Matt Brown, a kml developer and designer at concept3D in Boulder, Colorado.</p>
+
+<p>Google Earth has provided a new group of developers with the opportunity to build virtual ‘geowebsites’ specific to vertical markets. <a href="http://www.armageddonpills.com/index.html"><i>Armageddon Pills</i></a>, a travel book by John Higham, combines this power of Google Earth and a printed book to illustrate the tale of one family’s journey around the globe in 52 weeks.</p>
+
+<p>After creating numerous kml files, he asked us (concept3d) to create a browser look and feel while in Google Earth. We attempted to simplify the Google Earth experience for a broader audience, focusing on its on-screen and balloon navigation systems.</p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_Xr9hdoIAWw4/SCJAkW7lhDI/AAAAAAAAAL8/UBGoGxlaMqI/s1600-h/ap.png"><img style="margin: 0pt 10px 10px 0pt; float: left; cursor: pointer; width: 287px; height: 337px;" src="http://3.bp.blogspot.com/_Xr9hdoIAWw4/SCJAkW7lhDI/AAAAAAAAAL8/UBGoGxlaMqI/s320/ap.png" alt="" id="BLOGGER_PHOTO_ID_5197787913313944626" border="0" /></a>
+<p>When opening the file, you will find a main menu, or in this case the table of contents, of on-screen buttons. This menu is broken down into chapter groupings that contain sub-menus of icons related to the book. This allows the reader to find ‘where they are’ in the book, and gives them the ability to ‘read’ the kml from start to finish. Each balloon along the traveled path offers an interesting snippet and sometimes a photo or video associated with their locations. Navigation arrows were added to each balloon to allow the information to be chronologically documented and experienced by the end user, and a “home” button to get back to the main menu. Additionally, there are “menu” placemarks scattered around the globe that will help you find the main menu if you are lost in space.</p><div style="text-align: center;">
+</div>
+We rely on <a href="http://code.google.com/apis/kml/documentation/kmlreference.html#featureanchor">feature anchors</a> for navigating between balloons and a very high altitude (12680000 meters) to create the effect of a menu. You can download our full KML <a href="http://www.armageddonpills.com/Google_Earth_.html">here</a>.<p></p>A big thanks to Mano Marks for his insight and for taking interest in this project. If you have any questions or comments, please email me at matt.brown@concept3d.com.<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=cnHiIYzp"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/7hI5KB_N72E" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6268994213675303814";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6268994213675303814";s:4:"link";s:111:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/7hI5KB_N72E/armageddon-pills-and-kml-in-google.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:81:"http://googlemapsapi.blogspot.com/2008/05/armageddon-pills-and-kml-in-google.html";}}i:8;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8889940897052358798";s:9:"published";s:29:"2008-05-01T09:04:00.000-07:00";s:7:"updated";s:29:"2008-05-01T08:20:45.543-07:00";s:5:"title";s:27:"Shout it from the Rooftops!";s:12:"atom_content";s:1111:"<span class="byline-author">Posted by Jeff Martin, Maps API Team</span>
+
+<p>
+Today, we're happy to introduce rooftop geocoding in the Google Maps API. This new service delivers pinpoint results for more than 50 million US addresses. The accuracy gains are impressive &mdash; and useful. Now, users can distinguish between locations on one side of the street versus the other and can identify specific addresses even in densely built environments.
+</p>
+
+<p>
+Check it out for yourself below, starting with the geocode for the Google "house":
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/geocoder/singlegeocode.html" frameborder="0" width="550" height="500"><a href="http://gmaps-samples.googlecode.com/svn/trunk/geocoder/singlegeocode.html">Link to Geocode Example</a>
+</iframe><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=isjl15KG"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/HtqvzIcd_xg" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8889940897052358798";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8889940897052358798";s:4:"link";s:99:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/HtqvzIcd_xg/shout-it-from-rooftops.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:69:"http://googlemapsapi.blogspot.com/2008/05/shout-it-from-rooftops.html";}}i:9;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-5953879919409388395";s:9:"published";s:29:"2008-04-29T15:09:00.000-07:00";s:7:"updated";s:29:"2008-04-29T22:37:05.454-07:00";s:5:"title";s:40:"Static Maps Have Never Looked This Good!";s:12:"atom_content";s:2514:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+
+<p>
+Do you ever find yourself using our Static Maps API, wishing you could cover your maps with markers of all sorts of colors, sizes, and letters, or that you could draw lines all over the map? Well, today is your lucky day. Check out these new features in the Static Maps API (and the kind of output you can get from it!) below:
+</p>
+<ul>
+<li><b>More marker options:</b> You can now specify 4 different sizes (from normal to tiny), and 8 different colors (and for half of the sizes, you can specify a letter as well).
+</li>
+<li><b>Paths:</b> You can specify a path of up to 50 points, along with color, weight, and alpha.
+</li>
+<li><b>Image formats:</b> You can specify PNG, JPG, or GIF output.
+</li>
+<li><b>Transliterated tiles:</b> You can explicitly specify a language, if you'd like transliterated tiles (for Greece or Japan, for example).
+</li>
+</ul>
+<p>
+<img src="http://maps.google.com/staticmap?center=37.401119,-122.073040&markers=37.400470,-122.072981,midgreen&path=rgba:0x800080cc,weight:10|37.40057,-122.07321|37.39962,-122.06583|37.40766,-122.06257|37.41203,-122.07527|37.40507,-122.08540|37.39444,-122.08059|37.39116,-122.06720|37.39839,-122.05330|37.40944,-122.05278|37.41625,-122.06017|37.42007,-122.07647|37.41475,-122.08986|37.40466,-122.09639|37.39185,-122.09347|37.38462,-122.07699|37.38434,-122.05776|37.39375,-122.04403|37.40780,-122.04060|37.41857,-122.04163|37.42157,-122.04866|37.42144,-122.09896|37.41475,-122.10531|37.39894,-122.10995|37.38639,-122.10445|37.38107,-122.09467|&zoom=13&size=500x200&key=ABQIAAAA-O3c-Om9OcvXMOJXreXHAxRexG7zW5nSjltmIc1ZE-b8yotBWhQYQEU3J87QIBc4nfuySpoW_K6woA" width="500" height="200">
+</p>
+<p>
+Feel free to play around with the options in the updated <a href="http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html">Static Map Wizard</a> or read through the <a href="http://code.google.com/apis/maps/documentation/staticmaps/">documentation</a>. As usual, please post questions or comments in the <a href="http://groups.google.com/group/Google-Maps-API">forum</a>. We'd love to see how developers are using this API and its newest features.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=OsNwZHOc"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/Hxa0mZJ7AGM" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/5953879919409388395";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/5953879919409388395";s:4:"link";s:116:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/Hxa0mZJ7AGM/static-maps-have-never-looked-this-good.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:86:"http://googlemapsapi.blogspot.com/2008/04/static-maps-have-never-looked-this-good.html";}}i:10;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-3230997843031164974";s:9:"published";s:29:"2008-04-23T22:48:00.000-07:00";s:7:"updated";s:29:"2008-04-24T07:32:02.105-07:00";s:5:"title";s:52:"Google Developer Days: Meet the Google Geo Engineers";s:12:"atom_content";s:2616:"<span class="byline-author">Posted by Mano Marks, Google Geo APIs Team</span>
+<p>
+<a href="http://code.google.com/events/developerday/">Google Developer Days 2008</a>, a set of one-day developer events, are back and will take place in locations around the world. We've designed these events for developers with strong coding backgrounds, so that we can discuss our APIs, developer tools and applications.
+</p>
+<p>
+We'll host Google Developer Days in these locations:
+<ul><li><a href="http://code.google.com/intl/ja/events/developerday/home.html" title="Yokohama, Japan" target="_blank">Yokohama, Japan</a>  (June 10)</li><li> <a href="http://code.google.com/intl/zh-CN/events/developerday/home.html" title="Beijing, China" target="_blank">Beijing, China</a>  (June 12)</li><li><a href="http://code.google.com/intl/zh-TW/events/developerday/home.html" title="Taipei, Taiwan" target="_blank">Taipei, Taiwan</a>  (June 14)</li><li><a href="http://code.google.com/events/developerday/home.html" title="Sydney, Australia" target="_blank">Sydney, Australia</a>  (June 18)</li><li> Mexico City, Mexico (June 23)</li><li>Sao Paulo, Brazil (June 27)</li><li>London, UK (Sept 16)</li><li> Paris, France (Sept 18)</li><li> Munich, Germany (Sept 23)</li><li>Madrid, Spain (Sept 25)</li><li> Milan, Italy (Oct 21)</li><li>Prague, Czech (Oct 23)</li><li>Moscow, Russia (Oct 28)</li></ul>If you're based in the US, we encourage you to come to <a href="http://code.google.com/events/io/">Google I/O</a>, on May 28-29 in San Francisco.
+</p>
+<p>
+At Google Developer Day, our Maps and KML engineers will share their inside knowledge on our developer tools and APIs, including the <a href="http://code.google.com/apis/maps/">Google Maps API</a> and <a href="http://code.google.com/apis/kml/">KML</a>. In many locations we'll do deep dives into code and conduct hands-on codelabs. If you come to Yokohama and Mexico City, say hi to me and Pamela Fox.
+</p>
+<p>
+We've posted <a href="http://code.google.com/events/developerday/">detailed information</a> for our early dates and will be adding more information for other locations soon.  If you're a developer, we encourage you to <a href="http://code.google.com/events/developerday/">sign-up</a> for a Google Developer Day at a nearby location. I hope to see you there.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=AfECi34w"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/t0JlkXu5G8M" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3230997843031164974";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3230997843031164974";s:4:"link";s:114:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/t0JlkXu5G8M/google-developer-days-meet-google-geo.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:84:"http://googlemapsapi.blogspot.com/2008/04/google-developer-days-meet-google-geo.html";}}i:11;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-7061827977049310452";s:9:"published";s:29:"2008-04-22T17:58:00.000-07:00";s:7:"updated";s:29:"2008-04-23T16:28:55.010-07:00";s:5:"title";s:45:"Streetview in the Wild: A Flourishing Species";s:12:"atom_content";s:3741:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+
+<p>
+Several weeks ago, we announced the official release of Street View in the Maps API and invited developers to post examples of their Street View mashups. We crossed our fingers and hoped that we'd made the classes flexible and functional enough for developers to work with, and soon enough the examples started flowing in.
+</p>
+<p>
+Here are some of my favorites:
+</p>
+<table>
+<tr>
+<td>
+<img src="http://3.bp.blogspot.com/_T1lquhCmKo8/SA63JjzYCtI/AAAAAAAAAbk/u-Vg72d-HgQ/s400/screenshot_dualmaps.jpg"  />
+</td>
+<td>
+<a href="http://www.mapchannels.com/DualMaps.aspx">DualMaps</a>: For a given location, displays the Street View, Birds Eye View, and Google aerial map view simultaneously and lets you embed or share the result
+</td>
+</tr>
+<tr>
+<td>
+<img src="http://1.bp.blogspot.com/_T1lquhCmKo8/SA634DzYCuI/AAAAAAAAAbs/O8DI53nTq6Y/s400/screenshot_povotour.jpg"/>
+</td>
+<td><a href="http://www.povo.com">Povo</a>: A local reviews site specially for Boston. Displays street view in a lightbox <a href="http://boston.povo.com/Listing:Picco_on_Tremont_Street_(500-558)">for each location</a>, and has made <a href="http://wellesley.ma.povo.com/Washington_Street_(413-446)/Boston_Marathon_Mile_Marker_14">a Street View tour</a> especially for the recent Boston Marathon.
+</td>
+</tr>
+<tr>
+<td>
+<img src="http://3.bp.blogspot.com/_T1lquhCmKo8/SA_AFTzYCwI/AAAAAAAAAb8/skeoY4OKCEU/s400/screenshot_streetviewadventuregame.jpg"/>
+</td>
+<td>
+<a href="http://keirclarke.googlepages.com/streetviewlatlng.htm">StreetView Adventure Game</a>: In the spirit of the classic interactive fiction games like <a href="http://en.wikipedia.org/wiki/Zork">Zork</a>, this demo lets you play a short game that begins with chasing a guy trying to climb out a window in San Francisco.
+</td>
+</tr>
+</table>
+<p>
+Also check out <a href="http://www.vegashotelhunt.com/Vegas-Vision/">VegasVision</a>, <a href="http://ongmap.com/v2/full">Ong Map V2 (Alpha)</a>, <a href="http://www.vpike.com/?p=1+main+street+boston+ma&submit=Go&st=l1">VPike</a>, <a href="http://www.flyrig.com/user/?i=5307">FlyRig</a>, <a href="http://www.google.com/ig/directory?url=gad.getpla.net/street/view.xml">Street View Gadget</a>, <a href="http://www.lotview.net/?a=&c=Los+Angeles&s=CA&submit=Go&st=l1">LotView</a>, <a href="http://keirclarke.googlepages.com/streetview5.htm">Street View SF Tour</a>, <a href="http://listings.realbird.com/Real_Estate/Property-going-into-Auction-in-Denver-/Denver/CO/F3D3B3E7/14682.aspx">RealBird</a>, <a href="http://www.glotter.com/streetview?latlng=37.4209,-122.0841&yaw=0&pitch=5">Glotter</a> and a <a href="http://www.google.com/ig/directory?hl=en&url=www.gadzi.com/tour/tour.xml">Street View Tour Gadget</a>. And if you loved Trulia's implementation (<a href="http://google-latlong.blogspot.com/2008/04/navigating-online-real-estate-search.html">announced</a> on Google LatLong last week), check out <a href="http://gmaps-samples.googlecode.com/svn/trunk/streetview/angletowardsbuilding.html">this demo</a> that shows how to angle a street view panorama towards the side of the street that a building is on. (It involves math, but don't worry, we've done it for you.)
+</p>
+
+<p>Thanks to all you developers for sharing your work with us, and as always, please post your examples or questions in the <a href="http://groups.google.com/group/Google-Maps-API">forum</a>.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=8m1UuFxg"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/9EFcvSROTPg" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7061827977049310452";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7061827977049310452";s:4:"link";s:115:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/9EFcvSROTPg/streetview-in-wild-flourishing-species.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:85:"http://googlemapsapi.blogspot.com/2008/04/streetview-in-wild-flourishing-species.html";}}i:12;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-7243983052578658435";s:9:"published";s:29:"2008-04-16T10:36:00.000-07:00";s:7:"updated";s:29:"2008-04-16T20:15:28.571-07:00";s:5:"title";s:86:"Our first Google Geo Developer series is over...but the YouTubes will last a lifetime!";s:12:"atom_content";s:3813:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+
+<p>
+Two months ago, <a href="http://googlemapsapi.blogspot.com/2008/02/calling-all-local-developers-join-us-at.html">we announced</a> the start of the Google Geo Developer series on this blog. The point of the series was to bring together local geo developers for intimate talks/discussions around Maps/KML topics, and then let all developers watch the events on YouTube. It was a bit of an experiment - would we find enough topics for talks every week? Would anyone watch the videos? Well, I'm happy to say it was a successful experiment. Besides having 6 great talks and more than 20,000 YouTube video views, we also met a bunch of local developers working on geo projects (thanks for always showing up, you guys), and even met some folks from far away through the mailing list. Hopefully we'll get to hold another of these series in the falls, so subscribe to <a href="http://groups.google.com/group/google-geo-developer-series-announcements">the mailing list</a> if you want to find out about future events. 
+</p>
+
+<p>
+Here's a roundup of the talks that went down, with links to videos. Click "More info" on the YouTube description and you'll often find a link to slides/materials.
+<ul>
+<li><b><a href="http://youtube.com/watch?v=WeHnQESDr-8&feature=PlayList&p=28624CDB052424DD&index=1">Quick & Dirty KML Creation</a>: With Mano Marks, Pamela Fox, and Christiaan Adams</b>
+<br/>
+<i>A demonstration of creating KML visually in Google Earth & Google Maps, and using Spreadsheet Mapper 2.0</i>
+</li>
+<li><b><a href="http://youtube.com/watch?v=IYqfT9i1las&feature=PlayList&p=28624CDB052424DD&index=0">Creating Custom Maps</a>: With John Coryat</b>
+<br/>
+<i>A comparison of various ways of overlaying data in the Maps API and an in-depth explanation of creating tile layers and custom map types</i>
+</li>
+<li><b><a href="http://youtube.com/watch?v=kNXdfjUYGAo&feature=PlayList&p=28624CDB052424DD&index=2">GigaPan In-Depth</a>: With Randy Sargent & Ted Morse</b>
+<br/>
+<i>A demo of the GigaPan panorama-browsing website and KML files, plus a technical explanation of PhotoOverlay</i>
+</li>
+<li><b><a href="http://youtube.com/watch?v=QzS_shIzfcM&feature=PlayList&p=28624CDB052424DD&index=3">Dynamic KML</a>: With Mano Marks & Brian Hamlin</b>
+<br/>
+<i>An exploration of using dynamic queries from KML, using the NetworkLink, httpQuery, and viewFormat elements, plus a demo of a PostGIS-generated NetworkLink</i>
+</li>
+<li><b><a href="http://youtube.com/watch?v=8zJa3eU82Zo&feature=PlayList&p=28624CDB052424DD&index=4">Mars, Moon, and Sky Map Types</a>: With Noel Gorelick</b>
+<br/>
+<i>A talk introducing the non-Earth Maps API map types, plus cool demos of other types of projections used with planetary imagery</i>
+</li>
+<li><b><a href="http://youtube.com/watch?v=QIPKmkeMuz4&feature=PlayList&p=28624CDB052424DD&index=6">Mapping the Votes</a>: With Michael Geary</b>
+<br/>
+<i>A whirlwind tour of what it took to create the Elections 2008 Map/Mapplet/Gadget, including SHPfile conversion, Javascript optimization, centroid calculations, Twitter updates collection, Mapplet API tricks, and more.</i>
+</li>
+<li><b><a href="http://youtube.com/watch?v=YKY6fh85SnQ&feature=PlayList&p=28624CDB052424DD&index=5"> Google API Talks - Android, KML, Google Maps, Gadgets</a></b>
+<br/>
+<i>A series of 5-minute talks by various developers and Googlers given before Geary's presentation, including an intro to Gadgets/Mapplets.</i>
+</li>
+</ul><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=GKdW0b9b"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/8vhrv1O2Rnc" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7243983052578658435";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7243983052578658435";s:4:"link";s:114:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/8vhrv1O2Rnc/our-first-google-geo-developer-series.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:84:"http://googlemapsapi.blogspot.com/2008/04/our-first-google-geo-developer-series.html";}}i:13;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-6712206310277028084";s:9:"published";s:29:"2008-04-14T13:32:00.000-07:00";s:7:"updated";s:29:"2008-04-14T13:32:54.527-07:00";s:5:"title";s:27:"KML is now an open standard";s:12:"atom_content";s:1110:"<span class="byline-author">Posted by Mano Marks, Geo APIs Team</span>
+
+<p>The Google Geo APIs are all about building powerful tools to share geo information with the world. We've been really interested in seeing the way that KML has been used all across the web to express geographic content, and today we're very excited to announce that the <a href="http://www.opengeospatial.org/">Open Geospatial Consortium</a> has announced its acceptance of KML 2.2 as an official OGC Standard. That means that KML is not just a Google Earth standard, it's not even just a Google standard. It is now an official standard for presenting geographic data. Read more about this great news on the <a href="http://google-latlong.blogspot.com/2008/04/kml-new-standard-for-sharing-maps.html">LatLong blog</a>.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=AVJfWlYI"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/k0f01MU9ocI" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6712206310277028084";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6712206310277028084";s:4:"link";s:101:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/k0f01MU9ocI/kml-is-now-open-standard.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:71:"http://googlemapsapi.blogspot.com/2008/04/kml-is-now-open-standard.html";}}i:14;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8045067707977287915";s:9:"published";s:29:"2008-04-02T20:48:00.000-07:00";s:7:"updated";s:29:"2008-04-02T20:48:07.936-07:00";s:5:"title";s:33:"Text images without (much) coding";s:12:"atom_content";s:2795:"<span class="byline-author">Posted by Mano Marks, Google Geo APIs Team</span>
+<br/>
+<p><a href="http://xbbster.googlepages.com/">Valery Hronusov</a> has created a <a href="http://ec.geoblogspot.com/GELab/ecLabel.htm">cool visual interface</a> for his <a href="http://text2image.ning.com/">Text to Image</a> service. This service allows you to easily create a text image, control its color, add shadow effects, and then place it on directly a map. It outputs to KML, Maps API JavaScript code, or just a plain URL to an image. This is really useful to creating, for instance, road labels or text based ScreenOverlays. All you have to do is copy the output into your own code. The interface is pretty simple:</p>
+
+<p><img src="http://lh4.google.com/xbbster/R_FT2YJlWCI/AAAAAAAAAwM/L8gzmJMwd5E/texttolabels.jpg?imgmax=512" width="450" height="550"/></p>
+
+<p>Here's a sample of the <a href="http://code.google.com/p/gmaps-samples/source/browse/trunk/text2image/text2image.kml">KML output</a>:</p>
+<pre>
+&lt;GroundOverlay&gt;
+  ...
+     &lt;Icon&gt;
+             &lt;href&gt;http://text2image.ning.com/TextToImage.php?text=San+Francisco%2C+here+we+come%21&amp;LabelType=2&amp;FontSize=24&amp;casing=asis&amp;alignment=1&amp;font=arial&amp;fontStyle=bold&amp;LabelLocation=topleft&amp;dX=11&amp;dY=0&amp;FontColor=00ff00f9&amp;ShadowColor=00000000&amp;depth=3&amp;effect=0&amp;LabelHeight=35&amp;LabelWidth=438&amp;IconHeight=18&amp;IconName=http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png&lt;/href&gt;
+     &lt;/Icon&gt;
+</pre>
+
+<p>Here's a sample of the JavaScript code it creates:</p>
+<pre>
+var pointCenter = new GLatLng(37.775196,-122.419204);
+var map = new GMap2(document.getElementById("map"));
+map.setCenter(pointCenter, 10);
+
+var pointSW = new GLatLng(37.741743,-122.470044);
+var pointNE = new GLatLng(37.786659,-122.272387);
+
+var groundOverlay = new GGroundOverlay(
+   "http://text2image.ning.com/TextToImage.php?text=San+Francisco%2C+here+we+come%21&LabelType=2&FontSize=24&casing=asis&alignment=1&font=arial&fontStyle=bold&LabelLocation=topleft&dX=11&dY=0&FontColor=00ff00f9&ShadowColor=00000000&depth=3&effect=0&LabelHeight=35&LabelWidth=438&IconHeight=18&IconName=http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png", 
+   new GLatLngBounds(pointSW, pointNE));
+
+map.addOverlay(groundOverlay);
+</pre>
+<p>And here's what it looks like:</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/text2image/text2image.html" height="325" width="425"></iframe><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=FXfxj5LJ"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/-NwbeRTcmjI" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8045067707977287915";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8045067707977287915";s:4:"link";s:108:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/-NwbeRTcmjI/text-images-without-much-coding.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:78:"http://googlemapsapi.blogspot.com/2008/04/text-images-without-much-coding.html";}}i:15;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8397378573349158888";s:9:"published";s:29:"2008-03-31T15:44:00.000-07:00";s:7:"updated";s:29:"2008-03-31T15:47:57.350-07:00";s:5:"title";s:26:"We're Going to Google I/O!";s:12:"atom_content";s:2414:"<span class="byline-author">Posted by Mano Marks, Geo APIs Team</span>
+
+<p>I'm getting excited about <a title="Google I/O" href="http://code.google.com/events/io/">Google I/O</a> May 28th &amp; 29th in San Francisco. The reason I'm excited is that many of you will be there too, and it will be a great chance to meet. Google I/O is like the Google Developer Day we had last year, which in turn was based on Google Geo Developer Day, which we had two years ago. This year, there will be a whole track on <a title="Maps &amp; Geo" href="http://code.google.com/events/io/sessions.html#geo">Maps &amp; Geo</a>, including KML, Maps, and Mapplets. There will, of course, be other tracks, AJAX, APIs &amp; Tools, Social, and Mobile. Both Pamela and I will be there, along with all the Google Geo stars.</p>
+
+<p>The event won’t be limited to just Google APIs and developer tools. There is a lot of knowledge about web development in general at Google, and we’d like to share that expertise so that all applications on the web get better. And of course, we're focusing a lot on Open Source tools, like the new <a href="http://google-opensource.blogspot.com/2008/03/introducing-libkml-library-for-reading.html">libkml </a>(more about that in a later post).</p>
+
+<p>Over the two days of Google I/O, Google engineers and other leading software developers will share their knowledge in <a title="breakout sessions" href="http://code.google.com/events/io/sessions.html">breakout sessions</a>, hands-on Code Labs, and Q&amp;A Fireside Chats. That's your chance to sit down with Google engineers and ask all the questions you've ever wanted to, as well as meet each other.</p>
+
+<p>Visit the <a title="Google I/O website" href="http://code.google.com/events/io/" id="vxte">Google I/O website</a> to learn more and <a href="https://www.weboom.com/sparks/google_io/forms/">register</a>.  Space is limited, so be sure to make plans to attend now.</p>
+
+<p>And after Google I/O, we'll be doing other developer days all over the world, so if you can't make it to SF, hopefully you can make it to one closer to you.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=KuYUfgtu"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/zPfWo2WdtCY" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8397378573349158888";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8397378573349158888";s:4:"link";s:100:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/zPfWo2WdtCY/were-going-to-google-io.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:70:"http://googlemapsapi.blogspot.com/2008/03/were-going-to-google-io.html";}}i:16;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8389371858409458666";s:9:"published";s:29:"2008-03-27T10:57:00.000-07:00";s:7:"updated";s:29:"2008-03-27T13:41:59.187-07:00";s:5:"title";s:61:"Street View in the API (or, How I Spent My Summer "Vacation")";s:12:"atom_content";s:4492:"<span class="byline-author">Posted by James McGill, Maps API Team</span>
+
+<p>
+<img src="http://2.bp.blogspot.com/_T1lquhCmKo8/R-mPgv30h1I/AAAAAAAAAUE/vDiHd1VQ864/s400/2236330400_250fb21920.jpg" border="0" align="left"/>
+For the past three months I have had the great pleasure of working as an intern with the Google Maps API team in Sydney. Unfortunately my time is now up and I must head back to the mundane life of a undergraduate scholar, but before I do I'm ecstatic to announce that my intern project is FINALLY complete: Street View is now in the Google Maps API!
+</p>
+<p>
+Many of you will already have seen <a href="http://google-latlong.blogspot.com/2007/05/introducing-street-view.html">Street View</a> as part of <a href="http:.//maps.google.com">maps.google.com</a>. If you haven't, click <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=sf&ie=UTF8&ll=37.780302,-122.42007&spn=0.001891,0.005021&z=18&layer=c&cbll=37.779357,-122.420089&cbp=1,0,,0,5">this link</a> to give it a go. Street View allows users to view 3D panoramas of various locations around the world and to navigate around neighborhoods as if they were (almost) really there.
+</p>
+<p>
+We've worked hard to ensure that Street View in the API gives developers the power and control they need to embed this functionality in their own websites in whatever way they wish. The API allows you to embed one or multiple panoramas in any location on a site and move, remove, hide and unhide them as necessary. Panoramas can also be easily integrated with the rest of the Google Maps API to allow synchronization between the map and the panorama viewer. The blue tile layer overlays which show where Street View data is available can be added to your own maps using the <a href="http://code.google.com/apis/maps/documentation/reference.html#GStreetviewOverlay"><code>GStreetviewOverlay</code></a> class. The following example mimics the Google Maps functionality with the tile layer and rotating Street View icon:
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/streetview/streetview_layer.html" frameborder="0" width="570" height="500">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/streetview/streetview_layer.html">Link to Streetview Layer example</a>
+</iframe>
+
+<p>
+By far the coolest feature (in my opinion) is the ability to control the embedded viewer using Javascript functions on the <a href="http://code.google.com/apis/maps/documentation/reference.html#GStreetviewPanorama"><code>GStreetviewPanorama</code></a> object. The <code>panTo</code> function changes the current point of view by performing a smooth animation between the current and target view. An example of this is the app below which does a 360 degree pan around the current location (for all you people too lazy to use your mouse):
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/streetview/streetview_lazy.html" frameborder="0" width="550" height="500">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/streetview/streetview_lazy.html">Link to Lazy Streetview Example</a>
+</iframe>
+
+<p>
+There's a whole lot more functionality available in the API than I could ever cover in one blog post, so check out the <a href="http://code.google.com/apis/maps/documentation/services.html#Streetview"> documentation</a>, <a href="http://code.google.com/apis/maps/documentation/reference.html#GStreetviewPanorama">reference</a>, <a href="http://code.google.com/apis/maps/documentation/demogallery.html?searchquery=street">demos</a>, and start experimenting! Once you're done, post a link to your experiment in <a href="http://groups.google.com/group/Google-Maps-API">the forum</a>. We'll check them out, post the most fun and practical demos in a blog post and <a href="http://code.google.com/apis/maps/documentation/demogallery.html?searchquery=street">our demo gallery</a>, and send the authors some nifty Google schwag.
+</p>
+<p>
+Before I sign off, I'd like to thank the entire Google Maps team for their help in getting this project complete. I had a fantastic time interning with Google and learnt a phenomenal amount.
+</p>
+<br/>
+<em>
+Cheers,
+<br/>
+(former) Intern: James McGill
+<br/>
+</em><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=vZifAj49"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/sDabakDOWHs" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8389371858409458666";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8389371858409458666";s:4:"link";s:113:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/sDabakDOWHs/street-view-in-api-or-how-i-spent-my.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:83:"http://googlemapsapi.blogspot.com/2008/03/street-view-in-api-or-how-i-spent-my.html";}}i:17;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-6224500268959861531";s:9:"published";s:29:"2008-03-25T18:00:00.000-07:00";s:7:"updated";s:29:"2008-03-27T17:31:28.775-07:00";s:5:"title";s:62:"MapIconMaker 1.0: The Easy Way to Make Your Markers Meaningful";s:12:"atom_content";s:3337:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<p>
+In the talk I gave last fall about <a href="http://googlemapsapi.blogspot.com/2008/01/new-years-resolution-more-usable.html">Maps Mashups Usability</a>, I mentioned that one way to make your map more informative at first glance is to use the color and size of a marker to indicate categorical or density information. Previously, that would mean using an image editing program or server-side image generation script to create all the various marker icons needed. Now, with the introduction of <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/">MapIconMaker v1.0</a> into the <a href="http://code.google.com/p/gmaps-utility-library/">open-source utility library</a>, all that's needed is a Javascript include and a bit of code. For example, the <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/release/examples/createmarkericon-simple.html">simple demo</a> shows how the following line of code creates a <code>GIcon</code> that's 64 by 64 pixels and has a green fill. 
+</p>
+<pre>
+var newIcon = MapIconMaker.createMarkerIcon({width: 64, height: 64, primaryColor: "#00ff00"});
+</pre>
+
+<p>
+Behind the scenes, that line of code constructs the URLs for the various <code>GIcon</code> properties by using a special output of the <a href="http://code.google.com/apis/chart">Chart API</a> to generate marker icon images. But don't worry about that - just use <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/release/examples/markericonoptions-wizard.html">our nifty MarkerIconOptions wizard</a> to preview various settings, and then copy the generated code into your own mashup.
+</p>
+<p>
+We loved the dynamic icons so much that we couldn't wait to start using them - so some of you might have already seen them in use for <a href="http://maps.google.com/decision2008">Google's Decision 2008 mapplet/map</a> (screenshot below). At the zoomed out view, the map contains dynamically sized and colored markers for each state. The color represents the candidate that got the most votes, and the size represents the relative number of votes that candidate received. When you zoom into the state, the map then contains markers for each voting precinct representing the same data. It's a great way to quickly understand the population density and voting habits of a region.
+</p>
+<p>
+We hope you enjoy MapIconMaker as much as we do. Please look through the <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/1.0/docs/reference.html">reference</a> and <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/1.0/docs/examples.html">examples, </a> and let us know if you have any questions in <a href="http://groups.google.com/group/Google-Maps-API/">the forum</a>.
+<a href="http://maps.google.com/decision2008">
+<img src="http://4.bp.blogspot.com/_T1lquhCmKo8/R-J5U_30h0I/AAAAAAAAASs/8bXYC60hFwo/s400/cd3t87k3_65fm2pp8gw_b.jpg"  />
+</p>
+</a><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=XRtxj6al"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/D5ZD7rG6Rvs" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6224500268959861531";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6224500268959861531";s:4:"link";s:113:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/D5ZD7rG6Rvs/iconfactory-10-easy-way-to-make-your.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:83:"http://googlemapsapi.blogspot.com/2008/03/iconfactory-10-easy-way-to-make-your.html";}}i:18;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-7793763706946298122";s:9:"published";s:29:"2008-03-17T16:25:00.000-07:00";s:7:"updated";s:29:"2008-03-17T16:49:35.126-07:00";s:5:"title";s:49:"MarkerTracker 1.0: "Which way did he go, George?"";s:12:"atom_content";s:2735:"<span class="byline-author">Posted by Dan Rummel, Maps API Developer</span>
+<p>
+<img src="http://2.bp.blogspot.com/_T1lquhCmKo8/R98AQCYo3gI/AAAAAAAAASc/M9pUatijbmM/s400/ddvj5js5_25dbb465ck.jpg" border="0" align="left"/>
+Hi everyone, my name is Dan Rummel and I've been hacking Google Maps out of the San Francisco area for a couple years now. Recently I have been working hard on a start-up with a couple of college buddies: <A href="http://www.seero.com/aboutseero.php">Seero.com (<em>Putting live video on the map</em>)</a>. In our UI, we want people to interact and explore using maps as much as possible, something we like to call GeoSurfing. However, sometimes after dragging and zooming a few times, one can quickly get lost in the middle of nowhere and unable to get back to the original viewport. So at the Google Javascript Hackathon, I started working on <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/markertracker/">MarkerTracker</a>, which is kind of like radar for 'important' markers. It's a simple and customizable tool that utilizes GPolyline to display directional indicators for markers that are out of view. Check out this simple example:
+</p>
+<iframe src="http://gmaps-utility-library.googlecode.com/svn/trunk/markertracker/release/examples/onetracker.html" frameborder="0" width="550" height="350"></iframe>
+<p>
+And to prove that the MarkerTracker can be used for something more advanced -- and to wish everyone a happy St. Patrick's Day -- here's a leprechaun chasing game:
+<a href="http://gmaps-utility-library.googlecode.com/svn/trunk/markertracker/release/examples/potofgold/index.html"><img src="http://4.bp.blogspot.com/_T1lquhCmKo8/R98AgiYo3hI/AAAAAAAAASk/6NU2un0TBFs/s400/ddvj5js5_28sk2h84g5.jpg"/></a>
+<p>
+A big thanks to Pamela Fox and all the developers who have contributed to the <A href="http://code.google.com/p/gmaps-utility-library/">Google Maps Open Source utility library</a>, it is a fantastic resource. Of course if you want to learn more about MarkerTracker check out the <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/markertracker/release/docs/reference.html">class reference</a> and <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/markertracker/release/docs/examples.html">more examples</a>. As always, please report any issues you find in the <a href="http://groups.google.com/group/Google-Maps-API">developer forum</a>.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=AQ3WoZvf"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/2VEl2mHKok0" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7793763706946298122";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7793763706946298122";s:4:"link";s:113:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/2VEl2mHKok0/markertracker-10-which-way-did-he-go.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:83:"http://googlemapsapi.blogspot.com/2008/03/markertracker-10-which-way-did-he-go.html";}}i:19;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-3004689349931830312";s:9:"published";s:29:"2008-03-13T14:30:00.000-07:00";s:7:"updated";s:29:"2008-03-13T15:19:17.146-07:00";s:5:"title";s:81:"Put down your language learning books, we've got transliterated tiles in the API!";s:12:"atom_content";s:2162:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<p>
+Due to the usage of non-latin characters in languages like Russian, and our decision to label countries and cities in their native tongue, I've always found browsing foreign countries in Google Maps to be quite the educational experience. How else would I have discovered that other languages have such pretty swirly letters? Unfortunately, it's also quite a frustrating experience when you're actually trying to find some place in those countries ("Tokyo! SHOW ME TOKYO!! aRrrgghghH!"). Well, thankfully the Google Maps team has now made it easier to have both an educational and satisfying experience with <a href="http://google-latlong.blogspot.com/2008/02/are-we-going-to-greece-or-thailand.html">the recent introduction</a> of transliterated tiles for Russia, Greece, Japan, and Thailand. 
+</p>
+<p>
+For users with a browser setting for the native languages of those countries, they'll continue seeing the tiles with just the labels in that language. But for everyone else, they'll see tiles with both the labels in the native character set and in the latin character set below it. You can trust the language setting to get that effect  in the Maps API, or if you'd like, you can force a particular output in both the Javascript and Static Maps API by appending the"hl" parameter to the script src or image src with the desired language value. Experiment with the various language/country combinations in the example below to see this in action in both the Static and Javascript APIs:
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/maptiles/transliterated.html" width="530" height="800" frameborder="0"><a href="http://gmaps-samples.googlecode.com/svn/trunk/maptiles/transliterated.html">Link to example of transliterated tiles in the API</a></iframe><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=wo1nwvKC"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/dYBFCUTH6ts" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3004689349931830312";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3004689349931830312";s:4:"link";s:114:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/dYBFCUTH6ts/put-down-your-language-learning-books.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:84:"http://googlemapsapi.blogspot.com/2008/03/put-down-your-language-learning-books.html";}}i:20;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-6296347969018745229";s:9:"published";s:29:"2008-03-09T16:24:00.000-07:00";s:7:"updated";s:29:"2008-03-27T11:55:23.188-07:00";s:5:"title";s:47:"Orbitz Mobile Traffic Maps: A Static Maps Story";s:12:"atom_content";s:4573:"<span class="byline-author">Posted by Joe Monahan, Maps API Developer</span>
+
+<p><img src="http://3.bp.blogspot.com/_T1lquhCmKo8/R1-YoNCp2gI/AAAAAAAAAHM/7N7fEq_4VUg/s400/joemonahan.jpg" align="left" border="0">
+It is my pleasure to be asked by Pamela to write another guest blog post; this time to discuss my experiences in using the new <a href="http://code.google.com/apis/maps/documentation/staticmaps/">Static Maps API</a> to enhance our <a href="http://updates.orbitz.com">Orbitz TLC Traveler Update</a> mobile airport traffic page.  I am pleased to report that although the API is in its early stages, it provides enough functionality to easily convey valuable geo-based information (e.g. the top 10 severe traffic incidents surrounding an airport) for our mobile users.
+</p>
+<p>
+So why are static maps so important to mobile? Well, mobile development is kind of the old Wild West of the internet. Different phones use different browsers: some are common browsers like Opera, while others are proprietary ones written by the device manufacturer.  This means you cannot count on universal support for Javascript and Ajax, and therefore there is no way to use the Google Maps Javascript API for people on cell phones and PDAs.
+</p>
+<p>
+Ok, enough of the history lesson, click on the screenshot below to take a look at the Static Maps API in action.
+</p>
+<a href="http://updates.orbitz.com/mobile/airports/ORD/traffic">
+<img src="http://1.bp.blogspot.com/_T1lquhCmKo8/R-vtb_30h3I/AAAAAAAAAVc/wsyUKNCrEqU/s400/ord_traffic.png"/>
+</a>
+<br/>
+<p>
+Originally when starting work on this feature, I of course wanted to use things like clickable markers, custom icons, and so on.  But the thing to remember about mobile users is that they are on the go and have limited time to look at your map.  Therefore it is best to keep the information as simple and bare bones as possible, as to limit the amount of time needed to interpret what they are seeing.
+</p>
+<p>
+Instead of custom icons, we used colors to contrast traffic markers from the central airport marker.  We found the blue icon drew enough attention that it was the central focal, when surrounded by red icons (our traffic incidents).  Additionally, the red color was enough to associate markers on our mobile version of severe traffic incidents with those found on our web site that uses a custom red triangle icon.  Also by using labeled markers for the traffic incidents, and no label for the airport, we were able to further create a simple interpretation of traffic markers versus the airport maker.  Finally, since most users are used to the alphabet markers signifying a list of similar points on things like maps.google.com, it was enough to help us associate the list of traffic incidents on the map with their specific traffic details located below the map.
+</p>
+
+<p>
+There were only two big concerns we found when creating this mobile map: icon size and lack of numbered icons.  Since most mobile devices are phone-based, screen size (and thus map size) tends to be limited.  As you can see in the example above, there are several times where the icons overlap and make the map look cluttered.  If a smaller version of the icons were available, it could reduce the number of overlapping markers and make clear the position of the traffic incidents. Another issue with the icons is that the use of alphabet letters as labels has an inherent limitation, in that you can only place 26 different icons on one map. Because our non-mobile version of the traffic page can list over a hundred distinct incidents, we use numbers there to label those icons.  If numbered icons were available for static maps, we could display additional traffic incidents on the mobile map.
+</p>
+<p>
+As always, the Google Maps API team and I welcome comments and questions on this article, the mobile feature mentioned, and the Static Maps API. Please leave feedback in the <a href="http://groups.google.com/group/Google-Maps-API/">Maps API forum</a>.
+</p>
+<p>
+<i>
+Disclaimer: These views are mine and not the views of OWW or (subsidiary). I am not a spokesperson for OWW or (subsidiary) and neither OWW nor (subsidiary) endorse any material, content and/or links or assume any liability for any of my actions.
+</i>
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=YanpIXYt"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/yxRMHORLgfI" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6296347969018745229";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6296347969018745229";s:4:"link";s:115:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/yxRMHORLgfI/orbitz-mobile-traffic-maps-static-maps.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:85:"http://googlemapsapi.blogspot.com/2008/03/orbitz-mobile-traffic-maps-static-maps.html";}}i:21;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-1469337050174430211";s:9:"published";s:29:"2008-02-28T22:00:00.000-08:00";s:7:"updated";s:29:"2008-02-28T10:09:48.423-08:00";s:5:"title";s:37:"Introducing the Maps API Demo Gallery";s:12:"atom_content";s:1636:"<span class="byline-author">Posted by Pamela Fox, Google Maps API Team</span>
+
+<p><i>Why re-invent the wheel when you can copy and paste our wheel instead?</i></p>
+
+<p>
+In the <a href="http://groups.google.com/group/Google-Maps-API">Google Maps API group</a> and in my Inbox, developers often ask me questions such as "How do I draw a circle on the map?" or "How do I create groups of toggle-able markers?" Most of those questions are answered in the usage of little demo applications that I or one of our great external developers have put together. Previously, you have had to hunt through multiple places -- blog posts, developer sites, and group posts -- to find links to those demos. Well, start saving your hunting skills for the inevitable apocalypse. Our new Maps API <a href="http://code.google.com/apis/maps/documentation/demogallery.html">Demo Gallery</a> aggregates these demos togther, displaying a gallery of 40+ mini-applications with thumbnails, descriptions, and easy-to-read source code. Check out a standalone embedded version of this gallery below, and <a href="mailto:api.pamelafox@google.com">contact me</a> if you'd like some of your own demos included in it. 
+</p>
+<p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/demogallery.html" frameborder="0" width="500" height="400">
+</iframe><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=9hLSRpLW"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/ysxNyIJJ5oo" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1469337050174430211";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1469337050174430211";s:4:"link";s:110:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/ysxNyIJJ5oo/introducing-maps-api-demo-gallery.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:80:"http://googlemapsapi.blogspot.com/2008/02/introducing-maps-api-demo-gallery.html";}}i:22;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-1729182953909780619";s:9:"published";s:29:"2008-02-21T10:50:00.000-08:00";s:7:"updated";s:29:"2008-02-21T10:53:41.877-08:00";s:5:"title";s:33:"Google Maps Without the Scripting";s:12:"atom_content";s:3340:"<span class="byline-author">Posted by Tom Manshreck, Maps API Team</span>
+
+<p>
+
+If you're a regular reader of this blog, you probably already use the Google Maps API and love it as much as we do! But you may find it not useful for certain cases: the Google Maps API requires JavaScript, can take a while to load over slow connections, and requires some overhead to maintain a dynamic website.
+</p>
+<p>
+The Google Static Maps API provides a simpler way to add maps to your website. Rather than use JavaScript, the Google Static Maps API creates map images on the fly via simple requests to the Static Maps service with HTTP requests. No JavaScript, no overhead. Just create a special URL as the <code>src</code> attribute within an <code>&lt;img&gt;</code> tag and let the Static Maps service create your image.
+</p>
+<p>
+To see how easy the Static Maps API is to use, note the image below:
+</p>
+<img src="http://maps.google.com/staticmap?center=47.238336,8.827171&zoom=12&size=512x512&key=ABQIAAAAzr2EBOXUKnm_jVnk0OJI7xRBowNAzNyzBCy0NtsqQKfE5vK_rxT8_9KrqdnpNxJek73mDMFY9o21GQ">
+
+<p>
+This image was created using the following simple <code>&lt;img&gt;</code> tag:
+</p>
+<pre>
+&lt;img src="http://maps.google.com/staticmap?center=47.238336,8.827171&zoom=12&size=512x512&key=<i>MAPS_API_KEY</i>"&gt;
+</pre>
+<p>
+(Note that you will need to replace the <code>key</code> parameter above with your own Maps API key. You can obtain a free key at <a href="http://code.google.com/apis/maps/signup.html">http://code.google.com/apis/maps/signup.html</a>)
+</p>
+<p>
+When this blog post was displayed in your browser, the URL in the <code>&lt;img&gt;</code> tag was sent to the Static Maps service, which constructed an image based on the parameters passed in that URL. Voila! You can create maps up to 512 x 512 pixels, and at any zoom level or location on the face of the earth that Google Maps supports. You can even place markers on your map images! This <a href="http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html">Static Maps Wizard</a> lets you play around with some of the options.
+</p>
+<p>
+The Static Maps API is especially useful for pages in which you want a map to load quickly. You can even replace the generated Static Map with a JavaScript Maps API map after the page loads, allowing a seamless transition from a quick-loading map to a fully dynamic implementation.
+</p>
+<p>
+Because the map generated by the Static Maps API is an image, you can also send it to your friends as an email attachment (especially handy for planning your next party!) or display it on any cell phone browser, whether or not it supports JavaScript.
+</p>
+<p>
+Full documentation on constructing maps with the Static Maps API is available at:
+</p>
+<a href="http://code.google.com/apis/maps/documentation/staticmaps/index.html">http://code.google.com/apis/maps/documentation/staticmaps/index.html</a>
+<p>
+As always, please post questions in the <a href="http://groups.google.com/group/Google-Maps-API/">Maps API forum</a>.
+</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=kVxOkPaX"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/zeNM16YWwYo" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1729182953909780619";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1729182953909780619";s:4:"link";s:106:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/zeNM16YWwYo/google-maps-without-scripting.html";s:11:"author_name";s:13:"Tom Manshreck";s:10:"author_uri";s:51:"http://www.blogger.com/profile/03136133488397409624";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:76:"http://googlemapsapi.blogspot.com/2008/02/google-maps-without-scripting.html";}}i:23;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-2678273996091489502";s:9:"published";s:29:"2008-02-20T22:21:00.000-08:00";s:7:"updated";s:29:"2008-02-20T22:21:29.488-08:00";s:5:"title";s:31:"Mash your way to a better world";s:12:"atom_content";s:2369:"<span class="byline-author">Posted by Mano Marks, Geo APIs Team</span>
+
+Our friends up at <a title="NetSquared" href="http://www.netsquared.org/" target="_blank">NetSquared</a> recently opened a <a title="mashup challenge" href="http://www.netsquared.org/mashup" target="_blank">mashup challenge</a> to engage developers in helping nonprofits realize some of their web ideas.  The concept is pretty simple.  First, nonprofits post ideas on data they have and what they'd like to be able do do with it on the web.  Then, product managers and developers peruse <a title="projects" href="http://www.netsquared.org/2008/conference/projects" target="_blank">projects</a> and sign up to help produce specs and bring them to life over the course of the next month.  Nonprofits with the coolest mashup at the end are eligible for grants totaling $100k at this year's <span>NetSquared</span> <a title="conference" href="http://www.netsquared.org/2008/conference/" target="_blank">conference</a> in May.
+
+This year there's extra emphasis on openness, from standards and data to software and ideas.  If your mashup can itself be mashed up, all the better.  Mix and match APIs from different sources as you see fit - the only goal is to meet a need that a nonprofit has expressed. 
+
+We like this idea a lot, and we want to help it - and potential volunteers like you - succeed.  On March 7, we'll be hosting a hackathon at the Googleplex in Mountain View, California, for participants, where you'll be able to talk shop with API experts from Google.  We'll also be inviting gurus from other API providers in the area to join us so you get all the help you need.  If you sign up to work on a project you'll hear more from <span>NetSquared</span> about this event and others like it.
+
+Go <a title="check out some of the projects" href="http://www.netsquared.org/2008/conference/projects" target="_blank">check out some of the projects</a>, think about how you might be able to apply your design skills and API wizardry to help these groups out, sign up, and mash away!<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=EoLbbXE2"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/6hMbyAKehmw" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/2678273996091489502";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/2678273996091489502";s:4:"link";s:106:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/6hMbyAKehmw/mash-your-way-to-better-world.html";s:11:"author_name";s:10:"Mano Marks";s:10:"author_uri";s:45:"https://plus.google.com/107054744026933176373";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:76:"http://googlemapsapi.blogspot.com/2008/02/mash-your-way-to-better-world.html";}}i:24;a:12:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-6100177198646443956";s:9:"published";s:29:"2008-02-19T10:52:00.000-08:00";s:7:"updated";s:29:"2008-02-20T00:51:48.278-08:00";s:5:"title";s:67:"Creating a User-Contributed Map: Look, Ma - No server side scripts!";s:12:"atom_content";s:4804:"<span class="byline-author">Posted by Keir Clarke, Virtual Tourism Blog Author and Google Maps Mania Blog Contributor</span>
+<p>
+Pamela Fox wrote a wonderful tutorial in November called <a href="http://code.google.com/support/bin/answer.py?answer=81026&topic=11364">Creating a User-Contributed Map with PHP and Google Spreadsheets</a>. However if you are like me, the thought of having to tackle server-side scripting sends you running for the hills. Fortunately, the recent release of forms for Google Spreadsheets means it is now possible (with just a tiny bit of hacking and wizardry) to create a user contributed map without any server-side scripting and with the added bonus of Google hosting the data for you.
+</p>
+<ol>
+<li>
+<p>
+The first step is to create a form for Google Spreadsheets at this page. 
+</p>
+<p>
+The information that we need in order to add a contributor to our map is their name, latitude, and longitude. Of course, if you want more information on your map, you can always add more fields to the form later.
+</p>
+  <ul>
+  <li>The first question we will ask is ‘What is your name?’. Type this into the ‘Question Title’ box. The default question type is ‘text’ - leave this as it is. After you have completed the ‘Question Title’ press ‘save’.</li>
+  <li>Now add the second question by clicking ‘+ Add a question’ and this time type ‘Latitude’ in the Question Title box. Again leave the question type as 'text' and press ‘save’ again.</li>
+  <li>Add one more question with ‘Longitude’ as the ‘Question Title’.</li>
+  </ul>
+</li>
+<li>
+<p>
+The second step (and the only one that requires some coding) is to hack the generated spreadsheet form so that instead of having to type in a latitude and longitude manually, our users can just click on a map to show where they live. To do this, we create a map and then assign an event listener for the map <code>'click'</code> event that writes the values of the clicked coordinate into the form input fields. The code that accomplishes that is shown below:
+</p>
+<pre>
+var map = new GMap2(document.getElementById("map_canvas"));
+map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+map.addControl(new GSmallMapControl());
+map.addControl(new GMapTypeControl());
+
+GEvent.addListener(map, 'click', function(overlay, latlng) {
+  var LatLngStr = "Lat = " + latlng.lat() + ", Long = " + latlng.lng();
+  map.openInfoWindow(latlng, LatLngStr);
+  document.getElementById("latbox").value = latlng.lat();
+  document.getElementById("lonbox").value = latlng.lng();
+});
+</pre>
+<p>
+The full HTML for the form and map is <a href="http://keirclarke.googlepages.com/getlatlong.htm">here</a>. This page extracts the latitude and longitude when a user clicks on the map and automatically fills in the input boxes for latitude and longitude in the spreadsheet form, and also lets the user fill in their name. The important things to remember about modifying the generated spreadsheet form is that the form field names remain the same (e.g. the name for the latitude input is 'single:2'), and that the form action remains the same (e.g. 'http://spreadsheets.google.com/formResponse?key=pHxwMuyQhRdSwN9QcKaqWVA'). 
+</p>
+<p>
+Now that you understand how the simple map-based form works, feel free to hack it further. Here's <a href="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsforms/geocodeform.html">an example</a> using the same form that integrates the <code>GClientGeocoder</code> to let users type in an address and then stores the resulting coordinate in hidden input fields.
+</p>
+</li>
+<li>
+<p>
+Once you've successfully modified the form, all you need to do is use <a href="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsmapwizard/makecustommap.htm">the Spreadsheet Map wizard</a> to create your user-contributed map.
+</p>
+<p>
+The wizard will do all the work of creating your map and generating the code, and give you something like the map embedded below. You could also try out generating KML from the spreadsheet with the techniques from the <a href="http://google-latlong.blogspot.com/2008/02/mapping-with-google-spreadsheets.html">Spreadsheets Mapper tool</a>.
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsforms/exampleoutput.html" frameborder="0" width="550" height="450"><a href="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsforms/exampleoutput.html">Check out the example output of the spreadsheets map wizard.</a></iframe>
+</ol><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?a=JnKCVlwN"><img src="http://feeds.feedburner.com/~f/OfficialGoogleMapsApiBlog?d=41" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/OfficialGoogleMapsApiBlog/~4/VLmQlzIaUwg" height="1" width="1" alt=""/>";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6100177198646443956";s:9:"link_self";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6100177198646443956";s:4:"link";s:114:"http://feedproxy.google.com/~r/OfficialGoogleMapsApiBlog/~3/VLmQlzIaUwg/creating-user-contributed-map-look-ma.html";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:10:"feedburner";a:1:{s:8:"origlink";s:84:"http://googlemapsapi.blogspot.com/2008/02/creating-user-contributed-map-look-ma.html";}}}s:7:"channel";a:13:{s:2:"id";s:34:"tag:blogger.com,1999:blog-18549845";s:7:"updated";s:29:"2014-10-05T01:00:05.860-07:00";s:5:"title";s:20:"Google Maps API Blog";s:8:"subtitle";s:71:"Your official source for news, tips and tricks for the Google Maps API.";s:4:"link";s:34:"http://googlemapsapi.blogspot.com/";s:9:"link_next";s:96:"http://www.blogger.com/feeds/18549845/posts/default?start-index=26&max-results=25&redirect=false";s:11:"author_name";s:10:"Pamela Fox";s:10:"author_uri";s:51:"http://www.blogger.com/profile/15947664772001597300";s:12:"author_email";s:19:"noreply@blogger.com";s:9:"generator";s:7:"Blogger";s:10:"opensearch";a:3:{s:12:"totalresults";s:3:"168";s:10:"startindex";s:1:"1";s:12:"itemsperpage";s:2:"25";}s:6:"atom10";a:1:{s:9:"link_self";s:53:"http://feeds.feedburner.com/OfficialGoogleMapsApiBlog";}s:4:"info";s:140:"<feedburner:info /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/"><atom10:link />";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:4:"etag";s:29:"sUs+FnyUFzk5Qk2qeCAZ+WZ7MvY
+";s:13:"last_modified";s:31:"Sat, 14 Nov 2015 12:30:44 GMT
+";}

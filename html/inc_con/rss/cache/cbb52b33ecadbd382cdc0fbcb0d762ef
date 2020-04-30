@@ -1,0 +1,388 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:22:{i:0;a:12:{s:5:"title";s:22:"Dear Google Earth Team";s:4:"link";s:52:"http://zcologia.com/news/440/dear-google-earth-team/";s:7:"summary";s:170:"Please consider giving your users the power to POST and PUT KML from Google Earth to arbitrary URLs other than http://bbs.keyhole.com. Anything you can do about this, Ed?";s:9:"published";s:25:"2007-04-19T16:55:49-06:00";s:7:"updated";s:25:"2007-04-19T16:55:49-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/440";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:367:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Please consider giving your users the power to POST and PUT KML from Google Earth to arbitrary URLs other than <a class="reference" href="http://bbs.keyhole.com">http://bbs.keyhole.com</a>. Anything you can do about this, <a class="reference" href="http://www.edparsons.com/">Ed</a>?</p>
+
+      </div>
+    ";}i:1;a:12:{s:5:"title";s:22:"More Like This, Please";s:4:"link";s:51:"http://zcologia.com/news/439/more-like-this-please/";s:7:"summary";s:134:"First, Sam Ruby on GeoRSS, and now Stefan Tilkov on REST and CRUD: lessons from the Web for we who
+would build the Geo-Web. Listen up.";s:9:"published";s:25:"2007-04-19T13:40:55-06:00";s:7:"updated";s:25:"2007-04-19T13:40:55-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/439";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:993:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >First, Sam Ruby on <a class="reference" href="http://www.intertwingly.net/blog/2007/03/23/Which-Way-Is-Up">GeoRSS</a>, and now Stefan Tilkov on <a class="reference" href="http://www.innoq.com/blog/st/2007/04/19/rest_is_not_crud.html">REST and CRUD</a>: lessons from the Web for we who would build the Geo-Web. Listen up.</p>
+<p >It's interesting, too, that <a class="reference" href="http://blog.labnotes.org/2007/03/30/rounded-corners-119/">Assaf Arkin</a> uses OASIS as an <a class="reference" href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=regrep-rest">example</a> of an entity trying to become cool by association with REST, as the OGC and others plan to put ebRIM at the center of geospatial <a class="reference" href="http://ebxml.xml.org/node/71">catalog</a> <a class="reference" href="http://metadatamadness.wordpress.com/2007/04/02/hacking-on-metadata-at-foss4g-2007/">services</a>.</p>
+
+      </div>
+    ";}i:2;a:12:{s:5:"title";s:15:"Upcoming Events";s:4:"link";s:45:"http://zcologia.com/news/438/upcoming-events/";s:7:"summary";s:119:"Front Range Pythoneers: OLPC (!) and testing, 18 April.
+
+FRUGOS: MapServer and OpenLayers class at CU-Denver, 25 April.";s:9:"published";s:25:"2007-04-18T11:05:58-06:00";s:7:"updated";s:25:"2007-04-18T11:05:58-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/438";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:450:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><a class="reference" href="http://wiki.python.org/moin/FrontRangePythoneers">Front Range Pythoneers</a>: OLPC (!) and testing, 18 April.</p>
+<p ><a class="reference" href="http://groups.google.com/group/frugos">FRUGOS</a>: MapServer and OpenLayers class at CU-Denver, <a class="reference" href="http://groups.google.com/group/frugos/t/e38fdccb73e6fbc2">25 April</a>.</p>
+
+      </div>
+    ";}i:3;a:12:{s:5:"title";s:22:"Resources, not Objects";s:4:"link";s:51:"http://zcologia.com/news/437/resources-not-objects/";s:7:"summary";s:93:"Keyur, you must think in terms of resources, not object methods. Nouns, not verbs. [more ...]";s:9:"published";s:25:"2007-04-18T08:19:04-06:00";s:7:"updated";s:25:"2007-04-18T08:19:04-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/437";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1086:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><a class="reference" href="http://abstractfinal.blogspot.com/2007/04/restful-urls-for-non-crud-operations.html">Keyur</a>, you must think in terms of <em >resources</em>, not <em >object</em> methods. <em >Nouns</em>, not <em >verbs</em>. In a restful architecture you don't cause your person to talk, you listen to the person's words:</p>
+<pre class="literal-block">
+GET /persons/1
+</pre>
+<p >or, if you want to be fancy:</p>
+<pre class="literal-block">
+GET /persons/1/words
+</pre>
+<p >Likewise, you don't cause them to walk a step, you update the person with a new location:</p>
+<pre class="literal-block">
+PUT /persons/1
+{ ..., "location": [[-100.0, 40.0]] }
+</pre>
+<p >or:</p>
+<pre class="literal-block">
+PUT /persons/1/location
+{ "location": [[-100.0, 40.0]] }
+</pre>
+<p >Matrix URIs? They're standard with Rails, but mainly to allow PUT operations to tunnel via POST from dumb clients like the browser:</p>
+<pre class="literal-block">
+POST /persons/1;edit
+{ ..., "location": [[-100.0, 40.0]] }
+</pre>
+
+      </div>
+    ";}i:4;a:12:{s:5:"title";s:31:"Even More REST and Geo Blogging";s:4:"link";s:61:"http://zcologia.com/news/436/even-more-rest-and-geo-blogging/";s:7:"summary";s:127:"At All Points Blog. The mainstream hasn't yet discovered that the community has been earnestly discussing REST since last fall.";s:9:"published";s:25:"2007-04-17T09:33:39-06:00";s:7:"updated";s:25:"2007-04-17T09:33:39-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/436";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:388:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >At <a class="reference" href="http://www.allpointsblog.com/archives/2743-Whats-REST.html">All Points Blog</a>. The mainstream hasn't yet discovered that the community has been earnestly discussing REST since <a class="reference" href="http://www.digitalearth.com.au/2006/09/04/rest-abuse/">last fall</a>.</p>
+
+      </div>
+    ";}i:5;a:12:{s:5:"title";s:17:"GeoDRM or GeoCYA?";s:4:"link";s:46:"http://zcologia.com/news/435/geodrm-or-geocya/";s:7:"summary";s:197:"Yesterday, a reader pointed me to an article in Government Computer News about what I'll call GeoCYA, in which the OGC CTO walks a fine line between removing, and stoking, "the fear of litigation".";s:9:"published";s:25:"2007-04-17T08:19:43-06:00";s:7:"updated";s:25:"2007-04-17T08:19:43-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/435";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:707:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Raj, Paul, Tom: don't neglect to write soon about the process of approving the <a class="reference" href="http://www.opengeospatial.org/pressroom/pressreleases/704">GeoDRM Reference Model</a>, and how it's going to usher in a brand new era of data sharing. Congratulations! The masses will cheer you and throw flowers, I'm sure.</p>
+<p >Related: yesterday, a reader pointed me to an article in Government Computer News about what I'll call <a class="reference" href="http://www.gcn.com/online/vol1_no1/43515-1.html">GeoCYA</a>, in which the OGC CTO walks a fine line between removing, and stoking, "the fear of litigation".</p>
+
+      </div>
+    ";}i:6;a:12:{s:5:"title";s:13:"JSON Security";s:4:"link";s:43:"http://zcologia.com/news/434/json-security/";s:7:"summary";s:161:"I'm surprised nobody noticed the potentially exploitable feature collections responses in my initial Hammock deployment. Bob Ippolito explains all about it here.";s:9:"published";s:25:"2007-04-14T13:28:01-06:00";s:7:"updated";s:25:"2007-04-14T13:28:01-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/434";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:416:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >I'm surprised nobody noticed the potentially exploitable feature collections responses in my initial Hammock deployment. Best practice is to return JSON objects rather than arrays. Bob Ippolito explains all about it <a class="reference" href="http://bob.pythonmac.org/archives/2007/04/05/fortify-javascript-hijacking-fud/">here</a>.</p>
+
+      </div>
+    ";}i:7;a:12:{s:5:"title";s:11:"Rtree 0.1.0";s:4:"link";s:41:"http://zcologia.com/news/433/rtree-0-1-0/";s:7:"summary";s:121:"This package is based on Marios Hadjieleftheriou's spatialindex, and now allows you to persist a tree on disk. [more ...]";s:9:"published";s:25:"2007-04-13T16:09:07-06:00";s:7:"updated";s:25:"2007-04-13T16:09:07-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/433";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1045:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Good news for Python geo-programmers: Howard Butler has kicked out the jams, unstuck my Python/C++ R-Tree <a class="reference" href="http://zcologia.com/news/321/qgis-r-trees/">experiment</a>, and allowed me to release <a class="reference" href="http://trac.gispython.org/projects/PCL/wiki/ArrTree">Rtree</a> <a class="reference" href="http://cheeseshop.python.org/pypi/Rtree/0.1.0">0.1.0</a>. This package is based on Marios Hadjieleftheriou's <a class="reference" href="http://research.att.com/~marioh/spatialindex/index.html">spatialindex</a>, and now allows you to persist a tree on disk. The one known bug is that it's a no go on 64-bit architectures. This will be addressed in the 0.2.0 release by using spatialindex 1.1.1.</p>
+<p >In other news, I moved Rtree and Quadtree from Pleiades to the GIS-Python <a class="reference" href="http://trac.gispython.org/projects/PCL/browser">repository</a>. Thanks to <em >svndumpfilter</em>, it was almost too easy.</p>
+
+      </div>
+    ";}i:8;a:12:{s:5:"title";s:13:"In a Nutshell";s:4:"link";s:43:"http://zcologia.com/news/432/in-a-nutshell/";s:7:"summary";s:121:"The difference between Microsoft's and Google's urban web maps says a lot about the mindset of these companies [more ...]";s:9:"published";s:25:"2007-04-13T07:50:20-06:00";s:7:"updated";s:25:"2007-04-13T07:50:20-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/432";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:434:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >The difference between Microsoft's and Google's urban web maps says a lot about the mindset of these companies:</p>
+<p >Microsoft -- <a class="reference" href="http://virtualearth4gov.spaces.live.com/blog/cns!369B39F890CE30C1!330.entry">photorealism</a>.</p>
+<p >Google -- <a class="reference" href="http://www.edparsons.com/?p=450">hyperrealism</a>.</p>
+
+      </div>
+    ";}i:9;a:12:{s:5:"title";s:7:"Hammock";s:4:"link";s:37:"http://zcologia.com/news/431/hammock/";s:7:"summary";s:72:"Here's the code for the toy not-a-WFS I wrote about yesterday [more ...]";s:9:"published";s:25:"2007-04-11T16:43:01-06:00";s:7:"updated";s:25:"2007-04-11T16:43:01-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/431";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:739:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Here's the code for the toy not-a-WFS I wrote about yesterday [<a class="reference" href="http://icon.stoa.org/trac/pleiades/browser/hammock/trunk">browse</a>]:</p>
+<pre class="literal-block">
+$ svn co http://icon.stoa.org/svn/pleiades/hammock/trunk hammock
+</pre>
+<p >Requires GeoJSON:</p>
+<pre class="literal-block">
+$ svn co http://svn.gispython.org/gispy/GeoJSON/trunk GeoJSON
+$ chdir GeoJSON
+$ python setup.py install
+</pre>
+<p >in addition to simplejson (needed by GeoJSON), elementtree, selector, and wsgiref (use setuptool's easy install script, or build from <a class="reference" href="http://cheeseshop.python.org/pypi">Cheeseshop</a> tarballs).</p>
+
+      </div>
+    ";}i:10;a:12:{s:5:"title";s:12:"Feature Demo";s:4:"link";s:42:"http://zcologia.com/news/430/feature-demo/";s:7:"summary";s:232:"This evening I cobbled together a demo of a feature service inspired by Joe Gregorio's
+Robaccia. It's a toy model of something not unlike a RESTful WFS-T, based on the Python
+wsgiref, elementtree, and simplejson packages. [more ...]";s:9:"published";s:25:"2007-04-10T02:31:36-06:00";s:7:"updated";s:25:"2007-04-10T02:31:36-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/430";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:5405:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><strong >Update</strong> (2007-04-13): coordinates attribute has been reformatted from [x, y] to [[x, y]] to keep up with the evolving GeoJSON <a class="reference" href="http://wiki.geojson.org/RFC-001">RFC</a>. If you're curious about the source code, see the <a class="reference" href="http://zcologia.com/news/431/hammock/">following post</a>.</p>
+<p >This evening I cobbled together a demo of a feature service inspired by Joe Gregorio's <a class="reference" href="http://bitworking.org/news/Why_so_many_Python_web_frameworks">Robaccia</a>. It's a toy model of something not unlike a RESTful WFS-T, based on the Python wsgiref, selector, elementtree, and simplejson packages.</p>
+<div class="image illus"><img alt="http://zcologia.com/images/map-before.jpg" class="illus" height="531" src="http://zcologia.com/images/map-before.jpg" width="418"></img></div>
+<p >The root resource is at <a class="reference" href="http://zcologia.com:8081/features">http://zcologia.com:8081/features</a>, and the default view is a JSON array of links to objects. (Note: Douglas Crockford has proposed the <em >application/json</em> content type, and I've only used <em >text/plain</em> here to make it easier for people to follow the links in their browsers.) The URLs <a class="reference" href="http://zcologia.com:8081/features.atom">http://zcologia.com:8081/features.atom</a> and <a class="reference" href="http://zcologia.com:8081/features.kml">http://zcologia.com:8081/features.kml</a> return GeoRSS (Atom) and KML representations respectively.</p>
+<p >Over the course of several images, I'm going to walk through the process of getting representations of feature resources, and posting new resources to the system.</p>
+<p >The first image shows all the features in the system as seen using KML in Google Maps [<a class="reference" href="http://maps.google.com/maps?f=q&hl=en&q=http://zcologia.com:8081/features.kml&layer=&ie=UTF8&z=6&om=1">link</a>]. More features may have been posted to the system by the time you click on that link, so you may see more points. It's also possible that these particular features here may have popped off, as I've capped the number of features in the system at 30. Like I said, it's just a toy. Only 288 lines of Python.</p>
+<p >Now, fire up your RESTful feature service client, and follow my instructions to add a new feature to the system. You've probably got several such clients on your system already. My favorite is good ole vim. Seriously.</p>
+<div class="image figure"><img alt="http://zcologia.com/images/getting-template.jpg" class="figure" height="230" src="http://zcologia.com/images/getting-template.jpg" width="670"></img></div>
+<p >You can obtain a representation of any of the system's features by reading the output of a curl command into an empty buffer:</p>
+<pre class="literal-block">
+:r ! curl -s --url http://zcologia.com:8081/features/1
+</pre>
+<p >The -s option prevents capture of download rate stats. Use any feature URI that you find in <a class="reference" href="http://zcologia.com:8081/features">http://zcologia.com:8081/features</a>. The resulting JSON text will be a template for a new feature.</p>
+<div class="image figure"><img alt="http://zcologia.com/images/got-template.jpg" class="figure" height="230" src="http://zcologia.com/images/got-template.jpg" width="670"></img></div>
+<p >Edit the coordinates (this toy service is currently restricted to points), title, and summary. Any value you provide for id will be overridden, as will any timestamps.</p>
+<div class="image figure"><img alt="http://zcologia.com/images/posting-data.jpg" class="figure" height="230" src="http://zcologia.com/images/posting-data.jpg" width="670"></img></div>
+<p >Now, post this data to the <em >features</em> resource by piping the buffer contents back through curl:</p>
+<pre class="literal-block">
+:% ! curl -s --url http://zcologia.com:8081/features -d @-
+</pre>
+<p >If you typed carefully, you'll get a result like:</p>
+<div class="image figure"><img alt="http://zcologia.com/images/post-results.jpg" class="figure" height="230" src="http://zcologia.com/images/post-results.jpg" width="670"></img></div>
+<p >Go ahead and browse to the resultant URL and admire the shiny new feature.</p>
+<div class="image illus"><img alt="http://zcologia.com/images/map-after.jpg" class="illus" height="531" src="http://zcologia.com/images/map-after.jpg" width="418"></img></div>
+<p >Reload the Google Maps page, and you'll see be able to see your new feature. If you're a careful typist, do play around with this as much as you want. I'll keep the service running as much as I can, though the features may come and go. If need be, I'll apply my blog comment policy to features posted by visitors and delete any obnoxious crap.</p>
+<p >With luck, I'll add the capability to PUT and DELETE features next week.</p>
+<p >I'll continue to tweak this toy and use it to explore Pleiades use cases: posting KML files created with Google Earth (would be nice to do it directly), and creating new features via GE and WebDAV are a few of the things we're looking at. Vim as a feature service client is fun for a while, but gets old quickly, and is a harrowing experiencing for a non-hacker. Still, the fact that you can use vim shows the enormous potential flexibility of this kind of system architecture.</p>
+
+      </div>
+    ";}i:11;a:12:{s:5:"title";s:28:"Geometries for Python Update";s:4:"link";s:58:"http://zcologia.com/news/429/geometries-for-python-update/";s:7:"summary";s:128:"An older, slightly outdated, post of mine about Python geometry packages is getting read
+enough to warrant an update. [more ...]";s:9:"published";s:25:"2007-04-09T11:27:30-06:00";s:7:"updated";s:25:"2007-04-09T11:27:30-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/429";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1699:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >An older, slightly outdated, <a class="reference" href="http://zcologia.com/news/150/geometries-for-python/">post</a> of mine about Python geometry packages is getting read enough to warrant an update.</p>
+<p >Geometries from mapscript.py and ogr.py haven't changed in the past year. The <a class="reference" href="http://code.djangoproject.com/wiki/GeoDjango#GEOS">GeoDjango</a> developers are finding that the geometry API in geos.py isn't so bad -- perhaps because they're doing the bulk of their operations and transforms within the database -- but the fact remains that the GEOS project is trying to deprecate use of the C++ API, and that this puts geos.py in some peril.</p>
+<p >Since the <a class="reference" href="http://trac.gispython.org/projects/PCL/wiki">Python Cartographic Library</a>'s 0.11 release, geometries are now a part of the PCL-Core component's cartography.geometry package. Howard Butler added pickle support, and we've fixed a number of bugs since the start of 2006. We've also reduced the dependencies of PCL-Core, as you can see in <a class="reference" href="http://trac.gispython.org/projects/PCL/browser/PCL/trunk/PCL-Core/INSTALL.txt">INSTALL.txt</a>. Remember, "zope" is now a namespace package, and you can install zope.interface [<a class="reference" href="http://cheeseshop.python.org/pypi/zope.interface/">Cheeseshop</a>] separately from any other piece of Zope 3.</p>
+<p >I have nothing to report about <a class="reference" href="http://trac.osgeo.org/fdo/browser/trunk/Fdo/Python">FDO</a>'s brand new geometries for Python. My understanding is that they are also based on GEOS.</p>
+
+      </div>
+    ";}i:12;a:12:{s:5:"title";s:21:"Game Over for GeoDRM?";s:4:"link";s:50:"http://zcologia.com/news/428/game-over-for-geodrm/";s:7:"summary";s:202:"On the other hand, work on rights expression is useful to all of us, and even more so in the light of recent revelations that Creative Commons doesn't want to get into the geodata business. [more ...]
+
+";s:9:"published";s:25:"2007-04-09T09:40:52-06:00";s:7:"updated";s:25:"2007-04-09T09:40:52-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/428";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1409:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><a class="reference" href="http://www.opengeospatial.org/projects/groups/geodrmwg">GeoDRM</a> proponents have argued the necessity of geospatial digital rights management partly by analogy to the entertainment industry. So, it seems that Apple, Microsoft, and their digital music partners <a class="reference" href="http://www.boingboing.net/2007/04/02/itunes_store_will_se.html">pulling</a> <a class="reference" href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&taxonomyName=mobile_devices&articleId=9015898&taxonomyId=75">out</a> of DRM also pulls the rug out from under GeoDRM. Geodata users don't want digital rights management any more than do users of digital music. Does this mean the end for GeoDRM? Maybe yes, and maybe no (<a class="reference" href="http://www.markshuttleworth.com/archives/96">Mark Shuttleworth</a>):</p>
+<blockquote >
+There are some ideas that are broken, but attractive enough to some people that they are doomed to be tried again and again.</blockquote>
+<p >On the other hand, work on rights <em >expression</em> is useful to all of us, and even more so in the light of recent revelations that Creative Commons <a class="reference" href="http://www.nabble.com/Re%3A-Promoting-freely-available-geodata-p9762369.html">doesn't want</a> to get into the geodata business.</p>
+
+      </div>
+    ";}i:13;a:12:{s:5:"title";s:23:"GeoRSS: Worse is Better";s:4:"link";s:52:"http://zcologia.com/news/427/georss-worse-is-better/";s:7:"summary";s:114:"That the Geo-Web is forming out of GeoRSS and KML rather than GML is yet another indictment
+against XSD. [more ..]";s:9:"published";s:25:"2007-04-07T09:40:19-06:00";s:7:"updated";s:25:"2007-04-07T09:40:19-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/427";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:1425:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Sam Ruby is using GeoRSS, and the emergence of new feed based applications from Google and Microsoft, as an <a class="reference" href="http://intertwingly.net/blog/2007/04/06/Targeting-Non-Elite-Programmers">example</a> of what non-elite web programmers can accomplish without XML schemas (or SOAP). The uptake of GeoRSS (and RSS more generally) demonstrates once again how worse is often better. People are typically generating GeoRSS feeds using tools that are completely ignorant of XML Schema, validating them via web <a class="reference" href="feedvalidator.org">sites</a>, and processing fetched feeds using the DOM or XPath capabilities of their browser's JavaScript engine (<a class="reference" href="http://trac.openlayers.org/browser/trunk/openlayers/lib/OpenLayers/Layer/GeoRSS.js">GeoRSS.js</a>). That the Geo-Web is forming out of GeoRSS and KML -- initially released without a schema -- rather than GML is yet another indictment against XSD.</p>
+<p >The James Clark <a class="reference" href="http://blog.jclark.com/2007/04/do-we-need-new-kind-of-schema-language.html">post</a> to which Ruby replies is also a good read. Something like TEDI would come in handy at times, maybe even for the Python <a class="reference" href="http://trac.gispython.org/projects/PCL/wiki/PythonFeatureProtocol">feature protocol</a> I'm working on.</p>
+
+      </div>
+    ";}i:14;a:12:{s:5:"title";s:26:"Conference Wireless How-to";s:4:"link";s:56:"http://zcologia.com/news/426/conference-wireless-how-to/";s:7:"summary";s:76:"For the FOSS4G 2007 organizers: wireless lessons from PyCons 2006 and 2007.
+";s:9:"published";s:25:"2007-04-06T09:31:37-06:00";s:7:"updated";s:25:"2007-04-06T09:31:37-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/426";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:250:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >For the FOSS4G 2007 organizers: <a class="reference" href="http://www.tummy.com/Community/Articles/pycon2007-network/">wireless lessons from PyCons 2006 and 2007</a>.</p>
+
+      </div>
+    ";}i:15;a:12:{s:5:"title";s:25:"Silence on Spatial Search";s:4:"link";s:55:"http://zcologia.com/news/425/silence-on-spatial-search/";s:7:"summary";s:221:"Ed Parsons, a few weeks ago, was befuddled by the GIS industry's almost-imperceptible
+response to Google's spatial search news. There hasn't been any new tide of interest since,
+and there are 3 primary reasons. [more ...]";s:9:"published";s:25:"2007-04-05T09:59:39-06:00";s:7:"updated";s:25:"2007-04-05T09:59:39-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/425";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:2380:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Ed Parsons, a few weeks ago, was befuddled by the GIS industry's almost-imperceptible response to Google's <a class="reference" href="http://www.edparsons.com/?p=431">spatial search news</a>. There hasn't been any new tide of interest since, and there are 3 primary reasons.</p>
+<p >First and foremost, there's no public API for the spatial search, and no access other than via Google Earth or Maps (example <a class="reference" href="http://maps.google.com/maps?f=q&hl=en&q=ancient+bridge+%2Bpleiades&sll=37.085858,29.707031&sspn=2.712319,3.999023&layer=&ie=UTF8&z=8&om=1&iwloc=A">here</a>). What's a geospatial developer to do? Navigate GMaps to a location, search, and then scrape the page for results? Ugh.</p>
+<p >Next, there's very little information from Google about the steps geo-webmasters should take to be spatially indexed. One scant blog <a class="reference" href="http://googlemapsapi.blogspot.com/2007/01/get-more-traffic-to-your-maps-api-site.html">post</a> about KML in sitemaps and a handful of <a class="reference" href="http://www.directionsmag.com/article.php?article_id=2409">quotes</a> in Directions don't add up to much. I'd like to see some simple spatial tools integrated with Google's <a class="reference" href="http://www.google.com/webmasters/">Webmaster Central</a>. Maybe this will be a part of Ed's new job?</p>
+<p >I'm not going to trot out the famous Upton Sinclair quote here, but it can not be denied that geospatial search offerings from Google (and soon, I'm sure, from other search engines) are disruptive to the mainstream GIS industry. Many of us are catalog programmers or catalog salespersons, and there's a bit of ducking and covering going on. Hoping that the disruption goes away without altering the business isn't going to work. Over the next few years, the relevance of sites like the <a class="reference" href="http://gos2.geodata.gov/wps/portal/gos">Geospatial One-Stop</a>, or projects like OGC Web Catalog Service, will evaporate just like the relevance of Yahoo's web catalog did in the late 1990s.</p>
+<p ><strong >Update</strong>: Paul Ramsey <a class="reference" href="http://geotips.blogspot.com/2007/04/calgis-notes-day-1.html">reports</a> that the game-changing impact of spatial search was brought up in the CalGIS conference keynote.</p>
+
+      </div>
+    ";}i:16;a:12:{s:5:"title";s:26:"More REST and GIS Blogging";s:4:"link";s:56:"http://zcologia.com/news/424/more-rest-and-gis-blogging/";s:7:"summary";s:117:"REST gets a mention from Sebastian Good, though his post is more about the current REST-less
+state of enterprise GIS.";s:9:"published";s:25:"2007-04-04T08:48:43-06:00";s:7:"updated";s:25:"2007-04-04T08:48:43-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/424";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:635:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >REST gets a mention from Sebastian Good, though his <a class="reference" href="http://www.palladiumconsulting.com/blog/sebastian/2007/04/god-rest-ye-merry-polygons.html">post</a> is more about the current REST-less state of enterprise GIS.</p>
+<p ><strong >Update</strong>: And <a class="reference" href="http://jroller.com/page/javanoid?entry=enough_already_i_need_some">this</a> from Keyur Shah.</p>
+<p >Me, again: enterprisey, business-to-business services will continue to use SOAP, but if there is going to be a Geo-Web, it will be based on REST.</p>
+
+      </div>
+    ";}i:17;a:12:{s:5:"title";s:19:"Google JSON and Geo";s:4:"link";s:49:"http://zcologia.com/news/423/google-json-and-geo/";s:7:"summary";s:130:"Interesting, but Google's JSON, literally transcribed from Atom, is almost exactly as cumbersome as XML (example here). [more ...]";s:9:"published";s:25:"2007-04-02T11:22:34-06:00";s:7:"updated";s:25:"2007-04-02T11:22:34-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/423";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:677:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><a class="reference" href="http://googlemapsapi.blogspot.com/2007/03/creating-dynamic-client-side-maps.html">Interesting</a>, but Google's JSON, literally transcribed from Atom, is almost exactly as cumbersome as XML (example <a class="reference" href="http://spreadsheets.google.com/feeds/list/o16162288751915453340.4402783830945175750/od6/public/values?alt=json">here</a>). Apparently, it's all about evading the browser's same origin policy. Google should throw its weight behind Douglas Crockford's JSONRequest <a class="reference" href="http://www.json.org/JSONRequest.html">proposal</a>.</p>
+
+      </div>
+    ";}i:18;a:12:{s:5:"title";s:17:"My Comment Policy";s:4:"link";s:47:"http://zcologia.com/news/422/my-comment-policy/";s:7:"summary";s:469:"Recent events, summarized by Tim O'Reilly here, have prompted me to spell out a policy for
+comments on this blog. I encourage people to write critically about our community, industry,
+and media, but I reserve the right to remove pointless flamebait, or personal attacks, as well
+as spam. If an email address accompanies extremely poor commentary, I'll contact the author
+personally about making sensible edits or retractions. If not, I'll simply delete it. Fair
+enough?";s:9:"published";s:25:"2007-04-02T10:24:55-06:00";s:7:"updated";s:25:"2007-04-02T10:24:55-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/422";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:905:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >Recent events, summarized by Tim O'Reilly <a class="reference" href="http://radar.oreilly.com/archives/2007/03/call_for_a_blog_1.html">here</a>, have prompted me to spell out a policy for comments on this blog. I encourage people to write critically about our community, industry, and media, but I reserve the right to remove pointless flamebait, or personal attacks, as well as spam. If an email address accompanies extremely poor commentary, I'll contact the author personally about making sensible edits or retractions. If not, I'll simply delete it. Fair enough?</p>
+<p ><strong >Update</strong>: changed the wording a bit so as not to point at anyone. The comments I get here provide much, if not all, of my blog's value. I won't delete non-spam comments lightly, but I have no obligation to give jerks a voice here.</p>
+
+      </div>
+    ";}i:19;a:12:{s:5:"title";s:17:"Dumbing Down REST";s:4:"link";s:47:"http://zcologia.com/news/421/dumbing-down-rest/";s:7:"summary";s:474:"In a comment on my last post, I pointed out that content negotiation is low on my priorities
+because there aren't enough smart user agents yet. In a related (and better) post, Dave Thomas
+explains how dumb the browser is, and how you might dumb down your applications. His idea is
+immediately relevant to anyone developing a RESTful GIS; when we're constrained to the same
+small handful of verbs (GET, POST, PUT, etc), it's easy to transfer and share architectural
+concepts.";s:9:"published";s:25:"2007-04-02T09:40:48-06:00";s:7:"updated";s:25:"2007-04-02T09:40:48-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/421";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:763:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >In a comment on my last post, I pointed out that content negotiation is low on my priorities because there aren't enough smart user agents yet. In a related (and better) <a class="reference" href="http://pragdave.pragprog.com/pragdave/2007/03/the_radar_archi.html">post</a>, Dave Thomas explains how dumb the browser is, and how you might dumb down your applications. His idea is immediately relevant to anyone developing a RESTful GIS; when we're constrained to the same small handful of verbs (GET, POST, PUT, etc), it's easy to transfer and share architectural concepts.</p>
+<p >Via Simon <a class="reference" href="http://simonwillison.net/2007/Apr/2/pragdave/">Willison</a>.</p>
+
+      </div>
+    ";}i:20;a:12:{s:5:"title";s:20:"RESTful Feature APIs";s:4:"link";s:50:"http://zcologia.com/news/420/restful-feature-apis/";s:7:"summary";s:297:"The gist of all this is that a RESTful feature query returns key, indexed data about feature
+resources along with a URI to the feature resources themselves in the same way that a Google
+Search returns data from its index, with links, instead of dumping the entire Web into your
+browser. [more ...]";s:9:"published";s:25:"2007-03-30T13:29:01-06:00";s:7:"updated";s:25:"2007-03-30T13:29:01-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/420";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:3951:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p ><strong >Update</strong> (2007-04-10): a related <a class="reference" href="http://zcologia.com/news/430/feature-demo">demo</a>.</p>
+<p ><strong >Update</strong>: added examples of query results.</p>
+<p >My <a class="reference" href="http://zcologia.com/news/406/ws-and-rest-again/">previous post</a> about WxS, RPC, and REST raised a few questions about whether
+queries fit into a RESTful GIS. The answer is: yes, queries remain
+indispensible. Indexes are a valuable part of your GIS, and a query API
+provides web agents access to the indexes.</p>
+<p >Consider a very minimal municipal GIS which tracks properties, or parcels. Each
+parcel has many attributes, and the GIS indexes, at the very least, the
+following: a unique parcel id, the name of the parcel's owner, and the
+geospatial footprint of the parcel. These indexes allow a user to efficiently
+find all properties owned by an individual, or find all properties potentially
+impacted by construction along a particular path.</p>
+<p >In a RESTful GIS, each parcel is a <em >resource</em>, and has a URL like:</p>
+<pre class="literal-block">
+http://example.org/parcels/[id]
+</pre>
+<p >Dereferencing the URL <a class="reference" href="http://example.org/parcels/1">http://example.org/parcels/1</a> returns a
+<em >representation</em>, JSON in this case:</p>
+<pre class="literal-block">
+{ "id":       "1", 
+  "owner":    "Homer Simpson",
+  "geometry": {
+    "type":        "Polygon",
+    "coordinates": [[...], ...] },
+  ...
+}
+</pre>
+<p >The "parcels" feature type is itself a resource. A useful representation of
+this resource would be a collection that includes URIs for, and data about,
+individual parcel resources -- all marshalled directly out of the GIS's
+indexes:</p>
+<pre class="literal-block">
+{ "parcels": [
+  { "id": 1, "uri": "http://example.org/parcels/1",
+    "owner": "Homer Simpson",
+    "bbox": [1000.0, 1000.0, 1001.0, 1001.0] },
+  { "id": 2, "uri": "http://example.org/parcels/2",
+    "owner": "Ned Flanders",
+    "bbox": [1001.0, 1001.0, 1002.0, 1002.0] },
+  ...
+  ]
+}
+</pre>
+<p >That collection might easily include the precise footprints of properties,
+but we'll simply consider bounding boxes here.</p>
+<p >A query API should return criteria-based subsets of that collection, leveraging
+the system's indexes. Which properties are going to be condemned to make way
+for the new monorail?:</p>
+<pre class="literal-block">
+GET /parcels/?bbox=0,0,2000,2000
+</pre>
+<p >The answer is: the parcels with URIs <a class="reference" href="http://example.org/parcels/42">http://example.org/parcels/42</a> and <a class="reference" href="http://example.org/parcels/83">http://example.org/parcels/83</a>:</p>
+<pre class="literal-block">
+{ "parcels": [
+  { "id": 42, "uri": "http://example.org/parcels/42",
+    "owner": "Moe Szyslak",
+    "bbox": [...] },
+  { "id": 83, "uri": "http://example.org/parcels/83",
+    "owner": "Kwik-E-Mart Corporation",
+    "bbox": [...] }
+  ]
+}
+</pre>
+<p >Which properties are suffering catastrophic loss in value?:</p>
+<pre class="literal-block">
+GET /parcels/?adjacent(owner(Simpson))
+</pre>
+<p >The answer is: the parcel with URI <a class="reference" href="http://example.org/parcels/2">http://example.org/parcels/2</a>:</p>
+<pre class="literal-block">
+{ "parcels": [
+  { "id": 2, "uri": "http://example.org/parcels/2",
+    "owner": "Ned Flanders",
+    "bbox": [...] }
+  ]
+}
+</pre>
+<p >The specific query parameters or URL templates to use are an implementation
+detail that I won't get into here (<a class="reference" href="http://opensearch.org">OpenSearch</a> seems promising).</p>
+<p >The gist of all this is that a RESTful feature query returns key, indexed data
+about feature resources along with a URI to the feature resources themselves in
+the same way that a Google Search returns data from its index, with links,
+instead of dumping the entire Web into your browser.</p>
+
+      </div>
+    ";}i:21;a:12:{s:5:"title";s:17:"Scrub-a-dub Venus";s:4:"link";s:47:"http://zcologia.com/news/419/scrub-a-dub-venus/";s:7:"summary";s:336:"James Fee is modernizing Planet Geospatial, so I've updated my Greasemonkey script to version 3.0: pgscrubber-3.0a.user.js. Be annoyed no more by xenophobic virtual geographers, OSGeo haters, press releases, or commercial product "news". I found the Firebug javascript console to be a invaluable tool for playing with XPath expressions.";s:9:"published";s:25:"2007-03-29T14:10:50-06:00";s:7:"updated";s:25:"2007-03-29T14:10:50-06:00";s:2:"id";s:36:"http://zcologia.com/news/entries/419";s:6:"georss";a:1:{s:5:"point";s:19:"40.58699 -105.09583";}s:6:"author";s:26:"
+      
+      
+      
+    ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:10:"author_uri";s:25:"http://zcologia.com/news/";s:12:"atom_content";s:612:"
+      <div xmlns="http://www.w3.org/1999/xhtml">
+       <p >James Fee is <a class="reference" href="http://www.spatiallyadjusted.com/2007/03/29/huge-update-to-planet-geospatial/">modernizing Planet Geospatial</a>, so I've updated my Greasemonkey script to version 3.0: <a class="reference" href="http://zcologia.com/files/pgscrubber-3.0a.user.js">pgscrubber-3.0a.user.js</a>. Be annoyed no more by xenophobic virtual geographers, OSGeo haters, press releases, or commercial product "news". I found the Firebug javascript console to be a invaluable tool for playing with XPath expressions.</p>
+
+      </div>
+    ";}}s:7:"channel";a:11:{s:5:"title";s:30:"Entries for import cartography";s:9:"link_self";s:39:"http://zcologia.com/news/feeds/entries/";s:4:"link";s:25:"http://zcologia.com/news/";s:8:"subtitle";s:31:"Python, Geospatial, and The Web";s:4:"icon";s:38:"http://zcologia.com/images/favicon.ico";s:7:"updated";s:25:"2007-04-19T16:55:49-06:00";s:6:"author";s:13:"
+    
+    
+  ";s:11:"author_name";s:12:"Sean Gillies";s:12:"author_email";s:17:"sgillies@frii.com";s:2:"id";s:38:"http://zcologia.com/news/feeds/entries";s:6:"rights";s:102:"This work is licensed under a Creative Commons license: http://creativecommons.org/licenses/by-sa/2.5/";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

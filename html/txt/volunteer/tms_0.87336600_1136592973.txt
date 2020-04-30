@@ -1,0 +1,2 @@
+-78.49,38.04:smalldot:[1] YYY
+-78.49,38.03:smalldot:[2] XXX

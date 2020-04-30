@@ -1,0 +1,492 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:6:{i:0;a:10:{s:5:"title";s:19:"MapPoint is hiring!";s:4:"guid";s:79:"http://www.csthota.com/blog/permalink.aspx/1bf26945-fd59-4f49-be38-c6fe2a67e243";s:4:"link";s:79:"http://www.csthota.com/blog/permalink.aspx/1bf26945-fd59-4f49-be38-c6fe2a67e243";s:7:"pubdate";s:29:"Wed, 02 Mar 2005 09:52:28 GMT";s:11:"description";s:245:"<p>
+        See the details here: <a href="http://blogs.msdn.com/cthota/archive/2005/03/01/383392.aspx">MapPoint
+        is hiring</a>!
+    </p>
+    <p>
+        and send <a href="mailto:cthota@microsoft.com">me your resume </a>today! :)
+    </p>";s:6:"body_p";s:69:"
+        See the details here: !
+    
+        and send today! :)
+    ";s:8:"body_p_a";s:41:"MapPoint
+        is hiringme your resume ";s:8:"comments";s:81:"http://www.csthota.com/blog/commentview.aspx/1bf26945-fd59-4f49-be38-c6fe2a67e243";s:8:"category";s:10:"Technology";s:7:"summary";s:245:"<p>
+        See the details here: <a href="http://blogs.msdn.com/cthota/archive/2005/03/01/383392.aspx">MapPoint
+        is hiring</a>!
+    </p>
+    <p>
+        and send <a href="mailto:cthota@microsoft.com">me your resume </a>today! :)
+    </p>";}i:1;a:11:{s:5:"title";s:56:"Setting provider specifics to deliver SMS into the inobx";s:4:"guid";s:79:"http://www.csthota.com/blog/permalink.aspx/20339535-a296-464d-817e-fa962c933468";s:4:"link";s:79:"http://www.csthota.com/blog/permalink.aspx/20339535-a296-464d-817e-fa962c933468";s:7:"pubdate";s:29:"Thu, 23 Sep 2004 10:27:25 GMT";s:11:"description";s:1205:"<p>
+        You need to set the the provider data structure properly to deliver the SMS messages
+        from your app to the inbox and here are some sample settings: 
+    </p>
+    <font color="#008000" size="2"> 
+    <p>
+        / The data for the TEXT_PROVIDER_SPECIFIC_DATA 
+    </p>
+    </font><font size="2"> 
+    <p>
+        Byte[] ProvData = 
+    </p>
+    </font><font color="#0000ff" size="2">new</font><font size="2"> Byte[12]; 
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the provider settings </font><font size="2"> 
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the MessageOptions </font><font size="2"> 
+    <p>
+        Buffer.BlockCopy(System.BitConverter.GetBytes(0), 0, ProvData, 0, 4); 
+    </p>
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the MessageClass </font><font size="2"> 
+    <p>
+        Buffer.BlockCopy(System.BitConverter.GetBytes(3), 0, ProvData, 4, 4); 
+    </p>
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the ReplaceOptions </font><font size="2"> 
+    <p>
+        Buffer.BlockCopy(System.BitConverter.GetBytes(0), 0, ProvData, 8, 4); 
+    </p>
+    </font> 
+    <p>
+        Cheers! 
+    </p>";s:6:"body_p";s:191:"
+        You need to set the the provider data structure properly to deliver the SMS messages
+        from your app to the inbox and here are some sample settings: 
+    
+        Cheers! 
+    ";s:11:"body_font_p";s:345:"
+        / The data for the TEXT_PROVIDER_SPECIFIC_DATA 
+    
+        Byte[] ProvData = 
+    
+        Buffer.BlockCopy(System.BitConverter.GetBytes(0), 0, ProvData, 0, 4); 
+    
+        Buffer.BlockCopy(System.BitConverter.GetBytes(3), 0, ProvData, 4, 4); 
+    
+        Buffer.BlockCopy(System.BitConverter.GetBytes(0), 0, ProvData, 8, 4); 
+    ";s:9:"body_font";s:120:"new Byte[12]; 
+    //Set the provider settings //Set the MessageOptions //Set the MessageClass //Set the ReplaceOptions ";s:8:"comments";s:81:"http://www.csthota.com/blog/commentview.aspx/20339535-a296-464d-817e-fa962c933468";s:8:"category";s:18:"Mobile Development";s:7:"summary";s:1205:"<p>
+        You need to set the the provider data structure properly to deliver the SMS messages
+        from your app to the inbox and here are some sample settings: 
+    </p>
+    <font color="#008000" size="2"> 
+    <p>
+        / The data for the TEXT_PROVIDER_SPECIFIC_DATA 
+    </p>
+    </font><font size="2"> 
+    <p>
+        Byte[] ProvData = 
+    </p>
+    </font><font color="#0000ff" size="2">new</font><font size="2"> Byte[12]; 
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the provider settings </font><font size="2"> 
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the MessageOptions </font><font size="2"> 
+    <p>
+        Buffer.BlockCopy(System.BitConverter.GetBytes(0), 0, ProvData, 0, 4); 
+    </p>
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the MessageClass </font><font size="2"> 
+    <p>
+        Buffer.BlockCopy(System.BitConverter.GetBytes(3), 0, ProvData, 4, 4); 
+    </p>
+    <p>
+    </p>
+    </font><font color="#008000" size="2">//Set the ReplaceOptions </font><font size="2"> 
+    <p>
+        Buffer.BlockCopy(System.BitConverter.GetBytes(0), 0, ProvData, 8, 4); 
+    </p>
+    </font> 
+    <p>
+        Cheers! 
+    </p>";}i:2;a:11:{s:5:"title";s:42:"Setting up a proxy for SmartPhone Emulator";s:4:"guid";s:79:"http://www.csthota.com/blog/permalink.aspx/852ca593-bf6b-4b65-b9cd-6b58bfafbf91";s:4:"link";s:79:"http://www.csthota.com/blog/permalink.aspx/852ca593-bf6b-4b65-b9cd-6b58bfafbf91";s:7:"pubdate";s:29:"Fri, 17 Sep 2004 09:04:28 GMT";s:11:"description";s:1566:"<p>
+        Since this is the most common issue that we come across&#160;in mobile development
+        everyday, I thought I would just post it here. 
+    </p>
+    <p>
+        If you are getting a strange "Web Exception" with a MapPoint Web Service or MapPoint
+        Location Server application, check to see if your SmartPhone emulator is able to connect
+        to internet first (that is to say, open Pocket IE and type <a href="http://www.microsoft.com">http://www.microsoft.com</a> :) 
+    </p>
+    <p>
+        Now, if it doesn't, that means you haven't configured the proxy for your emulator
+        to connect to internet via your development computer. Here is how to do it: 
+    </p>
+    <p>
+        On your emulator:
+    </p>
+    <p>
+        1. Go to&#160;<strong>Start</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Data
+        Connections</strong> 
+        <br />
+        &#160;<br />
+        2.&#160;Then go to&#160;<strong>Menu</strong> -&gt; <strong>Edit Connections</strong> -&gt; <strong>Proxy
+        Connections</strong> -&gt; <strong>Add</strong> 
+        <br />
+        &#160;<br />
+        3.&#160;Create a dummy proxy like this:<br />
+        &#160;<br />
+        &#160;&#160;&#160; Description: Test<br />
+        &#160;&#160;&#160;&#160;Connects From: Work<br />
+        &#160; &#160; Connects To: Internet<br />
+        &#160;<br />
+        4. Then click <strong>Done</strong> 
+    </p>
+    <p>
+        That should be it! Now you can check your connection again and you should be able
+        to connect to the internet! 
+    </p>";s:6:"body_p";s:1038:"
+        Since this is the most common issue that we come across in mobile development
+        everyday, I thought I would just post it here. 
+    
+        If you are getting a strange "Web Exception" with a MapPoint Web Service or MapPoint
+        Location Server application, check to see if your SmartPhone emulator is able to connect
+        to internet first (that is to say, open Pocket IE and type  :) 
+    
+        Now, if it doesn't, that means you haven't configured the proxy for your emulator
+        to connect to internet via your development computer. Here is how to do it: 
+    
+        On your emulator:
+    
+        1. Go to  ->  -> 
+         
+        2. Then go to  ->  ->  -> 
+         
+        3. Create a dummy proxy like this:
+         
+            Description: Test
+            Connects From: Work
+            Connects To: Internet
+         
+        4. Then click 
+        That should be it! Now you can check your connection again and you should be able
+        to connect to the internet! 
+    ";s:8:"body_p_a";s:24:"http://www.microsoft.com";s:13:"body_p_strong";s:89:"StartSettingsData
+        ConnectionsMenuEdit ConnectionsProxy
+        ConnectionsAddDone";s:8:"comments";s:81:"http://www.csthota.com/blog/commentview.aspx/852ca593-bf6b-4b65-b9cd-6b58bfafbf91";s:8:"category";s:18:"Mobile Development";s:7:"summary";s:1566:"<p>
+        Since this is the most common issue that we come across&#160;in mobile development
+        everyday, I thought I would just post it here. 
+    </p>
+    <p>
+        If you are getting a strange "Web Exception" with a MapPoint Web Service or MapPoint
+        Location Server application, check to see if your SmartPhone emulator is able to connect
+        to internet first (that is to say, open Pocket IE and type <a href="http://www.microsoft.com">http://www.microsoft.com</a> :) 
+    </p>
+    <p>
+        Now, if it doesn't, that means you haven't configured the proxy for your emulator
+        to connect to internet via your development computer. Here is how to do it: 
+    </p>
+    <p>
+        On your emulator:
+    </p>
+    <p>
+        1. Go to&#160;<strong>Start</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Data
+        Connections</strong> 
+        <br />
+        &#160;<br />
+        2.&#160;Then go to&#160;<strong>Menu</strong> -&gt; <strong>Edit Connections</strong> -&gt; <strong>Proxy
+        Connections</strong> -&gt; <strong>Add</strong> 
+        <br />
+        &#160;<br />
+        3.&#160;Create a dummy proxy like this:<br />
+        &#160;<br />
+        &#160;&#160;&#160; Description: Test<br />
+        &#160;&#160;&#160;&#160;Connects From: Work<br />
+        &#160; &#160; Connects To: Internet<br />
+        &#160;<br />
+        4. Then click <strong>Done</strong> 
+    </p>
+    <p>
+        That should be it! Now you can check your connection again and you should be able
+        to connect to the internet! 
+    </p>";}i:3;a:10:{s:5:"title";s:27:"eMbedded Visual C++ 4.0 SDK";s:4:"guid";s:79:"http://www.csthota.com/blog/permalink.aspx/b6cb7284-c3e6-4888-a99c-900a31585705";s:4:"link";s:79:"http://www.csthota.com/blog/permalink.aspx/b6cb7284-c3e6-4888-a99c-900a31585705";s:7:"pubdate";s:29:"Sun, 05 Sep 2004 10:54:54 GMT";s:11:"description";s:315:"<p>
+        You can download the eMbedded Visual C++ 4.0 SDK here: <a href="http://www.microsoft.com/downloads/details.aspx?familyid=1DACDB3D-50D1-41B2-A107-FA75AE960856&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=1DACDB3D-50D1-41B2-A107-FA75AE960856&amp;displaylang=en</a>
+    </p>";s:6:"body_p";s:64:"
+        You can download the eMbedded Visual C++ 4.0 SDK here: ";s:8:"body_p_a";s:108:"http://www.microsoft.com/downloads/details.aspx?familyid=1DACDB3D-50D1-41B2-A107-FA75AE960856&displaylang=en";s:8:"comments";s:81:"http://www.csthota.com/blog/commentview.aspx/b6cb7284-c3e6-4888-a99c-900a31585705";s:8:"category";s:18:"Mobile Development";s:7:"summary";s:315:"<p>
+        You can download the eMbedded Visual C++ 4.0 SDK here: <a href="http://www.microsoft.com/downloads/details.aspx?familyid=1DACDB3D-50D1-41B2-A107-FA75AE960856&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=1DACDB3D-50D1-41B2-A107-FA75AE960856&amp;displaylang=en</a>
+    </p>";}i:4;a:11:{s:5:"title";s:34:"Future of mobile game development?";s:4:"guid";s:79:"http://www.csthota.com/blog/permalink.aspx/5453b33d-fb6e-4a2a-8f2b-219d1f64170c";s:4:"link";s:79:"http://www.csthota.com/blog/permalink.aspx/5453b33d-fb6e-4a2a-8f2b-219d1f64170c";s:7:"pubdate";s:29:"Tue, 31 Aug 2004 08:38:09 GMT";s:11:"description";s:656:"<p>
+        The mobile games development market set to explode in next 6 years?
+    </p>
+    <p>
+        "<span class="articletext">Over the next five years, there will be an expected six-fold
+        growth in the mobile games market, with downloadable games generating 82 per cent
+        of this dynamic €6.65bn market, according to a new report on wireless internet applications
+        from market research group Strategy Analytics"</span>
+    </p>
+    <p>
+        <span class="articletext">See the full article here: <a href="http://www.dmeurope.com/default.asp?ArticleID=2854">http://www.dmeurope.com/default.asp?ArticleID=2854</a></span>
+    </p>";s:6:"body_p";s:91:"
+        The mobile games development market set to explode in next 6 years?
+    
+        "";s:11:"body_p_span";s:334:"Over the next five years, there will be an expected six-fold
+        growth in the mobile games market, with downloadable games generating 82 per cent
+        of this dynamic €6.65bn market, according to a new report on wireless internet applications
+        from market research group Strategy Analytics"See the full article here: ";s:13:"body_p_span_a";s:50:"http://www.dmeurope.com/default.asp?ArticleID=2854";s:8:"comments";s:81:"http://www.csthota.com/blog/commentview.aspx/5453b33d-fb6e-4a2a-8f2b-219d1f64170c";s:8:"category";s:10:"Technology";s:7:"summary";s:656:"<p>
+        The mobile games development market set to explode in next 6 years?
+    </p>
+    <p>
+        "<span class="articletext">Over the next five years, there will be an expected six-fold
+        growth in the mobile games market, with downloadable games generating 82 per cent
+        of this dynamic €6.65bn market, according to a new report on wireless internet applications
+        from market research group Strategy Analytics"</span>
+    </p>
+    <p>
+        <span class="articletext">See the full article here: <a href="http://www.dmeurope.com/default.asp?ArticleID=2854">http://www.dmeurope.com/default.asp?ArticleID=2854</a></span>
+    </p>";}i:5;a:12:{s:5:"title";s:48:"SmartPhone/Pocket PC "autorun" from your SD card";s:4:"guid";s:79:"http://www.csthota.com/blog/permalink.aspx/0a85dd92-d2c4-470d-bdcd-c475e5eed558";s:4:"link";s:79:"http://www.csthota.com/blog/permalink.aspx/0a85dd92-d2c4-470d-bdcd-c475e5eed558";s:7:"pubdate";s:29:"Sat, 28 Aug 2004 18:43:52 GMT";s:11:"description";s:4643:"    <p>
+        It is a little tricky to develop an "autorun" program to launch from an SD card for
+        your SmartPhone or Pocket PC. Don't get me wrong; it not so tricky in terms of coding but the configuration
+        can be tedious. For example, you can write a simple program as below: 
+    </p>
+    <p>
+        PROCESS_INFORMATION pi; 
+    </p>
+    <p>
+        &#160;PROCESS_INFORMATION pi;<br />
+        &#160;&#160;&#160; CreateProcess(TEXT("iexplore.exe"),<br />
+        &#160;&#160;&#160;&#160;&#160; TEXT("<a href="file://\\Mounted">\\Mounted</a> Volume\\default.htm"),<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        FALSE,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        0,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        &amp;pi);<br />
+        &#160;&#160;&#160; CloseHandle(pi.hThread);<br />
+        &#160;&#160;&#160; CloseHandle(pi.hProcess); 
+    </p>
+    <p>
+        Now, when you compile the above code into a program called "autorun.exe" and store
+        it on SD card in a special folder named "2577" (I will tell you why later), it works
+        fine for a SmartPhone with Windows Mobile 2003; but this doesn't work for a Pocket
+        PC with Windows Mobile 2002. Why? Because of the hard coded string "Mounted Volume".
+        In Pocket PC 2002, the SD card is recognized as "Storage Card". So, to make it more
+        generic, you need to use the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/apisp/html/sp_wcesdk_findfirstflashcard.asp">FindFirstFlashCard </a>et
+        al methods to get the right path to the SD card. 
+    </p>
+    <p>
+        Now, you need to think about your deploying story&#160;here; the folder 2577 only
+        works for ARM processor. So if you are thinking of distributing your SD cards to devices
+        with processors other than ARM, then the folder names need to follow the ones given
+        below: 
+    </p>
+    <div class="tablediv">
+        <table cellspacing="1">
+            <tbody>
+                <tr valign="top">
+                    <th width="48%">
+                        CPU name</th>
+                    <th width="52%">
+                        CPU type value</th>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        SH3</td>
+                    <td width="52%">
+                        10003</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        MIPS</td>
+                    <td width="52%">
+                        4000</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        ARM (SA1100)</td>
+                    <td width="52%">
+                        2577</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        ARM (720)</td>
+                    <td width="52%">
+                        1824</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        x86</td>
+                    <td width="52%">
+                        686</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        (For more detailed discussion see : <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/APISP/html/sp_aygshell_tsze.asp">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/APISP/html/sp_aygshell_tsze.asp</a>) 
+    </p>
+    <p>
+        So, writing an autorun program for SmartPhones or PocketPCs is simple but it IS tricky
+        when you look at the things that you have to consider all CPU types and operating
+        system types, dont you think? 
+    </p>
+";s:6:"body_p";s:2145:"
+        It is a little tricky to develop an "autorun" program to launch from an SD card for
+        your SmartPhone or Pocket PC. Don't get me wrong; it not so tricky in terms of coding but the configuration
+        can be tedious. For example, you can write a simple program as below: 
+    
+        PROCESS_INFORMATION pi; 
+    
+         PROCESS_INFORMATION pi;
+            CreateProcess(TEXT("iexplore.exe"),
+              TEXT(" Volume\\default.htm"),
+                         
+        NULL,
+                         
+        NULL,
+                         
+        FALSE,
+                         
+        0,
+                         
+        NULL,
+                         
+        NULL,
+                         
+        NULL,
+                         
+        &pi);
+            CloseHandle(pi.hThread);
+            CloseHandle(pi.hProcess); 
+    
+        Now, when you compile the above code into a program called "autorun.exe" and store
+        it on SD card in a special folder named "2577" (I will tell you why later), it works
+        fine for a SmartPhone with Windows Mobile 2003; but this doesn't work for a Pocket
+        PC with Windows Mobile 2002. Why? Because of the hard coded string "Mounted Volume".
+        In Pocket PC 2002, the SD card is recognized as "Storage Card". So, to make it more
+        generic, you need to use the et
+        al methods to get the right path to the SD card. 
+    
+        Now, you need to think about your deploying story here; the folder 2577 only
+        works for ARM processor. So if you are thinking of distributing your SD cards to devices
+        with processors other than ARM, then the folder names need to follow the ones given
+        below: 
+    
+        (For more detailed discussion see : ) 
+    
+        So, writing an autorun program for SmartPhones or PocketPCs is simple but it IS tricky
+        when you look at the things that you have to consider all CPU types and operating
+        system types, dont you think? 
+    ";s:8:"body_p_a";s:124:"\\MountedFindFirstFlashCard http://msdn.microsoft.com/library/default.asp?url=/library/en-us/APISP/html/sp_aygshell_tsze.asp";s:26:"body_div_table_tbody_tr_th";s:72:"
+                        CPU name
+                        CPU type value";s:26:"body_div_table_tbody_tr_td";s:301:"
+                        SH3
+                        10003
+                        MIPS
+                        4000
+                        ARM (SA1100)
+                        2577
+                        ARM (720)
+                        1824
+                        x86
+                        686";s:8:"comments";s:81:"http://www.csthota.com/blog/commentview.aspx/0a85dd92-d2c4-470d-bdcd-c475e5eed558";s:8:"category";s:18:"Mobile Development";s:7:"summary";s:4643:"    <p>
+        It is a little tricky to develop an "autorun" program to launch from an SD card for
+        your SmartPhone or Pocket PC. Don't get me wrong; it not so tricky in terms of coding but the configuration
+        can be tedious. For example, you can write a simple program as below: 
+    </p>
+    <p>
+        PROCESS_INFORMATION pi; 
+    </p>
+    <p>
+        &#160;PROCESS_INFORMATION pi;<br />
+        &#160;&#160;&#160; CreateProcess(TEXT("iexplore.exe"),<br />
+        &#160;&#160;&#160;&#160;&#160; TEXT("<a href="file://\\Mounted">\\Mounted</a> Volume\\default.htm"),<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        FALSE,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        0,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        NULL,<br />
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        &amp;pi);<br />
+        &#160;&#160;&#160; CloseHandle(pi.hThread);<br />
+        &#160;&#160;&#160; CloseHandle(pi.hProcess); 
+    </p>
+    <p>
+        Now, when you compile the above code into a program called "autorun.exe" and store
+        it on SD card in a special folder named "2577" (I will tell you why later), it works
+        fine for a SmartPhone with Windows Mobile 2003; but this doesn't work for a Pocket
+        PC with Windows Mobile 2002. Why? Because of the hard coded string "Mounted Volume".
+        In Pocket PC 2002, the SD card is recognized as "Storage Card". So, to make it more
+        generic, you need to use the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/apisp/html/sp_wcesdk_findfirstflashcard.asp">FindFirstFlashCard </a>et
+        al methods to get the right path to the SD card. 
+    </p>
+    <p>
+        Now, you need to think about your deploying story&#160;here; the folder 2577 only
+        works for ARM processor. So if you are thinking of distributing your SD cards to devices
+        with processors other than ARM, then the folder names need to follow the ones given
+        below: 
+    </p>
+    <div class="tablediv">
+        <table cellspacing="1">
+            <tbody>
+                <tr valign="top">
+                    <th width="48%">
+                        CPU name</th>
+                    <th width="52%">
+                        CPU type value</th>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        SH3</td>
+                    <td width="52%">
+                        10003</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        MIPS</td>
+                    <td width="52%">
+                        4000</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        ARM (SA1100)</td>
+                    <td width="52%">
+                        2577</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        ARM (720)</td>
+                    <td width="52%">
+                        1824</td>
+                </tr>
+                <tr valign="top">
+                    <td width="48%">
+                        x86</td>
+                    <td width="52%">
+                        686</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        (For more detailed discussion see : <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/APISP/html/sp_aygshell_tsze.asp">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/APISP/html/sp_aygshell_tsze.asp</a>) 
+    </p>
+    <p>
+        So, writing an autorun program for SmartPhones or PocketPCs is simple but it IS tricky
+        when you look at the things that you have to consider all CPU types and operating
+        system types, dont you think? 
+    </p>
+";}}s:7:"channel";a:8:{s:5:"title";s:12:"Chandu Thota";s:4:"link";s:28:"http://www.csthota.com/blog/";s:9:"copyright";s:27:"Copyright 2004 Chandu Thota";s:13:"lastbuilddate";s:29:"Wed, 02 Mar 2005 09:52:28 GMT";s:9:"generator";s:15:"ChrisAn's BlogX";s:14:"managingeditor";s:17:"csthota@yahoo.com";s:9:"webmaster";s:17:"csthota@yahoo.com";s:7:"tagline";N;}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

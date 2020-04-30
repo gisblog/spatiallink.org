@@ -1,0 +1,1 @@
+var d=new Date();var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");document.write("("+d.getDate()+" ");document.write(monthname[d.getMonth()]+" ");document.write(d.getFullYear()+")");

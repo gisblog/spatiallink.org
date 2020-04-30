@@ -1,0 +1,32 @@
+<graphData title="Pipeline total is $0K">
+     <yData defaultAltText="Rollover a bar for details.">
+     <dataRow title="Prospecting" endLabel="">
+     </dataRow>
+     <dataRow title="Qualification" endLabel="">
+     </dataRow>
+     <dataRow title="Needs Analysis" endLabel="">
+     </dataRow>
+     <dataRow title="Value Proposition" endLabel="">
+     </dataRow>
+     <dataRow title="Id. Decision Makers" endLabel="">
+     </dataRow>
+     <dataRow title="Perception Analysis" endLabel="">
+     </dataRow>
+     <dataRow title="Proposal/Price Quote" endLabel="">
+     </dataRow>
+     <dataRow title="Negotiation/Review" endLabel="">
+     </dataRow>
+     <dataRow title="Closed Won" endLabel="">
+     </dataRow>
+     <dataRow title="Closed Lost" endLabel="">
+     </dataRow>
+     </yData>
+     <xData min="0" max="0" length="4" prefix="$" suffix=""/>
+     <colorLegend>
+          <mapping id="1" name="admin" color="0xFF0000"/>
+     </colorLegend>
+     <graphInfo>
+          <![CDATA[Date range is 2005-06-14 to 2100-01-01<BR/>Opportunity size in $1K]]>
+     </graphInfo>
+     <chartColors  docBorder="0xFF5C5C"  docBg1="0xFFFFFF"  docBg2="0xFFE9E9"  xText="0x444444"  yText="0x444444"  title="0xFF0000"  misc="0x666666"  altBorder="0x0062A7"  altBg="0xFFFFFF"  altText="0x0062A7"  graphBorder="0x003860"  graphBg1="0x98D5FF"  graphBg2="0xEEF8FF"  graphLines="0xEEEEEE"  graphText="0x003860"  graphTextShadow="0xFFFFFF"  barBorder="0x666666"  barBorderHilite="0xFFFFFF"  legendBorder="0xFF5C5C"  legendBg1="0xFFE9E9"  legendBg2="0xFFFFFF"  legendText="0x444444"  legendColorKeyBorder="0x777777"  scrollBar="0x999999"  scrollBarBorder="0x777777"  scrollBarTrack="0xeeeeee"  scrollBarTrackBorder="0x777777"  />
+</graphData>

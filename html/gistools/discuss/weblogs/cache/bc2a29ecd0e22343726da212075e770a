@@ -1,0 +1,394 @@
+O:9:"MagpieRSS":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:9:{s:5:"title";s:12:"Note to Self";s:4:"link";s:58:"http://www.java.net/blog/jive/archive/2012/05/25/note-self";s:11:"description";s:2624:"<!--  | 0 --><p>One of the Open Source Geospatial Foundation (OSGeo) email lists is reviewing relationship between OS and IP.</p>
+<p>Again.</p>
+<p>I am a big fan of matching license to community. While I recognise that open source and intellectual property can be considered as opposites - I find myself lumping them both together.</p>
+<p>Rather then recycling this viewpoint, here is a note to self (allowing me to supply a link):</p>
+<h2>Note to Self: Open Source / IP </h2>
+<p>Open source is a part of the intellectual property conversation. Open Source and IP deliberately go together; indeed it is what the license part of open source is about.</p>
+<p>Open Source provide a range of licenses which provide guidance around the use (and reuse) of code. These licenses facilitate, by defining the terms under which, which we can reuse / recycle code with the permissions of the authors (i.e. copyright holders). Since OSGeo is an open source community we often have direct contact with these authors; in a few cases they have signed over copyright to a neutral organisation - such as the OSGeo foundation itself.</p>
+<p>It would be nice if software worked like the fashion industry and did not make use of copyright protection. Since our industry does make use of these provisions - it is great that open source allows us an "out". </p>
+<p>The specific nature of the open source license used by a project lets you know what has been negotiated with the authors with respect to IP. Depending the different aspects of the IP spectrum you agree with you may react strongly (or indifferently) to the options available. You can even use this as a measure of what you care about (either from the case of trying to protect; or from the case of trying to access).</p>
+<p>For myself I try protect the freedom of developers to get the job done.</p>
+<p>Open source is one of my best tools to protect this freedom.</p>
+<p>Another valuable tool is the different foundations. You can tell a lot from the a foundation and its members by what makes their hit list when accepting new projects. OSGeo is very much about transparency; but not so much on the protecting developers from IP issues. Eclipse foundation suffers on transparency a bit; but is very responsive to protecting developers from IP issues.</p>
+<p>Aside: The uDig community is looking at joining the Eclipse "location working group". It is a good fit of technology, open source spatial outreach, and access to a pool of developers we do not normally interact with. Perhaps when this process is done (or even started) we can provide further feedback on the experience.</p>
+";s:8:"comments";s:67:"http://www.java.net/blog/jive/archive/2012/05/25/note-self#comments";s:8:"category";s:16:"BlogsOpen Source";s:7:"pubdate";s:31:"Fri, 25 May 2012 08:01:18 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"886268 at http://www.java.net";s:7:"summary";s:2624:"<!--  | 0 --><p>One of the Open Source Geospatial Foundation (OSGeo) email lists is reviewing relationship between OS and IP.</p>
+<p>Again.</p>
+<p>I am a big fan of matching license to community. While I recognise that open source and intellectual property can be considered as opposites - I find myself lumping them both together.</p>
+<p>Rather then recycling this viewpoint, here is a note to self (allowing me to supply a link):</p>
+<h2>Note to Self: Open Source / IP </h2>
+<p>Open source is a part of the intellectual property conversation. Open Source and IP deliberately go together; indeed it is what the license part of open source is about.</p>
+<p>Open Source provide a range of licenses which provide guidance around the use (and reuse) of code. These licenses facilitate, by defining the terms under which, which we can reuse / recycle code with the permissions of the authors (i.e. copyright holders). Since OSGeo is an open source community we often have direct contact with these authors; in a few cases they have signed over copyright to a neutral organisation - such as the OSGeo foundation itself.</p>
+<p>It would be nice if software worked like the fashion industry and did not make use of copyright protection. Since our industry does make use of these provisions - it is great that open source allows us an "out". </p>
+<p>The specific nature of the open source license used by a project lets you know what has been negotiated with the authors with respect to IP. Depending the different aspects of the IP spectrum you agree with you may react strongly (or indifferently) to the options available. You can even use this as a measure of what you care about (either from the case of trying to protect; or from the case of trying to access).</p>
+<p>For myself I try protect the freedom of developers to get the job done.</p>
+<p>Open source is one of my best tools to protect this freedom.</p>
+<p>Another valuable tool is the different foundations. You can tell a lot from the a foundation and its members by what makes their hit list when accepting new projects. OSGeo is very much about transparency; but not so much on the protecting developers from IP issues. Eclipse foundation suffers on transparency a bit; but is very responsive to protecting developers from IP issues.</p>
+<p>Aside: The uDig community is looking at joining the Eclipse "location working group". It is a good fit of technology, open source spatial outreach, and access to a pool of developers we do not normally interact with. Perhaps when this process is done (or even started) we can provide further feedback on the experience.</p>
+";}i:1;a:9:{s:5:"title";s:9:"ObjectAid";s:4:"link";s:58:"http://www.java.net/blog/jive/archive/2011/04/11/objectaid";s:11:"description";s:931:"<!-- 642 | 0 --><img src="/images/people/jody_garnett.jpg" border="0", align="left" /><p><a href="http://www.objectaid.com/">ObjectAID</a> is the first UML tool you may actually use; I know I should talk about its features or something - but the real reason you may actually use this application is that it is Fast.</p>
+<p>1. Run the wizard to create a new diagram</p>
+<p>2. Drag and Drop your classes into the diagram</p>
+<p>3. I have found the &quot;auto image&quot; setting helpful so it writes out an image (PNG,GIF,etc..) every time you make a change.</p>
+<p>Here is one of the many diagrams pulled together for the <a href="http://docs.geotools.org/latest/userguide/">GeoTools User Guide</a> I have been rewriting.</p>
+<p><img alt="GeoTools FeatureSource" src="http://docs.geotools.org/latest/userguide/_images/SimpleFeatureSource.PNG" /></p>
+<p>You can install ObjectAID from the eclipse marketplace (in the help menu).</p>
+";s:8:"comments";s:67:"http://www.java.net/blog/jive/archive/2011/04/11/objectaid#comments";s:8:"category";s:27:"BlogsEclipseJava ToolsTools";s:7:"pubdate";s:31:"Tue, 12 Apr 2011 00:06:12 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"790885 at http://www.java.net";s:7:"summary";s:931:"<!-- 642 | 0 --><img src="/images/people/jody_garnett.jpg" border="0", align="left" /><p><a href="http://www.objectaid.com/">ObjectAID</a> is the first UML tool you may actually use; I know I should talk about its features or something - but the real reason you may actually use this application is that it is Fast.</p>
+<p>1. Run the wizard to create a new diagram</p>
+<p>2. Drag and Drop your classes into the diagram</p>
+<p>3. I have found the &quot;auto image&quot; setting helpful so it writes out an image (PNG,GIF,etc..) every time you make a change.</p>
+<p>Here is one of the many diagrams pulled together for the <a href="http://docs.geotools.org/latest/userguide/">GeoTools User Guide</a> I have been rewriting.</p>
+<p><img alt="GeoTools FeatureSource" src="http://docs.geotools.org/latest/userguide/_images/SimpleFeatureSource.PNG" /></p>
+<p>You can install ObjectAID from the eclipse marketplace (in the help menu).</p>
+";}i:2;a:9:{s:5:"title";s:25:"FindBugz Community Review";s:4:"link";s:74:"http://www.java.net/blog/jive/archive/2010/03/13/findbugz-community-review";s:11:"description";s:1106:"<!--  | 0 --><p>I am very fond of <a href="http://findbugs.sourceforge.net/">FindBugz</a> (indeed it has found its way into the QA process of most projects I work on....). When visiting the site to check Eclispe 3.5.2 compatibility I found they were working on a new tool.</p>
+<p>Indeed a very interesting tool.</p>
+<p style="font-family: lucida, arial, sans-serif; font-size: 12px; ">Looks like they have a specific tool for browsing the output of a findbugz; and sifting through the results in order to mark each issue. They have an example for&nbsp;<a style="text-decoration: none; color: rgb(0, 102, 153); " href="http://findbugs.cs.umd.edu/cloud/eclipse.jnlp">Eclipse 3.5</a>&nbsp;listed.</p>
+<p style="font-family: lucida, arial, sans-serif; font-size: 12px; ">Now I think I get this result when I run FindBugz direct in eclipse (it produces a bunch of warnings for me to sift through). What is interesting is the Classify and First seen fields. It is my hope that this tool can be hooked into the bug tracker for each project allowing people to raise an issue directly for review.</p>
+<p>&nbsp;</p>
+";s:8:"comments";s:83:"http://www.java.net/blog/jive/archive/2010/03/13/findbugz-community-review#comments";s:8:"category";s:31:"BlogsDistributedJava ToolsTools";s:7:"pubdate";s:31:"Sun, 14 Mar 2010 02:38:25 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"374667 at http://www.java.net";s:7:"summary";s:1106:"<!--  | 0 --><p>I am very fond of <a href="http://findbugs.sourceforge.net/">FindBugz</a> (indeed it has found its way into the QA process of most projects I work on....). When visiting the site to check Eclispe 3.5.2 compatibility I found they were working on a new tool.</p>
+<p>Indeed a very interesting tool.</p>
+<p style="font-family: lucida, arial, sans-serif; font-size: 12px; ">Looks like they have a specific tool for browsing the output of a findbugz; and sifting through the results in order to mark each issue. They have an example for&nbsp;<a style="text-decoration: none; color: rgb(0, 102, 153); " href="http://findbugs.cs.umd.edu/cloud/eclipse.jnlp">Eclipse 3.5</a>&nbsp;listed.</p>
+<p style="font-family: lucida, arial, sans-serif; font-size: 12px; ">Now I think I get this result when I run FindBugz direct in eclipse (it produces a bunch of warnings for me to sift through). What is interesting is the Classify and First seen fields. It is my hope that this tool can be hooked into the bug tracker for each project allowing people to raise an issue directly for review.</p>
+<p>&nbsp;</p>
+";}i:3;a:9:{s:5:"title";s:9:"How 2 Map";s:4:"link";s:58:"http://www.java.net/blog/jive/archive/2008/04/geohack.html";s:11:"description";s:439:"<!--  | 0 --><p>I will be using this blog a little less; it seems the vast majority of my postings are of interest to those involved in open source spatial (and Java is just the canvas I enjoy working with). </p>
+<p>As such I will be making use of the following blog: <a href="http://how2map.blogspot.com/">http://how2map.blogspot.com/</a>.</p>
+<p>I would like to thank Java.net for hosting, and hope the spam comments problem abates.</p>
+";s:8:"comments";s:67:"http://www.java.net/blog/jive/archive/2008/04/geohack.html#comments";s:8:"category";s:9:"Community";s:7:"pubdate";s:31:"Tue, 08 Apr 2008 22:34:17 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"239955 at http://www.java.net";s:7:"summary";s:439:"<!--  | 0 --><p>I will be using this blog a little less; it seems the vast majority of my postings are of interest to those involved in open source spatial (and Java is just the canvas I enjoy working with). </p>
+<p>As such I will be making use of the following blog: <a href="http://how2map.blogspot.com/">http://how2map.blogspot.com/</a>.</p>
+<p>I would like to thank Java.net for hosting, and hope the spam comments problem abates.</p>
+";}i:4;a:9:{s:5:"title";s:30:"Community 1 Maven 0 Eclipse -1";s:4:"link";s:66:"http://www.java.net/blog/jive/archive/2008/02/community_1_mav.html";s:11:"description";s:2533:"<!--  | 0 --><p>An open source mailing list I am on recently took up the <a href="http://www.infoq.com/news/2008/01/maven-debate">interesting debate about the Merits of Maven</a> going on in the blogosphere. Occasionally I remember I have a blog; and most of my email is too long anyways ...</p>
+<p>
+Frank Hardisty asked: For projects the size and complexity of GeoTools and GeoServer, is there currently a viable alternative to Maven?</p>
+<p><h1>Is there an alternative to Maven</h1>
+<p>
+Good question - I think the alternative would be more organization on our part:</p>
+<ul>
+<li>less dependencies</li>
+<li>and to commit the jars into svn</li>
+</ul>
+<p>There are two downsides:</p>
+<ul>
+<li>writing a lot more of our own software; and end up in a not invented here situation like many other projects.</li>
+<li>at the end of the day all we would be left with is a simple build</li>
+</ul>
+<p>Personally I would rather share the burden of making a build system with other projects; ant is at the same primitive level as make. Scrips are produced and copied from project to project; and after a while it gets so fragile everyone is scared to touch it.</p>
+<p>
+What I like about maven is the chance to look into some coverage tools (for example), notice that they support maven, and quickly try out a few by running maven a couple of times. I have to hand it to people like Justin and Martin who have gone ahead and made a few maven plug-ins for the community; I am so glad our build is not a mess of ant scripts, and hacks that only work on linux, and ... well lets say I have worked on a smaller project that took 40 mins to build.</p>
+<p>
+On a related note I am stuck maintaining a simple build that does the exact same dependency management work (since it uses GeoTools jars) - the uDig application uses an ant script to suck down jar files from the maven repository. Maintaining this is a pain and we really wish we could make use of maven.</p>
+<p>
+The uDig project is stuck between two evils; something called PDE Build which makes maven look like a cake walk; and Maven (who would solve our problems except that the eclipse foundation is a big pay to play mess).</p>
+<p>
+Jody</p>
+<p>PS. My rant here ends up being pro community; rather than pro maven</p>
+<p>
+PPS. A cake walk is actually an American dance tradition; with the best dancer literally "taking the cake"</p>
+<p>
+PPPS. There is a couple of Java Community Process module proposals going around trying to learn from both Spring, OSGi and the maven repository system</p>
+";s:8:"comments";s:75:"http://www.java.net/blog/jive/archive/2008/02/community_1_mav.html#comments";s:8:"category";s:9:"Community";s:7:"pubdate";s:31:"Sat, 02 Feb 2008 20:54:17 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"239581 at http://www.java.net";s:7:"summary";s:2533:"<!--  | 0 --><p>An open source mailing list I am on recently took up the <a href="http://www.infoq.com/news/2008/01/maven-debate">interesting debate about the Merits of Maven</a> going on in the blogosphere. Occasionally I remember I have a blog; and most of my email is too long anyways ...</p>
+<p>
+Frank Hardisty asked: For projects the size and complexity of GeoTools and GeoServer, is there currently a viable alternative to Maven?</p>
+<p><h1>Is there an alternative to Maven</h1>
+<p>
+Good question - I think the alternative would be more organization on our part:</p>
+<ul>
+<li>less dependencies</li>
+<li>and to commit the jars into svn</li>
+</ul>
+<p>There are two downsides:</p>
+<ul>
+<li>writing a lot more of our own software; and end up in a not invented here situation like many other projects.</li>
+<li>at the end of the day all we would be left with is a simple build</li>
+</ul>
+<p>Personally I would rather share the burden of making a build system with other projects; ant is at the same primitive level as make. Scrips are produced and copied from project to project; and after a while it gets so fragile everyone is scared to touch it.</p>
+<p>
+What I like about maven is the chance to look into some coverage tools (for example), notice that they support maven, and quickly try out a few by running maven a couple of times. I have to hand it to people like Justin and Martin who have gone ahead and made a few maven plug-ins for the community; I am so glad our build is not a mess of ant scripts, and hacks that only work on linux, and ... well lets say I have worked on a smaller project that took 40 mins to build.</p>
+<p>
+On a related note I am stuck maintaining a simple build that does the exact same dependency management work (since it uses GeoTools jars) - the uDig application uses an ant script to suck down jar files from the maven repository. Maintaining this is a pain and we really wish we could make use of maven.</p>
+<p>
+The uDig project is stuck between two evils; something called PDE Build which makes maven look like a cake walk; and Maven (who would solve our problems except that the eclipse foundation is a big pay to play mess).</p>
+<p>
+Jody</p>
+<p>PS. My rant here ends up being pro community; rather than pro maven</p>
+<p>
+PPS. A cake walk is actually an American dance tradition; with the best dancer literally "taking the cake"</p>
+<p>
+PPPS. There is a couple of Java Community Process module proposals going around trying to learn from both Spring, OSGi and the maven repository system</p>
+";}i:5;a:8:{s:5:"title";s:30:"Java at FOSS4G wrap up Article";s:4:"link";s:65:"http://www.java.net/blog/jive/archive/2007/10/java_at_foss4g.html";s:11:"description";s:4569:"<!-- 1270 | 0 --><img src="/images/people/jody_garnett.jpg" border="0", align="left" /><p>One of the advantages of being a library is that we can really be everywhere. The downside is that even if you attended the conference (wasn't it great!) you could not of managed to catch all that we had going on.</p>
+<p>I have written up an article over on the GeoTools wiki: <a href="http://docs.codehaus.org/display/GEOTOOLS/GeoTools+at+FOSS4G+2007">GeoTools at FOSS4G Article</a>. For those that wanted to see how the <a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=120">MapServer vs GeoServer</a> performance testing turned out follow the link and have a look at the pdf.</p>
+<p>My favourite development this year was represented by two tag team presentations on twisting Java Advanced Imaging into some simply amazing raster work (<a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=241">Next generation of raster support for the GeoTools-GeoServer stack</a>) including a combination PostGIS / File system combo for x,y,z,t rasters (<a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=225">Managing WMS and WCS multidimensional NetCDF Datasets with Geoserver</a>).</p>
+<p><a href="http://docs.codehaus.org/plugins/advanced/gallery-slideshow.action?imageNumber=1&amp;pageId=14876688&amp;decorator=popup"><img src="http://docs.codehaus.org/download/thumbnails/14876688/ThisTruckIsSlow.jpg"></a></p>
+<p>I am going to talk about about the two Labs I was involved in. Labs are a great feature of the FOSS4G experience. So often at these conferences all you get it talk, talk and more talk.</p>
+<p>Labs are the opposite of that - hands on time with real software.</p>
+<h2>How to Cope with GeoSpatial</h2>
+<p>This was the only <a href="http://www.foss4g2007.org/labs/L-13/">hard-core hands on programming lab</a> at the conference this year. Thanks to everyone who attended! GeoTools was used to access a Web Map Server, generate a Shape file, hack away at PostGIS (using Common Query Language and Filter 1.0). Students that finished early got a chance to visualization with Images and Shapefiles.</p>
+<p>Thanks to Martin, Brock an Melisa for pulling this one together. Special thanks to Andrea and Jesse for the code review</p>
+<p>If anyone wants to see more GeoTools documentation please hire me for a training course ;-)</p>
+<h2>An Introduction to the uDig Open Source Desktop</h2>
+<p><a href="http://www.foss4g2007.org/labs/L-08/">This lab<a/> was my highlight of FOSS4G this year. I have been teaching the uDig training course for several years now - but it is focused on getting development teams up and going. This is was my first time showing uDig to a room of users - and it was great to see how happy it made everyone.</p>
+<p>I had originally planned this course as an intro workshop (so people could hunt down he projects they thought were fun over the course of the week). The fates of scheduling were against me - this was the last Lab on the last day. On the bright side everyone had something they wanted to "see in action".</p>
+<p>If you would like to try this workshop at home it is available online:</p>
+<ul>
+<li><a href="http://udig.refractions.net/confluence/display/UDIG/Walkthrough+1">Walkthrough 1</a></li>
+<li><a href="http://udig.refractions.net/confluence/display/UDIG/Walkthrough+2">Walkthrough 2</a></li>
+</ul>
+<p>We had several members of the uDig development team in attendance for some one-on-one help (mostly they stood around with big grins on their faces). At one point a circle of mac laptops gathered like a fairy ring at the back of the room as a flash drive was passed around.</p>
+<h2>What is Next?</h2>
+<p><a href="http://docs.codehaus.org/plugins/advanced/gallery-slideshow.action?imageNumber=13&amp;pageId=14876688&amp;decorator=popup"><img src="http://docs.codehaus.org/download/thumbnails/14876688/Fun.jpg"></a><br />
+Silvia (above) used the FOSS4G code sprint to create a brand new Italian translation. Thank you! I would like to ask for additional languages - if you are able to translate please stop by the <a href="http://lists.refractions.net/mailman/listinfo/udig-devel>udig devel email list</a> and let me know. We have French and Spanish translations started.</p>
+<p>Over the next several weeks I will be doing my best to make a stable release of uDig. I am not looking to add any more features at this time, so please <a href="http://udig.refractions.net/confluence/display/UDIG/Downloads">download the latest</a> let me know how well it works in your organization.</p>
+";s:8:"comments";s:74:"http://www.java.net/blog/jive/archive/2007/10/java_at_foss4g.html#comments";s:7:"pubdate";s:31:"Tue, 09 Oct 2007 17:27:05 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"238891 at http://www.java.net";s:7:"summary";s:4569:"<!-- 1270 | 0 --><img src="/images/people/jody_garnett.jpg" border="0", align="left" /><p>One of the advantages of being a library is that we can really be everywhere. The downside is that even if you attended the conference (wasn't it great!) you could not of managed to catch all that we had going on.</p>
+<p>I have written up an article over on the GeoTools wiki: <a href="http://docs.codehaus.org/display/GEOTOOLS/GeoTools+at+FOSS4G+2007">GeoTools at FOSS4G Article</a>. For those that wanted to see how the <a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=120">MapServer vs GeoServer</a> performance testing turned out follow the link and have a look at the pdf.</p>
+<p>My favourite development this year was represented by two tag team presentations on twisting Java Advanced Imaging into some simply amazing raster work (<a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=241">Next generation of raster support for the GeoTools-GeoServer stack</a>) including a combination PostGIS / File system combo for x,y,z,t rasters (<a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=225">Managing WMS and WCS multidimensional NetCDF Datasets with Geoserver</a>).</p>
+<p><a href="http://docs.codehaus.org/plugins/advanced/gallery-slideshow.action?imageNumber=1&amp;pageId=14876688&amp;decorator=popup"><img src="http://docs.codehaus.org/download/thumbnails/14876688/ThisTruckIsSlow.jpg"></a></p>
+<p>I am going to talk about about the two Labs I was involved in. Labs are a great feature of the FOSS4G experience. So often at these conferences all you get it talk, talk and more talk.</p>
+<p>Labs are the opposite of that - hands on time with real software.</p>
+<h2>How to Cope with GeoSpatial</h2>
+<p>This was the only <a href="http://www.foss4g2007.org/labs/L-13/">hard-core hands on programming lab</a> at the conference this year. Thanks to everyone who attended! GeoTools was used to access a Web Map Server, generate a Shape file, hack away at PostGIS (using Common Query Language and Filter 1.0). Students that finished early got a chance to visualization with Images and Shapefiles.</p>
+<p>Thanks to Martin, Brock an Melisa for pulling this one together. Special thanks to Andrea and Jesse for the code review</p>
+<p>If anyone wants to see more GeoTools documentation please hire me for a training course ;-)</p>
+<h2>An Introduction to the uDig Open Source Desktop</h2>
+<p><a href="http://www.foss4g2007.org/labs/L-08/">This lab<a/> was my highlight of FOSS4G this year. I have been teaching the uDig training course for several years now - but it is focused on getting development teams up and going. This is was my first time showing uDig to a room of users - and it was great to see how happy it made everyone.</p>
+<p>I had originally planned this course as an intro workshop (so people could hunt down he projects they thought were fun over the course of the week). The fates of scheduling were against me - this was the last Lab on the last day. On the bright side everyone had something they wanted to "see in action".</p>
+<p>If you would like to try this workshop at home it is available online:</p>
+<ul>
+<li><a href="http://udig.refractions.net/confluence/display/UDIG/Walkthrough+1">Walkthrough 1</a></li>
+<li><a href="http://udig.refractions.net/confluence/display/UDIG/Walkthrough+2">Walkthrough 2</a></li>
+</ul>
+<p>We had several members of the uDig development team in attendance for some one-on-one help (mostly they stood around with big grins on their faces). At one point a circle of mac laptops gathered like a fairy ring at the back of the room as a flash drive was passed around.</p>
+<h2>What is Next?</h2>
+<p><a href="http://docs.codehaus.org/plugins/advanced/gallery-slideshow.action?imageNumber=13&amp;pageId=14876688&amp;decorator=popup"><img src="http://docs.codehaus.org/download/thumbnails/14876688/Fun.jpg"></a><br />
+Silvia (above) used the FOSS4G code sprint to create a brand new Italian translation. Thank you! I would like to ask for additional languages - if you are able to translate please stop by the <a href="http://lists.refractions.net/mailman/listinfo/udig-devel>udig devel email list</a> and let me know. We have French and Spanish translations started.</p>
+<p>Over the next several weeks I will be doing my best to make a stable release of uDig. I am not looking to add any more features at this time, so please <a href="http://udig.refractions.net/confluence/display/UDIG/Downloads">download the latest</a> let me know how well it works in your organization.</p>
+";}i:6;a:8:{s:5:"title";s:31:"FOSS4G 2007 2 days and counting";s:4:"link";s:66:"http://www.java.net/blog/jive/archive/2007/09/foss4g_2007_2_d.html";s:11:"description";s:2049:"<!--  | 0 --><p>The <a href="http://www.foss4g2007.org/">Free and Open Source Software for Geospatial</a> conference is ramping up and Java should be everywhere. I have the privileged of working with a number of people doing presentations this year - and it has been great watching the GeoServer project (running Java EE) catch up to the long time king of the hill MapServer (written in C).</p>
+<p>
+If you want to see how close these two are be sure to attend the presentation: <a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=120">WMS Performacne: Mapserver vs. Geoserver</a>.</p>
+<p>
+It is a good thing I got a sneak peek at the results, because I am going to be busy ...here are a couple of things to see out of the way of the main program.</p>
+<h3>Demo Theatre</h3>
+<p>This year at FOSS4G we have a full on <a href="http://www.foss4g2007.org/exhibition/demotheatre/">Demo Theatre </a> set up; think of these as a lightning talk combined with actual running software. I can think of  few better ways to get a feel for what is going on then sitting back and watching these programs actually run.</p>
+<p>The Demo Theatre is happening during the coffee and lunch breaks; and there is a speak Google Summer of Code slot Wednesday Morning where you can take a look at what the next generation of developers are working on.</p>
+<h3>Developer Gatherings</h3>
+<p>If you want to hunt me down and talk shop please visit the Refractions booth. We will have a live PostGIS and uDig demos going as part of the <a href="http://www.foss4g2007.org/exhibition/integration/">integration showcase</a>. The other place I will at least visit is the OSGeo booth, with OSGEO formally running the show this year we may have the place to ourself?</p>
+<p>
+There are two places to hunt down the developer community and see them in action:</p>
+<ul>
+<li><a href="http://wiki.osgeo.org/index.php/FOSS4G2007_BOF_Sessions">Bird of a Feather Sessions</a>; and
+<li><a href="http://www.foss4g2007.org/code_sprint/">Code Sprint</a>.
+</ul>
+<p>See you there!</p>
+";s:8:"comments";s:75:"http://www.java.net/blog/jive/archive/2007/09/foss4g_2007_2_d.html#comments";s:7:"pubdate";s:31:"Sat, 22 Sep 2007 19:59:39 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"238796 at http://www.java.net";s:7:"summary";s:2049:"<!--  | 0 --><p>The <a href="http://www.foss4g2007.org/">Free and Open Source Software for Geospatial</a> conference is ramping up and Java should be everywhere. I have the privileged of working with a number of people doing presentations this year - and it has been great watching the GeoServer project (running Java EE) catch up to the long time king of the hill MapServer (written in C).</p>
+<p>
+If you want to see how close these two are be sure to attend the presentation: <a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=120">WMS Performacne: Mapserver vs. Geoserver</a>.</p>
+<p>
+It is a good thing I got a sneak peek at the results, because I am going to be busy ...here are a couple of things to see out of the way of the main program.</p>
+<h3>Demo Theatre</h3>
+<p>This year at FOSS4G we have a full on <a href="http://www.foss4g2007.org/exhibition/demotheatre/">Demo Theatre </a> set up; think of these as a lightning talk combined with actual running software. I can think of  few better ways to get a feel for what is going on then sitting back and watching these programs actually run.</p>
+<p>The Demo Theatre is happening during the coffee and lunch breaks; and there is a speak Google Summer of Code slot Wednesday Morning where you can take a look at what the next generation of developers are working on.</p>
+<h3>Developer Gatherings</h3>
+<p>If you want to hunt me down and talk shop please visit the Refractions booth. We will have a live PostGIS and uDig demos going as part of the <a href="http://www.foss4g2007.org/exhibition/integration/">integration showcase</a>. The other place I will at least visit is the OSGeo booth, with OSGEO formally running the show this year we may have the place to ourself?</p>
+<p>
+There are two places to hunt down the developer community and see them in action:</p>
+<ul>
+<li><a href="http://wiki.osgeo.org/index.php/FOSS4G2007_BOF_Sessions">Bird of a Feather Sessions</a>; and
+<li><a href="http://www.foss4g2007.org/code_sprint/">Code Sprint</a>.
+</ul>
+<p>See you there!</p>
+";}i:7;a:8:{s:5:"title";s:42:"JSR-275 And why GeoTools does not care yet";s:4:"link";s:65:"http://www.java.net/blog/jive/archive/2007/07/jsr275_and_why.html";s:11:"description";s:4066:"<!--  | 0 --><p>JSR-275 is almost ready! And there is much rejoicing to be had - but not quite yet.</p>
+<p>In my last blog post I talked about GeoAPI and how we use it to define interfaces for a lot of the spatial goodness happening in the Java world.  One of the constructs discussed was the interface for CoordinateReferenceSystem. This interface is implemented by a couple of projects:</p>
+<ul>
+<li><a href="http://docs.codehaus.org/display/GEOTOOLS/Home">GeoTools</a>
+<li><a href="http://jscience.org/">JScience</a>
+</ul>
+<p>Central to the idea of a CoordianteReferenceSystem is what unit of measure the numbers are in (meters, feet, sexidecimal degrees, etc...).</p>
+<p>JSR-275 defines a really amazing concept of "Unit of Measure" (as described in Fowlers Analysis Patterns Book). This idea is powerful, and allows you all kinds of runtime safety checks so that you do not (in the proverbially case) mix up meters and feet and fly into Mars by accident.</p>
+<p>In JSR-275 they broke out Java Generics system and made a lot of this goodness into something the compiler can check for.</p>
+<h4>So why doesn't GeoTools use JSR-275</h4>
+<p>Problem is the reference implementation (also provided by JScience) is Java 5 only :-) So for the moment GeoTools community is hanging back so we can work with all those Java 1.4 J2EE projects that pay the bills.</p>
+<h4>JSR-108 Where art thou</h4>
+<p>Actually the GeoTools project still uses a units-0.1.jar provided by the earlier JSR-108. This earlier JSR-108 was withdrawn - and that seems to have scared the voting parties.</p>
+<p>From the <a href="http://www.jcp.org/en/jsr/results?id=3216">JSR #275 Units Specification JSR Review Ballot</a>:<br />
+<quote><br />
+On 2005-06-09 Sun Microsystems, Inc. voted No with the following comment:<br />
+Sun is voting "no" on this JSR based on concern over whether there<br />
+is broad need for this JSR and concern that this is essentially<br />
+equivalent to an earlier JSR (108) which was previously withdrawn.</p>
+<p>It is possible that this topic may eventually benefit from a JSR.<br />
+However, it is not yet clear that there is broad Java community interest<br />
+in a Java standard in this space.   There appeared to be only fairly<br />
+limited community interest in JSR-108.</p>
+<p>I would like to suggest that the submitters continue investigating and<br />
+developing their API as a standalone class library.  Once they have more<br />
+experience and can demonstrate broader community interest, it may be<br />
+appropriate to launch a JSR.<br />
+                                                          - Graham<br />
+</quote></p>
+<p>There are a lot of very similar comments, even the positive votes call into question the existence of JSR-275 based on the perception of JSR-108 as a failure.</p>
+<h4>Why Units Matter</h4>
+<p>Please be assured that the concept of a unit system is vital to using Java for scientific purposes. Even the old JSR-108 code is in day to day use around the world - in my projects it is used to explain how the world is round.</p>
+<p>Be assured JSR-275 would be an instant success if it was not battling a community that is still bound by Java 1.4. The availability of JSR-275 will be added motivation for us to upgrade. The value and utility of JSR-108 is also holding us back; be assured that when we do upgrade the reference implementation of JSR-275 will be test from all kinds of angles.</p>
+<h4>GeoTools and Java 5 - now is the Time</h4>
+<p>GeoTools is tabling a proposal right now about when to upgrade to Java 5. The success of JSR-275 on July 8th will be instrumental in this decision.</p>
+<p>We will do our best to upgrade to JSR-275 - The only other thing you can do to help is is to kick websphere (and others) into releasing a proper Java EE implementation. You will find that the scientific community, much like the rest of Java, is splintered between versions.</p>
+<p>Units with generics is great, it makes for a better example of Generics pulling their weight in the Java language than the usual example of Collections.</p>
+";s:8:"comments";s:74:"http://www.java.net/blog/jive/archive/2007/07/jsr275_and_why.html#comments";s:7:"pubdate";s:31:"Thu, 05 Jul 2007 19:40:49 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"238313 at http://www.java.net";s:7:"summary";s:4066:"<!--  | 0 --><p>JSR-275 is almost ready! And there is much rejoicing to be had - but not quite yet.</p>
+<p>In my last blog post I talked about GeoAPI and how we use it to define interfaces for a lot of the spatial goodness happening in the Java world.  One of the constructs discussed was the interface for CoordinateReferenceSystem. This interface is implemented by a couple of projects:</p>
+<ul>
+<li><a href="http://docs.codehaus.org/display/GEOTOOLS/Home">GeoTools</a>
+<li><a href="http://jscience.org/">JScience</a>
+</ul>
+<p>Central to the idea of a CoordianteReferenceSystem is what unit of measure the numbers are in (meters, feet, sexidecimal degrees, etc...).</p>
+<p>JSR-275 defines a really amazing concept of "Unit of Measure" (as described in Fowlers Analysis Patterns Book). This idea is powerful, and allows you all kinds of runtime safety checks so that you do not (in the proverbially case) mix up meters and feet and fly into Mars by accident.</p>
+<p>In JSR-275 they broke out Java Generics system and made a lot of this goodness into something the compiler can check for.</p>
+<h4>So why doesn't GeoTools use JSR-275</h4>
+<p>Problem is the reference implementation (also provided by JScience) is Java 5 only :-) So for the moment GeoTools community is hanging back so we can work with all those Java 1.4 J2EE projects that pay the bills.</p>
+<h4>JSR-108 Where art thou</h4>
+<p>Actually the GeoTools project still uses a units-0.1.jar provided by the earlier JSR-108. This earlier JSR-108 was withdrawn - and that seems to have scared the voting parties.</p>
+<p>From the <a href="http://www.jcp.org/en/jsr/results?id=3216">JSR #275 Units Specification JSR Review Ballot</a>:<br />
+<quote><br />
+On 2005-06-09 Sun Microsystems, Inc. voted No with the following comment:<br />
+Sun is voting "no" on this JSR based on concern over whether there<br />
+is broad need for this JSR and concern that this is essentially<br />
+equivalent to an earlier JSR (108) which was previously withdrawn.</p>
+<p>It is possible that this topic may eventually benefit from a JSR.<br />
+However, it is not yet clear that there is broad Java community interest<br />
+in a Java standard in this space.   There appeared to be only fairly<br />
+limited community interest in JSR-108.</p>
+<p>I would like to suggest that the submitters continue investigating and<br />
+developing their API as a standalone class library.  Once they have more<br />
+experience and can demonstrate broader community interest, it may be<br />
+appropriate to launch a JSR.<br />
+                                                          - Graham<br />
+</quote></p>
+<p>There are a lot of very similar comments, even the positive votes call into question the existence of JSR-275 based on the perception of JSR-108 as a failure.</p>
+<h4>Why Units Matter</h4>
+<p>Please be assured that the concept of a unit system is vital to using Java for scientific purposes. Even the old JSR-108 code is in day to day use around the world - in my projects it is used to explain how the world is round.</p>
+<p>Be assured JSR-275 would be an instant success if it was not battling a community that is still bound by Java 1.4. The availability of JSR-275 will be added motivation for us to upgrade. The value and utility of JSR-108 is also holding us back; be assured that when we do upgrade the reference implementation of JSR-275 will be test from all kinds of angles.</p>
+<h4>GeoTools and Java 5 - now is the Time</h4>
+<p>GeoTools is tabling a proposal right now about when to upgrade to Java 5. The success of JSR-275 on July 8th will be instrumental in this decision.</p>
+<p>We will do our best to upgrade to JSR-275 - The only other thing you can do to help is is to kick websphere (and others) into releasing a proper Java EE implementation. You will find that the scientific community, much like the rest of Java, is splintered between versions.</p>
+<p>Units with generics is great, it makes for a better example of Generics pulling their weight in the Java language than the usual example of Collections.</p>
+";}i:8;a:9:{s:5:"title";s:41:"Java GIS - So why don't we work together?";s:4:"link";s:66:"http://www.java.net/blog/jive/archive/2007/06/java_gis_so_why.html";s:11:"description";s:5565:"<!--  | 0 --><p>Someone pointed me at an interesting new project .... actually an interesting old project in new cloths. <a href="http://www.eclipse.org/ohf/components/stem/index.php">The Spatiotemporal Epidemiological Modeler</a> is a little component for the eclipse Open Healthcare Framework.</p>
+<p>And it includes one feature (out of many) of interest to this discussion: A GIS.</p>
+<h4>Perfect!</h4>
+<p>This is exactly what I want to see happen; GIS as a widget that can be rolled into your application de jour.</p>
+<p>The actual widget is kind of fun; the data format makes use of Geography Markup Language (GML) to define its polygons and so on. Yes it is an Eclipse RCP application, and no they did not talk to us about using uDig. You can uDig in your own RCP applications - but what they have is nice and specific to their <a href="http://wiki.eclipse.org/index.php/Welcome_STEM_Developers#An_Introduction_to_STEM_Map_Files">data format</a>. They even have google earth integration - looks like they could of talked to GeoServer and saved some effort.</p>
+<p>I assume there was just not enough time / energy / benefit to the developers to work with a larger community on this one. uDig offers an intergration platform so you can roll all kinds of data formats into the same projection and see it on the screen - making use of a number of open source projects to get the job done.</p>
+<h2>What do we have to work on?</h2>
+<p>There are several areas of neutral grounds for Java open source projects to meet, greet, and share common geospatial interfaces.</p>
+<p>At a low technical level most projects are making use of the JTS Topology Suite to get their polygon game on. Sometimes they wrap the beast up in modern ISO Geometry clothing, and sometimes they just punt raw coordinates onto the screen until JTS is needed for actual work.</p>
+<p>At a high level we are often working against the same file formats (shapefile, JPEG2000, etc..) and against the same web services (Web Feature Server, Web Map Sever).</p>
+<p>It is in between where things get a bit messy. Geospatial projects often use the same concepts (Feature is something that can be drawn on a Map, A Map is made up of layers of features styled up and made to look pretty, etc...). Occasionally these concepts are based on a specification (the referencing specification describes where a coordinate end up on your map, the geometry specification defines what a surface is, that GML specification defines an XML file format for features, and so on...).</p>
+<p>Basically the model is the same - why can't we share code.</p>
+<h2>How can we work together?</h2>
+<p>The <a href="http://geoapi.sourceforge.net/stable/site/charter.html">GeoAPI</a> project defines common interfaces for much of the middle ground. It even has a procedure for projects to collaborate together.</p>
+<p>Here is an example: that idea of "Referencing" has a set of interfaces, and there are two implementations:
+<ul>
+<li>Java 1.4: in the <a href="http://geotools.codehaus.org/">GeoTools</a> project</p>
+<li>Java 5: in <a href="http://jscience.org/">JScience</a> project.
+</ul>
+<p>If you are building an application you can pick and choose.</p>
+<p>It would be great if we could pull this off for some more concepts. The process is in place, but perhaps our approach (our sales pitch) has been wrong.</p>
+<h2>Why don't we work together?</h2>
+<p>One (bad) design trick you can play to get collaboration started is to present a design that is mostly right, and let others find and correct the mistake. By getting everyone to contribute it becomes much more of a shared property and of interest to all.</p>
+<p>Currently we have been driving GeoAPI from mostly one view point - the specifications. This is easy to understand - since the specifications have all the hard naming choices figured out. However by starting with a specification, the process does not feel "open" to collaboration.</p>
+<p>In practise the specifications always have mistakes, and collaboration is vital for success. I just wish I could make that point more: <b>Got Java? Got Geography? GeoAPI needs you!</b></p>
+<p>I wish we could stress community building as much as correctness.</p>
+<p>Here is where our approach can be fixed: by saying "<b>We should work together</b>" we are being too timid - the statement is easy to agree to - but chances are it will never happen. Enthusiasm, funding and deadlines drive software here rather than good intentions.</p>
+<h2>We should work together on THIS?</h2>
+<p>So here is the statement I would like us to make (rather than working on something "abstract"). Let's work together on something specific.</p>
+<p><b>What is a Map</b></p>
+<p>I just want to capture the data model here, we can bust out different widgets to visualize the thing after.</p>
+<p>A couple of suggestions:
+<ul>
+<li>Have a look around and see what projects do in the wild</p>
+<li>GeoTools is sick of its representation (it does not do WMS layers) and would love to collaborate on this
+<li>OpenJUMP may be in a similar situation?
+<li>GeoWidgets would love to be the keeper of a Map widget
+<li>OSGeo has a a SoC student working on a 3D widget
+</ul>
+<p>If we really get stuck on names - the file format for <b>Open Web Context Document</b> is around. I want to read in and display the result in a number of widgets. The file format is not finished yet (so we provide feedback if we see something we hate). Treat this as an opportunity not a constraint. Sample code exists in uDig to read the file format.</p>
+<p>All the best and happy hacking.</p>
+";s:8:"comments";s:75:"http://www.java.net/blog/jive/archive/2007/06/java_gis_so_why.html#comments";s:8:"category";s:11:"Open Source";s:7:"pubdate";s:31:"Wed, 13 Jun 2007 20:10:56 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"238154 at http://www.java.net";s:7:"summary";s:5565:"<!--  | 0 --><p>Someone pointed me at an interesting new project .... actually an interesting old project in new cloths. <a href="http://www.eclipse.org/ohf/components/stem/index.php">The Spatiotemporal Epidemiological Modeler</a> is a little component for the eclipse Open Healthcare Framework.</p>
+<p>And it includes one feature (out of many) of interest to this discussion: A GIS.</p>
+<h4>Perfect!</h4>
+<p>This is exactly what I want to see happen; GIS as a widget that can be rolled into your application de jour.</p>
+<p>The actual widget is kind of fun; the data format makes use of Geography Markup Language (GML) to define its polygons and so on. Yes it is an Eclipse RCP application, and no they did not talk to us about using uDig. You can uDig in your own RCP applications - but what they have is nice and specific to their <a href="http://wiki.eclipse.org/index.php/Welcome_STEM_Developers#An_Introduction_to_STEM_Map_Files">data format</a>. They even have google earth integration - looks like they could of talked to GeoServer and saved some effort.</p>
+<p>I assume there was just not enough time / energy / benefit to the developers to work with a larger community on this one. uDig offers an intergration platform so you can roll all kinds of data formats into the same projection and see it on the screen - making use of a number of open source projects to get the job done.</p>
+<h2>What do we have to work on?</h2>
+<p>There are several areas of neutral grounds for Java open source projects to meet, greet, and share common geospatial interfaces.</p>
+<p>At a low technical level most projects are making use of the JTS Topology Suite to get their polygon game on. Sometimes they wrap the beast up in modern ISO Geometry clothing, and sometimes they just punt raw coordinates onto the screen until JTS is needed for actual work.</p>
+<p>At a high level we are often working against the same file formats (shapefile, JPEG2000, etc..) and against the same web services (Web Feature Server, Web Map Sever).</p>
+<p>It is in between where things get a bit messy. Geospatial projects often use the same concepts (Feature is something that can be drawn on a Map, A Map is made up of layers of features styled up and made to look pretty, etc...). Occasionally these concepts are based on a specification (the referencing specification describes where a coordinate end up on your map, the geometry specification defines what a surface is, that GML specification defines an XML file format for features, and so on...).</p>
+<p>Basically the model is the same - why can't we share code.</p>
+<h2>How can we work together?</h2>
+<p>The <a href="http://geoapi.sourceforge.net/stable/site/charter.html">GeoAPI</a> project defines common interfaces for much of the middle ground. It even has a procedure for projects to collaborate together.</p>
+<p>Here is an example: that idea of "Referencing" has a set of interfaces, and there are two implementations:
+<ul>
+<li>Java 1.4: in the <a href="http://geotools.codehaus.org/">GeoTools</a> project</p>
+<li>Java 5: in <a href="http://jscience.org/">JScience</a> project.
+</ul>
+<p>If you are building an application you can pick and choose.</p>
+<p>It would be great if we could pull this off for some more concepts. The process is in place, but perhaps our approach (our sales pitch) has been wrong.</p>
+<h2>Why don't we work together?</h2>
+<p>One (bad) design trick you can play to get collaboration started is to present a design that is mostly right, and let others find and correct the mistake. By getting everyone to contribute it becomes much more of a shared property and of interest to all.</p>
+<p>Currently we have been driving GeoAPI from mostly one view point - the specifications. This is easy to understand - since the specifications have all the hard naming choices figured out. However by starting with a specification, the process does not feel "open" to collaboration.</p>
+<p>In practise the specifications always have mistakes, and collaboration is vital for success. I just wish I could make that point more: <b>Got Java? Got Geography? GeoAPI needs you!</b></p>
+<p>I wish we could stress community building as much as correctness.</p>
+<p>Here is where our approach can be fixed: by saying "<b>We should work together</b>" we are being too timid - the statement is easy to agree to - but chances are it will never happen. Enthusiasm, funding and deadlines drive software here rather than good intentions.</p>
+<h2>We should work together on THIS?</h2>
+<p>So here is the statement I would like us to make (rather than working on something "abstract"). Let's work together on something specific.</p>
+<p><b>What is a Map</b></p>
+<p>I just want to capture the data model here, we can bust out different widgets to visualize the thing after.</p>
+<p>A couple of suggestions:
+<ul>
+<li>Have a look around and see what projects do in the wild</p>
+<li>GeoTools is sick of its representation (it does not do WMS layers) and would love to collaborate on this
+<li>OpenJUMP may be in a similar situation?
+<li>GeoWidgets would love to be the keeper of a Map widget
+<li>OSGeo has a a SoC student working on a 3D widget
+</ul>
+<p>If we really get stuck on names - the file format for <b>Open Web Context Document</b> is around. I want to read in and display the result in a number of widgets. The file format is not finished yet (so we provide feedback if we see something we hate). Treat this as an opportunity not a constraint. Sample code exists in uDig to read the file format.</p>
+<p>All the best and happy hacking.</p>
+";}i:9;a:9:{s:5:"title";s:30:"FOSS4G show me the Performance";s:4:"link";s:66:"http://www.java.net/blog/jive/archive/2007/06/show_me_the_per.html";s:11:"description";s:2946:"<!--  | 0 --><p>What a silly situation performance (and benchmarks are) have put us in. As developers we really want to know how well things will perform - even if it is just so we can figure out how much hardware we will need at the end of the day.</p>
+<p>I first ran into this problem with PostGIS (a set of spatial extensions for the PostgreSQL database). The oracle spatial license does not let you run benchmarks and publish.  So the only thing I can do is tell you "it is really good". PostGIS is such a success that most spatial data wranglers check it out, and measure for themselves, before going further with Oracle.</p>
+<p>Oracle does do somethings very well, the security model is awesome. With their "Free for Development" download they are even getting more open source love ... but until we can place that jdbc driver in a maven repository there will not be very many turn key open source oracle solutions.</p>
+<h4>FOSS4G Presentation Material</h4>
+<p>In todays GeoServer IRC meeting the subject of presentations for the <a href="http://www.foss4g2007.org/">Free And Open Source Software for Geoinformatics</a> was on the agenda.</p>
+<p>One thing the community is really proud of is how much GeoServer has improved in the last year. The community has been really brave, rewriting their raster support to the point it shines, and putting together a really nifty dispatch system in order to take on the monster that is WFS 1.1.</p>
+<p>Of course all of that is technical and does not make a good presentation (except to other developers so it will be a good beer garden subject). </p>
+<p>What does make a good presentation is <b>performance</b>. And this is where open source volunteers shy away from the legal mess that is benchmarking.</p>
+<p>Specifically we can set up a nice chart comparing the usual open source subjects. This mostly means MapServer since we enjoy talking to Frank about GDAL performance.</p>
+<p>But for the commercial offerings? Like a comparison with ArcIMS?</p>
+<p>We did think of a couple of ways:</p>
+<ul>
+<li>Report the performance of some publicly available ArcIMS instance
+<li>Run our performance test during the presentation (it would not be on the slides but the audience could see)
+</ul>
+<p>Sadly it will not make the cut, life is too short to figure out what we are and are not allowed to say.</p>
+<h4>So what can you tell me? How good is GeoServer?</h2>
+<p>So here is the best idea we can offer you - if you want to know how insanely great GeoServer has become download the (open source) tool we used for testing and measure it yourself.</p>
+<p>And just because we want you to come to FOSS4G - please attend our presentation (fingers crossed that it will be accepted) and learn where to download said performance testing tool.</p>
+<p>You could also engage one of several consulting companies to produce a report for you.</p>
+<p>If you do find out how good GeoServer is keep it on the hush hush.</p>
+";s:8:"comments";s:75:"http://www.java.net/blog/jive/archive/2007/06/show_me_the_per.html#comments";s:8:"category";s:11:"Open Source";s:7:"pubdate";s:31:"Tue, 12 Jun 2007 20:50:36 +0000";s:2:"dc";a:1:{s:7:"creator";s:4:"jive";}s:4:"guid";s:29:"238148 at http://www.java.net";s:7:"summary";s:2946:"<!--  | 0 --><p>What a silly situation performance (and benchmarks are) have put us in. As developers we really want to know how well things will perform - even if it is just so we can figure out how much hardware we will need at the end of the day.</p>
+<p>I first ran into this problem with PostGIS (a set of spatial extensions for the PostgreSQL database). The oracle spatial license does not let you run benchmarks and publish.  So the only thing I can do is tell you "it is really good". PostGIS is such a success that most spatial data wranglers check it out, and measure for themselves, before going further with Oracle.</p>
+<p>Oracle does do somethings very well, the security model is awesome. With their "Free for Development" download they are even getting more open source love ... but until we can place that jdbc driver in a maven repository there will not be very many turn key open source oracle solutions.</p>
+<h4>FOSS4G Presentation Material</h4>
+<p>In todays GeoServer IRC meeting the subject of presentations for the <a href="http://www.foss4g2007.org/">Free And Open Source Software for Geoinformatics</a> was on the agenda.</p>
+<p>One thing the community is really proud of is how much GeoServer has improved in the last year. The community has been really brave, rewriting their raster support to the point it shines, and putting together a really nifty dispatch system in order to take on the monster that is WFS 1.1.</p>
+<p>Of course all of that is technical and does not make a good presentation (except to other developers so it will be a good beer garden subject). </p>
+<p>What does make a good presentation is <b>performance</b>. And this is where open source volunteers shy away from the legal mess that is benchmarking.</p>
+<p>Specifically we can set up a nice chart comparing the usual open source subjects. This mostly means MapServer since we enjoy talking to Frank about GDAL performance.</p>
+<p>But for the commercial offerings? Like a comparison with ArcIMS?</p>
+<p>We did think of a couple of ways:</p>
+<ul>
+<li>Report the performance of some publicly available ArcIMS instance
+<li>Run our performance test during the presentation (it would not be on the slides but the audience could see)
+</ul>
+<p>Sadly it will not make the cut, life is too short to figure out what we are and are not allowed to say.</p>
+<h4>So what can you tell me? How good is GeoServer?</h2>
+<p>So here is the best idea we can offer you - if you want to know how insanely great GeoServer has become download the (open source) tool we used for testing and measure it yourself.</p>
+<p>And just because we want you to come to FOSS4G - please attend our presentation (fingers crossed that it will be accepted) and learn where to download said performance testing tool.</p>
+<p>You could also engage one of several consulting companies to produce a report for you.</p>
+<p>If you do find out how good GeoServer is keep it on the hush hush.</p>
+";}}s:7:"channel";a:4:{s:5:"title";s:11:"jive's blog";s:4:"link";s:30:"http://www.java.net/blogs/jive";s:8:"language";s:2:"en";s:7:"tagline";N;}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Mon, 12 Oct 2015 13:31:01 GMT
+";}

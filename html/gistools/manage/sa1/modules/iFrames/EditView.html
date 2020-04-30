@@ -1,0 +1,72 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: EditView.html,v 1.4 2005/02/09 07:08:55 andrew Exp $
+ ********************************************************************************/
+-->
+
+<!-- BEGIN: main -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" >
+<tr>
+<form name="EditView" method="POST" action="index.php" >
+			<input type="hidden" name="module" value="iFrames">
+			<input type="hidden" name="record" value="{IFRAME.ID}">
+			<input type="hidden" name="id" value="{IFRAME.ID}">
+			<input type="hidden" name="action" value=>
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_id" >
+			<input type="hidden" name="return_action" value="{RETURN_ACTION}">
+	<td style="padding-bottom: 2px;"><input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save';return check_form('EditView');" type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " > <input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='{RETURN_ACTION}'; this.form.module.value='{RETURN_MODULE}'; this.form.record.value='{RETURN_ID}'" type="submit" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "></td>
+</tr></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tabForm">
+<td width="15%" class="dataLabel" nowrap><slot>{MOD.LBL_LIST_NAME}: <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+<td width="35%"><slot><input name='name' tabindex='1' size='30' maxlength='50' type="text" value="{IFRAME.NAME}"></slot></td>
+<td width="15%" class="dataLabel" nowrap><slot> {MOD.LBL_LIST_STATUS}: <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+<td width="35%"><slot><input class="checkbox" type='checkbox' name='status'  {IFRAME.STATUS_CHECKED}></slot></td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+<td width="15%" class="dataLabel" nowrap><slot>{MOD.LBL_LIST_URL}: <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+<td width="35%"><slot><input name='url' tabindex='1' size='30' maxlength='255' type="text" value="{IFRAME.URL}"></slot></td>
+<td width="15%" class="dataLabel" nowrap><slot>&nbsp; </slot></td>
+<td width="35%"><slot>&nbsp; </slot></td>
+
+</tr>
+<tr>
+<td width="15%" class="dataLabel" nowrap><slot>{MOD.LBL_LIST_PLACEMENT}: </slot></td>
+<td width="35%"><slot><select name='placement' tabindex='2'>{IFRAME.PLACEMENT_SELECT}</select></slot></td>
+<td width="15%" class="dataLabel" nowrap><slot>{MOD.LBL_LIST_TYPE}: </slot></td>
+<td width="35%"><slot><select name='type' tabindex='2'>{IFRAME.TYPE_SELECT}</select></slot></td>
+
+</tr>
+<tr>
+
+</tr>
+</table>
+
+<input type='hidden' name='record' value='{ID}'>
+</form>
+{JAVASCRIPT}
+<!-- END: main -->

@@ -1,0 +1,1074 @@
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: style.css,v 1.11 2005/04/20 02:04:07 lam Exp $
+ * Description:  Contains a variety of utility functions used to display UI 
+ * components such as form headers and footers.  Intended to be modified on a per 
+ * theme basis.
+ ********************************************************************************/
+ 
+/* Default Styles */
+body { 
+	margin: 0px 0px 0px 0px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: #6E5400;
+	font-size: 12px;
+	background-color: #ffffff;
+	scrollbar-arrow-color: #FFFFFF; 
+	scrollbar-3dlight-color: #B8D5EF; 
+	scrollbar-highlight-color: #79B8EF; 
+	scrollbar-face-color: #79B8EF; 
+	scrollbar-shadow-color: #79B8EF;
+	scrollbar-track-color: #BBE1F7; 
+	scrollbar-darkshadow-color: #666666;
+	background-image: url(images/doc_bg.gif);
+	}
+	
+img {
+	behavior:	url("include/pngbehavior.htc");
+}
+
+.body { 
+	font-size: 12px;
+	}
+	
+table,td {
+	color: #6E5400;
+	font-size: 11px;
+	}
+
+p {
+	MARGIN-TOP: 0px;
+	MARGIN-BOTTOM: 10px;
+	}
+	
+form {
+	margin: 0px;
+	}
+
+h1 {
+	color: #EA1313;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	}
+
+h2 {
+	color: #2D9200;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin-bottom: 0px;
+	margin-top: 0px;
+	}
+
+h3 {
+	color: #A47700; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 16px; 
+	font-weight: bold; 
+	margin-bottom: 4px;
+	}
+
+h4 {
+	color: #333333; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 14px; 
+	font-weight: bold; 
+	margin-bottom: 2px;
+	}
+
+h5 {
+	color: #333333; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px; 
+	font-weight: bold; 
+	margin-bottom: 1px;
+	}
+	
+LI {
+	LIST-STYLE-TYPE: square; 
+	margin-left: 6px; 
+	MARGIN-BOTTOM: 2px;
+	}
+	
+UL {
+	MARGIN-TOP: 2px;
+	}
+	
+hr {
+	height: 1px;
+}
+
+a:link, a:visited {
+	color: #6E5400;
+	font-size: 11px;
+	text-decoration: underline;
+	}
+a:hover {
+	color: #6E5400;
+	text-decoration: none;
+	}
+/* Form Styles */
+
+.button {
+
+	border: 1px solid #444444;
+	background-color: #2EC200;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: normal;
+	}
+	
+.buttonOn {
+
+	border: 1px solid #444444;
+	background-color: #207800;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: normal;
+	}
+	
+input,select {
+	border: 1px solid #222222;
+	font-size: 11px;
+	background-color: #ffffff;
+	}
+	
+textarea {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	border: 1px solid #888888;
+	font-size: 12px;
+	background-color: #ffffff;
+	}
+.checkbox,.radio {
+	border:0px;
+	background-color: transparent;
+	margin: 0px;
+	vertical-align: bottom;
+	}
+
+	
+/* Content Specific Styles */
+	/* body text */
+	.contentBox {
+		background-color: #EBD9AA;
+		border: 1px #C7A02F solid;
+		padding: 5px;
+	}
+	.teamNoticeBox {
+		background-color: #EBD9AA;
+		border: 1px #C7A02F solid;
+		padding-left: 5px;
+		padding-right: 5px;
+		color: #00568C;
+	}
+	a.body:link, a.body:visited {
+		color: #6E5400;
+		font-size: 12px;
+		text-decoration: underline;
+		}
+		
+	a.body:hover {
+		color: #6E5400;
+		text-decoration: underline;
+		}
+	
+	/* myArea is for my account, admin, logout, an about links*/
+	.myArea {
+		font-size: 11px;
+		font-weight: bold;
+		color: #ffffff;
+		}
+	a.myAreaLink:link, a.myAreaLink:visited {
+		color: #CDF1FF;
+		text-decoration: none;
+		}
+	a.myAreaLink:hover {
+		color: #C0EDFF;
+		text-decoration: none;
+		}
+		
+	/*for the main screen navigation tabs*/
+	.currentTab {
+		font-size: 12px;
+		font-weight: bold;
+		}
+	a.currentTab:link, a.currentTab:visited {
+		color: #E3FFDC;
+		text-decoration: none;
+		}
+	a.currentTab:hover {
+		color: #ffffff;
+		text-decoration: none;
+		
+		}
+		
+	.otherTab {
+		font-size: 12px;
+		font-weight: bold;
+		}
+	a.otherTab:link, a.otherTab:visited {
+		color: #6F5D40;
+		text-decoration: none;
+
+		}
+	a.otherTab:hover {
+		color: #6F5D40;
+		text-decoration: none;
+		}
+	.subMenu {
+		font-size: 11px;
+		color: #ffffff;
+		background-color: #D7FFAA;
+		border-bottom: 1px solid #C7A02F;
+		border-left: 1px solid #C7A02F;
+		border-right: 1px solid #C7A02F;
+		}
+	.subMenuTD {
+		font-size: 11px;
+		color: #ffffff;
+		background-color: #EDCF7D;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		}
+	a.subMenuLink:link, a.subMenuLink:visited {
+		color: #594E2F;
+		text-decoration: none;
+		border-bottom: 0px;
+		padding-left: 0px;
+		}
+	a.subMenuLink:hover {
+		color: #594E2F;
+		text-decoration: none;
+		border-bottom: 0px;
+		}
+		
+	/*welcome user and date bar and last view*/
+	.moduleTitle {
+	border-bottom: 1px solid #55A200;
+	}
+	.subTabBar {
+	background-image: url(images/subTabBar_bg.gif);
+	}
+	.welcome {
+		font-size: 12px;
+		font-weight: bold;
+		color: #DBFF83;
+		padding-left: 10px;
+		}
+	.searchField {
+		border: 1px solid #323232;
+		font-size: 11px;
+		background-color: #ffffff;
+	}
+	.search {
+		color: #DBFF83;
+		padding-right: 10px;
+		text-align: right;
+		}
+	.searchButton {
+		behavior:	url("include/pngbehavior.htc");
+		background-color: transparent;
+		border: 0px;
+		padding-right: 10px;
+		}	
+	.date {
+		font-size: 13px;
+		font-weight: bold;
+		color: #444444;
+		background-color: #dddddd;
+		border-bottom: 1px solid #bbbbbb;
+		padding-right: 10px;
+		}
+		
+	.lastView {
+		color: #186E01;
+		background-image: url(images/subTab_shadow.gif);
+		padding-left: 10px;
+		}
+		
+	a.lastViewLink:link, a.lastViewLink:visited {
+		color: #A47700;
+		text-decoration: underline;
+		border-bottom: 0px;
+		padding-left: 0px;
+		}
+	a.lastViewLink:hover {
+		color: #A47700;
+		text-decoration: none;
+		border-bottom: 0px;
+		}
+		
+	/*left column styles*/
+	table.leftColumnModuleHead th {
+		font-size: 12px;
+		color: #ffffff;
+		text-align: left;
+		padding: 0px;
+	}
+
+
+	.leftColumnModuleS3  {
+		font-size: 11px;
+		color: #6E5400;
+		font-weight: bold;
+		border-bottom: 1px solid #C7A02F;
+		border-left: 1px solid #C7A02F;
+		border-right: 1px solid #C7A02F;
+		background-image: url(images/moduleTab_bg.gif);
+		padding: 5px;
+
+	}
+	
+	/*right main content (suffix S1 stands for Style 1) */
+	.listView {
+		border: 1px solid #2EC200;
+	}
+	.listViewThS1 {
+		font-size: 11px;
+		color: #A7FF87;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: #207800;
+		height: 20px;
+	}
+	.listViewSubHeadS1 {
+		
+	}
+	h5.listViewSubHeadS1 {
+		color: #207800; 
+		font-size: 13px; 
+		font-weight: bold; 
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+	a.listViewThLinkS1:link, a.listViewThLinkS1:visited {
+		color: #ffffff;
+		font-weight: bold;
+		text-decoration: none;
+		}
+	a.listViewThLinkS1:hover {
+	color: #ffffff; 
+	text-decoration: none;
+		}
+	a.listViewTdLinkS1:link, a.listViewTdLinkS1:visited {
+	font-size: 12px;
+	color: #185A00;
+	text-decoration: none;
+
+		}
+	a.listViewTdLinkS1:hover {
+	text-decoration: underline;
+		}
+	a.listViewTdToolsS1:link, a.listViewTdToolsS1:visited {
+	color: #946B00;
+	text-decoration: none;
+		}
+	a.listViewTdToolsS1:hover {
+	text-decoration: none;
+		}
+	.evenListRowS1 {
+		font-size: 12px;
+		color: #000000;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+		padding-top: 2px;
+	}
+	
+	.oddListRowS1 {
+		font-size: 12px;
+		color: #000000;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+		padding-top: 2px;
+	}
+	
+	.listViewHRS1 {
+		background-color: #B1D2A5;
+	}
+	.pageNumbers {
+		color: #444444;		
+	}
+	.listViewPaginationTdS1 {
+		font-size: 10px;
+		color: #849C68;
+		background-color: #D7FFAA;
+		padding-right: 5px;
+		padding-left: 5px;
+
+	}
+	a.listViewPaginationLinkS1:link, a.listViewPaginationLinkS1:visited {
+		color: #356DA3;
+		font-size: 10px;
+		font-weight: normal;
+		text-decoration: none;
+		}
+	a.listViewPaginationLinkS1:hover {
+		color: #356DA3;
+		font-size: 10px;
+		text-decoration: none;
+		}
+	a.listViewCheckLink:link, a.listViewCheckLink:visited {
+		font-size: 10px;
+		font-weight: normal;
+		text-decoration: none;
+		}
+	a.listViewCheckLink:hover {
+		font-size: 10px;
+		text-decoration: none;
+		}
+		
+	a.utilsLink:link, a.utilsLink:visited {
+		color: #1F8900;
+		font-size: 11px;
+		font-weight: normal;
+		text-decoration: none;
+
+		}
+	a.utilsLink:hover {
+		color: #144A00;
+		font-size: 11px;
+		text-decoration: none;
+		}
+	.listViewCalCurrentAppt {
+	background-color: #75AF4F;
+	}
+	.listViewCalOtherAppt {
+	background-color: #4D5EAA;
+	}
+	.listViewCalConflictAppt {
+	background-color: #AA4D4D;
+	}
+	.listViewCalCurrentApptLgnd {
+	background-color: #75AF4F;
+	border: 1px solid #444444;
+	}
+	.listViewCalOtherApptLgnd {
+	background-color: #4D5EAA;
+	border: 1px solid #444444;
+	}
+	.listViewCalConflictApptLgnd {
+	background-color: #AA4D4D;
+	border: 1px solid #444444;
+	}
+	/* charting styles */
+	.chartBox {
+		background-color: #ffffff;
+		border: 1px #2EC200 solid;
+		padding: 5px;
+	}
+	
+	a.chartToolsLink:link, a.chartToolsLink:visited {
+		color: #356DA3;
+		font-size: 10px;
+		font-weight: normal;
+		text-decoration: none;
+		}
+	a.chartToolsLink:hover {
+		color: #356DA3;
+		font-size: 10px;
+		text-decoration: none;
+		}
+		
+	table.chartForm {
+		background-color: #E5FFDB;
+		border: 1px #2EC200 solid;
+		padding: 5px;
+	}
+	
+	table.chartForm td {
+		background-color: #E5FFDB;
+	}
+	
+	/* main tab forms */
+	
+	.tabForm {
+		background-color: #D7FFAA;
+		border: 1px #55A200 solid;
+		padding: 5px;
+	}
+	
+	h4.dataLabel {
+		color: #73885B; 
+		font-size: 14px; 
+		font-weight: bold; 
+		margin-bottom: 2px;
+	}
+	
+	h5.dataLabel {
+		color: #888888; 
+		font-size: 13px; 
+		font-weight: bold; 
+		margin-bottom: 1px;
+		margin-top: 1px;
+	}
+	.dataLabel {
+		color:#1A5400;
+		font-weight: bold;
+		vertical-align : top;
+	}
+	.dataField {
+		font-weight: normal;
+		vertical-align : top;
+	}
+	
+	.tabFormAddDel {
+		padding-left: 4px; 
+		padding-right: 4px; 
+		vertical-align: middle; 
+		text-align: center;
+	}
+	
+	a.tabFormAdvLink:link, a.tabFormAdvLink:visited {
+		color: #356DA3;
+		font-size: 10px;
+		text-decoration: none;
+		}
+	a.tabFormAdvLink:hover {
+		color: #FF0000;
+		text-decoration: none;
+		}
+	
+	/* main tab panel views */
+	.tabDetailView {
+		border: 1px solid #65785E;
+		background-color: #B1D2A5;
+	}
+	.tabDetailViewDL {
+	font-size: 12px; 
+		color: #748A6C; 
+		font-weight: bold;
+		background-color: #E5FFDB;
+		padding-right: 4px;
+		padding-left: 4px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: top;
+		text-align: right;
+	}
+	
+	h4.tabDetailViewDL {
+		color: #666666; 
+		font-family: Arial, Verdana, Helvetica, sans-serif;
+		font-size: 14px; 
+		font-weight: bold; 
+		margin-bottom: 2px;
+		text-align: left;
+	}
+	.tabDetailViewDF {
+	font-size: 12px; 
+		color: #000000; 
+		background-color: #ffffff;
+		font-weight: bold; 
+		padding-right: 4px;
+		padding-left: 4px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: top;
+		font-weight: bold;
+	}
+
+	a.tabDetailViewDFLink:link, a.tabDetailViewDFLink:visited {
+		color: #207800;
+		font-size: 12px;
+		text-decoration: none;
+		font-weight: bold;
+		text-decoration: underline;
+		}
+	a.tabDetailViewDFLink:hover {
+		color: #207800;
+		text-decoration: none;
+		}
+		
+	.tabDetailView2 {
+		border: 1px solid #65785E;
+		background-color: #B1D2A5;
+	}
+	.tabDetailViewDL2 {
+		color: #748A6C; 
+		font-weight: bold;
+		background-color: #E5FFDB;
+		padding-right: 4px;
+		padding-left: 4px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: top;
+	}
+	.tabDetailViewDF2 {
+		color: #222222; 
+		background-color: #ffffff;
+		padding-right: 4px;
+		padding-left: 4px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: top;
+	}
+	a.tabDetailViewDL2Link:link, a.tabDetailViewDL2Link:visited {
+		color: #555555;
+		font-size: 11px;
+		text-decoration: none;
+		font-weight: bold;
+		}
+	a.tabDetailViewDL2Link:hover {
+		color: #555555;
+		text-decoration: underline;
+		}
+	/* calendar styles */
+	.monthBox {
+	border: 1px solid #218B00;
+	}
+	.monthHeader {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #36CA00;
+	}
+	.monthFooterPrev {
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #36CA00;
+	}
+	.monthFooterNext {
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #36CA00;
+	}
+	.monthHeaderH3 {
+	color: #ffffff; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 16px; 
+	font-weight: bold; 
+	}
+	.monthCalBody {
+	background-color: #CFE7C6;
+	}
+	
+	.monthHeaderPrevTd {
+	padding-left: 5px;
+	}
+
+	a.NextPrevLink:link, a.NextPrevLink:visited {
+	color: #EAFFE3;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	a.NextPrevLink:hover {
+	color: #EAFFE3;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	
+	.monthHeaderNextTd {
+	padding-right: 5px;
+	}
+	
+	.monthCalBodyTHWeek {
+	font-size: 12px;
+	background-color: #289500;
+	color: #ffffff;
+	padding: 5px;
+	}
+	.monthCalBodyTHDay {
+	font-size: 12px;
+	background-color: #207800;
+	color: #ffffff;
+	padding: 5px;
+	}
+	.monthCalBodyWeek {
+	vertical-align: top;
+	background-color: #99AA92;
+	color: #ffffff;
+	padding: 5px;
+	}
+	a.monthCalBodyWeekLink:link, a.monthCalBodyWeekLink:visited {
+	font-size: 11px;
+	color: #ffffff;
+	}
+	a.monthCalBodyWeekLink:hover {
+	font-size: 11px;
+	}
+	.monthCalBodyTodayWeekDay {
+	border: 1px solid #2EC200;
+	background-color: #ffffff;
+	color: #444444;
+	padding: 3px;
+	text-align: right;
+	}
+
+	.monthCalBodyWeekDay {
+	background-color: #ffffff;
+	color: #444444;
+	padding: 3px;
+	text-align: right;
+	}
+	.monthCalBodyTodayWeekEnd {
+	border: 1px solid #2EC200;
+	background-color: #E5FFDB;
+	color: #444444;
+	padding: 3px;
+	text-align: right;
+	}
+	.monthCalBodyWeekEnd {
+	background-color: #E5FFDB;
+	color: #444444;
+	padding: 3px;
+	text-align: right;
+	}
+	a.monthCalBodyWeekDayDateLink:link, a.monthCalBodyWeekDayDateLink:visited {
+	color: #207800;
+	font-size: 11px;
+	font-weight: bold;
+	}
+	a.monthCalBodyWeekDayDateLink:hover {
+	color: #207800;
+	font-size: 11px;
+	font-weight: bold;	
+	}
+	
+	a.monthCalBodyWeekEndDateLink:hover {
+	color: #207800;
+	font-size: 11px;
+	font-weight: bold;	
+	}
+	
+	
+	
+	a.monthCalBodyDayItemLink:link, a.monthCalBodyDayItemLink:visited {
+	color:#207800;
+	font-size: 10px;
+	}
+	a.monthCalBodyDayItemLink:hover {
+	font-size: 10px;
+	}
+	
+	.monthCalBodyDayItem {
+	background-color: #E5FFDB;
+	border: 1px solid #99AA92;
+	}
+	.monthCalBodyDayIconTd {
+	padding-left: 2px;
+	padding-right: 3px;
+	vertical-align: top;
+
+	}
+	.monthCalBodyDayItemTd {
+	vertical-align: top;
+
+
+	}
+	.monthViewDayHeight {
+	height: 100px;
+	}
+	.yearViewDayHeight {
+	height: 40px;
+	}
+	.dailyCalBodyTime {
+	vertical-align: top;
+	background-color: #99AA92;
+	color: #ffffff;
+	padding: 3px;
+	font-weight: bold;
+	height: 20px;
+	}
+	.dailyCalBodyItems {
+	background-color: #ffffff;
+	color: #444444;
+	padding: 3px;
+	text-align: left;
+	}
+	
+	a.weekCalBodyDayLink:link, a.weekCalBodyDayLink:visited {
+	color: #ffffff;
+	}
+	a.weekCalBodyDayLink:hover {
+	color: #ffffff;
+	}
+
+	.yearCalBody {
+	background-color: #f0f0f0;
+	}
+	.yearCalBodyMonth {
+	border: 1px solid #747064;
+	background-color: #EDE4CC;
+	}
+
+	a.yearCalBodyMonthLink:link, a.yearCalBodyMonthLink:visited {
+	font-size: 13px;
+	font-weight: bold;
+	color: #747064;
+	}
+	a.yearCalBodyMonthLink:hover {
+	color: #747064;
+	}
+
+	/* misc font displays */
+	.todaysTask {
+		color: #FF7800
+	}
+	.overdueTask {
+		color: #ff0000;
+	}
+	.required {
+		color: #ff0000;
+	}
+	.error {
+		color: #ff0000;
+	}
+	.success {
+		color: #00ee00;
+	}
+	.rssItemDate {
+		color: #666666;
+		font-size: 10px;
+	}
+	.dateFormat {
+		font-weight: normal;
+		font-style: italic;
+		font-size: 10px;
+	}
+	.chartFootnote {
+		font-size: 10px;
+	
+	}
+
+	.copyRight {
+	}
+	a.copyRightLink:link, a.copyRightLink:visited {
+	color: #6E5400;
+	}
+	a.copyRightLink:hover {
+	}
+	
+	.tm {
+		font-size: 8px;
+		font-family: Verdana;
+	}
+	
+	.footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: #207800;
+	}
+	a.footerLink:link, a.footerLink:visited {
+		color: #207800;
+	}
+	a.footerLink:hover {
+	}
+	
+	.footerHR {
+		color: #6E5400;
+	}
+
+	
+	
+/* Scheduler Styles */
+.schedulerDiv {
+  width: 100%;
+  background-color: #FAFAFA;
+  	border: 1px solid #218B00;
+	border-collapse: collapse;
+	margin-top: 0px;
+ }
+ .schedulerTable {
+  width: 100%;
+  background-color: #FAFAFA;
+	border: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+
+ .schedulerTopRow {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+
+ .schedulerTimeRow {
+	border-collapse: collapse;
+ }
+ .schedulerTopDeleteHeaderCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+ .schedulerDeleteHeaderCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+ .schedulerTopDateCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+	background-color: #207800;
+	font-weight: bold;
+	font-size: 12px;
+	color: #ffffff;
+ }
+ .schedulerTopHeaderCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+ .schedulerAttendeeHeaderCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+ .schedulerAttendeeHeaderCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+ }
+
+ .schedulerTimeCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+	font-size:12px;
+	font-family:sans-serif;
+	padding-left: 4px;
+ }
+
+ .schedulerAttendeeCell {
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	overflow: hidden;
+	border-collapse: collapse;
+	height: 14px;
+    padding-left: 4px;
+	width: 125px;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+ .schedulerAttendeeDeleteCell {
+	background-color: #FFDDDD;
+	color: #000000;
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	padding-left: 4px;
+	text-align: left;
+	border-collapse: collapse;
+}
+ .schedulerAttendeeIconCell {
+  color: #000000;
+	border: 1px solid #CFE7C6;
+  	padding: 0px;
+	height: 18px;
+	border-collapse: collapse;
+	width: 16px;
+  }
+ .schedulerSlotEmptyDiv {
+	border: 0px solid transparent;
+  width: 100%;
+  height: 100%;
+ }
+ .schedulerSlotCellStartTime {
+	border-left: 4px solid #75AF4F;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+  background-color: #eeeeee;
+  width: 15;
+ }
+ .schedulerSlotCellEndTime {
+	border-left: 4px solid #ff0000;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	border-collapse: collapse;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+  background-color: #eeeeee;
+  width: 15;
+ }
+ .schedulerSlotCellHour {
+	border-collapse: collapse;
+	border-left: 1px solid #CFE7C6;
+	border-right: 1px solid #CFE7C6;
+	border-top: 1px solid #CFE7C6;
+	border-bottom: 1px solid #CFE7C6;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+  background-color: #eeeeee;
+  width: 15;
+ }
+ .schedulerAttendeeRow {
+      height: 18px;
+}
+
+	.schedulerEvenListRow {
+		font-size: 12px;
+		color: #000000;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+		padding-top: 2px;
+		background-color: #FFFFFF;
+	}
+	
+	.schedulerOddListRow {
+		font-size: 12px;
+		color: #000000;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+		padding-top: 2px;
+		background-color: #E5FFDB;
+	}
+	

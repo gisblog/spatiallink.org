@@ -1,0 +1,68 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:13:{i:0;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:23:"okay AGEDOR...@yahoo.fr";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-30T11:01:49Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/fd457612fd533b6b";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/fd457612fd533b6b";s:5:"title";s:36:"WARNING BIOCHIP -----> VERY BAD !!!!";s:7:"summary";s:436:"
+  Hello, <br> <a target="_blank" href="http://www.av1611.org/666/biochip.html">[link]</a> <br> To Archbishop Christodoulos Paraskevaides of the Greek Orthodox Church <br> in Athens and Greece <br> Archbishop, <br> I talked with a Greek Orthodox believer in Australia and he told me two <br> things of interest in these last days, as we see it this day even. <br> They had a large group of personnel from America come to Australia to
+  ";}i:1;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:24:"ibiza lambe...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-30T03:56:29Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/076fa257597eaec5";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/076fa257597eaec5";s:5:"title";s:51:"Full text indexing with Japanese characters problem";s:7:"summary";s:411:"
+  Hi all, <br> I am quite experimented with SQL Server, but not that much with full <br> text indexing. After some successful attempts with english fields, I've <br> decided to try it with Japanese characters. I don't know why, but it <br> seems to have a strange behaviour. <br> As in this screenshot <br> (<a target="_blank" href="http://img65.imageshack.us/img65/980/jap3xt.gif">[link]</a>), the CONTAINS
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:37:"cutegirl.ritu cutegirl.r...@yahoo.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-29T14:24:33Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/a9aaaa1a488674bc";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/a9aaaa1a488674bc";s:5:"title";s:11:"NEW IT JOBS";s:7:"summary";s:380:"
+  Hi Dear Members, <br> FOLLOWING R THE NEW JOBS OF THE WEEK: <br> Job Title Job Posted By Date Of Job <br> WORK FROM HOME work from home 25/03/2006 <br> Application Architect ASA-Hr And IT consultants 25/03/2006 <br> PL/SQL DEVELOPER jets 24/03/2006 <br> BPO voice/non voice executive UDAYKANTH 24/03/2006 <br> Team Leaders &amp; programmers Sri Marketing Services 24/03/2006
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:47:"sachinsingh10@gmail.com sachinsing...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-29T04:03:29Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/19f1d9156677918d";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/19f1d9156677918d";s:5:"title";s:21:"Database Design Issue";s:7:"summary";s:394:"
+  Hi everyone, <br> I have this problem with designing a Inventory tracking system. Maybe <br> some of you have some ideas for me. <br> I want to track the following entities: <br> SUPPLIERS <br> SHIPMENTS <br> ITEMS <br> ORDER <br> CUSTOMER <br> Thats easy the problem is the ITEMS (or individual products) need to be <br> tracked seperately as one item might be defective, damaged or even
+  ";}i:4;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:28:"Nitin mr.nitinj...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-27T09:29:11Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/dea5ee59cf9ec8c0";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/dea5ee59cf9ec8c0";s:5:"title";s:9:"FTP @ DTS";s:7:"summary";s:360:"
+  I have to transfer one .xls (excel) file from a ftp location to a <br> directory. But by default it takes the ascii transfer mode which makes <br> the file currupted. <br> If i ftp the file in binary mode manually, it works fine. <br> Is there any way we can transfer the file in binary mode in DTS? <br> or can u suggest any other solution for the same.
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:26:"S Litnak slit...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-27T03:45:32Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/9aa72b531fb21210";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/9aa72b531fb21210";s:5:"title";s:29:"!UPDATE! Group topic modified";s:7:"summary";s:350:"
+  Dear members, <br> As you may or may not know, topic as been modified to help let new or <br> potential members be aware that this group bans spammers to the full <br> extent. <br> Line added: ! Spam will be reported and users banned! <br> Topic: <br> Discuss on SQL syntax and configuration here! ! Spam will be reported <br> and users banned!
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:30:"Nick nickwilson.n...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-24T22:08:38Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/e71f5f49e63c1cda";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/e71f5f49e63c1cda";s:5:"title";s:35:"Copying encrypted stored procedures";s:7:"summary";s:373:"
+  I have several stored procedures, created in a development environment, <br> that I need to move to a 'QA' environment, and then in turn, to various <br> production environments. <br> When I move these stored procedures, I would like to encrypt them, <br> using the 'WITH ENCRYPTION' clause. <br> My question is, how do I copy these stored procedures from development
+  ";}i:7;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:27:"fiegling fiegl...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-24T16:28:47Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/a8279d97340e3b17";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/a8279d97340e3b17";s:5:"title";s:3:"sql";s:7:"summary";s:218:"
+  I am having trouble updating a table with data from another table. I <br> need to insert manually entered data and copy text and blobs from the <br> other table. Can anyone help me with this problem? <br> Thanks,
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:35:"LadyReader mfriedent...@netzero.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-23T21:12:58Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/4347ddaa69030ab9";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/4347ddaa69030ab9";s:5:"title";s:38:"executing sproc vs executing the query";s:7:"summary";s:362:"
+  I created an application on a development SQL server and scripted the <br> tables, views, stored procs, etc into a deployment script and executed <br> that script onto the production server. That worked aok. <br> Now, if I execute a given stored procedure in QA against the original <br> db it takes about 1 min 17 seconds to return 19 rows. Not great, but
+  ";}i:9;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:36:"James jam...@glacierconsulting.co.za";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-23T13:56:24Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/2514525837438579";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/2514525837438579";s:5:"title";s:27:"Ambiguous Column Name error";s:7:"summary";s:383:"
+  Hi I'm fairly new to SQL and in the deep end here. I've written the <br> following to JOIN a single table to another table multiple times, but <br> as soon as I try to add a join from another different table I get this <br> error message: &quot;Ambiguous column name 'id'&quot;. I don't think it's got <br> anything to do with the fact that its a different table, and I've read
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:34:"QUESTION-MARK MARK.SWEE...@DHS.GOV";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-23T13:28:18Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/6b9255ab882f0c32";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/6b9255ab882f0c32";s:5:"title";s:12:"Subtotalling";s:7:"summary";s:370:"
+  I have the query below and would like to add a row that provides a <br> subtotal within the result but do not know how to do that. I would <br> like to get a subtotal of all the DATE hours by employee. I can do it <br> easily in Excel but need the product to be complete for managers when <br> they run the SQL rather than having to perform any functions in Excel.
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:29:"Rohit moviedownl...@gmail.com";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-22T06:45:35Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/5e9a590b29e0ce42";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/5e9a590b29e0ce42";s:5:"title";s:16:"good ebook links";s:7:"summary";s:493:"
+  lot of SQL and other ebook links and reference materials here. <br> Apologies if this message is not helpful to you. <br> <a target="_blank" href="http://online-books-reference.blogspot.com/">[link]</a> <br> <a target="_blank" href="http://www.googlebooks.tk">[link]</a> <br> All the ebook links listed in this site is available in one zip <br> file(Size 10KB) <br> <a target="_blank" href="http://www.megaupload.com/?d=FN54H6ZZ">[link]</a> <br> guess this will be useful to many of you.
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:40:"aarkaycee ramakantchaturv...@yahoo.co.in";s:12:"author_email";s:32:"SQL-Development@googlegroups.com";s:7:"updated";s:20:"2006-03-21T19:49:18Z";s:2:"id";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/e41a51276cce8bc6";s:5:"link_";s:84:"http://groups.google.com/group/SQL-Development/browse_thread/thread/e41a51276cce8bc6";s:5:"title";s:39:"How to run a script in MS SQL Server200";s:7:"summary";s:298:"
+  Hi group, <br> New to MS Sql Server 2000. Need to know how to run(execute) a <br> script(.sql) file in MS Sql Server 2000. I already have a few <br> script(.sql) files for different puroposes with me stored in some <br> folder. <br> I will appriciate a quick response. <br> Thanks in advance.
+  ";}}s:7:"channel";a:6:{s:2:"id";s:46:"http://groups.google.com/group/SQL-Development";s:5:"title";s:28:"SQL Development Google Group";s:8:"subtitle";s:94:"
+  Discuss on SQL syntax and configuration here! ! Spam will be reported and users banned !
+  ";s:9:"link_self";s:72:"http://groups.google.com/group/SQL-Development/feed/atom_v1_0_topics.xml";s:7:"updated";s:20:"2006-03-30T16:06:07Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

@@ -1,0 +1,3 @@
+-74.06,42.83:smalldot:[1] test
+-87.99,42.96:smalldot:[2] Data Secretary
+-88.07,42.06:smalldot:[3] GIS Analyst

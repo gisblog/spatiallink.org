@@ -1,0 +1,669 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:25:{i:0;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4519651344620412536";s:9:"published";s:29:"2007-04-20T15:25:00.000-07:00";s:7:"updated";s:29:"2007-04-20T16:41:22.370-07:00";s:5:"title";s:68:"Introducing 3 Maps API/KML Tutorials in Google Code's Knowledge Base";s:12:"atom_content";s:3257:"<span class="byline-author">Posted by the Google AJAX/Geo API Team</span>
+
+<p>
+We've just rolled out an exciting new addition to the Google Code Knowledge Base: Articles & Tutorials. Here's a summary of 3 Maps-related articles. Give these articles a read, and learn something new this weekend!
+</p>
+
+<a href="http://code.google.com/support/bin/answer.py?answer=65620" target="_blank"> <img align="right" src="http://gmaps-samples.googlecode.com/svn/trunk/images/article_ezdigitizer_screenshot.jpg" style="border:1px solid black; margin-left:10px">
+</a>
+<strong>Creating a Simple Digitizer Using the Google Maps API</strong>
+<br/>
+<span class="byline-author">By Chris Schalk</span>
+
+<p>Have you seen Google's "My Maps" feature, which has the fun feature of letting you click to create lines and shapes? You may be surprised to find out how easy it is to create a similar tool using the Google Maps API. This article describes how to build a simple digitizer that allows users to point and click, or "draw", around a particular region and store the geographical coordinates in KML. </p>
+<p><a href="http://code.google.com/support/bin/answer.py?answer=65620" target="_blank">Click here to read!</a></p>
+<br clear="all"/>
+
+<a href="http://code.google.com/support/bin/answer.py?answer=65622&topic=11369" target="_blank"> <img align="right" src="http://gmaps-samples.googlecode.com/svn/trunk/images/article_phpsqlajax_screenshot.jpg" style="border:1px solid black; margin-left:10px">
+</a>
+<strong>Using PHP/MySQL with Google Maps</strong>
+<br/>
+<span class="byline-author">By Pamela Fox</span>
+
+<p>
+Are you a developer accustomed to developing mySQL-driven websites with PHP? Do you want to learn how to use Google Maps with your database using "AJAX" techniques? 
+This article goes through the steps of creating a mySQL table, populating the table with data, using PHP to generate XML from that mySQL table, and finally, writing the HTML/Javascript webpage to dynamically load in the PHP-generated XML and display a map with multiple markers and custom icons. After going through this tutorial, you should be ready to extend what you've learned to your own databases. 
+</p>
+<p><a href="http://code.google.com/support/bin/answer.py?answer=65622&topic=11369" target="_blank">Click here to read!</a></p>
+<br clear="all" />
+
+<a href="http://code.google.com/support/bin/answer.py?answer=65628" target="_blank">
+<img align="right" src="http://gmaps-samples.googlecode.com/svn/trunk/images/article_kmlmetadata_screenshot.jpg" style="border:1px solid black; margin-left:10px">
+</a>
+<strong>Adding Metadata to Your KML Files </strong>
+<br/>
+<span class="byline-author">By Mano Marks</span>
+
+<p>Keyhole Markup Language, or KML, is a simple but powerful file format for displaying geographic data in an earth browser, such as Google Earth or Google Maps. Increasingly, people are starting to use it in their own applications to represent geographic data. Exchanging data between applications, however, can sometimes be a challenge. This article describes how with KML 2.1 the new element &lt;Metadata&gt; allows you to include structured data in your KML</p>
+<p><a href="http://code.google.com/support/bin/answer.py?answer=65628" target="_blank">Click here to read!</a></p>";s:4:"link";s:85:"http://googlemapsapi.blogspot.com/2007/04/introducing-3-maps-apikml-tutorials-in.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4519651344620412536";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4519651344620412536";s:11:"author_name";s:10:"Pamela Fox";}i:1;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-5635607681885944202";s:9:"published";s:29:"2007-04-17T19:25:00.000-07:00";s:7:"updated";s:29:"2007-04-19T11:49:16.919-07:00";s:5:"title";s:65:"v2.78: Go ahead, Scroll your mouse wheels & encode your polygons!";s:12:"atom_content";s:5388:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<br/>
+<br/>
+<p>
+The latest version of the API exposes two features that have often been requested (or reverse engineered) by API developers:  the ability to enable the mouse wheel zoom used on <a href="http://maps.google.com">maps.google.com</a>, and the ability to create GPolygons from encoded points. 
+</p>
+<p>
+To get started using the new features, read through the examples and explanations below.
+</p>
+
+<br/>
+<strong>1) Scroll wheel zoom:</strong>
+<br/><br/>
+<p>
+The API gives you these 2 new <a href="http://www.google.com/apis/maps/documentation/reference.html#GMap2" target="_blank">GMap2 methods</a>: <code>enableScrollWheelZoom</code>, <code>disableScrollWheelZoom</code>. These functions let you turn scroll wheel zoom on or off.
+</p>
+<p>
+If you'd just like to modify your current map mashups to enable this user-friendly zoom, add the following line of code anywhere after you've created your map.
+</p>
+<pre class="code">
+map.enableScrollWheelZoom();
+</pre>
+<p>
+You should see results like the example below. For the complete code to this map, view the source <a href="http://gmaps-samples.googlecode.com/svn/trunk/scrollzoom/scrollzoom.htm" target="_blank">on this link</a>.
+</p>
+<p> <strong>Note: </strong>You'll notice the webpage scrolls along with the map. This is expected behavior, as the scroll wheel zoom is optimized for the screen-filling map on <a href="http://maps.google.com" target="_blank">maps.google.com</a>. Many maps site use a similar design, but if you do have a long webpage with an embedded map, you can write some extra javascript to get better behavior (<a href="http://groups.google.com/group/Google-Maps-API/browse_thread/thread/c30ff088f6342ec8/#" target="_blank">here's one developer's suggestion</a>).
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/scrollzoom/scrollzoom.htm" frameborder="0" width="450" height="250">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/scrollzoom/scrollzoom.htm" target="_blank">Link to simple scrollWheelZoomEnabled example</a>
+</iframe>
+
+<p>
+If you'd like to let your users choose whether to enable the mouse wheel zoom, or you'd like to see how to disable it at certain times, check out the toggling example below, and view source on this <a href="http://gmaps-samples.googlecode.com/svn/trunk/scrollzoom/togglescrollzoom.htm" target="_blank">link</a> to see how it's done.
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/scrollzoom/togglescrollzoom.htm" frameborder="0" width="450" height="270">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/scrollzoom/togglescrollzoom.htm" target="_blank">Link to scroll wheel zoom toggle example</a>
+</iframe>
+<br clear="all"/>
+<br/>
+<strong>2) Encoded GPolygons</strong>
+<br/><br/>
+<p>
+In 2.63, we introduced <code>GPolyline.fromEncoded()</code>, a factory method that lets you create a polyline based on encoded points and levels. This technique is useful for developers using long and complicated lines, as the encoding algorithm both saves storage space and lets you specify which points are displayed at each zoom level.
+</p>
+<p>
+When GPolygon was announced in version 2.69, developers immediately asked if a GPolygon.fromEncoded method was also available so they could use the same effficient technique. Well, the engineers heard their call and have exposed <code><a href="http://www.google.com/apis/maps/documentation/reference.html#GPolygon" target="_blank">GPolygon.fromEncoded()</a></code> in the API. 
+</p>
+<p>
+This new factory method lets you create a polygon based on a set of encoded polylines, and specify the fill/stroke for the resultant polygon(s). The example below shows Texas and a (fictional) island near it, created using the <code>GPolygon.fromEncoded</code> method with 2 encoded polylines. 
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/encodedpolygon/encodedpolygon.htm" width="435" height="345" frameborder="0">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/encodedpolygon/encodedpolygon.htm" target="_blank">Link to encoded polygon example</a>
+</iframe>
+
+<p>
+The Texas polyline encoding comes from <a href="http://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/Texas.html">this example</a> from Mark McClure, a Mathematics professor/API hobbyist who's done extensive work with the polyline encoding scheme. Check out his <a href="http://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/" target="_blank">useful page</a> that has more information and examples of polyline encoding, including a utility to automatically encode a set of latitude/longitude points using an extended Douglas-Peucker algorithm.
+</p>
+<p>
+You can also reference the API documentation's <a href="http://www.google.com/apis/maps/documentation/#Encoded_Polylines">encoded polylines example</a>, and related <a href="http://www.google.com/apis/maps/documentation/polylineutility.html">polyline encoding utility</a> for more help. 
+</p>
+<p><strong>Note: </strong>Remember that you'll need to specify v=2.x in your script tag to use the new functions for the next few weeks, since they're new features. More information on API script versioning is <a href="http://www.google.com/apis/maps/documentation/#API_Updates" target="_blank">here</a>.</p>
+<br/><br/>
+API v2 Latest (v=2.x): 2.78
+<br/>
+API v2 Default (v=2): 2.77";s:4:"link";s:85:"http://googlemapsapi.blogspot.com/2007/04/v278-go-ahead-scroll-your-mouse-wheels.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/5635607681885944202";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/5635607681885944202";s:11:"author_name";s:10:"Pamela Fox";}i:2;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-7214692837127921875";s:9:"published";s:29:"2007-04-08T03:00:00.000-07:00";s:7:"updated";s:29:"2007-04-08T13:25:58.591-07:00";s:5:"title";s:32:"A Marker-Managed Easter Egg Hunt";s:12:"atom_content";s:3287:"<p>A few weeks ago, <a href="http://googlemapsapi.blogspot.com/2007/03/new-open-source-utility-library-for.html" target="_blank">we announced</a> the open source version of <a href="http://gmaps-utility-library-dev.googlecode.com/svn/trunk/markermanager/" target="_blank">MarkerManager</a>, the class used to manage visibility of hundreds of markers on a map, based on the map's current viewport and zoom level. The open-source version has additional functions to delete or clear markers, making it possible to use MarkerManager for a wider variety of applications. In case some of you were wondering how that extra functionality can be useful, I've created a marker-managed easter egg hunt game to show it off.
+</p>
+<p>
+Try it out below - just press "Start New Game," then click eggs to add them to your basket until you run out of time. Most of the eggs are good (mmm... chocolate filled), but there are some evil (rotten!) eggs in there. As you zoom in, the eggs will be bigger and easier to find, and it will become more obvious which of the eggs are evil and should be avoided.  
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/egghunt/egghunt.html" frameborder="0" width="510" height="380">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/egghunt/egghunt.html">Link to Egg Hunt</a>
+</iframe>
+
+<p>
+<strong>How does it work?</strong>
+</p>
+
+<ul>
+<li> First I create a <code>MarkerManager</code> with a <code>maxZoom</code> of 19, as I want to make sure that it tracks markers up to my map's highest zoom level (19).
+</li>
+<li>When the user starts their first game, I generate 45 random points. For each point, I create 3 markers, each with an increasingly larger <code>GIcon</code>. I add the 3 markers to 3 arrays, representing the 3 zoom levels that display eggs in the hunt. When I'm done creating the marker arrays, I add each array to the <code>MarkerManager</code> using the <code>addMarkers function</code>, each with an increasingly higher zoom level (17-19) for the <code>maxZoom</code> and <code>minZoom</code> options.
+</li>
+<li>When the user clicks on a marker, I use the <code>MarkerManager</code>'s <code>removeMarker</code> function to delete the marker at all 3 zoom levels. Back when I created the marker, I extended it to remember it's array index, and because of the way I populated the 3 arrays, the "sister" eggs have the same index in each array. That means it's a simple for loop to delete them at each zoom level.
+</li>
+<li>If the user wants to play again, I call the <code>MarkerManager</code>'s <code>clearMarkers</code> function and also clear the 3 arrays I was using to keep references to the markers. Then the egg hiding cycle begins again!
+</li>
+</ul>
+<p>There are also a few extra bits in the code to differentiate between good and bad eggs, timing, and score output. Click <a href="http://gmaps-samples.googlecode.com/svn/trunk/egghunt/egghunt.html" target="_blank">here</a> if you'd like to check out the source yourself. </p>
+<p>If you're a developer and you're interested in extending MarkerManager or otherwise contributing to our open source library, read <a href="http://code.google.com/p/gmaps-utility-library-dev/wiki/FrequentlyAskedQuestions" target="_blank">the project's FAQ</a> for information on how to join. 
+</p>";s:4:"link";s:77:"http://googlemapsapi.blogspot.com/2007/04/marker-managed-easter-egg-hunt.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/7214692837127921875";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7214692837127921875";s:11:"author_name";s:10:"Pamela Fox";}i:3;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4272913803807105553";s:9:"published";s:29:"2007-04-05T13:07:00.000-07:00";s:7:"updated";s:29:"2007-04-06T12:18:00.185-07:00";s:5:"title";s:34:"GMarker.show: American for 'clock'";s:12:"atom_content";s:4502:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<br/>
+<br/>
+
+<p>
+When we released the setImage method for GMarker a few weeks ago, we showed you how it could be used to overlay an animated clock on top of a map. Well, honestly, I've never been that good at reading the time from an analog clock, so I decided to take advantage of the new GMarker show/hide methods to create this digital clock:
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/markerhider/digitalclock.htm" frameborder="0" width="515" height="320">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/markerhider/digitalclock.htm" target="_blank">Link to Clock</a>
+</iframe>
+
+<p>
+Just to remind you that it's easy to mash up the Google Maps API with Google Gadgets, I made a <a target="_blank" href="http://www.google.com/ig/add?moduleurl=http://gmaps-samples.googlecode.com/svn/trunk/markerhider/digitalclock.xml&source=imag">smaller gadget version</a> that you can add to your personalized homepage or website, and then customize the map's latitude/longitude and zoom. I chose to position my clock over Victoria Falls, Africa (in the hope it'll increase my chances of visiting there one day!), but you may have your own background preference.
+</p>
+
+<p> <strong>How does the clock work?</strong> Each clock digit is made up of the seven segments typical of LED clocks, and each of these segments is actually a marker that I toggle with show/hide. If you really want to dive into the code (and perhaps customize it to display messages or countdowns), view source on <a href="http://gmaps-samples.googlecode.com/svn/trunk/markerhider/digitalclock.htm">the clock</a> and read the code breakdown below.
+</p>
+
+<strong>Storing the clock data:</strong>
+<ul>
+<li>The <code>markers</code> associative array is used to keep track of the markers. For example, "hour_10" refers to the array for all the markers representing the tens place of the hour. The arrays begin empty and are populated later.
+</li>
+<li><img src="http://gmaps-samples.googlecode.com/svn/trunk/markerhider/digitalclock_diagram.jpg" align="right" alt="clock diagram"/> The <code>numberLayouts</code> associative array is used to indicate which segments should be on/off in order to represent a particular digit. In the array, true indicates a segment should be on and false indicates the opposite, and the array index for each segment is dictated by the diagram shown here. Because of the way it's setup, it'd be simple to extend this alarm clock to non-number output as well.
+</li>
+<li>The <code>numberWidth</code>, <code>numberHeight</code>, and <code>colonWidth</code> variables are used in positioning the marker segments with the correct spacing.
+</li>
+</ul>
+
+<strong>Setting up the clock:</strong>
+<ul>
+<li>First the map is initialized and 3 custom icons are declared (for the colon, horizontal segment, and vertical segment). Then <code>addSegmentMarkers</code> is called 6 times (hours*2,minutes*2,seconds*2) and <code>addColonMarker</code> is called twice, each time with an appropriate offset so that digits aren't overlapping.
+</li>
+<li>In the <code>addSegmentMarkers</code> function, a pixel location is calculated for each 7 segments based on a startPixel, and the global sizing variables. The API-provided <code>fromPixelToLatLng</code> is used to calculate a <code>GLatLng</code> based on the resultant pixel location, and a marker is created at that point and added to the relevant array in markers. The segments are added so that their array indices correspond with the <code>numberLayouts</code> array.
+
+</li>
+<li>The <code>addColonMarker</code> function is similar to <code>addSegmentMarkers</code>, but only calculates one marker position.
+</li>
+</ul>
+
+<strong>Animating the clock:</strong>
+<ul>
+<li>After setup, it calls javascript's setInterval on clockTick with 1000 as the speed, so that the clock will update each second.
+</li>
+<li>The <code>clockTick</code> function calculates the time (local to the user) with javascript's Date function. It then calls <code>toggleSegments</code> for each of the digits.
+</li>
+<li>The <code>toggleSegments</code> function iterates through the markers in the array for that digit place, and compares the return value of <code>isHidden()</code> to the boolean in the <code>numberLayouts</code> array. If it's hidden and needs to be shown, it calls <code>show()</code> on the marker. If it's shown and needs to be hidden, it calls <code>hide()</code> on the marker.
+</li>
+</ul>";s:4:"link";s:77:"http://googlemapsapi.blogspot.com/2007/04/gmarkershow-american-for-clock.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4272913803807105553";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4272913803807105553";s:11:"author_name";s:10:"Pamela Fox";}i:4;a:9:{s:2:"id";s:58:"tag:blogger.com,1999:blog-18549845.post-860527126941294835";s:9:"published";s:29:"2007-04-05T10:39:00.000-07:00";s:7:"updated";s:29:"2007-04-05T10:48:23.719-07:00";s:5:"title";s:29:"Search for KML in Google Maps";s:12:"atom_content";s:1409:"<span class="byline-author">Posted by Chikai Ohazama, Product Manager</span>
+
+<p>I am happy to announce that you can now search through all of the world's <a href="http://earth.google.com/kml/">Keyhole Markup Language (KML)</a> files on Google Maps.  This enables you to find all the great user-created map content on the web, as well as new maps created with My Maps, which launched <a href="http://googleblog.blogspot.com/2007/04/map-making-so-easy-caveman-could-do-it.html">today</a>.
+
+<p>You will continue to see local search results with the red pushpins, but now there is a link called "See user-created content" that will enable you to see relevant user-generated results, represented by blue pushpins.  Go to <a href="http://maps.google.com">maps.google.com</a> and give it a try with these search queries:
+
+<ul>
+<li><a href="http://maps.google.com/maps?f=q&hl=en&q=lord+of+the+rings+near+new+zealand&layer=&ie=UTF8&z=6&t=k&om=1">  lord of the rings near new zealand</a></li>
+<li><a href="http://maps.google.com/maps?f=q&hl=en&q=mazes+near+san+francisco&layer=&ie=UTF8&mrt=kmlkmz&z=19&ll=37.523076,-122.2565&spn=0.001285,0.002564&t=k&om=1&iwloc=A"> mazes near san francisco</a></li>
+<li><a href="http://maps.google.com/maps?f=q&hl=en&q=giant+pink+bunny+near+italy&layer=&ie=UTF8&mrt=kmlkmz&z=18&ll=44.244234,7.771003&spn=0.002321,0.005128&t=k&om=1&iwloc=A "> giant pink bunny near italy</a></li>
+</ul>";s:4:"link";s:76:"http://googlemapsapi.blogspot.com/2007/04/search-for-kml-in-google-maps.html";s:9:"link_self";s:72:"http://googlemapsapi.blogspot.com/feeds/posts/default/860527126941294835";s:9:"link_edit";s:70:"http://www.blogger.com/feeds/18549845/posts/default/860527126941294835";s:11:"author_name";s:14:"Brandon Badger";}i:5;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4777911310170177201";s:9:"published";s:29:"2007-04-04T07:31:00.000-07:00";s:7:"updated";s:29:"2007-04-04T18:20:40.207-07:00";s:5:"title";s:72:"v2.77: GMarker show, hide, and isHidden  = Quick & Easy Marker Toggling!";s:12:"atom_content";s:2516:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<br/>
+<br/>
+<p>
+The day has come - the API now has officially documented methods for showing and hiding markers, and querying their ("hidden-ness") state. Using a combination of <code>GMarker.show()</code>, <code>GMarker.hide()</code>, and <code>GMarker.isHidden()</code>, you can painlessly toggle the visibility of markers. Here's what the code looks like to toggle one marker:
+</p>
+
+<pre class="code">
+if (marker.isHidden()) {
+  marker.show();
+ } else {
+  marker.hide();
+}
+</pre>
+<p>
+It's pretty easy to extend that code to create a map that has groups of markers that are toggled by checking boxes in a sidebar. Shown below is a map that loads in an XML file of my favorite restaurants and bars in Seattle, and creates 2 different "toggle-able" marker groups:
+</p>
+
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/markerhider/markerhider.htm" frameborder="0" width="450" height="300">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/markerhider/markerhider.htm" target="_blank">Link to Map</a>
+</iframe>
+
+<p>
+<strong>How's it done?</strong> There are a couple ways you could keep track of marker groups, but I chose to use an associative array that keys each marker type with an array of markers. The array declaration looks like:
+</p>
+<pre class="code">
+var markerGroups = { "restaurant": [], "bar": []};
+</pre>
+<p>
+Then when parsing the XML, I use an attribute value of each marker node that's either "restaurant" or "bar" to push the marker into the appropriate array, like so:
+</p>
+<pre class="code">
+var type = markers[i].getAttribute("type");
+//...
+markerGroups[type].push(marker);
+</pre>
+
+<p>
+The onclick event for the checkboxes trigger either <code>toggleGroup('restaurant')</code> or <code>toggleGroup('bar')</code>. In <code>toggleGroup</code>, I just iterate through the markers in that group's array, using the same code shown at the beginning of the post, like so:
+</p>
+<pre>
+    function toggleGroup(type) {
+      for (var i = 0; i &lt; markerGroups[type].length; i++) {
+        var marker = markerGroups[type][i];
+        if (marker.isHidden()) {
+          marker.show();
+        } else {
+          marker.hide();
+        }
+      } 
+    }
+</pre>
+
+<p>
+<strong>Now go forth and toggle!</strong> Remember that you'll need to specify v=2.x in your script tag to use the new functions for the next few weeks, since they're new features.
+</p>
+
+<p>
+API v2 Latest (v=2.x): 2.77
+<br/>
+API v2 Default (v=2): 2.76
+</p>";s:4:"link";s:82:"http://googlemapsapi.blogspot.com/2007/04/v277-gmarker-show-hide-and-ishidden.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4777911310170177201";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4777911310170177201";s:11:"author_name";s:10:"Pamela Fox";}i:6;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-1647255975920495255";s:9:"published";s:29:"2007-03-30T09:34:00.000-07:00";s:7:"updated";s:29:"2007-04-02T09:58:35.945-07:00";s:5:"title";s:66:"Creating Dynamic Client-side Maps Mashups with Google Spreadsheets";s:12:"atom_content";s:4141:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<br/>
+<br/>
+<p>
+In the past, only those privileged few developers with access to server-side scripting and a database like MySQL were able to create easily updated dynamic maps mashups. With the introduction of the <a href="http://code.google.com/apis/spreadsheets/overview.html" target="_blank">Google Spreadsheets Data API</a>, all of that has changed. Like the other <a href="http://code.google.com/apis/gdata/index.html" target="_blank">GData APIs</a>, the spreadsheets API has an optional <a href="http://code.google.com/apis/gdata/json.html" target="_blank">JSON output</a>. If you don't know about JSON, it's a lightweight interchange format that allows for hierarchical nesting as well as various data types. But more importantly, JSON output is native Javascript code itself, and with a callback parameter that wraps the JSON output text in parentheses and a function name of your choosing,
+it allows you to get around some of the cross-domain security issues you
+might encounter in typical client side JavaScript. 
+</p>
+<p>
+So if you want the data from a published spreadsheet feed in your page, there's no need to worry about a server-side proxy for cross-domain XMLHttpRequest calls: just create a script tag with the feed in JSON format as the source, and you've got your data. Developers used to writing server-side proxies may not be impressed by this, but I encourage you to give it a whirl - once you go JSON, it's hard to go back.
+</p>
+<p>
+But let's bring the discussion back to maps. Below is an example of a map based on a <a href="http://spreadsheets.google.com/feeds/list/o16162288751915453340.4402783830945175750/od6/public/values?alt=json" target="_blank">JSON feed</a> from a <a href="http://spreadsheets.google.com/pub?key=pnEs2B_37S-DGGFI6kdQZPQ" target="_blank">spreadsheet</a> of my favorite Seattle restaurants. 
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsmapwizard/exampleoutput.htm" frameborder="0" width="500" height="430">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsmapwizard/exampleoutput.htm" target="_blank">Link</a>
+</iframe>
+<p>
+The steps to creating it are as follows:
+</p>
+<ul>
+<li>When the page loads, we call a <code>cm_load</code> function that loads in a <code>GMap2</code> at a default location, and then calls <code>cm_getJSON</code></li>
+<li>The <code>cm_getJSON</code> dynamically creates a new script tag and inserts it in the page. The src of the script tag is the (public) spreadsheets feed URL plus additional parameters to specify a function to call when the JSON returns ("<code>&alt=json-in-script&callback=cm_loadMapJSON</code>")</li>
+<li>In the callback function, <code>cm_loadMapJSON</code>, we iterate through the entries in the JSON feed (the table rows) and create a new marker and sidebar entry for each of them.
+</li>
+</ul>
+
+<p>
+Here's the coolest part though - I didn't code this map. My <a href="http://gmaps-samples.googlecode.com/svn/trunk/spreadsheetsmapwizard/makecustommap.htm" target="_blank">Spreadsheets->Map</a> wizard did. If you've got a spreadsheet of location data and you want a dynamic map based on that spreadsheet, just try out the wizard. It will generate the code that you can embed on your website or upload to your <a href="http://pages.google.com" target="_blank">Google Pages</a> account, and if you're an adventurous developer, you can use the code as a starting point.
+</p>
+<p>If you don't want to get a hosting account, check out API developer Esa's <a href="http://esa.ilmari.googlepages.com/sheetmap.htm?key=pHpNHC9GculPZQpuIX07TYQ" target="_blank">quick Spreadsheets mapper</a>. Just put columns named 'lat' & 'lng' in your spreadsheet, put the public key in the URL of his page, and you've got a permalink to your map.
+</p>
+<p>
+Start playing around, and let us know in the <a href="http://groups.google.com/group/Google-Maps-API/" target="_blank">Maps API group</a> or the <a href="http://groups.google.com/group/Google-Spreadsheets-Data-API" target="_blank">Spreadsheets API group</a> if you have any questions.
+</p>";s:4:"link";s:80:"http://googlemapsapi.blogspot.com/2007/03/creating-dynamic-client-side-maps.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/1647255975920495255";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1647255975920495255";s:11:"author_name";s:10:"Pamela Fox";}i:7;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8613773091055857217";s:9:"published";s:29:"2007-03-21T16:08:00.000-07:00";s:7:"updated";s:29:"2007-03-28T09:46:23.798-07:00";s:5:"title";s:51:"KML and GeoRSS Support Added to the Google Maps API";s:12:"atom_content";s:3854:"<span class="byline-author">Posted by Nigel Tao, Software Engineer, Google Maps Team</span>
+<br />
+<br />
+<p>One of the things I love most about Google Maps and Google Earth is that it's easy for anyone to create and display new geographically referenced content.  Whether it's pictures from your vacation, favorite places on the globe, or the hiking trails you like to visit, all you have to do is create a <a href="http://earth.google.com/kml/">KML</a> file (using <a href="http://earth.google.com/">Google Earth</a> or any other tool) and load it up.  This idea that you can view data from external sources inside Google Maps and Earth is really exciting to us, and I'm pleased to announce two major new features in this area.
+
+<p>To start we now support <a href="http://www.georss.org/">GeoRSS</a> as a data format for geographic content in Google Maps.  We want to enable users to create data in whatever format is most convenient for them, and feel that by supporting both KML and GeoRSS we can enable a wider variety of people and applications to contribute content to Google Maps.  We've built support for the Simple, GML, and W3C Geo encodings of GeoRSS -- all you have to do is enter the full URL of a GeoRSS file into the Maps query box to load the file.  For example, take a look at <a href="http://maps.google.com/maps?q=http://slashgeo.org/index.rss" title="SlashGeo's GeoRSS on Google Maps">SlashGeo's GeoRSS on Google Maps</a>.
+
+<p>Most importantly, we've extended support for displaying geographic data -- both KML and GeoRSS -- into the Google Maps API.  Now in addition to programatically adding content to a Maps API site, you can create your content as KML or GeoRSS and load it into the Map with a simple function call.  This means that the more than 1 million KML files that are available from all over the web can easily be mashed up with the map on your site.  For example, you can add some vacation photos from Japan with the following code:
+
+<p>
+<pre class="code">
+var gx = new GGeoXml("<a href="http://kml.lover.googlepages.com/my-vacation-photos.kml">http://kml.lover.googlepages.com/my-vacation-photos.kml</a>");<br/>
+map.addOverlay(gx);
+</pre>
+
+<p>This makes it easier for API sites to maintain content in a flexible format that can be accessed via the API or in a number of other tools directly, and makes it simpler to create a rich API site with declarative content, instead of a lot of code.
+
+<p>Below is an example that shows KML and GeoRSS layers rendered on a Google Maps API powered map.  You can toggle on and off the sample layers, or feel free to enter a URL to your favorite KML or GeoRSS content and hit the 'Add' button to see it on the map.
+
+<p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/ggeoxml_loader.html" frameborder="0" height="500" width="650">
+<A HREF="http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/ggeoxml_loader.html">Link</A>
+</iframe>
+<p>More information about how to use these new features can be found in the <a href="http://www.google.com/apis/maps/documentation/#XML_Overlays">Maps API documentation</a>. Google Maps <a href="http://maps.google.com/support/bin/answer.py?answer=41136&topic=1475">currently supports</a> KML files with points, lines, polygons, styles, icons, and network links (without view-based refresh). We plan to add support for ground overlays, screen overlays, folders, and visibility in the near future.
+
+<p>We're eager to hear from the <a href="http://groups.google.com/group/Google-Maps-API">developer community</a> on what you think of this new API, and additions you'd like to see to make it even easier to use KML and GeoRSS content on your site.
+</p>
+<p><strong>Note: </strong> Since this is a newly released feature, you must specify v=2.x (instead of v=2) in the script tag for the next 2 weeks for it to be loaded properly.
+</p>";s:4:"link";s:85:"http://googlemapsapi.blogspot.com/2007/03/kml-and-georss-support-added-to-google.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/8613773091055857217";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8613773091055857217";s:11:"author_name";s:14:"Brandon Badger";}i:8;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-7711253240280870168";s:9:"published";s:29:"2007-03-21T17:50:00.000-07:00";s:7:"updated";s:29:"2007-03-23T12:25:00.190-07:00";s:5:"title";s:55:"New Open Source Utility Library for the Google Maps API";s:12:"atom_content";s:2899:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<br/>
+<br/>
+<p>The Google Maps API Team is excited to announce our new open source project, the <a href="http://code.google.com/p/gmaps-utility-library-dev/wiki/FrequentlyAskedQuestions">GMaps Utility Library</a>. This project will be hosted on code.google.com and will let the Google engineers for the Maps API work hand-in-hand with the many great developers in the Maps API community. Together, we can extend the core Maps API and ensure that every developer need is met.
+
+<p>
+Another reason for this open source project is that we've realized that there are many potential extensions for the Google Maps API, but that the common user still needs a reliable and quick-loading API. Adding custom controls/functionality to the core API adds to the file size and forces developers wanting to tweak the code to overwrite obfuscated JS functions. With this open source project, a developer can include the JavaScript file for the particular library they're interested in. They can even download a copy of it and tweak it for their use. 
+</p>
+
+<p>To kick-start things, we've open-sourced the code for the <code>GMarkerManager</code> and added it to the GMaps Utility Library. The obfuscated <code>GMarkerManager</code> will continue to be available in the core Maps API, but the open source <code>MarkerManager</code> version will now be available via the new library. This will be a starting point for developers to create even more useful components. Just point your browser to <a href="http://gmaps-utility-library-dev.googlecode.com/svn/trunk/markermanager/" target="_blank">http://gmaps-utility-library-dev.googlecode.com/svn/trunk/markermanager/</a> and see it for yourself - the documentation, examples, and the unobfuscated code. 
+
+<p>
+There will be both <a href="http://code.google.com/p/gmaps-utility-library-dev" target="_blank">development</a> and <a href="http://code.google.com/p/gmaps-utility-library" target="_blank">release</a> versions of this open source library. This allows for an open development environment in one project, while users can still point to a stable release version of the library for their deployed applications. (You can get the <a href="http://gmaps-utility-library.googlecode.com/svn/trunk/markermanager/" target="_blank">release version</a> of MarkerManager there.) The development community will be involved in the process for deciding which components and versions are migrated to the release branches.
+</p>
+
+<p>
+We're inviting all interested developers to join our development project if they'd like to contribute to the library or work on an existing components in the library, such as the <code>MarkerManager</code>. If you're interested, follow the <a href="http://code.google.com/p/gmaps-utility-library-dev/wiki/FrequentlyAskedQuestions" target="_blank">instructions here</a>.
+</p>";s:4:"link";s:82:"http://googlemapsapi.blogspot.com/2007/03/new-open-source-utility-library-for.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/7711253240280870168";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7711253240280870168";s:11:"author_name";s:10:"Pamela Fox";}i:9;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-3298518851109863993";s:9:"published";s:29:"2007-03-08T16:11:00.000-08:00";s:7:"updated";s:29:"2007-03-14T13:48:09.280-07:00";s:5:"title";s:40:"GMarker.setImage: Australian for 'clock'";s:12:"atom_content";s:4118:"<span class="byline-author">Posted by Pamela Fox, Maps API Team</span>
+<br/>
+<br/>
+<p>
+Maps API Engineer Bo Majewski brings us a fun example of an animated clock using both <a href="http://www.google.com/apis/maps/documentation/reference.html#GPolyline" target="_blank"><code>GPolyline</code></a> and the new <code>setImage</code> method of <a href="http://www.google.com/apis/maps/documentation/reference.html#GMarker" target="_blank"><code>GMarker</code></a> that was just introduced in v2.75. 
+</p>
+<p>Why is this clock centered on Australia? That's where the engineer's from! We leave it up to adventurous developers to combine this with a service like <a href="http://www.earthtools.org/webservices.htm#timezone" target="_blank">EarthTools</a> to let users move the map and see the clock time reflect the timezone of the new map center.
+</p>
+<p><strong>Update:</strong> Maps developer Esa created a similar <a href="http://koti.mbnet.fi/ojalesa/exam/polytime.htm" target="_blank">clock example</a> that changes the clock location and time for various locations using the EarthTools service. Great work, Esa! 
+</p> 
+<p>If you want to know how it's done, check out the how-to below the map, and ping us if you come up with any fun variations.
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/markerclock/clock.html" frameborder="0" width="600" height="440">
+<a href="http://gmaps-samples.googlecode.com/svn/trunk/markerclock/clock.html">Link</a>
+</iframe>
+
+<br/>
+
+<strong>Setting up the clock:</strong>
+<ul>
+<li>
+We declare a global variable to keep track of the last hour/minute/second shown, as well as the polylines used for the hour/minute hands and the markers used for the clock ticks. We also declare global constants for our image strings, clock radius, and slice angle (the angle we need to move each minute, 2*Math.PI/60).
+</li>
+<li>
+After loading the map in <code>setupMap</code>, we plot the markers for the ticks in <code>setupTicks</code>. We first declare a <code>GIcon</code> for each tick type (marker/second). 
+Then we create 60 markers around the circumfrence of the clock, using the minute icon every 5 ticks and the seconds icon for the rest.  
+
+</li>
+</ul>
+
+<strong>Animating the clock:</strong>
+<ul>
+<li>
+After setting up the initial markers, we call <code>setInterval</code> on the <code>clockTick</code> function with 1000 milliseconds so that it's called once every second, and then we call <code>setTimeout</code> on <code>clockTick</code> with 0 milliseconds to call it immediately.
+
+</li>
+<li>
+In <code>clockTick</code>, we extract the current time from the javascript <a href="http://www.w3schools.com/js/js_obj_date.asp"><code>Date</code></a> function into hours, minutes, and seconds variables. 
+If the hour is not the same as the previously displayed hour, we remove the hour hand's <code>GPolyline</code> from the map, re-create it pointing to the new hour, and add the new <code>GPolyline</code> to the map. We do the same for the minutes hand.
+If the second is not the same as the previously displayed second, we call <code>setImage</code> on the previous marker with the appropriate image (MINUTE_OFF or SECOND_OFF) so that it's no longer highlighted, and we call <code>setImage</code> on the current marker with the appropriate image (MINUTE_ON or SECOND_ON) so that it is highlighted.
+
+</li>
+</ul>
+
+<strong>Calculating hand/tick placement:</strong>
+<ul>
+<li>
+The <code>minToLatLng</code> function is used frequently throughout the code to figure out the point at which to place or marker or end a polyline. This function takes in two parameters. The first indicates the minute (0-59), and the second indicates an inner offset from the radius (used for creating hour/minute hands of different lengths). 
+It then calculates the point using basic trig on the known center of the map and the slice angle.
+</li>
+</ul>
+
+<p>Here's a <a href="http://gmaps-samples.googlecode.com/svn/trunk/markerclock/clock.html" target="_blank">direct link</a> to the clock, if you want to check out the source code yourself.
+</p>
+
+<p>
+API v2 Latest: 2.75<br>
+API v2 Default: 2.74
+</p>";s:4:"link";s:83:"http://googlemapsapi.blogspot.com/2007/03/gmarkersetimage-australian-for-clock.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/3298518851109863993";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/3298518851109863993";s:11:"author_name";s:10:"Pamela Fox";}i:10;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-1299590489968548614";s:9:"published";s:29:"2007-03-09T23:33:00.000-08:00";s:7:"updated";s:29:"2007-03-12T18:23:19.228-07:00";s:5:"title";s:36:"March Marker Madness: GMarker Events";s:12:"atom_content";s:1092:"<span class="byline-author">Posted by Pamela Fox, Google Maps API Team</span>
+<br/>
+<br/>
+
+To celebrate the middle of March we've got another playground app. This time, we're letting you experiment with <a href="http://www.google.com/apis/maps/documentation/reference.html#GMarker" target="_blank"><code>GMarker</code></a> events.
+
+As soon as you select a different action for a particular event, the code below the map will update and that code is run, creating a new marker on the map with the new event listeners. Notice that we're using the marker's <code>setImage</code> method as a possible action, since that's a great effect to combine with marker events. Have fun playing around, and ping us in the <a href="http://groups.google.com/group/Google-Maps-API/" target="blank">forums</a> if you run into problems or have a question.
+<br/><br/>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/api_playgrounds/gmarkerevents.htm" frameborder="0" height="770" width="600">
+<A HREF="http://gmaps-samples.googlecode.com/svn/trunk/api_playgrounds/gmarkerevents.htm">Link</A>
+</iframe>";s:4:"link";s:82:"http://googlemapsapi.blogspot.com/2007/03/march-marker-madness-gmarker-events.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/1299590489968548614";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1299590489968548614";s:11:"author_name";s:10:"Pamela Fox";}i:11;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8440277917437361251";s:9:"published";s:29:"2007-03-06T12:56:00.000-08:00";s:7:"updated";s:29:"2007-03-06T23:35:59.887-08:00";s:5:"title";s:56:"v2.75: GMarker.setImage and a Mole-Whack-Tacular Example";s:12:"atom_content";s:4385:"<span class="byline-author">Posted by Pamela Fox, Google Maps API Team </span>
+<br/>
+<br/>
+<p>
+API v2.75 (2.x) now introduces the <code>setImage</code> method for <code>GMarker</code>, as noted in the <a href="http://groups.google.com/group/Google-Maps-API/browse_thread/thread/aa6b963c1733f61c/1f26fc8f1ab890a1?lnk=gst&q=v2.75&rnum=1#1f26fc8f1ab890a1" target="_blank">forums</a>. In the past, changing the image of a marker usually required creating multiple arrays of markers for each image change and some tricky switching between the arrays. Now changing the image just requires one method call.
+</p>
+<p>
+To show one way you could exploit <code>GMarker.setImage</code> for all its worth, I've created a simple marker-clicking game, based on the <a href="http://en.wikipedia.org/wiki/Whack-a-mole" target="_blank">Whack-a-Mole</a> game found in arcades. Try it out, and find out how its done below.
+</p>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/whackamarker/whackamarker.htm" frameborder="0" height="400" width="600">
+<A HREF="http://gmaps-samples.googlecode.com/svn/trunk/whackamarker/whackamarker.htm">Link</a>
+</iframe>
+<br/>
+<p>Here's how it works: </p>
+<p>
+In <code>load</code>, I set up the map and call <code>createMarker</code> for each of the points in the <code>moleLocations</code> array, adding each of the returned markers to a global <code>markers</code> array.
+
+</p>
+<p>
+In <code>createMarker</code>, I create a marker with the global <code>GIcon iconMole</code> which has the default <code>'mole_down.png'</code> image for its <code>image</code> property. <br/>
+<strong>Note:</strong> I created all the mole images with the same canvas size (36*42px), as calling <code>setImage</code> on <code>GMarker</code> will not resize the <code>GIcon</code>. The new image will just be resized to fit the original <code>GIcon.iconSize</code>.
+
+</p>
+<p>
+Still in <code>createMarker</code>, I extend <code>Marker</code> with a <code>whackState</code> property so I can keep track of the state of a mole hole. 
+I also add <code>click</code>, <code>mouseover</code>, and <code>mouseout</code> listeners to the marker. In the <code>click </code> listener, I check if the game is being played and if the current marker is in the up <code>whackState</code>. If so, I increment the global <code>currentScore</code>, call <code>marker.setImage('mole_down.png')</code>, and change the <code>whackState</code> to <code>almostDown</code>. In the <code>mouseover</code> and <code>mouseout</code> listeners, I toggle between <code>'mole_scared.png'</code> and <code>'mole_up.png'</code> if the mole is currently in the up <code>whackState</code>. <br/>
+Fast clickers will barely notice the <code>mouseover</code> state, but it's always nice to have a <code>mouseover</code> state to provide additional feedback to the player. 
+
+</p>
+<p>
+When the player clicks the start button, I iterate through the <code>markers</code> array, calling <code>marker.setImage('mole_down.png')</code> and setting <code>whackState</code> to <code>'down'</code>. I also reset the game seconds left and current score, and call <code>setInterval(popMoles, 1000)</code> so that the <code>popMoles</code> function will get called every second.
+
+</p>
+<p>
+In <code>popMoles</code>, I iterate through the <code>markers</code> array and pick a random number between 1 and 3 for each. If the marker is in the down <code>whackState</code> and the random number picked is 1, I pop the mole up by calling <code>marker.setImage('mole_up.png')</code> and setting its <code>whackState</code> to up. If the marker is in the almostDown <code>whackState</code>, I set its <code>whackState</code> to down. This intermediary state ensures that markers won't pop up immediately after getting whacked down. I then increment the game seconds and update the score. If the game seconds played equals the game duration (30), I call <code>endGame</code>.
+
+</p>
+<p>
+In <code>endGame</code>, I iterate through the <code>markers</code> array, calling <code>marker.setImage('mole_happy.png')</code> for every marker currently in the up <code>whackState</code>. I also clear the timer that was calling <code>popMoles</code> every second.
+</p>
+<p>Here's a <A HREF="http://gmaps-samples.googlecode.com/svn/trunk/whackamarker/whackamarker.htm">direct link</a> to the page, if you want to check out the source code yourself.
+</p>";s:4:"link";s:82:"http://googlemapsapi.blogspot.com/2007/03/v275-gmarkersetimage-and-mole-whack.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/8440277917437361251";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8440277917437361251";s:11:"author_name";s:10:"Pamela Fox";}i:12;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-1685140699514983252";s:9:"published";s:29:"2007-03-01T15:34:00.000-08:00";s:7:"updated";s:29:"2007-03-02T21:42:53.055-08:00";s:5:"title";s:36:"March Marker Madness: GMarkerOptions";s:12:"atom_content";s:1117:"<span class="byline-author">Posted by Pamela Fox, Google Maps API Team</span>
+<br/>
+<br/>
+
+To celebrate the start of March we've created a "playground" app for you to experiment with <a href="http://www.google.com/apis/maps/documentation/reference.html#GMarkerOptions" target="_blank"><code>GMarkerOptions</code></a>.
+
+As soon as you change one of the options below, the code below the map will update and that code is run, creating a new marker on the map with the changed options. Notice that setting some options will mean we ignore other options - for example, a non-<code>clickable</code> marker can't be dragged, so we don't bother setting <code>bounceGravity</code>. Have fun playing around, and ping us in the <a href="http://groups.google.com/group/Google-Maps-API/" target="blank">forums</a> if you run into problems or have a question.
+<br/><br/>
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/api_playgrounds/gmarkeroptions.htm" frameborder="0" height="900" width="600">
+&lt;A HREF="http://gmaps-samples.googlecode.com/svn/trunk/api_playgrounds/gmarkeroptions.htm"&gt;link&lt;/A&gt; 
+</iframe>";s:4:"link";s:82:"http://googlemapsapi.blogspot.com/2007/03/march-marker-madness-gmarkeroptions.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/1685140699514983252";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/1685140699514983252";s:11:"author_name";s:10:"Pamela Fox";}i:13;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-6977969122159473918";s:9:"published";s:29:"2007-02-26T16:13:00.000-08:00";s:7:"updated";s:29:"2007-02-26T17:06:00.436-08:00";s:5:"title";s:41:"Google Maps Mashups: Not just for coders!";s:12:"atom_content";s:1438:"<span class="byline-author">Posted by Dion Almaer, Google Developer Programs</span>
+<br/>
+<br/>
+Mike Pegg of <a href="http://googlemapsmania.blogspot.com/">Google Maps Mania</a> has done a great job keeping the community updated on new and interesting tools that use the Google Maps APIs.
+
+His latest post <a href="http://googlemapsmania.blogspot.com/2007/02/google-maps-creation-tools-mega-post.html ">targets the latest creation tools</a> including:
+
+<blockquote>
+<ul>
+<li><a href="http://www.tinymap.net/">TinyMap</a>: Quick and easy Google Maps</li>
+<li>Add your own map markers on <a href="http://www.communitywalk.com/">CommunityWalk</a>: Automatically adds a legend icon, shadowing and IE printing functionality. (<a href=" http://www.communitywalk.com/attack_of_doughboy">Example here</a>)</li>
+<li><a href="http://www.geomonkey.com/ ">GeoMonkey</a>: Build your own map and explore others.</li>
+<li><a href="http://www.mapdaze.com/">Mapdaze</a>: Google Maps creation tool meant for embedding into blogs.</li>
+</ul>
+</blockquote>
+
+We are always excited to see developers create tools that make it easy for anyone to effortlessly create their own Google Map. There's no reason why developers should be having all the fun. :)
+<br/>
+If you'd like to let us know about your Google Maps app or ask questions about creating one, please head over to the <a href="http://groups.google.com/group/Google-Maps-API ">Google Maps API</a> group.";s:4:"link";s:86:"http://googlemapsapi.blogspot.com/2007/02/google-maps-mashups-not-just-for-coders.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/6977969122159473918";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/6977969122159473918";s:11:"author_name";s:10:"Pamela Fox";}i:14;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-7698224767810814520";s:9:"published";s:29:"2007-02-14T06:20:00.000-08:00";s:7:"updated";s:29:"2007-02-23T10:11:39.255-08:00";s:5:"title";s:30:"Search for KML in Google Earth";s:12:"atom_content";s:1859:"<p><span class="byline-author">Posted by Chikai Ohazama &hearts;, Product Manager, Google Earth Team </span></p>
+
+<p>Search is at the heart of everything we do here at Google. That's why
+I'm excited to announce a new innovation in search available today in
+<a href="http://earth.google.com">Google Earth</a>. Users can now search through all of the
+world's <a href="http://earth.google.com/kml/">Keyhole Markup Language (KML)</a> files,
+making the millions of Google Earth layers on the Web instantly
+accessible for geobrowsing and exploration. Last month, we
+encouraged you, our Maps API users, to <a href="http://googlemapsapi.blogspot.com/2007/01/get-more-traffic-to-your-maps-api-site.html">create KML site maps for your
+mashups</a>. Today's launch is the next step towards making those sitemaps -
+and all of the world's geographic information - discoverable by users
+worldwide.</p>
+
+<p>To try it out, just start up Google Earth, zoom to a location of
+interest, and type in a search query.  For example, go to New Zealand,
+and search for "Lord of the Rings."  You'll see the KML results below
+the local results in the search panel on the left hand side:</p>
+
+<p><img src="http://gmaps.blog.googlepages.com/kml_search_results.jpg"></p>
+
+<p>Click on one of the KML results and the pop-up bubble will come up in
+the 3D view and you can read more about the KML file:</p>
+
+<p><img src="http://gmaps.blog.googlepages.com/KML_Placemark_Opened.jpg" width="500px" height="550px"></p>
+
+<p>If it seems interesting, then you can click on the link and layer the
+KML file over your Google Earth imagery:</p>
+
+<p><img src="http://gmaps.blog.googlepages.com/KML_Results_On_Map.jpg" width="500px" height="550px"></p>
+
+<p>This will initially be available only in Google Earth, but soon the
+ability to search and view KML files will be live in Google Maps. Stay tuned...</p>";s:4:"link";s:77:"http://googlemapsapi.blogspot.com/2007/02/search-for-kml-in-google-earth.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/7698224767810814520";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/7698224767810814520";s:11:"author_name";s:11:"Jessica Lee";}i:15;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-8131975112305904831";s:9:"published";s:29:"2007-02-20T14:34:00.000-08:00";s:7:"updated";s:29:"2007-02-20T21:22:26.524-08:00";s:5:"title";s:44:"GDownloadURL Update - Better Error Checking!";s:12:"atom_content";s:1911:"<span class="byline-author">Posted by Pamela Fox, Google Maps API Team</span>
+<br>
+<br>
+<p>The latest update to the Maps API (v2.74) includes better error checking for <code>GDownloadURL</code>. Previously, if you sent a request to download a file with <code>GDownloadURL</code> and the server timed out the request, the <code>onload</code> function might never be called. Now, <code>GDownloadURL</code> will enter the <code>onload</code> function and return null for the data parameter and a <code>-1</code> as the response status code parameter.
+</p>
+<p>
+In the example code below, we process the data if the request was successful, and then alert messages if the request has timed out or errored. In your own applications, you may decide to do more or less error checking, depending on your needs.
+</p>
+
+<pre class="code">
+
+// Download the data in data.xml and load it on the map. 
+
+GDownloadUrl("data.xml", function(data, responseCode) {
+  // To ensure against HTTP errors that result in null or bad data,
+  // always check status code is equal to 200 before processing the data
+  if(responseCode == 200) {
+    var xml = GXml.parse(data);
+    var markers = xml.documentElement.getElementsByTagName("marker");
+    for (var i = 0; i &lt; markers.length; i++) {
+      var point = new GLatLng(parseFloat(markers[i].getAttribute("lat")),
+                              parseFloat(markers[i].getAttribute("lng")));
+      map.addOverlay(new GMarker(point));
+    }
+  } else if(responseCode == -1) {
+    alert("Data request timed out. Please try later.");
+  } else { 
+    alert("Request resulted in error. Check XML file is retrievable.");
+  }
+});
+</pre>
+
+<p><a href="http://gmaps-samples.googlecode.com/svn/trunk/gdownloadurl_new/async.htm">View example (async.htm)</a>. This example uses the external 
+XML data file <a href="http://gmaps-samples.googlecode.com/svn/trunk/gdownloadurl_new/data.xml">data.xml</a>.</p>";s:4:"link";s:79:"http://googlemapsapi.blogspot.com/2007/02/gdownloadurl-update-better-error.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/8131975112305904831";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/8131975112305904831";s:11:"author_name";s:10:"Pamela Fox";}i:16;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-9037361434962638360";s:9:"published";s:29:"2007-02-16T18:22:00.000-08:00";s:7:"updated";s:29:"2007-02-16T18:32:00.420-08:00";s:5:"title";s:26:"A Cool JSF and Maps Mashup";s:12:"atom_content";s:1564:"<span class="byline-author">Posted by Chris Schalk, Google API Team</span>
+
+<br/>
+<br/>
+
+We're always excited when we see new tools that make it easier for different groups of developers to use the Google Maps API.  Matthias Wessendorf, a server-side Java expert, recently posted a cool <span> mashup showing how easy it is to </span><span>integrate server-side Java
+technologies with Google Maps.
+
+<br/>
+<br/>
+
+</span><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://jroller.com/resources/m/mwessendorf/googleMapsFacesMashup.PNG"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px;" src="http://jroller.com/resources/m/mwessendorf/googleMapsFacesMashup.PNG" alt="" border="0" /></a>
+In this mashup, Matthias has combined JavaServer Faces technologies, <span>Facelets and Apache Trinidad with Google Maps. The end result is a datagrid component with an embedded</span> Google map.  This is done without requiring the JSF developer to code in JavaScript.
+
+<br/>
+<br/>
+<span class="q">See:
+<a href="http://jroller.com/page/mwessendorf?entry=web_2_0_building_mashup" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)">http://jroller.com/page<wbr>/mwessendorf?entry=web_2_0<wbr>_building_mashup </a>
+
+</span>
+
+<br/>
+<br/>This mashup published in a Google Code project:
+<span>
+<a href="http://code.google.com/p/facesgoodies/" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)">http://code.google.com/p<wbr>/facesgoodies/ </a></span>
+<br/>
+<br/>";s:4:"link";s:71:"http://googlemapsapi.blogspot.com/2007/02/cool-jsf-and-maps-mashup.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/9037361434962638360";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/9037361434962638360";s:11:"author_name";s:29:"Chris Schalk, Google API Team";}i:17;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4540149093807217751";s:9:"published";s:29:"2007-02-14T08:42:00.000-08:00";s:7:"updated";s:29:"2007-02-15T18:23:09.702-08:00";s:5:"title";s:50:"Write Your Valentine's Day Messages in Google Maps";s:12:"atom_content";s:4597:"<span class="byline-author">Posted by Pamela Fox, Google Maps API Team</span>
+<br />
+<br />
+<p>For those of you in countries that celebrate it, Happy <a href="http://en.wikipedia.org/wiki/Valentines_day" title="Valentine's Day">Valentine's Day</a>! Just in case some of you haven't found that perfect geeky V-Day card to send your loved one, friends, stalkee, etc., I've put together a quick example using GPolyline to write messages on to the map (and share them!). Try it out below by positioning the map, entering a short message, and pressing "Etch it!" The end result is your message "scratched" onto the map as if you'd scratched into tree bark.
+
+<p><iframe src="http://imagine-it.org/google/gpolyletters.htm" frameborder="0" width="700px" height="450px"></iframe>
+
+<p>Of course, I'm not actually scratching the earth or touching the satellite imagery at all. This is simply an example of a fun way to use the <a href="http://www.google.com/apis/maps/documentation/reference.html#GPolyline" title="GPolyline">GPolyline</a> class, commonly used to draw bicycle or driving routes. Here's how it works:
+<ol>
+<li>Positioning the map: This uses the <a href="http://www.google.com/apis/maps/documentation/reference.html#GClientGeocoder" title="GClientGeocoder">GClientGeocoder</a> and is based off this <a href="http://www.google.com/apis/maps/documentation/#Geocoding_JavaScript" title="example">example</a>. When the user enters an address and presses the button, I use the geocoder.getLatLng() method to find the corresponding latitude and longitude for the address. No geocoder is perfect, so I alert an error message if it can't find the address.</li>
+<li>Writing the message: Here's the fun part!<img align="right" border="0" hspace="0" src="http://gmaps.examples.googlepages.com/polyletters.jpg" style="HEIGHT:111px; WIDTH:111px" vspace="0"/>  
+
+  <ul>
+  <li>I've pre-defined each letter/symbol as an array of pairs of points defined on a 1*1 grid. The image here shows the 6 lines that define the heart ("&lt;3"). The corresponding javascript for the heart is:
+<pre style="code"> "&lt;3": { "lines": [<br/> [[0,.25],[.25,0]],<br/> [[.25,0],[.5,.25]],<br/> [[.75,0],[.5,.25]],<br/> [[1,.25],[.75,0]],<br/> [[1,.25],[.5,1]],<br/> [[.5,1],[0,.25]]<br/> ]}<span style="FONT-FAMILY:Verdana"></pre>
+  </li>
+  <li>I parse the user input from the text box into each character, looking particularly for the 2-character long heart string.</li>
+  <li>I define a constant X &amp; Y size to scale the points by. If the message inputted is particularly long, we redefine the constant to fit the message to the map.</li>
+  <li>For each letter/symbol, I iterate through the points and create a set of scaled points. For a scratchier effect, I connect the second point to a point slightly offset from the first point.</li>
+  <li>With each set of scaled points, I create and add two GPolyline objects to the map with different style attributes. The first is a thick &amp; white, and the second is thin &amp; dark. This helps the letters stand out.</li>
+  </ul>
+</li>
+<li>Permalink to this Map: This creates a URL with parameters attached to the end, e.g. gpolyletters.htm?message=HI&lat=40.267&lng=180.456
+  <ul>
+  <li>There are no native javascript functions specifically for parsing URL parameters, but many javascript users have created utility functions to help do this. I'm using a function called getURLParam() that relies on regular expressions.</li>
+  <li>Certain characters, like the "<3", will be URL-encoded. To get back the original string, I call unescape(String).</li>
+  <li>Since I need to pass the latitude, longitude, and zoom parameters as floats and integers and my URL parsing function always returns strings, I use parseFloat(String) and parseInt(String).</li>
+  <li>If no parameters are specified in the URL, I use the default values.</li>
+  </ul>
+</li>
+</ol>
+
+<p>If you thought that was fun, here are a few examples of other sites that use GMaps to let you send creative Valentine's Day greetings:
+<br /><a href="http://www.geogreeting.com" target="blank_" title="GeoGreeting - Spell your message with letter-shaped buildings!">GeoGreeting - Spell your message with letter-shaped buildings!</a>
+<br/ ><a href="http://www.mapmsg.com" title="MapMsg - Send your message as a smoke signal!">MapMsg - Send your message as a smoke signal!</a>
+
+<p>As always, if you're inspired to create a GMaps mashup and need help from the global community of developers, please stop by the <a href="http://groups.google.com/group/Google-Maps-API/" title="Google Maps API Group">Google Maps API Group</a>.";s:4:"link";s:84:"http://googlemapsapi.blogspot.com/2007/02/write-your-valentines-day-messages-in.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4540149093807217751";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4540149093807217751";s:11:"author_name";s:14:"Brandon Badger";}i:18;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4608714839758689645";s:9:"published";s:29:"2007-01-24T10:11:00.000-08:00";s:7:"updated";s:29:"2007-01-24T10:37:37.347-08:00";s:5:"title";s:16:"GPolygon Example";s:12:"atom_content";s:2702:"<span class="byline-author">Posted by Pamela Fox, Support Engineer, Maps API Team</span>
+
+<br /><br />
+<p>Hi all, my name's Pamela Fox. I've just joined the Maps API team and will be working part-time on various projects until I finish my Masters in C.S. at USC and join full-time. I'm looking forward to making GMaps easier to work with for developers and first-timers.
+
+<p>To start off my time here, I've made a simple example showing off what you can do with the recently documented <a href="http://www.google.com/apis/maps/documentation/reference.html#GPolygon"> <code> GPolygon</code></a>. Even if you're not the type of person who enjoys a good square, pentagon, or googolgon, you can also use this class to generate stars and "circles" with only slight changes in code. The example below lets you click on the map to generate either squares, circles, or polygons of random color, size, and sides (for polygons/stars).  Play around with it - Trust me, it's fun!
+
+<p>
+<iframe src="http://maps.examples.googlepages.com/gpolygon.htm" width="600px" height="435px" FRAMEBORDER=0>
+<A HREF="http://maps.examples.googlepages.com/gpolygon.htm">link</A> 
+</iframe>
+<p>Here's how it works:
+<ul>
+<li>We define several utility functions to aid in generating random numbers and colors</li>
+<li>When the map is clicked, we find the clicked pixel using <code>fromLatLngToPixel</code> on the result of <code>G_NORMAL_MAP.getProjection()</code>.</li>
+<li>We start generating random variables for small radius, large radius (used for stars), number of sides, and color.
+<li>If the draw mode selected is polygon, we iterate from 0 to number of sides. In each iteration, we calculate the new pixel location using good old trigonometry. We convert the pixel back to latitude/longitude using <code>fromPixelToLatLng</code> and add it to our points array.</li>
+<li>If the draw mode selected is a star or circle, the process is almost the same. For stars, we iterate twice as much as the number of sides, calculating points at the large radius on the odd iterations. For circles, we ignore the randomly generated number of sides and always iterate 20 times around the clicked pixel for a nice round look.</li>
+<li>Now for the magic - we create a new <code>GPolygon</code> with the points array and style parameters, and add it to the map.</li>
+
+<p>Now here's the challenge: my own example is pretty useless, except for its teaching value. How can you put <code>GPolygon</code> to work for your app?
+Exploit the <code>GPolygon</code> for all it's worth (and don't forget its friend, <code>GPolyline</code>), and ping us with your creations <a href="http://groups.google.com/group/Google-Maps-API" >on the forums</a>.
+</ul>";s:4:"link";s:63:"http://googlemapsapi.blogspot.com/2007/01/gpolygon-example.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4608714839758689645";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4608714839758689645";s:11:"author_name";s:14:"Brandon Badger";}i:19;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4951373918325245043";s:9:"published";s:29:"2007-01-17T09:25:00.000-08:00";s:7:"updated";s:29:"2007-01-17T09:54:24.125-08:00";s:5:"title";s:18:"Googolgon, Anyone?";s:12:"atom_content";s:861:"<span class="byline-author">Posted by Brandon Badger, Product Manager, Maps API</span>
+<br /><br />
+<p>Some of you <a href="http://mapperz.blogspot.com/2007/01/google-maps-and-topology.html"> have probably noticed</a> that we've added a new tool to your Google Maps API toolbox, the <code><a href="http://www.google.com/apis/maps/documentation/reference.html#GPolygon"> GPolygon</a></code>.  Just think of all the colorful triangles, octagons, hendecagons, icosagons, etc. that you'll be able to overlay on your map.  I'll be really impressed if someone is able to build a <a href="http://en.wikipedia.org/wiki/Googolgon"> googolgon</a>, a polygon with 10<sup>100</sup> sides.
+
+<p>More details about the <code>GPolygon</code> class can be found in the <a href="http://www.google.com/apis/maps/documentation/reference.html#GPolygon"> Maps API reference</a>.
+
+<p>";s:4:"link";s:63:"http://googlemapsapi.blogspot.com/2007/01/googolgon-anyone.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4951373918325245043";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4951373918325245043";s:11:"author_name";s:14:"Brandon Badger";}i:20;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-4557999943937444344";s:9:"published";s:29:"2007-01-11T14:45:00.000-08:00";s:7:"updated";s:29:"2007-01-16T11:09:44.455-08:00";s:5:"title";s:78:"New Map Tiles for India, Singapore, and Hong Kong Added to the Google Maps API";s:12:"atom_content";s:1487:"<span class="byline-author">Posted by Lalitesh Katragadda / Sanjay Jain, Software Engineers, Google Maps</span>
+<br /><br />
+<p>Some of you may have noticed that we recently added new map tiles for India, Singapore, and Hong Kong to the sites served by the Google Maps API.  For India, these new map tiles cover all the major cities (with a combined population of more than a 100 million). This data includes the national highway network, major and minor arterial roads, local roads in all metros, railway lines, railway stations, tourist attractions, educational institutes, places of worship, historical landmarks, hotels, movie theaters, malls, shopping centers, etc. We feel that this data provides tremendous service to our users as high quality map data has not been commonly available for free in India. While we don't yet support full address search or business search in India, we know users want this, and we are working hard to get it to them as soon as possible. Till then, everyone can search for any city within India.
+
+<p><a href="http://www.wikimapia.org/#y=18083201&x=77673340&z=6&l=0&m=m&v=2">Here's an example</a> of the new map tiles, as shown on WikiMapia.  
+
+<p>We are very excited that all of this new data is now accessible from the Google Maps API. We welcome you to create applications that will revolutionize your communities. And as always, if you see any bugs in the new maps, please <a href="http://groups.google.com/group/Google-Maps-API/">let us know</a>.";s:4:"link";s:84:"http://googlemapsapi.blogspot.com/2007/01/google-maps-api-covers-additional-100.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/4557999943937444344";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/4557999943937444344";s:11:"author_name";s:14:"Brandon Badger";}i:21;a:9:{s:2:"id";s:59:"tag:blogger.com,1999:blog-18549845.post-5290842461914470329";s:9:"published";s:29:"2007-01-08T09:37:00.000-08:00";s:7:"updated";s:29:"2007-01-08T09:48:35.684-08:00";s:5:"title";s:76:"Drive More Traffic to Your Maps API Site - Include KML Files in Your Sitemap";s:12:"atom_content";s:1740:"<span class="byline-author">Posted by Brandon Badger, Product Manager, Google Maps API</span>
+<br ><br >
+<p>Your Google Maps API powered site has lots of great content.  Including KML files in a <code>sitemap.xml</code> file (see <a href="http://www.sitemaps.org/protocol.html" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)">http://www.sitemaps.org/protocol.html </a>) is a great way for you to help us index and drive traffic to your site. After publishing your data in KML, we'll crawl the KML files that you specify in your <code>sitemap.xml</code> file. We'll send users your way when they search for content that is found on your mashup site. As an added bonus, once your data is in KML, it will be available for viewing on <a href="http://earth.google.com/" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)">Google Earth</a>.
+
+<p>Publishing a KML Sitemap involves a few easy steps:  </p>
+<ul>
+<li>Identify those features on your maps site which can be displayed as KML features. </li>
+<li>Convert those features into KML equivalents and publish them within one or more KML files.   </li>
+<li>Create a <code>sitemap.xml</code> file that identifies links to all of your KML files.    </li>
+<li>Place the <code>sitemap.xml</code> in the root directory of your site.</li>
+</ul>
+
+Please see our <a href="http://www.google.com/apis/maps/sitemap.html" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)">sitemap documentation</a>  (<a href="http://www.google.com/apis/maps/sitemap.html" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)"> http://www.google.com/apis<wbr>/maps/sitemap.html</a>) for more details about including your KML content in a sitemap.";s:4:"link";s:85:"http://googlemapsapi.blogspot.com/2007/01/get-more-traffic-to-your-maps-api-site.html";s:9:"link_self";s:73:"http://googlemapsapi.blogspot.com/feeds/posts/default/5290842461914470329";s:9:"link_edit";s:71:"http://www.blogger.com/feeds/18549845/posts/default/5290842461914470329";s:11:"author_name";s:14:"Brandon Badger";}i:22;a:9:{s:2:"id";s:58:"tag:blogger.com,1999:blog-18549845.post-116554281855376502";s:9:"published";s:29:"2006-12-07T17:51:00.000-08:00";s:7:"updated";s:29:"2006-12-07T21:10:54.926-08:00";s:5:"title";s:65:"Japanese Address and Placename Support Added to the Geocoding API";s:12:"atom_content";s:2727:"<span class="byline-author">Posted by 徳生健太郎 (Ken Tokusei), Product Manager, Google Maps Japan<br/> <br/> </span>Maps API 開発コミュニティーの皆様へ<br/> <br/> Google Maps APIでも、日本の住所や駅名によるジオコーディングがご利用いただけるようになりました。Maps APIを利用したサイトでは、Google マップと同様、ユーザーが入力した住所の緯度経度を割り出し、表示される地図の場所させることができようになりました。実装例は<a href="http://zorgmon.googlepages.com/geocoder-jp.html" title="&#12371;&#12385;&#12425;">こちら</a>をどうぞ。<br/> <br/> 尚、日本語での利用が主なサイトでは、JavaScript のソースURL のホスト名をmaps.google.co.jp にすることをお勧めします（.co.jp のドメインを使用することで、地図・写真切り替えモードのボタンも日本語で表示されるようになります）。<br/> <br/> それでは、<a href="http://www.sbcr.jp/yig/woy2006/" title="Web of the Year 2006">Web of the Year 2006</a> 地図部門賞の受賞も記念しまして、記念に短歌を一首。<br/> <br/> <div style="MARGIN-LEFT:40px"> 上高地<br/> 一発入力<br/> ひとっ飛び<br/> キミのサイトで<br/> 見る河童橋<br/> </div> <br/> Google マップ開発チーム一同<br/> <br/> <span style="FONT-WEIGHT:bold">Translation:</span><br/> <br/> Dear Maps API Developers,<br/> <br/> The Geocoding API now supports Japanese addresses and placenames.&nbsp; You can implement a map that pans quickly according to the Japanese address entered by the user.&nbsp; Here is an <a href="http://zorgmon.googlepages.com/geocoder-jp.html" title="implementation example">implementation example</a> .<br/> <br/> If you expect users to enter Japanese addresses, please set the JavaScript host name to maps.google.co.jp.&nbsp; In this way,&nbsp; maps/satellite/hybrid mode buttons will show up in Japanese.<br/> <br/> Here's a <a href="http://en.wikipedia.org/wiki/Waka_%28poetry%29#Tanka" title="Tanka poem">Tanka poem</a> that aptly describes the joy of using Maps API with the geocoding feature.<br/> <br/> <div style="MARGIN-LEFT:40px"> <span style="FONT-STYLE:italic"> Kamikouchi</span>
+<br style="FONT-STYLE:italic"/> <span style="FONT-STYLE:italic"> That's all you need to enter</span>
+<br style="FONT-STYLE:italic"/> <span style="FONT-STYLE:italic"> Maps will take you there</span>
+<br style="FONT-STYLE:italic"/> <span style="FONT-STYLE:italic"> Your site shows the historic</span>
+<br style="FONT-STYLE:italic"/> <span style="FONT-STYLE:italic"> Kappabashi Bridge nearby</span><br/> </div> <br/> From the Google Maps Team<br/>";s:4:"link";s:85:"http://googlemapsapi.blogspot.com/2006/12/japanese-address-and-placename-support.html";s:9:"link_self";s:72:"http://googlemapsapi.blogspot.com/feeds/posts/default/116554281855376502";s:9:"link_edit";s:70:"http://www.blogger.com/feeds/18549845/posts/default/116554281855376502";s:11:"author_name";s:14:"Brandon Badger";}i:23;a:9:{s:2:"id";s:58:"tag:blogger.com,1999:blog-18549845.post-116413108022796968";s:9:"published";s:29:"2006-11-21T09:39:00.000-08:00";s:7:"updated";s:29:"2006-11-21T17:32:03.093-08:00";s:5:"title";s:18:"KML on Google Maps";s:12:"atom_content";s:2717:"<p><span class="byline-author">Posted by Nigel Tao, Software Engineer</span></p>
+
+<p>Strictly speaking, it's not part of the Maps API (yet...), but we have <a href="http://googleblog.blogspot.com/2006/06/happy-birthday-google-earth.html">previously announced</a> the ability to show simple KML/KMZ files (as made in Google Earth) in Google Maps, so you can show your own stuff on top of Maps without having to learn any Javascript.  For example, you can show <a href="http://maps.google.com/maps?q=http://kml.lover.googlepages.com/cropcircles.kmz&t=k">crop circle locations</a> as markers, and the <a href="http://maps.google.com/maps?q=http://kml.lover.googlepages.com/leTourDeFrance2005.kmz&t=k"> Tour de France route</a> as polylines (the second example was taken from our wonderful <a href="http://bbs.keyhole.com">Google Earth Community</a>).  We've now got a few more tricks that you can do with KML on Maps:</p>
+
+<ul>
+<li>View entire photo sets as self-contained KMZ files, as exported by <a href="http://picasa.google.com/">Picasa</a>.  We were going to write up how it's done, but <a href="http://hikesandbikes.blogspot.com/2006/10/life-of-geolocated-blog-post.html">Brian's blog post</a> pretty much covers it.  Check out his <a href="http://maps.google.com/?q=http://briangbrown.googlepages.com/MalloryCave-Pictures.kmz">geo-tagged photos of Mallory Cave</a>.<br>
+</li>
+<li>View KML Overlays. Add your own imagery directly on top of Maps.  For example, take the <a href="http://earth.google.com/kml/kml_tut.html#ground_overlays">GroundOverlay example</a> from the official KML tutorial and just throw the <a href="http://maps.google.com/maps?q=http://kml.lover.googlepages.com/etna_ground_overlay.kml">photo of Mt. Etna onto Google Maps</a>.<br>
+
+</li>
+<li>Use your own <a href="http://maps.google.com/maps?q=http://kml.lover.googlepages.com/chm_custom_icons.kml">customized marker icons</a>.</li>
+
+</ul>
+
+<p>
+To view a KML or KMZ file on Maps, just go to <a href="http://maps.google.com/">Google Maps</a>, and instead of searching for a geographical address like <a href="http://maps.google.com/maps?q=1600%20amphitheatre%20parkway,%2094043">1600 Amphitheatre Parkway, 94043</a>, search for a complete Web address (including the "http://" part) of your KMZ file, like <a href="http://maps.google.com/maps?q=http://kml.lover.googlepages.com/cropcircles.kmz">http://kml.lover.googlepages.com/cropcircles.kmz</a>.  Need your own web space to upload some files?  Try <a href="http://pages.google.com/">Google Page Creator</a>.
+
+</p>
+
+<p>
+Finally, did you know that path and polygon drawing tools are now in the free <a href="http://earth.google.com/earth4-beta6.html">November 1 beta of Google Earth</a>?
+</p>";s:4:"link";s:65:"http://googlemapsapi.blogspot.com/2006/11/kml-on-google-maps.html";s:9:"link_self";s:72:"http://googlemapsapi.blogspot.com/feeds/posts/default/116413108022796968";s:9:"link_edit";s:70:"http://www.blogger.com/feeds/18549845/posts/default/116413108022796968";s:11:"author_name";s:11:"Jessica Lee";}i:24;a:9:{s:2:"id";s:58:"tag:blogger.com,1999:blog-18549845.post-116361931394668418";s:9:"published";s:29:"2006-11-15T11:21:00.000-08:00";s:7:"updated";s:29:"2006-11-15T11:41:36.373-08:00";s:5:"title";s:57:"Map Search Wizard - Put a Searchable Map on Your Web Page";s:12:"atom_content";s:890:"<p>The Google AJAX Search API team has put together a <a href="http://www.google.com/uds/solutions/wizards/mapsearch.html">Map Search Wizard</a> to help you put a searchable map on your web page in three easy steps.
+<ol>
+<li><strong>Customize it</strong> - Use the wizard to define the map's width, height, zoom level, title, location, etc.</li>
+<li><strong>Provide Your Site's URL</strong> - This is used by the wizard to create your free Maps API and AJAX Search API keys to associate with your web site.</li>
+<li><strong>Hit the Magic Button</strong> - Click on the "Generate Code" button and the wizard will create the customized JavaScript for your map. Just paste this code into your web page, and Voil&agrave;, your users will have the power of Google maps at their fingertips.</li>
+</ol>
+
+<p><a href="http://www.google.com/uds/solutions/wizards/mapsearch.html">Map Search Wizard</a>";s:4:"link";s:83:"http://googlemapsapi.blogspot.com/2006/11/map-search-wizard-put-searchable-map.html";s:9:"link_self";s:72:"http://googlemapsapi.blogspot.com/feeds/posts/default/116361931394668418";s:9:"link_edit";s:70:"http://www.blogger.com/feeds/18549845/posts/default/116361931394668418";s:11:"author_name";s:14:"Brandon Badger";}}s:7:"channel";a:11:{s:2:"id";s:34:"tag:blogger.com,1999:blog-18549845";s:7:"updated";s:29:"2007-04-20T16:41:22.343-07:00";s:5:"title";s:29:"Official Google Maps API Blog";s:4:"link";s:44:"http://googlemapsapi.blogspot.com/index.html";s:9:"link_next";s:83:"http://googlemapsapi.blogspot.com/feeds/posts/default?start-index=26&max-results=25";s:42:"link_http://schemas.google.com/g/2005#feed";s:53:"http://googlemapsapi.blogspot.com/feeds/posts/default";s:9:"link_self";s:53:"http://googlemapsapi.blogspot.com/feeds/posts/default";s:11:"author_name";s:34:"Bret Taylor, Group Product Manager";s:10:"author_uri";s:31:"http://finiteloop.org/~btaylor/";s:9:"generator";s:7:"Blogger";s:10:"opensearch";a:2:{s:12:"totalresults";s:2:"73";s:10:"startindex";s:1:"1";}}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Fri, 20 Apr 2007 23:41:22 GMT
+";s:4:"etag";s:40:""38f9896f-a89e-49fe-8afb-de4abf8534b8"
+";}

@@ -1,0 +1,838 @@
+O:9:"MagpieRSS":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:30:{i:0;a:7:{s:5:"title";s:25:"It's the Final Countdown!";s:4:"link";s:85:"http://www.osgeo.org/tyler/2011/foss4g-reminder-to-get-a-workshop-and-see-great-talks";s:11:"description";s:2681:"<p>
+It's the final countdown to FOSS4G.  Earth may remain intact, but your life will melt away if you don't attend!  Only 23 days to go at the time of writing... (see the full post to see the countdown timer)
+</p>
+<center>
+<iframe src="http://free.timeanddate.com/countdown/i2q4rirc/n75/cf101/cm0/cu5/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcd8873c/tc66c/fn3/fs200/szw576/szh243/tatCountdown%20to%20FOSS4G!/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mptFOSS4G%202011/mpc000/iso2011-09-12T08:00:00/brs2/bbs2/pd2" frameborder="0" width="579" height="246"></iframe>
+</center>
+<p>
+While the milliseconds spin by, mesmerising you, consider that 8% of our FOSS4G workshops are <b>already sold out</b> and others are quickly filling up. <a href="http://2011.foss4g.org/program/sessions/accepted?keys=&field_sessiontype_value_many_to_one=workshop+">Review the workshops here.</a> 
+</p><p>
+If you've been holding out to the last minute to register, now is the time, to avoid disappointment.  On the other hand, any workshop would be worth attending!
+</p><p>
+Have a friend, colleague, supervisor or spouse who doesn't have a whole week to spare for this pivotal event?  Encourage them to take to the <a href="http://2011.foss4g.org/content/introduction-geospatial-open-source">one day "Intro" workshop</a> - check out that line up of speakers!
+</p><p>
+Finally, here are some of the top rated talks to encourage you to come.  They are just the tip of the iceberg, with <a href="http://2011.foss4g.org/program/session-schedule">so many great talks...</a>
+</p>
+<ul>
+<li>
+PostGIS 2.0, the new stuff - Leo Hsu/Regina Obe, Paragon Corporation
+</li><li>
+Web Mapping Performance Shootout - Jeff McKenna, Gateway Geomatics
+</li><li>
+State of PostGIS - Paul Ramsey, OpenGeo
+</li><li>
+Tips for the PostGIS Power User - Paul Ramsey, OpenGeo
+</li><li>
+OpenAerialMap: Free Imagery for the World - Schuyler Erle, SimpleGeo
+</li><li>
+HTML5 for Rich Geospatial applications on the web - Javier de la Torre, Vizzuality
+</li><li>
+OpenLayers Mobile - Eric Lemoine, Camptocamp
+</li><li>
+Tuning GDAL Raster Performance - Frank Warmerdam, Google
+</li><li>
+Advanced carthographic map rendering in GeoServer - Simone Giannecchini, GeoSolutions
+</li><li>
+Advanced Cartography for the Web - AJ Ashton, Development Seed
+</li><li>
+PostGIS Replication - Steven Singer, Slony Development team
+</li><li>
+QGIS, what's new? - Pirmin Kalberer, Sourcepole
+</li><li>
+Store, manipulate and analyze raster data within the PostgreSQL/PostGIS spatial database - Pierre Racine, University Laval
+</li><li>
+Turning Data into Beautiful Maps - Tom MacWright, Development Seed
+</li></ul>
+<p>
+Until next time, 
+<br/>Tyler
+</p>
+";s:7:"pubdate";s:31:"Sat, 20 Aug 2011 12:56:44 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1219 at http://www.osgeo.org";s:7:"summary";s:2681:"<p>
+It's the final countdown to FOSS4G.  Earth may remain intact, but your life will melt away if you don't attend!  Only 23 days to go at the time of writing... (see the full post to see the countdown timer)
+</p>
+<center>
+<iframe src="http://free.timeanddate.com/countdown/i2q4rirc/n75/cf101/cm0/cu5/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcd8873c/tc66c/fn3/fs200/szw576/szh243/tatCountdown%20to%20FOSS4G!/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mptFOSS4G%202011/mpc000/iso2011-09-12T08:00:00/brs2/bbs2/pd2" frameborder="0" width="579" height="246"></iframe>
+</center>
+<p>
+While the milliseconds spin by, mesmerising you, consider that 8% of our FOSS4G workshops are <b>already sold out</b> and others are quickly filling up. <a href="http://2011.foss4g.org/program/sessions/accepted?keys=&field_sessiontype_value_many_to_one=workshop+">Review the workshops here.</a> 
+</p><p>
+If you've been holding out to the last minute to register, now is the time, to avoid disappointment.  On the other hand, any workshop would be worth attending!
+</p><p>
+Have a friend, colleague, supervisor or spouse who doesn't have a whole week to spare for this pivotal event?  Encourage them to take to the <a href="http://2011.foss4g.org/content/introduction-geospatial-open-source">one day "Intro" workshop</a> - check out that line up of speakers!
+</p><p>
+Finally, here are some of the top rated talks to encourage you to come.  They are just the tip of the iceberg, with <a href="http://2011.foss4g.org/program/session-schedule">so many great talks...</a>
+</p>
+<ul>
+<li>
+PostGIS 2.0, the new stuff - Leo Hsu/Regina Obe, Paragon Corporation
+</li><li>
+Web Mapping Performance Shootout - Jeff McKenna, Gateway Geomatics
+</li><li>
+State of PostGIS - Paul Ramsey, OpenGeo
+</li><li>
+Tips for the PostGIS Power User - Paul Ramsey, OpenGeo
+</li><li>
+OpenAerialMap: Free Imagery for the World - Schuyler Erle, SimpleGeo
+</li><li>
+HTML5 for Rich Geospatial applications on the web - Javier de la Torre, Vizzuality
+</li><li>
+OpenLayers Mobile - Eric Lemoine, Camptocamp
+</li><li>
+Tuning GDAL Raster Performance - Frank Warmerdam, Google
+</li><li>
+Advanced carthographic map rendering in GeoServer - Simone Giannecchini, GeoSolutions
+</li><li>
+Advanced Cartography for the Web - AJ Ashton, Development Seed
+</li><li>
+PostGIS Replication - Steven Singer, Slony Development team
+</li><li>
+QGIS, what's new? - Pirmin Kalberer, Sourcepole
+</li><li>
+Store, manipulate and analyze raster data within the PostgreSQL/PostGIS spatial database - Pierre Racine, University Laval
+</li><li>
+Turning Data into Beautiful Maps - Tom MacWright, Development Seed
+</li></ul>
+<p>
+Until next time, 
+<br/>Tyler
+</p>
+";}i:1;a:7:{s:5:"title";s:24:"FOSS4G 2011 Promo VIDEO!";s:4:"link";s:38:"http://www.osgeo.org/foss4g/2011/video";s:11:"description";s:734:"From <a href="http://www.vimeo.com/osgeo/foss4g2011">vimeo.com/osgeo/foss4g2011</a>.
+
+<iframe src="http://player.vimeo.com/video/26456458" width="601" height="338" frameborder="0"></iframe><p><a href="http://vimeo.com/26456458">FOSS4G 2011 Denver</a> from <a href="http://vimeo.com/osgeo">Tyler Mitchell @ OSGeo</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>OSGeo.org is proud to present the annual Free and Open Source Software for Geospatial Conference, to be held in Denver, September 12-16, 2011.  Hear from some of the local organisers and sponsors about this foremost geospatial education and training event.  We hope to see you there as our communities continue to extend there reach.  2011.foss4g.org - see you there!</p>";s:7:"pubdate";s:31:"Sat, 16 Jul 2011 17:33:35 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1216 at http://www.osgeo.org";s:7:"summary";s:734:"From <a href="http://www.vimeo.com/osgeo/foss4g2011">vimeo.com/osgeo/foss4g2011</a>.
+
+<iframe src="http://player.vimeo.com/video/26456458" width="601" height="338" frameborder="0"></iframe><p><a href="http://vimeo.com/26456458">FOSS4G 2011 Denver</a> from <a href="http://vimeo.com/osgeo">Tyler Mitchell @ OSGeo</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>OSGeo.org is proud to present the annual Free and Open Source Software for Geospatial Conference, to be held in Denver, September 12-16, 2011.  Hear from some of the local organisers and sponsors about this foremost geospatial education and training event.  We hope to see you there as our communities continue to extend there reach.  2011.foss4g.org - see you there!</p>";}i:2;a:7:{s:5:"title";s:32:"Sleeping In Denver @ FOSS4G 2011";s:4:"link";s:58:"http://www.osgeo.org/tyler/2011/foss4g-2011-sheraton-rooms";s:11:"description";s:2242:"<p>
+While you won't get as much sleep as usual during <a href="http://2011.foss4g.org">FOSS4G 2011 Denver</a>, you'll still want to get a place to stay - for the internet of course!  
+</p>
+<p>
+I visited the <a href="http://www.sheratondenverdowntown.com/">Sheraton Denver Downtown Hotel</a> last week and had a peek in the guest rooms that are <a href="http://www.starwoodmeeting.com/StarGroupsWeb/booking/reservation?id=1011161053&key=AC6C9"> part of our package</a>.  They were all very nice and comfortable.  
+</p>
+<p>
+But more importantly, our arrangement with Sheraton also includes free internet in the guest rooms (~$15/day value).  Add to that the location, upstairs from the FOSS4G meeting rooms, and you'll find it a great place to stay.  It is centrally located for all activities in the downtown area.
+</p>
+<p>
+The primary rooms we have reserved include a single king bed or two queen beds in a larger room.
+</p>
+<p>
+<center><img src="http://www.sheratondenverdowntown.com/assets/gallery/she3205gr.81099_lg.jpg"/></center>
+</p>
+<p>
+If you would like to get one of the Executive Suites, they are laid our very well - the one I saw had two queens, a large bathroom and a very comfortable seating area.
+</p>
+<p>
+<center><img src="http://www.sheratondenverdowntown.com/assets/gallery/she3205gr.81097_lg.jpg"/></center>
+</p>
+<p>
+<a href="http://www.sheratondenverdowntown.com/gallery/guest_rooms">See photo and videos from their site</a>.  Need a good spot for entertaining clients or holding a reception, consider their Presidential Suite - with a couple separate rooms and space for entertaining a dozen or so people.  
+</p>
+<p>
+Did I mention that all their guest rooms will have free in-room wifi if booking through our contract?  I used the same service and didn't have any challenges.
+</p>
+<p>
+<h4><center><a href="https://www.starwoodmeeting.com/StarGroupsWeb/booking/beginReservation.go?com.starwood.mpar.PROPERTY_ID=3205&id=1011161053&key=AC6C9"> BOOKING LINK</a></center></h4>
+</p>
+<p>
+Note: You may need to phone to reserve any of the suites.  I believe the cost for the Executive Suites are +$50 compared to the standard room price in our block, so could be a great way to share a great room with a couple other people.
+</p>";s:7:"pubdate";s:31:"Tue, 07 Jun 2011 07:57:02 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1211 at http://www.osgeo.org";s:7:"summary";s:2242:"<p>
+While you won't get as much sleep as usual during <a href="http://2011.foss4g.org">FOSS4G 2011 Denver</a>, you'll still want to get a place to stay - for the internet of course!  
+</p>
+<p>
+I visited the <a href="http://www.sheratondenverdowntown.com/">Sheraton Denver Downtown Hotel</a> last week and had a peek in the guest rooms that are <a href="http://www.starwoodmeeting.com/StarGroupsWeb/booking/reservation?id=1011161053&key=AC6C9"> part of our package</a>.  They were all very nice and comfortable.  
+</p>
+<p>
+But more importantly, our arrangement with Sheraton also includes free internet in the guest rooms (~$15/day value).  Add to that the location, upstairs from the FOSS4G meeting rooms, and you'll find it a great place to stay.  It is centrally located for all activities in the downtown area.
+</p>
+<p>
+The primary rooms we have reserved include a single king bed or two queen beds in a larger room.
+</p>
+<p>
+<center><img src="http://www.sheratondenverdowntown.com/assets/gallery/she3205gr.81099_lg.jpg"/></center>
+</p>
+<p>
+If you would like to get one of the Executive Suites, they are laid our very well - the one I saw had two queens, a large bathroom and a very comfortable seating area.
+</p>
+<p>
+<center><img src="http://www.sheratondenverdowntown.com/assets/gallery/she3205gr.81097_lg.jpg"/></center>
+</p>
+<p>
+<a href="http://www.sheratondenverdowntown.com/gallery/guest_rooms">See photo and videos from their site</a>.  Need a good spot for entertaining clients or holding a reception, consider their Presidential Suite - with a couple separate rooms and space for entertaining a dozen or so people.  
+</p>
+<p>
+Did I mention that all their guest rooms will have free in-room wifi if booking through our contract?  I used the same service and didn't have any challenges.
+</p>
+<p>
+<h4><center><a href="https://www.starwoodmeeting.com/StarGroupsWeb/booking/beginReservation.go?com.starwood.mpar.PROPERTY_ID=3205&id=1011161053&key=AC6C9"> BOOKING LINK</a></center></h4>
+</p>
+<p>
+Note: You may need to phone to reserve any of the suites.  I believe the cost for the Executive Suites are +$50 compared to the standard room price in our block, so could be a great way to share a great room with a couple other people.
+</p>";}i:3;a:7:{s:5:"title";s:23:"Raw survey data results";s:4:"link";s:56:"http://www.osgeo.org/tyler/2011/osgeo-survey-raw-results";s:11:"description";s:1119:"<p>Thank you very much to the 160+ participants in the survey I posted last month.  The goal wasn't to just gather information for myself, but was to see if there were any patterns of common thought across the community of respondents.  Then we can work toward some of those goals together without wondering if anyone else cares :)</p>
+<p>I'm the first to admit the questions were far from perfect (and I hadn't meant to force/require answers to everything) but I still think the results may help encourage those who are thinking of new ideas or next steps for OSGeo.  Rather than wait for me to continue to summarise the results, I thought some of you might like to play with the raw data: :)</p>
+<p><a href="http://bit.ly/surveyresultsraw">http://bit.ly/surveyresultsraw</a></p>
+<p>Interested in other survey questions/ideas?  I'll be glad to run other ones to gather more ideas.  I plan to use some to help drill deeper on some of the items.<br />
+Hey if anyone reading is a survey or stats guru interested in regularly polling the community, I'd love to work together.</p>
+<p>Hope it's interesting!<br />
+Tyler</p>
+";s:7:"pubdate";s:31:"Sun, 05 Jun 2011 12:05:29 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1210 at http://www.osgeo.org";s:7:"summary";s:1119:"<p>Thank you very much to the 160+ participants in the survey I posted last month.  The goal wasn't to just gather information for myself, but was to see if there were any patterns of common thought across the community of respondents.  Then we can work toward some of those goals together without wondering if anyone else cares :)</p>
+<p>I'm the first to admit the questions were far from perfect (and I hadn't meant to force/require answers to everything) but I still think the results may help encourage those who are thinking of new ideas or next steps for OSGeo.  Rather than wait for me to continue to summarise the results, I thought some of you might like to play with the raw data: :)</p>
+<p><a href="http://bit.ly/surveyresultsraw">http://bit.ly/surveyresultsraw</a></p>
+<p>Interested in other survey questions/ideas?  I'll be glad to run other ones to gather more ideas.  I plan to use some to help drill deeper on some of the items.<br />
+Hey if anyone reading is a survey or stats guru interested in regularly polling the community, I'd love to work together.</p>
+<p>Hope it's interesting!<br />
+Tyler</p>
+";}i:4;a:7:{s:5:"title";s:24:"Vote for OSGeo Direction";s:4:"link";s:53:"http://www.osgeo.org/tyler/2011/osgeo-survey-embedded";s:11:"description";s:234:"Add your voice to the 150+ OSGeo members who have already voted.
+Only 4 quick questions!
+
+<div id="surveyMonkeyInfo"><div><script src="https://www.surveymonkey.com/jsEmbed.aspx?sm=3_2bM8GuArCBsJDZA205fOTA_3d_3d"> </script></div></div>";s:7:"pubdate";s:31:"Sun, 15 May 2011 12:50:23 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1207 at http://www.osgeo.org";s:7:"summary";s:234:"Add your voice to the 150+ OSGeo members who have already voted.
+Only 4 quick questions!
+
+<div id="surveyMonkeyInfo"><div><script src="https://www.surveymonkey.com/jsEmbed.aspx?sm=3_2bM8GuArCBsJDZA205fOTA_3d_3d"> </script></div></div>";}i:5;a:7:{s:5:"title";s:23:"Ways to Donate to OSGeo";s:4:"link";s:56:"http://www.osgeo.org/tyler/2011/osgeo-donation-ops-part1";s:11:"description";s:3825:"<p>
+A recent comment was passed along to me suggesting we need to be able to accept micro-donations.  Those are donations from anyone except those who use the sponsorship programs.  
+</p><p>
+The good news is we can do it already and have been able to for a while!  
+</p><p>
+Here is a brief overview of the various donation and sponsorship opportunities that exist at OSGeo.  Have some special way you want to give something?  Drop me a note and we can talk about it.
+</p>
+<h3> Donate Button </h3>
+<p>We have a PayPal "Donate" button on the front page of OSGeo.org.  Donors can contribute <b>any amount</b>!
+</p><p>
+<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="B3JT7BC4W8PNU">
+<input type="image" src="https://www.paypalobjects.com/WEBSCR-640-20110401-1/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/WEBSCR-640-20110401-1/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
+</p><p>
+You can also <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B3JT7BC4W8PNU">use this URL</a> to accomplish the same thing but using email.
+</p><p>
+We also have a bank account you can direct deposit or wire funds too, though for small amounts most won't want to do this - email me if you do.
+</p>
+<h3>Focused Marketing Funding</h3>
+<p>
+Local Chapters, and friends, around the world help take OSGeo before more audiences than we know of.  You can help them directly by offering to fund many different things, some may only cost $100 or less, others in the thousands: purchase a booth at an industry tradeshow, donate a speaking slot at an event, fund printing of brochures, pay for a printed pop-up banner and more.  For some ideas of the kind of marketing material available see <a href="http://wiki.osgeo.org/wiki/Marketing_Material_Samples">this wiki page</a>
+</p><p>
+You can pay for the purchase directly yourself, or offer to do it through a Local Chapter.  Alternately, OSGeo HQ can take help if needed.  I have an account with a "cloud-based printing" company from which I can order material and have it printed and shipped locally around the world.  If you want to make a donation to fund something in particular, use the donate button and drop me a note.
+</p>
+<h3>Meeting Space</h3>
+<p>
+Local Chapters may also need someone to just simply donate meeting space.  Having a Friday afternoon meet-up at a restaurant is fun, but sometimes a boardroom with projector can really be all that it takes to help a Chapter grow.  If you have a room, offer it up, get the kudos (and good P.R.) and help make a difference without having to spend a cent.
+</p><p>
+Likewise, Local Chapters are often heavily involved in running events (including <a href="http://2011.foss4g.org/program">FOSS4G</a>).  The two largest costs to running an event are usually <b>food</b> and <b>meeting space</b>.  If you can help with either of these you will be a great asset and worthy of much praise!
+</p><p>
+I'll do a follow up post on the other ways you can donate but before I sign off please take a moment to <a href="http://osgeo.org/sponsors"> check out our <b>Sponsors</b> page</a> to see the great sponsors that help make the larger funding happen.  Their funding has gone toward a hundred different things including: buying booth space, giving OSGeo a presence at events, funding printed material, duplicating <a href="http://live.osgeo.org">OSGeo Live DVDs</a>, keeping web services lights on and helping keep our annual events going.  Our sponsors are at the forefront of helping fund all our bigger efforts.  Thanks a lot!
+</p>
+<b>Stay tuned for part 2...</b>
+";s:7:"pubdate";s:31:"Fri, 13 May 2011 16:24:53 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1205 at http://www.osgeo.org";s:7:"summary";s:3825:"<p>
+A recent comment was passed along to me suggesting we need to be able to accept micro-donations.  Those are donations from anyone except those who use the sponsorship programs.  
+</p><p>
+The good news is we can do it already and have been able to for a while!  
+</p><p>
+Here is a brief overview of the various donation and sponsorship opportunities that exist at OSGeo.  Have some special way you want to give something?  Drop me a note and we can talk about it.
+</p>
+<h3> Donate Button </h3>
+<p>We have a PayPal "Donate" button on the front page of OSGeo.org.  Donors can contribute <b>any amount</b>!
+</p><p>
+<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="B3JT7BC4W8PNU">
+<input type="image" src="https://www.paypalobjects.com/WEBSCR-640-20110401-1/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/WEBSCR-640-20110401-1/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
+</p><p>
+You can also <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B3JT7BC4W8PNU">use this URL</a> to accomplish the same thing but using email.
+</p><p>
+We also have a bank account you can direct deposit or wire funds too, though for small amounts most won't want to do this - email me if you do.
+</p>
+<h3>Focused Marketing Funding</h3>
+<p>
+Local Chapters, and friends, around the world help take OSGeo before more audiences than we know of.  You can help them directly by offering to fund many different things, some may only cost $100 or less, others in the thousands: purchase a booth at an industry tradeshow, donate a speaking slot at an event, fund printing of brochures, pay for a printed pop-up banner and more.  For some ideas of the kind of marketing material available see <a href="http://wiki.osgeo.org/wiki/Marketing_Material_Samples">this wiki page</a>
+</p><p>
+You can pay for the purchase directly yourself, or offer to do it through a Local Chapter.  Alternately, OSGeo HQ can take help if needed.  I have an account with a "cloud-based printing" company from which I can order material and have it printed and shipped locally around the world.  If you want to make a donation to fund something in particular, use the donate button and drop me a note.
+</p>
+<h3>Meeting Space</h3>
+<p>
+Local Chapters may also need someone to just simply donate meeting space.  Having a Friday afternoon meet-up at a restaurant is fun, but sometimes a boardroom with projector can really be all that it takes to help a Chapter grow.  If you have a room, offer it up, get the kudos (and good P.R.) and help make a difference without having to spend a cent.
+</p><p>
+Likewise, Local Chapters are often heavily involved in running events (including <a href="http://2011.foss4g.org/program">FOSS4G</a>).  The two largest costs to running an event are usually <b>food</b> and <b>meeting space</b>.  If you can help with either of these you will be a great asset and worthy of much praise!
+</p><p>
+I'll do a follow up post on the other ways you can donate but before I sign off please take a moment to <a href="http://osgeo.org/sponsors"> check out our <b>Sponsors</b> page</a> to see the great sponsors that help make the larger funding happen.  Their funding has gone toward a hundred different things including: buying booth space, giving OSGeo a presence at events, funding printed material, duplicating <a href="http://live.osgeo.org">OSGeo Live DVDs</a>, keeping web services lights on and helping keep our annual events going.  Our sponsors are at the forefront of helping fund all our bigger efforts.  Thanks a lot!
+</p>
+<b>Stay tuned for part 2...</b>
+";}i:6;a:7:{s:5:"title";s:16:"Funding Ideas...";s:4:"link";s:51:"http://www.osgeo.org/tyler/2011/osgeo-survey-graph2";s:11:"description";s:1102:"<p>On <a href="http://bit.ly/osgeosurvey">the survey</a> (you can still vote!) I listed several potential ways that I've heard others suggest for raising some funding.  I admit some are controversial or lack a bit of meat on their bones - but I still found the answers interesting.</p>
+
+<p>The goal was to collect your thoughts and hopefully brainstorm some even better ideas!  I'll touch on the &quot;better ideas&quot;, that some shared in the survey, at another time - there were definitely some folks thinking about alternatives.</p>
+
+<p>Clearly training/certification programs were a popular idea along with events. Speaking of events - <a href="http://2011.foss4g.org/program/">register early for FOSS4G workshops</a> - they usually sell out!</p>
+
+<p><img src="http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png" alt="http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png" title="http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png" /><!-- http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png --></p>
+
+";s:7:"pubdate";s:31:"Fri, 13 May 2011 15:10:27 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1204 at http://www.osgeo.org";s:7:"summary";s:1102:"<p>On <a href="http://bit.ly/osgeosurvey">the survey</a> (you can still vote!) I listed several potential ways that I've heard others suggest for raising some funding.  I admit some are controversial or lack a bit of meat on their bones - but I still found the answers interesting.</p>
+
+<p>The goal was to collect your thoughts and hopefully brainstorm some even better ideas!  I'll touch on the &quot;better ideas&quot;, that some shared in the survey, at another time - there were definitely some folks thinking about alternatives.</p>
+
+<p>Clearly training/certification programs were a popular idea along with events. Speaking of events - <a href="http://2011.foss4g.org/program/">register early for FOSS4G workshops</a> - they usually sell out!</p>
+
+<p><img src="http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png" alt="http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png" title="http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png" /><!-- http://www.osgeo.org/sites/osgeo.org/files/images/funding_ideas.preview.png --></p>
+
+";}i:7;a:7:{s:5:"title";s:18:"A few survey stats";s:4:"link";s:73:"http://www.osgeo.org/tyler/2011/osgeo-survey-results-quick-summary-graph1";s:11:"description";s:2109:"<p>We just hit &gt; 100 respondents on <a href="http://bit.ly/osgeosurvey">my recent survey</a>!  You can still chime in with your thoughts on the direction and priorities for OSGeo.</p>
+
+<p>The first two questions were around priority &quot;target areas&quot;, basically constituents/groups/areas that we should, collectively, spend more time working with e.g. Academic, business, government, etc.</p>
+
+<p>The first question just asked if they were good ideas and the results were all pretty much positive - but with Academic development coming out on top with the highest number of &quot;this is important&quot; votes.</p>
+
+<p>The second question forced voters to make a decision and rank the ideas from least to most important.  Again, Academic development came out on top.  I'll crunch some more stats later, but thought you might find this graph interesting.  Sorry if you don't like 6 axis graphs :)</p>
+
+<p><img src="http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png" alt="http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png" title="http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png" /><!-- http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png --></p>
+
+<p>The area within the blue line represents those who voted &quot;unimportant&quot; for the topic and within the red line those who voted &quot;important&quot;.  These are aggregates of &quot;least important, low importance&quot; vs &quot;fairly, very, most important&quot;.  &quot;Marginal importance&quot; was ignored for this graph.  Note the larger the gap between the red and blue lines on an axis shows a greater difference in voting preference.  The two rings represent 50% and 100% of votes.</p>
+
+<p>Even from this perspective it shows a very strong support for the academic idea, with Government in second.  Then Open Standards and Open Data.</p>
+
+<p>Not a perfect summary but it's got me thinking and thought you might find it interesting too.  More to come when I get a chance to dig through the numbers.</p>
+
+<p>Thanks to all who voted!</p>
+
+";s:7:"pubdate";s:31:"Fri, 13 May 2011 11:25:36 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1201 at http://www.osgeo.org";s:7:"summary";s:2109:"<p>We just hit &gt; 100 respondents on <a href="http://bit.ly/osgeosurvey">my recent survey</a>!  You can still chime in with your thoughts on the direction and priorities for OSGeo.</p>
+
+<p>The first two questions were around priority &quot;target areas&quot;, basically constituents/groups/areas that we should, collectively, spend more time working with e.g. Academic, business, government, etc.</p>
+
+<p>The first question just asked if they were good ideas and the results were all pretty much positive - but with Academic development coming out on top with the highest number of &quot;this is important&quot; votes.</p>
+
+<p>The second question forced voters to make a decision and rank the ideas from least to most important.  Again, Academic development came out on top.  I'll crunch some more stats later, but thought you might find this graph interesting.  Sorry if you don't like 6 axis graphs :)</p>
+
+<p><img src="http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png" alt="http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png" title="http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png" /><!-- http://www.osgeo.org/sites/osgeo.org/files/images/target_order.preview.png --></p>
+
+<p>The area within the blue line represents those who voted &quot;unimportant&quot; for the topic and within the red line those who voted &quot;important&quot;.  These are aggregates of &quot;least important, low importance&quot; vs &quot;fairly, very, most important&quot;.  &quot;Marginal importance&quot; was ignored for this graph.  Note the larger the gap between the red and blue lines on an axis shows a greater difference in voting preference.  The two rings represent 50% and 100% of votes.</p>
+
+<p>Even from this perspective it shows a very strong support for the academic idea, with Government in second.  Then Open Standards and Open Data.</p>
+
+<p>Not a perfect summary but it's got me thinking and thought you might find it interesting too.  More to come when I get a chance to dig through the numbers.</p>
+
+<p>Thanks to all who voted!</p>
+
+";}i:8;a:7:{s:5:"title";s:28:"Survey: Next Steps for OSGeo";s:4:"link";s:44:"http://www.osgeo.org/tyler/2011/osgeo-survey";s:11:"description";s:747:"<p>Spring is in the air over here in Western Canada, which always gets me thinking about future strategies for OSGeo.  I think it's a good time to step back and take stock of where we all think OSGeo should be heading in the upcoming months and years.</p>
+
+<p>I've put together a very short survey, only 4 questions, and invite everyone to share their thoughts.  I will post aggregated results and discuss it further on the <a href="http://lists.osgeo.org/mailman/listinfo/discuss">discuss mailing list</a> in a week.  I'll also present the results to the OSGeo Board during an upcoming board meeting.</p>
+
+<p><a href="http://www.surveymonkey.com/s/DS7PDYG">http://www.surveymonkey.com/s/DS7PDYG</a></p>
+
+<p>Looking forward to your thoughts!</p>
+
+";s:7:"pubdate";s:31:"Thu, 12 May 2011 10:01:43 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1197 at http://www.osgeo.org";s:7:"summary";s:747:"<p>Spring is in the air over here in Western Canada, which always gets me thinking about future strategies for OSGeo.  I think it's a good time to step back and take stock of where we all think OSGeo should be heading in the upcoming months and years.</p>
+
+<p>I've put together a very short survey, only 4 questions, and invite everyone to share their thoughts.  I will post aggregated results and discuss it further on the <a href="http://lists.osgeo.org/mailman/listinfo/discuss">discuss mailing list</a> in a week.  I'll also present the results to the OSGeo Board during an upcoming board meeting.</p>
+
+<p><a href="http://www.surveymonkey.com/s/DS7PDYG">http://www.surveymonkey.com/s/DS7PDYG</a></p>
+
+<p>Looking forward to your thoughts!</p>
+
+";}i:9;a:7:{s:5:"title";s:25:"Influence FOSS4G Program!";s:4:"link";s:55:"http://www.osgeo.org/tyler/2011/foss4g-community-voting";s:11:"description";s:1013:"<p><a href="http://community-review.foss4g.org/">http://community-review.foss4g.org/</a> is our handy community voting website that gives you the chance to help determine the program for the <a href="http://2011.foss4g.org">FOSS4G 2011</a> conference.</p>
+
+<p>Nearly 300 abstract proposals were submitted and less than half that will be ultimately selected.  Have your say on what would make the best selection of presentations!</p>
+
+<p>Note: <a href="http://2011.foss4g.org/workshops/">Several great workshops</a> have already been selected, <a href="https://www.gita.org/gitamember/FOSS4G2011.aspx">register early</a> to ensure availability.</p>
+
+<p><img src="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png" alt="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png" title="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png" /><!-- http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png --></p>
+
+";s:7:"pubdate";s:31:"Fri, 29 Apr 2011 08:38:49 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1193 at http://www.osgeo.org";s:7:"summary";s:1013:"<p><a href="http://community-review.foss4g.org/">http://community-review.foss4g.org/</a> is our handy community voting website that gives you the chance to help determine the program for the <a href="http://2011.foss4g.org">FOSS4G 2011</a> conference.</p>
+
+<p>Nearly 300 abstract proposals were submitted and less than half that will be ultimately selected.  Have your say on what would make the best selection of presentations!</p>
+
+<p>Note: <a href="http://2011.foss4g.org/workshops/">Several great workshops</a> have already been selected, <a href="https://www.gita.org/gitamember/FOSS4G2011.aspx">register early</a> to ensure availability.</p>
+
+<p><img src="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png" alt="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png" title="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png" /><!-- http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_web_block_150x.png --></p>
+
+";}i:10;a:7:{s:5:"title";s:23:"FOSS4G Venue and Events";s:4:"link";s:60:"http://www.osgeo.org/tyler/2011/foss4g-2011-venue-and-events";s:11:"description";s:2199:"<p>Going to <a href="http://2011.foss4g.org">FOSS4G 2011 in Denver</a>?  Here's the streetview for the Conference Hotel - Sheraton Denver Downtown Hotel (1550 Court Place).  Note the "Free Bus" on the right for getting you up and down the 16th Street Pedestrian Mall.  This central location will make it easier to get to all the events, social venues and more during FOSS4G.  (more below)
+</p>
+<p>
+
+<iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=sheraton+downtown+denver,+denver,+co&amp;layer=c&amp;sll=39.742069,-104.989302&amp;cid=13235803884881184286&amp;cbp=13,277.39,,0,-14.27&amp;cbll=39.742523,-104.988649&amp;hl=en&amp;ie=UTF8&amp;hq=sheraton+downtown+denver,+denver,+co&amp;hnear=&amp;ll=39.742069,-104.989302&amp;spn=0.006295,0.006295&amp;t=h&amp;panoid=AO4z21UORc8W3cYWdwdB9A&amp;source=embed&amp;output=svembed"></iframe><br /><small><a href="http://maps.google.com/maps?q=sheraton+downtown+denver,+denver,+co&amp;layer=c&amp;sll=39.742069,-104.989302&amp;cid=13235803884881184286&amp;cbp=13,277.39,,0,-14.27&amp;cbll=39.742523,-104.988649&amp;hl=en&amp;ie=UTF8&amp;hq=sheraton+downtown+denver,+denver,+co&amp;hnear=&amp;ll=39.742069,-104.989302&amp;spn=0.006295,0.006295&amp;t=h&amp;panoid=AO4z21UORc8W3cYWdwdB9A&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</p><p>
+If you haven't <a href="">booked a room</a> yet at the conference hotel, consider that we only have about 200 rooms reserved at the group rate (including rooms with 2 queen beds).  With that many people mulling about, you're sure to meet someone you know during breakfast!
+</p><p>
+It seems to be a busy week in Denver, with many hotels having higher prices during the same period.  So what else is going on around that time?  <a href="http://www.denver.org/visitdenver/FOSS4G">Denver.org</a> has an events calendar.  Selecting September gave me a short list of events, though you can dig in further on their site to see what else is on at various venues - the convention center, art museum, stadium, etc.
+</p><p>
+<img src="http://www.osgeo.org/sites/osgeo.org/files/images/denver_sept.png"/>
+</p>";s:7:"pubdate";s:31:"Tue, 08 Mar 2011 05:24:11 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1166 at http://www.osgeo.org";s:7:"summary";s:2199:"<p>Going to <a href="http://2011.foss4g.org">FOSS4G 2011 in Denver</a>?  Here's the streetview for the Conference Hotel - Sheraton Denver Downtown Hotel (1550 Court Place).  Note the "Free Bus" on the right for getting you up and down the 16th Street Pedestrian Mall.  This central location will make it easier to get to all the events, social venues and more during FOSS4G.  (more below)
+</p>
+<p>
+
+<iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=sheraton+downtown+denver,+denver,+co&amp;layer=c&amp;sll=39.742069,-104.989302&amp;cid=13235803884881184286&amp;cbp=13,277.39,,0,-14.27&amp;cbll=39.742523,-104.988649&amp;hl=en&amp;ie=UTF8&amp;hq=sheraton+downtown+denver,+denver,+co&amp;hnear=&amp;ll=39.742069,-104.989302&amp;spn=0.006295,0.006295&amp;t=h&amp;panoid=AO4z21UORc8W3cYWdwdB9A&amp;source=embed&amp;output=svembed"></iframe><br /><small><a href="http://maps.google.com/maps?q=sheraton+downtown+denver,+denver,+co&amp;layer=c&amp;sll=39.742069,-104.989302&amp;cid=13235803884881184286&amp;cbp=13,277.39,,0,-14.27&amp;cbll=39.742523,-104.988649&amp;hl=en&amp;ie=UTF8&amp;hq=sheraton+downtown+denver,+denver,+co&amp;hnear=&amp;ll=39.742069,-104.989302&amp;spn=0.006295,0.006295&amp;t=h&amp;panoid=AO4z21UORc8W3cYWdwdB9A&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</p><p>
+If you haven't <a href="">booked a room</a> yet at the conference hotel, consider that we only have about 200 rooms reserved at the group rate (including rooms with 2 queen beds).  With that many people mulling about, you're sure to meet someone you know during breakfast!
+</p><p>
+It seems to be a busy week in Denver, with many hotels having higher prices during the same period.  So what else is going on around that time?  <a href="http://www.denver.org/visitdenver/FOSS4G">Denver.org</a> has an events calendar.  Selecting September gave me a short list of events, though you can dig in further on their site to see what else is on at various venues - the convention center, art museum, stadium, etc.
+</p><p>
+<img src="http://www.osgeo.org/sites/osgeo.org/files/images/denver_sept.png"/>
+</p>";}i:11;a:7:{s:5:"title";s:22:"An OSGeo Birthday Cake";s:4:"link";s:55:"http://www.osgeo.org/tyler/2011/osgeo-5th-birthday-cake";s:11:"description";s:228:"<p>In preparation for tomorrow, I took a stab at <a href="http://www.theoworlds.com/birthday/index.php?CardID=146004">designing a (virtual) cake</a>.   I'm sure you (or your children) could do better - I dare you to try :)</p>
+
+";s:7:"pubdate";s:31:"Thu, 03 Feb 2011 21:06:38 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1146 at http://www.osgeo.org";s:7:"summary";s:228:"<p>In preparation for tomorrow, I took a stab at <a href="http://www.theoworlds.com/birthday/index.php?CardID=146004">designing a (virtual) cake</a>.   I'm sure you (or your children) could do better - I dare you to try :)</p>
+
+";}i:12;a:7:{s:5:"title";s:33:"Happy 5th Birthday... coming soon";s:4:"link";s:55:"http://www.osgeo.org/tyler/2011/osgeo-5th-birthday-soon";s:11:"description";s:901:"<p>Where were you on February 4th, <strong>2006</strong>?</p>
+
+<p>A few folks met up face-to-face in Chicago (and many more virtually in IRC) to start something cool, only 5 years ago: <a href="http://bit.ly/ggEHkI">http://bit.ly/ggEHkI</a></p>
+
+<ul>
+    <li> How should we all celebrate?</li>
+    <li> How do you gauge the success of OSGeo in these few short years?</li>
+    <li> How can we make a collective &quot;splash&quot; and use it as an excuse to generate some buzz?</li>
+    <li> What do we have now that we didn't have back then?</li>
+</ul>
+
+<p>I've talked to a few people who have some fun ideas for things to do to celebrate and would love to hear your thoughts too.</p>
+
+<p><img src="http://www.osgeo.org/files/logos/logos.png" alt="http://www.osgeo.org/files/logos/logos.png" title="http://www.osgeo.org/files/logos/logos.png" /><!-- http://www.osgeo.org/files/logos/logos.png --></p>
+
+";s:7:"pubdate";s:31:"Mon, 31 Jan 2011 22:23:38 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1140 at http://www.osgeo.org";s:7:"summary";s:901:"<p>Where were you on February 4th, <strong>2006</strong>?</p>
+
+<p>A few folks met up face-to-face in Chicago (and many more virtually in IRC) to start something cool, only 5 years ago: <a href="http://bit.ly/ggEHkI">http://bit.ly/ggEHkI</a></p>
+
+<ul>
+    <li> How should we all celebrate?</li>
+    <li> How do you gauge the success of OSGeo in these few short years?</li>
+    <li> How can we make a collective &quot;splash&quot; and use it as an excuse to generate some buzz?</li>
+    <li> What do we have now that we didn't have back then?</li>
+</ul>
+
+<p>I've talked to a few people who have some fun ideas for things to do to celebrate and would love to hear your thoughts too.</p>
+
+<p><img src="http://www.osgeo.org/files/logos/logos.png" alt="http://www.osgeo.org/files/logos/logos.png" title="http://www.osgeo.org/files/logos/logos.png" /><!-- http://www.osgeo.org/files/logos/logos.png --></p>
+
+";}i:13;a:7:{s:5:"title";s:53:"FOSS4G Sponsorship Opportunities Open! 10% off too...";s:4:"link";s:55:"http://www.osgeo.org/foss4g/2011/prospectus-and-website";s:11:"description";s:1948:"<p><img src="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png" alt="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png" title="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png" /><!-- http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png --><br />
+From the FOSS4G Denver 2011 organising chair:</p>
+
+<p><em>The organizing committee has been working away on various tasks for next September’s FOSS4G conference in Denver. We now have sponsorship details sorted out – you can download the brochure at <a href="http://bit.ly/gbWbey">http://bit.ly/gbWbey</a> (PDF). We are offering a 10% discount for any sponsors who commit by the end of January.</p>
+
+<p>We also have a winner in our logo contest, which you can see at our web site which is now up at <a href="http://2011.foss4g.org/">http://2011.foss4g.org/</a>. We had over 800 votes in total, thanks to everyone who voted! The logo design was an interesting process.  Creating a logo is always tricky because you have as many different opinions as people involved in the process! We used a site called <a href="http://crowdspring.com">crowdspring</a>, as you will know if you voted – multiple people compete to create your logo, which we found worked very well. And then they also have a voting process you can use if you like, which I found very helpful to choose a winner from the multiple good entries.</p>
+
+<p>And as mentioned above, our web site is now up and running - it will have a lot more content added to it over the coming weeks. But check out the <a href="http://2011.foss4g.org/timetable/">timetable</a> leading up to the conference – some significant items coming up are the call for workshops which will be out in mid January, and the call for papers which will be out at the beginning of February.</p>
+
+<p>Cheers,<br />
+Peter Batty<br />
+FOSS4G 2011 Chair<br />
+</em></p>
+
+";s:7:"pubdate";s:31:"Tue, 21 Dec 2010 21:06:44 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1112 at http://www.osgeo.org";s:7:"summary";s:1948:"<p><img src="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png" alt="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png" title="http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png" /><!-- http://svn.osgeo.org/osgeo/foss4g/2011/documents/logo/foss4g_color_250x.png --><br />
+From the FOSS4G Denver 2011 organising chair:</p>
+
+<p><em>The organizing committee has been working away on various tasks for next September’s FOSS4G conference in Denver. We now have sponsorship details sorted out – you can download the brochure at <a href="http://bit.ly/gbWbey">http://bit.ly/gbWbey</a> (PDF). We are offering a 10% discount for any sponsors who commit by the end of January.</p>
+
+<p>We also have a winner in our logo contest, which you can see at our web site which is now up at <a href="http://2011.foss4g.org/">http://2011.foss4g.org/</a>. We had over 800 votes in total, thanks to everyone who voted! The logo design was an interesting process.  Creating a logo is always tricky because you have as many different opinions as people involved in the process! We used a site called <a href="http://crowdspring.com">crowdspring</a>, as you will know if you voted – multiple people compete to create your logo, which we found worked very well. And then they also have a voting process you can use if you like, which I found very helpful to choose a winner from the multiple good entries.</p>
+
+<p>And as mentioned above, our web site is now up and running - it will have a lot more content added to it over the coming weeks. But check out the <a href="http://2011.foss4g.org/timetable/">timetable</a> leading up to the conference – some significant items coming up are the call for workshops which will be out in mid January, and the call for papers which will be out at the beginning of February.</p>
+
+<p>Cheers,<br />
+Peter Batty<br />
+FOSS4G 2011 Chair<br />
+</em></p>
+
+";}i:14;a:7:{s:5:"title";s:13:"See you soon!";s:4:"link";s:51:"http://www.osgeo.org/tyler/2010/foss4g_here_we_come";s:11:"description";s:572:"<p>I'm en route to Barcelona this weekend and have lots to do when I get there and <a href="http://2010.foss4g.org">FOSS4G</a> begins.  You'll be able to find me running the <a href="http://wiki.osgeo.org/wiki/Annual_General_Meeting_2010">AGM</a>, co-leading a MapServer workshop, presenting a plenary talk and running the OSGeo booth...among other things.  Please pop by and say hi or hang out at the booth for a while if you get a chance.  I'm really looking forward to seeing everyone and hope to meet more people that I've only met virtually over the past years.</p>
+
+";s:7:"pubdate";s:31:"Fri, 03 Sep 2010 20:02:05 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1064 at http://www.osgeo.org";s:7:"summary";s:572:"<p>I'm en route to Barcelona this weekend and have lots to do when I get there and <a href="http://2010.foss4g.org">FOSS4G</a> begins.  You'll be able to find me running the <a href="http://wiki.osgeo.org/wiki/Annual_General_Meeting_2010">AGM</a>, co-leading a MapServer workshop, presenting a plenary talk and running the OSGeo booth...among other things.  Please pop by and say hi or hang out at the booth for a while if you get a chance.  I'm really looking forward to seeing everyone and hope to meet more people that I've only met virtually over the past years.</p>
+
+";}i:15;a:7:{s:5:"title";s:24:"OSGeo Presentation Video";s:4:"link";s:51:"http://www.osgeo.org/tyler/osgeo_presentation_video";s:11:"description";s:1131:"A few weeks back I put together a video presentation of OSGeo.  Basically a slideshow with a voiceover.  It was my very first attempt to have a 'virtual' presentation at an event that I couldn't travel to.
+
+I'm day dreaming of having an OSGeo promo video contest...  anyone else interested?
+
+<object width="501" height="400"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12443877&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=017a0b&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12443877&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=017a0b&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="601" height="451"></embed></object><p><a href="http://vimeo.com/12443877">Introducing OSGeo</a> from <a href="http://vimeo.com/osgeo">Tyler Mitchell</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>My presentation for the Quebec OSGeo Rendez-vous event.</p>";s:7:"pubdate";s:31:"Wed, 30 Jun 2010 18:54:13 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1054 at http://www.osgeo.org";s:7:"summary";s:1131:"A few weeks back I put together a video presentation of OSGeo.  Basically a slideshow with a voiceover.  It was my very first attempt to have a 'virtual' presentation at an event that I couldn't travel to.
+
+I'm day dreaming of having an OSGeo promo video contest...  anyone else interested?
+
+<object width="501" height="400"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12443877&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=017a0b&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12443877&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=017a0b&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="601" height="451"></embed></object><p><a href="http://vimeo.com/12443877">Introducing OSGeo</a> from <a href="http://vimeo.com/osgeo">Tyler Mitchell</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>My presentation for the Quebec OSGeo Rendez-vous event.</p>";}i:16;a:7:{s:5:"title";s:15:"Upcoming events";s:4:"link";s:45:"http://www.osgeo.org/tyler/2010-spring-events";s:11:"description";s:1461:"<p>Springtime is in the air for many of us, and the spring events are starting to line up.  We usually list any open source related events, or ones that we'll be at, on the <a href="http://osgeo.org/events">Events page</a>.  Here are a few I'm most familiar with, including a couple that I will be at.<br />
+<ul>
+    <li> <a href="http://wiki.osgeo.org/wiki/AAG_2010">American Association of Geographers</a>, Washington DC, April 12-18.  Visit the OSGeo booth and many of the members who will be in attendance.  I'm not able to attend this year.</li>
+    <li> <a href="http://www.osgeo.org/event/2010/pdx-osgis">Open Source GIS Conference</a>, Portland, April 15-16.  An unconference style, see you there.  This follows the GIS in Action event earlier in the week.</li>
+    <li> <a href="http://www.waurisa.org/conferences/2010_Conference_Index.html">WAURISA</a>, Tacoma, April 19-21.  Washington State URISA meeting, with several open source talks and workshops, I will be hosting a panel of talks.</li>
+</ul>
+
+</p>
+
+<p>In a couple months there is the <a href="http://cgs.nottingham.ac.uk/~osgis10/os_home.html">OSGIS 2010</a> event in Nottingham, which I hope to meet many folks at.  We're hoping to hold some special meetings there to help give members and sponsors an opportunity to get deeper info about OSGeo and also to give feedback on our future plans.</p>
+
+<p>Don't hesitate to drop me a note if you'd like to meet up during one of these events!</p>
+
+";s:7:"pubdate";s:31:"Mon, 29 Mar 2010 21:35:38 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1020 at http://www.osgeo.org";s:7:"summary";s:1461:"<p>Springtime is in the air for many of us, and the spring events are starting to line up.  We usually list any open source related events, or ones that we'll be at, on the <a href="http://osgeo.org/events">Events page</a>.  Here are a few I'm most familiar with, including a couple that I will be at.<br />
+<ul>
+    <li> <a href="http://wiki.osgeo.org/wiki/AAG_2010">American Association of Geographers</a>, Washington DC, April 12-18.  Visit the OSGeo booth and many of the members who will be in attendance.  I'm not able to attend this year.</li>
+    <li> <a href="http://www.osgeo.org/event/2010/pdx-osgis">Open Source GIS Conference</a>, Portland, April 15-16.  An unconference style, see you there.  This follows the GIS in Action event earlier in the week.</li>
+    <li> <a href="http://www.waurisa.org/conferences/2010_Conference_Index.html">WAURISA</a>, Tacoma, April 19-21.  Washington State URISA meeting, with several open source talks and workshops, I will be hosting a panel of talks.</li>
+</ul>
+
+</p>
+
+<p>In a couple months there is the <a href="http://cgs.nottingham.ac.uk/~osgis10/os_home.html">OSGIS 2010</a> event in Nottingham, which I hope to meet many folks at.  We're hoping to hold some special meetings there to help give members and sponsors an opportunity to get deeper info about OSGeo and also to give feedback on our future plans.</p>
+
+<p>Don't hesitate to drop me a note if you'd like to meet up during one of these events!</p>
+
+";}i:17;a:7:{s:5:"title";s:33:"Get your abstracts in for FOSS4G!";s:4:"link";s:57:"http://www.osgeo.org/tyler/foss4g/2010/call_for_abstracts";s:11:"description";s:424:"<p>FOSS4G 2010 call for abstracts is now open!  As usual, there will be a flood of awesome abstracts and ideas to be chosen from.  Make sure a presentation proposal for <strong>your favourite project</strong> or case study gets in by the deadline, so you have your excuse to goto Barcelona :)</p>
+
+<p><a href="http://www.osgeo.org/foss4g/2010/call_for_abstracts">http://www.osgeo.org/foss4g/2010/call_for_abstracts</a></p>
+
+";s:7:"pubdate";s:31:"Mon, 01 Feb 2010 21:33:10 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:28:"1002 at http://www.osgeo.org";s:7:"summary";s:424:"<p>FOSS4G 2010 call for abstracts is now open!  As usual, there will be a flood of awesome abstracts and ideas to be chosen from.  Make sure a presentation proposal for <strong>your favourite project</strong> or case study gets in by the deadline, so you have your excuse to goto Barcelona :)</p>
+
+<p><a href="http://www.osgeo.org/foss4g/2010/call_for_abstracts">http://www.osgeo.org/foss4g/2010/call_for_abstracts</a></p>
+
+";}i:18;a:7:{s:5:"title";s:23:"Supporting freenode.net";s:4:"link";s:40:"http://www.osgeo.org/tyler/2010/freenode";s:11:"description";s:503:"<p>I just read about a recent <a href="http://freenode.net/pdpc_seven.shtml">Freenode fundraiser</a> and thought you might be interested in supporting their work.  OSGeo and members projects rely pretty heavily on their IRC network for a variety of real-time discussion needs.  Their funding goals are quite small, so even a tiny donation will go a long way.</p>
+
+<p>Donate now and get a free shirt :)</p>
+
+<p><a href="http://freenode.net/pdpc_seven.shtml">http://freenode.net/pdpc_seven.shtml</a></p>
+
+";s:7:"pubdate";s:31:"Tue, 26 Jan 2010 21:47:30 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"998 at http://www.osgeo.org";s:7:"summary";s:503:"<p>I just read about a recent <a href="http://freenode.net/pdpc_seven.shtml">Freenode fundraiser</a> and thought you might be interested in supporting their work.  OSGeo and members projects rely pretty heavily on their IRC network for a variety of real-time discussion needs.  Their funding goals are quite small, so even a tiny donation will go a long way.</p>
+
+<p>Donate now and get a free shirt :)</p>
+
+<p><a href="http://freenode.net/pdpc_seven.shtml">http://freenode.net/pdpc_seven.shtml</a></p>
+
+";}i:19;a:7:{s:5:"title";s:45:"Military open source software event, Portland";s:4:"link";s:39:"http://www.osgeo.org/tyler/2009/miloss2";s:11:"description";s:1050:"<p>February 16-19th there will be the <a href="http://www.mil-oss.org">Mil-OSS</a>, military open source software focused event in Portland.  I'm not sure I'll be able to make it this time around but I'm sure some fellow OSGeo Oregonians might be interested.</p>
+
+Note this is considered a working group meeting and therefore includes serious discussion about problems and solutions as opposed to sales pitches and business perspectives.  For example, <a href="http://www.mil-oss.org/2009_WG.html">last years event</a> had a &quot;shorts and sandals, but no ties&quot; dress code approach which was disarming and helped facilitate engaging discussion.<br />
+ <p>From a geospatial angle, it's always a great event for catching up with the <a href="http://www.ossim.org/">OSSIM</a> project and the <a href="http://opticks.org/">Optiks</a> image processing/remote sensing developers.</p>
+
+<p>Door is open for speaker requests: <a href="http://www.mil-oss.org/speaker_form.htm">http://www.mil-oss.org/speaker_form.htm</a></p>
+
+<p>&lt;!--break--&gt;</p>
+
+";s:7:"pubdate";s:31:"Thu, 17 Dec 2009 01:26:12 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"983 at http://www.osgeo.org";s:7:"summary";s:1050:"<p>February 16-19th there will be the <a href="http://www.mil-oss.org">Mil-OSS</a>, military open source software focused event in Portland.  I'm not sure I'll be able to make it this time around but I'm sure some fellow OSGeo Oregonians might be interested.</p>
+
+Note this is considered a working group meeting and therefore includes serious discussion about problems and solutions as opposed to sales pitches and business perspectives.  For example, <a href="http://www.mil-oss.org/2009_WG.html">last years event</a> had a &quot;shorts and sandals, but no ties&quot; dress code approach which was disarming and helped facilitate engaging discussion.<br />
+ <p>From a geospatial angle, it's always a great event for catching up with the <a href="http://www.ossim.org/">OSSIM</a> project and the <a href="http://opticks.org/">Optiks</a> image processing/remote sensing developers.</p>
+
+<p>Door is open for speaker requests: <a href="http://www.mil-oss.org/speaker_form.htm">http://www.mil-oss.org/speaker_form.htm</a></p>
+
+<p>&lt;!--break--&gt;</p>
+
+";}i:20;a:7:{s:5:"title";s:24:"Meet me at AGU this week";s:4:"link";s:35:"http://www.osgeo.org/tyler/agu_2009";s:11:"description";s:387:"<p>I'll be speaking at the huge <a href="http://www.agu.org/meetings/fm09/">AGU event</a> this week for the first time.  Other OSGeo members will be there as well.  If you are around on Friday, or even nearby (downtown San Francisco) please don't hesitate to give me a buzz to meetup.  If you stop by my talk on building an open source toolkit, please be sure to say hi afterwards.</p>
+
+";s:7:"pubdate";s:31:"Wed, 16 Dec 2009 00:46:42 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"982 at http://www.osgeo.org";s:7:"summary";s:387:"<p>I'll be speaking at the huge <a href="http://www.agu.org/meetings/fm09/">AGU event</a> this week for the first time.  Other OSGeo members will be there as well.  If you are around on Friday, or even nearby (downtown San Francisco) please don't hesitate to give me a buzz to meetup.  If you stop by my talk on building an open source toolkit, please be sure to say hi afterwards.</p>
+
+";}i:21;a:7:{s:5:"title";s:29:"Vancouver Open Data Catalogue";s:4:"link";s:45:"http://www.osgeo.org/tyler/vancouver_opendata";s:11:"description";s:450:"<p>City of Vancouver has started their <a href="http://data.vancouver.ca/">Beta catalogue</a> with a handful of layers and types avaialable.  Earlier in the year they increased their commitment to open data and also to consider open source solutions - so it should be an interesting year ahead.</p>
+
+<p>Thanks to Rick from our <a href="http://wiki.osgeo.org/wiki/British_Columbia_Chapter">OSGeo British Columbia chapter</a> for pointing it out.</p>
+
+";s:7:"pubdate";s:31:"Wed, 16 Sep 2009 19:57:53 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"954 at http://www.osgeo.org";s:7:"summary";s:450:"<p>City of Vancouver has started their <a href="http://data.vancouver.ca/">Beta catalogue</a> with a handful of layers and types avaialable.  Earlier in the year they increased their commitment to open data and also to consider open source solutions - so it should be an interesting year ahead.</p>
+
+<p>Thanks to Rick from our <a href="http://wiki.osgeo.org/wiki/British_Columbia_Chapter">OSGeo British Columbia chapter</a> for pointing it out.</p>
+
+";}i:22;a:7:{s:5:"title";s:14:"Summer meetups";s:4:"link";s:46:"http://www.osgeo.org/tyler/2009/summer_meetups";s:11:"description";s:1241:"<p>Last week I had the pleasure of attending one day of <a href="http://geowebconference.com">GeoWeb</a> - always a great place to connect with several OSGeo members and also to introduce OSGeo to potential new ones.  The night before we held a meeting of our provincial OSGeo-BC chapter and had a record turnout of almost 30 people!  I met many new people who are already avid open source users and am following up with several to get case studies about their work.</p>
+
+<p>Next week I deliver a talk at the <a href="http://mil-oss.org/">Mil-OSS</a> event in Atlanta.  As many know, acquiring open source software in government doesn't have a reputation of being easy.  Working group meetings like this have helped to raise the profile, importance and viability of OSS in various sectors within the US government.  We have enough talks to even have a geospatial stream.</p>
+
+<p>Later in the week I'll be at <a href="http://www.wherecamp5280.org/">WhereCamp5280</a> in Denver.  I'm looking forward to catching up with many different attendees and hearing their thoughts, stories and ideas.</p>
+
+<p>If you are going to be at either of these events and would like to meet please don't hesitate to drop me a note (tmitchell at osgeo.org).</p>
+
+";s:7:"pubdate";s:31:"Thu, 06 Aug 2009 01:29:18 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"941 at http://www.osgeo.org";s:7:"summary";s:1241:"<p>Last week I had the pleasure of attending one day of <a href="http://geowebconference.com">GeoWeb</a> - always a great place to connect with several OSGeo members and also to introduce OSGeo to potential new ones.  The night before we held a meeting of our provincial OSGeo-BC chapter and had a record turnout of almost 30 people!  I met many new people who are already avid open source users and am following up with several to get case studies about their work.</p>
+
+<p>Next week I deliver a talk at the <a href="http://mil-oss.org/">Mil-OSS</a> event in Atlanta.  As many know, acquiring open source software in government doesn't have a reputation of being easy.  Working group meetings like this have helped to raise the profile, importance and viability of OSS in various sectors within the US government.  We have enough talks to even have a geospatial stream.</p>
+
+<p>Later in the week I'll be at <a href="http://www.wherecamp5280.org/">WhereCamp5280</a> in Denver.  I'm looking forward to catching up with many different attendees and hearing their thoughts, stories and ideas.</p>
+
+<p>If you are going to be at either of these events and would like to meet please don't hesitate to drop me a note (tmitchell at osgeo.org).</p>
+
+";}i:23;a:7:{s:5:"title";s:25:"Some OSGeo sites are down";s:4:"link";s:50:"http://www.osgeo.org/tyler/2009/site_down_aug_2009";s:11:"description";s:391:"<p>Starting earlier today one of our servers had some trouble and this is affecting a few different project websites.  Some projects are switching their DNS over to using a temporary site in the meantime.  <a href="http://www.osgeo.org" title="www.osgeo.org">www.osgeo.org</a> and wiki.osgeo.org are all up and running but several others (e.g. qgis.osgeo.org, GRASS, etc.) are affected.</p>
+";s:7:"pubdate";s:31:"Wed, 05 Aug 2009 05:35:41 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"940 at http://www.osgeo.org";s:7:"summary";s:391:"<p>Starting earlier today one of our servers had some trouble and this is affecting a few different project websites.  Some projects are switching their DNS over to using a temporary site in the meantime.  <a href="http://www.osgeo.org" title="www.osgeo.org">www.osgeo.org</a> and wiki.osgeo.org are all up and running but several others (e.g. qgis.osgeo.org, GRASS, etc.) are affected.</p>
+";}i:24;a:7:{s:5:"title";s:51:"Announcements, News and Service Providers Directory";s:4:"link";s:49:"http://www.osgeo.org/tyler/2009/announcements-etc";s:11:"description";s:1434:"
+<h2 id="toc0">Announcements, News</h2>
+<p>Just a reminder to everyone that may have newsworthy items to share, we have a process available that posts news items to our <a href="http://www.osgeo.org">www.osgeo.org</a> website, into a news RSS feed and gets sent to our announcement only email list (~1000 subscribers).</p>
+
+<p>For instructions on posting news items, please see:<br />
+<ul>
+    <li> <a href="http://www.osgeo.org/content/news/submit_news.html">http://www.osgeo.org/content/news/submit_news.html</a></li>
+</ul>
+
+</p>
+
+<p>If in doubt about the applicability of your announcement, send it anyway and ask for an opinion.</p>
+
+
+<h2 id="toc1">OSGeo Service Provider Directory</h2>
+<br />
+This is also a reminder to Service Providers, those who provide service (commercial or otherwise) for open source geospatial applications, that we have a directory available for your organisation to be highlighted in.  With over 140 entries so far, the directory covers 30 countries, over 20 languages and 23 different software projects.<ul>
+    <li> Search the directory: <a href="http://www.osgeo.org/search_profile">http://www.osgeo.org/search_profile</a></li>
+    <li> Add your own entry: <a href="http://www.osgeo.org/spd_help">http://www.osgeo.org/spd_help</a></li>
+</ul>
+
+<p>I look forward to hearing more about your news and seeing your group listed in our directory!</p>
+
+<p>Tyler Mitchell<br />
+Executive Director, OSGeo</p>
+
+";s:7:"pubdate";s:31:"Mon, 27 Jul 2009 23:51:43 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"936 at http://www.osgeo.org";s:7:"summary";s:1434:"
+<h2 id="toc0">Announcements, News</h2>
+<p>Just a reminder to everyone that may have newsworthy items to share, we have a process available that posts news items to our <a href="http://www.osgeo.org">www.osgeo.org</a> website, into a news RSS feed and gets sent to our announcement only email list (~1000 subscribers).</p>
+
+<p>For instructions on posting news items, please see:<br />
+<ul>
+    <li> <a href="http://www.osgeo.org/content/news/submit_news.html">http://www.osgeo.org/content/news/submit_news.html</a></li>
+</ul>
+
+</p>
+
+<p>If in doubt about the applicability of your announcement, send it anyway and ask for an opinion.</p>
+
+
+<h2 id="toc1">OSGeo Service Provider Directory</h2>
+<br />
+This is also a reminder to Service Providers, those who provide service (commercial or otherwise) for open source geospatial applications, that we have a directory available for your organisation to be highlighted in.  With over 140 entries so far, the directory covers 30 countries, over 20 languages and 23 different software projects.<ul>
+    <li> Search the directory: <a href="http://www.osgeo.org/search_profile">http://www.osgeo.org/search_profile</a></li>
+    <li> Add your own entry: <a href="http://www.osgeo.org/spd_help">http://www.osgeo.org/spd_help</a></li>
+</ul>
+
+<p>I look forward to hearing more about your news and seeing your group listed in our directory!</p>
+
+<p>Tyler Mitchell<br />
+Executive Director, OSGeo</p>
+
+";}i:25;a:7:{s:5:"title";s:24:"Another annual report...";s:4:"link";s:50:"http://www.osgeo.org/tyler/2009/2008_annual_report";s:11:"description";s:700:"<p>Approximately 49 authors, 57 articles, 24,000 words later we have a comprehensive report of OSGeo activities around the world:</p>
+
+<ul>
+    <li> <a href="http://www.osgeo.org/annual_report_2008">http://www.osgeo.org/annual_report_2008</a></li>
+</ul>
+
+<p>Thank you for the writers and sponsors who helped make this possible.</p>
+
+<p>Enjoy!</p>
+
+<p><img src="http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png" alt="http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png" title="http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png" /><!-- http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png --></p>
+
+";s:7:"pubdate";s:31:"Wed, 15 Jul 2009 23:16:50 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"922 at http://www.osgeo.org";s:7:"summary";s:700:"<p>Approximately 49 authors, 57 articles, 24,000 words later we have a comprehensive report of OSGeo activities around the world:</p>
+
+<ul>
+    <li> <a href="http://www.osgeo.org/annual_report_2008">http://www.osgeo.org/annual_report_2008</a></li>
+</ul>
+
+<p>Thank you for the writers and sponsors who helped make this possible.</p>
+
+<p>Enjoy!</p>
+
+<p><img src="http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png" alt="http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png" title="http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png" /><!-- http://svn.osgeo.org/osgeo/journal/volume_5/en-us/graphics/cover_preview.png --></p>
+
+";}i:26;a:7:{s:5:"title";s:15:"OSGIS UK meetup";s:4:"link";s:42:"http://www.osgeo.org/tyler/2009/nottingham";s:11:"description";s:4071:"<p>I've just got back from a trip to the UK and Italy last week for the <a href="http://cgs.nottingham.ac.uk/~osgis/os_home.html">OSGIS event</a> and the <a href="http://wiki.osgeo.org/wiki/OSGeo_Hacking_Event_2009">OSGeo Hacking Event</a>.  It was a great time of connecting with so many people that it exceeded my expectations.</p>
+
+<p>Before heading up to Nottingham I was able to meet up with Martin Daly from Cadcorp (a GDAL/OGR sponsor) in London.  We hadn't met face to face before, so I was glad to get a firsthand chance to see their SIS GIS Desktop product in action.  Our very own Mateusz also works there so it was treat to catch up with him as well.  Of course he couldn't resist going to Nottingham too and overworking his camera - <a href="http://www.flickr.com/photos/mloskot/sets/72157620410984670/">his flickr feed</a> is always helpful after an event :)</p>
+
+<p>From the word go, Suchith Anand, Mike Jackson and the rest of the University of Nottingham's <a href="http://www.nottingham.ac.uk/cgs/">Centre for Geospatial Science</a> crew had us hopping.  I didn't realise it was possible to pack so much into a single day event!  Thank you for the opportunity to deliver a keynote there and for lining up so many good speakers and people to meet with the following day as well.  Three cheers!  I'm sure next year will be even better.</p>
+
+<p><img src="http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg" alt="http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg" title="http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg" /><!-- http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg --></p>
+
+<p>It was a truly international event with close to 20 different countries represented.  It was really good to catch up with many of you from all over Europe, I'll be going through my notes this week, but still feel free to drop me if you remember anything in particular we should pursue together.</p>
+
+<p>One recurring theme of interest from several groups and and individuals, was the interest to partner with OSGeo to write case studies relating to their domain.  I'm really looking forward to following up on these.  If you want to help write, please let me know.</p>
+
+<p>The OSGeo UK Chapter held a meeting as well, with <a href="http://www.archaeogeek.com/blog/">Jo Cook</a> leading the charge.  It's always fascinating to see how different each chapter is - each with their own interests, strengths and local challenges.  This was only the second time they met...sort of.  Last year there were less than a dozen who met up to discuss the idea of forming a chapter.  This year it was more like 50 or more people with broad interest from around the UK.  Coming from a Canadian, it might seem strange to say that the UK chapter is spread out over large distances, but it is large enough that some more regional local groups are likely to pop up.  There were contingents from <a href="http://wiki.osgeo.org/wiki/Scotland">Scotland</a> and Wales talking about meeting and I know there are some Irish interested as well.</p>
+
+<p>They have high hopes, so if you are the UK, <a href="http://lists.osgeo.org/mailman/listinfo/uk">join their list</a> and find a good reason to get together and chat.</p>
+
+<p><img src="http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg" alt="http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg" title="http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg" /><!-- http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg --> <br />
+<img src="http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg" alt="http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg" title="http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg" /><!-- http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg --></p>
+
+<p>(Photos from <a href="http://www.flickr.com/photos/mloskot/sets/72157620410984670/">mlsoskot's photostream</a> under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en_CA">under these terms</a> - good job Mateusz!)</p>
+
+";s:7:"pubdate";s:31:"Mon, 29 Jun 2009 22:54:18 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"909 at http://www.osgeo.org";s:7:"summary";s:4071:"<p>I've just got back from a trip to the UK and Italy last week for the <a href="http://cgs.nottingham.ac.uk/~osgis/os_home.html">OSGIS event</a> and the <a href="http://wiki.osgeo.org/wiki/OSGeo_Hacking_Event_2009">OSGeo Hacking Event</a>.  It was a great time of connecting with so many people that it exceeded my expectations.</p>
+
+<p>Before heading up to Nottingham I was able to meet up with Martin Daly from Cadcorp (a GDAL/OGR sponsor) in London.  We hadn't met face to face before, so I was glad to get a firsthand chance to see their SIS GIS Desktop product in action.  Our very own Mateusz also works there so it was treat to catch up with him as well.  Of course he couldn't resist going to Nottingham too and overworking his camera - <a href="http://www.flickr.com/photos/mloskot/sets/72157620410984670/">his flickr feed</a> is always helpful after an event :)</p>
+
+<p>From the word go, Suchith Anand, Mike Jackson and the rest of the University of Nottingham's <a href="http://www.nottingham.ac.uk/cgs/">Centre for Geospatial Science</a> crew had us hopping.  I didn't realise it was possible to pack so much into a single day event!  Thank you for the opportunity to deliver a keynote there and for lining up so many good speakers and people to meet with the following day as well.  Three cheers!  I'm sure next year will be even better.</p>
+
+<p><img src="http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg" alt="http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg" title="http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg" /><!-- http://farm3.static.flickr.com/2468/3654724029_8a6a5a9ee6.jpg --></p>
+
+<p>It was a truly international event with close to 20 different countries represented.  It was really good to catch up with many of you from all over Europe, I'll be going through my notes this week, but still feel free to drop me if you remember anything in particular we should pursue together.</p>
+
+<p>One recurring theme of interest from several groups and and individuals, was the interest to partner with OSGeo to write case studies relating to their domain.  I'm really looking forward to following up on these.  If you want to help write, please let me know.</p>
+
+<p>The OSGeo UK Chapter held a meeting as well, with <a href="http://www.archaeogeek.com/blog/">Jo Cook</a> leading the charge.  It's always fascinating to see how different each chapter is - each with their own interests, strengths and local challenges.  This was only the second time they met...sort of.  Last year there were less than a dozen who met up to discuss the idea of forming a chapter.  This year it was more like 50 or more people with broad interest from around the UK.  Coming from a Canadian, it might seem strange to say that the UK chapter is spread out over large distances, but it is large enough that some more regional local groups are likely to pop up.  There were contingents from <a href="http://wiki.osgeo.org/wiki/Scotland">Scotland</a> and Wales talking about meeting and I know there are some Irish interested as well.</p>
+
+<p>They have high hopes, so if you are the UK, <a href="http://lists.osgeo.org/mailman/listinfo/uk">join their list</a> and find a good reason to get together and chat.</p>
+
+<p><img src="http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg" alt="http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg" title="http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg" /><!-- http://farm4.static.flickr.com/3367/3654556927_386ac70d49.jpg --> <br />
+<img src="http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg" alt="http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg" title="http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg" /><!-- http://farm4.static.flickr.com/3551/3654544713_f4e6805fe9.jpg --></p>
+
+<p>(Photos from <a href="http://www.flickr.com/photos/mloskot/sets/72157620410984670/">mlsoskot's photostream</a> under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en_CA">under these terms</a> - good job Mateusz!)</p>
+
+";}i:27;a:7:{s:5:"title";s:30:"New Brochures & A Recent Event";s:4:"link";s:43:"http://www.osgeo.org/tyler/brochure_aag2009";s:11:"description";s:1763:"<p>I've been working on a Marketing project to complete a new brochure and now it is finished.  There are some more types of material being developed as well, some are templates, others are for equipping an exhibit/booth/table at an event.  The end goal is to have a set package of material that a local chapter or a sponsoring organisation can order/ship to represent OSGeo at an event.
+</p><p>
+Here's a photo showing part of the great looking table and banner gear from a <a href="http://wiki.osgeo.org/wiki/AAG_2009">recent event...</a>
+</p><p>
+
+<img src="http://wiki.osgeo.org/images/7/7b/Booth1.jpg"/>
+
+</p><p>
+And the main brochure is in an embedded viewer below, but if that doesn't work, you can download the vertical bi-fold brochure <a href="http://svn.osgeo.org/osgeo/marketing/brochures/draft_2009/OSGeo_Brochure_1_flip.pdf">here</a> in raw PDF.
+</p>
+<div><embed src="http://static.issuu.com/webembed/viewers/style1/v1/IssuuViewer.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" quality="high" scale="noscale" salign="l" flashvars="mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Flight%2Flayout.xml&amp;documentId=090402205956-a3226d1172ea45cea7f9ab2c2153584d&amp;docName=brochure_flip&amp;username=spatialguru&amp;loadingInfoText=OSGeo%20Brochure&amp;et=1239837968302&amp;er=65" style="width:400px;height:600px" name="flashticker" align="middle"/><div style="width:400px;text-align:left;"><a href="http://issuu.com/spatialguru/docs/brochure_flip?mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Flight%2Flayout.xml" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=osgeo" target="_blank">More osgeo</a></div></div>
+
+";s:7:"pubdate";s:31:"Thu, 16 Apr 2009 03:27:31 +0400";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"887 at http://www.osgeo.org";s:7:"summary";s:1763:"<p>I've been working on a Marketing project to complete a new brochure and now it is finished.  There are some more types of material being developed as well, some are templates, others are for equipping an exhibit/booth/table at an event.  The end goal is to have a set package of material that a local chapter or a sponsoring organisation can order/ship to represent OSGeo at an event.
+</p><p>
+Here's a photo showing part of the great looking table and banner gear from a <a href="http://wiki.osgeo.org/wiki/AAG_2009">recent event...</a>
+</p><p>
+
+<img src="http://wiki.osgeo.org/images/7/7b/Booth1.jpg"/>
+
+</p><p>
+And the main brochure is in an embedded viewer below, but if that doesn't work, you can download the vertical bi-fold brochure <a href="http://svn.osgeo.org/osgeo/marketing/brochures/draft_2009/OSGeo_Brochure_1_flip.pdf">here</a> in raw PDF.
+</p>
+<div><embed src="http://static.issuu.com/webembed/viewers/style1/v1/IssuuViewer.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" quality="high" scale="noscale" salign="l" flashvars="mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Flight%2Flayout.xml&amp;documentId=090402205956-a3226d1172ea45cea7f9ab2c2153584d&amp;docName=brochure_flip&amp;username=spatialguru&amp;loadingInfoText=OSGeo%20Brochure&amp;et=1239837968302&amp;er=65" style="width:400px;height:600px" name="flashticker" align="middle"/><div style="width:400px;text-align:left;"><a href="http://issuu.com/spatialguru/docs/brochure_flip?mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Flight%2Flayout.xml" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=osgeo" target="_blank">More osgeo</a></div></div>
+
+";}i:28;a:7:{s:5:"title";s:12:"Brief Update";s:4:"link";s:42:"http://www.osgeo.org/tyler/update/2009/mar";s:11:"description";s:5976:"<p>Hi everybody, here is just a brief update of some of the things on my radar at the moment.  If you see an opportunity to work together on any of them, or if you want to find a reason to get together, drop me a note.</p>
+
+
+<h2 id="toc2">Journal and Annual Report</h2>
+<br />
+As many of you already know, the <a href="http://wiki.osgeo.org/wiki/Annual_Report_2008">OSGeo Annual Report compilation</a> is underway.  With a few days left to get reports in, I hope you will pester others in your project steering committee or local chapter to submit something - even something very brief.  OSGeo has been pretty light on reporting requirements, so this annual requirement shouldn't be too much effort.  In fact, I think it very beneficial for our groups to take a moment to reflect and consider how they've progressed during 2008. When compilation is complete, then it will be rolled together with a few other articles into OSGeo Journal Volume 5.  Watch for it later in the month.  <p>If you have extra time on your hands and want to help edit upcoming issues of the journal - join the <a href="http://lists.osgeo.org/mailman/listinfo/newsletter">Journal mailing list</a> and introduce yourself.  We're moving to a powerful online management system called the <a href="http://pkp.sfu.ca/ojs">Open Journal System</a>.  It's taking some getting used to, but will really help make it possible to undertake peer review and easier submission/management between different editors.</p>
+
+
+<h2 id="toc3">Marketing</h2>
+<br />
+As noted in previous posts we have several projects on the go.  The one that's mostly on my plate is to oversee getting design work completed for some brochures, templates and other items that are in high demand by local chapters and events worldwide.  The aim is to have reusable file formats and ones that are easily edited or updated in the future.  Watch for more on this in the upcoming month.<p>This month several of us had the opportunity to contribute to the <a href="http://www.osbr.ca/ojs/index.php/osbr/issue/view/83">Open Source Business Resource</a> Journal.  Edited by Dave McIlhagga, including contributions by myself, Paul Ramsey, Mark Lucas, Scott Bortman, Andrew Ross, Haris Kurtagic and Geoff Zeiss.  Good work guys and thank you to the OSBR for the great opportunity.</p>
+
+<p>OSGeo will have a booth at the (huge) upcoming <a href="http://aag.org/annualmeetings/2009/index.htm">American Association of Geographers</a> (AAG) event 22-26 March.  Thanks to Alex Mandel for taking the lead on organising this with his colleagues at UC Davis.  Also to the other volunteers who are helping speak and maintain our presence there.</p>
+
+<p>Paul Ramsey is also helping to organise our presence at <a href="http://en.oreilly.com/where2009">O'Reilly's Where 2.0 event</a> 19-21 May.  There is always a stellar line-up of folks who are friends of OSGeo and our relatives.  I'm not sure if I'll be attending, but if you are going to be then you might want to mention it on the <a href="http://lists.osgeo.org/mailman/listinfo/discuss">OSGeo Discuss list</a> to see who else is going.</p>
+
+
+<h3 id="toc4">Supporting Your Event</h3>
+<br />
+I'm always wary of giving a false sense of hope, but if you know of a critical event in your region or domain that OSGeo could make a splash at in the future - please join the <a href="http://lists.osgeo.org/mailman/listinfo/marketing">Marketing mailing list</a> and introduce your idea.  We don't really sponsor events, but we do expect to help with a few different ones - usually not through sponsoring but through exhibiting, speaking or generally helping spread OSGeo project information.<p>One warning though, be prepared to help organise or develop the idea if you really want to see it happen.  The Marketing group is focused this year on developing the material mentioned above, and making sure this gets into the hands of as many people as possible who will be at events around the world.</p>
+
+
+<h2 id="toc5">Sponsorship</h2>
+<br />
+This is the time of year where several of our esteemed <a href="http://osgeo.org">OSGeo Sponsors</a> come up for renewal, so I've had my head in the books a bit more than usual this past month.  On the topic of sponsors, if you ever have any suggestions for sponsors that are a good fit for OSGeo (or any of the projects that are underway), I'd love to hear about it.  We can chat about it, or you can drop me an email to get the ball rolling.
+<h2 id="toc6">Events and Meetings</h2>
+<br />
+In a few months it will be about one year of reduced travel at my end.  My wife had a nasty knee injury, but her surgery has worked out great.  Now I'm starting to get any speaking opportunities and meetings lined up for later in the spring/summer.  <br />
+<ul>
+    <li> The next event I am planning to attend is the <strong><a href="http://www.opensourcegis.org.uk/">First Open Source GIS UK Conference</a></strong> in Nottingham, June 22nd.  I have several opportunities for talks and meetings that are starting to line up.  If you are nearby (e.g. anywhere in the UK) and would like to meet, please let me know, I'm always keen to see what people are doing with OSGeo software, local chapters, education and more.</li>
+    <li> <strong><a href="http://geowebconference.org/">GeoWeb Vancouver</a></strong> is a great place to meet up with several OSGeo people.  I expect to attend there in July and look forward to seeing others.</li>
+    <li> <strong><a href="http://foss4g2009.org">FOSS4G Sydney</a></strong> of course... 20-23 Oct.  The marketing group is just starting to talk about preparing for an OSGeo booth there.  If you are interested in helping coordinate our exhibition floor presence, get a front and centre visible position, etc... there is an opportunity to help.  Prior experience with such an effort would be ideal.</li>
+</ul>
+
+<p>What else is on your agenda that I should attend or could help with in some way?  I'm sure I've forgotten more than I remember!</p>
+
+";s:7:"pubdate";s:31:"Wed, 04 Mar 2009 09:07:37 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"866 at http://www.osgeo.org";s:7:"summary";s:5976:"<p>Hi everybody, here is just a brief update of some of the things on my radar at the moment.  If you see an opportunity to work together on any of them, or if you want to find a reason to get together, drop me a note.</p>
+
+
+<h2 id="toc2">Journal and Annual Report</h2>
+<br />
+As many of you already know, the <a href="http://wiki.osgeo.org/wiki/Annual_Report_2008">OSGeo Annual Report compilation</a> is underway.  With a few days left to get reports in, I hope you will pester others in your project steering committee or local chapter to submit something - even something very brief.  OSGeo has been pretty light on reporting requirements, so this annual requirement shouldn't be too much effort.  In fact, I think it very beneficial for our groups to take a moment to reflect and consider how they've progressed during 2008. When compilation is complete, then it will be rolled together with a few other articles into OSGeo Journal Volume 5.  Watch for it later in the month.  <p>If you have extra time on your hands and want to help edit upcoming issues of the journal - join the <a href="http://lists.osgeo.org/mailman/listinfo/newsletter">Journal mailing list</a> and introduce yourself.  We're moving to a powerful online management system called the <a href="http://pkp.sfu.ca/ojs">Open Journal System</a>.  It's taking some getting used to, but will really help make it possible to undertake peer review and easier submission/management between different editors.</p>
+
+
+<h2 id="toc3">Marketing</h2>
+<br />
+As noted in previous posts we have several projects on the go.  The one that's mostly on my plate is to oversee getting design work completed for some brochures, templates and other items that are in high demand by local chapters and events worldwide.  The aim is to have reusable file formats and ones that are easily edited or updated in the future.  Watch for more on this in the upcoming month.<p>This month several of us had the opportunity to contribute to the <a href="http://www.osbr.ca/ojs/index.php/osbr/issue/view/83">Open Source Business Resource</a> Journal.  Edited by Dave McIlhagga, including contributions by myself, Paul Ramsey, Mark Lucas, Scott Bortman, Andrew Ross, Haris Kurtagic and Geoff Zeiss.  Good work guys and thank you to the OSBR for the great opportunity.</p>
+
+<p>OSGeo will have a booth at the (huge) upcoming <a href="http://aag.org/annualmeetings/2009/index.htm">American Association of Geographers</a> (AAG) event 22-26 March.  Thanks to Alex Mandel for taking the lead on organising this with his colleagues at UC Davis.  Also to the other volunteers who are helping speak and maintain our presence there.</p>
+
+<p>Paul Ramsey is also helping to organise our presence at <a href="http://en.oreilly.com/where2009">O'Reilly's Where 2.0 event</a> 19-21 May.  There is always a stellar line-up of folks who are friends of OSGeo and our relatives.  I'm not sure if I'll be attending, but if you are going to be then you might want to mention it on the <a href="http://lists.osgeo.org/mailman/listinfo/discuss">OSGeo Discuss list</a> to see who else is going.</p>
+
+
+<h3 id="toc4">Supporting Your Event</h3>
+<br />
+I'm always wary of giving a false sense of hope, but if you know of a critical event in your region or domain that OSGeo could make a splash at in the future - please join the <a href="http://lists.osgeo.org/mailman/listinfo/marketing">Marketing mailing list</a> and introduce your idea.  We don't really sponsor events, but we do expect to help with a few different ones - usually not through sponsoring but through exhibiting, speaking or generally helping spread OSGeo project information.<p>One warning though, be prepared to help organise or develop the idea if you really want to see it happen.  The Marketing group is focused this year on developing the material mentioned above, and making sure this gets into the hands of as many people as possible who will be at events around the world.</p>
+
+
+<h2 id="toc5">Sponsorship</h2>
+<br />
+This is the time of year where several of our esteemed <a href="http://osgeo.org">OSGeo Sponsors</a> come up for renewal, so I've had my head in the books a bit more than usual this past month.  On the topic of sponsors, if you ever have any suggestions for sponsors that are a good fit for OSGeo (or any of the projects that are underway), I'd love to hear about it.  We can chat about it, or you can drop me an email to get the ball rolling.
+<h2 id="toc6">Events and Meetings</h2>
+<br />
+In a few months it will be about one year of reduced travel at my end.  My wife had a nasty knee injury, but her surgery has worked out great.  Now I'm starting to get any speaking opportunities and meetings lined up for later in the spring/summer.  <br />
+<ul>
+    <li> The next event I am planning to attend is the <strong><a href="http://www.opensourcegis.org.uk/">First Open Source GIS UK Conference</a></strong> in Nottingham, June 22nd.  I have several opportunities for talks and meetings that are starting to line up.  If you are nearby (e.g. anywhere in the UK) and would like to meet, please let me know, I'm always keen to see what people are doing with OSGeo software, local chapters, education and more.</li>
+    <li> <strong><a href="http://geowebconference.org/">GeoWeb Vancouver</a></strong> is a great place to meet up with several OSGeo people.  I expect to attend there in July and look forward to seeing others.</li>
+    <li> <strong><a href="http://foss4g2009.org">FOSS4G Sydney</a></strong> of course... 20-23 Oct.  The marketing group is just starting to talk about preparing for an OSGeo booth there.  If you are interested in helping coordinate our exhibition floor presence, get a front and centre visible position, etc... there is an opportunity to help.  Prior experience with such an effort would be ideal.</li>
+</ul>
+
+<p>What else is on your agenda that I should attend or could help with in some way?  I'm sure I've forgotten more than I remember!</p>
+
+";}i:29;a:7:{s:5:"title";s:24:"Marketing Meeting Report";s:4:"link";s:42:"http://www.osgeo.org/tyler/marketing_jan09";s:11:"description";s:8274:"<p>This week there was a <a href="http://wiki.osgeo.org/wiki/Marketing_Meeting_2009.01.15">Marketing Meeting</a>.  Five of us met in IRC to discuss various items and to kick off our 2009 programme.  Here are a couple of the highlights, with a bit more background information.</p>
+
+
+<h2 id="toc7">Local Chapter Logo Usage</h2>
+<br />
+Recently a few local chapters were wondering about how they could use the OSGeo logo and customise it for their local use.  Historically, the guidelines for using the main logo have prevented alteration of the logo.  Yet there was recent work done that would allow additional text describing the logos purpose:<br />
+<img src="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png" alt="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png" title="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png" /><!-- http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png --> <img src="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png" alt="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png" title="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png" /><!-- http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png --> <img src="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png" alt="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png" title="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png" /><!-- http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png --><p>These were primarily for users and projects to stamp on their web pages to easy identification back to OSGeo.  But some local chapters are interested in doing more and taking parts of the main logo and incorporating them into their local version.   Others are only interested in changing the text under the logo so it reflects the local chapter name, for example with the Japan chapter's rendition.<br />
+<img src="http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png" alt="http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png" title="http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png" /><!-- http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png --></p>
+
+<p>At the other end of the spectrum, the Australia-New Zealand chapter has a beautiful rendition of a logo based roughly on the shape and colours of the previous OSGeo logo, though not really remixing the logo in a new way.  It's more unique than it is a remix.<br />
+<img src="http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png" alt="http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png" title="http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png" /><!-- http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png --></p>
+
+<p>There are several more interesting examples out there that bring up the main questions.  For example the FOSSGIS German group is mixing the OSGeo compass symbol into various renditions, helping to bring together elements from their past.  See <a href="http://wiki.osgeo.org/wiki/FOSSGIS_e.V._Logo_Wettbewerb">here</a>.  <br />
+<img src="http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png" alt="http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png" title="http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png" /><!-- http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png --> <img src="http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png" alt="http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png" title="http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png" /><!-- http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png --></p>
+
+<p>The question of logo usage has two faces.  First a local chapter may always have their own unique logo - there is no restriction on this specifically and local chapters are encouraged to do their own branding and to use the OSGeo logo as part of it.  The main question then is whether or not a local chapter (or project) should be allowed to use <strong>elements of the OSGeo logo</strong> and remix them for their purposes, as in the FOSSGIS example.</p>
+
+<p>The Marketing mailing list had some discussion on this <a href="http://lists.osgeo.org/pipermail/marketing/2009-January/002104.html">earlier in the month</a>.  One side of the discussion ( <a href="http://lists.osgeo.org/pipermail/marketing/2009-January/002129.html">here</a> ) gave some encouragement for loosening restrictions and several were in agreement.  The main point being that free and open use and mixing of the logo should be seen a strength to our community - people like parts of graphics then let them use it since it doesn't detract from the main usage of the local in formal contexts.</p>
+
+<p>The opposing view is centred around our <a href="http://www.osgeo.org/content/foundation/legal/trademark_guidelines.html">trademark guidelines</a> which seeks to protect the OSGeo brand from confusion and dilution.  As one of OSGeo primary brand identifiers it is argued that it should not be used lightly or modified without approval.  The core question then becomes whether OSGeo should relax the trademark guidelines or not.</p>
+
+<p>Those discussing it during our last meeting were in agreement with loosening restrictions, with the expectation that local chapters would use their logo (in whatever form) when talking about their chapter, but when referring back to OSGeo in particular the main OSGeo logo would be logical to use.  In some context it would make sense to use both logos - e.g. a news items or event poster - and would not necessarily dilute the main brand.</p>
+
+<p>Further discussion was deferred back to the list to seek a consensus view.  The main documents that would needs some attention are the trademark guidelines but also some direction for usage in the <a href="http://wiki.osgeo.org/wiki/Local_Chapter_Guidelines">local chapter guidelines</a>.</p>
+
+
+<h2 id="toc8">Assign Leads for 2009 Projects</h2>
+<br />
+The 2009 Marketing Budget approved last year identifies several of the main projects for the marketing committee.  To help ensure some progress on each item, we discussed who might be interested in helping lead/coordinate each component.  The hope here is to delegate responsibilities to members of the committee or community who would like to help see the project move along.  Then others can join with them to help were they are interested.  Everyone present at the meeting offered to take on a part:<br />
+<ul>
+    <li> Communication and Branding - next stage of branding development and design. <strong>Tyler</strong> or other who is interested</li>
+    <li> Website Redesign - co-ordinating with webcom, overseeing project with designers. <strong>Daniele</strong> with support from Cameron, Wolf, Jeroen.</li>
+    <li> Material Production - overseeing production based on above branding development. <strong>Jeroen</strong></li>
+    <li> Exhibition Pack Prototype - following status of very parts of planning, development and production.  <strong>Alex</strong> also coordinating with Tyler re #1 and #3 above.</li>
+    <li> Event Support - reaching out to identify or find upcoming event opportunities. <strong>Cameron</strong></li>
+</ul>
+
+<p>Each person will help pull together a work plan and invite others to join in, as well as give a report at the next marketing meeting.  If you are particularly interested in one area, please contact the person above or mention it on the Marketing mailing list.<br />
+<hr />
+<br />
+For more information on other items discussed during meeting, see the <a href="http://wiki.osgeo.org/wiki/Marketing_Meeting_2009.01.15">posted minutes</a>.<br />
+The next meeting is the first Thursday of February.  All are welcome to join us in IRC and participate.</p>
+
+";s:7:"pubdate";s:31:"Mon, 19 Jan 2009 20:53:37 +0300";s:2:"dc";a:1:{s:7:"creator";s:13:"TylerMitchell";}s:4:"guid";s:27:"844 at http://www.osgeo.org";s:7:"summary";s:8274:"<p>This week there was a <a href="http://wiki.osgeo.org/wiki/Marketing_Meeting_2009.01.15">Marketing Meeting</a>.  Five of us met in IRC to discuss various items and to kick off our 2009 programme.  Here are a couple of the highlights, with a bit more background information.</p>
+
+
+<h2 id="toc7">Local Chapter Logo Usage</h2>
+<br />
+Recently a few local chapters were wondering about how they could use the OSGeo logo and customise it for their local use.  Historically, the guidelines for using the main logo have prevented alteration of the logo.  Yet there was recent work done that would allow additional text describing the logos purpose:<br />
+<img src="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png" alt="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png" title="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png" /><!-- http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_project.png --> <img src="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png" alt="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png" title="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png" /><!-- http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_sustaining.png --> <img src="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png" alt="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png" title="http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png" /><!-- http://svn.osgeo.org/osgeo/marketing/logo/png24/125/OSGeo_incubation.png --><p>These were primarily for users and projects to stamp on their web pages to easy identification back to OSGeo.  But some local chapters are interested in doing more and taking parts of the main logo and incorporating them into their local version.   Others are only interested in changing the text under the logo so it reflects the local chapter name, for example with the Japan chapter's rendition.<br />
+<img src="http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png" alt="http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png" title="http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png" /><!-- http://www.osgeo.jp/wp/wp-content/themes/ambient-glo-1/images/logo.png --></p>
+
+<p>At the other end of the spectrum, the Australia-New Zealand chapter has a beautiful rendition of a logo based roughly on the shape and colours of the previous OSGeo logo, though not really remixing the logo in a new way.  It's more unique than it is a remix.<br />
+<img src="http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png" alt="http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png" title="http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png" /><!-- http://wiki.osgeo.org/images/thumb/4/4a/OSGeo_Aust_NZ_Logo.png/180px-OSGeo_Aust_NZ_Logo.png --></p>
+
+<p>There are several more interesting examples out there that bring up the main questions.  For example the FOSSGIS German group is mixing the OSGeo compass symbol into various renditions, helping to bring together elements from their past.  See <a href="http://wiki.osgeo.org/wiki/FOSSGIS_e.V._Logo_Wettbewerb">here</a>.  <br />
+<img src="http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png" alt="http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png" title="http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png" /><!-- http://wiki.osgeo.org/images/thumb/2/2c/Fossgis_draft_c.png/200px-Fossgis_draft_c.png --> <img src="http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png" alt="http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png" title="http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png" /><!-- http://wiki.osgeo.org/images/thumb/c/ca/FOSSGIS_eV_prototype.png/187px-FOSSGIS_eV_prototype.png --></p>
+
+<p>The question of logo usage has two faces.  First a local chapter may always have their own unique logo - there is no restriction on this specifically and local chapters are encouraged to do their own branding and to use the OSGeo logo as part of it.  The main question then is whether or not a local chapter (or project) should be allowed to use <strong>elements of the OSGeo logo</strong> and remix them for their purposes, as in the FOSSGIS example.</p>
+
+<p>The Marketing mailing list had some discussion on this <a href="http://lists.osgeo.org/pipermail/marketing/2009-January/002104.html">earlier in the month</a>.  One side of the discussion ( <a href="http://lists.osgeo.org/pipermail/marketing/2009-January/002129.html">here</a> ) gave some encouragement for loosening restrictions and several were in agreement.  The main point being that free and open use and mixing of the logo should be seen a strength to our community - people like parts of graphics then let them use it since it doesn't detract from the main usage of the local in formal contexts.</p>
+
+<p>The opposing view is centred around our <a href="http://www.osgeo.org/content/foundation/legal/trademark_guidelines.html">trademark guidelines</a> which seeks to protect the OSGeo brand from confusion and dilution.  As one of OSGeo primary brand identifiers it is argued that it should not be used lightly or modified without approval.  The core question then becomes whether OSGeo should relax the trademark guidelines or not.</p>
+
+<p>Those discussing it during our last meeting were in agreement with loosening restrictions, with the expectation that local chapters would use their logo (in whatever form) when talking about their chapter, but when referring back to OSGeo in particular the main OSGeo logo would be logical to use.  In some context it would make sense to use both logos - e.g. a news items or event poster - and would not necessarily dilute the main brand.</p>
+
+<p>Further discussion was deferred back to the list to seek a consensus view.  The main documents that would needs some attention are the trademark guidelines but also some direction for usage in the <a href="http://wiki.osgeo.org/wiki/Local_Chapter_Guidelines">local chapter guidelines</a>.</p>
+
+
+<h2 id="toc8">Assign Leads for 2009 Projects</h2>
+<br />
+The 2009 Marketing Budget approved last year identifies several of the main projects for the marketing committee.  To help ensure some progress on each item, we discussed who might be interested in helping lead/coordinate each component.  The hope here is to delegate responsibilities to members of the committee or community who would like to help see the project move along.  Then others can join with them to help were they are interested.  Everyone present at the meeting offered to take on a part:<br />
+<ul>
+    <li> Communication and Branding - next stage of branding development and design. <strong>Tyler</strong> or other who is interested</li>
+    <li> Website Redesign - co-ordinating with webcom, overseeing project with designers. <strong>Daniele</strong> with support from Cameron, Wolf, Jeroen.</li>
+    <li> Material Production - overseeing production based on above branding development. <strong>Jeroen</strong></li>
+    <li> Exhibition Pack Prototype - following status of very parts of planning, development and production.  <strong>Alex</strong> also coordinating with Tyler re #1 and #3 above.</li>
+    <li> Event Support - reaching out to identify or find upcoming event opportunities. <strong>Cameron</strong></li>
+</ul>
+
+<p>Each person will help pull together a work plan and invite others to join in, as well as give a report at the next marketing meeting.  If you are particularly interested in one area, please contact the person above or mention it on the Marketing mailing list.<br />
+<hr />
+<br />
+For more information on other items discussed during meeting, see the <a href="http://wiki.osgeo.org/wiki/Marketing_Meeting_2009.01.15">posted minutes</a>.<br />
+The next meeting is the first Thursday of February.  All are welcome to join us in IRC and participate.</p>
+
+";}}s:7:"channel";a:4:{s:5:"title";s:20:"TylerMitchell's blog";s:4:"link";s:26:"http://www.osgeo.org/tyler";s:8:"language";s:2:"en";s:7:"tagline";N;}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Fri, 29 Apr 2016 14:29:22 GMT
+";}

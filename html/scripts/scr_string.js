@@ -1,0 +1,1 @@
+function checkstring(inputstring){var ok;ok="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";var i;for(i=0;i<inputstring.length;i++){if(ok.indexOf(inputstring.charAt(i))<0){return false}else{}}return true}

@@ -1,0 +1,1373 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:10:{s:5:"title";s:72:"Dedicated servers in New Zealand from $168/m Redundant Network 1000 Mb/s";s:4:"link";s:121:"http://forums.devshed.com/web-hosting-offers/978833-dedicated-servers-zealand-168-redundant-network-1000-mb-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 13:31:20 GMT";s:11:"description";s:401:"MaxiDed provided secure * dedicated servers in New Zealand* (https://maxided.com/dedicated-servers/new+zealand) 
+ 
+*Location:* New Zealand 
+*Speed Test Files:* Private Network - more freedom of content and speech Offshore DC 202.27.212.32 
+*Delivery time:* Unix/Linux-based OS  24 hours. Windows-based OS  48 hours. 
+*Allowed:* adult, erotic, movies, doorways, dating, vpn, blogs 
+ 
+*Best cheap...";s:7:"content";a:1:{s:7:"encoded";s:1232:"<div>MaxiDed provided secure <a href="https://maxided.com/dedicated-servers/new+zealand" target="_blank"><b> dedicated servers in New Zealand</b></a><br />
+<br />
+<b>Location:</b> New Zealand<br />
+<b>Speed Test Files:</b> Private Network - more freedom of content and speech Offshore DC 202.27.212.32<br />
+<b>Delivery time:</b> Unix/Linux-based OS  24 hours. Windows-based OS  48 hours.<br />
+<b>Allowed:</b> adult, erotic, movies, doorways, dating, vpn, blogs<br />
+<br />
+<b>Best cheap deal:</b><br />
+Processor: Intel Core i3 3250x<br />
+RAM: 4 GB<br />
+Harddisk: 500GB<br />
+IP: 1 IPv4 inlcuded<br />
+Bandwidth: Redundant Network 1000 Mb/s<br />
+<br />
+<a href="https://maxided.com/configurator/server_id/266443" target="_blank">Order Now 168 USD per month</a><br />
+<br />
+<b>Enter promo code: <u>55f44ddb2</u> 5% Discount!</b><br />
+<br />
+If you have any question, feel free to contact us: <a href="https://maxided.com/support" target="_blank">https://maxided.com/support</a><br />
+<br />
+Thank you,<br />
+MaxiDed team<br />
+<br />
+__________________<br />
+<a href="https://maxided.com/for_providers" target="_blank">Our offer for datacenter and providers</a><br />
+Skype: maxided.com</div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:7:"MaxiDed";}s:4:"guid";s:116:"http://forums.devshed.com/web-hosting-offers-100/dedicated-servers-zealand-168-redundant-network-1000-mb-978833.html";s:7:"summary";s:401:"MaxiDed provided secure * dedicated servers in New Zealand* (https://maxided.com/dedicated-servers/new+zealand) 
+ 
+*Location:* New Zealand 
+*Speed Test Files:* Private Network - more freedom of content and speech Offshore DC 202.27.212.32 
+*Delivery time:* Unix/Linux-based OS  24 hours. Windows-based OS  48 hours. 
+*Allowed:* adult, erotic, movies, doorways, dating, vpn, blogs 
+ 
+*Best cheap...";s:12:"atom_content";s:1232:"<div>MaxiDed provided secure <a href="https://maxided.com/dedicated-servers/new+zealand" target="_blank"><b> dedicated servers in New Zealand</b></a><br />
+<br />
+<b>Location:</b> New Zealand<br />
+<b>Speed Test Files:</b> Private Network - more freedom of content and speech Offshore DC 202.27.212.32<br />
+<b>Delivery time:</b> Unix/Linux-based OS  24 hours. Windows-based OS  48 hours.<br />
+<b>Allowed:</b> adult, erotic, movies, doorways, dating, vpn, blogs<br />
+<br />
+<b>Best cheap deal:</b><br />
+Processor: Intel Core i3 3250x<br />
+RAM: 4 GB<br />
+Harddisk: 500GB<br />
+IP: 1 IPv4 inlcuded<br />
+Bandwidth: Redundant Network 1000 Mb/s<br />
+<br />
+<a href="https://maxided.com/configurator/server_id/266443" target="_blank">Order Now 168 USD per month</a><br />
+<br />
+<b>Enter promo code: <u>55f44ddb2</u> 5% Discount!</b><br />
+<br />
+If you have any question, feel free to contact us: <a href="https://maxided.com/support" target="_blank">https://maxided.com/support</a><br />
+<br />
+Thank you,<br />
+MaxiDed team<br />
+<br />
+__________________<br />
+<a href="https://maxided.com/for_providers" target="_blank">Our offer for datacenter and providers</a><br />
+Skype: maxided.com</div>
+
+";}i:1;a:10:{s:5:"title";s:40:"Converting a mssql procedure to postgres";s:4:"link";s:98:"http://forums.devshed.com/postgresql-help/978832-converting-mssql-procedure-postgres-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 12:33:50 GMT";s:11:"description";s:323:"Hi I am migrating from mssql server to Postgres, so kindly can anyone please help me with what are things I need to change 
+when modifying a stored procedure from mssql to postgres, here I am giving my mssql procedure for reference. 
+ 
+-------------------------------- 
+ 
+SET ANSI_NULLS ON 
+GO 
+SET QUOTED_IDENTIFIER ON 
+GO";s:7:"content";a:1:{s:7:"encoded";s:1511:"<div>Hi I am migrating from mssql server to Postgres, so kindly can anyone please help me with what are things I need to change<br />
+when modifying a stored procedure from mssql to postgres, here I am giving my mssql procedure for reference.<br />
+<br />
+--------------------------------<br />
+<br />
+SET ANSI_NULLS ON<br />
+GO<br />
+SET QUOTED_IDENTIFIER ON<br />
+GO<br />
+<br />
+  <br />
+--[Validate_User] 'Mudassar', '12345'  <br />
+<br />
+ALTER  PROCEDURE [dbo].[Validate_User]  <br />
+ @Username NVARCHAR(MAX),  <br />
+ @Password NVARCHAR(MAX)  <br />
+AS  <br />
+BEGIN  <br />
+ SET NOCOUNT ON;  <br />
+ DECLARE @UserId INT, @LastLoginDate DATETIME, @RoleId INT  <br />
+   <br />
+ SELECT @UserId = UserId, @LastLoginDate = LastLoginDate, @RoleId = RoleId   <br />
+ FROM tblUsers WHERE Username = @Username AND [Password] = @Password  <br />
+   <br />
+ IF @UserId IS NOT NULL  <br />
+ BEGIN  <br />
+  IF NOT EXISTS(SELECT UserId FROM tblUserActivation WHERE UserId = @UserId)  <br />
+  BEGIN  <br />
+   UPDATE tblUsers  <br />
+   SET LastLoginDate =  GETDATE()  <br />
+   WHERE UserId = @UserId  <br />
+     <br />
+   SELECT @UserId [UserId],   <br />
+     (SELECT RoleName FROM Roles   <br />
+      WHERE RoleId = @RoleId) [Roles] -- User Valid  <br />
+  END  <br />
+  ELSE  <br />
+  BEGIN  <br />
+   SELECT -2 -- User not activated.  <br />
+  END  <br />
+ END  <br />
+ ELSE  <br />
+ BEGIN  <br />
+  SELECT -1 -- User invalid.  <br />
+ END  <br />
+END</div>
+
+";}s:8:"category";s:15:"PostgreSQL Help";s:2:"dc";a:1:{s:7:"creator";s:15:"kamesh.maruvada";}s:4:"guid";s:92:"http://forums.devshed.com/postgresql-help-21/converting-mssql-procedure-postgres-978832.html";s:7:"summary";s:323:"Hi I am migrating from mssql server to Postgres, so kindly can anyone please help me with what are things I need to change 
+when modifying a stored procedure from mssql to postgres, here I am giving my mssql procedure for reference. 
+ 
+-------------------------------- 
+ 
+SET ANSI_NULLS ON 
+GO 
+SET QUOTED_IDENTIFIER ON 
+GO";s:12:"atom_content";s:1511:"<div>Hi I am migrating from mssql server to Postgres, so kindly can anyone please help me with what are things I need to change<br />
+when modifying a stored procedure from mssql to postgres, here I am giving my mssql procedure for reference.<br />
+<br />
+--------------------------------<br />
+<br />
+SET ANSI_NULLS ON<br />
+GO<br />
+SET QUOTED_IDENTIFIER ON<br />
+GO<br />
+<br />
+  <br />
+--[Validate_User] 'Mudassar', '12345'  <br />
+<br />
+ALTER  PROCEDURE [dbo].[Validate_User]  <br />
+ @Username NVARCHAR(MAX),  <br />
+ @Password NVARCHAR(MAX)  <br />
+AS  <br />
+BEGIN  <br />
+ SET NOCOUNT ON;  <br />
+ DECLARE @UserId INT, @LastLoginDate DATETIME, @RoleId INT  <br />
+   <br />
+ SELECT @UserId = UserId, @LastLoginDate = LastLoginDate, @RoleId = RoleId   <br />
+ FROM tblUsers WHERE Username = @Username AND [Password] = @Password  <br />
+   <br />
+ IF @UserId IS NOT NULL  <br />
+ BEGIN  <br />
+  IF NOT EXISTS(SELECT UserId FROM tblUserActivation WHERE UserId = @UserId)  <br />
+  BEGIN  <br />
+   UPDATE tblUsers  <br />
+   SET LastLoginDate =  GETDATE()  <br />
+   WHERE UserId = @UserId  <br />
+     <br />
+   SELECT @UserId [UserId],   <br />
+     (SELECT RoleName FROM Roles   <br />
+      WHERE RoleId = @RoleId) [Roles] -- User Valid  <br />
+  END  <br />
+  ELSE  <br />
+  BEGIN  <br />
+   SELECT -2 -- User not activated.  <br />
+  END  <br />
+ END  <br />
+ ELSE  <br />
+ BEGIN  <br />
+  SELECT -1 -- User invalid.  <br />
+ END  <br />
+END</div>
+
+";}i:2;a:10:{s:5:"title";s:84:"[MilesWeb]SSD VPS Hosting in India @ $4 | 12 Core CPU | 500GB SSD Storage | 32GB RAM";s:4:"link";s:137:"http://forums.devshed.com/web-hosting-offers/978831-milesweb-ssd-vps-hosting-india-4-12-core-cpu-500gb-ssd-storage-32gb-ram-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 11:29:00 GMT";s:11:"description";s:397:"Get the stability and flexibility of private server hosting sans the costs and its complexities. VPS hosting is an intermediate solution between shared hosting and dedicated server, where-in the actual hardware server is virtually partitioned into multiple isolated virtual servers. *MilesWeb* (https://www.milesweb.com/) VPS is an ideal solution for those seeking a robust service, faster page...";s:7:"content";a:1:{s:7:"encoded";s:5596:"<div>Get the stability and flexibility of private server hosting sans the costs and its complexities. VPS hosting is an intermediate solution between shared hosting and dedicated server, where-in the actual hardware server is virtually partitioned into multiple isolated virtual servers. <a href="https://www.milesweb.com/" target="_blank"><b>MilesWeb</b></a> VPS is an ideal solution for those seeking a robust service, faster page loads and stability at a fair price.<br />
+<br />
+<b><div class="bbcode_container">
+	<div class="bbcode_description">Quote:</div>
+	<div class="bbcode_quote printable">
+		<hr />
+		
+			Buy any VPS hosting plan and get <font color="#FF0000"><b>25% discount</b></font> on first payment. Use the coupon code<b><font color="#FF0000"> VSAVE</font></b> during checkout.
+			
+		<hr />
+	</div>
+</div></b> <br />
+Below is the list of <b>VPS hosting</b> plans offered by <b>MilesWeb</b>, <br />
+<br />
+<b>EV1 VPS Plan:</b><br />
+<br />
+<ul><li style="">1 Core CPU</li><li style="">20 GB SSD Storage</li><li style="">1 GB RAM</li><li style="">500 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $4 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=253&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV2 VPS Plan:</b><br />
+<br />
+<ul><li style="">1 Core CPU</li><li style="">30 GB SSD Storage</li><li style="">2 GB RAM</li><li style="">750 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $8 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=254&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV3 VPS Plan:</b><br />
+<br />
+<ul><li style="">2 Core CPU</li><li style="">50 GB SSD Storage</li><li style="">4 GB RAM</li><li style="">1000 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $16 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=255&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV4 VPS Plan:</b><br />
+<br />
+<ul><li style="">4 Core CPU</li><li style="">100 GB SSD Storage</li><li style="">8 GB RAM</li><li style="">1250 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $32 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=257&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV5 VPS Plan:</b><br />
+<br />
+<ul><li style="">6 Core CPU</li><li style="">200 GB SSD Storage</li><li style="">12 GB RAM</li><li style="">1500 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $64 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=258&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV6 VPS Plan:</b><br />
+<br />
+<ul><li style="">8 Core CPU</li><li style="">400 GB SSD Storage</li><li style="">24 GB RAM</li><li style="">2000 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $128 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=259&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV7 VPS Plan:</b><br />
+<br />
+<ul><li style="">12 Core CPU</li><li style="">500 GB SSD Storage</li><li style="">32 GB RAM</li><li style="">2500 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $160 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=260&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>Additional CPU:</b><br />
+<br />
+<ul><li style="">1 vCPU : Monthly $5 USD</li><li style="">2 vCPU : Monthly $10 USD</li><li style="">3 vCPU : Monthly $15 USD</li><li style="">4 vCPU : Monthly $20 USD</li></ul><br />
+<b>Additional Memory:</b><br />
+<br />
+<ul><li style="">1GB : Monthly $5 USD</li><li style="">2GB : Monthly $10 USD</li><li style="">4GB : Monthly $20 USD</li><li style="">8GB : Monthly $40 USD</li></ul><br />
+<b>Control Panel:</b><br />
+<br />
+<ul><li style="">cPanel/WHM : Monthly $13.85 USD</li><li style="">Webuzo(includes Softaculous $5 USD)</li></ul><br />
+<b>Auto Installer:</b><br />
+<br />
+<ul><li style="">Softaculous(Requires cPanel) : Monthly $3 USD</li></ul><br />
+<br />
+<b>Web Server:</b><br />
+<br />
+<ul><li style="">LSWS(1CPU and upto 2GB RAM) for 500 Concurrent Connections: $17.00/ Month</li><li style="">LSWS with LsCache (1CPU and upto 2GB RAM) for 500 Concurrent Connections: $24.00/ Month</li><li style="">Ultra LSWS LsCache (1CPU and upto 8GB RAM) for 800 Concurrent Connections: $24.00/ Month</li><li style="">Ultra LSWS with LsCache (1CPU and upto 8GB RAM) for 800 Concurrent Connections: $31.00/ Month</li><li style="">LSWS (1CPU and Unlimited RAM) for Unlimited Concurrent Connections: $38.50/ Month</li><li style="">LSWS with LsCache (1CPU and Unlimited RAM) for Unlimited Concurrent Connections: $45.50/ Month</li><li style="">LSWS with LsCache (2CPU and Unlimited RAM) for Unlimited Concurrent Connections: $55.00/ Month</li><li style="">LSWS with LsCache (4CPU and Unlimited RAM) for Unlimited Concurrent Connections: $78.00/ Month</li><li style="">LSWS with LsCache (8CPU and Unlimited RAM) for Unlimited Concurrent Connections: $110.00/ Month</li><li style="">Nginx + Varnish Cache: $5.00/ Month</li></ul><br />
+For more details on VPS Hosting plans please visit : <a href="https://www.milesweb.com/vps-hosting.php" target="_blank">https://www.milesweb.com/vps-hosting.php</a><br />
+<br />
+For Immediate Assistance, Contact Us : <a href="mailto:sales@milesweb.com">sales@milesweb.com</a> or visit our website to initiate live chat.</div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:8:"MilesWeb";}s:4:"guid";s:132:"http://forums.devshed.com/web-hosting-offers-100/milesweb-ssd-vps-hosting-india-4-12-core-cpu-500gb-ssd-storage-32gb-ram-978831.html";s:7:"summary";s:397:"Get the stability and flexibility of private server hosting sans the costs and its complexities. VPS hosting is an intermediate solution between shared hosting and dedicated server, where-in the actual hardware server is virtually partitioned into multiple isolated virtual servers. *MilesWeb* (https://www.milesweb.com/) VPS is an ideal solution for those seeking a robust service, faster page...";s:12:"atom_content";s:5596:"<div>Get the stability and flexibility of private server hosting sans the costs and its complexities. VPS hosting is an intermediate solution between shared hosting and dedicated server, where-in the actual hardware server is virtually partitioned into multiple isolated virtual servers. <a href="https://www.milesweb.com/" target="_blank"><b>MilesWeb</b></a> VPS is an ideal solution for those seeking a robust service, faster page loads and stability at a fair price.<br />
+<br />
+<b><div class="bbcode_container">
+	<div class="bbcode_description">Quote:</div>
+	<div class="bbcode_quote printable">
+		<hr />
+		
+			Buy any VPS hosting plan and get <font color="#FF0000"><b>25% discount</b></font> on first payment. Use the coupon code<b><font color="#FF0000"> VSAVE</font></b> during checkout.
+			
+		<hr />
+	</div>
+</div></b> <br />
+Below is the list of <b>VPS hosting</b> plans offered by <b>MilesWeb</b>, <br />
+<br />
+<b>EV1 VPS Plan:</b><br />
+<br />
+<ul><li style="">1 Core CPU</li><li style="">20 GB SSD Storage</li><li style="">1 GB RAM</li><li style="">500 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $4 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=253&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV2 VPS Plan:</b><br />
+<br />
+<ul><li style="">1 Core CPU</li><li style="">30 GB SSD Storage</li><li style="">2 GB RAM</li><li style="">750 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $8 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=254&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV3 VPS Plan:</b><br />
+<br />
+<ul><li style="">2 Core CPU</li><li style="">50 GB SSD Storage</li><li style="">4 GB RAM</li><li style="">1000 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $16 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=255&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV4 VPS Plan:</b><br />
+<br />
+<ul><li style="">4 Core CPU</li><li style="">100 GB SSD Storage</li><li style="">8 GB RAM</li><li style="">1250 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $32 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=257&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV5 VPS Plan:</b><br />
+<br />
+<ul><li style="">6 Core CPU</li><li style="">200 GB SSD Storage</li><li style="">12 GB RAM</li><li style="">1500 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $64 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=258&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV6 VPS Plan:</b><br />
+<br />
+<ul><li style="">8 Core CPU</li><li style="">400 GB SSD Storage</li><li style="">24 GB RAM</li><li style="">2000 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $128 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=259&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>EV7 VPS Plan:</b><br />
+<br />
+<ul><li style="">12 Core CPU</li><li style="">500 GB SSD Storage</li><li style="">32 GB RAM</li><li style="">2500 GB Bandwidth</li></ul><br />
+<b>Price: <font color="#FF0000">Monthly $160 USD</font> | <a href="https://www.milesweb.com/checkout/?a=add&amp;product=260&amp;currency=4" target="_blank">Buy Now</a></b><br />
+<br />
+<b>Additional CPU:</b><br />
+<br />
+<ul><li style="">1 vCPU : Monthly $5 USD</li><li style="">2 vCPU : Monthly $10 USD</li><li style="">3 vCPU : Monthly $15 USD</li><li style="">4 vCPU : Monthly $20 USD</li></ul><br />
+<b>Additional Memory:</b><br />
+<br />
+<ul><li style="">1GB : Monthly $5 USD</li><li style="">2GB : Monthly $10 USD</li><li style="">4GB : Monthly $20 USD</li><li style="">8GB : Monthly $40 USD</li></ul><br />
+<b>Control Panel:</b><br />
+<br />
+<ul><li style="">cPanel/WHM : Monthly $13.85 USD</li><li style="">Webuzo(includes Softaculous $5 USD)</li></ul><br />
+<b>Auto Installer:</b><br />
+<br />
+<ul><li style="">Softaculous(Requires cPanel) : Monthly $3 USD</li></ul><br />
+<br />
+<b>Web Server:</b><br />
+<br />
+<ul><li style="">LSWS(1CPU and upto 2GB RAM) for 500 Concurrent Connections: $17.00/ Month</li><li style="">LSWS with LsCache (1CPU and upto 2GB RAM) for 500 Concurrent Connections: $24.00/ Month</li><li style="">Ultra LSWS LsCache (1CPU and upto 8GB RAM) for 800 Concurrent Connections: $24.00/ Month</li><li style="">Ultra LSWS with LsCache (1CPU and upto 8GB RAM) for 800 Concurrent Connections: $31.00/ Month</li><li style="">LSWS (1CPU and Unlimited RAM) for Unlimited Concurrent Connections: $38.50/ Month</li><li style="">LSWS with LsCache (1CPU and Unlimited RAM) for Unlimited Concurrent Connections: $45.50/ Month</li><li style="">LSWS with LsCache (2CPU and Unlimited RAM) for Unlimited Concurrent Connections: $55.00/ Month</li><li style="">LSWS with LsCache (4CPU and Unlimited RAM) for Unlimited Concurrent Connections: $78.00/ Month</li><li style="">LSWS with LsCache (8CPU and Unlimited RAM) for Unlimited Concurrent Connections: $110.00/ Month</li><li style="">Nginx + Varnish Cache: $5.00/ Month</li></ul><br />
+For more details on VPS Hosting plans please visit : <a href="https://www.milesweb.com/vps-hosting.php" target="_blank">https://www.milesweb.com/vps-hosting.php</a><br />
+<br />
+For Immediate Assistance, Contact Us : <a href="mailto:sales@milesweb.com">sales@milesweb.com</a> or visit our website to initiate live chat.</div>
+
+";}i:3;a:10:{s:5:"title";s:42:"SEO hosting. Which are best providers now?";s:4:"link";s:80:"http://forums.devshed.com/web-hosting/978830-seo-hosting-providers-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 07:13:13 GMT";s:11:"description";s:276:"Hello! 
+For different C-class hosting services which companies are recommended? I recall Hostgator has some kind of sister company like that, but after their migration to EIG that s not really recommended to deal wit them  
+Also keep in mind seohost.com.  
+What would you say?";s:7:"content";a:1:{s:7:"encoded";s:309:"<div>Hello!<br />
+For different C-class hosting services which companies are recommended? I recall Hostgator has some kind of sister company like that, but after their migration to EIG that s not really recommended to deal wit them <br />
+Also keep in mind seohost.com. <br />
+What would you say?</div>
+
+";}s:8:"category";s:11:"Web Hosting";s:2:"dc";a:1:{s:7:"creator";s:6:"JXB546";}s:4:"guid";s:74:"http://forums.devshed.com/web-hosting-12/seo-hosting-providers-978830.html";s:7:"summary";s:276:"Hello! 
+For different C-class hosting services which companies are recommended? I recall Hostgator has some kind of sister company like that, but after their migration to EIG that s not really recommended to deal wit them  
+Also keep in mind seohost.com.  
+What would you say?";s:12:"atom_content";s:309:"<div>Hello!<br />
+For different C-class hosting services which companies are recommended? I recall Hostgator has some kind of sister company like that, but after their migration to EIG that s not really recommended to deal wit them <br />
+Also keep in mind seohost.com. <br />
+What would you say?</div>
+
+";}i:4;a:10:{s:5:"title";s:41:"VPS9 Networks : Secured Cloud VPS Hosting";s:4:"link";s:105:"http://forums.devshed.com/web-hosting-offers/978829-vps9-networks-secured-cloud-vps-hosting-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 07:08:53 GMT";s:11:"description";s:390:"VPS9 Networks introducing Reliable Cloud VPS hosting packages on Customers Demand. Pick any Suitable Cloud Hosting service designed for Enterprise-level Workloads, Inherits Robust and High performance and Runs on Superlative Platform. Our Cloud VPS Hosting comes with High Network Availability, Premium 1Gbps Nodes, Iaas and Paas Services, Next generation SAS Storage and High Uptime.  
+...";s:7:"content";a:1:{s:7:"encoded";s:3588:"<div><div style="text-align: center;">VPS9 Networks introducing Reliable Cloud VPS hosting packages on Customers Demand. Pick any Suitable Cloud Hosting service designed for Enterprise-level Workloads, Inherits Robust and High performance and Runs on Superlative Platform. Our Cloud VPS Hosting comes with High Network Availability, Premium 1Gbps Nodes, Iaas and Paas Services, Next generation SAS Storage and High Uptime. <br />
+<br />
+Custom-Made Cloud VPS hosting solution to magnify your online business.<br />
+<br />
+<br />
+<br />
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; <b><font color="blue">50%  Offer on Cloud VPS </font></b>   |    <b><font color="red">Coupon: &quot;CLOUD@50&quot;</font></b> &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</div><br />
+<br />
+<br />
+<b> <font color="green">Best Cloud VPS Hosting Plans </font></b><br />
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br />
+<br />
+<b> Plan 1 :  </b><br />
+-------------------<br />
+vCPU     :  1 Core vCPU<br />
+vRAM     :  1 GB DDR3	 		 		<br />
+Disk     :  40 GB SAS<br />
+Traffic  :  4 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 9.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=300" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b> Plan 2 : </b><br />
+-------------------<br />
+vCPU     :  2 Core vCPU<br />
+vRAM     :  2 GB DDR3	 		 		<br />
+Disk     :  60 GB SAS<br />
+Traffic  :  6 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 16.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=301" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b> Plan 3 : </b><br />
+-------------------<br />
+vCPU     :  4 Core vCPU<br />
+vRAM     :  4 GB DDR3	 		 		<br />
+Disk     :  80 GB SAS<br />
+Traffic  :  8 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 29.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=302" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b> Plan 4 : </b><br />
+-------------------<br />
+vCPU     :  8 Core vCPU<br />
+vRAM     :  8 GB DDR3	 		 		<br />
+Disk     :  160 GB SAS<br />
+Traffic  :  10 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 49.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=303" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b>Features</b><br />
+****************<br />
+- 24/7 Support<br />
+- DDOS Protection<br />
+- 100% Network Uptime<br />
+- SAS Drive<br />
+- High Bandwidth Capacity <br />
+- Load Balancer <br />
+<br />
+<div style="text-align: center;"><b><a href="https://www.vps9.net/cloud-vps" target="_blank"> &gt;&gt;&gt; Visit to Explore more on Cloud VPS Hosting &lt;&lt;&lt; </a></b></div><br />
+<b>Payment Methods:</b> PayPal, Payza, WebMoney, Skrill, PerfectMoney, EBS(Credit Card, Debit Card and Net Banking)<br />
+<br />
+<br />
+<b>Support Fields:</b><br />
+~~~~~~~~~~~~~~~~~~~~~~~~~~~<br />
+* Live Support, Skype<br />
+* Email Support <br />
+<br />
+<br />
+<b>Thank You.</b></div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:4:"vps9";}s:4:"guid";s:100:"http://forums.devshed.com/web-hosting-offers-100/vps9-networks-secured-cloud-vps-hosting-978829.html";s:7:"summary";s:390:"VPS9 Networks introducing Reliable Cloud VPS hosting packages on Customers Demand. Pick any Suitable Cloud Hosting service designed for Enterprise-level Workloads, Inherits Robust and High performance and Runs on Superlative Platform. Our Cloud VPS Hosting comes with High Network Availability, Premium 1Gbps Nodes, Iaas and Paas Services, Next generation SAS Storage and High Uptime.  
+...";s:12:"atom_content";s:3588:"<div><div style="text-align: center;">VPS9 Networks introducing Reliable Cloud VPS hosting packages on Customers Demand. Pick any Suitable Cloud Hosting service designed for Enterprise-level Workloads, Inherits Robust and High performance and Runs on Superlative Platform. Our Cloud VPS Hosting comes with High Network Availability, Premium 1Gbps Nodes, Iaas and Paas Services, Next generation SAS Storage and High Uptime. <br />
+<br />
+Custom-Made Cloud VPS hosting solution to magnify your online business.<br />
+<br />
+<br />
+<br />
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; <b><font color="blue">50%  Offer on Cloud VPS </font></b>   |    <b><font color="red">Coupon: &quot;CLOUD@50&quot;</font></b> &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</div><br />
+<br />
+<br />
+<b> <font color="green">Best Cloud VPS Hosting Plans </font></b><br />
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br />
+<br />
+<b> Plan 1 :  </b><br />
+-------------------<br />
+vCPU     :  1 Core vCPU<br />
+vRAM     :  1 GB DDR3	 		 		<br />
+Disk     :  40 GB SAS<br />
+Traffic  :  4 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 9.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=300" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b> Plan 2 : </b><br />
+-------------------<br />
+vCPU     :  2 Core vCPU<br />
+vRAM     :  2 GB DDR3	 		 		<br />
+Disk     :  60 GB SAS<br />
+Traffic  :  6 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 16.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=301" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b> Plan 3 : </b><br />
+-------------------<br />
+vCPU     :  4 Core vCPU<br />
+vRAM     :  4 GB DDR3	 		 		<br />
+Disk     :  80 GB SAS<br />
+Traffic  :  8 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 29.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=302" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b> Plan 4 : </b><br />
+-------------------<br />
+vCPU     :  8 Core vCPU<br />
+vRAM     :  8 GB DDR3	 		 		<br />
+Disk     :  160 GB SAS<br />
+Traffic  :  10 TB Metered<br />
+IPV4     :  1 <br />
+Network  :  1 Gbps Premium Line<br />
+Platform :  KVM<br />
+Price    :  <font color="red"> 49.99 /mo</font><br />
+<br />
+<b><a href="https://www.vps9.net/billing/cart.php?a=add&amp;pid=303" target="_blank"> &gt;&gt;&gt; Buy &lt;&lt;&lt; </a></b><br />
+<br />
+<br />
+<b>Features</b><br />
+****************<br />
+- 24/7 Support<br />
+- DDOS Protection<br />
+- 100% Network Uptime<br />
+- SAS Drive<br />
+- High Bandwidth Capacity <br />
+- Load Balancer <br />
+<br />
+<div style="text-align: center;"><b><a href="https://www.vps9.net/cloud-vps" target="_blank"> &gt;&gt;&gt; Visit to Explore more on Cloud VPS Hosting &lt;&lt;&lt; </a></b></div><br />
+<b>Payment Methods:</b> PayPal, Payza, WebMoney, Skrill, PerfectMoney, EBS(Credit Card, Debit Card and Net Banking)<br />
+<br />
+<br />
+<b>Support Fields:</b><br />
+~~~~~~~~~~~~~~~~~~~~~~~~~~~<br />
+* Live Support, Skype<br />
+* Email Support <br />
+<br />
+<br />
+<b>Thank You.</b></div>
+
+";}i:5;a:10:{s:5:"title";s:59:"Difference between google analytics aquisition and audience";s:4:"link";s:121:"http://forums.devshed.com/search-engine-optimization/978828-difference-google-analytics-aquisition-audience-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 06:39:47 GMT";s:11:"description";s:111:"I am new in Google Analytics, Please guide me the difference between google analytics acquisition and audience.";s:7:"content";a:1:{s:7:"encoded";s:126:"<div>I am new in Google Analytics, Please guide me the difference between google analytics acquisition and audience.</div>
+
+";}s:8:"category";s:26:"Search Engine Optimization";s:2:"dc";a:1:{s:7:"creator";s:7:"Ramaner";}s:4:"guid";s:116:"http://forums.devshed.com/search-engine-optimization-108/difference-google-analytics-aquisition-audience-978828.html";s:7:"summary";s:111:"I am new in Google Analytics, Please guide me the difference between google analytics acquisition and audience.";s:12:"atom_content";s:126:"<div>I am new in Google Analytics, Please guide me the difference between google analytics acquisition and audience.</div>
+
+";}i:6;a:10:{s:5:"title";s:50:"Mobile App Testing on Real IOS and Android Devices";s:4:"link";s:109:"http://forums.devshed.com/mobile-programming/978827-mobile-app-testing-real-ios-android-devices-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 06:12:26 GMT";s:11:"description";s:400:"Being an app developer i always enjoy coding so it is necessary for me to understand how my apps is working across platform on all real time devices. I came across www.pCloudy.com which provides amazing Mobile app testing tools to check my mobile app performance on cloud .This really helped me to check how my apps are performing across all real time  devices 
+ 
+Some of the key benefits by using...";s:7:"content";a:1:{s:7:"encoded";s:907:"<div>Being an app developer i always enjoy coding so it is necessary for me to understand how my apps is working across platform on all real time devices. I came across <a href="http://www.pCloudy.com" target="_blank">www.pCloudy.com</a> which provides amazing Mobile app testing tools to check my mobile app performance on cloud .This really helped me to check how my apps are performing across all real time  devices<br />
+<br />
+Some of the key benefits by using platform like <a href="http://www.pCloudy.com" target="_blank">www.pCloudy.com</a> are<br />
+	Access to multiple devices ( more than 500 devices on last count) fragmented across different OS versions (Android &amp; iOS).<br />
+	Get performance statistics while testing on real devices.<br />
+	Use network simulation, geo location tools to test your application.<br />
+	Schedule automated test runs on multiple devices</div>
+
+";}s:8:"category";s:18:"Mobile Programming";s:2:"dc";a:1:{s:7:"creator";s:5:"jlees";}s:4:"guid";s:103:"http://forums.devshed.com/mobile-programming-20/mobile-app-testing-real-ios-android-devices-978827.html";s:7:"summary";s:400:"Being an app developer i always enjoy coding so it is necessary for me to understand how my apps is working across platform on all real time devices. I came across www.pCloudy.com which provides amazing Mobile app testing tools to check my mobile app performance on cloud .This really helped me to check how my apps are performing across all real time  devices 
+ 
+Some of the key benefits by using...";s:12:"atom_content";s:907:"<div>Being an app developer i always enjoy coding so it is necessary for me to understand how my apps is working across platform on all real time devices. I came across <a href="http://www.pCloudy.com" target="_blank">www.pCloudy.com</a> which provides amazing Mobile app testing tools to check my mobile app performance on cloud .This really helped me to check how my apps are performing across all real time  devices<br />
+<br />
+Some of the key benefits by using platform like <a href="http://www.pCloudy.com" target="_blank">www.pCloudy.com</a> are<br />
+	Access to multiple devices ( more than 500 devices on last count) fragmented across different OS versions (Android &amp; iOS).<br />
+	Get performance statistics while testing on real devices.<br />
+	Use network simulation, geo location tools to test your application.<br />
+	Schedule automated test runs on multiple devices</div>
+
+";}i:7;a:10:{s:5:"title";s:50:"Cheap Dedicated Server Hosting Canada- Hostripples";s:4:"link";s:115:"http://forums.devshed.com/web-hosting-offers/978826-cheap-dedicated-server-hosting-canada-hostripples-new-post.html";s:7:"pubdate";s:29:"Wed, 23 Aug 2017 05:47:31 GMT";s:11:"description";s:394:"*Cheap Dedicated Server Hosting Canada- Hostripples  
+* 
+ 
+ Hostripples offers a comprehensive line-up of fully managed dedicated servers in Canada from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop...";s:7:"content";a:1:{s:7:"encoded";s:4664:"<div><b><font size="5"><font color="#800080"><div style="text-align: center;">Cheap Dedicated Server Hosting Canada- Hostripples </div></font></font></b><br />
+<br />
+ Hostripples offers a comprehensive line-up of fully managed dedicated servers in Canada from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop solution for any requirement. All servers are connected to a high-speed, redundant network and backed with 24x7 Support, Pro-active Server Monitoring and 100% Uptime SLA<br />
+<br />
+<b><font color="#FF0000">Plan 1 - Rs 9000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 2 - Rs 14000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a>	<br />
+<b><font color="#FF0000">Plan 3 - Rs 18000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 4 - Rs 22000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 5 - Rs 28000/Month:</font></b><br />
+ <font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 6 - Rs 35000/Month:</font></b><br />
+ <font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#A52A2A">Why choose Hostripples?</font></b><br />
+<br />
+	<font color="#800080">Maximum uptime<br />
+	Easy usability<br />
+	Value for money<br />
+	High performance <br />
+	24 x 7 customer service<br />
+	Unmatched server performance</font><br />
+<br />
+Visit:- <a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Cheap Dedicated Hosting Canada</a><br />
+<br />
+Its not that we are bragging about our services, <a href="http://www.serchen.com/company/hostripples/" target="_blank">our customers say it all!<br />
+</a>Hurry up and get <a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Hostripples </a> the one-stop solution for your web hosting requirements!<br />
+<br />
+<a href="https://hostripples.in/secure/cart.php" target="_blank">Buy now!<br />
+</a><br />
+Hostripples - Affordable web hosting<br />
+Hostripples.in Cheap Hosting | Unlimited Bandwidth | Unlimited Space | Domain Name Registration<br />
+<br />
+Connect with us: <a href="https://facebook.hostripples.in" target="_blank">Facebook </a>| <a href="https://twitter.hostripples.in" target="_blank">Twitter </a>| <a href="https://linkedin.hostripples.in/" target="_blank">LinkedIn</a><br />
+<br />
+Hostripples - Affordable web hosting <br />
+<a href="http://hostripples.in/" target="_blank">http://hostripples.in/</a><br />
+<a href="http://hostripples.com/" target="_blank">http://hostripples.com/</a><br />
+<a href="http://hostripples.co.uk/" target="_blank">http://hostripples.co.uk/</a><br />
+<a href="https://myhostseo.com/" target="_blank">https://myhostseo.com/</a><br />
+Hostripples.com Rs.35 Unlimited Hosting</div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:8:"hi5s2arp";}s:4:"guid";s:110:"http://forums.devshed.com/web-hosting-offers-100/cheap-dedicated-server-hosting-canada-hostripples-978826.html";s:7:"summary";s:394:"*Cheap Dedicated Server Hosting Canada- Hostripples  
+* 
+ 
+ Hostripples offers a comprehensive line-up of fully managed dedicated servers in Canada from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop...";s:12:"atom_content";s:4664:"<div><b><font size="5"><font color="#800080"><div style="text-align: center;">Cheap Dedicated Server Hosting Canada- Hostripples </div></font></font></b><br />
+<br />
+ Hostripples offers a comprehensive line-up of fully managed dedicated servers in Canada from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop solution for any requirement. All servers are connected to a high-speed, redundant network and backed with 24x7 Support, Pro-active Server Monitoring and 100% Uptime SLA<br />
+<br />
+<b><font color="#FF0000">Plan 1 - Rs 9000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 2 - Rs 14000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a>	<br />
+<b><font color="#FF0000">Plan 3 - Rs 18000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 4 - Rs 22000/Month:</font></b><br />
+<font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 5 - Rs 28000/Month:</font></b><br />
+ <font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF0000">Plan 6 - Rs 35000/Month:</font></b><br />
+ <font color="#0000FF">Intel Xeon E3-1245v5 - 4c/8t - 3.5 GHz/3.9 GHz <br />
+32GB DDR4 ECC <br />
+2 x 2 TB SATA <br />
+Unlimited Bandwidth  <br />
+24x7 Live Support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#A52A2A">Why choose Hostripples?</font></b><br />
+<br />
+	<font color="#800080">Maximum uptime<br />
+	Easy usability<br />
+	Value for money<br />
+	High performance <br />
+	24 x 7 customer service<br />
+	Unmatched server performance</font><br />
+<br />
+Visit:- <a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Cheap Dedicated Hosting Canada</a><br />
+<br />
+Its not that we are bragging about our services, <a href="http://www.serchen.com/company/hostripples/" target="_blank">our customers say it all!<br />
+</a>Hurry up and get <a href="https://hostripples.in/cheap-dedicated-server-hosting-canada.php" target="_blank">Hostripples </a> the one-stop solution for your web hosting requirements!<br />
+<br />
+<a href="https://hostripples.in/secure/cart.php" target="_blank">Buy now!<br />
+</a><br />
+Hostripples - Affordable web hosting<br />
+Hostripples.in Cheap Hosting | Unlimited Bandwidth | Unlimited Space | Domain Name Registration<br />
+<br />
+Connect with us: <a href="https://facebook.hostripples.in" target="_blank">Facebook </a>| <a href="https://twitter.hostripples.in" target="_blank">Twitter </a>| <a href="https://linkedin.hostripples.in/" target="_blank">LinkedIn</a><br />
+<br />
+Hostripples - Affordable web hosting <br />
+<a href="http://hostripples.in/" target="_blank">http://hostripples.in/</a><br />
+<a href="http://hostripples.com/" target="_blank">http://hostripples.com/</a><br />
+<a href="http://hostripples.co.uk/" target="_blank">http://hostripples.co.uk/</a><br />
+<a href="https://myhostseo.com/" target="_blank">https://myhostseo.com/</a><br />
+Hostripples.com Rs.35 Unlimited Hosting</div>
+
+";}i:8;a:10:{s:5:"title";s:42:"Regex to include lines not containing text";s:4:"link";s:100:"http://forums.devshed.com/regex-programming/978825-regex-include-lines-containing-text-new-post.html";s:7:"pubdate";s:29:"Tue, 22 Aug 2017 23:02:09 GMT";s:11:"description";s:266:"I am trying to write a regular expression where I am trying to retrieve all the lines that do not contain the text DEBUG.  
+In the below example 
+ 
+ 
+Code: 
+--------- 
+TEST_DEBUG ref number: 1234 
+TEST ref number: 1234 
+QA_DEBUG ref number: 4556 
+QA ref number: 3455";s:7:"content";a:1:{s:7:"encoded";s:801:"<div>I am trying to write a regular expression where I am trying to retrieve all the lines that do not contain the text DEBUG. <br />
+In the below example<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<hr /><code class="bbcode_code">TEST_DEBUG ref number: 1234<br />
+TEST ref number: 1234<br />
+QA_DEBUG ref number: 4556<br />
+QA ref number: 3455</code><hr />
+</div>I only need to get <br />
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<hr /><code class="bbcode_code">TEST ref number: 1234<br />
+QA ref number: 3455</code><hr />
+</div>Here is the expression I tried<br />
+<br />
+([A-Z]\w+)(?!_DEBUG).*?(:).*?(\d+)<br />
+<br />
+This is returning me all rows instead of the ones without DEBUG text.</div>
+
+";}s:8:"category";s:17:"Regex Programming";s:2:"dc";a:1:{s:7:"creator";s:8:"karanjit";}s:4:"guid";s:95:"http://forums.devshed.com/regex-programming-147/regex-include-lines-containing-text-978825.html";s:7:"summary";s:266:"I am trying to write a regular expression where I am trying to retrieve all the lines that do not contain the text DEBUG.  
+In the below example 
+ 
+ 
+Code: 
+--------- 
+TEST_DEBUG ref number: 1234 
+TEST ref number: 1234 
+QA_DEBUG ref number: 4556 
+QA ref number: 3455";s:12:"atom_content";s:801:"<div>I am trying to write a regular expression where I am trying to retrieve all the lines that do not contain the text DEBUG. <br />
+In the below example<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<hr /><code class="bbcode_code">TEST_DEBUG ref number: 1234<br />
+TEST ref number: 1234<br />
+QA_DEBUG ref number: 4556<br />
+QA ref number: 3455</code><hr />
+</div>I only need to get <br />
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<hr /><code class="bbcode_code">TEST ref number: 1234<br />
+QA ref number: 3455</code><hr />
+</div>Here is the expression I tried<br />
+<br />
+([A-Z]\w+)(?!_DEBUG).*?(:).*?(\d+)<br />
+<br />
+This is returning me all rows instead of the ones without DEBUG text.</div>
+
+";}i:9;a:10:{s:5:"title";s:49:"Questions about feasibility of a chrome extension";s:4:"link";s:108:"http://forums.devshed.com/javascript-development/978824-questions-feasibility-chrome-extension-new-post.html";s:7:"pubdate";s:29:"Tue, 22 Aug 2017 14:35:22 GMT";s:11:"description";s:401:"Hi! 
+ 
+This is not a very specific question, it is about the general idea and if this could be implemented. I put this thread here because the project will be mostly done in JavaScript. 
+ 
+So, I would like to build a very very simple DJ mixer just for my use-case: 
+ 
+* Two potentiometers(sliders) for the volumes of the two music sources. The positions/resistance of the potentiometers are read by...";s:7:"content";a:1:{s:7:"encoded";s:1448:"<div>Hi!<br />
+<br />
+This is not a very specific question, it is about the general idea and if this could be implemented. I put this thread here because the project will be mostly done in JavaScript.<br />
+<br />
+So, I would like to build a very very simple DJ mixer just for my use-case:<br />
+<ul><li style="">Two potentiometers(sliders) for the volumes of the two music sources. The positions/resistance of the potentiometers are read by an Arduino Mini. The positions are sent to the computer via serial data connection.</li><li style="">A very simple web server on the computer will receive the serial data over USB and broadcasts the two values via socket.io just on the computer, so no difficult authentication is required.</li><li style="">A chrome extension set up a page containing two instances of Google Player Music. The extension sets the volume of the corresponding GPM instance to the received value from socket.io from the web server.</li></ul><br />
+<br />
+The most difficult part I fear is the Chrome extension part.<br />
+<br />
+What do you think, is the &quot;buildable&quot;? If you can think of any problems please point them out.<br />
+<br />
+Any recommendations how to do the small web server? Python, Java, NodeJS? To my understanding this doesn't matter. The choosen language should only support serial data over USB and web capabilities.<br />
+<br />
+Thanks for reading!<br />
+<br />
+RandomByte</div>
+
+";}s:8:"category";s:22:"JavaScript Development";s:2:"dc";a:1:{s:7:"creator";s:10:"RandomByte";}s:4:"guid";s:103:"http://forums.devshed.com/javascript-development-115/questions-feasibility-chrome-extension-978824.html";s:7:"summary";s:401:"Hi! 
+ 
+This is not a very specific question, it is about the general idea and if this could be implemented. I put this thread here because the project will be mostly done in JavaScript. 
+ 
+So, I would like to build a very very simple DJ mixer just for my use-case: 
+ 
+* Two potentiometers(sliders) for the volumes of the two music sources. The positions/resistance of the potentiometers are read by...";s:12:"atom_content";s:1448:"<div>Hi!<br />
+<br />
+This is not a very specific question, it is about the general idea and if this could be implemented. I put this thread here because the project will be mostly done in JavaScript.<br />
+<br />
+So, I would like to build a very very simple DJ mixer just for my use-case:<br />
+<ul><li style="">Two potentiometers(sliders) for the volumes of the two music sources. The positions/resistance of the potentiometers are read by an Arduino Mini. The positions are sent to the computer via serial data connection.</li><li style="">A very simple web server on the computer will receive the serial data over USB and broadcasts the two values via socket.io just on the computer, so no difficult authentication is required.</li><li style="">A chrome extension set up a page containing two instances of Google Player Music. The extension sets the volume of the corresponding GPM instance to the received value from socket.io from the web server.</li></ul><br />
+<br />
+The most difficult part I fear is the Chrome extension part.<br />
+<br />
+What do you think, is the &quot;buildable&quot;? If you can think of any problems please point them out.<br />
+<br />
+Any recommendations how to do the small web server? Python, Java, NodeJS? To my understanding this doesn't matter. The choosen language should only support serial data over USB and web capabilities.<br />
+<br />
+Thanks for reading!<br />
+<br />
+RandomByte</div>
+
+";}i:10;a:10:{s:5:"title";s:61:"strtolower users input to log in or not strtolower to log in?";s:4:"link";s:104:"http://forums.devshed.com/php-development/978823-strtolower-users-input-log-strtolower-log-new-post.html";s:7:"pubdate";s:29:"Tue, 22 Aug 2017 12:47:07 GMT";s:11:"description";s:394:"Do you change user's input before querying the database? Both for and create, retrieve. CRud. 
+ 
+What would be the right approach? Change user's email to lowercase and then run the query? 
+ 
+What realy happens between php and mysql when email is passed to mysql? Email@example.com, email@example.com. 
+ 
+ 
+Code: 
+--------- 
+$sql = "SELECT jvzoo_cproditem, transaction_type, transaction_time,...";s:7:"content";a:1:{s:7:"encoded";s:1491:"<div>Do you change user's input before querying the database? Both for and create, retrieve. CRud.<br />
+<br />
+What would be the right approach? Change user's email to lowercase and then run the query?<br />
+<br />
+What realy happens between php and mysql when email is passed to mysql? <a href="mailto:Email@example.com">Email@example.com</a>, <a href="mailto:email@example.com">email@example.com</a>.<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<hr /><code class="bbcode_code">$sql = &quot;SELECT jvzoo_cproditem, transaction_type, transaction_time, jvzoo_cprodtitle, email, id FROM transactions <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WHERE<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; email = ? <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AND jvzoo_cproditem = ? <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ORDER BY id DESC <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $query_transactions = $CI-&gt;db-&gt;query($sql, array($email, $product));</code><hr />
+</div>Thanks</div>
+
+";}s:8:"category";s:15:"PHP Development";s:2:"dc";a:1:{s:7:"creator";s:21:"English Breakfast Tea";}s:4:"guid";s:97:"http://forums.devshed.com/php-development-5/strtolower-users-input-log-strtolower-log-978823.html";s:7:"summary";s:394:"Do you change user's input before querying the database? Both for and create, retrieve. CRud. 
+ 
+What would be the right approach? Change user's email to lowercase and then run the query? 
+ 
+What realy happens between php and mysql when email is passed to mysql? Email@example.com, email@example.com. 
+ 
+ 
+Code: 
+--------- 
+$sql = "SELECT jvzoo_cproditem, transaction_type, transaction_time,...";s:12:"atom_content";s:1491:"<div>Do you change user's input before querying the database? Both for and create, retrieve. CRud.<br />
+<br />
+What would be the right approach? Change user's email to lowercase and then run the query?<br />
+<br />
+What realy happens between php and mysql when email is passed to mysql? <a href="mailto:Email@example.com">Email@example.com</a>, <a href="mailto:email@example.com">email@example.com</a>.<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<hr /><code class="bbcode_code">$sql = &quot;SELECT jvzoo_cproditem, transaction_type, transaction_time, jvzoo_cprodtitle, email, id FROM transactions <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WHERE<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; email = ? <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AND jvzoo_cproditem = ? <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ORDER BY id DESC <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $query_transactions = $CI-&gt;db-&gt;query($sql, array($email, $product));</code><hr />
+</div>Thanks</div>
+
+";}i:11;a:10:{s:5:"title";s:85:"Solid & Stable Web Designing Service From TEMOK Starting at $175 | Unlimited Revision";s:4:"link";s:138:"http://forums.devshed.com/web-hosting-offers/978822-solid-stable-web-designing-service-temok-starting-175-unlimited-revision-new-post.html";s:7:"pubdate";s:29:"Tue, 22 Aug 2017 12:23:01 GMT";s:11:"description";s:402:"*Temok* is known as a highly regarded web designing company in world. We are rooted in our forte like web designing, web development, custom web design, ecommerce web designing, flash web design and internet marketing solutions. Excellence of services and affordability of budget makes us choices among all, and established a worldwide clients for us. We are facilitating the individuals, groups and...";s:7:"content";a:1:{s:7:"encoded";s:4863:"<div><span style="font-family: georgia"><b>Temok</b> is known as a highly regarded web designing company in world. We are rooted in our forte like web designing, web development, custom web design, ecommerce web designing, flash web design and internet marketing solutions. Excellence of services and affordability of budget makes us choices among all, and established a worldwide clients for us. We are facilitating the individuals, groups and organizations with the business potential hidden in world of internet. <b><a href="https://www.temok.com" target="_blank">Temok</a></b> can enable and empower you to enhance, maintain &amp; manage your site content material from anywhere and every time you desire. All you would need is internet access. It's so simple as using Microsoft Word, or writing an email to an associate.</span><br />
+<br />
+<div style="text-align: center;"><img src="https://s20.postimg.org/puiehrmjx/Web_Design.jpg" border="0" alt="" /></div><br />
+<span style="font-family: georgia">Let us handle everything just select the Web Design Plan Thats Right For You. One Price Covers Everything  NO Hidden Costs Or Other Fees. Below you will find some details of our web design plans.<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Basic Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; 5 Page Custom Website<br />
+&#8900; 01 Year Domain Name<br />
+&#8900; 01 Year Web Hosting<br />
+&#8900; 10 Stock Photos<br />
+&#8900; 10 Email Addresses<br />
+&#8900; Free Google Friendly Sitemap<br />
+&#8900; Complete W3C Certified HTML<br />
+&#8900; $99 for 48 Hour Rush Delivery<br />
+&#8900; Price For Limited Time: $175<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=199" target="_blank">Order Basic Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Startup Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; 8 Page Custom Website<br />
+&#8900; Free 01 Year Domain Name<br />
+&#8900; Free 01 Year Web Hosting<br />
+&#8900; 10 Stock Photos<br />
+&#8900; 10 Email Addresses<br />
+&#8900; Free Google Friendly Sitemap<br />
+&#8900; Complete W3C Certified HTML<br />
+&#8900; $99 for 48 Hour Rush Delivery<br />
+&#8900; Price For Limited Time: $295<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=200" target="_blank">Order Startup Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Business Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; Unlimited Web Pages<br />
+&#8900; Content Management System<br />
+&#8900; 6 Unique Web Pages<br />
+&#8900; 1 Year Domain Name<br />
+&#8900; 1 Year Web Hosting<br />
+&#8900; 5 Email Addresses<br />
+&#8900; 5 Stock Photos<br />
+&#8900; Logo Design<br />
+&#8900; 3 Custom Logo Concepts<br />
+&#8900; $99 for 48 Hour Rush Delivery<br />
+&#8900; Price For Limited Time: $545<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=201" target="_blank">Order Business Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Web 360 Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; Unlimited Web Pages<br />
+&#8900; Content Management System<br />
+&#8900; 8 Unique Web Pages<br />
+&#8900; 1 Year Domain Name<br />
+&#8900; 10 Stock Photos<br />
+&#8900; W3C Certified HTML<br />
+&#8900; Social Media Pages<br />
+&#8900; Facebook Page Design<br />
+&#8900; Twitter Theme Page<br />
+&#8900; YouTube Theme Page<br />
+&#8900; Search Engine Submission<br />
+&#8900; Google, Yahoo &amp; Bing<br />
+&#8900; Price for Limited Time: $745<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=202" target="_blank">Order Web 360 Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Special Features &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; Unlimited Revisions<br />
+&#8900; 100% Satisfaction Guarantee<br />
+&#8900; 24 X 7 Customer Support<br />
+&#8900; Money Back Guarantee*<br />
+<br />
+Your happiness forms an important part of our objective. We strive to deliver our customers top priority and guarantee that our services give you 100% satisfaction. Our company professional logo and web designers understand the need of your business and create designs that efficiently represent the philosophy of your business, thereby, crafting an enviable brand image.<br />
+<br />
+&#10139; We accept VISA, MasterCard, American Express, PayPal, WorldPay and Diners Club International for payment.<br />
+<br />
+<font size="3"><b><i><font color="#FF0000">Contact Info:</font></i></b></font><br />
+Website: <b>Temok.com</b><br />
+Email: <b>sales(at)temok.com</b><br />
+Skype: <b>temok.sales</b><br />
+Twitter: <b>temok_1</b></span></div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:9:"tk-hassan";}s:4:"guid";s:133:"http://forums.devshed.com/web-hosting-offers-100/solid-stable-web-designing-service-temok-starting-175-unlimited-revision-978822.html";s:7:"summary";s:402:"*Temok* is known as a highly regarded web designing company in world. We are rooted in our forte like web designing, web development, custom web design, ecommerce web designing, flash web design and internet marketing solutions. Excellence of services and affordability of budget makes us choices among all, and established a worldwide clients for us. We are facilitating the individuals, groups and...";s:12:"atom_content";s:4863:"<div><span style="font-family: georgia"><b>Temok</b> is known as a highly regarded web designing company in world. We are rooted in our forte like web designing, web development, custom web design, ecommerce web designing, flash web design and internet marketing solutions. Excellence of services and affordability of budget makes us choices among all, and established a worldwide clients for us. We are facilitating the individuals, groups and organizations with the business potential hidden in world of internet. <b><a href="https://www.temok.com" target="_blank">Temok</a></b> can enable and empower you to enhance, maintain &amp; manage your site content material from anywhere and every time you desire. All you would need is internet access. It's so simple as using Microsoft Word, or writing an email to an associate.</span><br />
+<br />
+<div style="text-align: center;"><img src="https://s20.postimg.org/puiehrmjx/Web_Design.jpg" border="0" alt="" /></div><br />
+<span style="font-family: georgia">Let us handle everything just select the Web Design Plan Thats Right For You. One Price Covers Everything  NO Hidden Costs Or Other Fees. Below you will find some details of our web design plans.<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Basic Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; 5 Page Custom Website<br />
+&#8900; 01 Year Domain Name<br />
+&#8900; 01 Year Web Hosting<br />
+&#8900; 10 Stock Photos<br />
+&#8900; 10 Email Addresses<br />
+&#8900; Free Google Friendly Sitemap<br />
+&#8900; Complete W3C Certified HTML<br />
+&#8900; $99 for 48 Hour Rush Delivery<br />
+&#8900; Price For Limited Time: $175<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=199" target="_blank">Order Basic Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Startup Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; 8 Page Custom Website<br />
+&#8900; Free 01 Year Domain Name<br />
+&#8900; Free 01 Year Web Hosting<br />
+&#8900; 10 Stock Photos<br />
+&#8900; 10 Email Addresses<br />
+&#8900; Free Google Friendly Sitemap<br />
+&#8900; Complete W3C Certified HTML<br />
+&#8900; $99 for 48 Hour Rush Delivery<br />
+&#8900; Price For Limited Time: $295<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=200" target="_blank">Order Startup Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Business Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; Unlimited Web Pages<br />
+&#8900; Content Management System<br />
+&#8900; 6 Unique Web Pages<br />
+&#8900; 1 Year Domain Name<br />
+&#8900; 1 Year Web Hosting<br />
+&#8900; 5 Email Addresses<br />
+&#8900; 5 Stock Photos<br />
+&#8900; Logo Design<br />
+&#8900; 3 Custom Logo Concepts<br />
+&#8900; $99 for 48 Hour Rush Delivery<br />
+&#8900; Price For Limited Time: $545<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=201" target="_blank">Order Business Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Web Design Web 360 Plan &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; Unlimited Web Pages<br />
+&#8900; Content Management System<br />
+&#8900; 8 Unique Web Pages<br />
+&#8900; 1 Year Domain Name<br />
+&#8900; 10 Stock Photos<br />
+&#8900; W3C Certified HTML<br />
+&#8900; Social Media Pages<br />
+&#8900; Facebook Page Design<br />
+&#8900; Twitter Theme Page<br />
+&#8900; YouTube Theme Page<br />
+&#8900; Search Engine Submission<br />
+&#8900; Google, Yahoo &amp; Bing<br />
+&#8900; Price for Limited Time: $745<br />
+&#10093;&#10093; <a href="https://clients.temok.com/cart.php?a=add&amp;pid=202" target="_blank">Order Web 360 Plan</a> &#10092;&#10092;<br />
+<br />
+<b><i><font color="#FF0000">&#8608;&#8608; Special Features &#8606;&#8606;</font></i></b><br />
+<br />
+&#8900; Unlimited Revisions<br />
+&#8900; 100% Satisfaction Guarantee<br />
+&#8900; 24 X 7 Customer Support<br />
+&#8900; Money Back Guarantee*<br />
+<br />
+Your happiness forms an important part of our objective. We strive to deliver our customers top priority and guarantee that our services give you 100% satisfaction. Our company professional logo and web designers understand the need of your business and create designs that efficiently represent the philosophy of your business, thereby, crafting an enviable brand image.<br />
+<br />
+&#10139; We accept VISA, MasterCard, American Express, PayPal, WorldPay and Diners Club International for payment.<br />
+<br />
+<font size="3"><b><i><font color="#FF0000">Contact Info:</font></i></b></font><br />
+Website: <b>Temok.com</b><br />
+Email: <b>sales(at)temok.com</b><br />
+Skype: <b>temok.sales</b><br />
+Twitter: <b>temok_1</b></span></div>
+
+";}i:12;a:10:{s:5:"title";s:75:"Pure SSD Hosting from $ 0.99 | Free .com, Renewal, Website Builder and SSL|";s:4:"link";s:124:"http://forums.devshed.com/web-hosting-offers/978821-pure-ssd-hosting-0-99-free-com-renewal-website-builder-ssl-new-post.html";s:7:"pubdate";s:29:"Tue, 22 Aug 2017 08:30:47 GMT";s:11:"description";s:402:"Build your website on reliable latest generation web hosting with powerful web, security and easy to use software tools.Choose from easy to use 1-click WordPress installation, cPanel or Plesk control panel to control you GPD hosting resource. Add extra enterprise-level server space to store, serve and manage your website. GPDHost offers many variety of hosting plans with different billing cycles,...";s:7:"content";a:1:{s:7:"encoded";s:5653:"<div>Build your website on reliable latest generation web hosting with powerful web, security and easy to use software tools.Choose from easy to use 1-click WordPress installation, cPanel or Plesk control panel to control you GPD hosting resource. Add extra enterprise-level server space to store, serve and manage your website. GPDHost offers many variety of hosting plans with different billing cycles, these plans include free SSL Certificate, free domain and website builder, also many other services and best web hosting solutions. We offer you cheap WordPress, unlimited cPanel and best Plesk hosting.<br />
+GPDHost is offering free .com with the Professional plan. Grab this offer as it is for a limited period. In this offer, the user needs to register with GPDHosts professional plan and then you can get a <b>free .com domain.</b> Unbelievable but its true. If you will continue with us then the <b>renewal of .com domain will be free.</b> <br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Professional cPanel</b></a><br />
+<br />
+<b> 20 GB Storage<br />
+ 4 Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ 4 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ 10 Email Accounts</b><br />
+<br />
+Get your free <b><font color="#FF0000">.com</font></b> <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=33&amp;promocode=gpdcpsha01&amp;tld=.com" target="_blank"><font color="#0000CD"><b>Order Now</b></font></a><br />
+<br />
+Limited Time Offer: Free Domain Included choose from: <a href="https://cp.gpdhost.com/cart.php?a=add&amp;domain=register&amp;tld=.us" target="_blank"><b><font color="#0000CD">.US</font></b></a> <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.party" target="_blank"><b><font color="#0000CD">.PARTY</font></b></a> <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.pro" target="_blank"><b><font color="#0000CD">.PRO</font></b></a> <br />
+<br />
+<b>Main Features:<br />
+<br />
+ Free website Migration<br />
+ All Hosting Plans Managed<br />
+ Automatic Daily Backup<br />
+ Most cost-effective option<br />
+ Easy to install and administer<br />
+ Easy website server set-up<br />
+ Professional support<br />
+ Supports all major software<br />
+ Security, data back up<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>GPDhost unlimited cPanel web hosting!</b></a></b><br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Starter Cpanel</b></a><br />
+<br />
+<b> 2 GB Storage<br />
+ 1 Website<br />
+ FREE SSL (Let's Encrypt)<br />
+ 1 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $0.99 / Mo Or <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> $ 9.99 / Yr<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Basic cPanel</b></a><br />
+<br />
+<b> 5 GB Storage<br />
+ 2 Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ 2 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=84&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $1.99 / Mo<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Ultimate cPanel</b></a><br />
+<br />
+<b> 50 GB Storage<br />
+ 20 Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ 20 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included<br />
+ 3 Year @ $4.99 / Mo</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=34&amp;promocode=gpdcpsha02&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $9.99 / Mo<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Unlimited cPanel</b></a><br />
+<br />
+<b> 70 GB Storage<br />
+ Unlimited Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ Unlimited MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included<br />
+ 3 Year @ $8.99 / Mo</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=35&amp;promocode=gpdcpsha03&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $11.99 / Mo<br />
+<br />
+- Website address: gpdhost.com<br />
+- Country: USA<br />
+- Address: 375 Pearl St 6th floor, New York, NY 10038<br />
+- Phone: +1 718 975 7576<br />
+- E-mail:info@gpdhost.com<br />
+- Payment methods: Visa, MasterCard, Discovery, American Express, PayPal, Bitcoin<br />
+<br />
+Best and cheap web hosting from GPDHost. Free domain registration and SSL installation with hosting plan. If you already have website that you'd like to transfer or just want to build it from scratch, we are the best choice for you as none of these will cost you a dime if you choose GPDHost.<br />
+<br />
+<b>IMPORTANT NOTE :</b><br />
+Please note, that we can register your domain for free, in that condition, if you are going to use our Hosting.<br />
+Otherwise we are not able to process with your request.<br />
+<br />
+Best <b><a href="https://gpdhost.com/shared-plesk-hosting/" target="_blank">Plesk</a></b> hosting<br />
+Cheap <a href="https://gpdhost.com/wordpress-hosting/" target="_blank"><b>Wordpress</b></a> hosting<br />
+For more information visit <a href="https://gpdhost.com/" target="_blank"><b><font color="#0000CD">GPDHost</font></b></a></div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:7:"GPDHost";}s:4:"guid";s:119:"http://forums.devshed.com/web-hosting-offers-100/pure-ssd-hosting-0-99-free-com-renewal-website-builder-ssl-978821.html";s:7:"summary";s:402:"Build your website on reliable latest generation web hosting with powerful web, security and easy to use software tools.Choose from easy to use 1-click WordPress installation, cPanel or Plesk control panel to control you GPD hosting resource. Add extra enterprise-level server space to store, serve and manage your website. GPDHost offers many variety of hosting plans with different billing cycles,...";s:12:"atom_content";s:5653:"<div>Build your website on reliable latest generation web hosting with powerful web, security and easy to use software tools.Choose from easy to use 1-click WordPress installation, cPanel or Plesk control panel to control you GPD hosting resource. Add extra enterprise-level server space to store, serve and manage your website. GPDHost offers many variety of hosting plans with different billing cycles, these plans include free SSL Certificate, free domain and website builder, also many other services and best web hosting solutions. We offer you cheap WordPress, unlimited cPanel and best Plesk hosting.<br />
+GPDHost is offering free .com with the Professional plan. Grab this offer as it is for a limited period. In this offer, the user needs to register with GPDHosts professional plan and then you can get a <b>free .com domain.</b> Unbelievable but its true. If you will continue with us then the <b>renewal of .com domain will be free.</b> <br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Professional cPanel</b></a><br />
+<br />
+<b> 20 GB Storage<br />
+ 4 Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ 4 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ 10 Email Accounts</b><br />
+<br />
+Get your free <b><font color="#FF0000">.com</font></b> <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=33&amp;promocode=gpdcpsha01&amp;tld=.com" target="_blank"><font color="#0000CD"><b>Order Now</b></font></a><br />
+<br />
+Limited Time Offer: Free Domain Included choose from: <a href="https://cp.gpdhost.com/cart.php?a=add&amp;domain=register&amp;tld=.us" target="_blank"><b><font color="#0000CD">.US</font></b></a> <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.party" target="_blank"><b><font color="#0000CD">.PARTY</font></b></a> <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.pro" target="_blank"><b><font color="#0000CD">.PRO</font></b></a> <br />
+<br />
+<b>Main Features:<br />
+<br />
+ Free website Migration<br />
+ All Hosting Plans Managed<br />
+ Automatic Daily Backup<br />
+ Most cost-effective option<br />
+ Easy to install and administer<br />
+ Easy website server set-up<br />
+ Professional support<br />
+ Supports all major software<br />
+ Security, data back up<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>GPDhost unlimited cPanel web hosting!</b></a></b><br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Starter Cpanel</b></a><br />
+<br />
+<b> 2 GB Storage<br />
+ 1 Website<br />
+ FREE SSL (Let's Encrypt)<br />
+ 1 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $0.99 / Mo Or <a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=92&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> $ 9.99 / Yr<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Basic cPanel</b></a><br />
+<br />
+<b> 5 GB Storage<br />
+ 2 Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ 2 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=84&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $1.99 / Mo<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Ultimate cPanel</b></a><br />
+<br />
+<b> 50 GB Storage<br />
+ 20 Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ 20 MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included<br />
+ 3 Year @ $4.99 / Mo</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=34&amp;promocode=gpdcpsha02&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $9.99 / Mo<br />
+<br />
+<a href="https://gpdhost.com/offers/" target="_blank"><b>Unlimited cPanel</b></a><br />
+<br />
+<b> 70 GB Storage<br />
+ Unlimited Websites<br />
+ FREE SSL (Let's Encrypt)<br />
+ Unlimited MySQL Data Bases<br />
+ Traffic Unlimited<br />
+ Back Up Included<br />
+ 3 Year @ $8.99 / Mo</b><br />
+<br />
+<a href="https://cp.gpdhost.com/cart.php?a=add&amp;pid=35&amp;promocode=gpdcpsha03&amp;tld=.pro" target="_blank"><b><font color="#0000CD">Order Now</font></b></a> Just $11.99 / Mo<br />
+<br />
+- Website address: gpdhost.com<br />
+- Country: USA<br />
+- Address: 375 Pearl St 6th floor, New York, NY 10038<br />
+- Phone: +1 718 975 7576<br />
+- E-mail:info@gpdhost.com<br />
+- Payment methods: Visa, MasterCard, Discovery, American Express, PayPal, Bitcoin<br />
+<br />
+Best and cheap web hosting from GPDHost. Free domain registration and SSL installation with hosting plan. If you already have website that you'd like to transfer or just want to build it from scratch, we are the best choice for you as none of these will cost you a dime if you choose GPDHost.<br />
+<br />
+<b>IMPORTANT NOTE :</b><br />
+Please note, that we can register your domain for free, in that condition, if you are going to use our Hosting.<br />
+Otherwise we are not able to process with your request.<br />
+<br />
+Best <b><a href="https://gpdhost.com/shared-plesk-hosting/" target="_blank">Plesk</a></b> hosting<br />
+Cheap <a href="https://gpdhost.com/wordpress-hosting/" target="_blank"><b>Wordpress</b></a> hosting<br />
+For more information visit <a href="https://gpdhost.com/" target="_blank"><b><font color="#0000CD">GPDHost</font></b></a></div>
+
+";}i:13;a:10:{s:5:"title";s:48:"Best Dedicated Server Hosting India- Hostripples";s:4:"link";s:108:"http://forums.devshed.com/web-hosting-offers/978819-dedicated-server-hosting-india-hostripples-new-post.html";s:7:"pubdate";s:29:"Tue, 22 Aug 2017 05:26:28 GMT";s:11:"description";s:394:"Hostripples offers a comprehensive line-up of fully managed dedicated servers in India from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop solution for any requirement. All servers are connected to a...";s:7:"content";a:1:{s:7:"encoded";s:3043:"<div>Hostripples offers a comprehensive line-up of fully managed dedicated servers in India from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop solution for any requirement. All servers are connected to a high-speed, redundant network and backed with 24x7 Support.<br />
+<br />
+<b><font color="#FF8C00">Plan 1- Rs. 9500/Month</font></b><br />
+<font color="#006400">Intel Xeon E3-1220v5(Quad Core)<br />
+100 Mbps Port Speed<br />
+1000 GB Bandwidth<br />
+Linux/ Windows Optional<br />
+1 Free IP<br />
+24 x 7 Live support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF8C00">Plan 2- Rs. 12500/Month</font></b><br />
+<font color="#006400">Intel Xeon E3-1225v5(Quad Core)<br />
+100 Mbps Port Speed<br />
+1000 GB Bandwidth<br />
+Linux/ Windows Optional<br />
+1 Free IP<br />
+24 x 7 Live support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#0000CD">Why choose Hostripples?</font></b>	<br />
+<font color="#A52A2A">        Maximum uptime<br />
+	Easy usability<br />
+	Value for money<br />
+	High performance <br />
+	24 x 7 customer service<br />
+	Unmatched server performance</font><br />
+<br />
+Visit:- <a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Cheap Dedicated Hosting India</a><br />
+<br />
+<br />
+Its not that we are bragging about our services, <a href="http://www.serchen.com/company/hostripples/" target="_blank">our customers say it all!</a><br />
+Hurry up and get <a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Hostripples</a>  the one-stop solution for your web hosting requirements!<br />
+<br />
+<a href="https://hostripples.in/secure/cart.php" target="_blank">Buy now!</a><br />
+<br />
+Hostripples - Affordable web hosting<br />
+<a href="https://hostripples.in/" target="_blank">Hostripples.in</a> Cheap Hosting | Unlimited Bandwidth | Unlimited Space | Domain Name Registration<br />
+<br />
+Connect with us: <a href="https://facebook.hostripples.in" target="_blank">Facebook</a> | <a href="https://twitter.hostripples.in" target="_blank">Twitter</a> | <a href="https://linkedin.hostripples.in/" target="_blank">LinkedIn</a><br />
+<br />
+Hostripples - Affordable web hosting <br />
+<a href="http://hostripples.in/" target="_blank">http://hostripples.in/</a><br />
+<a href="http://hostripples.com/" target="_blank">http://hostripples.com/</a><br />
+<a href="http://hostripples.co.uk/" target="_blank">http://hostripples.co.uk/</a><br />
+<a href="https://myhostseo.com/" target="_blank">https://myhostseo.com/</a><br />
+Hostripples.com Rs.35 Unlimited Hosting</div>
+
+";}s:8:"category";s:18:"Web Hosting Offers";s:2:"dc";a:1:{s:7:"creator";s:8:"hi5s2arp";}s:4:"guid";s:103:"http://forums.devshed.com/web-hosting-offers-100/dedicated-server-hosting-india-hostripples-978819.html";s:7:"summary";s:394:"Hostripples offers a comprehensive line-up of fully managed dedicated servers in India from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop solution for any requirement. All servers are connected to a...";s:12:"atom_content";s:3043:"<div>Hostripples offers a comprehensive line-up of fully managed dedicated servers in India from basic entry level to latest high performance servers across various price points. Available with a choice of Linux and Windows operating systems and a host of other customization and addon options, these servers are designed as a one stop solution for any requirement. All servers are connected to a high-speed, redundant network and backed with 24x7 Support.<br />
+<br />
+<b><font color="#FF8C00">Plan 1- Rs. 9500/Month</font></b><br />
+<font color="#006400">Intel Xeon E3-1220v5(Quad Core)<br />
+100 Mbps Port Speed<br />
+1000 GB Bandwidth<br />
+Linux/ Windows Optional<br />
+1 Free IP<br />
+24 x 7 Live support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#FF8C00">Plan 2- Rs. 12500/Month</font></b><br />
+<font color="#006400">Intel Xeon E3-1225v5(Quad Core)<br />
+100 Mbps Port Speed<br />
+1000 GB Bandwidth<br />
+Linux/ Windows Optional<br />
+1 Free IP<br />
+24 x 7 Live support</font><br />
+<br />
+<a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Buy Now!<br />
+</a><br />
+<b><font color="#0000CD">Why choose Hostripples?</font></b>	<br />
+<font color="#A52A2A">        Maximum uptime<br />
+	Easy usability<br />
+	Value for money<br />
+	High performance <br />
+	24 x 7 customer service<br />
+	Unmatched server performance</font><br />
+<br />
+Visit:- <a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Cheap Dedicated Hosting India</a><br />
+<br />
+<br />
+Its not that we are bragging about our services, <a href="http://www.serchen.com/company/hostripples/" target="_blank">our customers say it all!</a><br />
+Hurry up and get <a href="https://hostripples.in/cheap-dedicated-server-hosting-india.php" target="_blank">Hostripples</a>  the one-stop solution for your web hosting requirements!<br />
+<br />
+<a href="https://hostripples.in/secure/cart.php" target="_blank">Buy now!</a><br />
+<br />
+Hostripples - Affordable web hosting<br />
+<a href="https://hostripples.in/" target="_blank">Hostripples.in</a> Cheap Hosting | Unlimited Bandwidth | Unlimited Space | Domain Name Registration<br />
+<br />
+Connect with us: <a href="https://facebook.hostripples.in" target="_blank">Facebook</a> | <a href="https://twitter.hostripples.in" target="_blank">Twitter</a> | <a href="https://linkedin.hostripples.in/" target="_blank">LinkedIn</a><br />
+<br />
+Hostripples - Affordable web hosting <br />
+<a href="http://hostripples.in/" target="_blank">http://hostripples.in/</a><br />
+<a href="http://hostripples.com/" target="_blank">http://hostripples.com/</a><br />
+<a href="http://hostripples.co.uk/" target="_blank">http://hostripples.co.uk/</a><br />
+<a href="https://myhostseo.com/" target="_blank">https://myhostseo.com/</a><br />
+Hostripples.com Rs.35 Unlimited Hosting</div>
+
+";}i:14;a:10:{s:5:"title";s:15:"strpos function";s:4:"link";s:78:"http://forums.devshed.com/php-development/978818-strpos-function-new-post.html";s:7:"pubdate";s:29:"Mon, 21 Aug 2017 13:12:24 GMT";s:11:"description";s:361:"Hi; 
+ 
+I want a function to deactivate all transactions of the user where these conditions are met: 
+ 
+ 
+1. Transaction id in the database ($row['receipt']) is not exactly as the posted transaction ($_POST['ctransreceipt']) 
+2. Transaciton id in the database ($row['receipt']) does not contain the posted transaction ($_POST['ctransreceipt']) as a partof string";s:7:"content";a:1:{s:7:"encoded";s:7678:"<div>Hi;<br />
+<br />
+I want a function to deactivate all transactions of the user where these conditions are met:<br />
+<br />
+<ol class="decimal"><li style="">Transaction id in the database ($row['receipt']) is not exactly as the posted transaction ($_POST['ctransreceipt'])</li><li style="">Transaciton id in the database ($row['receipt']) does not contain the posted transaction ($_POST['ctransreceipt']) as a partof string</li></ol><br />
+<br />
+Transaciton ids are pretty straight forward. For example <b>5XM48594SE3543034</b> or <b>5XM48594SE3543034-B007</b><br />
+<br />
+Current code seems to work but I wanna make sure I haven't missed anything.<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<hr /><code class="bbcode_code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">deactivate_this_users_other_products_in_our_database</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_where</span><span style="color: #007700">(</span><span style="color: #DD0000">'transactions'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'email'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'ccustemail'</span><span style="color: #007700">&#93;));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">num_rows</span><span style="color: #007700">()&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">result_array</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$val</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$row</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'ctransreceipt'</span><span style="color: #007700">&#93;!=</span><span style="color: #0000BB">$row</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'receipt'</span><span style="color: #007700">&#93;)&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$pos&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'ctransreceipt'</span><span style="color: #007700">&#93;,&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'receipt'</span><span style="color: #007700">&#93;);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$pos</span><span style="color: #007700">===</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">'stats_in_our_database'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'inactive'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">where</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'id'</span><span style="color: #007700">&#93;);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">(</span><span style="color: #DD0000">'transactions'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<br /></span><span style="color: #0000BB"></span>
+</span>
+</code></code><hr />
+</div>I don't really worry about bulk update since each user has 1-3 transactions maximum.<br />
+<br />
+Thanks<br />
+<br />
+Thanks</div>
+
+";}s:8:"category";s:15:"PHP Development";s:2:"dc";a:1:{s:7:"creator";s:21:"English Breakfast Tea";}s:4:"guid";s:71:"http://forums.devshed.com/php-development-5/strpos-function-978818.html";s:7:"summary";s:361:"Hi; 
+ 
+I want a function to deactivate all transactions of the user where these conditions are met: 
+ 
+ 
+1. Transaction id in the database ($row['receipt']) is not exactly as the posted transaction ($_POST['ctransreceipt']) 
+2. Transaciton id in the database ($row['receipt']) does not contain the posted transaction ($_POST['ctransreceipt']) as a partof string";s:12:"atom_content";s:7678:"<div>Hi;<br />
+<br />
+I want a function to deactivate all transactions of the user where these conditions are met:<br />
+<br />
+<ol class="decimal"><li style="">Transaction id in the database ($row['receipt']) is not exactly as the posted transaction ($_POST['ctransreceipt'])</li><li style="">Transaciton id in the database ($row['receipt']) does not contain the posted transaction ($_POST['ctransreceipt']) as a partof string</li></ol><br />
+<br />
+Transaciton ids are pretty straight forward. For example <b>5XM48594SE3543034</b> or <b>5XM48594SE3543034-B007</b><br />
+<br />
+Current code seems to work but I wanna make sure I haven't missed anything.<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<hr /><code class="bbcode_code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">deactivate_this_users_other_products_in_our_database</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_where</span><span style="color: #007700">(</span><span style="color: #DD0000">'transactions'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'email'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'ccustemail'</span><span style="color: #007700">&#93;));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">num_rows</span><span style="color: #007700">()&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">result_array</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$val</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$row</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'ctransreceipt'</span><span style="color: #007700">&#93;!=</span><span style="color: #0000BB">$row</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'receipt'</span><span style="color: #007700">&#93;)&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$pos&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'ctransreceipt'</span><span style="color: #007700">&#93;,&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'receipt'</span><span style="color: #007700">&#93;);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$pos</span><span style="color: #007700">===</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">'stats_in_our_database'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'inactive'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">where</span><span style="color: #007700">(</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">&#91;</span><span style="color: #DD0000">'id'</span><span style="color: #007700">&#93;);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">(</span><span style="color: #DD0000">'transactions'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<br /></span><span style="color: #0000BB"></span>
+</span>
+</code></code><hr />
+</div>I don't really worry about bulk update since each user has 1-3 transactions maximum.<br />
+<br />
+Thanks<br />
+<br />
+Thanks</div>
+
+";}}s:7:"channel";a:8:{s:5:"title";s:15:"Dev Shed Forums";s:4:"link";s:26:"http://forums.devshed.com/";s:11:"description";s:156:"Dev Shed - Open Source web development forums.  Topics covered include PHP, Apache, mySQL, Zope, Jserv, Java, Python, Zend, XML, DHTML, Javascript and more.";s:8:"language";s:2:"en";s:13:"lastbuilddate";s:29:"Wed, 23 Aug 2017 20:17:46 GMT";s:9:"generator";s:9:"vBulletin";s:3:"ttl";s:2:"60";s:7:"tagline";s:156:"Dev Shed - Open Source web development forums.  Topics covered include PHP, Apache, mySQL, Zope, Jserv, Java, Python, Zend, XML, DHTML, Javascript and more.";}s:9:"textinput";a:0:{}s:5:"image";a:3:{s:3:"url";s:45:"http://forums.devshed.com/images/misc/rss.png";s:5:"title";s:15:"Dev Shed Forums";s:4:"link";s:26:"http://forums.devshed.com/";}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

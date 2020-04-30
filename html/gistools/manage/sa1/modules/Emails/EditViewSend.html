@@ -1,0 +1,330 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: EditViewSend.html,v 1.20 2005/02/25 22:55:59 robert Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<script>
+
+
+var uploads_arr=new Array();
+var uploads_count_map=new Object();
+var uploads_count = -1;
+var current_uploads_id = -1;
+
+function fill_form()
+{
+
+if(document.EditView.to_addrs.value  == '' &&
+	document.EditView.cc_addrs.value  == '' &&
+	document.EditView.bcc_addrs.value  == '')
+{
+alert("{MOD.ERR_NOT_ADDRESSED}");
+return false;
+}
+
+var the_form = document.EditView;
+var inputs = the_form.getElementsByTagName('input');
+
+//  this detects if browser needs the following hack or not..
+if (inputs.length > 0)
+{
+	// no need to appendChild to EditView to get file uploads to work
+	return check_form('EditView');
+}
+
+if (! check_form('EditView'))
+{
+return false;
+}
+
+// i can't get dynamically generated inputs to submit w/ the form so i do this...
+var the_table = document.getElementById('uploads');
+
+var inputs = the_table.getElementsByTagName('input');
+var file_count = 0;
+for (var i = 0; i < inputs.length; i++)
+{
+	if(inputs[i].type == 'file')
+	{
+		inputs[i].setAttribute('name','email_attachment'+file_count);
+		var new_input = inputs[i].cloneNode(true);
+		document.EditView.appendChild(new_input);
+		file_count++;
+	}
+}
+
+return true;
+
+}
+
+function setLabels(uploads_arr)
+{
+ var label;
+ if ( uploads_arr.length == 0)
+ {
+	label = "{MOD.LBL_ADD_FILE}";
+ }
+ else
+ {
+	label = "{MOD.LBL_ADD_ANOTHER_FILE}";
+ }
+ document.EditView.add_file_button.value=label;
+
+}
+
+function deleteFile(index)
+{
+        var this_row =uploads_arr[uploads_count_map[index]].row;
+
+        this_row.parentNode.removeChild(this_row);
+        uploads_arr.splice(uploads_count_map[index],1);
+                                                                                                              
+        for ( id in uploads_count_map)
+        {
+                if (uploads_count_map[id] > uploads_count_map[index])
+                {
+                        uploads_count_map[id]--;
+                }
+        }
+
+	setLabels(uploads_arr);
+}
+
+                                                                                                              
+function addFile()
+{
+uploads_arr[uploads_arr.length] = new Object();
+uploads_count++;
+uploads_count_map[uploads_count] = uploads_arr.length - 1;
+current_uploads_id = uploads_count;
+
+var the_table = document.getElementById('uploads');
+
+var row = document.createElement('tr');
+uploads_arr[uploads_count_map[uploads_count]].row = row;
+var cell = document.createElement('td');
+
+
+cell.innerHTML = "<input name='email_attachment"+uploads_count+"' tabindex='0' size='40' type='file'>&nbsp;<input type=button onclick=\"deleteFile('"+uploads_count+"');\" class=button value=\"Remove\">";
+
+row.appendChild(cell);
+
+the_table.appendChild(row);
+setLabels(uploads_arr);
+}
+
+
+
+
+var current_contact = '';
+var current_contact_id = '';
+var current_contact_email = '';
+var current_contact_name = '';
+
+function set_current_parent(id,email,name,value)
+{
+        current_contact_id.value += id+";";
+        current_contact_email.value += email+";";
+        current_contact_name.value += name+";";
+	if ( current_contact.value != '')
+	{
+        	current_contact.value += ";";
+	}
+        current_contact.value += value;
+}
+
+function button_change_onclick(obj)
+{
+
+	for (var i = 0; i < obj.parentNode.childNodes.length;i++)
+        {
+		child = obj.parentNode.childNodes[i];
+		if ( typeof(child.name) == 'undefined')
+		{
+			continue;
+		}
+		if( child.name.match(/addrs_emails$/i))
+		{
+			current_contact_email = obj.parentNode.childNodes[i];
+		}
+		else if ( child.name.match(/addrs_ids$/i))
+		{
+        		current_contact_id = obj.parentNode.childNodes[i];
+		}
+		else if ( child.name.match(/addrs_names$/i))
+		{
+		        current_contact_name = obj.parentNode.childNodes[i];
+		}
+		else if ( child.name.match(/addrs$/i))
+		{
+			current_contact = obj.parentNode.childNodes[i];
+		}
+
+	}
+        
+
+
+     	return window.open("index.php?module=Contacts&action=Popup&html=Email_picker&form=EmailEditView","test","width=600,height=400,resizable=1,scrollbars=1");
+}
+
+</script>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+			<form name="EditView" enctype="multipart/form-data" method="POST" action="index.php">
+			<input type="hidden" name="module" value="Emails">
+			<input type="hidden" name="action">
+			<input type="hidden" name="contact_id" value="{CONTACT_ID}">
+			<input type="hidden" name="user_id" value="{USER_ID}">
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_id" value="{RETURN_ID}">
+			<input type="hidden" name="send" value="">
+			<input type="hidden" name="type" value="out">
+			<input type="hidden" name="return_action" value="Status">
+		<td style="padding-bottom: 2px;">
+<input title="{MOD.LBL_SEND_BUTTON_TITLE}" accessKey="{MOD.LBL_SEND_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save';this.form.send.value='1';return fill_form();" type="submit" name="button" value="  {MOD.LBL_SEND_BUTTON_LABEL}  " > 
+<input title="{MOD.LBL_SAVE_AS_DRAFT_BUTTON_TITLE}" accessKey="{MOD.LBL_SAVE_AS_DRAFT_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save';this.form.type.value='draft';return check_form('EditView');" type="submit" name="button" value="  {MOD.LBL_SAVE_AS_DRAFT_BUTTON_LABEL}  " > 
+<input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='{RETURN_ACTION}'; this.form.module.value='{RETURN_MODULE}'; this.form.record.value='{RETURN_ID}'" type="submit" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "></td>
+	<td align="right" nowrap></td>
+	<td align='right'>{ADMIN_EDIT}</td>
+	</tr>
+</table>
+
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr>
+<td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+        <td class="dataLabel"><slot>{MOD.LBL_FROM}adf</slot></td>
+        <td colspan="4" class="dataField" nowrap><slot><input name='from_addr' tabindex='0' size="40" type="text" value="{FROM_ADDR}"><input name="from_addr_ids" type="hidden" value="{FROM_ADDR_ID}"><input name="from_addr_emails" type="hidden" value="{FROM_ADDR_EMAILS}"><input name="from_addr_names" type="hidden" value="{FROM_ADDR_NAMES}">
+<!--
+{CHANGE_TO_ADDRS_BUTTON}
+-->
+        </slot></td>
+        </tr>
+
+	<tr valign="top">
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_TO}</slot> 
+</td>
+	<td width="35%" class="dataField" nowrap><slot><input name='to_addrs' tabindex='0' size="60" type="text" value="{TO_ADDRS}"><input name="to_addrs_ids" type="hidden" value="{TO_ADDRS_IDS}"><input name="to_addrs_emails" type="hidden" value="{TO_ADDRS_EMAILS}"><input name="to_addrs_names" type="hidden" value="{TO_ADDRS_NAMES}">  {CHANGE_TO_ADDRS_BUTTON}</slot></td>
+
+	<td nowrap><slot></slot></td>
+	<td width="25%" class="dataLabel" valign="top" align=right><slot><select tabindex='0' name='parent_type' onChange="document.EditView.parent_name.value='';">{TYPE_OPTIONS}</select>&nbsp;</slot></td>
+	<td width="25%" class="dataField" nowrap><slot><input name='parent_id' type="hidden" value='{PARENT_ID}'><input name='parent_name' tabindex='0' readonly type='text' value="{PARENT_NAME}">&nbsp;{CHANGE_PARENT_BUTTON}</slot></td>
+	</tr>
+	<tr valign="top">
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_CC}</slot></td>
+	<td width="35%" class="dataField" nowrap><slot><input name='cc_addrs' tabindex='0' size="60" type="text" value="{CC_ADDRS}"><input name="cc_addrs_ids" type="hidden" value="{CC_ADDRS_IDS}"><input name="cc_addrs_emails" type="hidden" value="{CC_ADDRS_EMAILS}"><input name="cc_addrs_names" type="hidden" value="{CC_ADDRS_NAMES}"> {CHANGE_CC_ADDRS_BUTTON}</slot></td>
+	<td></td><td></td>
+	</tr>
+	<tr valign="top">
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_BCC}</slot></td>
+	<td width="35%" class="dataField" nowrap><slot><input name='bcc_addrs' tabindex='0' size="60" type="text" value="{BCC_ADDRS}"><input name="bcc_addrs_ids" type="hidden" value="{BCC_ADDRS_IDS}"><input name="bcc_addrs_emails" type="hidden" value="{BCC_ADDRS_EMAILS}"><input name="bcc_addrs_names" type="hidden" value="{BCC_ADDRS_NAMES}"> {CHANGE_BCC_ADDRS_BUTTON}</slot></td>
+<td nowrap><slot></slot></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN: open_source -->
+<!-- END: open_source -->
+
+	</tr>
+<tr><td colspan=5>&nbsp;</td></tr>
+	<tr>
+	<td class="dataLabel"><slot>{MOD.LBL_SUBJECT}</slot></td>
+<style>
+#subjectfield { height: 1.6em; }
+</style>
+	<td colspan='4' class="dataField"><slot><textarea name='name' tabindex='0' cols="90" rows="1"  style="height: 1.6.em; overflow-y:auto; font-family:sans-serif,monospace; font-size:inherit;" id="subjectfield">{NAME}</textarea></slot></td>
+	</tr>
+  <tr>
+	<td  valign="top" class="dataLabel"><slot>{MOD.LBL_BODY}</td>
+	<td colspan="4" class="dataField"><slot><textarea tabindex='0' name='description' cols="90" rows="10">{DESCRIPTION}</textarea></slot></td>
+</tr>
+<tr><td  valign="top" class="dataLabel"><slot>{MOD.LBL_ATTACHMENTS}</td><td>
+<div id="uploads_div">
+</div>
+<script>
+var the_div = document.getElementById('uploads_div');
+the_div.innerHTML = "<table id='uploads_top' border=0 cellpadding='0' cellspacing='0'><tbody id='uploads'></tbody></table>";
+</script>
+<!--
+<table id='uploads_top' border=0 cellpadding="0" cellspacing="0">
+<tbody id='uploads'>
+</tbody>
+</table>
+-->
+<input type="button" name="add_file_button" onclick="addFile();" value="{MOD.LBL_ADD_FILE}" class="button">
+</td></tr></table>
+</td></tr></table>
+
+</form>
+
+{JAVASCRIPT}
+
+<!-- END: main -->

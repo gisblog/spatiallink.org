@@ -1,0 +1,207 @@
+O:9:"MagpieRSS":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:7:{s:5:"title";s:23:"New Zip Codes - 2011/08";s:11:"description";s:64:"Two new Zip Codes for August, 2011:
+
+31144	KENNESAW
+33206	MIAMI
+";s:4:"link";s:66:"http://maps.huge.info/blog/2011/09/new_zip_codes_added_082011.html";s:4:"guid";s:66:"http://maps.huge.info/blog/2011/09/new_zip_codes_added_082011.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Mon, 19 Sep 2011 15:05:08 -0600";s:7:"summary";s:64:"Two new Zip Codes for August, 2011:
+
+31144	KENNESAW
+33206	MIAMI
+";}i:1;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/07";s:11:"description";s:55:"One new Zip Code added in July, 2011:
+
+22350	ALEXANDRIA";s:4:"link";s:59:"http://maps.huge.info/blog/2011/08/new_zipcodes_201107.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/08/new_zipcodes_201107.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Sun, 14 Aug 2011 11:16:19 -0600";s:7:"summary";s:55:"One new Zip Code added in July, 2011:
+
+22350	ALEXANDRIA";}i:2;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/06";s:11:"description";s:109:"Five new Zip Codes added in June, 2011:
+
+09771	APO
+09862	APO
+75033	FRISCO
+84129	SALT LAKE CITY
+99623	WASILLA
+";s:4:"link";s:59:"http://maps.huge.info/blog/2011/07/new_zipcodes_201106.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/07/new_zipcodes_201106.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Fri, 29 Jul 2011 16:49:00 -0600";s:7:"summary";s:109:"Five new Zip Codes added in June, 2011:
+
+09771	APO
+09862	APO
+75033	FRISCO
+84129	SALT LAKE CITY
+99623	WASILLA
+";}i:3;a:7:{s:5:"title";s:22:"New Zip Codes for 2010";s:11:"description";s:978:"41 new Zip Codes added in the year 2010:
+
+2010-01-01 09358 FPO
+2010-01-01 09608 FPO
+2010-01-01 09859 FPO
+2010-01-01 96502 FPO
+2010-01-01 96516 FPO
+2010-02-01 09813 DPO
+2010-02-01 09816 DPO
+2010-02-01 56965 PARCEL RETURN SERVICE
+2010-03-01 34060 DPO
+2010-05-01 09368 APO
+2010-05-01 96629 FPO
+2010-06-01 09347 APO
+2010-06-01 09352 APO
+2010-06-01 09403 APO
+2010-06-01 09728 DPO
+2010-06-01 09818 APO
+2010-06-01 09829 APO
+2010-06-01 40122 FORT KNOX
+2010-06-01 89158 LAS VEGAS
+2010-06-01 89158 LAS VEGAS
+2010-06-01 93737 FRESNO
+2010-07-01 09313 APO
+2010-07-01 09317 APO
+2010-07-01 09328 APO
+2010-07-01 09370 APO
+2010-07-01 09399 APO
+2010-07-01 09633 APO
+2010-07-01 50982 DES MOINES
+2010-07-01 50982 DES MOINES
+2010-07-01 50983 DES MOINES
+2010-07-01 50983 DES MOINES
+2010-07-01 96577 APO
+2010-07-01 98189 SEATTLE
+2010-07-01 98189 SEATTLE
+2010-08-01 34011 DPO
+2010-08-01 34011 DPO
+2010-08-01 96220 APO
+2010-08-01 96259 APO
+2010-09-01 09384 APO
+2010-12-01 09826 DPO
+2010-12-01 09845 DPO
+";s:4:"link";s:62:"http://maps.huge.info/blog/2011/04/new_zip_codes_for_2010.html";s:4:"guid";s:62:"http://maps.huge.info/blog/2011/04/new_zip_codes_for_2010.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Tue, 26 Apr 2011 14:03:47 -0600";s:7:"summary";s:978:"41 new Zip Codes added in the year 2010:
+
+2010-01-01 09358 FPO
+2010-01-01 09608 FPO
+2010-01-01 09859 FPO
+2010-01-01 96502 FPO
+2010-01-01 96516 FPO
+2010-02-01 09813 DPO
+2010-02-01 09816 DPO
+2010-02-01 56965 PARCEL RETURN SERVICE
+2010-03-01 34060 DPO
+2010-05-01 09368 APO
+2010-05-01 96629 FPO
+2010-06-01 09347 APO
+2010-06-01 09352 APO
+2010-06-01 09403 APO
+2010-06-01 09728 DPO
+2010-06-01 09818 APO
+2010-06-01 09829 APO
+2010-06-01 40122 FORT KNOX
+2010-06-01 89158 LAS VEGAS
+2010-06-01 89158 LAS VEGAS
+2010-06-01 93737 FRESNO
+2010-07-01 09313 APO
+2010-07-01 09317 APO
+2010-07-01 09328 APO
+2010-07-01 09370 APO
+2010-07-01 09399 APO
+2010-07-01 09633 APO
+2010-07-01 50982 DES MOINES
+2010-07-01 50982 DES MOINES
+2010-07-01 50983 DES MOINES
+2010-07-01 50983 DES MOINES
+2010-07-01 96577 APO
+2010-07-01 98189 SEATTLE
+2010-07-01 98189 SEATTLE
+2010-08-01 34011 DPO
+2010-08-01 34011 DPO
+2010-08-01 96220 APO
+2010-08-01 96259 APO
+2010-09-01 09384 APO
+2010-12-01 09826 DPO
+2010-12-01 09845 DPO
+";}i:4;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/05";s:11:"description";s:47:"One new Zip Code added in May, 2011:
+
+09611	APO";s:4:"link";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201105.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201105.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Tue, 26 Apr 2011 13:56:47 -0600";s:7:"summary";s:47:"One new Zip Code added in May, 2011:
+
+09611	APO";}i:5;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/04";s:11:"description";s:50:"One new Zip Code added in April, 2011:
+
+09367	APO
+";s:4:"link";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201104.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201104.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Tue, 26 Apr 2011 13:50:17 -0600";s:7:"summary";s:50:"One new Zip Code added in April, 2011:
+
+09367	APO
+";}i:6;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/03";s:11:"description";s:48:"There were no new Zip Codes added in March 2011.";s:4:"link";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201103.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201103.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Tue, 26 Apr 2011 13:42:39 -0600";s:7:"summary";s:48:"There were no new Zip Codes added in March 2011.";}i:7;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/02";s:11:"description";s:64:"Two new Zip Codes added in February, 2011:
+
+09394	FPO
+09397	APO
+";s:4:"link";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201102.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/04/new_zipcodes_201102.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Tue, 26 Apr 2011 13:39:32 -0600";s:7:"summary";s:64:"Two new Zip Codes added in February, 2011:
+
+09394	FPO
+09397	APO
+";}i:8;a:7:{s:5:"title";s:22:"New Zipcodes - 2011/01";s:11:"description";s:84:"Three new Zip Codes added in January, 2011:
+
+09846	DPO
+20417	WASHINGTON
+33106	MIAMI
+";s:4:"link";s:59:"http://maps.huge.info/blog/2011/01/new_zipcodes_201101.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2011/01/new_zipcodes_201101.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Sat, 01 Jan 2011 11:55:20 -0600";s:7:"summary";s:84:"Three new Zip Codes added in January, 2011:
+
+09846	DPO
+20417	WASHINGTON
+33106	MIAMI
+";}i:9;a:7:{s:5:"title";s:22:"New Zipcodes - 2010/12";s:11:"description";s:59:"Two new Zip Codes for December, 2010.
+
+09826	DPO
+09845	DPO
+";s:4:"link";s:59:"http://maps.huge.info/blog/2010/12/new_zipcodes_201012.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2010/12/new_zipcodes_201012.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Fri, 24 Dec 2010 13:16:51 -0600";s:7:"summary";s:59:"Two new Zip Codes for December, 2010.
+
+09826	DPO
+09845	DPO
+";}i:10;a:7:{s:5:"title";s:22:"New Zipcodes - 2010/10";s:11:"description";s:47:"One new Zip Code for October, 2010.
+
+09367	APO
+";s:4:"link";s:59:"http://maps.huge.info/blog/2010/12/new_zipcodes_201010.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2010/12/new_zipcodes_201010.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Fri, 10 Dec 2010 20:16:45 -0600";s:7:"summary";s:47:"One new Zip Code for October, 2010.
+
+09367	APO
+";}i:11;a:7:{s:5:"title";s:22:"New Zipcodes - 2010/08";s:11:"description";s:84:"There were three new Zip Code added in August, 2010.
+
+34011	DPO
+96220	APO
+96259	APO
+";s:4:"link";s:59:"http://maps.huge.info/blog/2010/11/new_zipcodes_201008.html";s:4:"guid";s:59:"http://maps.huge.info/blog/2010/11/new_zipcodes_201008.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Mon, 29 Nov 2010 13:14:08 -0600";s:7:"summary";s:84:"There were three new Zip Code added in August, 2010.
+
+34011	DPO
+96220	APO
+96259	APO
+";}i:12;a:7:{s:5:"title";s:22:"New Zipcodes - 2010/09";s:11:"description";s:64:"There was one new Zip Code added in September, 2010.
+
+09384	APO
+";s:4:"link";s:66:"http://maps.huge.info/blog/2010/11/new_zip_codes_added_092010.html";s:4:"guid";s:66:"http://maps.huge.info/blog/2010/11/new_zip_codes_added_092010.html";s:8:"category";s:9:"Zip Codes";s:7:"pubdate";s:31:"Sun, 07 Nov 2010 16:59:00 -0600";s:7:"summary";s:64:"There was one new Zip Code added in September, 2010.
+
+09384	APO
+";}i:13;a:7:{s:5:"title";s:24:"Android App Comment Spam";s:11:"description";s:1001:"One of our apps had its first repeat spammer to the market comments. A player of a game app (“Ronnie”) decided to spam our app twice each day for a while back in July. He was promoting his referral code the game uses as a reward. It was quite bothersome to me as I seemed powerless to do anything but remove it from my own personal device.
+
+The support people of the app he was promoting promptly banned "Ronnie." I want to thank PerBlue.com for handling the entire incident with grace and speed.
+
+If a user sees spam, they should tell Google. There’s a spam checkbox in the market app next to each comment. If enough people mark a comment as spam, eventually Google should take care of it.
+
+If a developer sees spam on their app comments, they need to be proactive. I should have reacted quicker in my case and contacted the app's support people right away.
+
+<a href="http://ache.info/images/app_comment_spam.jpg"><img src="http://ache.info/images/app_comment_spam.jpg" width=300 border=1></a>
+";s:4:"link";s:64:"http://maps.huge.info/blog/2010/08/android_app_comment_spam.html";s:4:"guid";s:64:"http://maps.huge.info/blog/2010/08/android_app_comment_spam.html";s:8:"category";s:7:"Android";s:7:"pubdate";s:31:"Fri, 06 Aug 2010 14:09:18 -0600";s:7:"summary";s:1001:"One of our apps had its first repeat spammer to the market comments. A player of a game app (“Ronnie”) decided to spam our app twice each day for a while back in July. He was promoting his referral code the game uses as a reward. It was quite bothersome to me as I seemed powerless to do anything but remove it from my own personal device.
+
+The support people of the app he was promoting promptly banned "Ronnie." I want to thank PerBlue.com for handling the entire incident with grace and speed.
+
+If a user sees spam, they should tell Google. There’s a spam checkbox in the market app next to each comment. If enough people mark a comment as spam, eventually Google should take care of it.
+
+If a developer sees spam on their app comments, they need to be proactive. I should have reacted quicker in my case and contacted the app's support people right away.
+
+<a href="http://ache.info/images/app_comment_spam.jpg"><img src="http://ache.info/images/app_comment_spam.jpg" width=300 border=1></a>
+";}i:14;a:7:{s:5:"title";s:44:"USPS Zip Code polygon Database Update Policy";s:11:"description";s:448:"USPS Zip Code Polygon Database product license policy is as follows:
+
+The database has a "perpetual" license which means that the license doesn't expire.
+
+The license covers the release of the database that is current when the license is purchased. 
+
+Future releases of the database must be relicensed at the then current price.
+
+The database is released up to twice a year (two versions), usually in March (January data) and September (July data).";s:4:"link";s:70:"http://maps.huge.info/blog/2010/07/usps_zip_code_polygon_database.html";s:4:"guid";s:70:"http://maps.huge.info/blog/2010/07/usps_zip_code_polygon_database.html";s:8:"category";s:12:"Product News";s:7:"pubdate";s:31:"Thu, 01 Jul 2010 14:14:54 -0600";s:7:"summary";s:448:"USPS Zip Code Polygon Database product license policy is as follows:
+
+The database has a "perpetual" license which means that the license doesn't expire.
+
+The license covers the release of the database that is current when the license is purchased. 
+
+Future releases of the database must be relicensed at the then current price.
+
+The database is released up to twice a year (two versions), usually in March (January data) and September (July data).";}}s:7:"channel";a:9:{s:5:"title";s:32:"maps.huge.info / USNaviguide LLC";s:4:"link";s:27:"http://maps.huge.info/blog/";s:11:"description";s:34:"Maps.Huge.Info Information Central";s:8:"language";s:2:"en";s:9:"copyright";s:14:"Copyright 2011";s:13:"lastbuilddate";s:31:"Mon, 19 Sep 2011 15:05:08 -0600";s:9:"generator";s:36:"http://www.sixapart.com/movabletype/";s:4:"docs";s:37:"http://blogs.law.harvard.edu/tech/rss";s:7:"tagline";s:34:"Maps.Huge.Info Information Central";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Mon, 19 Sep 2011 21:20:33 GMT
+";s:4:"etag";s:30:""1dc032d-29f7-4ad51e9c80a40"
+";}

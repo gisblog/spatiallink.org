@@ -1,0 +1,291 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: EditView.html,v 1.58.2.2 2005/05/09 18:00:06 andrew Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+{ERROR_STRING}
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+			<form name="EditView" method="POST" action="index.php">
+			<input type="hidden" name="display_tabs_def">
+			<input type="hidden" name="hide_tabs_def">
+			<input type="hidden" name="remove_tabs_def">
+			<input type="hidden" name="module" value="Users">
+			<input type="hidden" name="record" value="{ID}">
+			<input type="hidden" name="action">
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_id" value="{RETURN_ID}">
+			<input type="hidden" name="return_action" value="{RETURN_ACTION}">
+		<td style="padding-bottom: 2px;"><input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" onclick="this.form.action.value='Save'; {CHOOSER_SCRIPT} return verify_data(EditView)" type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " > <input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='{RETURN_ACTION}'; this.form.module.value='{RETURN_MODULE}'; this.form.record.value='{RETURN_ID}'" type="submit" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "></td>
+	<td align="right" nowrap><span class="required">{APP.LBL_REQUIRED_SYMBOL}</span> {APP.NTC_REQUIRED}</td>
+</tr>
+</table>
+
+<p><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr>
+<td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_FIRST_NAME}</slot></td>
+	<td width="35%" class="dataField"><slot><input name='first_name' {FIRST_NAME_DISABLED} tabindex='1' size='25' maxlength='25' type="text" value="{FIRST_NAME}"></slot></td>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_USER_NAME} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+	<td width="35%" class="dataField"><slot><input name='user_name' type="text" {USER_NAME_DISABLED} tabindex='2' size='15' maxlength='25' value='{USER_NAME}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_LAST_NAME} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+	<td  class="dataField"><slot><input name='last_name' type="text" {LAST_NAME_DISABLED} tabindex='1' size='25' maxlength='25' value="{LAST_NAME}"></slot></td>
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	{USER_STATUS_OPTIONS}
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	</tr>
+	</table></td>
+	</tr></table></p>
+
+<p><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr><td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<th width="100%" align="left" class="dataLabel" colspan="4"><h4 class="dataLabel"><slot>{MOD.LBL_USER_SETTINGS}</slot></h4></th>
+	</tr>
+	<tr>
+	<td width="20%" class="dataLabel"><slot>{MOD.LBL_ADMIN}</slot></td>
+	<td width="15%" class="dataField"><slot><input name="is_admin" class="checkbox" tabindex='3' type="checkbox" {IS_ADMIN_DISABLED} {IS_ADMIN}></slot></td>
+	<td width="65%" class="dataField"><slot>{MOD.LBL_ADMIN_TEXT}</slot></td>
+	</tr>
+		<tr>
+	<td width="20%" class="dataLabel"><slot>{MOD.LBL_PORTAL_ONLY}</slot></td>
+	<td width="15%" class="dataField"><slot><input name='portal_only' class="checkbox" tabindex='3' type="checkbox" value='1' {IS_PORTAL_ONLY_DISABLED} {IS_PORTALONLY}></slot></td>
+	<td width="65%" class="dataField"><slot>{MOD.LBL_PORTAL_ONLY_TEXT}</slot></td>
+	</tr>
+	<tr>
+	<td class="dataLabel"><slot>{MOD.LBL_RECEIVE_NOTIFICATIONS}</slot></td>
+	<td class="dataField"><slot><input name='receive_notifications' class="checkbox" tabindex='3' type="checkbox" value="1" {RECEIVE_NOTIFICATIONS}></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_RECEIVE_NOTIFICATIONS_TEXT}</slot></td>
+	</tr>
+	<tr>
+	<td class="dataLabel"><slot>{MOD.LBL_DATE_FORMAT}</slot></td>
+	<td class="dataField"><slot><select tabindex='3' name='dateformat'>{DATEOPTIONS}</select></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_DATE_FORMAT_TEXT}</slot></td>
+	</tr>
+	<tr>
+	<td class="dataLabel"><slot>{MOD.LBL_TIME_FORMAT}</slot></td>
+	<td class="dataField"><slot><select tabindex='3' name='timeformat'>{TIMEOPTIONS}</select></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_TIME_FORMAT_TEXT}</slot></td>
+	</tr>
+	<tr>
+	<td class="dataLabel"><slot>{MOD.LBL_TIMEZONE}</slot></td>
+	<td class="dataField"><slot><select tabindex='3' name='timezone'>{TIMEZONEOPTIONS}</select></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_TIMEZONE_TEXT}</slot></td>
+	</tr>
+	<tr>
+	<td class="dataLabel"><slot>{MOD.LBL_GRIDLINE}</slot></td>
+	<td class="dataField"><slot><input tabindex='3' name='gridline' class="checkbox" type="checkbox" {GRIDLINE}></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_GRIDLINE_TEXT}</slot></td>
+	</tr>
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_CURRENCY}</slot></td>
+	<td class="dataField"><slot><select tabindex='3' name='currency'>{CURRENCY}</select></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_CURRENCY_TEXT}</slot></td>
+	</tr>
+
+
+
+
+
+
+
+
+
+	<!-- BEGIN: open_source -->
+	<!-- END: open_source -->
+	<tr>
+	<td  class="dataLabel" valign="top"><slot>{MOD.LBL_REMINDER}</slot></td>
+	<td valign="top" class="dataField" nowrap><slot><input tabindex='3' name='should_remind' type='hidden' value='0'><input name='should_remind' size='2' maxlength='2' tabindex='3' onclick='toggleDisplay("should_remind_list");' type="checkbox" class="checkbox" value='1' {REMINDER_CHECKED}> <div id='should_remind_list' style='display:{REMINDER_TIME_DISPLAY}'><select tabindex='3' name='reminder_time'  >{REMINDER_TIME_OPTIONS}</select></div></slot></td>
+	<td class="dataField"><slot>{MOD.LBL_REMINDER_TEXT}</slot></td>
+	</tr>
+	</table>
+</td></tr></table></p>
+<p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr><td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<th align="left" class="dataLabel" colspan="4"><h4 class="dataLabel"><slot>{MOD.LBL_USER_INFORMATION}</slot></h4></th>
+	</tr><tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_EMPLOYEE_STATUS}</slot></td>
+	<td width="35%" class="dataField"><slot>{EMPLOYEE_STATUS_OPTIONS}</slot></td>
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_TITLE}</slot></td>
+	<td width="35%" class="dataField"><slot><input name='title' type="text" tabindex='5' size='15' maxlength='25' value='{TITLE}'></slot></td>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_OFFICE_PHONE}</slot></td>
+	<td width="35%" class="dataField"><slot><input name='phone_work' type="text" tabindex='6' size='20' maxlength='25' value='{PHONE_WORK}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_DEPARTMENT}</slot></td>
+	<td  class="dataField"><slot><input name='department' type="text" tabindex='5' size='25' maxlength='100' value='{DEPARTMENT}'></slot></td>
+	<td class="dataLabel"><slot>{MOD.LBL_MOBILE_PHONE}</slot></td>
+	<td  class="dataField"><slot><input name='phone_mobile' type="text" tabindex='6' size='20' maxlength='25' value='{PHONE_MOBILE}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_REPORTS_TO}</slot></td>
+	<td class="dataField"><slot><input type="text" readonly="readonly" name="reports_to_name" value="{REPORTS_TO_NAME}" />
+		<input type="hidden" name="reports_to_id" value="{REPORTS_TO_ID}" />
+		{REPORTS_TO_CHANGE_BUTTON}</slot></td>
+	<td class="dataLabel"><slot>{MOD.LBL_OTHER_PHONE}</slot></td>
+	<td  class="dataField"><slot><input name='phone_other' type="text" tabindex='6' size='20' maxlength='25' value='{PHONE_OTHER}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	<td class="dataLabel"><slot>{MOD.LBL_FAX}</slot></td>
+	<td  class="dataField"><slot><input name='phone_fax' type="text" tabindex='6' size='20' maxlength='25' value='{PHONE_FAX}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_EMAIL}</slot></td>
+	<td  class="dataField"><slot><input name='email1' type="text" tabindex='5' size='35' maxlength='100' value='{EMAIL1}'></slot></td>
+	<td class="dataLabel"><slot>{MOD.LBL_HOME_PHONE}</slot></td>
+	<td  class="dataField"><slot><input name='phone_home' type="text" tabindex='6' size='20' maxlength='25' value='{PHONE_HOME}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_OTHER_EMAIL}</slot></td>
+	<td  class="dataField"><slot><input name='email2' type="text" tabindex='5' size='35' maxlength='100' value='{EMAIL2}'></slot></td>
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_MESSENGER_TYPE}</slot></td>
+	<td  class="dataField"><slot>{MESSENGER_TYPE_OPTIONS}</slot></td>
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_MESSENGER_ID}</slot></td>
+	<td  class="dataField"><slot><input name='messenger_id' type="text" tabindex='5' size='35' maxlength='100' value='{MESSENGER_ID}'></slot></td>
+	<td class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td valign="top" class="dataLabel"><slot>{MOD.LBL_NOTES}</slot></td>
+	<td width="80%" colspan="4"><slot><textarea name='description' tabindex='7' cols="80" rows="4">{DESCRIPTION}</textarea></slot></td>
+	</tr></table>
+</td></tr></table>
+<BR>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr><td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<th align="left" class="dataField" colspan="4"><h4 class="dataLabel"><slot>{MOD.LBL_ADDRESS_INFORMATION}</slot></h4></th>
+	</tr><tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_PRIMARY_ADDRESS}</slot></td>
+	<td width="35%" class="dataField"><slot><textarea name='address_street' rows="2" tabindex='8' cols="30">{ADDRESS_STREET}</textarea></slot></td>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_CITY}</slot></td>
+	<td width="35%" class="dataField"><slot><input name='address_city' tabindex='8' size='15' maxlength='100' value='{ADDRESS_CITY}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_STATE}</slot></td>
+	<td  class="dataField"><slot><input name='address_state' tabindex='8' size='15' maxlength='100' value='{ADDRESS_STATE}'></slot></td>
+	<td class="dataLabel"><slot>{MOD.LBL_POSTAL_CODE}</slot></td>
+	<td  class="dataField"><slot><input name='address_postalcode' tabindex='8' size='10' maxlength='20' value='{ADDRESS_POSTALCODE}'></slot></td>
+	</tr><tr>
+	<td class="dataLabel"><slot>{MOD.LBL_COUNTRY}</slot></td>
+	<td  class="dataField"><slot><input name='address_country' tabindex='8' size='10' maxlength='20' value='{ADDRESS_COUNTRY}'></slot></td>
+</tr></table>
+</td></tr></table>
+
+<BR>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr><td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr><th align="left" class="dataLabel" colspan="4"><h4 class="dataLabel">{MOD.LBL_MAIL_OPTIONS_TITLE}</h4></th>
+        </tr>
+<tr>
+        <td width="15%" class="dataLabel">{MOD.LBL_MAIL_FROMNAME} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+        <td width="35%" class="dataField"><input name='mail_fromname' tabindex='9' size='25' maxlength='128' type="text" value="{MAIL_FROMNAME}"></td>
+        <td width="15%" class="dataLabel">{MOD.LBL_MAIL_FROMADDRESS} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+        <td width="35%" class="dataField"><input name='mail_fromaddress' tabindex='9' size='25' maxlength='128' type="text" value="{MAIL_FROMADDRESS}"></td>
+        </tr>
+	<tr>
+	<td  class="dataLabel">{MOD.LBL_MAIL_SENDTYPE}</td>
+	<td class="dataField"><select name="mail_sendtype">{MAIL_SENDTYPE}</select></td>
+	</tr>
+        <tr><td colspan="4">&nbsp;</td></tr>
+        <tr><td colspan="4">
+        <div id="smtp_settings">
+        <table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPSERVER} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+        <td width="35%" class="dataField"><input type="text" name="mail_smtpserver" tabindex="9" size="25" maxlength="64" value="{MAIL_SMTPSERVER}"></td>
+        <td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPPORT} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+        <td width="35%" class="dataField"><input type="text" name="mail_smtpport" tabindex="9" size="5" maxlength="5" value="{MAIL_SMTPPORT}"></td>
+        </tr>
+		<tr><td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPAUTH_REQ}</td><td colspan="3"><input name='mail_smtpauth_req' type="checkbox" tabindex="9" class="checkbox" value="1" {MAIL_SMTPAUTH_REQ}></td></tr>
+        <tr><td colspan="4">
+        <div id="smtp_auth">
+        <table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPUSER} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+        <td width="35% class="dataField""><input type="text" tabindex="9" name="mail_smtpuser" size="25" maxlength="64" value="{MAIL_SMTPUSER}"></td>
+        <td width="15%" class="dataLabel">{MOD.LBL_MAIL_SMTPPASS} <span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></td>
+        <td width="35%" class="dataField"><input tabindex="9" type="password" name="mail_smtppass" size="25" maxlength="64" value="{MAIL_SMTPPASS}"></td>
+        </tr></table>
+        </div>
+        </td></tr></table>
+        </td></tr></table>
+        </td></tr></table>
+<!-- BEGIN: freebusy -->
+<p><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+        <tr><th align="left" class="dataLabel" colspan="4"><h4 class="dataLabel">{MOD.LBL_CALENDAR_OPTIONS}</h4></th>
+        </tr>
+<tr>
+<td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_PUBLISH_KEY}</slot></td>
+	<td width="20%" class="dataField"><slot><input name='calendar_publish_key' tabindex='10' size='25' maxlength='25' type="text" value="{CALENDAR_PUBLISH_KEY}"></slot></td>
+	<td width="65%" class="dataField"><slot>&nbsp;{MOD.LBL_CHOOSE_A_KEY}</slot></td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+</p>
+<!-- END: freebusy -->
+
+
+<p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr>
+	<td width="10%" class="dataField"> {TAB_CHOOSER} </td>
+	<td class="dataField" width="90%" valign="middle"><BR><BR>{CHOOSE_WHICH}</td>
+</tr>
+<tr>
+	<td colspan="2"><span class="dataLabel">{MOD.LBL_MAX_TAB}&nbsp;&nbsp;&nbsp;<input type="text" size="2" maxlength="2" name="user_max_tabs" value="{MAX_TAB}"></td>
+</tr>
+</table></p>
+
+
+
+
+
+
+	</form>
+
+{JAVASCRIPT}
+
+<!-- END: main -->

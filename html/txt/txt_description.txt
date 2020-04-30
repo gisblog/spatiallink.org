@@ -1,0 +1,1 @@
+spatiallink_org is a volunteer based resource coordination website supporting the spatial needs of the world through a global directory of interested professionals and volunteers, and other GIS tools. Our objective is to streamline project management for volunteers through reliable web access to selected opensource technology.

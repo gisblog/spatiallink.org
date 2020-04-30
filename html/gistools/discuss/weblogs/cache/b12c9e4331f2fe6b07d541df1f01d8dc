@@ -1,0 +1,414 @@
+O:9:"MagpieRSS":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:10:{s:5:"title";s:18:"Clone a running Pi";s:4:"link";s:54:"http://think.random-stuff.org/posts/clone-a-running-pi";s:7:"pubdate";s:31:"Fri, 26 Jun 2015 01:45:25 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:8:"PiRandom";s:4:"guid";s:36:"http://think.random-stuff.org/?p=311";s:11:"description";s:368:"Let&#8217;s say you have a Raspberry Pi running a web site (like this one) and want to have a backup. It turns out with a little netcat magic, you can do just that. 1. ssh to the pi, and run<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/clone-a-running-pi">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:2985:"<p>Let&#8217;s say you have a Raspberry Pi running a web site (like this one) and want to have a backup.</p>
+<p>It turns out with a little netcat magic, you can do just that.</p>
+<p>1. ssh to the pi, and run this (for Raspbian or other Linux distros)</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+sudo netcat -l 2222 &lt; /dev/mmcblk0
+</pre>
+<p>or, for FreeBSD</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+sudo netcat -l -p 2222 &lt; /dev/mmcsd0
+</pre>
+<p>2. On your &#8220;regular&#8221; computer (in my case a Mac mini), run this</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+netcat think.random-stuff.org 2222 &gt; ~/Documents/pi.img
+</pre>
+<p>3. Grab a new micro SD card and copy the pi.img image onto it. You can see how <a href="https://www.raspberrypi.org/documentation/installation/installing-images/mac.md">here</a>. I use df to figure out which /dev/disk device is the SD card, then use Disk Utility to unmount anything on that card, then I use dd to do the copy, e.g.</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+sudo dd if=~/Documents/pi.img of=/dev/rdisk4 bs=1m
+</pre>
+<p>4. Grab a spare Pi, plug in the SD card, plug it into a power source and let it boot.</p>
+<p>5. Make sure you can load a page on the web site, then unplug the network cable from the old Pi and plug it into the new Pi. Now make sure you can reload the page. Or load a different page.</p>
+<p>6. Profit.</p>
+<p>Considerations&#8230;</p>
+<p>If your Pi is in the middle of some database operations or someone happens to be updating the website while you&#8217;re doing the netcat, the result might not be great. If you find that your copy isn&#8217;t working, try shutting down any services like MySQL or Apache before you do the netcat.</p>
+<p>Security! If you set up netcat like this and don&#8217;t prevent other people from getting at port 2222 (or whatever port you pick), someone else can beat you to it and slurp out your entire SD card&#8217;s contents.</p>
+<p>Your new SD card has to have the same or greater capacity. Note that not all SD cards labeled 8GB or 16GB, etc. are the same size. Either make sure you have two of the same brand and model, or you might have to use a bigger one for the clone.</p>
+<p>Maybe a hold-over from my old UNIX days, but back then the raw device tended to be faster than the block device. I think using /dev/disk4 and /dev/rdisk4 (or whatever number yours is) is pretty much the same.</p>
+<p>This is not a substitute for a regular backup scheme. I just want to be able to have something like a hot spare that I can pop in and get running almost instantly if something goes wrong. Cloning once a week (or in the case of this blog, every few years the way I&#8217;ve been going) is good enough. Testing the clone every so often is a great idea, too.</p>
+<p>If you don&#8217;t have netcat on your Mac, you can get it using <a href="http://brew.sh/">Homebrew</a>.</p>
+";}s:7:"summary";s:368:"Let&#8217;s say you have a Raspberry Pi running a web site (like this one) and want to have a backup. It turns out with a little netcat magic, you can do just that. 1. ssh to the pi, and run<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/clone-a-running-pi">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:2985:"<p>Let&#8217;s say you have a Raspberry Pi running a web site (like this one) and want to have a backup.</p>
+<p>It turns out with a little netcat magic, you can do just that.</p>
+<p>1. ssh to the pi, and run this (for Raspbian or other Linux distros)</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+sudo netcat -l 2222 &lt; /dev/mmcblk0
+</pre>
+<p>or, for FreeBSD</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+sudo netcat -l -p 2222 &lt; /dev/mmcsd0
+</pre>
+<p>2. On your &#8220;regular&#8221; computer (in my case a Mac mini), run this</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+netcat think.random-stuff.org 2222 &gt; ~/Documents/pi.img
+</pre>
+<p>3. Grab a new micro SD card and copy the pi.img image onto it. You can see how <a href="https://www.raspberrypi.org/documentation/installation/installing-images/mac.md">here</a>. I use df to figure out which /dev/disk device is the SD card, then use Disk Utility to unmount anything on that card, then I use dd to do the copy, e.g.</p>
+<pre class="brush: bash; gutter: false; title: ; notranslate">
+sudo dd if=~/Documents/pi.img of=/dev/rdisk4 bs=1m
+</pre>
+<p>4. Grab a spare Pi, plug in the SD card, plug it into a power source and let it boot.</p>
+<p>5. Make sure you can load a page on the web site, then unplug the network cable from the old Pi and plug it into the new Pi. Now make sure you can reload the page. Or load a different page.</p>
+<p>6. Profit.</p>
+<p>Considerations&#8230;</p>
+<p>If your Pi is in the middle of some database operations or someone happens to be updating the website while you&#8217;re doing the netcat, the result might not be great. If you find that your copy isn&#8217;t working, try shutting down any services like MySQL or Apache before you do the netcat.</p>
+<p>Security! If you set up netcat like this and don&#8217;t prevent other people from getting at port 2222 (or whatever port you pick), someone else can beat you to it and slurp out your entire SD card&#8217;s contents.</p>
+<p>Your new SD card has to have the same or greater capacity. Note that not all SD cards labeled 8GB or 16GB, etc. are the same size. Either make sure you have two of the same brand and model, or you might have to use a bigger one for the clone.</p>
+<p>Maybe a hold-over from my old UNIX days, but back then the raw device tended to be faster than the block device. I think using /dev/disk4 and /dev/rdisk4 (or whatever number yours is) is pretty much the same.</p>
+<p>This is not a substitute for a regular backup scheme. I just want to be able to have something like a hot spare that I can pop in and get running almost instantly if something goes wrong. Cloning once a week (or in the case of this blog, every few years the way I&#8217;ve been going) is good enough. Testing the clone every so often is a great idea, too.</p>
+<p>If you don&#8217;t have netcat on your Mac, you can get it using <a href="http://brew.sh/">Homebrew</a>.</p>
+";}i:1;a:13:{s:5:"title";s:41:"Remotely boot your iPad and launch an app";s:4:"link";s:59:"http://think.random-stuff.org/posts/remotely-boot-your-ipad";s:8:"comments";s:68:"http://think.random-stuff.org/posts/remotely-boot-your-ipad#comments";s:7:"pubdate";s:31:"Wed, 25 May 2011 20:22:02 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:11:"kioskMuseum";s:4:"guid";s:36:"http://think.random-stuff.org/?p=224";s:11:"description";s:389:"I&#8217;m one step further along on the quest for the Holy Grail of kiosk displays. We use a lot of iPads here at the museum, most of them are either in Lab Shield brackets or built into cabinets. The whole<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/remotely-boot-your-ipad">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:3091:"<p>I&#8217;m one step further along on the quest for the Holy Grail of kiosk displays. We use a lot of iPads here at the <a href="http://web.mit.edu/museum/">museum</a>, most of them are either in <a href="http://labshield.com/">Lab Shield brackets</a> or built into cabinets. The whole idea behind building a kiosk is to make it hard for people to break into your device, so naturally the power and home buttons are behind lock and key.</p>
+<p>The trouble is, there are a few quirks in the iPads. One is that after running for a few days, the display seems to lose its sensitivity to touch. The only way so far to deal with that seems to be to open the bracket, hit the power button to make it sleep, then hit it again to make it wake up. Then launch the app again and lock the whole thing back up. Not something the visitor services people want to do a lot. Nor I.</p>
+<p>Sometimes visitors also break out of the kiosk app (we&#8217;re using <a href="http://www.icab.de/mobile.html">iCab Mobile</a>, an absolutely fantastic app, by the way). I have no idea how, but sometimes the iPad will be doing something completely different. One of ours now has a spiffy new home screen background thanks to someone who got in.</p>
+<p>I&#8217;m very hopeful that my newly found method of remote booting/app launching will help at least take some of the pain out of the reset process.  Here&#8217;s how:</p>
+<ol>
+<li><a href="http://www.iphonehacks.com/2011/04/how-to-jailbreak-ipad-1-on-ios-4-3-2-using-redsn0w-windows-mac.html">Jailbreak</a> the iPad (only works on iPad 1&#8217;s for now)</li>
+<li>Install <a href="http://www.google.com/search?q=cydia+openssh">OpenSSH</a> (I installed the whole BigBoss Recommended Tools suite)</li>
+<li>Install <a href="http://rpetri.ch/cydia/activator/">Activator</a></li>
+<li>Determine the IP address of the iPad</li>
+<li>ssh in as root, change the password right away!</li>
+<li>Set up Activator to launch whatever app (e.g. iCabMobile) you want to have start up at boot time. Hook the app to the &#8220;Anywhere -&gt; Power -&gt; Connected&#8221; event.</li>
+<li>If you&#8217;re still ssh&#8217;ed in from step 5, type &#8216;reboot&lt;return&gt;</li>
+</ol>
+<p>Voilá. Your iPad will reboot, and if you&#8217;re crossing your fingers just right, the app will launch after it boots. It seems to do this pretty reliably unless you do it too many times in too short a time.</p>
+<p>I&#8217;ve set up ssh keys for the iPad so that I can run a command like this from my desktop machine:</p>
+<pre class="brush: bash; title: ; notranslate">ssh -i .ssh/id_rsa_ipadkiosk root@192.168.1.52 reboot</pre>
+<p>Next up on my list is to build a web app that lets us reboot any iPad. Then we can carry around an iPad running the web app, and reboot troublesome exhibits with the swipe of a finger.</p>
+<p><strong>Update</strong>: I should note that for this to work, the iPad has to be plugged in to a power source. During the boot sequence the hardware must sense the power source and generate the same event that gets generated if you plug it in after it&#8217;s booted.</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:64:"http://think.random-stuff.org/posts/remotely-boot-your-ipad/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"3";}s:7:"summary";s:389:"I&#8217;m one step further along on the quest for the Holy Grail of kiosk displays. We use a lot of iPads here at the museum, most of them are either in Lab Shield brackets or built into cabinets. The whole<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/remotely-boot-your-ipad">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:3091:"<p>I&#8217;m one step further along on the quest for the Holy Grail of kiosk displays. We use a lot of iPads here at the <a href="http://web.mit.edu/museum/">museum</a>, most of them are either in <a href="http://labshield.com/">Lab Shield brackets</a> or built into cabinets. The whole idea behind building a kiosk is to make it hard for people to break into your device, so naturally the power and home buttons are behind lock and key.</p>
+<p>The trouble is, there are a few quirks in the iPads. One is that after running for a few days, the display seems to lose its sensitivity to touch. The only way so far to deal with that seems to be to open the bracket, hit the power button to make it sleep, then hit it again to make it wake up. Then launch the app again and lock the whole thing back up. Not something the visitor services people want to do a lot. Nor I.</p>
+<p>Sometimes visitors also break out of the kiosk app (we&#8217;re using <a href="http://www.icab.de/mobile.html">iCab Mobile</a>, an absolutely fantastic app, by the way). I have no idea how, but sometimes the iPad will be doing something completely different. One of ours now has a spiffy new home screen background thanks to someone who got in.</p>
+<p>I&#8217;m very hopeful that my newly found method of remote booting/app launching will help at least take some of the pain out of the reset process.  Here&#8217;s how:</p>
+<ol>
+<li><a href="http://www.iphonehacks.com/2011/04/how-to-jailbreak-ipad-1-on-ios-4-3-2-using-redsn0w-windows-mac.html">Jailbreak</a> the iPad (only works on iPad 1&#8217;s for now)</li>
+<li>Install <a href="http://www.google.com/search?q=cydia+openssh">OpenSSH</a> (I installed the whole BigBoss Recommended Tools suite)</li>
+<li>Install <a href="http://rpetri.ch/cydia/activator/">Activator</a></li>
+<li>Determine the IP address of the iPad</li>
+<li>ssh in as root, change the password right away!</li>
+<li>Set up Activator to launch whatever app (e.g. iCabMobile) you want to have start up at boot time. Hook the app to the &#8220;Anywhere -&gt; Power -&gt; Connected&#8221; event.</li>
+<li>If you&#8217;re still ssh&#8217;ed in from step 5, type &#8216;reboot&lt;return&gt;</li>
+</ol>
+<p>Voilá. Your iPad will reboot, and if you&#8217;re crossing your fingers just right, the app will launch after it boots. It seems to do this pretty reliably unless you do it too many times in too short a time.</p>
+<p>I&#8217;ve set up ssh keys for the iPad so that I can run a command like this from my desktop machine:</p>
+<pre class="brush: bash; title: ; notranslate">ssh -i .ssh/id_rsa_ipadkiosk root@192.168.1.52 reboot</pre>
+<p>Next up on my list is to build a web app that lets us reboot any iPad. Then we can carry around an iPad running the web app, and reboot troublesome exhibits with the swipe of a finger.</p>
+<p><strong>Update</strong>: I should note that for this to work, the iPad has to be plugged in to a power source. During the boot sequence the hardware must sense the power source and generate the same event that gets generated if you plug it in after it&#8217;s booted.</p>
+";}i:2;a:13:{s:5:"title";s:33:"Mac OS X user idle time in Python";s:4:"link";s:69:"http://think.random-stuff.org/posts/mac-os-x-user-idle-time-in-python";s:8:"comments";s:78:"http://think.random-stuff.org/posts/mac-os-x-user-idle-time-in-python#comments";s:7:"pubdate";s:31:"Fri, 04 Mar 2011 01:40:40 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:14:"kioskMacMuseum";s:4:"guid";s:36:"http://think.random-stuff.org/?p=206";s:11:"description";s:428:"I&#8217;m still on the quest for the perfect free kiosk app for Mac OS X. I&#8217;ve used Plainview to good effect in several exhibits. I&#8217;ve used Opera in one, and I&#8217;m using Firefox with R-Kiosk in another. Which program to<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/mac-os-x-user-idle-time-in-python">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:4019:"<p>I&#8217;m still on the quest for the perfect free kiosk app for Mac OS X. I&#8217;ve <a href="http://think.random-stuff.org/posts/building-a-kiosk">used</a> <a href="http://barbariangroup.com/software/plainview">Plainview</a> to good effect in several exhibits. I&#8217;ve used Opera in one, and I&#8217;m using Firefox with <a href="https://addons.mozilla.org/en-us/firefox/addon/r-kiosk/">R-Kiosk</a> in another. Which program to use depends a lot on the nature of the web page(s) to be displayed in the kiosk and the way the user expects to interact with the kiosk.</p>
+<p>For the Firefox kiosk, I needed a sure-fire way to reload the home page after a certain amount of idle time. The trouble is that Firefox doesn&#8217;t lend itself to be controlled via AppleScript. A lot of poking around led me to learn about AppleScript System Events being able to simulate a keypress, that Option-Home will make Firefox load the home page, and that there&#8217;s a really handy little application called <a href="http://softwares.bajram.com/utilities/#Full_Key_Codes">Full Key Codes</a> that tells you what the key code is for any key you press on a Mac.</p>
+<p>That let me put together this handy little Python script that watches how long it&#8217;s been since a user has done something. First it waits until there&#8217;s been any user activity at all, then it waits until there&#8217;s been no activity for 90 seconds. Then it uses osascript to run a little bit of AppleScript that sends Option-Home (key code 115) to Firefox.</p>
+<p>I suspect there&#8217;s a way to eliminate the osascript by using the Python objc module, but this is good enough for me&#8230;</p>
+<pre class="brush: python; title: ; notranslate">
+#!/usr/bin/env python
+
+#========================================================================
+#
+# idle.py - makes Firefox load home page after user inactivity
+#
+#       Set the value of 'timeout' to the number of seconds of idle
+#       time you want to allow before reloading the home page
+#
+#       Comment out the calls to status() if you don't want to see any
+#       messages
+#
+#========================================================================
+
+from subprocess import Popen
+from time import sleep
+from Quartz.CoreGraphics import *
+
+# From /System/Library/Frameworks/IOKit.framework/Versions/A/Headers/hidsystem/IOLLEvent.h
+NX_ALLEVENTS = int(4294967295)  # 32-bits, all on.
+
+# Set this value to the number of seconds of idle time before
+# resetting Firefox
+timeout = 90.0
+
+def status(state, last, idle):
+    &quot;&quot;&quot;Print out some info about where we are &quot;&quot;&quot;
+    print &quot;%10s %.1f %.1f&quot; % (state, last, idle)
+
+def getIdleTime():
+    &quot;&quot;&quot;Get number of seconds since last user input&quot;&quot;&quot;
+    idle = CGEventSourceSecondsSinceLastEventType(1, NX_ALLEVENTS)
+    return idle
+
+def doReset():
+    &quot;&quot;&quot;Use osascript to tell Firefox to reload the home page&quot;&quot;&quot;
+    reset = &quot;&quot;&quot;/usr/bin/osascript \
+        -e 'tell application &quot;Firefox&quot;' \
+        -e ' activate' \
+        -e 'end tell' \
+        -e 'tell application &quot;System Events&quot;' \
+        -e ' key code 115 using option down' \
+        -e 'end tell' &quot;&quot;&quot;
+    Popen(reset, shell=True)
+    sleep(1)                    # Prevent osascript keypress from triggering below
+
+last = 0.0
+idle = 0.0
+
+while True:
+
+    # These two lines can also be at the very end if you don't want to
+    # load the home page once when the program starts
+    status('--- RESET', last, idle)
+    doReset()
+
+    idle = getIdleTime()
+    last = idle
+
+    # Wait for user activity
+    while idle &gt;= last:
+        status('wait', last, idle)
+        sleep(1)
+        idle = getIdleTime()
+
+    # Wait for idle to become bigger than timeout
+    while idle &lt; timeout:
+        status('triggered', last, idle)
+        sleep(1)
+        idle = getIdleTime()
+</pre>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:74:"http://think.random-stuff.org/posts/mac-os-x-user-idle-time-in-python/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"1";}s:7:"summary";s:428:"I&#8217;m still on the quest for the perfect free kiosk app for Mac OS X. I&#8217;ve used Plainview to good effect in several exhibits. I&#8217;ve used Opera in one, and I&#8217;m using Firefox with R-Kiosk in another. Which program to<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/mac-os-x-user-idle-time-in-python">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:4019:"<p>I&#8217;m still on the quest for the perfect free kiosk app for Mac OS X. I&#8217;ve <a href="http://think.random-stuff.org/posts/building-a-kiosk">used</a> <a href="http://barbariangroup.com/software/plainview">Plainview</a> to good effect in several exhibits. I&#8217;ve used Opera in one, and I&#8217;m using Firefox with <a href="https://addons.mozilla.org/en-us/firefox/addon/r-kiosk/">R-Kiosk</a> in another. Which program to use depends a lot on the nature of the web page(s) to be displayed in the kiosk and the way the user expects to interact with the kiosk.</p>
+<p>For the Firefox kiosk, I needed a sure-fire way to reload the home page after a certain amount of idle time. The trouble is that Firefox doesn&#8217;t lend itself to be controlled via AppleScript. A lot of poking around led me to learn about AppleScript System Events being able to simulate a keypress, that Option-Home will make Firefox load the home page, and that there&#8217;s a really handy little application called <a href="http://softwares.bajram.com/utilities/#Full_Key_Codes">Full Key Codes</a> that tells you what the key code is for any key you press on a Mac.</p>
+<p>That let me put together this handy little Python script that watches how long it&#8217;s been since a user has done something. First it waits until there&#8217;s been any user activity at all, then it waits until there&#8217;s been no activity for 90 seconds. Then it uses osascript to run a little bit of AppleScript that sends Option-Home (key code 115) to Firefox.</p>
+<p>I suspect there&#8217;s a way to eliminate the osascript by using the Python objc module, but this is good enough for me&#8230;</p>
+<pre class="brush: python; title: ; notranslate">
+#!/usr/bin/env python
+
+#========================================================================
+#
+# idle.py - makes Firefox load home page after user inactivity
+#
+#       Set the value of 'timeout' to the number of seconds of idle
+#       time you want to allow before reloading the home page
+#
+#       Comment out the calls to status() if you don't want to see any
+#       messages
+#
+#========================================================================
+
+from subprocess import Popen
+from time import sleep
+from Quartz.CoreGraphics import *
+
+# From /System/Library/Frameworks/IOKit.framework/Versions/A/Headers/hidsystem/IOLLEvent.h
+NX_ALLEVENTS = int(4294967295)  # 32-bits, all on.
+
+# Set this value to the number of seconds of idle time before
+# resetting Firefox
+timeout = 90.0
+
+def status(state, last, idle):
+    &quot;&quot;&quot;Print out some info about where we are &quot;&quot;&quot;
+    print &quot;%10s %.1f %.1f&quot; % (state, last, idle)
+
+def getIdleTime():
+    &quot;&quot;&quot;Get number of seconds since last user input&quot;&quot;&quot;
+    idle = CGEventSourceSecondsSinceLastEventType(1, NX_ALLEVENTS)
+    return idle
+
+def doReset():
+    &quot;&quot;&quot;Use osascript to tell Firefox to reload the home page&quot;&quot;&quot;
+    reset = &quot;&quot;&quot;/usr/bin/osascript \
+        -e 'tell application &quot;Firefox&quot;' \
+        -e ' activate' \
+        -e 'end tell' \
+        -e 'tell application &quot;System Events&quot;' \
+        -e ' key code 115 using option down' \
+        -e 'end tell' &quot;&quot;&quot;
+    Popen(reset, shell=True)
+    sleep(1)                    # Prevent osascript keypress from triggering below
+
+last = 0.0
+idle = 0.0
+
+while True:
+
+    # These two lines can also be at the very end if you don't want to
+    # load the home page once when the program starts
+    status('--- RESET', last, idle)
+    doReset()
+
+    idle = getIdleTime()
+    last = idle
+
+    # Wait for user activity
+    while idle &gt;= last:
+        status('wait', last, idle)
+        sleep(1)
+        idle = getIdleTime()
+
+    # Wait for idle to become bigger than timeout
+    while idle &lt; timeout:
+        status('triggered', last, idle)
+        sleep(1)
+        idle = getIdleTime()
+</pre>
+";}i:3;a:13:{s:5:"title";s:20:"Spotlight for coders";s:4:"link";s:56:"http://think.random-stuff.org/posts/spotlight-for-coders";s:8:"comments";s:65:"http://think.random-stuff.org/posts/spotlight-for-coders#comments";s:7:"pubdate";s:31:"Tue, 01 Mar 2011 16:40:10 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:9:"MacRandom";s:4:"guid";s:36:"http://think.random-stuff.org/?p=199";s:11:"description";s:413:"Apologies to everyone who already knew this&#8230; I just discovered something very cool. As an only occasional coder (Python, mostly, when I get the chance to write code), I don&#8217;t have a very good grasp of where all the header<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/spotlight-for-coders">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:1071:"<p>Apologies to everyone who already knew this&#8230;</p>
+<p>I just discovered something very cool. As an only occasional coder (Python, mostly, when I get the chance to write code), I don&#8217;t have a very good grasp of where all the header files for Mac OS X frameworks live.</p>
+<p>Let&#8217;s say that you want to know where <strong><span style="color: #808080;">CGEventSourceSecondsSinceLastEventType</span></strong> is defined. Just hunt for it in Spotlight and it will turn up all the places it shows up in header files.</p>
+<p>E.g.</p>
+<p><strong><span style="color: #808080;">/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs /iPhoneSimulator3.2.sdk/System/Library/Frameworks/ApplicationServices.framework /Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers</span></strong></p>
+<p>Or</p>
+<p><strong><span style="color: #808080;">/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks /IOKit.framework/Versions/A/Headers/hidsystem</span></strong></p>
+<p>Clicking on the Spotlight results opens the file in Xcode.</p>
+<p>Who knew?</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:61:"http://think.random-stuff.org/posts/spotlight-for-coders/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"1";}s:7:"summary";s:413:"Apologies to everyone who already knew this&#8230; I just discovered something very cool. As an only occasional coder (Python, mostly, when I get the chance to write code), I don&#8217;t have a very good grasp of where all the header<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/spotlight-for-coders">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:1071:"<p>Apologies to everyone who already knew this&#8230;</p>
+<p>I just discovered something very cool. As an only occasional coder (Python, mostly, when I get the chance to write code), I don&#8217;t have a very good grasp of where all the header files for Mac OS X frameworks live.</p>
+<p>Let&#8217;s say that you want to know where <strong><span style="color: #808080;">CGEventSourceSecondsSinceLastEventType</span></strong> is defined. Just hunt for it in Spotlight and it will turn up all the places it shows up in header files.</p>
+<p>E.g.</p>
+<p><strong><span style="color: #808080;">/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs /iPhoneSimulator3.2.sdk/System/Library/Frameworks/ApplicationServices.framework /Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers</span></strong></p>
+<p>Or</p>
+<p><strong><span style="color: #808080;">/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks /IOKit.framework/Versions/A/Headers/hidsystem</span></strong></p>
+<p>Clicking on the Spotlight results opens the file in Xcode.</p>
+<p>Who knew?</p>
+";}i:4;a:10:{s:5:"title";s:43:"WordPress client IP address, behind a proxy";s:4:"link";s:78:"http://think.random-stuff.org/posts/wordpress-client-ip-address-behind-a-proxy";s:7:"pubdate";s:31:"Tue, 01 Mar 2011 03:13:37 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:15:"MuseumWordpress";s:4:"guid";s:36:"http://think.random-stuff.org/?p=191";s:11:"description";s:434:"At the museum, we&#8217;re running a site where we want people to comment but where we&#8217;re also sitting ducks for spam comments. Trouble is, the site is running behind a web proxy. That means that all the comments are seemingly<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/wordpress-client-ip-address-behind-a-proxy">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:1312:"<p>At the <a href="http://web.mit.edu/museum">museum</a>, we&#8217;re running a <a href="http://museum.mit.edu/150">site</a> where we want people to comment but where we&#8217;re also sitting ducks for spam comments. Trouble is, the site is running behind a web proxy. That means that all the comments are seemingly from the same IP address, namely that of the proxy host. That, in turn prevents any meaningful spam detection.</p>
+<p>I poked around the web a while, looking for a way to get the real IP addresses, and finally rolled my own solution.</p>
+<p>It boils down to this. If you&#8217;re running behind an up-to-date apache server that&#8217;s doing the proxying for you, all of the incoming HTTP requests should have the X-Fowarded-For header set to the originating client&#8217;s IP address.</p>
+<p>Once I verified that this is the case, I put this snippet of code into my functions.php file.</p>
+<pre class="brush: php; title: ; notranslate">
+function m150_ip_fixup($s) {
+  $headers = apache_request_headers();
+
+  if (!empty($headers[&quot;X-Forwarded-For&quot;])) {
+    $_SERVER[&quot;REMOTE_ADDR&quot;] = $headers[&quot;X-Forwarded-For&quot;];
+  }
+  return $s;
+}
+
+add_action( 'pre_comment_on_post', 'm150_ip_fixup');
+</pre>
+<p>Now, comments get tagged with their original IP address.</p>
+";}s:7:"summary";s:434:"At the museum, we&#8217;re running a site where we want people to comment but where we&#8217;re also sitting ducks for spam comments. Trouble is, the site is running behind a web proxy. That means that all the comments are seemingly<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/wordpress-client-ip-address-behind-a-proxy">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:1312:"<p>At the <a href="http://web.mit.edu/museum">museum</a>, we&#8217;re running a <a href="http://museum.mit.edu/150">site</a> where we want people to comment but where we&#8217;re also sitting ducks for spam comments. Trouble is, the site is running behind a web proxy. That means that all the comments are seemingly from the same IP address, namely that of the proxy host. That, in turn prevents any meaningful spam detection.</p>
+<p>I poked around the web a while, looking for a way to get the real IP addresses, and finally rolled my own solution.</p>
+<p>It boils down to this. If you&#8217;re running behind an up-to-date apache server that&#8217;s doing the proxying for you, all of the incoming HTTP requests should have the X-Fowarded-For header set to the originating client&#8217;s IP address.</p>
+<p>Once I verified that this is the case, I put this snippet of code into my functions.php file.</p>
+<pre class="brush: php; title: ; notranslate">
+function m150_ip_fixup($s) {
+  $headers = apache_request_headers();
+
+  if (!empty($headers[&quot;X-Forwarded-For&quot;])) {
+    $_SERVER[&quot;REMOTE_ADDR&quot;] = $headers[&quot;X-Forwarded-For&quot;];
+  }
+  return $s;
+}
+
+add_action( 'pre_comment_on_post', 'm150_ip_fixup');
+</pre>
+<p>Now, comments get tagged with their original IP address.</p>
+";}i:5;a:10:{s:5:"title";s:42:"Coming up with a question is also creation";s:4:"link";s:78:"http://think.random-stuff.org/posts/coming-up-with-a-question-is-also-creation";s:7:"pubdate";s:31:"Thu, 30 Sep 2010 22:25:49 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:12:"MuseumRandom";s:4:"guid";s:36:"http://think.random-stuff.org/?p=181";s:11:"description";s:433:"To create is not just to produce objects or phenomena. Coming up [with] a question is also creation. In fact, a question that has a huge receptive capacity doesn&#8217;t even need a definitive answer. The very essence of a question<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/coming-up-with-a-question-is-also-creation">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:1017:"<p><em>To create is not just to produce objects or phenomena.</em></p>
+<p><em>Coming up </em><span style="color: #808080;">[with]</span><em> a question is also creation.</em></p>
+<p><em>In fact, a question that has a huge receptive capacity doesn&#8217;t even need a definitive answer.</em></p>
+<p><em>The very essence of a question is its power to elicit the possibilities or reply, to trigger a variety of thoughts.</em></p>
+<p><em>Questioning is emptiness.</em></p>
+<p><em>The total quantity of thoughts triggered by questioning is what matters most.</em></p>
+<p><em>I entreat you not to produce more but to think more.</em></p>
+<p><em>I believe that the richness of that thinking may very well be the critical resources to giving this world a future.</em></p>
+<p>&#8212; <a href="http://www.youtube.com/watch?v=PG4uRmTJUU8#t=51m25s">Kenya Hara at Google</a></p>
+<p>Found via <a href="http://www.core77.com/blog/object_culture/japanese_rooms_the_meaning_of_mu_and_kenya_hara_on_emptiness_17529.asp">Core77</a></p>
+";}s:7:"summary";s:433:"To create is not just to produce objects or phenomena. Coming up [with] a question is also creation. In fact, a question that has a huge receptive capacity doesn&#8217;t even need a definitive answer. The very essence of a question<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/coming-up-with-a-question-is-also-creation">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:1017:"<p><em>To create is not just to produce objects or phenomena.</em></p>
+<p><em>Coming up </em><span style="color: #808080;">[with]</span><em> a question is also creation.</em></p>
+<p><em>In fact, a question that has a huge receptive capacity doesn&#8217;t even need a definitive answer.</em></p>
+<p><em>The very essence of a question is its power to elicit the possibilities or reply, to trigger a variety of thoughts.</em></p>
+<p><em>Questioning is emptiness.</em></p>
+<p><em>The total quantity of thoughts triggered by questioning is what matters most.</em></p>
+<p><em>I entreat you not to produce more but to think more.</em></p>
+<p><em>I believe that the richness of that thinking may very well be the critical resources to giving this world a future.</em></p>
+<p>&#8212; <a href="http://www.youtube.com/watch?v=PG4uRmTJUU8#t=51m25s">Kenya Hara at Google</a></p>
+<p>Found via <a href="http://www.core77.com/blog/object_culture/japanese_rooms_the_meaning_of_mu_and_kenya_hara_on_emptiness_17529.asp">Core77</a></p>
+";}i:6;a:13:{s:5:"title";s:20:"Mac OS X ssh quickie";s:4:"link";s:56:"http://think.random-stuff.org/posts/mac-os-x-ssh-quickie";s:8:"comments";s:65:"http://think.random-stuff.org/posts/mac-os-x-ssh-quickie#comments";s:7:"pubdate";s:31:"Fri, 06 Aug 2010 16:49:33 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:9:"MacRandom";s:4:"guid";s:36:"http://think.random-stuff.org/?p=174";s:11:"description";s:369:"Are you getting these messages in your console log when you make a new user on Mac OS X and then try to ssh in to the computer with that new user name? Then don&#8217;t do what I did. After<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/mac-os-x-ssh-quickie">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:1468:"<p>Are you getting these messages in your console log when you make a new user on Mac OS X and then try to ssh in to the computer with that new user name?</p>
+<pre class="brush: plain; title: ; notranslate">
+Aug  6 12:33:25 example sshd[7296]: in pam_sm_authenticate(): Failed to determine Kerberos principal name
+Aug  6 12:33:29 example sshd[7294]: error: PAM: authentication error for user from example.com via 192.168.0.1
+Aug  6 12:33:29 example sshd[7297]: in pam_sm_authenticate(): Failed to determine Kerberos principal name.
+Aug  6 12:33:32 example sshd[7294]: error: PAM: user account has expired for user from example.com via 192.168.0.1
+</pre>
+<p>Then don&#8217;t do what I did. After <a href="http://www.google.com/search?q=pam_sm_authenticate():+Failed+to+determine+Kerberos+principal+name">googling to no avail</a>, I went so far as to completely reinstall Mac OS X. No good.</p>
+<p>[Update: Actually, what I did was clone a different system that I had recently set up and used it as the &#8220;new installation&#8221;. Had I done a total, from DVD reinstallation, it would have fixed the problem but I wouldn&#8217;t have discovered the cause.]</p>
+<p>The answer? Make sure you didn&#8217;t set the Remote Login preferences in System Preferences/Sharing to &#8220;Only these users&#8221; and then forget to add the new user to the list!</p>
+<p>D&#8217;oh.</p>
+<p>Hopefully this will help the next person who&#8217;s looking for the answer.</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:61:"http://think.random-stuff.org/posts/mac-os-x-ssh-quickie/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"2";}s:7:"summary";s:369:"Are you getting these messages in your console log when you make a new user on Mac OS X and then try to ssh in to the computer with that new user name? Then don&#8217;t do what I did. After<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/mac-os-x-ssh-quickie">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:1468:"<p>Are you getting these messages in your console log when you make a new user on Mac OS X and then try to ssh in to the computer with that new user name?</p>
+<pre class="brush: plain; title: ; notranslate">
+Aug  6 12:33:25 example sshd[7296]: in pam_sm_authenticate(): Failed to determine Kerberos principal name
+Aug  6 12:33:29 example sshd[7294]: error: PAM: authentication error for user from example.com via 192.168.0.1
+Aug  6 12:33:29 example sshd[7297]: in pam_sm_authenticate(): Failed to determine Kerberos principal name.
+Aug  6 12:33:32 example sshd[7294]: error: PAM: user account has expired for user from example.com via 192.168.0.1
+</pre>
+<p>Then don&#8217;t do what I did. After <a href="http://www.google.com/search?q=pam_sm_authenticate():+Failed+to+determine+Kerberos+principal+name">googling to no avail</a>, I went so far as to completely reinstall Mac OS X. No good.</p>
+<p>[Update: Actually, what I did was clone a different system that I had recently set up and used it as the &#8220;new installation&#8221;. Had I done a total, from DVD reinstallation, it would have fixed the problem but I wouldn&#8217;t have discovered the cause.]</p>
+<p>The answer? Make sure you didn&#8217;t set the Remote Login preferences in System Preferences/Sharing to &#8220;Only these users&#8221; and then forget to add the new user to the list!</p>
+<p>D&#8217;oh.</p>
+<p>Hopefully this will help the next person who&#8217;s looking for the answer.</p>
+";}i:7;a:10:{s:5:"title";s:62:"Review: Rubbermaid 12-Slot Organizer as a Mac mini server rack";s:4:"link";s:56:"http://think.random-stuff.org/posts/mac-mini-server-rack";s:7:"pubdate";s:31:"Tue, 13 Jul 2010 00:18:40 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:9:"MacMuseum";s:4:"guid";s:36:"http://think.random-stuff.org/?p=155";s:11:"description";s:399:"I needed to do something about the Mac minis that were accumulating on the table in my office. Digging around, I found this Rubbermaid organizer on Amazon. It turns out to be nearly perfect. The unit is very sturdy, was<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/mac-mini-server-rack">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:2871:"<p><a href="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796.jpg"><img class="alignleft size-medium wp-image-160" title="IMG_0796" src="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796-225x300.jpg" alt="" width="225" height="300" srcset="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796-225x300.jpg 225w, http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796-768x1024.jpg 768w, http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796.jpg 1200w" sizes="(max-width: 225px) 100vw, 225px" /></a>I needed to do something about the Mac minis that were accumulating on the table in my office. Digging around, I found this <a href="http://www.amazon.com/Rubbermaid-12-Slot-Organizer-Black-1738583/dp/B00125O3ZA">Rubbermaid organizer</a> on Amazon.</p>
+<p>It turns out to be nearly perfect. The unit is very sturdy, was easy to put together, and the shelf height is just right. There&#8217;s enough clearance for airflow but not so much that you feel space is being wasted.</p>
+<p>I used self-stick cable tie anchors and cable ties to mount the power bricks and used double-stick mounting tape as stops to keep things in place. The old-style minis are heavy enough and are pretty non-slip, so I just put some tape at the front of the shelf to keep them from sliding off. The one new-style mini was pretty slippery so I used the tape to actually stick the base to the shelf.<a href="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0797.jpg"></a></p>
+<p>The unit came with vertical rods that go in the back of each column of shelves to keep them from sliding out the back, but I decided to leave those out. That way I can slide each shelf forward to get DVDs into the mini, or back to get at the connectors.</p>
+<p><a href="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0793.jpg"><img class="alignleft" title="IMG_0793" src="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0793-300x225.jpg" alt="" width="189" height="142" /></a></p>
+<p>The weak spot of the minis is the power cord (at least on the pre-2010 models) which comes out quite easily. I tied those down as well and am pretty sure they won&#8217;t jiggle their way out. I have four minis in the rack right now along with a Drobo with 10TB of disk. I&#8217;m going to be adding a 5th mini with a stackable disk drive, that&#8217;s why there&#8217;s double-high slot  still open on the mini side of the rack.</p>
+<p>Cable management is an issue, mostly because of the power bricks long cables. I may fiddle with how I fold the cables into the shelves a bit more.</p>
+<p>The whole thing plus a UPS and monitor/keyboard/mouse sits nicely on some steel shelves in our A/V equipment room at the museum. I still need to time how long the UPS runs. I&#8217;m only going to have the public web site minis on it.</p>
+";}s:7:"summary";s:399:"I needed to do something about the Mac minis that were accumulating on the table in my office. Digging around, I found this Rubbermaid organizer on Amazon. It turns out to be nearly perfect. The unit is very sturdy, was<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/mac-mini-server-rack">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:2871:"<p><a href="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796.jpg"><img class="alignleft size-medium wp-image-160" title="IMG_0796" src="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796-225x300.jpg" alt="" width="225" height="300" srcset="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796-225x300.jpg 225w, http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796-768x1024.jpg 768w, http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0796.jpg 1200w" sizes="(max-width: 225px) 100vw, 225px" /></a>I needed to do something about the Mac minis that were accumulating on the table in my office. Digging around, I found this <a href="http://www.amazon.com/Rubbermaid-12-Slot-Organizer-Black-1738583/dp/B00125O3ZA">Rubbermaid organizer</a> on Amazon.</p>
+<p>It turns out to be nearly perfect. The unit is very sturdy, was easy to put together, and the shelf height is just right. There&#8217;s enough clearance for airflow but not so much that you feel space is being wasted.</p>
+<p>I used self-stick cable tie anchors and cable ties to mount the power bricks and used double-stick mounting tape as stops to keep things in place. The old-style minis are heavy enough and are pretty non-slip, so I just put some tape at the front of the shelf to keep them from sliding off. The one new-style mini was pretty slippery so I used the tape to actually stick the base to the shelf.<a href="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0797.jpg"></a></p>
+<p>The unit came with vertical rods that go in the back of each column of shelves to keep them from sliding out the back, but I decided to leave those out. That way I can slide each shelf forward to get DVDs into the mini, or back to get at the connectors.</p>
+<p><a href="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0793.jpg"><img class="alignleft" title="IMG_0793" src="http://think.random-stuff.org/wp-content/uploads/2010/07/IMG_0793-300x225.jpg" alt="" width="189" height="142" /></a></p>
+<p>The weak spot of the minis is the power cord (at least on the pre-2010 models) which comes out quite easily. I tied those down as well and am pretty sure they won&#8217;t jiggle their way out. I have four minis in the rack right now along with a Drobo with 10TB of disk. I&#8217;m going to be adding a 5th mini with a stackable disk drive, that&#8217;s why there&#8217;s double-high slot  still open on the mini side of the rack.</p>
+<p>Cable management is an issue, mostly because of the power bricks long cables. I may fiddle with how I fold the cables into the shelves a bit more.</p>
+<p>The whole thing plus a UPS and monitor/keyboard/mouse sits nicely on some steel shelves in our A/V equipment room at the museum. I still need to time how long the UPS runs. I&#8217;m only going to have the public web site minis on it.</p>
+";}i:8;a:10:{s:5:"title";s:22:"Old bits slipping away";s:4:"link";s:58:"http://think.random-stuff.org/posts/old-bits-slipping-away";s:7:"pubdate";s:31:"Sat, 10 Jul 2010 13:42:07 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:6:"Random";s:4:"guid";s:36:"http://think.random-stuff.org/?p=150";s:11:"description";s:392:"I moved this blog from one of the Mac minis in my basement to the other (I&#8217;m trying to put everything on the newer one to free the other one up) yesterday. Originally I had been blogging using Plone (from<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/old-bits-slipping-away">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:378:"<p>I moved this blog from one of the Mac minis in my basement to the other (I&#8217;m trying to put everything on the newer one to free the other one up) yesterday. Originally I had been blogging using Plone (from about 2005-2007) and then moved to WordPress. Moving the Plone part seemed like it was more work than I wanted to put in, so it&#8217;s goodbye to those posts.</p>
+";}s:7:"summary";s:392:"I moved this blog from one of the Mac minis in my basement to the other (I&#8217;m trying to put everything on the newer one to free the other one up) yesterday. Originally I had been blogging using Plone (from<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/old-bits-slipping-away">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:378:"<p>I moved this blog from one of the Mac minis in my basement to the other (I&#8217;m trying to put everything on the newer one to free the other one up) yesterday. Originally I had been blogging using Plone (from about 2005-2007) and then moved to WordPress. Moving the Plone part seemed like it was more work than I wanted to put in, so it&#8217;s goodbye to those posts.</p>
+";}i:9;a:13:{s:5:"title";s:68:"OGC (re)discovers URLs, but let’s tighten up the terminology a bit";s:4:"link";s:98:"http://think.random-stuff.org/posts/ogc-rediscovers-urls-but-lets-tighten-up-the-terminology-a-bit";s:8:"comments";s:107:"http://think.random-stuff.org/posts/ogc-rediscovers-urls-but-lets-tighten-up-the-terminology-a-bit#comments";s:7:"pubdate";s:31:"Fri, 02 Jul 2010 17:17:31 +0000";s:2:"dc";a:1:{s:7:"creator";s:5:"Allan";}s:8:"category";s:3:"Geo";s:4:"guid";s:36:"http://think.random-stuff.org/?p=146";s:11:"description";s:455:"I had seen this tidbit that Sean Gillies writes about in the recent OGC newsletter. My thoughts were along the lines of Sean&#8217;s. I never understood the big deal behind URNs. EDIT: Forget the semi-rant, see the comments, and then<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/ogc-rediscovers-urls-but-lets-tighten-up-the-terminology-a-bit">Read more &#8250;</a></div><!-- end of .read-more -->";s:7:"content";a:1:{s:7:"encoded";s:5146:"<p>I had seen this tidbit that Sean Gillies <a href="http://sgillies.net/blog/1039/http-ftw">writes about </a>in the recent OGC newsletter. My thoughts were along the lines of Sean&#8217;s. I never understood the big deal behind URNs.</p>
+<p><strong>EDIT: Forget the semi-rant, see the comments, and then go read about URI&#8230;</strong></p>
+<p>But in re-reading Sean&#8217;s post and the <a href="http://www.ogcnetwork.net/node/1469">OGC news coming out of the June 2010 meetings</a>, I think the terminology is a bit imprecise. Too bad the source document, 10-124r1 isn&#8217;t available on the OGC web site (promised for mid-July, I see) to see if the issue is in the document or in the news page. Here&#8217;s the news page version:</p>
+<blockquote><p><strong>OGC Identifiers – the case for http URIs’</strong></p>
+<p>The OGC Members approved release of ‘OGC Identifiers – the case for http URIs’ [OGC 10- 124r1] as an OGC Whitepaper. .According to the current OGC policy either URNs or http URIs may be used in OGC standards. However, the use of http URIs (a) resolves some deployment challenges and (b) provides an opportunity for easier engagement with broader communities. So OGC should now consider taking the next step, and mandate the use of http URIs for persistent identifiers in OGC specifications. This whitepaper canvasses a number of issues around this proposal.</p>
+<p><strong>http URI Policy</strong></p>
+<p>The OGC Members approved the following as official OGC policy to be included in the OGC Policies related to OGC standards [OGC 06- 135rN]:</p>
+<ul>
+<li>OGC TC directs the OGC-NA that all new OGC identifiers issued for persistent public OGC resources shall be http URIs, instead of URNs</li>
+<li>New standards and new major versions of existing standards shall use http URIs for persistent public OGC resources to replace OGC URN identifiers defined in previous standards and versions, unless OGC- NA approves an exception</li>
+</ul>
+<p>Operational Implications: OGC should carefully manage (maintain for the long term) the <strong>http://www.opengis.net </strong>domain and identifiers in this domain</p></blockquote>
+<p>So what&#8217;s wrong? Refer to <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC3986</a> (or the <a href="http://tools.ietf.org/html/rfc3986">html version</a>). <a href="http://tools.ietf.org/html/rfc3986#section-1.1.3">Section 1.1.3</a> talks about URI, URL, and URN:</p>
+<blockquote><p>A URI can be further classified as a locator, a name, or both.  The    term &#8220;Uniform Resource Locator&#8221; (URL) refers to the subset of URIs    that, in addition to identifying a resource, provide a means of    locating the resource by describing its primary access mechanism    (e.g., its network &#8220;location&#8221;).  The term &#8220;Uniform Resource Name&#8221;    (URN) has been used historically to refer to both URIs under the    &#8220;urn&#8221; scheme [RFC2141], which are required to remain globally unique    and persistent even when the resource ceases to exist or becomes    unavailable, and to any other URI with the properties of a name.</p></blockquote>
+<p>A URN is a kind of URI. What is called an &#8220;http URI&#8221; is really a &#8220;just&#8221; a URL in RFC3986. And, a URN need not (or I should say &#8220;need no longer&#8221;) be something with &#8220;urn:&#8221; in the scheme. A URL could be a URN based on the last part of the definition above, &#8220;any other URI with the properties of a name&#8221;</p>
+<p>Therefore, an &#8220;http URI&#8221; (from the OGC wording) can be either a URL or a URN, based on section 1.1.3 of RFC3986. Of course, the URN is really a URL with the additional uniqueness and persistence properties. So let&#8217;s just call OGC&#8217;s newly mandated URIs URLs.</p>
+<p>There are two primary motivations for using <a href="http://tools.ietf.org/html/rfc2141">RFC2141</a> URNs. One is as a globally unique name managed by some authority. The other is as a persistent identifier, sometimes used to map onto a URL with a resolver. The trouble with the latter is that URLs really work better in the first place, and I&#8217;m guessing that&#8217;s what 10-124r1 says.</p>
+<p>So here&#8217;s what I think they should have said in the TC:</p>
+<blockquote><p>URI Policy</p>
+<p>The OGC Members approved the following as official OGC policy to be included in the OGC Policies related to OGC standards [OGC 06- 135rN]:</p>
+<ul>
+<li>OGC TC directs the OGC-NA that all new OGC identifiers issued for persistent public OGC resources shall be http URLs, instead of RFC2141 URNs</li>
+<li>New standards and new major versions of existing standards shall use http URLs for persistent public OGC resources to replace OGC RFC2141 URN identifiers defined in previous standards and versions, unless OGC- NA approves an exception</li>
+</ul>
+</blockquote>
+<p>Sorry to be so pedantic. Back in the day, there would have been half a dozen people at any given TC who would have been able to argue the finer points of this for hours&#8230;.</p>
+<p>(And I just figured out what the OGC-NA is. I guess it&#8217;s the &#8220;Naming Authority&#8221;.)</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:103:"http://think.random-stuff.org/posts/ogc-rediscovers-urls-but-lets-tighten-up-the-terminology-a-bit/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"4";}s:7:"summary";s:455:"I had seen this tidbit that Sean Gillies writes about in the recent OGC newsletter. My thoughts were along the lines of Sean&#8217;s. I never understood the big deal behind URNs. EDIT: Forget the semi-rant, see the comments, and then<span class="ellipsis">&#8230;</span><div class="read-more"><a href="http://think.random-stuff.org/posts/ogc-rediscovers-urls-but-lets-tighten-up-the-terminology-a-bit">Read more &#8250;</a></div><!-- end of .read-more -->";s:12:"atom_content";s:5146:"<p>I had seen this tidbit that Sean Gillies <a href="http://sgillies.net/blog/1039/http-ftw">writes about </a>in the recent OGC newsletter. My thoughts were along the lines of Sean&#8217;s. I never understood the big deal behind URNs.</p>
+<p><strong>EDIT: Forget the semi-rant, see the comments, and then go read about URI&#8230;</strong></p>
+<p>But in re-reading Sean&#8217;s post and the <a href="http://www.ogcnetwork.net/node/1469">OGC news coming out of the June 2010 meetings</a>, I think the terminology is a bit imprecise. Too bad the source document, 10-124r1 isn&#8217;t available on the OGC web site (promised for mid-July, I see) to see if the issue is in the document or in the news page. Here&#8217;s the news page version:</p>
+<blockquote><p><strong>OGC Identifiers – the case for http URIs’</strong></p>
+<p>The OGC Members approved release of ‘OGC Identifiers – the case for http URIs’ [OGC 10- 124r1] as an OGC Whitepaper. .According to the current OGC policy either URNs or http URIs may be used in OGC standards. However, the use of http URIs (a) resolves some deployment challenges and (b) provides an opportunity for easier engagement with broader communities. So OGC should now consider taking the next step, and mandate the use of http URIs for persistent identifiers in OGC specifications. This whitepaper canvasses a number of issues around this proposal.</p>
+<p><strong>http URI Policy</strong></p>
+<p>The OGC Members approved the following as official OGC policy to be included in the OGC Policies related to OGC standards [OGC 06- 135rN]:</p>
+<ul>
+<li>OGC TC directs the OGC-NA that all new OGC identifiers issued for persistent public OGC resources shall be http URIs, instead of URNs</li>
+<li>New standards and new major versions of existing standards shall use http URIs for persistent public OGC resources to replace OGC URN identifiers defined in previous standards and versions, unless OGC- NA approves an exception</li>
+</ul>
+<p>Operational Implications: OGC should carefully manage (maintain for the long term) the <strong>http://www.opengis.net </strong>domain and identifiers in this domain</p></blockquote>
+<p>So what&#8217;s wrong? Refer to <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC3986</a> (or the <a href="http://tools.ietf.org/html/rfc3986">html version</a>). <a href="http://tools.ietf.org/html/rfc3986#section-1.1.3">Section 1.1.3</a> talks about URI, URL, and URN:</p>
+<blockquote><p>A URI can be further classified as a locator, a name, or both.  The    term &#8220;Uniform Resource Locator&#8221; (URL) refers to the subset of URIs    that, in addition to identifying a resource, provide a means of    locating the resource by describing its primary access mechanism    (e.g., its network &#8220;location&#8221;).  The term &#8220;Uniform Resource Name&#8221;    (URN) has been used historically to refer to both URIs under the    &#8220;urn&#8221; scheme [RFC2141], which are required to remain globally unique    and persistent even when the resource ceases to exist or becomes    unavailable, and to any other URI with the properties of a name.</p></blockquote>
+<p>A URN is a kind of URI. What is called an &#8220;http URI&#8221; is really a &#8220;just&#8221; a URL in RFC3986. And, a URN need not (or I should say &#8220;need no longer&#8221;) be something with &#8220;urn:&#8221; in the scheme. A URL could be a URN based on the last part of the definition above, &#8220;any other URI with the properties of a name&#8221;</p>
+<p>Therefore, an &#8220;http URI&#8221; (from the OGC wording) can be either a URL or a URN, based on section 1.1.3 of RFC3986. Of course, the URN is really a URL with the additional uniqueness and persistence properties. So let&#8217;s just call OGC&#8217;s newly mandated URIs URLs.</p>
+<p>There are two primary motivations for using <a href="http://tools.ietf.org/html/rfc2141">RFC2141</a> URNs. One is as a globally unique name managed by some authority. The other is as a persistent identifier, sometimes used to map onto a URL with a resolver. The trouble with the latter is that URLs really work better in the first place, and I&#8217;m guessing that&#8217;s what 10-124r1 says.</p>
+<p>So here&#8217;s what I think they should have said in the TC:</p>
+<blockquote><p>URI Policy</p>
+<p>The OGC Members approved the following as official OGC policy to be included in the OGC Policies related to OGC standards [OGC 06- 135rN]:</p>
+<ul>
+<li>OGC TC directs the OGC-NA that all new OGC identifiers issued for persistent public OGC resources shall be http URLs, instead of RFC2141 URNs</li>
+<li>New standards and new major versions of existing standards shall use http URLs for persistent public OGC resources to replace OGC RFC2141 URN identifiers defined in previous standards and versions, unless OGC- NA approves an exception</li>
+</ul>
+</blockquote>
+<p>Sorry to be so pedantic. Back in the day, there would have been half a dozen people at any given TC who would have been able to argue the finer points of this for hours&#8230;.</p>
+<p>(And I just figured out what the OGC-NA is. I guess it&#8217;s the &#8220;Naming Authority&#8221;.)</p>
+";}}s:7:"channel";a:7:{s:5:"title";s:5:"think";s:4:"link";s:29:"http://think.random-stuff.org";s:13:"lastbuilddate";s:31:"Wed, 20 Jan 2016 00:40:13 +0000";s:8:"language";s:5:"en-US";s:2:"sy";a:2:{s:12:"updateperiod";s:6:"hourly";s:15:"updatefrequency";s:1:"1";}s:9:"generator";s:30:"https://wordpress.org/?v=4.5.1";s:7:"tagline";N;}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:4:"etag";s:36:""dc3cd0ccaace0874b7dbad6b7da61cf2"
+";}

@@ -1,0 +1,200 @@
+
+
+		/*** Generated 2K skin stylesheet ***/
+
+	
+			
+				/*** Level: type=TopLevel, kind=Default ***/
+				
+			
+
+						.autoClass18_354133336
+						{
+						}
+
+					
+			
+				/*** Node: type=TopLevel, subtype=Any, kind=Default ***/
+				
+			
+					
+						/*** name="autoClass19_354133336" : node, state=NORMAL ***/
+						
+					
+
+						.autoClass19_354133336 
+						{
+							border-width: 1px;
+							border-style: solid;
+							border-color: #DDDDDD;
+							padding: 2px;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+							background-color: #DDDDDD;
+							
+						}
+		
+					
+					
+						/*** name="autoClass20_354133336" : node, state=ACTIVE ***/
+						
+					
+
+						.autoClass20_354133336 
+						{
+							cursor: default;
+							border-width: 1px;
+							border-style: solid;
+							border-top-color: white;
+							border-left-color: white;
+							border-right-color: gray;
+							border-bottom-color: gray;
+							padding: 2px;
+
+							color: black;
+							background-color: #DDDDDD;
+							
+							font-family: Courier New; font-size: 12px;
+						}
+		
+					
+					
+						/*** name="autoClass21_354133336" : node, state=EXPANDED ***/
+						
+					
+
+						.autoClass21_354133336 
+						{
+							cursor: default;
+							border-width: 1px;
+							border-style: solid;
+							border-top-color: gray;
+							border-left-color: gray;
+							border-right-color: white;
+							border-bottom-color: white;
+							padding: 2px;
+
+							color: black;
+							font-family: Courier New; font-size: 12px;
+							background-color: #DDDDDD;
+						}
+		
+					
+			
+				/*** Level: type=Popup, kind=Default ***/
+				
+			
+					
+						/*** name="autoClass22_354133336" : popup ***/
+						
+					
+
+
+						.autoClass22_354133336
+						{
+							background-color: #DDDDDD;
+							border-width: 2px;
+							border-style: outset;
+							border-color: white;
+						}
+
+					
+			
+				/*** Node: type=Popup, subtype=Any, kind=Default ***/
+				
+			
+					
+						/*** name="autoClass23_354133336" : node, state=NORMAL ***/
+						
+					
+					
+						/*** horizontal ***/
+
+						td.autoClass23_354133336
+						{
+							background-color: #DDDDDD;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+						}
+						
+						/*** vertical ***/
+		
+						.autoClass23_354133336 td
+						{
+							background-color: #DDDDDD;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+						}
+		
+					
+					
+						/*** name="autoClass24_354133336" : node, state=ACTIVE ***/
+						
+					
+					
+						/*** horizontal ***/
+
+						td.autoClass24_354133336
+						{
+							cursor: default;
+							background-color: #C2C0C0;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+						}
+						
+						/*** vertical ***/
+		
+						.autoClass24_354133336 td
+						{
+							cursor: default;
+							background-color: #C2C0C0;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+						}
+		
+					
+					
+						/*** name="autoClass25_354133336" : node, state=EXPANDED ***/
+						
+					
+					
+						/*** horizontal ***/
+
+						td.autoClass25_354133336
+						{
+							cursor: default;
+							background-color: gray;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+						}
+						
+						/*** vertical ***/
+		
+						.autoClass25_354133336 td
+						{
+							cursor: default;
+							background-color: gray;
+							color: black;
+							font-family: Courier New; font-size: 12px;
+						}	
+		
+					
+			
+				/*** Node: type=Any, subtype=Any, kind=Separator, Layout=Vertical ***/
+				
+			
+					
+						/*** name="autoClass26_354133336" : separator, vertical ***/
+						
+					
+					
+						td.autoClass26_354133336
+						{
+							width: 1px;
+							height: 1px;
+							padding: 0px;
+							background-color: gray;
+							border: none;
+						}	
+
+					

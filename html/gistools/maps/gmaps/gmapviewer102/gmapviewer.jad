@@ -1,0 +1,9 @@
+MIDlet-1: GMapViewer, /GMapViewer.png, org.sreid.j2me.gmapviewer.GMapViewer
+MIDlet-Jar-Size: 57760
+MIDlet-Jar-URL: http://www.spatiallink.org/gistools/maps/gmaps/gmapviewer102/gmapviewer.jar
+MIDlet-Name: GMapViewer
+MIDlet-Vendor: sreid.org
+MIDlet-Version: 1.0.2
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-1.0
+prefs.gatewayURL: http://www.spatiallink.org/gistools/maps/gmaps/gmapviewer102/gmapgw.php

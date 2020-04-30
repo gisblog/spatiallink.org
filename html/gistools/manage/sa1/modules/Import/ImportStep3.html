@@ -1,0 +1,110 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * {APP.LBL_CURRENCY_SYM}Header: /cvsroot/sugarcrm/sugarcrm/modules/Contacts/EditView.html,v 1.22 2004/07/16 04:04:42 sugarclint Exp {APP.LBL_CURRENCY_SYM}
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<span class="body">
+
+
+			<form enctype="multipart/form-data" name="Import" method="POST" action="index.php">
+			<input type="hidden" name="module" value="{MODULE}">
+			<input type="hidden" name="action" value="Import">
+			<input type="hidden" name="step" value="4">
+			<input type="hidden" name="has_header" value="{HAS_HEADER}">
+			<input type="hidden" name="source" value="{SOURCE}">
+			<input type="hidden" name="delimiter" value="{DELIMITER}">
+			<input type="hidden" name="tmp_file" value="{TMP_FILE}">
+			<input type="hidden" name="return_module" value="{RETURN_MODULE}">
+			<input type="hidden" name="return_id" value="{RETURN_ID}">
+			<input type="hidden" name="return_action" value="{RETURN_ACTION}">			
+<div align="right"><span class="required" align="right">{APP.LBL_REQUIRED_SYMBOL}</span> {APP.NTC_REQUIRED}</div>
+
+<p>
+{MOD.LBL_SELECT_FIELDS_TO_MAP}
+</p>
+
+<!-- BEGIN: table -->
+<p>
+<table border="0" cellspacing="{GRIDLINE}" cellpadding="0" class="tabDetailView">
+<!-- BEGIN: toprow -->
+<tr>
+<td class="tabDetailViewDL" style="text-align: left;"><b>{MOD.LBL_DATABASE_FIELD}</b></td>
+<!-- BEGIN: headercell -->
+<td class="tabDetailViewDL" style="text-align: left;"><b>{MOD.LBL_HEADER_ROW}</b></td>
+<!-- END: headercell -->
+<!-- BEGIN: topcell -->
+<td class="tabDetailViewDL" style="text-align: left;"><b>{MOD.LBL_ROW} {ROWCOUNT}</b></td>
+<!-- END: topcell -->
+</tr>
+<!-- END: toprow -->
+<!-- BEGIN: row -->
+<tr>
+<!-- BEGIN: headcell -->
+<td valign="top" align="left" class="tabDetailViewDF">
+{SELECTFIELD}
+
+</td>
+<!-- END: headcell -->
+<!-- BEGIN: cell -->
+<td align="left"  class="tabDetailViewDF">
+{CELL}
+</td>
+<!-- END: cell -->
+<!-- BEGIN: cellempty -->
+<td class="tabDetailViewDF">&nbsp;</td>
+<!-- END: cellempty -->
+</tr>
+<!-- END: row -->
+<tr>
+<td valign="middle" colspan="5" class="tabDetailViewDF" style="padding-top: 5px;">
+<input class="checkbox" type="checkbox" name="save_map" onClick="set_readonly(this.form)">&nbsp;{MOD.LBL_SAVE_AS_CUSTOM}&nbsp;<input type="text" readonly name="save_map_as" value=""></td>
+</tr>
+</table>
+
+</p>
+<!-- END: table -->
+
+
+<p>
+<b>Notes:</b>
+<ul>
+<!-- BEGIN: note -->
+<li>{NOTETEXT}</li>
+<!-- END: note -->
+</ul>
+</p>
+
+<table width="100%" cellpadding="2" cellspacing="0" border="0"><tr>
+        <td align="left"><input title="{MOD.LBL_BACK}" accessKey="" class="button" type="submit" name="button" value="  {MOD.LBL_BACK}  "  onclick="this.form.action.value='Import';this.form.step.value='2'; return true;"></td>
+	<td align="right"><input title="{MOD.LBL_IMPORT_NOW}" accessKey="" class="button" type="submit" name="button" value="  {MOD.LBL_IMPORT_NOW}  "  onclick="this.form.action.value='Import';this.form.step.value='4'; return verify_data(Import)"></td>
+        <td></td>
+</tr>
+</table>
+
+	</form>
+
+
+{JAVASCRIPT}
+<!-- END: main -->

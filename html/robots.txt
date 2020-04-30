@@ -1,0 +1,9 @@
+# robots.txt, http://www.spatiallink.org/
+# contact@spatiallink.org
+# http://www.w3.org/, http://www.robotstxt.org/, http://www.google.com/webmasters/faq.html
+#
+# User-agent: *
+# Allow: /directory/
+#
+User-agent: ia_archiver
+Disallow: /

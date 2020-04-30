@@ -1,0 +1,55 @@
+<!--
+/*
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ */
+-->
+<!-- $Id: SearchForm.html,v 1.7.2.1 2005/05/17 22:29:38 andrew Exp $ -->
+<!-- BEGIN:main -->
+{header}
+{JAVASCRIPT}
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+<tr>
+<td><form method="get" name="module_selection_form">
+<input type="hidden" name="module" value="ProjectTask" />
+<input type="hidden" name="action" value="index" />
+<input type="hidden" name="query" value="true" />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td class="dataLabel"><slot>{mod.LBL_NAME}&nbsp;&nbsp;<input type="text" name="name"
+	value="{name}" /></slot></td>
+<td class="dataLabel"><slot>{mod.LBL_PARENT_ID}&nbsp;&nbsp;<input type="text" name="parent_name"
+	value="{parent_name}" /></slot></td>
+<td class="dataLabel">{app.LBL_CURRENT_USER_FILTER}&nbsp;&nbsp;<input
+	type="checkbox" name="current_user_only" class="checkbox"
+	onchange="this.form.submit();" {CURRENT_USER_ONLY} /></td>
+<td align="right"><input type="submit" class="button" title="Select [Alt+Q]"
+	accesskey="{app.LBL_SEARCH_BUTTON_KEY}" value="Search" />&nbsp;<input type="button"
+	name="clear" class="button"
+	title="{app.LBL_CLEAR_BUTTON_TITLE}" accesskey="{app.LBL_CLEAR_BUTTON_KEY}"
+	value=" {app.LBL_CLEAR_BUTTON_LABEL} " onclick="clear_form(this.form);" /></td>
+</tr>
+
+</table></form></td>
+</tr>
+</table>
+<br />
+<!-- END:main -->

@@ -1,0 +1,88 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * {APP.LBL_CURRENCY_SYM}Header: /cvsroot/sugarcrm/sugarcrm/modules/Leads/Popup_picker.html,v 1.9 2004/07/02 04:34:20 sugarjacob Exp {APP.LBL_CURRENCY_SYM}
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<!-- BEGIN: SearchHeader -->
+
+{SET_RETURN_JS}
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+<tr><td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+<form>
+		<td class="dataLabel" noWrap><slot>{MOD.LBL_FIRST_NAME}</slot></td>
+		<td class="dataField"><slot><input type=text size="10" name="first_name" class=dataField  value="{LAST_SEARCH.FIRST_NAME}" /></slot></td>
+		<td class="dataLabel" noWrap><slot>{MOD.LBL_LAST_NAME}</slot></td>
+		<td class="dataField"><slot><input type=text size="10" name="last_name" class=dataField  value="{LAST_SEARCH.LAST_NAME}" /></slot></td>
+		<td rowspan=2 valign=top>
+			<input type="hidden" name="action" value="Popup"/>
+			<input type="hidden" name="query" value="true"/>
+			<input type="hidden" name="module" value="{MODULE_NAME}" />
+			<input type="hidden" name="form_submit" value="{FORM_SUBMIT}" />
+			<input type="hidden" name="form" value="{FORM}" />
+		<input title="{APP.LBL_SEARCH_BUTTON_TITLE}" accessKey="{APP.LBL_SEARCH_BUTTON_KEY}" class="button" type="submit" name="button" value="{APP.LBL_SEARCH_BUTTON_LABEL}"/></td>
+		</tr><tr>
+	<td width="20%" class="dataLabel"><slot>{MOD.LBL_LEAD_SOURCE}</slot></td>
+	<td width="30%" class="dataField"><slot><select name='lead_source' >{LEAD_SOURCE_OPTIONS}</select></slot></td>
+	<td width="20%" class="dataLabel"><slot>{MOD.LBL_STATUS}</slot></td>
+	<td width="30%" class="dataField"><slot><select name='status' >{STATUS_OPTIONS}</select></slot></td>
+</form>
+	</tr>
+	</table>
+</td></tr></table>
+<!-- END: SearchHeader -->
+<!-- BEGIN: SearchHeaderEnd -->
+
+	</td></tr>
+	</table>
+</td></tr></table>
+<!-- END: SearchHeaderEnd -->
+
+
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="listView">
+<!-- BEGIN: list_nav_row -->
+{PAGINATION}
+	<!-- END: list_nav_row -->
+<tr height="20">
+	<td scope="col" width="50%" class="listViewThS1" NOWRAP>&nbsp;<a href="{ORDER_BY}last_name" class="listViewThLinkS1">{MOD.LBL_CONTACT_NAME}{first_name_arrow}</a></td>
+	<td scope="col" width="50%" class="listViewThS1" NOWRAP>&nbsp;{MOD.LBL_ACCOUNT_NAME}</td>
+	  </tr>
+
+<!-- BEGIN: row -->
+<tr height="20"  onmouseover="setPointer(this, '{LEAD.ID}', 'over', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmouseout="setPointer(this, '{LEAD.ID}', 'out', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');" onmousedown="setPointer(this, '{LEAD.ID}', 'click', '{BG_COLOR}', '{BG_HILITE}', '{BG_CLICK}');">
+    		<td scope="row" valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}" ><a href="a" LANGUAGE=javascript onclick='set_return("{LEAD.ID}", "{LEAD.ENCODED_NAME}"); window.close()' class="listViewTdLinkS1">{LEAD.FIRST_NAME}&nbsp;{LEAD.LAST_NAME}</a></td>
+    		<td valign=TOP class="{ROW_COLOR}S1" bgcolor="{BG_COLOR}" >{LEAD.ACCOUNT_NAME}</td>
+	</tr>
+<!-- END: row -->
+
+	</table>
+</td></tr></table>
+</td></tr>
+
+
+
+<!-- END: main -->

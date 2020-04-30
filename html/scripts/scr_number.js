@@ -1,0 +1,1 @@
+function checknumber(inputnum){var i;for(i=0;i<inputnum.length;i++){var character=inputnum.charAt(i);if(((character<"0")||(character>"9")))return false}return true}

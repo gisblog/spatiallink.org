@@ -1,0 +1,61 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+
+$Id: Popup.html,v 1.7 2005/02/16 19:54:39 andrew Exp $
+
+-->
+<!-- BEGIN: main -->
+
+{SET_RETURN_JS}
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+<tr>
+<td><form action="index.php"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="dataLabel"
+		noWrap>{MOD.LBL_KEY}&nbsp;&nbsp;<input type="text" {READONLY}
+		name="key" class="dataField" value="{KEY}"/></td>
+
+		<td class="dataLabel"
+		noWrap>{MOD.LBL_VALUE}&nbsp;&nbsp;<input type="text"
+		name="value" class="dataField" value="{VALUE}" /></td>
+
+		<td align="right"><input type="hidden" name="action" value="Popup"/>
+			<input type="hidden" name="query" value="true"/>
+			<input type="hidden" name="module" value="{MODULE_NAME}" />
+			<input type="hidden" name="form_submit" value="{FORM_SUBMIT}" />
+			<input type="hidden" name="form" value="{FORM}" />
+			<input type="hidden" name="dropdown_select" value="{DROPDOWN_SELECT}" />
+			<input type="hidden" name="language_select" value="{LANGUAGE_SELECT}" />
+			<input type="hidden" name="array_index" value="{INDEX}" />
+			<input type="submit" name="button" value="{SUBMIT_BUTTON_LABEL}"
+					title="{SUBMIT_BUTTON_TITLE}" accesskey="{SUBMIT_BUTTON_KEY}"
+					class="button" />
+			<input type="button" value="{CANCEL_BUTTON_LABEL}"
+					title="{CANCEL_BUTTON_TITLE}" accesskey="{CANCEL_BUTTON_KEY}" class="button"
+					onclick="window.close();" /></td>
+	</tr>
+</table></form></td>
+</tr>
+</table>
+<!-- END: main -->

@@ -1,0 +1,8 @@
+-116.9,34.15:smalldot:[1] GIS Analyst
+-88.07,42.06:smalldot:[2] GIS Analyst
+-72.8,41.28:smalldot:[3] GIS Specialist
+-84.87,38.23:smalldot:[4] Geoprocessor III
+-76.74,40.87:smalldot:[5] Conservation Support Assistant
+-117.21,32.9:smalldot:[6] GIS Technician
+-106.81,39.61:smalldot:[7] GIS Director
+-86.13,39.82:smalldot:[8] Engineering Assistant

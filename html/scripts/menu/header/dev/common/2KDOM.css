@@ -1,0 +1,200 @@
+
+
+		/*** Generated 2K skin stylesheet ***/
+
+	
+			
+				/*** Level: type=TopLevel, kind=Default ***/
+				
+			
+
+						.m2Ktl
+						{
+						}
+
+					
+			
+				/*** Node: type=TopLevel, subtype=Any, kind=Default ***/
+				
+			
+					
+						/*** name="m2Ktln" : node, state=NORMAL ***/
+						
+					
+
+						.m2Ktln 
+						{
+							border-width: 1px;
+							border-style: solid;
+							border-color: silver;
+							padding: 2px;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+							background-color: silver;
+							
+						}
+		
+					
+					
+						/*** name="m2Ktlna" : node, state=ACTIVE ***/
+						
+					
+
+						.m2Ktlna 
+						{
+							cursor: default;
+							border-width: 1px;
+							border-style: solid;
+							border-top-color: white;
+							border-left-color: white;
+							border-right-color: gray;
+							border-bottom-color: gray;
+							padding: 2px;
+
+							color: black;
+							background-color: silver;
+							
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}
+		
+					
+					
+						/*** name="m2Ktlnp" : node, state=EXPANDED ***/
+						
+					
+
+						.m2Ktlnp 
+						{
+							cursor: default;
+							border-width: 1px;
+							border-style: solid;
+							border-top-color: gray;
+							border-left-color: gray;
+							border-right-color: white;
+							border-bottom-color: white;
+							padding: 2px;
+
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+							background-color: silver;
+						}
+		
+					
+			
+				/*** Level: type=Popup, kind=Default ***/
+				
+			
+					
+						/*** name="m2Kpp" : popup ***/
+						
+					
+
+
+						.m2Kpp
+						{
+							background-color: silver;
+							border-width: 2px;
+							border-style: outset;
+							border-color: white;
+						}
+
+					
+			
+				/*** Node: type=Popup, subtype=Any, kind=Default ***/
+				
+			
+					
+						/*** name="m2Kppn" : node, state=NORMAL ***/
+						
+					
+					
+						/*** horizontal ***/
+
+						td.m2Kppn
+						{
+							background-color: silver;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}
+						
+						/*** vertical ***/
+		
+						.m2Kppn td
+						{
+							background-color: silver;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}
+		
+					
+					
+						/*** name="m2Kppna" : node, state=ACTIVE ***/
+						
+					
+					
+						/*** horizontal ***/
+
+						td.m2Kppna
+						{
+							cursor: default;
+							background-color: blue;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}
+						
+						/*** vertical ***/
+		
+						.m2Kppna td
+						{
+							cursor: default;
+							background-color: blue;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}
+		
+					
+					
+						/*** name="m2Kppnp" : node, state=EXPANDED ***/
+						
+					
+					
+						/*** horizontal ***/
+
+						td.m2Kppnp
+						{
+							cursor: default;
+							background-color: gray;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}
+						
+						/*** vertical ***/
+		
+						.m2Kppnp td
+						{
+							cursor: default;
+							background-color: gray;
+							color: black;
+							font-family: Tahoma, helvetica; font-size: 9px; font-weight: normal;
+						}	
+		
+					
+			
+				/*** Node: type=Any, subtype=Any, kind=Separator, Layout=Vertical ***/
+				
+			
+					
+						/*** name="m2Ksep" : separator, vertical ***/
+						
+					
+					
+						td.m2Ksep
+						{
+							width: 1px;
+							height: 1px;
+							padding: 0px;
+							background-color: gray;
+							border: none;
+						}	
+
+					

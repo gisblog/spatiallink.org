@@ -1,0 +1,76 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:13:"Johannes Koch";s:12:"author_email";s:21:"k...@w3development.de";s:7:"updated";s:20:"2013-06-03T21:29:53Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/d33ead7ab2045fbd";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/d33ead7ab2045fbd";s:5:"title";s:29:"Java tool for XInclude on DOM";s:7:"summary";s:320:"
+  Hi there, <br> <p>can anyone recommend a Java tool performing XInclude merging on a DOM? I <br> know there are parsers processing XInclude while parsing. But I need the <br> processing on an existing DOM. <br> <p>-- <br> Johannes Koch <br> In te domine speravi; non confundar in aeternum. <br> (Te Deum, 4th cent.)
+  ";}i:1;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:11:"Peter Flynn";s:12:"author_email";s:17:"pe...@silmaril.ie";s:7:"updated";s:20:"2013-05-25T20:34:58Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/9b221429cc72e46a";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/9b221429cc72e46a";s:5:"title";s:35:"XML Summer School 15-20 Sept Oxford";s:7:"summary";s:367:"
+  **Early Bird discount for registration before 30th June** <br> <p>The XML Summer School runs again this year at St Edmund Hall, Oxford <br> from 15th to 20th September. As always, it's packed with high quality <br> technical XML training and debate for every level of expertise, from the <br> Hands-on Introduction through to special classes devoted to XSLT and
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:16:"Olivier Ishacian";s:12:"author_email";s:19:"oliv...@xmlmind.com";s:7:"updated";s:20:"2013-04-08T08:26:19Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/ff34d53569bf2457";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/ff34d53569bf2457";s:5:"title";s:25:"[ANN] Translators Needed!";s:7:"summary";s:252:"
+  Translate XMLmind XML Editor messages to your mother tongue and win up <br> to 5 �lifetime� Professional Edition licenses: <br> <p>See: <a target="_blank" rel=nofollow href="http://www.xmlmind.com/xmleditor/translators_needed.html">[link]</a>
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:12:"Ivan Shmakov";s:12:"author_email";s:19:"oneing...@gmail.com";s:7:"updated";s:20:"2013-04-06T11:32:11Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/5cab65f28c382eb9";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/5cab65f28c382eb9";s:5:"title";s:43:""walk over," and XPath-based substitutions?";s:7:"summary";s:358:"
+  [Cross-posting to news:comp.text.xml, yet omitting it from <br> Followup-To:, for I'm primarily interested in Perl-based <br> solutions.] <br> <p>	Is there an easy way to invoke a particular code for each of XML <br> nodes that satisfies an XPath expression out of a certain list? <br> <p>	A simple-minded approach (based on XML::LibXML) could be like:
+  ";}i:4;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:13:"Richard Smith";s:12:"author_email";s:21:"rich...@ex-parrot.com";s:7:"updated";s:20:"2013-04-04T16:48:58Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/ef2ca48582fd863e";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/ef2ca48582fd863e";s:5:"title";s:31:"Generating XML Schemas from RDF";s:7:"summary";s:372:"
+  I have a data model that's currently defined using RDF components across <br> a number of separate XML namespaces, some of which are created by <br> third-party. I'd like to serialise this data model into XML. I had <br> initially planned to use the standard RDF/XML serialisation, but there <br> are political reason why that isn't acceptable. Basically, enough key
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:16:"Olivier Ishacian";s:12:"author_email";s:19:"oliv...@xmlmind.com";s:7:"updated";s:20:"2013-04-03T07:42:21Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/44a3aa22a7f2edb4";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/44a3aa22a7f2edb4";s:5:"title";s:40:"[ANN] Release of XMLmind XML Editor v5.6";s:7:"summary";s:370:"
+  XMLmind is happy to announce the version 5.6 of XMLmind XML Editor. <br> ______________________________ _______________ <br> <p>XMLmind XML Editor Evaluation Edition v5.6 can be downloaded from <br> <a target="_blank" rel=nofollow href="http://www.xmlmind.com/xmleditor/download.shtml">[link]</a> <br> <p>Professional Edition users, please upgrade using this form:
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:8:"23alagmy";s:12:"author_email";s:22:"hossamala...@gmail.com";s:7:"updated";s:20:"2013-03-29T09:26:53Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/82d156d9d434c6ae";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/82d156d9d434c6ae";s:5:"title";s:115:"جديد ترددات النايل سات 2013 لشهر يونيو - اجدد ترددات النايل سات 2014";s:7:"summary";s:236:"
+  جديد ترددات النايل سات 2013 لشهر يونيو - اجدد ترددات النايل سات 2014 <br> <a target="_blank" rel=nofollow href="http://natigtas7ab.blogspot.com/2013/03/2013-2014_3930.html">[link]</a>
+  ";}i:7;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:15:"jenny wilkinson";s:12:"author_email";s:28:"jennywilkinso...@yahoo.co.uk";s:7:"updated";s:20:"2013-03-20T07:55:52Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/7d59e7d5dd08ed85";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/7d59e7d5dd08ed85";s:5:"title";s:48:"Liquid Technologies Unvei Liquid XML Studio 2013";s:7:"summary";s:446:"
+  Liquid Technologies Ltd, a privately owned software business located in the UK, have formally launched the latest release of their well-known and best selling Liquid XML Studio software, Liquid XML Studio 2013. <br> <p>Liquid XML Studio has been known as an XML toolkit and IDE, that contains all of the tools required for designing and developing XML applications, like an XML Editor, XML Schema Editor, WSDL Editor, Web Service Tools etc.
+  ";}i:8;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:21:"supp...@oxygenxml.com";s:7:"updated";s:20:"2013-03-14T14:21:54Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/147aaf66920f583a";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/147aaf66920f583a";s:5:"title";s:66:"Syncro Soft Announces New Release of Syncro SVN Client version 8.1";s:7:"summary";s:528:"
+  Syncro Soft Announces New Release of Syncro SVN Client version 8.1 <br> <p>Release date: March 14, 2013 <br> <p>Syncro Soft, the producer of Syncro SVN Client, has announced the immediate availability of version 8.1 of its Subversion (SVN) client. <br> <p>Version 8.1 of Syncro SVN Client offers support for committing changes to multiple repositories at once. Also, the functionality of the commit operation was enhanced and further improvements were added regarding the representation and deletion of working copy items.
+  ";}i:9;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:8:"23alagmy";s:12:"author_email";s:22:"hossamala...@gmail.com";s:7:"updated";s:20:"2013-03-11T21:51:28Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/890ee25e1289c821";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/890ee25e1289c821";s:5:"title";s:52:"صور لابنه الاعلامى باسم يوسف";s:7:"summary";s:257:"
+  ÕæÑ áÇÈäå ÇáÇÚáÇãì ÈÇÓã íæÓÝ <br> <p><a target="_blank" rel=nofollow href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fnatigtas7ab.blogspot.com%2F2013%2F03%2Fblog-post_5505.html%23.UT5PNJwVeBF.facebook">[link]</a>
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:13:"Philipp Kraus";s:12:"author_email";s:26:"philipp.kr...@flashpixx.de";s:7:"updated";s:20:"2013-03-03T15:41:52Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/df9ee7387aaf5177";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/df9ee7387aaf5177";s:5:"title";s:33:"string concat with apply template";s:7:"summary";s:424:"
+  Hello, <br> <p>I have got two rules: <br> <p> &lt;xsl:template match=&quot;templateparamlist&quot;&gt; <br> &lt;xsl:for-each select=&quot;param&quot;&gt; <br> &lt;xsl:value-of select=&quot;concat(., ',')&quot; /&gt; <br> &lt;/xsl:for-each&gt; <br> &lt;/xsl:template&gt; <br> <p> &lt;xsl:template match=&quot;templateparamlist/param &quot;&gt; <br> &lt;xsl:value-of select=&quot;replace(type, 'typename', '')&quot;/&gt;
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:13:"Philipp Kraus";s:12:"author_email";s:26:"philipp.kr...@flashpixx.de";s:7:"updated";s:20:"2013-02-27T14:11:46Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/b043569a9d1fc611";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/b043569a9d1fc611";s:5:"title";s:28:"apply template with variable";s:7:"summary";s:366:"
+  Hello, <br> <p>I have got a problem with a query, that is passend by a parameter. <br> See this two templates <br> <p> &lt;xsl:call-template name=&quot;section&quot;&gt; <br> &lt;xsl:with-param name=&quot;query&quot;&gt; <br> &lt;xsl:value-of select=&quot;sectiondef[@kind='publ ic-func']&quot;/&gt; <br> &lt;/xsl:with-param&gt; <br> &lt;/xsl:call-template&gt;
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:13:"Philipp Kraus";s:12:"author_email";s:26:"philipp.kr...@flashpixx.de";s:7:"updated";s:20:"2013-02-26T17:25:52Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/d9c5db531571b00d";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/d9c5db531571b00d";s:5:"title";s:35:"count recursiv name-templated calls";s:7:"summary";s:428:"
+  Hello, <br> <p>I would like to work with XSLT (2.0). I have got code like <br> <p>&lt;xsl:template name=&quot;item&quot;&gt; <br> &lt;xsl:text&gt;?? test&lt;/xsl:text&gt; <br> &lt;/xsl:template&gt; <br> <p>and different matches in another file <br> <p>&lt;xsl:template match=&quot;node1&quot; <br> &lt;xsl:call-template name=&quot;item&quot;/&gt; <br> &lt;/xsl:template&gt; <br> <p>&lt;xsl:template match=&quot;node2&quot;
+  ";}i:13;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:16:"Olivier Ishacian";s:12:"author_email";s:19:"oliv...@xmlmind.com";s:7:"updated";s:20:"2013-02-25T12:11:13Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/f73bbb789a12af61";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/f73bbb789a12af61";s:5:"title";s:48:"[ANN] Release of XMLmind XSL-FO Converter v4.8.1";s:7:"summary";s:391:"
+  XMLmind is happy to announce the version 4.8.1 of XMLmind XSL-FO Converter. <br> ______________________________ ______________ <br> <p>XMLmind XSL-FO Converter Evaluation Edition v4.8.1 can be downloaded <br> from <a target="_blank" rel=nofollow href="http://www.xmlmind.com/foconverter/downloadeval.shtml">[link]</a> <br> <p>Professional Edition users, please upgrade using this form:
+  ";}i:14;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:20:"sdgv...@yahoo.is.com";s:7:"updated";s:20:"2013-02-25T06:52:39Z";s:2:"id";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/462047a2d2f68e83";s:5:"link_";s:82:"http://groups.google.com/group/comp.text.xml/browse_thread/thread/462047a2d2f68e83";s:5:"title";s:124:"fente de vidéo de munsters cerise de jeu nouvelles machines à sous machines à sous de jeu libres machine à sous visuelle";s:7:"summary";s:348:"
+  fentes de jeu <br> la meilleure fente <br> machines � sous de casino de victoire <br> <p>-- <br> fente de vid�o de munsters cerise de jeu nouvelles machines � sous machines � sous de jeu libres machine � sous visuelle <br> <p> + <br> + <br> + <br> +++ FENTES EN LIGNE +++ CASINO EN LIGNE +++ EN LIGNE JOUNT +++ ROULETTE EN LIGNE +++
+  ";}}s:7:"channel";a:6:{s:2:"id";s:44:"http://groups.google.com/group/comp.text.xml";s:5:"title";s:26:"comp.text.xml Google Group";s:8:"subtitle";s:43:"
+  The Extensible Markup Language (XML).
+  ";s:9:"link_self";s:46:"/group/comp.text.xml/feed/atom_v1_0_topics.xml";s:7:"updated";s:8:"-0-0T::Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

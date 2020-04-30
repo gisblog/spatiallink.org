@@ -1,0 +1,389 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:12:{s:5:"title";s:41:"Integration of enterprise systems and GIS";s:4:"link";s:82:"http://www.jdoneill.com/blog/2005/05/18/integration-of-enterprise-systems-and-gis/";s:8:"comments";s:91:"http://www.jdoneill.com/blog/2005/05/18/integration-of-enterprise-systems-and-gis/#comments";s:7:"pubdate";s:31:"Wed, 18 May 2005 11:13:53 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:3:"GIS";s:4:"guid";s:82:"http://www.jdoneill.com/blog/2005/05/18/integration-of-enterprise-systems-and-gis/";s:11:"description";s:393:"Enterprise systems have the ability to fully automate traditional business activities, but this is only the first step in improving efficiency.  To continue to improve productivity from an enterprise system, we must consider application integration and data integration.  Application integration implies that disparate applications have the ability to seamlessly work together to produce [...]";s:7:"content";a:1:{s:7:"encoded";s:1233:"	<p><img src="http://www.jdoneill.com/blog/wp-images/posts/soa_architecture.jpg" alt="soa architecture" />Enterprise systems have the ability to fully automate traditional business activities, but this is only the first step in improving efficiency.  To continue to improve productivity from an enterprise system, we must consider application integration and data integration.  Application integration implies that disparate applications have the ability to seamlessly work together to produce results unattainable by themselves.   Data integration implies that applications which constitute an enterprise system must be able to use and share data results from other applications in the system.  In a utopian enterprise system, all applications would be native to the underlying architecture, however reality dictates otherwise.  Many foreign platform applications have to work with each other to “save the enterprise”.  Most mature GIS systems are built external to the J2EE architecture.  Consequently we need to develop ways to implement a loosely coupled integration of J2EE systems and a modern GIS system.  There are a number of ways to do this including: </p>
+	<p>1.	Web Services<br />
+2.	Adapters<br />
+3.	Messaging
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:87:"http://www.jdoneill.com/blog/2005/05/18/integration-of-enterprise-systems-and-gis/feed/";}s:7:"summary";s:393:"Enterprise systems have the ability to fully automate traditional business activities, but this is only the first step in improving efficiency.  To continue to improve productivity from an enterprise system, we must consider application integration and data integration.  Application integration implies that disparate applications have the ability to seamlessly work together to produce [...]";s:12:"atom_content";s:1233:"	<p><img src="http://www.jdoneill.com/blog/wp-images/posts/soa_architecture.jpg" alt="soa architecture" />Enterprise systems have the ability to fully automate traditional business activities, but this is only the first step in improving efficiency.  To continue to improve productivity from an enterprise system, we must consider application integration and data integration.  Application integration implies that disparate applications have the ability to seamlessly work together to produce results unattainable by themselves.   Data integration implies that applications which constitute an enterprise system must be able to use and share data results from other applications in the system.  In a utopian enterprise system, all applications would be native to the underlying architecture, however reality dictates otherwise.  Many foreign platform applications have to work with each other to “save the enterprise”.  Most mature GIS systems are built external to the J2EE architecture.  Consequently we need to develop ways to implement a loosely coupled integration of J2EE systems and a modern GIS system.  There are a number of ways to do this including: </p>
+	<p>1.	Web Services<br />
+2.	Adapters<br />
+3.	Messaging
+</p>
+";}i:1;a:12:{s:5:"title";s:32:"(: Welcome to the Cruel World :)";s:4:"link";s:67:"http://www.jdoneill.com/blog/2005/04/29/welcome-to-the-cruel-world/";s:8:"comments";s:76:"http://www.jdoneill.com/blog/2005/04/29/welcome-to-the-cruel-world/#comments";s:7:"pubdate";s:31:"Fri, 29 Apr 2005 10:23:46 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:4:"Misc";s:4:"guid";s:67:"http://www.jdoneill.com/blog/2005/04/29/welcome-to-the-cruel-world/";s:11:"description";s:264:"Jenelle Riley O'Neill: 
+ 
+This life of one day is a life to rejoice in.  
+Because of this, even though you live for just one day, if you can be awakened to the truth, that one day is vastly superior to the eternal life.  
+If this one day in the lifetime of a [...]";s:7:"content";a:1:{s:7:"encoded";s:513:"	<p>Jenelle Riley O&#8217;Neill:<br />
+<img src="http://www.jdoneill.com/blog/wp-images/posts/jenelle.riley.oneill.jpg" alt="jenelle" /><br />
+This life of one day is a life to rejoice in.<br />
+Because of this, even though you live for just one day, if you can be awakened to the truth, that one day is vastly superior to the eternal life.<br />
+If this one day in the lifetime of a hundred years is lost, will you ever get your hands on it again?<br />
+&#8212; Dogen</p>
+	<p>Congratulations James and Amy.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:72:"http://www.jdoneill.com/blog/2005/04/29/welcome-to-the-cruel-world/feed/";}s:7:"summary";s:264:"Jenelle Riley O'Neill: 
+ 
+This life of one day is a life to rejoice in.  
+Because of this, even though you live for just one day, if you can be awakened to the truth, that one day is vastly superior to the eternal life.  
+If this one day in the lifetime of a [...]";s:12:"atom_content";s:513:"	<p>Jenelle Riley O&#8217;Neill:<br />
+<img src="http://www.jdoneill.com/blog/wp-images/posts/jenelle.riley.oneill.jpg" alt="jenelle" /><br />
+This life of one day is a life to rejoice in.<br />
+Because of this, even though you live for just one day, if you can be awakened to the truth, that one day is vastly superior to the eternal life.<br />
+If this one day in the lifetime of a hundred years is lost, will you ever get your hands on it again?<br />
+&#8212; Dogen</p>
+	<p>Congratulations James and Amy.
+</p>
+";}i:2;a:12:{s:5:"title";s:39:"geographic reprojection with ArcObjects";s:4:"link";s:80:"http://www.jdoneill.com/blog/2005/04/26/geographic-reprojection-with-arcobjects/";s:8:"comments";s:89:"http://www.jdoneill.com/blog/2005/04/26/geographic-reprojection-with-arcobjects/#comments";s:7:"pubdate";s:31:"Tue, 26 Apr 2005 07:57:07 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:14:"JavaArcObjects";s:4:"guid";s:80:"http://www.jdoneill.com/blog/2005/04/26/geographic-reprojection-with-arcobjects/";s:11:"description";s:321:"Recently I was asked how to transform from one spatial reference into another using ArcObjects.  This is one of my favorite subjects, map projections, and is an important concept in maps produced with data obtained from a variety of sources.  Maps produced from data of this sort become part of a larger controlling [...]";s:7:"content";a:1:{s:7:"encoded";s:2132:"	<p>Recently I was asked how to transform from one spatial reference into another using ArcObjects.  This is one of my favorite subjects, map projections, and is an important concept in maps produced with data obtained from a variety of sources.  Maps produced from data of this sort become part of a larger controlling system called a <em>Geographic Information System (GIS)</em>.  Use of a GIS allows map developers to retrieve and overlay maps with an extensive variety of other types of data.  Such a transformation from one coordinate system into another is a function of <em>map projections</em>.  The following is my estimation at the easiest way to do a projection conversion with ArcObjects, using the <code>projectEx()</code> method off of the <code>IGeometry2</code> interface:  </p>
+	<p>&nbsp;<code>IPoint point = new Point();</code><br />
+&nbsp;<code>IGeometry2 geometry = new IGeometry2Proxy(point);</code><br />
+&nbsp;<code>point.putCoords(1,1);</code></p>
+	<p>&nbsp;<code>ISpatialReferenceFactory env = new SpatialReferenceEnvironment();</code><br />
+&nbsp;<code>ISpatialReference fromRef =<br />
+&nbsp;&nbsp;env.createGeographicCoordinateSystem(esriSRGeoCSType.esriSRGeoCS_WGS1984);</code><br />
+&nbsp;<code>geometry.setSpatialReferenceByRef(fromRef);</code></p>
+	<p>&nbsp;<code>ISpatialReference toRef =<br />
+&nbsp;&nbsp;env.createProjectedCoordinateSystem(esriSRProjCSType.esriSRProjCS_World_Robinson);</code><br />
+&nbsp;<code>ITransformation trans =<br />
+&nbsp;&nbsp;env.createGeoTransformation(<br />
+&nbsp;&nbsp;&nbsp;esriSRGeoTransformation2Type.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;esriSRGeoTransformation_NAD_1927_TO_NAD_1983_NADCON<br />
+&nbsp;&nbsp;&nbsp;&nbsp;);</code><br />
+&nbsp;<code>IGeoTransformation geoTrans = new IGeoTransformationProxy(trans);</code><br />
+&nbsp;<code>geometry.projectEx(<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toRef,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;esriTransformDirection.esriTransformForward,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geoTrans,false,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0);</code></p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:85:"http://www.jdoneill.com/blog/2005/04/26/geographic-reprojection-with-arcobjects/feed/";}s:7:"summary";s:321:"Recently I was asked how to transform from one spatial reference into another using ArcObjects.  This is one of my favorite subjects, map projections, and is an important concept in maps produced with data obtained from a variety of sources.  Maps produced from data of this sort become part of a larger controlling [...]";s:12:"atom_content";s:2132:"	<p>Recently I was asked how to transform from one spatial reference into another using ArcObjects.  This is one of my favorite subjects, map projections, and is an important concept in maps produced with data obtained from a variety of sources.  Maps produced from data of this sort become part of a larger controlling system called a <em>Geographic Information System (GIS)</em>.  Use of a GIS allows map developers to retrieve and overlay maps with an extensive variety of other types of data.  Such a transformation from one coordinate system into another is a function of <em>map projections</em>.  The following is my estimation at the easiest way to do a projection conversion with ArcObjects, using the <code>projectEx()</code> method off of the <code>IGeometry2</code> interface:  </p>
+	<p>&nbsp;<code>IPoint point = new Point();</code><br />
+&nbsp;<code>IGeometry2 geometry = new IGeometry2Proxy(point);</code><br />
+&nbsp;<code>point.putCoords(1,1);</code></p>
+	<p>&nbsp;<code>ISpatialReferenceFactory env = new SpatialReferenceEnvironment();</code><br />
+&nbsp;<code>ISpatialReference fromRef =<br />
+&nbsp;&nbsp;env.createGeographicCoordinateSystem(esriSRGeoCSType.esriSRGeoCS_WGS1984);</code><br />
+&nbsp;<code>geometry.setSpatialReferenceByRef(fromRef);</code></p>
+	<p>&nbsp;<code>ISpatialReference toRef =<br />
+&nbsp;&nbsp;env.createProjectedCoordinateSystem(esriSRProjCSType.esriSRProjCS_World_Robinson);</code><br />
+&nbsp;<code>ITransformation trans =<br />
+&nbsp;&nbsp;env.createGeoTransformation(<br />
+&nbsp;&nbsp;&nbsp;esriSRGeoTransformation2Type.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;esriSRGeoTransformation_NAD_1927_TO_NAD_1983_NADCON<br />
+&nbsp;&nbsp;&nbsp;&nbsp;);</code><br />
+&nbsp;<code>IGeoTransformation geoTrans = new IGeoTransformationProxy(trans);</code><br />
+&nbsp;<code>geometry.projectEx(<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toRef,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;esriTransformDirection.esriTransformForward,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geoTrans,false,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0);</code></p>
+";}i:3;a:12:{s:5:"title";s:21:"Spherical Earth Model";s:4:"link";s:62:"http://www.jdoneill.com/blog/2005/04/09/spherical-earth-model/";s:8:"comments";s:71:"http://www.jdoneill.com/blog/2005/04/09/spherical-earth-model/#comments";s:7:"pubdate";s:31:"Sat, 09 Apr 2005 19:51:31 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:10:"DevGeodesy";s:4:"guid";s:62:"http://www.jdoneill.com/blog/2005/04/09/spherical-earth-model/";s:11:"description";s:303:"The difficulty of various concepts regarding the earth is removed when assuming it to be a sphere.  Imagine a plane passing through the center of a spherical earth.  Its intersection with the level surface forms a continuous line around the earth.  Any portion of the line is a level line, and the [...]";s:7:"content";a:1:{s:7:"encoded";s:875:"	<p><img src="http://www.jdoneill.com/blog/wp-images/posts/great-circle.gif" alt="great circle drawing" />The difficulty of various concepts regarding the earth is removed when assuming it to be a sphere.  Imagine a plane passing through the center of a spherical earth.  Its intersection with the level surface forms a continuous line around the earth.  Any portion of the line is a level line, and the circle defined by intersection of the plane with a mean level of the earth is called the great circle of the earth.  The distance along the great circle arc provides us with the shortest distance between two points on a spherical model of the earth.  An example of determining the distance between two points defined by geographic coordinates (spherical latitude and longitude) can be found under the <a href="http://www.jdoneill.com/research.php">research</a> tab.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:67:"http://www.jdoneill.com/blog/2005/04/09/spherical-earth-model/feed/";}s:7:"summary";s:303:"The difficulty of various concepts regarding the earth is removed when assuming it to be a sphere.  Imagine a plane passing through the center of a spherical earth.  Its intersection with the level surface forms a continuous line around the earth.  Any portion of the line is a level line, and the [...]";s:12:"atom_content";s:875:"	<p><img src="http://www.jdoneill.com/blog/wp-images/posts/great-circle.gif" alt="great circle drawing" />The difficulty of various concepts regarding the earth is removed when assuming it to be a sphere.  Imagine a plane passing through the center of a spherical earth.  Its intersection with the level surface forms a continuous line around the earth.  Any portion of the line is a level line, and the circle defined by intersection of the plane with a mean level of the earth is called the great circle of the earth.  The distance along the great circle arc provides us with the shortest distance between two points on a spherical model of the earth.  An example of determining the distance between two points defined by geographic coordinates (spherical latitude and longitude) can be found under the <a href="http://www.jdoneill.com/research.php">research</a> tab.
+</p>
+";}i:4;a:12:{s:5:"title";s:34:"J2EE 5.0 Spec Early Draft Released";s:4:"link";s:74:"http://www.jdoneill.com/blog/2005/04/07/j2ee-50-spec-early-draft-released/";s:8:"comments";s:83:"http://www.jdoneill.com/blog/2005/04/07/j2ee-50-spec-early-draft-released/#comments";s:7:"pubdate";s:31:"Thu, 07 Apr 2005 07:12:01 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:7:"JavaDev";s:4:"guid";s:74:"http://www.jdoneill.com/blog/2005/04/07/j2ee-50-spec-early-draft-released/";s:11:"description";s:248:"The first early draft of JSR 244, or J2EE 5.0, has been released.  The spec leverages many aspects of J2SE 5.0 and the focus seems to be on ease of development and deployment.  As I dig deeper into the spec I hope to comment on the improvements.   ";s:7:"content";a:1:{s:7:"encoded";s:309:"	<p>The first early draft of <a href="http://www.jcp.org/en/jsr/detail?id=244">JSR 244</a>, or J2EE 5.0, has been released.  The spec leverages many aspects of J2SE 5.0 and the focus seems to be on ease of development and deployment.  As I dig deeper into the spec I hope to comment on the improvements.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:79:"http://www.jdoneill.com/blog/2005/04/07/j2ee-50-spec-early-draft-released/feed/";}s:7:"summary";s:248:"The first early draft of JSR 244, or J2EE 5.0, has been released.  The spec leverages many aspects of J2SE 5.0 and the focus seems to be on ease of development and deployment.  As I dig deeper into the spec I hope to comment on the improvements.   ";s:12:"atom_content";s:309:"	<p>The first early draft of <a href="http://www.jcp.org/en/jsr/detail?id=244">JSR 244</a>, or J2EE 5.0, has been released.  The spec leverages many aspects of J2SE 5.0 and the focus seems to be on ease of development and deployment.  As I dig deeper into the spec I hope to comment on the improvements.
+</p>
+";}i:5;a:12:{s:5:"title";s:27:"Agent Controller on Solaris";s:4:"link";s:68:"http://www.jdoneill.com/blog/2005/03/16/agent-controller-on-solaris/";s:8:"comments";s:77:"http://www.jdoneill.com/blog/2005/03/16/agent-controller-on-solaris/#comments";s:7:"pubdate";s:31:"Wed, 16 Mar 2005 10:06:43 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:17:"JavaWSADProfiling";s:4:"guid";s:68:"http://www.jdoneill.com/blog/2005/03/16/agent-controller-on-solaris/";s:11:"description";s:374:"Recently I have been debating what the intention is for the remote attachment to servers option in Websphere Studio Application Developer (WSAD).  Using this feature involves setting up an Agent Controller on the remote server machine.  Agent Controller provides information about running applications to other applications for testing or debugging tools.  Considering [...]";s:7:"content";a:1:{s:7:"encoded";s:4412:"	<p>Recently I have been debating what the intention is for the remote attachment to servers option in Websphere Studio Application Developer (WSAD).  Using this feature involves setting up an Agent Controller on the remote server machine.  Agent Controller provides information about running applications to other applications for testing or debugging tools.  Considering the fact that WSAD is only available on Windows and Linux platforms and Agent Controller gets shipped with WSAD, I naturally thought that WSAD only supported remote attachment to servers on those platforms.  Turns out the following is true: </p>
+	<p> &nbsp;&nbsp;1. The remote platforms supported for remote deployment and test are Windows and Linux. </p>
+	<p>However, for applications that are already deployed and running on remote platforms, the Agent Controller supports attaching to applications running on many other platforms, including AIX(R), Solaris, and OS/390(R).</p>
+	<p>Here are the steps to get Agent Controller installed/uninstall on the Solaris platform.  </p>
+	<p>Note:<br />
+If you want to profile your applications on Solaris, ensure that Java development kit 1.3.0 or higher is installed.  To install or upgrade Agent Controller on a separate Solaris, follow these steps: </p>
+	<p>&nbsp;&nbsp;1. Ensure that the Java development kit 1.3.0 or higher is installed. </p>
+	<p>&nbsp;&nbsp;2. Log in as root and go to the directory where Agent Controller setup.jar installation package that you transferred is located. </p>
+	<p>&nbsp;&nbsp;3.Issue the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>java -Djava.compiler=NONE -jar setup.jar</code></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;4. Follow the on-screen instructions. Here are some considerations when installing Agent Controller: </p>
+	<p>By default, Agent Controller is installed in <code>/opt/IBMRAC</code> on Solaris.<br />
+For the Specify where the Java Runtime file (java) is located prompt, type the location where java.exe can be found (for example, <code>/usr/java/jre/bin</code>).<br />
+For the WebSphere Application Server V5 and V5.1 installed location prompt, type the locations of WebSphere Application Server Version 5 and WebSphere Application Server Version 5.1, if they installed (for example, <code>/usr/WebSphere/AppServer</code>). You may leave these fields blank if they are not installed.<br />
+On the Host List page of the wizard, you specify computers that can access the Agent Controller you are currently installing. Usually these are the computers where WebSphere Studio Application Developer is installed.<br />
+This computer only radio button does not allow any computer other than this one to access Agent Controller. This is the default.<br />
+The Specific computers radio button allows you to specify the host name or the network name of one or more computers that can access Agent Controller. The host names are specified as a space delimited list.<br />
+The Any computer radio button allows all computers to access Agent Controller.<br />
+On the Security page of the wizard, specify whether Agent Controller will require encrypted and authenticated communications. If security is disabled, only the host list is used to control access to Agent Controller. If security is enabled, clients are able to connect to Agent Controller only if they contain the necessary certificates to authenticate Agent Controller for Secure Socket Communications. Also, all clients are required to log in to Agent Controller. If you select <em>Enabled</em>, you will be asked to enter the users that are allowed access to Agent Controller. Multiple user names must be separated by spaces. By default, security is disabled. </p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;5. Start the server by opening the <code>/opt/IBMRAC/bin</code> directory and issuing the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>./RAStart.sh</code></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;6. To stop the server, open the <code>/opt/IBMRAC/bin</code> directory, and issue the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./RAStop.sh</p>
+	<p>Uninstalling on Solaris<br />
+To uninstall Agent Controller, ensure that the Java development kit is installed and log on as root. Go to the directory <code>/opt/IBMRAC/bin</code>, and issue the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<code>./uninstall.sh</code>
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:73:"http://www.jdoneill.com/blog/2005/03/16/agent-controller-on-solaris/feed/";}s:7:"summary";s:374:"Recently I have been debating what the intention is for the remote attachment to servers option in Websphere Studio Application Developer (WSAD).  Using this feature involves setting up an Agent Controller on the remote server machine.  Agent Controller provides information about running applications to other applications for testing or debugging tools.  Considering [...]";s:12:"atom_content";s:4412:"	<p>Recently I have been debating what the intention is for the remote attachment to servers option in Websphere Studio Application Developer (WSAD).  Using this feature involves setting up an Agent Controller on the remote server machine.  Agent Controller provides information about running applications to other applications for testing or debugging tools.  Considering the fact that WSAD is only available on Windows and Linux platforms and Agent Controller gets shipped with WSAD, I naturally thought that WSAD only supported remote attachment to servers on those platforms.  Turns out the following is true: </p>
+	<p> &nbsp;&nbsp;1. The remote platforms supported for remote deployment and test are Windows and Linux. </p>
+	<p>However, for applications that are already deployed and running on remote platforms, the Agent Controller supports attaching to applications running on many other platforms, including AIX(R), Solaris, and OS/390(R).</p>
+	<p>Here are the steps to get Agent Controller installed/uninstall on the Solaris platform.  </p>
+	<p>Note:<br />
+If you want to profile your applications on Solaris, ensure that Java development kit 1.3.0 or higher is installed.  To install or upgrade Agent Controller on a separate Solaris, follow these steps: </p>
+	<p>&nbsp;&nbsp;1. Ensure that the Java development kit 1.3.0 or higher is installed. </p>
+	<p>&nbsp;&nbsp;2. Log in as root and go to the directory where Agent Controller setup.jar installation package that you transferred is located. </p>
+	<p>&nbsp;&nbsp;3.Issue the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>java -Djava.compiler=NONE -jar setup.jar</code></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;4. Follow the on-screen instructions. Here are some considerations when installing Agent Controller: </p>
+	<p>By default, Agent Controller is installed in <code>/opt/IBMRAC</code> on Solaris.<br />
+For the Specify where the Java Runtime file (java) is located prompt, type the location where java.exe can be found (for example, <code>/usr/java/jre/bin</code>).<br />
+For the WebSphere Application Server V5 and V5.1 installed location prompt, type the locations of WebSphere Application Server Version 5 and WebSphere Application Server Version 5.1, if they installed (for example, <code>/usr/WebSphere/AppServer</code>). You may leave these fields blank if they are not installed.<br />
+On the Host List page of the wizard, you specify computers that can access the Agent Controller you are currently installing. Usually these are the computers where WebSphere Studio Application Developer is installed.<br />
+This computer only radio button does not allow any computer other than this one to access Agent Controller. This is the default.<br />
+The Specific computers radio button allows you to specify the host name or the network name of one or more computers that can access Agent Controller. The host names are specified as a space delimited list.<br />
+The Any computer radio button allows all computers to access Agent Controller.<br />
+On the Security page of the wizard, specify whether Agent Controller will require encrypted and authenticated communications. If security is disabled, only the host list is used to control access to Agent Controller. If security is enabled, clients are able to connect to Agent Controller only if they contain the necessary certificates to authenticate Agent Controller for Secure Socket Communications. Also, all clients are required to log in to Agent Controller. If you select <em>Enabled</em>, you will be asked to enter the users that are allowed access to Agent Controller. Multiple user names must be separated by spaces. By default, security is disabled. </p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;5. Start the server by opening the <code>/opt/IBMRAC/bin</code> directory and issuing the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>./RAStart.sh</code></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;6. To stop the server, open the <code>/opt/IBMRAC/bin</code> directory, and issue the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./RAStop.sh</p>
+	<p>Uninstalling on Solaris<br />
+To uninstall Agent Controller, ensure that the Java development kit is installed and log on as root. Go to the directory <code>/opt/IBMRAC/bin</code>, and issue the command:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<code>./uninstall.sh</code>
+</p>
+";}i:6;a:12:{s:5:"title";s:28:"Integrating JDBC with ArcSDE";s:4:"link";s:69:"http://www.jdoneill.com/blog/2005/03/13/integrating-jdbc-with-arcsde/";s:8:"comments";s:78:"http://www.jdoneill.com/blog/2005/03/13/integrating-jdbc-with-arcsde/#comments";s:7:"pubdate";s:31:"Sun, 13 Mar 2005 15:24:22 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:23:"ArcGIS ServerJavaArcSDE";s:4:"guid";s:69:"http://www.jdoneill.com/blog/2005/03/13/integrating-jdbc-with-arcsde/";s:11:"description";s:325:"JDBC is an efficient means to connect to a wide range of SQL Databases and access the data within.  ESRI's ArcSDE is a value added database application server on top of relational databases which is efficient in spatially enabling databases and accessing the spatial content in the database.  Combining the use of these [...]";s:7:"content";a:1:{s:7:"encoded";s:5427:"	<p>JDBC is an efficient means to connect to a wide range of SQL Databases and access the data within.  ESRI&#8217;s ArcSDE is a value added database application server on top of relational databases which is efficient in spatially enabling databases and accessing the spatial content in the database.  Combining the use of these two technologies to analyze your spatial data can provide an efficient development model for your spatial applications. </p>
+	<p>The example we will look at here today is a web application which queries a spatially enabled database for place names.  The selected place name will be mapped on the web canvas.  The web application model will be a front servlet controller model as specified by the Core J2EE Pattern Catalog.  The presentation tier request mechanism must control and coordinate processing of each user across  multiple requests.  This example will use a servlet which serves as a single entry point for all requests.  An input form collects all the initial input parameters from the user.  By submitting this input form, the controller places the input parameter values in the session so they can be accessed by several pages.  Views are created to display the dynamic content provided by the View Beans.  A master view displays the entire set of a SQL query and a details view displays individual query records.  The View Beans are Java Bean wrappers which do the work or retrieving and displaying SQL and Spatial data.  View Beans allow for more control over how data is displayed when rendered by web pages.  A relational database is accessed transparently in this model by a custom Java Bean to access data through JDBC and ArcObjects.  When we access the SHAPE column of a spatially enabled table through JDBC we use it as a Java Object as follows: </p>
+	<p><code>Object ret = getDBSelect().getColumn( SHAPE_LABEL );</code></p>
+	<p>Where <code>SHAPE_LABEL</code> represents the name of the spatial column.  This value may vary depending on which database you are using with ArcSDE.  We can convert the object to string to get a long binary translation of our SHAPE column: </p>
+	<p><code>massageOutput(ret)</code></p>
+	<p><code><br />
+   /*************************************************************<br />
+   * Formats code so that is HTML Friendly<br />
+   * @param in The incoming String<br />
+   * @return The formatted String<br />
+   */<br />
+   protected String massageOutput(Object in) {<br />
+      Object out = in;<br />
+      //Place code here to format your output<br />
+      return (out != null) ? out.toString() : "";<br />
+   }<br />
+</code></p>
+	<p>In order to map our selected query we need to make sense of the SHAPE output.  We can use the Java API to ArcObjects to accomplish this.  We will use the Java API in a local context which allows our J2EE application server to manage the contexts of the spatial objects we create.  ESRI is currently not supporting this approach, but it is a legal use of ArcObjects.  I will have to submit another web log on the tips and tricks for this approach.  We can use the server, database, user and password parameters from our JDBC connection.  We only need to add the service port, default is 5151.  Once we make a connection we can begin using ArcObjects to access the same data, create a feature class from the result, and ultimately return a geometry type for the SHAPE column.  </p>
+	<p><code><br />
+// --- a query definition represents a database query on a table or feature class<br />
+IQueryDef queryDef = wksp.createQueryDef();<br />
+queryDef.setTables( SDE_TABLE );<br />
+queryDef.setSubFields( SHAPE_LABEL );<br />
+queryDef.setWhereClause( OBJECTID_LABEL + " = " + OBJECTID );<br />
+// --- the openFeatureQuery method on a workspace can be used to create<br />
+// --- a feature class based on a query definition<br />
+IFeatureClassContainer fcContainer = new IFeatureClassContainerProxy(<br />
+wksp.openFeatureQuery( "SHAPE Query", queryDef ) );<br />
+IFeatureClass fc = null;<br />
+if( fcContainer.getClassCount() != 1 ){<br />
+System.err.println( "Failed to create feature class by query" );<br />
+}else{<br />
+// --- get the feature class<br />
+fc = fcContainer.esri_getClass( 0 );<br />
+// --- the actual geometry type is defined by the esriGeometryType enumeration<br />
+int geometryType = fc.getFeatureType();<br />
+// --- the type of feature in this feature class<br />
+switch(geometryType){<br />
+case esriGeometryType.esriGeometryPoint: type = "Point";  break;<br />
+case esriGeometryType.esriGeometryMultipoint: type = "MultiPoint"; break;<br />
+case esriGeometryType.esriGeometryPolyline: type = "Polyline"; break;<br />
+case esriGeometryType.esriGeometryPolygon: type = "Polygon"; break;<br />
+</code></p>
+	<p>Where <code>SDE_TABLE</code> represents the name of the spatial table and <code>OBJECTID_LABEL</code> represents the name of the OBJECTID column.  We use a <code>QueryDef</code> object representing a database query on our table.  The <code>openFeatureQuery</code> method on the <code>IFeatureWorkspace</code> interface can be used to create a <code>FeatureClass</code> based on our <code>QueryDef</code>.  We can QueryInterface, or Proxy, from the return <code>IFeatureDataset</code> to an <code>IFeatureClassContainer</code> interface to provide us access to feature classes.  Once we have the feature class, we can determine it&#8217;s geometry type and return that to the user.  </p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:74:"http://www.jdoneill.com/blog/2005/03/13/integrating-jdbc-with-arcsde/feed/";}s:7:"summary";s:325:"JDBC is an efficient means to connect to a wide range of SQL Databases and access the data within.  ESRI's ArcSDE is a value added database application server on top of relational databases which is efficient in spatially enabling databases and accessing the spatial content in the database.  Combining the use of these [...]";s:12:"atom_content";s:5427:"	<p>JDBC is an efficient means to connect to a wide range of SQL Databases and access the data within.  ESRI&#8217;s ArcSDE is a value added database application server on top of relational databases which is efficient in spatially enabling databases and accessing the spatial content in the database.  Combining the use of these two technologies to analyze your spatial data can provide an efficient development model for your spatial applications. </p>
+	<p>The example we will look at here today is a web application which queries a spatially enabled database for place names.  The selected place name will be mapped on the web canvas.  The web application model will be a front servlet controller model as specified by the Core J2EE Pattern Catalog.  The presentation tier request mechanism must control and coordinate processing of each user across  multiple requests.  This example will use a servlet which serves as a single entry point for all requests.  An input form collects all the initial input parameters from the user.  By submitting this input form, the controller places the input parameter values in the session so they can be accessed by several pages.  Views are created to display the dynamic content provided by the View Beans.  A master view displays the entire set of a SQL query and a details view displays individual query records.  The View Beans are Java Bean wrappers which do the work or retrieving and displaying SQL and Spatial data.  View Beans allow for more control over how data is displayed when rendered by web pages.  A relational database is accessed transparently in this model by a custom Java Bean to access data through JDBC and ArcObjects.  When we access the SHAPE column of a spatially enabled table through JDBC we use it as a Java Object as follows: </p>
+	<p><code>Object ret = getDBSelect().getColumn( SHAPE_LABEL );</code></p>
+	<p>Where <code>SHAPE_LABEL</code> represents the name of the spatial column.  This value may vary depending on which database you are using with ArcSDE.  We can convert the object to string to get a long binary translation of our SHAPE column: </p>
+	<p><code>massageOutput(ret)</code></p>
+	<p><code><br />
+   /*************************************************************<br />
+   * Formats code so that is HTML Friendly<br />
+   * @param in The incoming String<br />
+   * @return The formatted String<br />
+   */<br />
+   protected String massageOutput(Object in) {<br />
+      Object out = in;<br />
+      //Place code here to format your output<br />
+      return (out != null) ? out.toString() : "";<br />
+   }<br />
+</code></p>
+	<p>In order to map our selected query we need to make sense of the SHAPE output.  We can use the Java API to ArcObjects to accomplish this.  We will use the Java API in a local context which allows our J2EE application server to manage the contexts of the spatial objects we create.  ESRI is currently not supporting this approach, but it is a legal use of ArcObjects.  I will have to submit another web log on the tips and tricks for this approach.  We can use the server, database, user and password parameters from our JDBC connection.  We only need to add the service port, default is 5151.  Once we make a connection we can begin using ArcObjects to access the same data, create a feature class from the result, and ultimately return a geometry type for the SHAPE column.  </p>
+	<p><code><br />
+// --- a query definition represents a database query on a table or feature class<br />
+IQueryDef queryDef = wksp.createQueryDef();<br />
+queryDef.setTables( SDE_TABLE );<br />
+queryDef.setSubFields( SHAPE_LABEL );<br />
+queryDef.setWhereClause( OBJECTID_LABEL + " = " + OBJECTID );<br />
+// --- the openFeatureQuery method on a workspace can be used to create<br />
+// --- a feature class based on a query definition<br />
+IFeatureClassContainer fcContainer = new IFeatureClassContainerProxy(<br />
+wksp.openFeatureQuery( "SHAPE Query", queryDef ) );<br />
+IFeatureClass fc = null;<br />
+if( fcContainer.getClassCount() != 1 ){<br />
+System.err.println( "Failed to create feature class by query" );<br />
+}else{<br />
+// --- get the feature class<br />
+fc = fcContainer.esri_getClass( 0 );<br />
+// --- the actual geometry type is defined by the esriGeometryType enumeration<br />
+int geometryType = fc.getFeatureType();<br />
+// --- the type of feature in this feature class<br />
+switch(geometryType){<br />
+case esriGeometryType.esriGeometryPoint: type = "Point";  break;<br />
+case esriGeometryType.esriGeometryMultipoint: type = "MultiPoint"; break;<br />
+case esriGeometryType.esriGeometryPolyline: type = "Polyline"; break;<br />
+case esriGeometryType.esriGeometryPolygon: type = "Polygon"; break;<br />
+</code></p>
+	<p>Where <code>SDE_TABLE</code> represents the name of the spatial table and <code>OBJECTID_LABEL</code> represents the name of the OBJECTID column.  We use a <code>QueryDef</code> object representing a database query on our table.  The <code>openFeatureQuery</code> method on the <code>IFeatureWorkspace</code> interface can be used to create a <code>FeatureClass</code> based on our <code>QueryDef</code>.  We can QueryInterface, or Proxy, from the return <code>IFeatureDataset</code> to an <code>IFeatureClassContainer</code> interface to provide us access to feature classes.  Once we have the feature class, we can determine it&#8217;s geometry type and return that to the user.  </p>
+";}i:7;a:12:{s:5:"title";s:38:"ArcGIS Server distributed architecture";s:4:"link";s:54:"http://www.jdoneill.com/blog/2005/03/10/arcgis-server/";s:8:"comments";s:63:"http://www.jdoneill.com/blog/2005/03/10/arcgis-server/#comments";s:7:"pubdate";s:31:"Thu, 10 Mar 2005 20:06:22 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:27:"ArcGIS ServerJavaArcObjects";s:4:"guid";s:54:"http://www.jdoneill.com/blog/2005/03/10/arcgis-server/";s:11:"description";s:409:"ESRI’s ArcGIS Server provides a platform development environment for a subset of ArcObjects technology.  As a value added product, ArcGIS Server components include a Server Object Container (SOC), Server Object Manager (SOM), and an Application Developer Framework (ADF).
+
+Server Object Manager (SOM)
+The Server Object Manager component of ArcGIS Server manages deployment of ArcObjects Containers for [...]";s:7:"content";a:1:{s:7:"encoded";s:3753:"	<p>ESRI’s ArcGIS Server provides a platform development environment for a subset of ArcObjects technology.  As a value added product, ArcGIS Server components include a Server Object Container (SOC), Server Object Manager (SOM), and an Application Developer Framework (ADF).</p>
+	<p><em>Server Object Manager (SOM)</em><br />
+The Server Object Manager component of ArcGIS Server manages deployment of ArcObjects Containers for the purpose of managing the lifecycle of the objects.  SOM administrators create SOC instances based on service configurations deployed on container machines which support ArcObjects.  This provides a scalable platform for the execution of remote multi-user ArcObjects applications.  </p>
+	<p><em>Server Object Containers (SOC)</em><br />
+The Server Object Containers are multi-threaded executables configured to support one to four concurrent instances determined by the isolation levels.  High isolation deployments support one instance per SOC executable, low isolation deployments support up to four instances per SOC executable.  </p>
+	<p><em>ArcGIS Server Platform Configurations</em><br />
+ArcGIS server can be architected into multiple tier configurations.  Single-tier configurations provide all ArcGIS Server components on one platform or hardware machine.  Such configurations can be on multiple platforms to allow for network load balancing.  This configuration is appropriate for development and prototyping or production sites with a limited number of service requests.  A two-tier ArcGIS Server configuration separates the ArcGIS Server components from the data components.  This allows a single copy of the data to support multiple ArcGIS containers.  This configuration is most appropriate for development and prototyping or small production sites.  The three-tiered configuration is the most appropriate production configuration as it separates ArcGIS Server components among two tiers and data.  Couple this into a high availability configuration, or server farm, allows for the highest failover rates and is most appropriate for large production sites.  </p>
+	<p>Integrating the ArcGIS Sever platform into a distributed n-tier enterprise system has many challenges.  The main challenge is recognizing the components ArcGIS server provides and where they fit into a distributed n-tier enterprise system.  One way J2EE business tier components can communicate through the integration-tier into a proposed GIS EIS system is with the Java Connector Architecture (JCA).  The JCA proves Java&#8217;s flexibility by integrating  non-java data sources and/or applications.  The business flow to integrate ArcGIS server is as follows: </p>
+	<p>1: The Connection Factory interface provides a connection to an EIS instance.<br />
+2: A transaction manager coordinates transactions across multiple resource managers.<br />
+3: Resource Adapter provides an API through which an application can access a resource outside of J2EE and support for local transactions performed on the underlying EIS.<br />
+4: The ESRI Java runtime is our EIS in this architecture.  This is intended to isolate all threading and server socket connections used by the ESRI Java runtime.<br />
+5: ArcObjects COM represents the system level EIS.  The ESRI Java runtime is responsible for making connections into the system level EIS.  </p>
+	<p>All of these tiers will work together by sharing components and communicating in ways native to each module.  </p>
+	<p>A more modern approach at realizing a n-tier enterprise architecture would be a Service Oriented Architecture (SOA).  More generically, an internal web service described could be represented as an Enterprise Service Bus (ESB) with web services as one type of service choice.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:59:"http://www.jdoneill.com/blog/2005/03/10/arcgis-server/feed/";}s:7:"summary";s:409:"ESRI’s ArcGIS Server provides a platform development environment for a subset of ArcObjects technology.  As a value added product, ArcGIS Server components include a Server Object Container (SOC), Server Object Manager (SOM), and an Application Developer Framework (ADF).
+
+Server Object Manager (SOM)
+The Server Object Manager component of ArcGIS Server manages deployment of ArcObjects Containers for [...]";s:12:"atom_content";s:3753:"	<p>ESRI’s ArcGIS Server provides a platform development environment for a subset of ArcObjects technology.  As a value added product, ArcGIS Server components include a Server Object Container (SOC), Server Object Manager (SOM), and an Application Developer Framework (ADF).</p>
+	<p><em>Server Object Manager (SOM)</em><br />
+The Server Object Manager component of ArcGIS Server manages deployment of ArcObjects Containers for the purpose of managing the lifecycle of the objects.  SOM administrators create SOC instances based on service configurations deployed on container machines which support ArcObjects.  This provides a scalable platform for the execution of remote multi-user ArcObjects applications.  </p>
+	<p><em>Server Object Containers (SOC)</em><br />
+The Server Object Containers are multi-threaded executables configured to support one to four concurrent instances determined by the isolation levels.  High isolation deployments support one instance per SOC executable, low isolation deployments support up to four instances per SOC executable.  </p>
+	<p><em>ArcGIS Server Platform Configurations</em><br />
+ArcGIS server can be architected into multiple tier configurations.  Single-tier configurations provide all ArcGIS Server components on one platform or hardware machine.  Such configurations can be on multiple platforms to allow for network load balancing.  This configuration is appropriate for development and prototyping or production sites with a limited number of service requests.  A two-tier ArcGIS Server configuration separates the ArcGIS Server components from the data components.  This allows a single copy of the data to support multiple ArcGIS containers.  This configuration is most appropriate for development and prototyping or small production sites.  The three-tiered configuration is the most appropriate production configuration as it separates ArcGIS Server components among two tiers and data.  Couple this into a high availability configuration, or server farm, allows for the highest failover rates and is most appropriate for large production sites.  </p>
+	<p>Integrating the ArcGIS Sever platform into a distributed n-tier enterprise system has many challenges.  The main challenge is recognizing the components ArcGIS server provides and where they fit into a distributed n-tier enterprise system.  One way J2EE business tier components can communicate through the integration-tier into a proposed GIS EIS system is with the Java Connector Architecture (JCA).  The JCA proves Java&#8217;s flexibility by integrating  non-java data sources and/or applications.  The business flow to integrate ArcGIS server is as follows: </p>
+	<p>1: The Connection Factory interface provides a connection to an EIS instance.<br />
+2: A transaction manager coordinates transactions across multiple resource managers.<br />
+3: Resource Adapter provides an API through which an application can access a resource outside of J2EE and support for local transactions performed on the underlying EIS.<br />
+4: The ESRI Java runtime is our EIS in this architecture.  This is intended to isolate all threading and server socket connections used by the ESRI Java runtime.<br />
+5: ArcObjects COM represents the system level EIS.  The ESRI Java runtime is responsible for making connections into the system level EIS.  </p>
+	<p>All of these tiers will work together by sharing components and communicating in ways native to each module.  </p>
+	<p>A more modern approach at realizing a n-tier enterprise architecture would be a Service Oriented Architecture (SOA).  More generically, an internal web service described could be represented as an Enterprise Service Bus (ESB) with web services as one type of service choice.
+</p>
+";}i:8;a:12:{s:5:"title";s:30:"Ant tool inside Textpad editor";s:4:"link";s:71:"http://www.jdoneill.com/blog/2005/03/06/ant-tool-inside-textpad-editor/";s:8:"comments";s:80:"http://www.jdoneill.com/blog/2005/03/06/ant-tool-inside-textpad-editor/#comments";s:7:"pubdate";s:31:"Sun, 06 Mar 2005 00:45:01 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:4:"Java";s:4:"guid";s:71:"http://www.jdoneill.com/blog/2005/03/06/ant-tool-inside-textpad-editor/";s:11:"description";s:302:"Steps to deploy ANT as a custom tool inside Textpad: 
+1: From the Textpad toolbar > select Configure>Preferences.  This wil open the preferences dialog. 
+2: Select tools at the bottom left hand tree.  This will open up the tool controls on the right hand side.  
+3: Push the Add button and select [...]";s:7:"content";a:1:{s:7:"encoded";s:1151:"	<p>Steps to deploy ANT as a custom tool inside Textpad:<br />
+1: From the Textpad toolbar > select Configure>Preferences.  This wil open the preferences dialog.<br />
+2: Select tools at the bottom left hand tree.  This will open up the tool controls on the right hand side.<br />
+3: Push the Add button and select Program.  This will bring up the file browser dialog.<br />
+4: Browse to the <em>bin</em> directory of your ANT install and select <em>ant.bat</em>.<br />
+5: Click Apply.  This should populate the tree with your new ANT tool.<br />
+6: Select ANT from the tree (under Tools).  This will open up your ANT tools controls on the right hand side.<br />
+7: In the text box next to Parameters, type <code>$Prompt(Enter Ant Target)</code>.  This will instruct Textpad to prompt for a target.<br />
+8: Click Apply.<br />
+9: Click OK.  </p>
+	<p>Use your new ANT tool.<br />
+1: Open up a build file in Textpad.<br />
+2: From the toolbar > select Tools>Ant.  This should prompt you for a target.<br />
+3: Type in the target you wish to use (leave blank to use the default target) and click OK.  A new tab will appear with your command output.
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:76:"http://www.jdoneill.com/blog/2005/03/06/ant-tool-inside-textpad-editor/feed/";}s:7:"summary";s:302:"Steps to deploy ANT as a custom tool inside Textpad: 
+1: From the Textpad toolbar > select Configure>Preferences.  This wil open the preferences dialog. 
+2: Select tools at the bottom left hand tree.  This will open up the tool controls on the right hand side.  
+3: Push the Add button and select [...]";s:12:"atom_content";s:1151:"	<p>Steps to deploy ANT as a custom tool inside Textpad:<br />
+1: From the Textpad toolbar > select Configure>Preferences.  This wil open the preferences dialog.<br />
+2: Select tools at the bottom left hand tree.  This will open up the tool controls on the right hand side.<br />
+3: Push the Add button and select Program.  This will bring up the file browser dialog.<br />
+4: Browse to the <em>bin</em> directory of your ANT install and select <em>ant.bat</em>.<br />
+5: Click Apply.  This should populate the tree with your new ANT tool.<br />
+6: Select ANT from the tree (under Tools).  This will open up your ANT tools controls on the right hand side.<br />
+7: In the text box next to Parameters, type <code>$Prompt(Enter Ant Target)</code>.  This will instruct Textpad to prompt for a target.<br />
+8: Click Apply.<br />
+9: Click OK.  </p>
+	<p>Use your new ANT tool.<br />
+1: Open up a build file in Textpad.<br />
+2: From the toolbar > select Tools>Ant.  This should prompt you for a target.<br />
+3: Type in the target you wish to use (leave blank to use the default target) and click OK.  A new tab will appear with your command output.
+</p>
+";}i:9;a:12:{s:5:"title";s:31:"mount ntfs drives from RH linux";s:4:"link";s:69:"http://www.jdoneill.com/blog/2005/02/24/mount-ntfs-drives-from-linux/";s:8:"comments";s:78:"http://www.jdoneill.com/blog/2005/02/24/mount-ntfs-drives-from-linux/#comments";s:7:"pubdate";s:31:"Thu, 24 Feb 2005 07:31:53 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"dop";}s:8:"category";s:5:"Linux";s:4:"guid";s:69:"http://www.jdoneill.com/blog/2005/02/24/mount-ntfs-drives-from-linux/";s:11:"description";s:390:"steps to install driver and mount ntfs:
+1: find out your kernel version
+-> $uname -r
+-> you should see a response similar to:
+----> 2.4.xx-xx
+---->i.e. 2.4.18-3
+2: find out your processor type:
+-> $rpm -q --queryformat "%{ARCH}\n" kernel
+---->I imagine it is i686
+3: downlowd the rpm from sourceforge:
+-> linux-ntfs
+-> The url changes depending on what version of the kernel you have. [...]";s:7:"content";a:1:{s:7:"encoded";s:1468:"	<p>steps to install driver and mount ntfs:<br />
+1: find out your kernel version<br />
+-> $uname -r<br />
+-> you should see a response similar to:<br />
+&#8212;-> 2.4.xx-xx<br />
+&#8212;->i.e. 2.4.18-3<br />
+2: find out your processor type:<br />
+-> $rpm -q &#8211;queryformat &#8220;%{ARCH}\n&#8221; kernel<br />
+&#8212;->I imagine it is i686<br />
+3: downlowd the rpm from sourceforge:<br />
+-> <a href="http://prdownloads.sourceforge.net/linux-ntfs/" target="new">linux-ntfs</a><br />
+-> The url changes depending on what version of the kernel you have.  Adjust the kernel version in the url to match yours<br />
+&#8212;-> <a href="http://prdownloads.sourceforge.net/linux-ntfs/kernel-ntfs-2.4.18-10.i686.rpm" target="new">kernel 2.4.18-10</a></p>
+	<p>4: install the rpm - you must be root:<br />
+-> rpm -ihv kernel-ntfs-2.4.18-3.i686.rpm<br />
+&#8212;-> Preparing&#8230;      ############################### [100%]<br />
+&#8212;-> 1:kernel-ntfs  ############################### [100%]<br />
+&#8211;>there should be no errors</p>
+	<p>5: load the kernel module:<br />
+->$ /sbin/modprobe ntfs<br />
+->there should be no output<br />
+->$ dmesg | grep NTFS<br />
+&#8212;->NTFS driver v1.1.22 [Flags: R/O MODULE]</p>
+	<p>6: see if ntfs shows up as a recognized filesystem<br />
+->$cat /proc/filesystems<br />
+->should see ntfs listed</p>
+	<p>7: mount filesystem<br />
+-> $mkdir /mnt/ntfs<br />
+-> $mount -t ntfs /dev/hda1 /mnt/windows<br />
+-> $ls -l /mnt/windows
+</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:74:"http://www.jdoneill.com/blog/2005/02/24/mount-ntfs-drives-from-linux/feed/";}s:7:"summary";s:390:"steps to install driver and mount ntfs:
+1: find out your kernel version
+-> $uname -r
+-> you should see a response similar to:
+----> 2.4.xx-xx
+---->i.e. 2.4.18-3
+2: find out your processor type:
+-> $rpm -q --queryformat "%{ARCH}\n" kernel
+---->I imagine it is i686
+3: downlowd the rpm from sourceforge:
+-> linux-ntfs
+-> The url changes depending on what version of the kernel you have. [...]";s:12:"atom_content";s:1468:"	<p>steps to install driver and mount ntfs:<br />
+1: find out your kernel version<br />
+-> $uname -r<br />
+-> you should see a response similar to:<br />
+&#8212;-> 2.4.xx-xx<br />
+&#8212;->i.e. 2.4.18-3<br />
+2: find out your processor type:<br />
+-> $rpm -q &#8211;queryformat &#8220;%{ARCH}\n&#8221; kernel<br />
+&#8212;->I imagine it is i686<br />
+3: downlowd the rpm from sourceforge:<br />
+-> <a href="http://prdownloads.sourceforge.net/linux-ntfs/" target="new">linux-ntfs</a><br />
+-> The url changes depending on what version of the kernel you have.  Adjust the kernel version in the url to match yours<br />
+&#8212;-> <a href="http://prdownloads.sourceforge.net/linux-ntfs/kernel-ntfs-2.4.18-10.i686.rpm" target="new">kernel 2.4.18-10</a></p>
+	<p>4: install the rpm - you must be root:<br />
+-> rpm -ihv kernel-ntfs-2.4.18-3.i686.rpm<br />
+&#8212;-> Preparing&#8230;      ############################### [100%]<br />
+&#8212;-> 1:kernel-ntfs  ############################### [100%]<br />
+&#8211;>there should be no errors</p>
+	<p>5: load the kernel module:<br />
+->$ /sbin/modprobe ntfs<br />
+->there should be no output<br />
+->$ dmesg | grep NTFS<br />
+&#8212;->NTFS driver v1.1.22 [Flags: R/O MODULE]</p>
+	<p>6: see if ntfs shows up as a recognized filesystem<br />
+->$cat /proc/filesystems<br />
+->should see ntfs listed</p>
+	<p>7: mount filesystem<br />
+-> $mkdir /mnt/ntfs<br />
+-> $mount -t ntfs /dev/hda1 /mnt/windows<br />
+-> $ls -l /mnt/windows
+</p>
+";}}s:7:"channel";a:7:{s:5:"title";s:8:"jdoneill";s:4:"link";s:28:"http://www.jdoneill.com/blog";s:11:"description";s:20:"jdoneill blog portal";s:7:"pubdate";s:31:"Wed, 18 May 2005 19:18:26 +0000";s:9:"generator";s:27:"http://wordpress.org/?v=1.5";s:8:"language";s:2:"en";s:7:"tagline";s:20:"jdoneill blog portal";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:4:"etag";s:36:""02dbadf03e028a1b4f61ee21758dc6cc"
+";s:13:"last_modified";s:31:"Wed, 18 May 2005 19:18:26 GMT
+";}

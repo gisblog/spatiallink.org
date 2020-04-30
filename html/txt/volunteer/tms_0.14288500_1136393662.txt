@@ -1,0 +1,8 @@
+-116.9,34.15:smalldot:1GIS Analyst
+-76.74,40.87:smalldot:2Conservation Support Assistant
+-87.99,42.96:smalldot:3Data Secretary
+-111.81,41.8:smalldot:4Enviro Planner GIS Specialist
+-87.99,42.95:smalldot:5self employed
+-86.13,39.82:smalldot:6Engineering Assistant
+-72.8,41.28:smalldot:7GIS Specialist
+-106.81,39.61:smalldot:8GIS Director

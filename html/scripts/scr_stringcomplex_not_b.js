@@ -1,0 +1,1 @@
+function checkstringcomplex_not_b(inputstringcomplex_not_b){var notok;notok='<>/\\"\'|~`!%*^';var i;for(i=0;i<inputstringcomplex_not_b.length;i++){if(notok.indexOf(inputstringcomplex_not_b.charAt(i))<0){return false}else{}}return true}

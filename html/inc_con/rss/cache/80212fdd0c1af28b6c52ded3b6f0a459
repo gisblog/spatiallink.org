@@ -1,0 +1,165 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:8:{s:5:"about";s:58:"http://exterior.trevor.smith.name/2007/04/easy_button.html";s:5:"title";s:11:"Easy Button";s:4:"link";s:58:"http://exterior.trevor.smith.name/2007/04/easy_button.html";s:11:"description";s:213:"I often turn on video podcasts or the TV to generate some background noise while I work at home, and today I happened to notice Staples' ads for the "Easy Button" so I made one for my office: Unfortunately, all...";s:7:"content";a:1:{s:7:"encoded";s:780:"<p>I often turn on video podcasts or the TV to generate some background noise while I work at home, and today I happened to notice Staples' ads for the "<a href="http://www.staples.com/sbd/cre/marketing/easybutton/index.html">Easy Button</a>" so I made one for my office:</p>
+
+<p><img alt="Easy_button" title="Easy_button" src="http://trevor.typepad.com/photos/uncategorized/2007/04/20/easy_button.jpg" border="0"  /></p>
+
+<p>Unfortunately, all of the items on the development list aren't completed when I push it, but maybe that's because I'm the last person on the planet to notice that campaign.  At some point I'll probably switch it to <a href="http://adweek.blogs.com/adfreak/2006/07/staples_easy_bu.html">the dark side</a> and script it to crash the space when pressed.</p>";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-20T14:55:03-07:00";}s:7:"summary";s:213:"I often turn on video podcasts or the TV to generate some background noise while I work at home, and today I happened to notice Staples' ads for the "Easy Button" so I made one for my office: Unfortunately, all...";s:12:"atom_content";s:780:"<p>I often turn on video podcasts or the TV to generate some background noise while I work at home, and today I happened to notice Staples' ads for the "<a href="http://www.staples.com/sbd/cre/marketing/easybutton/index.html">Easy Button</a>" so I made one for my office:</p>
+
+<p><img alt="Easy_button" title="Easy_button" src="http://trevor.typepad.com/photos/uncategorized/2007/04/20/easy_button.jpg" border="0"  /></p>
+
+<p>Unfortunately, all of the items on the development list aren't completed when I push it, but maybe that's because I'm the last person on the planet to notice that campaign.  At some point I'll probably switch it to <a href="http://adweek.blogs.com/adfreak/2006/07/staples_easy_bu.html">the dark side</a> and script it to crash the space when pressed.</p>";}i:1;a:8:{s:5:"about";s:64:"http://exterior.trevor.smith.name/2007/04/links_for_20070_3.html";s:5:"title";s:20:"links for 2007-04-18";s:4:"link";s:64:"http://exterior.trevor.smith.name/2007/04/links_for_20070_3.html";s:11:"description";s:77:"Jake2 A port of the Quake2 engine to Java/OGL/OpenAL. Wow. (tags: java 3D)...";s:7:"content";a:1:{s:7:"encoded";s:382:"<ul class="delicious">
+	<li>
+		<div class="delicious-link"><a href="http://www.bytonic.de/html/jake2.html">Jake2</a></div>
+		<div class="delicious-extended">A port of the Quake2 engine to Java/OGL/OpenAL.  Wow.</div>
+		<div class="delicious-tags">(tags: <a href="http://del.icio.us/TrevorFSmith/java">java</a> <a href="http://del.icio.us/TrevorFSmith/3D">3D</a>)</div>
+	</li>
+</ul>
+";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-18T01:21:47-07:00";}s:7:"summary";s:77:"Jake2 A port of the Quake2 engine to Java/OGL/OpenAL. Wow. (tags: java 3D)...";s:12:"atom_content";s:382:"<ul class="delicious">
+	<li>
+		<div class="delicious-link"><a href="http://www.bytonic.de/html/jake2.html">Jake2</a></div>
+		<div class="delicious-extended">A port of the Quake2 engine to Java/OGL/OpenAL.  Wow.</div>
+		<div class="delicious-tags">(tags: <a href="http://del.icio.us/TrevorFSmith/java">java</a> <a href="http://del.icio.us/TrevorFSmith/3D">3D</a>)</div>
+	</li>
+</ul>
+";}i:2;a:8:{s:5:"about";s:57:"http://exterior.trevor.smith.name/2007/04/multiverse.html";s:5:"title";s:10:"Multiverse";s:4:"link";s:57:"http://exterior.trevor.smith.name/2007/04/multiverse.html";s:11:"description";s:225:"Wow. I was kind of down about the time it takes to download and install Java and Java3D to get into ogoglio spaces, but I'm in the middle of installing the Multiverse client and it takes for-freaking-ever, there's about 50...";s:7:"content";a:1:{s:7:"encoded";s:1261:"<p>Wow.  I was kind of down about the time it takes to download and install Java and Java3D to get into ogoglio spaces, but I'm in the middle of installing the <a href="http://multiverse.net/">Multiverse</a> client and it takes for-freaking-ever, there's about 50 steps (including no fewer than three clickwrap EULAs), and it's just about the most boring thing I can imagine doing on a computer.  </p>
+
+<p>First I downloaded and installed the Multiverse Setup application.  Then I waited while it downloaded and installed Direct X (with its own EULA).  Then it downloaded and installed the Multiverse client.  Then it launched the client which promptly made me wait for 10 minutes while it updated itself.  THEN, when I finally have the client installed, I choose a world I want to enter and now I've been waiting for 10 minutes while each individual texture and object is downloaded. This thing should tell me at the beginning to go make a martini so at least I'd have something to do while this thing does unknown horrors to my machine.</p>
+
+<p>I'd delete the damn thing, but what if the deletion process is as painful as the installation process?</p>
+
+<p>*5 minutes later, still bored*</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Frack">Frack</a> this.</p>";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-17T19:23:43-07:00";}s:7:"summary";s:225:"Wow. I was kind of down about the time it takes to download and install Java and Java3D to get into ogoglio spaces, but I'm in the middle of installing the Multiverse client and it takes for-freaking-ever, there's about 50...";s:12:"atom_content";s:1261:"<p>Wow.  I was kind of down about the time it takes to download and install Java and Java3D to get into ogoglio spaces, but I'm in the middle of installing the <a href="http://multiverse.net/">Multiverse</a> client and it takes for-freaking-ever, there's about 50 steps (including no fewer than three clickwrap EULAs), and it's just about the most boring thing I can imagine doing on a computer.  </p>
+
+<p>First I downloaded and installed the Multiverse Setup application.  Then I waited while it downloaded and installed Direct X (with its own EULA).  Then it downloaded and installed the Multiverse client.  Then it launched the client which promptly made me wait for 10 minutes while it updated itself.  THEN, when I finally have the client installed, I choose a world I want to enter and now I've been waiting for 10 minutes while each individual texture and object is downloaded. This thing should tell me at the beginning to go make a martini so at least I'd have something to do while this thing does unknown horrors to my machine.</p>
+
+<p>I'd delete the damn thing, but what if the deletion process is as painful as the installation process?</p>
+
+<p>*5 minutes later, still bored*</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Frack">Frack</a> this.</p>";}i:3;a:8:{s:5:"about";s:56:"http://exterior.trevor.smith.name/2007/04/two_cards.html";s:5:"title";s:9:"Two Cards";s:4:"link";s:56:"http://exterior.trevor.smith.name/2007/04/two_cards.html";s:11:"description";s:135:"I found these two jokers doing some sort of ritual dance in an Ogoglio space. I think they were just glad to be out of cold storage....";s:7:"content";a:1:{s:7:"encoded";s:527:"<p>I found these two jokers doing some sort of <a href="http://transmutable.com/space.html?spaceID=17">ritual dance in an Ogoglio space</a>.  I think they were just glad to be out of <a href="https://duke.dev.java.net/models/index.html">cold storage</a>.</p>
+
+<p><a href="http://trevor.typepad.com/photos/uncategorized/2007/04/16/dukeandtux.jpg"><img class="image-full" alt="Duke and Tux" title="Duke and Tux" src="http://trevor.typepad.com/photos/uncategorized/2007/04/16/dukeandtux.jpg" border="0"  /></a></p>
+
+<p><br />
+</p>";}s:2:"dc";a:3:{s:7:"subject";s:7:"Ogoglio";s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-16T18:51:18-07:00";}s:7:"summary";s:135:"I found these two jokers doing some sort of ritual dance in an Ogoglio space. I think they were just glad to be out of cold storage....";s:12:"atom_content";s:527:"<p>I found these two jokers doing some sort of <a href="http://transmutable.com/space.html?spaceID=17">ritual dance in an Ogoglio space</a>.  I think they were just glad to be out of <a href="https://duke.dev.java.net/models/index.html">cold storage</a>.</p>
+
+<p><a href="http://trevor.typepad.com/photos/uncategorized/2007/04/16/dukeandtux.jpg"><img class="image-full" alt="Duke and Tux" title="Duke and Tux" src="http://trevor.typepad.com/photos/uncategorized/2007/04/16/dukeandtux.jpg" border="0"  /></a></p>
+
+<p><br />
+</p>";}i:4;a:8:{s:5:"about";s:62:"http://exterior.trevor.smith.name/2007/04/differentiation.html";s:5:"title";s:15:"Differentiation";s:4:"link";s:62:"http://exterior.trevor.smith.name/2007/04/differentiation.html";s:11:"description";s:217:"If you successfully loaded the embedded space below, you might try this experimental page: a flock is not a big bird. There is no narrative, but I believe the medium is new and it's exciting to think of what people...";s:7:"content";a:1:{s:7:"encoded";s:1099:"<p>If you successfully loaded the embedded space below, you might try this experimental page: <a href="http://trevor.smith.name/flock.html">a flock is not a big bird</a>.  </p>
+
+<p>There is no narrative, but I believe the medium is new and it's exciting to think of what people with talent will make of it.</p>
+
+<p>If you'd rather not experiment (or ogoglio doesn't work for you yet), it looks something like this:</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/15/flock.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=610,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Flock" title="Flock" src="http://exterior.trevor.smith.name/images/2007/04/15/flock.jpg" width="200" height="190" border="0"  /></a></p>
+
+<p><br />
+Each of the six panels is connected to a shared, persistent different 3D space which you can walk and manipulate along with the avatars of other people.  Each space can be scripted to connect to each other or to remote web applications.</p>";}s:2:"dc";a:3:{s:7:"subject";s:7:"Ogoglio";s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-15T19:41:07-07:00";}s:7:"summary";s:217:"If you successfully loaded the embedded space below, you might try this experimental page: a flock is not a big bird. There is no narrative, but I believe the medium is new and it's exciting to think of what people...";s:12:"atom_content";s:1099:"<p>If you successfully loaded the embedded space below, you might try this experimental page: <a href="http://trevor.smith.name/flock.html">a flock is not a big bird</a>.  </p>
+
+<p>There is no narrative, but I believe the medium is new and it's exciting to think of what people with talent will make of it.</p>
+
+<p>If you'd rather not experiment (or ogoglio doesn't work for you yet), it looks something like this:</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/15/flock.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=610,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Flock" title="Flock" src="http://exterior.trevor.smith.name/images/2007/04/15/flock.jpg" width="200" height="190" border="0"  /></a></p>
+
+<p><br />
+Each of the six panels is connected to a shared, persistent different 3D space which you can walk and manipulate along with the avatars of other people.  Each space can be scripted to connect to each other or to remote web applications.</p>";}i:5;a:8:{s:5:"about";s:62:"http://exterior.trevor.smith.name/2007/04/urbanity_and_ur.html";s:5:"title";s:21:"Urbanity and urbanism";s:4:"link";s:62:"http://exterior.trevor.smith.name/2007/04/urbanity_and_ur.html";s:11:"description";s:42:"Know the difference: urbanity, urbanism...";s:7:"content";a:1:{s:7:"encoded";s:150:"<p>Know the difference: <a href="http://www.answers.com/topic/urbanity">urbanity</a>, <a href="http://en.wikipedia.org/wiki/Urbanism">urbanism</a></p>";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-15T19:20:40-07:00";}s:7:"summary";s:42:"Know the difference: urbanity, urbanism...";s:12:"atom_content";s:150:"<p>Know the difference: <a href="http://www.answers.com/topic/urbanity">urbanity</a>, <a href="http://en.wikipedia.org/wiki/Urbanism">urbanism</a></p>";}i:6;a:8:{s:5:"about";s:64:"http://exterior.trevor.smith.name/2007/04/links_for_20070_2.html";s:5:"title";s:20:"links for 2007-04-14";s:4:"link";s:64:"http://exterior.trevor.smith.name/2007/04/links_for_20070_2.html";s:11:"description";s:170:"Media Machines announced Flux Worlds An upcoming X3D (aka VRML++) based virtual world platform, free for private and educational use. Windows only. (tags: 3space VRML)...";s:7:"content";a:1:{s:7:"encoded";s:502:"<ul class="delicious">
+	<li>
+		<div class="delicious-link"><a href="http://www.mediamachines.com/press/pressrelease-03292007.php">Media Machines announced Flux Worlds</a></div>
+		<div class="delicious-extended">An upcoming X3D (aka VRML++) based virtual world platform, free for private and educational use.  Windows only.</div>
+		<div class="delicious-tags">(tags: <a href="http://del.icio.us/TrevorFSmith/3space">3space</a> <a href="http://del.icio.us/TrevorFSmith/VRML">VRML</a>)</div>
+	</li>
+</ul>
+";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-14T01:20:36-07:00";}s:7:"summary";s:170:"Media Machines announced Flux Worlds An upcoming X3D (aka VRML++) based virtual world platform, free for private and educational use. Windows only. (tags: 3space VRML)...";s:12:"atom_content";s:502:"<ul class="delicious">
+	<li>
+		<div class="delicious-link"><a href="http://www.mediamachines.com/press/pressrelease-03292007.php">Media Machines announced Flux Worlds</a></div>
+		<div class="delicious-extended">An upcoming X3D (aka VRML++) based virtual world platform, free for private and educational use.  Windows only.</div>
+		<div class="delicious-tags">(tags: <a href="http://del.icio.us/TrevorFSmith/3space">3space</a> <a href="http://del.icio.us/TrevorFSmith/VRML">VRML</a>)</div>
+	</li>
+</ul>
+";}i:7;a:8:{s:5:"about";s:62:"http://exterior.trevor.smith.name/2007/04/testing_1_two_i.html";s:5:"title";s:18:"Testing, 1 two III";s:4:"link";s:62:"http://exterior.trevor.smith.name/2007/04/testing_1_two_i.html";s:11:"description";s:215:"I'm playing around with different ways of embedding spaces into web pages, and this is one of the more ham handed methods. Please note, this is one of the roughest bits of the platform so it's going to be chunky....";s:7:"content";a:1:{s:7:"encoded";s:1140:"<p>I'm playing around with different ways of embedding spaces into web pages, and this is one of the more ham handed methods.</p>
+
+<p>Please note, this is one of the roughest bits of the platform so it's going to be chunky.  Some PC users are seeing low frame rates and chat lag, and IE has cookie problems.  Finding this sort of problem is why I run these little experiments, so don't fret.  We'll iron them out.</p>
+
+<p><iframe src="http://transmutable.com/spaceEmbed.html?spaceID=2&width=590&height=500" style="margin: 0px; padding: 0px; border: none; width: 595px; height: 505px;"></iframe><br />
+(click in the 3D view and then use your arrow keys to move around)</p>
+
+<p>This method has the advantage of requiring just a single line of pasted code to make a space appear, but there's limited interaction between the rest of the page and the iframe showing the space.  And of course if browsers don't have Java3D they have to jump through some hoops, which many people can't or won't do.</p>
+
+<p>Don't get too hung up on the actual space in this example.  It's just a few random items so that you'll have something to see and click.</p>";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-13T12:32:01-07:00";}s:7:"summary";s:215:"I'm playing around with different ways of embedding spaces into web pages, and this is one of the more ham handed methods. Please note, this is one of the roughest bits of the platform so it's going to be chunky....";s:12:"atom_content";s:1140:"<p>I'm playing around with different ways of embedding spaces into web pages, and this is one of the more ham handed methods.</p>
+
+<p>Please note, this is one of the roughest bits of the platform so it's going to be chunky.  Some PC users are seeing low frame rates and chat lag, and IE has cookie problems.  Finding this sort of problem is why I run these little experiments, so don't fret.  We'll iron them out.</p>
+
+<p><iframe src="http://transmutable.com/spaceEmbed.html?spaceID=2&width=590&height=500" style="margin: 0px; padding: 0px; border: none; width: 595px; height: 505px;"></iframe><br />
+(click in the 3D view and then use your arrow keys to move around)</p>
+
+<p>This method has the advantage of requiring just a single line of pasted code to make a space appear, but there's limited interaction between the rest of the page and the iframe showing the space.  And of course if browsers don't have Java3D they have to jump through some hoops, which many people can't or won't do.</p>
+
+<p>Don't get too hung up on the actual space in this example.  It's just a few random items so that you'll have something to see and click.</p>";}i:8;a:8:{s:5:"about";s:62:"http://exterior.trevor.smith.name/2007/04/the_world_from_.html";s:5:"title";s:24:"The World from My Window";s:4:"link";s:62:"http://exterior.trevor.smith.name/2007/04/the_world_from_.html";s:11:"description";s:199:"I've spent a bit of time outfitting my online office, which is fun to do and serves as a handy meeting space. The first thing I did was pull one of the first models I made, the Memex. I surrounded...";s:7:"content";a:1:{s:7:"encoded";s:3755:"<p>I've spent a bit of time outfitting my online office, which is fun to do and serves as a handy meeting space.</p>
+
+<p>The first thing I did was pull one of the first models I made, the Memex.  I surrounded it with a couple of chairs and attempted to make realistic bookshelves using photos of from the shelves in my living room.  Circling above the walls you see the digital version of the model airplane which I made with my father when I was barely old enough to use glue in a safe manner.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_5.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=420,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_5" title="Picture_5" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_5.jpg" width="200" height="131" border="0"  /></a></p>
+
+<p>To the right of the desk is my plazes plaque, which uses the Plazes.com feeds to indicate where I am based on which wireless network my laptop uses.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_6.jpg" onclick="window.open(this.href, '_blank', 'width=282,height=404,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_6" title="Picture_6" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_6.jpg" width="200" height="286" border="0"  /></a></p>
+
+<p>To the left is my whiteboard, where I can quickly post screengrabs or image files for other people to see during meetings.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_8.jpg" onclick="window.open(this.href, '_blank', 'width=395,height=347,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_8" title="Picture_8" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_8.jpg" width="200" height="175" border="0"  /></a></p>
+
+<p>On the other side of the office is the sofa area with a view of the space needle and my motion test turned art piece, which has a mesmerizing effect when you see it in action. </p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_10.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=409,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_10" title="Picture_10" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_10.jpg" width="200" height="127" border="0"  /></a></p>
+
+<p>I'm working on a display table for downtown Seattle.  That's a miniature space needle poking up on the top left, and eventually I'll add a landscape texture and elevation grid so that the buildings look out over a tiny Elliot Bay.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_11.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=442,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_11" title="Picture_11" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_11.jpg" width="200" height="138" border="0"  /></a></p>
+
+<p>We bought a house recently and in some small way I feel that the creation of my online office has been a part of moving into our new home.</p>
+
+<p>(the title of this post refers to the <a href="http://nwn.blogs.com/nwn/the_world_from_my_window/index.html">series of the same name</a> on New World Notes)</p>";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-12T10:57:11-07:00";}s:7:"summary";s:199:"I've spent a bit of time outfitting my online office, which is fun to do and serves as a handy meeting space. The first thing I did was pull one of the first models I made, the Memex. I surrounded...";s:12:"atom_content";s:3755:"<p>I've spent a bit of time outfitting my online office, which is fun to do and serves as a handy meeting space.</p>
+
+<p>The first thing I did was pull one of the first models I made, the Memex.  I surrounded it with a couple of chairs and attempted to make realistic bookshelves using photos of from the shelves in my living room.  Circling above the walls you see the digital version of the model airplane which I made with my father when I was barely old enough to use glue in a safe manner.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_5.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=420,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_5" title="Picture_5" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_5.jpg" width="200" height="131" border="0"  /></a></p>
+
+<p>To the right of the desk is my plazes plaque, which uses the Plazes.com feeds to indicate where I am based on which wireless network my laptop uses.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_6.jpg" onclick="window.open(this.href, '_blank', 'width=282,height=404,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_6" title="Picture_6" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_6.jpg" width="200" height="286" border="0"  /></a></p>
+
+<p>To the left is my whiteboard, where I can quickly post screengrabs or image files for other people to see during meetings.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_8.jpg" onclick="window.open(this.href, '_blank', 'width=395,height=347,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_8" title="Picture_8" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_8.jpg" width="200" height="175" border="0"  /></a></p>
+
+<p>On the other side of the office is the sofa area with a view of the space needle and my motion test turned art piece, which has a mesmerizing effect when you see it in action. </p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_10.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=409,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_10" title="Picture_10" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_10.jpg" width="200" height="127" border="0"  /></a></p>
+
+<p>I'm working on a display table for downtown Seattle.  That's a miniature space needle poking up on the top left, and eventually I'll add a landscape texture and elevation grid so that the buildings look out over a tiny Elliot Bay.</p>
+
+<p><a href="http://trevor.typepad.com/.shared/image.html?/photos/uncategorized/2007/04/12/picture_11.jpg" onclick="window.open(this.href, '_blank', 'width=640,height=442,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img alt="Picture_11" title="Picture_11" src="http://exterior.trevor.smith.name/images/2007/04/12/picture_11.jpg" width="200" height="138" border="0"  /></a></p>
+
+<p>We bought a house recently and in some small way I feel that the creation of my online office has been a part of moving into our new home.</p>
+
+<p>(the title of this post refers to the <a href="http://nwn.blogs.com/nwn/the_world_from_my_window/index.html">series of the same name</a> on New World Notes)</p>";}i:9;a:8:{s:5:"about";s:62:"http://exterior.trevor.smith.name/2007/04/vidiot_tootoria.html";s:5:"title";s:17:"Vidiot Tootorials";s:4:"link";s:62:"http://exterior.trevor.smith.name/2007/04/vidiot_tootoria.html";s:11:"description";s:208:"I spent today recording a few video tutorials and in doing so I tried to channel Bob Ross, whose show is still airing on Seattle public television. If I ever get to the point where I can create spaces with...";s:7:"content";a:1:{s:7:"encoded";s:490:"<p>I spent today recording a few <a href="http://transmutable.blip.tv/">video tutorials</a> and in doing so I tried to channel <a href="http://www.bobross.com/">Bob Ross</a>, whose show is still airing on Seattle public television.  If I ever get to the point where I can create spaces with the aplomb he shows while painting then you should sell <a href="http://sleeplesscoffee.com/">Sleepless Coffee</a> short because there must have been an intervention.</p>
+
+<p>Mmmmm.... Sleepless.</p>";}s:2:"dc";a:2:{s:7:"creator";s:15:"Trevor F. Smith";s:4:"date";s:25:"2007-04-11T15:32:02-07:00";}s:7:"summary";s:208:"I spent today recording a few video tutorials and in doing so I tried to channel Bob Ross, whose show is still airing on Seattle public television. If I ever get to the point where I can create spaces with...";s:12:"atom_content";s:490:"<p>I spent today recording a few <a href="http://transmutable.blip.tv/">video tutorials</a> and in doing so I tried to channel <a href="http://www.bobross.com/">Bob Ross</a>, whose show is still airing on Seattle public television.  If I ever get to the point where I can create spaces with the aplomb he shows while painting then you should sell <a href="http://sleeplesscoffee.com/">Sleepless Coffee</a> short because there must have been an intervention.</p>
+
+<p>Mmmmm.... Sleepless.</p>";}}s:7:"channel";a:7:{s:5:"title";s:25:"Trevor F. Smith: Exterior";s:4:"link";s:34:"http://exterior.trevor.smith.name/";s:11:"description";s:49:"A public record of my projects and related works.";s:2:"dc";a:2:{s:8:"language";s:5:"en-US";s:4:"date";s:25:"2007-04-20T14:55:03-07:00";}s:5:"items";s:2:"
+
+";s:9:"items_seq";s:10:"
+
+
+
+
+
+
+
+
+
+";s:7:"tagline";s:49:"A public record of my projects and related works.";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Fri, 20 Apr 2007 21:56:50 GMT
+";s:4:"etag";s:31:""c664db2e-4ad8-42e9265828c80"
+";}

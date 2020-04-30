@@ -1,0 +1,202 @@
+<!--
+/*
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ */
+-->
+<!-- $Id: EditView.html,v 1.30.2.3 2005/05/17 22:29:38 andrew Exp $ -->
+<!-- BEGIN: main -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="padding-bottom: 2px;">
+<form id="EditView" name="EditView" method="post" action="index.php">
+<input type="hidden" name="module" value="ProjectTask" />
+<input type="hidden" name="record" value="{RETURN_ID}" />
+<input type="hidden" name="action" value="Save" />
+<input type="hidden" name="id" value="{id}" />
+<input type="hidden" name="return_module" value="{RETURN_MODULE}" />
+<input type="hidden" name="return_id" value="{RETURN_ID}" />
+<input type="hidden" name="return_action" value="{RETURN_ACTION}" />
+<input title="{APP.LBL_SAVE_BUTTON_TITLE}"
+	accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" tabindex="22"
+	onclick="this.form.action.value='Save'; return check_form('EditView');"
+	type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  "
+/>
+<input title="{APP.LBL_CANCEL_BUTTON_TITLE}" tabindex="23"
+	accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button"
+	onclick="location='index.php?module={RETURN_MODULE}&action={RETURN_ACTION}&record={RETURN_ID}';"
+	type="button" name="button" value="  {APP.LBL_CANCEL_BUTTON_LABEL}  "
+/></td>
+
+<td align="right" nowrap><span class="required">{APP.LBL_REQUIRED_SYMBOL}</span>
+{APP.NTC_REQUIRED}</td>
+<td align="right">{ADMIN_EDIT}</td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="2" cellpadding="0">
+
+<tr>
+<td width="10%" class="dataLabel"><slot>{MOD.LBL_NAME}
+	<span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+<td width="35%" class="dataField"><slot><input name="name" tabindex="1"
+	size="35" maxlength="50" type="text" value="{name}"></slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_ASSIGNED_USER_ID}</slot></td>
+<td class="dataField"><slot><select name="assigned_user_id" tabindex="11">
+	{user_list_options}</select></slot></td>
+</tr>
+
+<tr>
+<td class="dataLabel"><slot>{MOD.LBL_STATUS}</slot></td>
+<td class="dataField"><slot><select name="status" tabindex="2">{status_options}
+</select></slot></td>
+
+
+
+
+
+
+
+<!-- BEGIN: open_source -->
+<td  class="dataLabel"><slot>&nbsp;</slot></td>
+<td class="dataField"><slot>&nbsp;</slot></td>
+<!-- END: open_source -->
+</tr>
+
+<tr>
+<td width="15%" class="dataLabel"><slot>{MOD.LBL_TASK_NUMBER}</slot></td>
+<td width="35%" class="dataField"><slot><input name="task_number" type="text"
+	value="{task_number}" size="5" maxlength="4" tabindex="3" /></slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_DEPENDS_ON_ID}</slot></td>
+<td class="dataField"><slot><input readonly="readonly" name="depends_on_name"
+	type="text" value="{depends_on_name}" tabindex="13" />
+	<input name="depends_on_id" type="hidden"
+	value="{depends_on_id}">&nbsp;<input
+	title="{APP.LBL_SELECT_BUTTON_TITLE}" accessKey="{APP.LBL_SELECT_BUTTON_KEY}"
+	type="button" tabindex="14" class="button"
+	value="{APP.LBL_SELECT_BUTTON_LABEL}" name="btn1"
+	onclick="return window.open('index.php?module=ProjectTask&action=Popup&form=EditView&query=true&parent_id={parent_id}&form_parent_id=depends_on_id&form_parent_name=depends_on_name&form_submit=false','test','width=600,height=400,resizable=1,scrollbars=1');" /></slot></td>
+</tr>
+
+<tr>
+<td class="dataLabel"><slot>{MOD.LBL_PRIORITY}</slot></td>
+<td class="dataField"><slot><select name="priority" tabindex="4">
+	{priority_options}</select></slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_MILESTONE_FLAG}</slot></td>
+<td class="dataField"><slot><input name="milestone_flag" type="checkbox"
+	class="checkbox" value="on" {milestone_checked} tabindex="15" /></slot></td>
+</tr>
+
+<tr>
+<td class="dataLabel"><slot>{MOD.LBL_ORDER_NUMBER}</slot></td>
+<td class="dataField"><slot><input name="order_number" type="text"
+	value="{order_number}" tabindex="5" size="5" maxlength="4" /></slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_PARENT_ID}
+	<span class="required">{APP.LBL_REQUIRED_SYMBOL}</span></slot></td>
+<td class="dataField"><slot><input readonly="readonly" name="parent_name"
+	type="text" value="{parent_name}" tabindex="16" /><input name="parent_id"
+	type="hidden" value="{parent_id}" />&nbsp;<input
+	title="{APP.LBL_SELECT_BUTTON_TITLE}"
+	accessKey="{APP.LBL_SELECT_BUTTON_KEY}" type="button" class="button"
+	value="{APP.LBL_SELECT_BUTTON_LABEL}" name="btn1" tabindex="17"
+	onclick="return window.open('index.php?module=Project&action=Popup&form=EditView&form_submit=false','test','width=600,height=400,resizable=1,scrollbars=1');" /></slot></td>
+</tr>
+
+<tr>
+<td class="dataLabel"><slot>{MOD.LBL_PERCENT_COMPLETE}</slot></td>
+<td class="dataField"><slot><input name="percent_complete" type="text"
+	tabindex="6" value="{percent_complete}" size="4" maxlength="3"
+	/></slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_UTILIZATION}</slot></td>
+<td class="dataField"><slot><select name="utilization" tabindex="18">
+	{utilization_options}</select></slot></td>
+</tr>
+
+<tr>
+<td class="dataLabel"><slot>{MOD.LBL_DATE_START}</slot></td>
+<td class="dataField">
+<slot>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td nowrap="nowrap"><input name="date_start" id="date_start_field" tabindex="7"
+	size="11" maxlength="10" type="text" value="{date_start}" />
+<img src="themes/{THEME}/images/jscalendar.gif" alt="{APP.LBL_ENTER_DATE}"
+	id="date_start_picker" align="absmiddle" />&nbsp;&nbsp;</td>
+<td nowrap="nowrap"><input name="time_start" tabindex="8" size="5"
+	maxlength="5" type="text" value="{time_start}" />{time_meridian}</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><span class="dateFormat">{user_dateformat}</span></td>
+<td nowrap="nowrap"><span class="dateFormat">{time_format}</span></td>
+</tr>
+</table>
+</slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_ESTIMATED_EFFORT}</slot></td>
+<td class="dataField"><slot><input name="estimated_effort" type="text"
+	value="{estimated_effort}" size="5" maxlength="4" tabindex="19"
+	/></slot></td>
+</tr>
+
+<tr>
+<td class="dataLabel"><slot>{MOD.LBL_DATE_DUE}</slot></td>
+<td class="dataField">
+<slot>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td nowrap><input name="date_due" id="date_due_field" size="11" maxlength="10"
+	type="text" value="{date_due}" tabindex="9" />
+<img src="themes/{THEME}/images/jscalendar.gif" alt="{APP.LBL_ENTER_DATE}"
+	id="date_due_picker" align="absmiddle" />&nbsp;&nbsp;</td>
+<td nowrap><input name="time_due" tabindex="10" size="5" maxlength="5"
+	type="text" value="{time_due}" />{time_meridian}</td>
+</tr>
+<tr>
+<td nowrap><span class="dateFormat">{user_dateformat}</span></td>
+<td nowrap><span class="dateFormat">{time_format}</span></td>
+</tr>
+</table>
+</slot></td>
+<td class="dataLabel"><slot>{MOD.LBL_ACTUAL_EFFORT}</slot></td>
+<td class="dataField"><slot><input name="actual_effort" type="text"
+	value="{actual_effort}" size="5" maxlength="4" tabindex="20" /></slot></td>
+</tr>
+
+<tr>
+<td valign="top" class="dataLabel"><slot>{MOD.LBL_DESCRIPTION}</slot></td>
+<td colspan="3" class="dataField"><slot><textarea name="description"
+	cols="60" rows="8" tabindex="21">{description}</textarea></slot></td>
+</tr>
+
+</table>
+</td></tr></table>
+</form>
+<script type="text/javascript">
+Calendar.setup ({
+   inputField : "date_due_field", ifFormat : "{CALENDAR_DATEFORMAT}", showsTime : false, button : "date_due_picker", singleClick : true, step : 1
+});
+Calendar.setup ({
+   inputField : "date_start_field", ifFormat : "{CALENDAR_DATEFORMAT}", showsTime : false, button : "date_start_picker", singleClick : true, step : 1
+});
+</script>
+{JAVASCRIPT}
+<!-- END: main -->

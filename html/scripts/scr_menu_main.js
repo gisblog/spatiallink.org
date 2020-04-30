@@ -1,0 +1,1 @@
+if(document.getElementById){}function SwitchMenu(obj){}

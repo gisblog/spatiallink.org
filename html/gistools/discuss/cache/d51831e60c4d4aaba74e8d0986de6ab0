@@ -1,0 +1,1215 @@
+O:9:"magpierss":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:40:{i:0;a:4:{s:5:"title";s:50:"Mapufacture, the Open Guide to London, and Tagging";s:4:"link";s:55:"http://mappinghacks.com/index.cgi/2005/05/25#openguides";s:11:"description";s:2437:"
+<p>Yesterday i attended a workshop organised by <a href="http://b.evnt.org/">EVNT</a>, the calendar-tagging service. They'd brought together people from different intersecting domains, to talk about best practise for expressing temporal, spatial and related data in RSS and RDF, amongst other things, while a 'producer' strand worked on use-cases.</p>
+
+<p>The geohacking contingent was large, and for a while threatened to subsume the more temporal and social themes of the gathering; though all interconnect. For me, the highlight was watching Earle Martin from the <A href="http://openguides.org/">Open Guide to London</a>, spending five minutes with Mikel Maron, both tw
+eaking their RDF input and output routines to plug OG into Mikel's new project, <a href="http://mapufacture.com/">mapufacture</a>
+
+<p>For a long time, OpenGuides has published RDF or RSS indexes of <i>Categories</i> and <i>Locales</i>; these days they'd be called <i>tags</i>, i suppose; free-choice keywords which users can attach to nodes. Where there's a natural classification available - such as common names for different areas of London - the keywords cohere into a kind of consensus (though this is conscientously maintained and updated by the wiki gnomes.</p>
+
+<p>As a simple example, <a href="http://mapufacture.com/map.php?mapargs=true&lat=51.5&lon=-0.12&scale=1200&layer=landsat&rss=http://london.openguides.org/index.cgi%3Faction=index%26index_type=locale%26index_value=Holborn%26format=rdf">nodes in Holborn</a> - a mapufacture map of everything that some contributor to the Guide decided was in Holborn. It was great to see this come together so quickly.</p>
+
+<p><A href="http://auth.ilesansfil.org">Ile sans Fil</a>, Montreal's hyperactive community wireless group, are also carrying out interesting experiments with tag-based web services, adding a flickr tag for each node and pulling out the pictures into their local portal service. Now, as a semantic web geek, i've always felt rather ambivalent about tagmania; i can see that it's fascinating, but find it hard to see what it's <i>*for*</i>. But applications like <A href="http://dev.evnt.org/">EVNT</a> itself, and controllable, instant-gratification use cases like ISF's, give me hope that we can combine, slowly, the facility of human keywording with the expressiveness and connectability of RDF; perhaps there's not only a middle way, but it's in geohacking that we're finding it.</p>  ";s:7:"summary";s:2437:"
+<p>Yesterday i attended a workshop organised by <a href="http://b.evnt.org/">EVNT</a>, the calendar-tagging service. They'd brought together people from different intersecting domains, to talk about best practise for expressing temporal, spatial and related data in RSS and RDF, amongst other things, while a 'producer' strand worked on use-cases.</p>
+
+<p>The geohacking contingent was large, and for a while threatened to subsume the more temporal and social themes of the gathering; though all interconnect. For me, the highlight was watching Earle Martin from the <A href="http://openguides.org/">Open Guide to London</a>, spending five minutes with Mikel Maron, both tw
+eaking their RDF input and output routines to plug OG into Mikel's new project, <a href="http://mapufacture.com/">mapufacture</a>
+
+<p>For a long time, OpenGuides has published RDF or RSS indexes of <i>Categories</i> and <i>Locales</i>; these days they'd be called <i>tags</i>, i suppose; free-choice keywords which users can attach to nodes. Where there's a natural classification available - such as common names for different areas of London - the keywords cohere into a kind of consensus (though this is conscientously maintained and updated by the wiki gnomes.</p>
+
+<p>As a simple example, <a href="http://mapufacture.com/map.php?mapargs=true&lat=51.5&lon=-0.12&scale=1200&layer=landsat&rss=http://london.openguides.org/index.cgi%3Faction=index%26index_type=locale%26index_value=Holborn%26format=rdf">nodes in Holborn</a> - a mapufacture map of everything that some contributor to the Guide decided was in Holborn. It was great to see this come together so quickly.</p>
+
+<p><A href="http://auth.ilesansfil.org">Ile sans Fil</a>, Montreal's hyperactive community wireless group, are also carrying out interesting experiments with tag-based web services, adding a flickr tag for each node and pulling out the pictures into their local portal service. Now, as a semantic web geek, i've always felt rather ambivalent about tagmania; i can see that it's fascinating, but find it hard to see what it's <i>*for*</i>. But applications like <A href="http://dev.evnt.org/">EVNT</a> itself, and controllable, instant-gratification use cases like ISF's, give me hope that we can combine, slowly, the facility of human keywording with the expressiveness and connectability of RDF; perhaps there's not only a middle way, but it's in geohacking that we're finding it.</p>  ";}i:1;a:4:{s:5:"title";s:51:"The Case for Open Geodata, pt. n: Tasty Veggie Eats";s:4:"link";s:53:"http://mappinghacks.com/index.cgi/2005/04/25#vegguide";s:11:"description";s:609:"<p>If you are vegetarian like me, you'll see the inherent case for open geodata
+posed by a site like Dave Rolsky's <a
+href="http://vegguide.org">VegGuide.Org</a>. Dave, a long-time organizer of
+vegetarian lunch-time BOFs at <a
+href="http://conferences.oreillynet.com/oscon/">The Perl Conference</a> and the
+North American <a href="http://yapc.org/America/North/">Yet Another Perl
+Conference</a>, recently wrote in to say that VegGuide.Org now uses our own <a
+href="http://geocoder.us/">Geo::Coder::US</a> to search for vegetarian and
+vegan restaurants near any US street address. I'm delighted to hear it!</p>";s:7:"summary";s:609:"<p>If you are vegetarian like me, you'll see the inherent case for open geodata
+posed by a site like Dave Rolsky's <a
+href="http://vegguide.org">VegGuide.Org</a>. Dave, a long-time organizer of
+vegetarian lunch-time BOFs at <a
+href="http://conferences.oreillynet.com/oscon/">The Perl Conference</a> and the
+North American <a href="http://yapc.org/America/North/">Yet Another Perl
+Conference</a>, recently wrote in to say that VegGuide.Org now uses our own <a
+href="http://geocoder.us/">Geo::Coder::US</a> to search for vegetarian and
+vegan restaurants near any US street address. I'm delighted to hear it!</p>";}i:2;a:4:{s:5:"title";s:26:"Google Maps and craigslist";s:4:"link";s:52:"http://mappinghacks.com/index.cgi/2005/04/23#craigle";s:11:"description";s:1103:"<img src="/pix/google_list.jpg" class="imgright" height="216" width="280"/>
+<p>This <a href="http://www.paulrademacher.com/housing/">hack combining google maps US with craigslist</a> caught my eye from the <A href="http://del.icio.us/tag/maps">del.icio.us</a> feed. I actually quite liked this one; it gets nearer to the kind of public writability, and was described as "a taste of what the semantic web will do for you". I have some niggles to do with how far the map, the data and the UI can be integrated with this approach; the listings don't update and appear on the map as you pan around it. With a package like <a href="http://brainoff.com/worldkit/">worldkit</a> you'd get this. Flash does make some things easier... </p>
+<p>I wanted to have a brief "told you so" moment, hauling out a description of the <A href="http://frot.org/geo/craigslist.html">use of RDF geo-tagging for mapping things</a> that i wrote down for the craiglist people last summer, and the <a href="http://brainoff.com/worldkit/craigslist/">craigslist demo that Mikel made</a> with worldkit at around that same time.</p>
+
+ 
+";s:7:"summary";s:1103:"<img src="/pix/google_list.jpg" class="imgright" height="216" width="280"/>
+<p>This <a href="http://www.paulrademacher.com/housing/">hack combining google maps US with craigslist</a> caught my eye from the <A href="http://del.icio.us/tag/maps">del.icio.us</a> feed. I actually quite liked this one; it gets nearer to the kind of public writability, and was described as "a taste of what the semantic web will do for you". I have some niggles to do with how far the map, the data and the UI can be integrated with this approach; the listings don't update and appear on the map as you pan around it. With a package like <a href="http://brainoff.com/worldkit/">worldkit</a> you'd get this. Flash does make some things easier... </p>
+<p>I wanted to have a brief "told you so" moment, hauling out a description of the <A href="http://frot.org/geo/craigslist.html">use of RDF geo-tagging for mapping things</a> that i wrote down for the craiglist people last summer, and the <a href="http://brainoff.com/worldkit/craigslist/">craigslist demo that Mikel made</a> with worldkit at around that same time.</p>
+
+ 
+";}i:3;a:4:{s:5:"title";s:48:"Why i find it hard to think about Google Maps UK";s:4:"link";s:59:"http://mappinghacks.com/index.cgi/2005/04/22#google_maps_uk";s:11:"description";s:3230:"<p>I have been, i'll confess, wilfully avoiding <a href="http://maps.google.co.uk/">Google Maps UK</a> since it was released. I imagined, fairly accurately, that it would depress me. Not so much the service in and of itself, but the critical reaction spawned in comparison with it, and the rueful reflections it provokes on the public quality of our own work with open source web GIS, particularly <a href="http://mapserver.umn.gis.edu/">mapserver</a></p>
+<p>As regular readers have heard me incessantly ranting, in the UK we don't have the freedom as citizens to make maps in the way US citizens do; no access to sources suchs as the <a href="http://tiger.census.gov">TIGER</a> street database from which one can build a plausible mapquest-style interface, or a comprehensive <A href="http://geocoder.us">geocoder</a> for addresses. Google map data comes from transnational companies with access to satellite time and fleets of ground-truthers - an approach we're proving it is possible to <a href="http://uo.space.frot.org/?LondonFreeMap">emulate from the ground up</a>. It bypasses the Crown Copyright license and expensive data hire terms from the Ordnance Survey.</p>
+<p>I'm frustrated by the business directory approach, which comes out in the hack i wrote for the book on <a href="http://local.google.com">local.google</a> and <a href="http://local.yahoo.com/">local.yahoo</a>, before Google Maps existed. </p>
+<p>We talked through a lot of UI ideas and Schuyler borrowed some of Google's for a mapserver based map browser package called mapserv.py, which is pending release. Dragging with the mouse to pan tiles turns out to be a lot harder than it looks, especially at a lot of different zoom resolutions, and the package doesn't include that yet. Part of the problem is that <i>we're not Google</i>; we don't have an edge network with tera storage installed across the internet. </p>
+<p>That's why i didn't want to look at Google Maps enough to justify writing this; i feared it would turn into an extended rant on the subject of "we're not Google, and so we don't have the resources to get anything right". </p>
+<p>If opened up properly as a webservice, integrated with services like <A href="http://london.openguides.org/">openguides</a>, <a href="http://map.wirelesslondon.info/">wirelesslondon</a>, it would blow anything we are currently doing with the Free Map out of the water; i might as well down tools, if the interface to the service is open. Sure, we wouldn't be able to experiment with our own routing algorithms, build traffic simulators, or evaluate flood risk. But we'd have nice pictures of information to stick pins into.</p>
+<p>Basically i am relying on US-based geohackers everywhere to deliver such startling novelty in application and proof of value in doing things with the TIGER data, building truly collaborative and responsive local information resources, looking to <a href="http://wsfii.org/">domains outside themselves</a> for inspiration. Then we'll have plenty evidence of economic activity to point to. I hope that will be all right.</p>
+<p>Google maps isn't even projected; it uses WGS84 instead of UTM. As an even amateur cartographer, this drives me crazy! Don't these people care?</p>";s:7:"summary";s:3230:"<p>I have been, i'll confess, wilfully avoiding <a href="http://maps.google.co.uk/">Google Maps UK</a> since it was released. I imagined, fairly accurately, that it would depress me. Not so much the service in and of itself, but the critical reaction spawned in comparison with it, and the rueful reflections it provokes on the public quality of our own work with open source web GIS, particularly <a href="http://mapserver.umn.gis.edu/">mapserver</a></p>
+<p>As regular readers have heard me incessantly ranting, in the UK we don't have the freedom as citizens to make maps in the way US citizens do; no access to sources suchs as the <a href="http://tiger.census.gov">TIGER</a> street database from which one can build a plausible mapquest-style interface, or a comprehensive <A href="http://geocoder.us">geocoder</a> for addresses. Google map data comes from transnational companies with access to satellite time and fleets of ground-truthers - an approach we're proving it is possible to <a href="http://uo.space.frot.org/?LondonFreeMap">emulate from the ground up</a>. It bypasses the Crown Copyright license and expensive data hire terms from the Ordnance Survey.</p>
+<p>I'm frustrated by the business directory approach, which comes out in the hack i wrote for the book on <a href="http://local.google.com">local.google</a> and <a href="http://local.yahoo.com/">local.yahoo</a>, before Google Maps existed. </p>
+<p>We talked through a lot of UI ideas and Schuyler borrowed some of Google's for a mapserver based map browser package called mapserv.py, which is pending release. Dragging with the mouse to pan tiles turns out to be a lot harder than it looks, especially at a lot of different zoom resolutions, and the package doesn't include that yet. Part of the problem is that <i>we're not Google</i>; we don't have an edge network with tera storage installed across the internet. </p>
+<p>That's why i didn't want to look at Google Maps enough to justify writing this; i feared it would turn into an extended rant on the subject of "we're not Google, and so we don't have the resources to get anything right". </p>
+<p>If opened up properly as a webservice, integrated with services like <A href="http://london.openguides.org/">openguides</a>, <a href="http://map.wirelesslondon.info/">wirelesslondon</a>, it would blow anything we are currently doing with the Free Map out of the water; i might as well down tools, if the interface to the service is open. Sure, we wouldn't be able to experiment with our own routing algorithms, build traffic simulators, or evaluate flood risk. But we'd have nice pictures of information to stick pins into.</p>
+<p>Basically i am relying on US-based geohackers everywhere to deliver such startling novelty in application and proof of value in doing things with the TIGER data, building truly collaborative and responsive local information resources, looking to <a href="http://wsfii.org/">domains outside themselves</a> for inspiration. Then we'll have plenty evidence of economic activity to point to. I hope that will be all right.</p>
+<p>Google maps isn't even projected; it uses WGS84 instead of UTM. As an even amateur cartographer, this drives me crazy! Don't these people care?</p>";}i:4;a:4:{s:5:"title";s:16:"Low Density Data";s:4:"link";s:61:"http://mappinghacks.com/index.cgi/2005/04/21#low_density_data";s:11:"description";s:2959:"<p>
+This was an insight offered by Alex Robinson and others at the <A href="http://openknowledgefoundation.org/okforums/geodata/">Open Geodata Forum</a>; why do we, as enthusiasts, citizens and consumers need the very highly accurate data which the Ordnance Survey prides itself on providing?
+</p>
+<p>Working with GPS traces, Steve Coast's maps at <a href="http://openstreetmap.org/">openstreetmap</a> are only accurate to within 5 metres. But that's perfectly good enough for route planning, or street level mapping; though not for digging electricity cables or deciding on the impact of bay windows on planning permission.</p>
+<p>90% of our use cases don't need that kind of very accurate data. Medway council was asked to remove the images of electoral boundaries from its website, because they showed some polling positions in erroneous places. But for electoral analysis mapping of the kind <a href="http://locative.us/indymapper/">indymapper</a> provided, of which we saw so much in early November 2004, highly generalised outlines are adequate. Generalised files are an acceptable part of state level geodata provision in the US, and plenty of algorithms for performing the generalisation are in the public domain (well, some of them have patents crossing them, but that's another story.)</p>
+<p>From generalised ward boundaries and streets we could map the politics of London. One barrier we keep coming up against, is our ability to geocode addresses or postal codes a-la <a href="http://geocoder.us/">geocoder.us</a>. Postal codes, which cover a block or two, perhaps 14 houses, provide a good-enough generalisation. Yet the ownership of this data set is obscured - some way between the Ordnance Survey, and the Post Office or Royal Mail as it is now known. Address-based geocoding for the UK is a big job! and one it may take a while to build into openstreetmap.
+</p> 
+<p>The release of low-density version of street, addressing and administrative boundary data would accrue most of the public service benefits in projects like those that <a href="http://mysociety.org">MySociety</a> runs. It would enable us to build the kind of collaborative annotation, space archiving and maintenance which we're having to build services like <A href="http://openstreetmap.org">openstreetmap</a> to be able to create.</p>
+<p>How significantly would this impact on the Ordnance Survey's remit to operate a cost recovery policy in order to maintain as much accuracy and currency of data as possible? Possibly, not a great deal; Local councils and local transport planners and operators would still need the 'bay window' level of mapping detail, as will the phone and water companies with their drills. A significant proportion of the entrenched market would be unaffected by a free licensing of generalised OS data for non-profit use. The applications developed in a research and startup context would drive data sales as well as economic activity in general.</p>";s:7:"summary";s:2959:"<p>
+This was an insight offered by Alex Robinson and others at the <A href="http://openknowledgefoundation.org/okforums/geodata/">Open Geodata Forum</a>; why do we, as enthusiasts, citizens and consumers need the very highly accurate data which the Ordnance Survey prides itself on providing?
+</p>
+<p>Working with GPS traces, Steve Coast's maps at <a href="http://openstreetmap.org/">openstreetmap</a> are only accurate to within 5 metres. But that's perfectly good enough for route planning, or street level mapping; though not for digging electricity cables or deciding on the impact of bay windows on planning permission.</p>
+<p>90% of our use cases don't need that kind of very accurate data. Medway council was asked to remove the images of electoral boundaries from its website, because they showed some polling positions in erroneous places. But for electoral analysis mapping of the kind <a href="http://locative.us/indymapper/">indymapper</a> provided, of which we saw so much in early November 2004, highly generalised outlines are adequate. Generalised files are an acceptable part of state level geodata provision in the US, and plenty of algorithms for performing the generalisation are in the public domain (well, some of them have patents crossing them, but that's another story.)</p>
+<p>From generalised ward boundaries and streets we could map the politics of London. One barrier we keep coming up against, is our ability to geocode addresses or postal codes a-la <a href="http://geocoder.us/">geocoder.us</a>. Postal codes, which cover a block or two, perhaps 14 houses, provide a good-enough generalisation. Yet the ownership of this data set is obscured - some way between the Ordnance Survey, and the Post Office or Royal Mail as it is now known. Address-based geocoding for the UK is a big job! and one it may take a while to build into openstreetmap.
+</p> 
+<p>The release of low-density version of street, addressing and administrative boundary data would accrue most of the public service benefits in projects like those that <a href="http://mysociety.org">MySociety</a> runs. It would enable us to build the kind of collaborative annotation, space archiving and maintenance which we're having to build services like <A href="http://openstreetmap.org">openstreetmap</a> to be able to create.</p>
+<p>How significantly would this impact on the Ordnance Survey's remit to operate a cost recovery policy in order to maintain as much accuracy and currency of data as possible? Possibly, not a great deal; Local councils and local transport planners and operators would still need the 'bay window' level of mapping detail, as will the phone and water companies with their drills. A significant proportion of the entrenched market would be unaffected by a free licensing of generalised OS data for non-profit use. The applications developed in a research and startup context would drive data sales as well as economic activity in general.</p>";}i:5;a:4:{s:5:"title";s:25:"the Forum on Open Geodata";s:4:"link";s:59:"http://mappinghacks.com/index.cgi/2005/04/21#geodata_forum2";s:11:"description";s:2145:"<p>Last Thursday's Forum on open geodata in central London went fascinatingly. The CTO of the <a href="http://ordnancesurvey.gov.uk">Ordnance Survey</a> attended, as did apparently the head of their PR department, and a cluster of GIS policy advisory professionals, and a veritable collective of UK open map hackers.</p>
+<p>
+
+<p><a href="http://www.openknowledgefoundation.org/okforums/geodata/">Further information including slides</a> and a sound recording are provided. The <A href="http://www.openknowledgefoundation.org/">Open Knowledge Foundation</a> provided invaluable logistical support for the event.</p>
+
+<p>I heard cited several times from those i talked to, a recent freedom of information paper by Peter Weiss, which is now <a href="http://uo.space.frot.org/archive/borders_weiss.doc">mirrored here</a>. Here is an excerpt:</p>
+<blockquote>
+<p style="font-size:75%">
+Although these arguments are convincing to many (the entire US open access policy is based on them), they are not strong enough to convince all governments to adopt open access policies which maximize economic benefit, particularly jobs and wealth, encourage scientific and technological research and development, and thereby ultimately maximize general tax revenues in the longer term. Accordingly, this paper provides an argument to go towards open access policies: maximizing state revenues through taxable business, job and wealth creation. This paper puts aside abstract freedom of information concepts in favour of economic reasoning suggesting that open access policies are beneficial in the short term as well as in the longer term for the general public, the private sector and also for government entities.</p>
+</blockquote>
+<p>Giles Lane, a director of the <a href="http://urbantapestries.com/">Urban Tapestries</a> project put forward a license, based on the <a href="http://creativecommons.org">Creative Commons</a> licensing model, which they have offered to the Ordnance Survey in the context of non-profit use of their data products.</p>
+<p>These seem like interesting times and i hope to see some good practical upshot of this in the future!</p>
+
+";s:7:"summary";s:2145:"<p>Last Thursday's Forum on open geodata in central London went fascinatingly. The CTO of the <a href="http://ordnancesurvey.gov.uk">Ordnance Survey</a> attended, as did apparently the head of their PR department, and a cluster of GIS policy advisory professionals, and a veritable collective of UK open map hackers.</p>
+<p>
+
+<p><a href="http://www.openknowledgefoundation.org/okforums/geodata/">Further information including slides</a> and a sound recording are provided. The <A href="http://www.openknowledgefoundation.org/">Open Knowledge Foundation</a> provided invaluable logistical support for the event.</p>
+
+<p>I heard cited several times from those i talked to, a recent freedom of information paper by Peter Weiss, which is now <a href="http://uo.space.frot.org/archive/borders_weiss.doc">mirrored here</a>. Here is an excerpt:</p>
+<blockquote>
+<p style="font-size:75%">
+Although these arguments are convincing to many (the entire US open access policy is based on them), they are not strong enough to convince all governments to adopt open access policies which maximize economic benefit, particularly jobs and wealth, encourage scientific and technological research and development, and thereby ultimately maximize general tax revenues in the longer term. Accordingly, this paper provides an argument to go towards open access policies: maximizing state revenues through taxable business, job and wealth creation. This paper puts aside abstract freedom of information concepts in favour of economic reasoning suggesting that open access policies are beneficial in the short term as well as in the longer term for the general public, the private sector and also for government entities.</p>
+</blockquote>
+<p>Giles Lane, a director of the <a href="http://urbantapestries.com/">Urban Tapestries</a> project put forward a license, based on the <a href="http://creativecommons.org">Creative Commons</a> licensing model, which they have offered to the Ordnance Survey in the context of non-profit use of their data products.</p>
+<p>These seem like interesting times and i hope to see some good practical upshot of this in the future!</p>
+
+";}i:6;a:4:{s:5:"title";s:25:"Mapping Hacks Released...";s:4:"link";s:54:"http://mappinghacks.com/index.cgi/2005/04/19#on_safari";s:11:"description";s:581:"
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6747.JPG" align="right"></a>
+At least, it is now <a href="http://www.oreilly.com/catalog/mappinghks/index.html">Available on Safari.</a>  Safari is an O'Reilly subscription service that provides access to O'Reilly (and selected other publishers) books online.
+<p>
+The deal is that you can pre-purchase your hard copy of <u>Mapping Hacks</u>
+and read it <b>Right Now!</b> online via Safari.
+<p>
+It is so exciting it makes me want to have another shot of that penguin hard drive sled...  ";s:7:"summary";s:581:"
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6747.JPG" align="right"></a>
+At least, it is now <a href="http://www.oreilly.com/catalog/mappinghks/index.html">Available on Safari.</a>  Safari is an O'Reilly subscription service that provides access to O'Reilly (and selected other publishers) books online.
+<p>
+The deal is that you can pre-purchase your hard copy of <u>Mapping Hacks</u>
+and read it <b>Right Now!</b> online via Safari.
+<p>
+It is so exciting it makes me want to have another shot of that penguin hard drive sled...  ";}i:7;a:4:{s:5:"title";s:38:"It doesn't take all kinds of people...";s:4:"link";s:55:"http://mappinghacks.com/index.cgi/2005/04/18#new_system";s:11:"description";s:3753:"
+...We just <u>have</u> all kinds of people.<p>
+
+Clearly that is advice to live by.  I wanted a new server to throw 
+into our 1/4 rack down at Hurricane Electric.  I mean, Schuyler has 
+a machine in the rack, and he and I jointly have a machine in the 
+rack, but all those beautiful "U's" were sitting empty, forlorn, 
+waiting for a machine from me!
+<p>
+I got a pretty cool 1U case off of EbAy for $46.97.  As near as I can
+tell it is a brand new case.  And it included a power supply, and the 
+PCI 90 degree adapter.  Screaming deal.
+<p>
+Of course, for it to be a <i>Testing Range Production</i> there need
+to be some arbitary number of <i>freaky weird things</i> that have to
+be done.
+<p>
+First weird thing was that the back cutouts were just a little off 
+from my mother board.  But the Dremel tool made reasonably quick 
+work of those.  I did shatter three dremel cut off wheels in the 
+process, but that is the price of progress.
+<p>
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6744.JPG" align="left"></a>
+Next the motherboard I had from my friend Nate had a full sized
+heat sink and fan.  Hmmm.  That is not going to fit in the 1U
+case.  A little time with the metal cutting band saw and it seems
+that I've taken care of that problem.
+<p>
+Next is the question of drives.  Since Schuyler had an emergency
+that required the use of my new 300 gb drive I installed Fedora
+Core 3 on an old 6 gb drive.  I had a 250 gb SATA drive, and 
+an Adaptec ASH-1205 SATA Connect Serial ATA Card.  I figured it
+wouldn't hurt to try, so I installed the mess and after a quick
+fdisk and mkfs I amazingly was able to mount the drive.
+<p>
+Fedora Core 3 recognized the Adaptec ASH-1205 and automatically 
+loaded the sata modules.  I was happy.  I don't know if that
+would work for the boot partition, but I'm happy right now.
+<p>
+A side benefit is that this system has an older BIOS, and 
+didn't actually appear to recognize the full 300 gb of the other
+drive.  I assume that since the sata modules live in user space
+that the BIOS loses the power to vex in this case.
+<p>
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6742.JPG" align="left"></a>
+The final (knock wood!) indignity was that the case was designed
+for a single hard drive.  It doesn't even have cut outs on the 
+front panel for a floppy or CD-just blank steel.
+<p>
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6747.JPG" align="right"></a>
+(if you look closely at that picture you can read this text being edited.  If
+I were clever I would call this 'Computer in the process of being documented'
+and it would be conceptual art, and sort of clever.  If only I were clever
+and could capitalize on these little syncronicities.  Though, since I
+intentionally planned the photograph to include that text it isn't strictly
+'syncronicity' but rather 'staged' which is a word that here means not
+random.)<p>
+Dilemna.  I managed to solve the dilemna with a bit of nearly 
+precision metal fabrication.  You can tell a geek's operating
+system from the shape of the hard drive sled used in their 
+server...
+<p>
+Screws and stuff: case and hard drive screws appear to be (mostly?)
+6/32.  This means size 6, and 32 threads per inch.  
+This is interesting because it turns out that this means if you use
+a certain size drill bit you can reliably make holes that match your
+screws, and if you use a slightly smaller bit, and a 6/32 tap, you
+can make threads that these screws will happily grip.
+<p>
+And if you can tap threads you have far more options as to where 
+you can install things, and even, dare I say, what is possible to 
+treat as a computer case...(more to follow).";s:7:"summary";s:3753:"
+...We just <u>have</u> all kinds of people.<p>
+
+Clearly that is advice to live by.  I wanted a new server to throw 
+into our 1/4 rack down at Hurricane Electric.  I mean, Schuyler has 
+a machine in the rack, and he and I jointly have a machine in the 
+rack, but all those beautiful "U's" were sitting empty, forlorn, 
+waiting for a machine from me!
+<p>
+I got a pretty cool 1U case off of EbAy for $46.97.  As near as I can
+tell it is a brand new case.  And it included a power supply, and the 
+PCI 90 degree adapter.  Screaming deal.
+<p>
+Of course, for it to be a <i>Testing Range Production</i> there need
+to be some arbitary number of <i>freaky weird things</i> that have to
+be done.
+<p>
+First weird thing was that the back cutouts were just a little off 
+from my mother board.  But the Dremel tool made reasonably quick 
+work of those.  I did shatter three dremel cut off wheels in the 
+process, but that is the price of progress.
+<p>
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6744.JPG" align="left"></a>
+Next the motherboard I had from my friend Nate had a full sized
+heat sink and fan.  Hmmm.  That is not going to fit in the 1U
+case.  A little time with the metal cutting band saw and it seems
+that I've taken care of that problem.
+<p>
+Next is the question of drives.  Since Schuyler had an emergency
+that required the use of my new 300 gb drive I installed Fedora
+Core 3 on an old 6 gb drive.  I had a 250 gb SATA drive, and 
+an Adaptec ASH-1205 SATA Connect Serial ATA Card.  I figured it
+wouldn't hurt to try, so I installed the mess and after a quick
+fdisk and mkfs I amazingly was able to mount the drive.
+<p>
+Fedora Core 3 recognized the Adaptec ASH-1205 and automatically 
+loaded the sata modules.  I was happy.  I don't know if that
+would work for the boot partition, but I'm happy right now.
+<p>
+A side benefit is that this system has an older BIOS, and 
+didn't actually appear to recognize the full 300 gb of the other
+drive.  I assume that since the sata modules live in user space
+that the BIOS loses the power to vex in this case.
+<p>
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6742.JPG" align="left"></a>
+The final (knock wood!) indignity was that the case was designed
+for a single hard drive.  It doesn't even have cut outs on the 
+front panel for a floppy or CD-just blank steel.
+<p>
+<a href="http://mappinghacks.com/pix/index_pix.html"><img src="/pix/D7_04182005/thumbnail/dsc_6747.JPG" align="right"></a>
+(if you look closely at that picture you can read this text being edited.  If
+I were clever I would call this 'Computer in the process of being documented'
+and it would be conceptual art, and sort of clever.  If only I were clever
+and could capitalize on these little syncronicities.  Though, since I
+intentionally planned the photograph to include that text it isn't strictly
+'syncronicity' but rather 'staged' which is a word that here means not
+random.)<p>
+Dilemna.  I managed to solve the dilemna with a bit of nearly 
+precision metal fabrication.  You can tell a geek's operating
+system from the shape of the hard drive sled used in their 
+server...
+<p>
+Screws and stuff: case and hard drive screws appear to be (mostly?)
+6/32.  This means size 6, and 32 threads per inch.  
+This is interesting because it turns out that this means if you use
+a certain size drill bit you can reliably make holes that match your
+screws, and if you use a slightly smaller bit, and a 6/32 tap, you
+can make threads that these screws will happily grip.
+<p>
+And if you can tap threads you have far more options as to where 
+you can install things, and even, dare I say, what is possible to 
+treat as a computer case...(more to follow).";}i:8;a:4:{s:5:"title";s:31:"Digital Art in Public Spaces...";s:4:"link";s:50:"http://mappinghacks.com/index.cgi/2005/04/07#sudac";s:11:"description";s:730:"
+Is a class at the Stanford University Digital Arts Center taught by
+<a href="http://futurefarmers">Amy Franceschini</a>.  She brings
+in guests to rant about nifty things (next session they are looking 
+at wifi and building cantennas).<p>
+
+Through our friend Mike Liebhold I got the change to do my spiel.  
+Schuyler insists that <a href="/talks/sudac_2005-04-05/index.html">I post my slides</a> from the talk.<p>
+
+If you are daft enough to actually look at them, be kind :-)  The 
+organized part of things sort of ends at about slide 25, and I should
+clean it up a bit and end on what is now #31, Locative is a Case, not
+a place (with <a href="http://gpster.net/">full credit to our friend 
+Karlis Kalnins</a> for that phrase!).
+";s:7:"summary";s:730:"
+Is a class at the Stanford University Digital Arts Center taught by
+<a href="http://futurefarmers">Amy Franceschini</a>.  She brings
+in guests to rant about nifty things (next session they are looking 
+at wifi and building cantennas).<p>
+
+Through our friend Mike Liebhold I got the change to do my spiel.  
+Schuyler insists that <a href="/talks/sudac_2005-04-05/index.html">I post my slides</a> from the talk.<p>
+
+If you are daft enough to actually look at them, be kind :-)  The 
+organized part of things sort of ends at about slide 25, and I should
+clean it up a bit and end on what is now #31, Locative is a Case, not
+a place (with <a href="http://gpster.net/">full credit to our friend 
+Karlis Kalnins</a> for that phrase!).
+";}i:9;a:4:{s:5:"title";s:41:"Mapping Hacks Featured in Guardian Online";s:4:"link";s:53:"http://mappinghacks.com/index.cgi/2005/04/07#guardian";s:11:"description";s:1631:"<p>Sean Dodson's latest article in the Guardian, entitled <em><a
+href="http://www.guardian.co.uk/online/story/0,3605,1453293,00.html">Get
+Mapping</a></em>, features the counterpoint between commercial and amateur (or
+civil) cartography:</p>
+<blockquote>
+<p>It is tempting to call it the march of amateur mapmakers: armed with cheap
+satellite-tracking handsets, teams of civilian surveyors are out in the field
+recording casual journeys and sharing geodata with each other to produce their
+own maps. Their aim is to build a set of people's maps: charted and owned by
+those who create them, which are as free to share as the open road.</p>
+<p>....</p>
+<p>"There's a huge issue of quality assurance," says OS's Scott Sinclair. "We make an average of 5,000 changes to the database every day. It's very high quality data and someone has to pay for that. If you were to give that data away, you would have to change the business model and the only alternative would be a tax-funded model."</p>
+</blockquote>
+<p>There are two things wrong with Mr Sinclair's statement, of course. The
+first is the implication that funding public geodata infrastructure through
+taxation is somehow bad, or unsuitable, when the overwhelming majority of
+civic infrastructure, e.g. roads, bridges, hospitals, etc. etc. are often
+funded that way, and frequently quite successfully so. The second is the
+suggestion that there could only be one alternative to the Ordinance Survey's
+business model of maintaing geospatial data in exchange for rapacious
+licensing fees -- clearly, Mr Sinclair has never heard of <a
+href="http://wikipedia.org/">Wikipedia</a>!</p>
+";s:7:"summary";s:1631:"<p>Sean Dodson's latest article in the Guardian, entitled <em><a
+href="http://www.guardian.co.uk/online/story/0,3605,1453293,00.html">Get
+Mapping</a></em>, features the counterpoint between commercial and amateur (or
+civil) cartography:</p>
+<blockquote>
+<p>It is tempting to call it the march of amateur mapmakers: armed with cheap
+satellite-tracking handsets, teams of civilian surveyors are out in the field
+recording casual journeys and sharing geodata with each other to produce their
+own maps. Their aim is to build a set of people's maps: charted and owned by
+those who create them, which are as free to share as the open road.</p>
+<p>....</p>
+<p>"There's a huge issue of quality assurance," says OS's Scott Sinclair. "We make an average of 5,000 changes to the database every day. It's very high quality data and someone has to pay for that. If you were to give that data away, you would have to change the business model and the only alternative would be a tax-funded model."</p>
+</blockquote>
+<p>There are two things wrong with Mr Sinclair's statement, of course. The
+first is the implication that funding public geodata infrastructure through
+taxation is somehow bad, or unsuitable, when the overwhelming majority of
+civic infrastructure, e.g. roads, bridges, hospitals, etc. etc. are often
+funded that way, and frequently quite successfully so. The second is the
+suggestion that there could only be one alternative to the Ordinance Survey's
+business model of maintaing geospatial data in exchange for rapacious
+licensing fees -- clearly, Mr Sinclair has never heard of <a
+href="http://wikipedia.org/">Wikipedia</a>!</p>
+";}i:10;a:4:{s:5:"title";s:53:"Using Google's Ridefinder to Discover Street Patterns";s:4:"link";s:62:"http://mappinghacks.com/index.cgi/2005/04/06#google-ridefinder";s:11:"description";s:465:"<img src="/misc/2005/04/ridefinder.jpg" width="90" height="72"
+class="imgleft" />
+<p>Seems like Mikel's been hacking on Google's Ridefinder service, and
+discovered that it can be used to infer <a
+href="http://radio.weblogs.com/0100875/2005/04/06.html">patterns of street
+geography</a> in New York City. Now, if only they'd start a service like this
+in London, we could call the <a href="http://openstreetmap.org/">Open Street
+Map</a> project half done already!</p>
+";s:7:"summary";s:465:"<img src="/misc/2005/04/ridefinder.jpg" width="90" height="72"
+class="imgleft" />
+<p>Seems like Mikel's been hacking on Google's Ridefinder service, and
+discovered that it can be used to infer <a
+href="http://radio.weblogs.com/0100875/2005/04/06.html">patterns of street
+geography</a> in New York City. Now, if only they'd start a service like this
+in London, we could call the <a href="http://openstreetmap.org/">Open Street
+Map</a> project half done already!</p>
+";}i:11;a:4:{s:5:"title";s:41:"Google Add DigitalGlobe, EarthSat Imagery";s:4:"link";s:52:"http://mappinghacks.com/index.cgi/2005/04/05#google3";s:11:"description";s:1224:"<p>As reported by <a href="http://www.businessweek.com/ap/financialnews/D898VR6O0.htm?campaign_id=apn_home_down">Business Week</a> and seen on #mapserver:</p>
+<blockquote>
+Online search engine leader Google has unveiled a new feature that will enable
+its users to zoom in on homes and businesses using satellite images, an advance
+that may raise privacy concerns as well as intensify the competitive pressures
+on its rivals.... This marks the first time since the deal closed that Google
+has offered free access to Keyhole's high-tech maps through its search engine.
+</blockquote>
+
+<p>The prevailing wisdom on #mapserver is that, as could be expected, that the
+map and the satellite imagery don't align perfectly everywhere. Of course, our
+<a href="http://locative.us/places/earth/map.cgi?layer=vmap0">Locative US
+Earth Browser</a> has had <a
+href="http://locative.us/places/earth/map.cgi?layer=satellite">free satellite
+imagery</a> via JPL's <a href="http://onearth.jpl.nasa.gov/">WMS</a> for
+months  - the same dataset used by <a
+href="http://worldwind.arc.nasa.gov/">WorldWind</a>. (Also, not too
+surprisingly, JPL's server seems to be offline this afternoon with a "Service
+denied due to system overload" message...)</p>";s:7:"summary";s:1224:"<p>As reported by <a href="http://www.businessweek.com/ap/financialnews/D898VR6O0.htm?campaign_id=apn_home_down">Business Week</a> and seen on #mapserver:</p>
+<blockquote>
+Online search engine leader Google has unveiled a new feature that will enable
+its users to zoom in on homes and businesses using satellite images, an advance
+that may raise privacy concerns as well as intensify the competitive pressures
+on its rivals.... This marks the first time since the deal closed that Google
+has offered free access to Keyhole's high-tech maps through its search engine.
+</blockquote>
+
+<p>The prevailing wisdom on #mapserver is that, as could be expected, that the
+map and the satellite imagery don't align perfectly everywhere. Of course, our
+<a href="http://locative.us/places/earth/map.cgi?layer=vmap0">Locative US
+Earth Browser</a> has had <a
+href="http://locative.us/places/earth/map.cgi?layer=satellite">free satellite
+imagery</a> via JPL's <a href="http://onearth.jpl.nasa.gov/">WMS</a> for
+months  - the same dataset used by <a
+href="http://worldwind.arc.nasa.gov/">WorldWind</a>. (Also, not too
+surprisingly, JPL's server seems to be offline this afternoon with a "Service
+denied due to system overload" message...)</p>";}i:12;a:4:{s:5:"title";s:56:"Forum on Open Geodata, Thursday 14th April, 2005, London";s:4:"link";s:58:"http://mappinghacks.com/index.cgi/2005/04/04#geodata_forum";s:11:"description";s:1255:"<p>Those in or near London might be interested in the next in the series of <a href="http://okfn.org/wiki/OpenKnowledgeForums">Open Knowledge Forums</a>, on the subject of <a href="http://okfn.org/wiki/OpenGeoData">Open Geodata</a>. Speakers feature Roger Longhorn, who has written interestingly on <A href="http://i-dra.org/gisethicshome.htm">GIS ethics</a> and on <a href="http://www.geoconnexion.com/magazine/article.asp?ID=816">European geodata policy</a>, Gesche Schmid, director of GIS at <A href="http://www.medway.gov.uk/maps">Medway Council</a>, Steve Coast of <a href="http://openstreetmap.org/">openstreetmap</a>, Giles Lane of the <a href="http://urbantapestries.com/">Urban Tapestries</a> spatial annotation prototype, Chris Lightfoot who did GIS for <a href="http://mysociety.org/">mysociety</a> projects such as <a href="http://writetothem.com/">WriteToThem</a>, and Jo Walsh of <a href="http://mappinghacks.com/">mapping hacks</a>. We hope to leave plenty of time for discussion after short speeches.</p>
+<p>Anyone is welcome to attend the event, though an email in advance to <a href="mailto:okforums-info@okfn.org">okforums-info@okfn.org</a> would be appreciated. It is at the Stanhope Centre near Marble Arch in London, from 7-9pm.</p>
+";s:7:"summary";s:1255:"<p>Those in or near London might be interested in the next in the series of <a href="http://okfn.org/wiki/OpenKnowledgeForums">Open Knowledge Forums</a>, on the subject of <a href="http://okfn.org/wiki/OpenGeoData">Open Geodata</a>. Speakers feature Roger Longhorn, who has written interestingly on <A href="http://i-dra.org/gisethicshome.htm">GIS ethics</a> and on <a href="http://www.geoconnexion.com/magazine/article.asp?ID=816">European geodata policy</a>, Gesche Schmid, director of GIS at <A href="http://www.medway.gov.uk/maps">Medway Council</a>, Steve Coast of <a href="http://openstreetmap.org/">openstreetmap</a>, Giles Lane of the <a href="http://urbantapestries.com/">Urban Tapestries</a> spatial annotation prototype, Chris Lightfoot who did GIS for <a href="http://mysociety.org/">mysociety</a> projects such as <a href="http://writetothem.com/">WriteToThem</a>, and Jo Walsh of <a href="http://mappinghacks.com/">mapping hacks</a>. We hope to leave plenty of time for discussion after short speeches.</p>
+<p>Anyone is welcome to attend the event, though an email in advance to <a href="mailto:okforums-info@okfn.org">okforums-info@okfn.org</a> would be appreciated. It is at the Stanhope Centre near Marble Arch in London, from 7-9pm.</p>
+";}i:13;a:4:{s:5:"title";s:34:"Maps reflect and create reality...";s:4:"link";s:51:"http://mappinghacks.com/index.cgi/2005/03/28#gaelic";s:11:"description";s:1463:"
+Reality is what the maps tell us, whether or not that reflects reality on the ground.
+In Ireland it is now illegal for the Ordnance Survey to use 
+<a href="http://sfgate.com/cgi-bin/article.cgi?file=/news/archive/2005/03/28/international/i121952S03.DTL">English names on maps of certain areas.</a>
+
+<p>
+The question of what a place should be called brings forth issues of control and domination, freedom and self determination, throwing off the cloak of foreign rule in favor of the real place.<p>  Names have the power to create reality. 
+
+<blockquote>
+Another impact of the law is that, for many places, the government has settled eons of argument about what the locality's real Gaelic name should be. Some villages and smaller rural entities called "townlands" have had rival spellings and even totally competing names.
+<p>
+The town of Mountcharles in northwest County Donegal, for instance, has often been known in its straight Gaelic translation "Moin Searlas," but the government-approved list rejects this in favor of a more medieval name "Tamhnach an tSalainn," pronounced as "townuck awn tallan" and meaning "hill of salt."
+</blockquote>
+
+Has the government truly 'settled eons of argument' about what the real name should be?  Or has it just endorsed one set of geographic signifiers, putting a thumb on the scale as it weighs in with an 'official' preference?<p>
+
+Mountcharles, Moin Searlas, Tamhnach an tSalainn, or hill of salt...words have power.  ";s:7:"summary";s:1463:"
+Reality is what the maps tell us, whether or not that reflects reality on the ground.
+In Ireland it is now illegal for the Ordnance Survey to use 
+<a href="http://sfgate.com/cgi-bin/article.cgi?file=/news/archive/2005/03/28/international/i121952S03.DTL">English names on maps of certain areas.</a>
+
+<p>
+The question of what a place should be called brings forth issues of control and domination, freedom and self determination, throwing off the cloak of foreign rule in favor of the real place.<p>  Names have the power to create reality. 
+
+<blockquote>
+Another impact of the law is that, for many places, the government has settled eons of argument about what the locality's real Gaelic name should be. Some villages and smaller rural entities called "townlands" have had rival spellings and even totally competing names.
+<p>
+The town of Mountcharles in northwest County Donegal, for instance, has often been known in its straight Gaelic translation "Moin Searlas," but the government-approved list rejects this in favor of a more medieval name "Tamhnach an tSalainn," pronounced as "townuck awn tallan" and meaning "hill of salt."
+</blockquote>
+
+Has the government truly 'settled eons of argument' about what the real name should be?  Or has it just endorsed one set of geographic signifiers, putting a thumb on the scale as it weighs in with an 'official' preference?<p>
+
+Mountcharles, Moin Searlas, Tamhnach an tSalainn, or hill of salt...words have power.  ";}i:14;a:4:{s:5:"title";s:27:"Honey, I Geotagged The Kids";s:4:"link";s:63:"http://mappinghacks.com/index.cgi/2005/03/25#geotagged-the-kids";s:11:"description";s:1014:"<p>The Feature has an article written by Michael Sharon for Douglas Rushkoff on
+<a
+href="http://www.thefeature.com/article?articleid=101490&ref=6373918">collaborative
+cartography</a>, featuring <em>Mapping Hacks</em>.</p>
+<blockquote>
+"Everything that people do has a geospatial component. We do everything
+somewhere. Even thinking," says Rich Gibson, self-taught computer geek and
+co-author, along with Schuyler Erle and Jo Walsh, of O'Reilly's forthcoming
+book <em>Mapping Hacks</em>, who believes that allowing normal people to
+manage, present and create media with a geospatial component will revolutionize
+and democratize the process and practice of cartography. Although,
+historically, cartography was a highly political, read-only medium for all but
+a select few, now, thanks to our new tools, we all have the potential to make
+our own maps. Cartography has become a read/write medium.  </blockquote>
+<p>It's a perceptive article on the state of modern, collaborative, digital
+mapping - go check it out.</p>";s:7:"summary";s:1014:"<p>The Feature has an article written by Michael Sharon for Douglas Rushkoff on
+<a
+href="http://www.thefeature.com/article?articleid=101490&ref=6373918">collaborative
+cartography</a>, featuring <em>Mapping Hacks</em>.</p>
+<blockquote>
+"Everything that people do has a geospatial component. We do everything
+somewhere. Even thinking," says Rich Gibson, self-taught computer geek and
+co-author, along with Schuyler Erle and Jo Walsh, of O'Reilly's forthcoming
+book <em>Mapping Hacks</em>, who believes that allowing normal people to
+manage, present and create media with a geospatial component will revolutionize
+and democratize the process and practice of cartography. Although,
+historically, cartography was a highly political, read-only medium for all but
+a select few, now, thanks to our new tools, we all have the potential to make
+our own maps. Cartography has become a read/write medium.  </blockquote>
+<p>It's a perceptive article on the state of modern, collaborative, digital
+mapping - go check it out.</p>";}i:15;a:4:{s:5:"title";s:67:"Compositing your own terrain models with Landsat-7 and SRTM, pt. II";s:4:"link";s:58:"http://mappinghacks.com/index.cgi/2005/03/24#compositing-2";s:11:"description";s:1039:"
+<p>Some explorations of the Straits of Gibraltar at a recent "tactical media"
+workshop in Ljubljana yielded some insights into using GRASS to marshal geodata
+for 3-D terrain modelling. The first image is a false color composite of
+Tangier, Morocco, and the second is a true color composite. The third is a
+rendered 3-D animation (about 600k) of the Straits looking eastward, with
+Tarifa, Spain on the left, and Tangier on the right. All three were made
+using free geodata from NASA and F/OSS tools, including GRASS, GDAL, and
+POV-Ray.</p>
+
+<a href="/projects/povray/straits-1.jpg">
+<img class="imgleft" src="/misc/2005/03/straits-1_t.jpg" width="150" /></a>
+
+<a href="/projects/povray/straits-2.jpg">
+<img class="imgleft" src="/misc/2005/03/straits-2_t.jpg" width="150" /></a>
+
+<a href="/projects/povray/straits.avi">
+<img class="imgleft" src="/misc/2005/03/straits-3_t.jpg" width="150" /></a>
+
+<br clear="left" />
+
+<p><a href="http://mappinghacks.com/index.cgi/landsat/compositing-2.html?seemore=y" class="seemore">Read more...</a></p>
+
+";s:7:"summary";s:1039:"
+<p>Some explorations of the Straits of Gibraltar at a recent "tactical media"
+workshop in Ljubljana yielded some insights into using GRASS to marshal geodata
+for 3-D terrain modelling. The first image is a false color composite of
+Tangier, Morocco, and the second is a true color composite. The third is a
+rendered 3-D animation (about 600k) of the Straits looking eastward, with
+Tarifa, Spain on the left, and Tangier on the right. All three were made
+using free geodata from NASA and F/OSS tools, including GRASS, GDAL, and
+POV-Ray.</p>
+
+<a href="/projects/povray/straits-1.jpg">
+<img class="imgleft" src="/misc/2005/03/straits-1_t.jpg" width="150" /></a>
+
+<a href="/projects/povray/straits-2.jpg">
+<img class="imgleft" src="/misc/2005/03/straits-2_t.jpg" width="150" /></a>
+
+<a href="/projects/povray/straits.avi">
+<img class="imgleft" src="/misc/2005/03/straits-3_t.jpg" width="150" /></a>
+
+<br clear="left" />
+
+<p><a href="http://mappinghacks.com/index.cgi/landsat/compositing-2.html?seemore=y" class="seemore">Read more...</a></p>
+
+";}i:16;a:4:{s:5:"title";s:38:"Open Mapping Featured in New Scientist";s:4:"link";s:58:"http://mappinghacks.com/index.cgi/2005/03/17#new-scientist";s:11:"description";s:1066:"<p>When Jo and I did an IRC interview with New Scientist reporter Will Knight,
+little did we know that his piece, entitled &quot;The New Pioneers of Map
+Making,&quot; would come out so... lyrical sounding:</p>
+<blockquote>
+ARMED with a Global Positioning System receiver and a pair of itchy feet, Jo Walsh walks a different route around town each week. She is slowly but steadily building a digital map of her neighbourhood in Bristol, UK. In doing so, Walsh is reinventing the pioneering spirit, for she is one of hundreds of people using cheap, off-the-shelf satellite tracking equipment to make their own maps.
+</blockquote>
+<p>You can read the rest of the <a
+href="http://www.newscientist.com/article.ns?id=mg18524917.000">article
+preview</a> on the New Scientist website, but apparently you need a
+subscription to read the whole article, for which they are asking a whopping
+&pound;2.95. Perhaps they will be good enough to let us reprint choice bits for
+our gentle readers, who knows. Meanwhile, I think we'd better get Jo some
+lotion for those itchy feet!</p>";s:7:"summary";s:1066:"<p>When Jo and I did an IRC interview with New Scientist reporter Will Knight,
+little did we know that his piece, entitled &quot;The New Pioneers of Map
+Making,&quot; would come out so... lyrical sounding:</p>
+<blockquote>
+ARMED with a Global Positioning System receiver and a pair of itchy feet, Jo Walsh walks a different route around town each week. She is slowly but steadily building a digital map of her neighbourhood in Bristol, UK. In doing so, Walsh is reinventing the pioneering spirit, for she is one of hundreds of people using cheap, off-the-shelf satellite tracking equipment to make their own maps.
+</blockquote>
+<p>You can read the rest of the <a
+href="http://www.newscientist.com/article.ns?id=mg18524917.000">article
+preview</a> on the New Scientist website, but apparently you need a
+subscription to read the whole article, for which they are asking a whopping
+&pound;2.95. Perhaps they will be good enough to let us reprint choice bits for
+our gentle readers, who knows. Meanwhile, I think we'd better get Jo some
+lotion for those itchy feet!</p>";}i:17;a:4:{s:5:"title";s:21:"On GIS vs. "Locative"";s:4:"link";s:60:"http://mappinghacks.com/index.cgi/2005/03/16#gis-vs-locative";s:11:"description";s:1789:"<p>The following is an except of an email exchange between me, Jo, Rich, and
+Tyler. Rich's response to Tyler's question was so good that I just had to post
+it here.</p>
+
+<blockquote>
+<p>&gt; You know we are different breeds though, right?  You guys
+talk 'location', I talk 'GIS' - is that fair to say?</p>
+
+<p>At one level, thinking 'locative' means doing geo stuff
+without actually having learned the traditional geo toolsets :-)</p>
+
+<p>Dirk-Willem van Gulik talked about the newspapers publishing information 
+on tidal levels/flood warnings in the Netherlands (where he is from).  The 
+hard core GIS folks were against it, talking about how the newspaper was 
+using imperfect data, and how that precision mattered.  How, in fact, 
+inches of error made the difference literally between life and death.</p>
+
+<p>As it turned out, the public loved the data, imperfect as it was, and 
+turned out to be perfectly capable of applying the appropriate quality 
+filters To not make life or death decisions based on the morning's post.</p>
+
+<p>This brought up the whole issue of precision versus ubiquity.  Which is 
+better, a limited high resolution data set, or a crappy data set with 
+universal coverage?  The answer to me seems obvious: 'yes.'  Some folks 
+get stuck on either side of that, arguing furiously for precision, less 
+often for universal coverage at the cost of precision/accuracy.</p>
+
+<p>I think that the whole of existing GIS practices and tools are 
+interesting, but they often are trying to answer questions that I am not 
+that interested in asking, or perhaps better stated, they don't address 
+the questions that I am interested in.</p>
+
+</blockquote>
+
+<p><a href="http://mappinghacks.com/index.cgi/book/gis-vs-locative.html?seemore=y" class="seemore">Read more...</a></p>
+
+";s:7:"summary";s:1789:"<p>The following is an except of an email exchange between me, Jo, Rich, and
+Tyler. Rich's response to Tyler's question was so good that I just had to post
+it here.</p>
+
+<blockquote>
+<p>&gt; You know we are different breeds though, right?  You guys
+talk 'location', I talk 'GIS' - is that fair to say?</p>
+
+<p>At one level, thinking 'locative' means doing geo stuff
+without actually having learned the traditional geo toolsets :-)</p>
+
+<p>Dirk-Willem van Gulik talked about the newspapers publishing information 
+on tidal levels/flood warnings in the Netherlands (where he is from).  The 
+hard core GIS folks were against it, talking about how the newspaper was 
+using imperfect data, and how that precision mattered.  How, in fact, 
+inches of error made the difference literally between life and death.</p>
+
+<p>As it turned out, the public loved the data, imperfect as it was, and 
+turned out to be perfectly capable of applying the appropriate quality 
+filters To not make life or death decisions based on the morning's post.</p>
+
+<p>This brought up the whole issue of precision versus ubiquity.  Which is 
+better, a limited high resolution data set, or a crappy data set with 
+universal coverage?  The answer to me seems obvious: 'yes.'  Some folks 
+get stuck on either side of that, arguing furiously for precision, less 
+often for universal coverage at the cost of precision/accuracy.</p>
+
+<p>I think that the whole of existing GIS practices and tools are 
+interesting, but they often are trying to answer questions that I am not 
+that interested in asking, or perhaps better stated, they don't address 
+the questions that I am interested in.</p>
+
+</blockquote>
+
+<p><a href="http://mappinghacks.com/index.cgi/book/gis-vs-locative.html?seemore=y" class="seemore">Read more...</a></p>
+
+";}i:18;a:4:{s:5:"title";s:23:"Web Mapping Illustrated";s:4:"link";s:62:"http://mappinghacks.com/index.cgi/2005/03/15#introducing-tyler";s:11:"description";s:813:"<p><em>Mapping Hacks</em> tech reviewer and all-around GIS hacker Tyler
+Mitchell (aka spatialguru) has been working on his own book for O'Reilly,
+entitled <em>Web Mapping Illustrated</em>, which will provide a more
+traditional O'Reilly-style intro to basic Open Source GIS tools like GDAL and
+MapServer. You can peruse some of Tyler's topical musings on the subject of
+GIS and mapping on his <a
+href="http://www.oreillynet.com/pub/au/Mitchell_Tyler">O'Reilly Net</a> blog.
+We think that the two books will complement each other nicely - which means
+you'll have to run out and get both, of course, when they come out - and so
+we've invited him to help us keep tabs on the fast-changing world of GIS and
+digital mapping on the mappinghacks.com weblog, which he has graciously agreed
+to do.  Take it away, Tyler!</p>";s:7:"summary";s:813:"<p><em>Mapping Hacks</em> tech reviewer and all-around GIS hacker Tyler
+Mitchell (aka spatialguru) has been working on his own book for O'Reilly,
+entitled <em>Web Mapping Illustrated</em>, which will provide a more
+traditional O'Reilly-style intro to basic Open Source GIS tools like GDAL and
+MapServer. You can peruse some of Tyler's topical musings on the subject of
+GIS and mapping on his <a
+href="http://www.oreillynet.com/pub/au/Mitchell_Tyler">O'Reilly Net</a> blog.
+We think that the two books will complement each other nicely - which means
+you'll have to run out and get both, of course, when they come out - and so
+we've invited him to help us keep tabs on the fast-changing world of GIS and
+digital mapping on the mappinghacks.com weblog, which he has graciously agreed
+to do.  Take it away, Tyler!</p>";}i:19;a:4:{s:5:"title";s:44:"Why Location-Based Services (Currently) Suck";s:4:"link";s:58:"http://mappinghacks.com/index.cgi/2005/03/15#why-lbs-sucks";s:11:"description";s:461:"
+<p>ORA conference organizer and professional schmoozer Nat Torkington
+recently posted an insightful blog entry on O'Reilly Net proclaiming 2005
+as <a href="http://www.oreillynet.com/pub/wlg/6644">the Year of Local
+Mobile Search</a>. However, his article reads as a litany about why 2005
+<em>won't</em> be the year of mobile search.</p>
+
+<p><a href="http://mappinghacks.com/index.cgi/services/why-lbs-sucks.html?seemore=y" class="seemore">Read more...</a></p>
+
+";s:7:"summary";s:461:"
+<p>ORA conference organizer and professional schmoozer Nat Torkington
+recently posted an insightful blog entry on O'Reilly Net proclaiming 2005
+as <a href="http://www.oreillynet.com/pub/wlg/6644">the Year of Local
+Mobile Search</a>. However, his article reads as a litany about why 2005
+<em>won't</em> be the year of mobile search.</p>
+
+<p><a href="http://mappinghacks.com/index.cgi/services/why-lbs-sucks.html?seemore=y" class="seemore">Read more...</a></p>
+
+";}i:20;a:4:{s:5:"title";s:38:"Cute Dungeons and Dragons Mapping Hack";s:4:"link";s:58:"http://mappinghacks.com/index.cgi/2005/03/15#dnd-projector";s:11:"description";s:535:"<img src="/misc/2005/03/projector.jpg" width="158" height="100"
+class="imgleft" />
+<p><em>Mapping Hacks</em> contributor <a href="http://hook.org/">Anselm</a>
+points us to a web page describing how a number of role-playing game
+enthusiasts have built <a
+href="http://www.d20srd.org/extras/mapProjection.htm">a system for showing
+tactical maps of gameplay on a table top</a> via an overhead projector. Seems
+like a pretty nice and inexpensive setup, and makes you wonder if this might
+have other - dare I say? - more practical uses?</p>";s:7:"summary";s:535:"<img src="/misc/2005/03/projector.jpg" width="158" height="100"
+class="imgleft" />
+<p><em>Mapping Hacks</em> contributor <a href="http://hook.org/">Anselm</a>
+points us to a web page describing how a number of role-playing game
+enthusiasts have built <a
+href="http://www.d20srd.org/extras/mapProjection.htm">a system for showing
+tactical maps of gameplay on a table top</a> via an overhead projector. Seems
+like a pretty nice and inexpensive setup, and makes you wonder if this might
+have other - dare I say? - more practical uses?</p>";}i:21;a:4:{s:5:"title";s:19:"Genomic Cartography";s:4:"link";s:64:"http://mappinghacks.com/index.cgi/2005/03/15#genomic_cartography";s:11:"description";s:430:"
+Bill Fry is at MIT, and has a page on <a href="http://acg.media.mit.edu/people/fry/">Genomic Cartograrphy</a>.
+
+<blockquote>
+ There is a space of highly complex systems for which we lack deep understanding because few techniques exist for visualization of data whose structure and content are undergoing continous change. My research focuses on developing approaches to such data, in particular, the human genome. 
+</blockquote>
+";s:7:"summary";s:430:"
+Bill Fry is at MIT, and has a page on <a href="http://acg.media.mit.edu/people/fry/">Genomic Cartograrphy</a>.
+
+<blockquote>
+ There is a space of highly complex systems for which we lack deep understanding because few techniques exist for visualization of data whose structure and content are undergoing continous change. My research focuses on developing approaches to such data, in particular, the human genome. 
+</blockquote>
+";}i:22;a:4:{s:5:"title";s:22:"DON'T MESS UP OUR MAPS";s:4:"link";s:57:"http://mappinghacks.com/index.cgi/2005/03/13#os_hypocrisy";s:11:"description";s:936:"<p>This press release, reposted to the <a href="http://ec-gis.org/egip">EGIP</a> list, made me yelp:<br/>
+<a href="http://www.eastleighlibdems.org.uk/news/158.html">Ordnance Survey lobbies MEPs over INSPIRE wording</a></p>
+<p>Tho it doesn't mention the proposed <a href="http://space.frot.org/docs/inspire_directive.html">INSPIRE directive</a> by name, it illustrates the semi-privatised UK National Mapping Agency's commercial obsession and greedy monopoly fairly clearly:<br/>
+<blockquote>
+"We need to remove any ambiguity in the wording, as it would be a disaster for the Ordnance Survey if it was not able to charge public authorities and others for its work."</blockquote>
+</p>
+<p>The debate over state-exercised monopoly of public goods, versus government cost-recovery and money incentive in accurate mapping rumbles on, and OS is unconcerned, the poster child of the centre-right-led government information licensing market.</p>";s:7:"summary";s:936:"<p>This press release, reposted to the <a href="http://ec-gis.org/egip">EGIP</a> list, made me yelp:<br/>
+<a href="http://www.eastleighlibdems.org.uk/news/158.html">Ordnance Survey lobbies MEPs over INSPIRE wording</a></p>
+<p>Tho it doesn't mention the proposed <a href="http://space.frot.org/docs/inspire_directive.html">INSPIRE directive</a> by name, it illustrates the semi-privatised UK National Mapping Agency's commercial obsession and greedy monopoly fairly clearly:<br/>
+<blockquote>
+"We need to remove any ambiguity in the wording, as it would be a disaster for the Ordnance Survey if it was not able to charge public authorities and others for its work."</blockquote>
+</p>
+<p>The debate over state-exercised monopoly of public goods, versus government cost-recovery and money incentive in accurate mapping rumbles on, and OS is unconcerned, the poster child of the centre-right-led government information licensing market.</p>";}i:23;a:4:{s:5:"title";s:22:"more mapscript cookery";s:4:"link";s:57:"http://mappinghacks.com/index.cgi/2005/03/12#mapscript_03";s:11:"description";s:427:"<p>A bona fide mapscript recipe this time, on <a href="/projects/mapscript/02_python-feature-annot.html">annotating features with python/mapscript</a>. Some of it may be  a little cargo-culted.</p>
+<p>This only describes about 1/3 of my recent mapscript adventures, but i'm
+trying to create some distributable code and do a python rewrite of <a
+href="http://map.wirelesslondon.info">map.wirelesslondon</a> at the moment...
+</p>";s:7:"summary";s:427:"<p>A bona fide mapscript recipe this time, on <a href="/projects/mapscript/02_python-feature-annot.html">annotating features with python/mapscript</a>. Some of it may be  a little cargo-culted.</p>
+<p>This only describes about 1/3 of my recent mapscript adventures, but i'm
+trying to create some distributable code and do a python rewrite of <a
+href="http://map.wirelesslondon.info">map.wirelesslondon</a> at the moment...
+</p>";}i:24;a:4:{s:5:"title";s:58:"Why Polygons are not always enough to represent boundaries";s:4:"link";s:65:"http://mappinghacks.com/index.cgi/2005/03/11#baarle_nassau_hertog";s:11:"description";s:788:"
+Part of the Southern border of the Netherlands, with Belgium, has a certain, 
+shall we say 'complexity.'  
+<img src="/misc/2005/03/baarle2.gif" width="150" class="imgleft"></a>
+<blockquote>
+Orange portions within green portions represent exclaves of the Netherlands
+completely surrounded by Belgian territory which are in turn completely
+surrounded by the territory of the Netherlands:
+</blockquote>
+Traditionally, the nationality of your house is determined by the country where your 'front' door opens, so there are cases of people changing countries with a bit of carpentry.<p>
+I suppose in a world where a random wardrobe can open into a whole new world that this makes perfect sense.
+<a href="http://ontology.buffalo.edu/smith/baarle.htm">Read more about Islands within Islands</a>
+";s:7:"summary";s:788:"
+Part of the Southern border of the Netherlands, with Belgium, has a certain, 
+shall we say 'complexity.'  
+<img src="/misc/2005/03/baarle2.gif" width="150" class="imgleft"></a>
+<blockquote>
+Orange portions within green portions represent exclaves of the Netherlands
+completely surrounded by Belgian territory which are in turn completely
+surrounded by the territory of the Netherlands:
+</blockquote>
+Traditionally, the nationality of your house is determined by the country where your 'front' door opens, so there are cases of people changing countries with a bit of carpentry.<p>
+I suppose in a world where a random wardrobe can open into a whole new world that this makes perfect sense.
+<a href="http://ontology.buffalo.edu/smith/baarle.htm">Read more about Islands within Islands</a>
+";}i:25;a:4:{s:5:"title";s:22:"more mapscript recipes";s:4:"link";s:57:"http://mappinghacks.com/index.cgi/2005/03/11#mapscript_02";s:11:"description";s:605:"<p>As i learn more about mapserver and mapscript, I keep feeling compelled to contribute docs of some kind to it; sometimes it's taken a lot of digging around in the API docs and source to figure out what i want to do.</p>
+<p>Today i turned a couple of my mapservers into Web Feature Service servers and clients, and wanted to share with the world how easy that is. I've been doing a lot of python/mapscript hacking, more than one recipe's worth, and  will get some of that written down soon.  </p>
+<p><a href="http://mappinghacks.com/projects/mapscript/03_mapserver_wfs.html">Mapserver WFS config</a></p>";s:7:"summary";s:605:"<p>As i learn more about mapserver and mapscript, I keep feeling compelled to contribute docs of some kind to it; sometimes it's taken a lot of digging around in the API docs and source to figure out what i want to do.</p>
+<p>Today i turned a couple of my mapservers into Web Feature Service servers and clients, and wanted to share with the world how easy that is. I've been doing a lot of python/mapscript hacking, more than one recipe's worth, and  will get some of that written down soon.  </p>
+<p><a href="http://mappinghacks.com/projects/mapscript/03_mapserver_wfs.html">Mapserver WFS config</a></p>";}i:26;a:4:{s:5:"title";s:24:"The Neighborhood Project";s:4:"link";s:65:"http://mappinghacks.com/index.cgi/2005/03/10#neighborhood-project";s:11:"description";s:984:"<img src="/misc/2005/03/neighborhood_project.jpg" height="150" width="150"
+class="imgright" />
+<p>Jonathan Moore sent us a link to <a href="http://hood.theory.org/">The
+Neighborhood Project</a>:</p>
+
+<p><blockquote> The Neighborhood Project is creating a map of city
+neighborhoods based on the collective opinions of internet users. Addresses and
+neighborhood data are translated into latitude and longitude values, and then
+drawn on the map....  This is an experiment in collective knowledge. The more
+people who add their opinion to the database, the more accurate the
+neighborhood boundaries become.  </blockquote></p>
+
+<p>They've started with San Francisco, and are using our free geocoder at <a
+href="http://geocoder.us/">geocoder.us</a> to do the address lookups. They've
+done a cute "magnifying" DHTML hack for viewing <a
+href="http://hood.theory.org/zoom_map.html">whole map</a> at once. If you're
+interested, they've published source under the GPL. I want one for London!</p>";s:7:"summary";s:984:"<img src="/misc/2005/03/neighborhood_project.jpg" height="150" width="150"
+class="imgright" />
+<p>Jonathan Moore sent us a link to <a href="http://hood.theory.org/">The
+Neighborhood Project</a>:</p>
+
+<p><blockquote> The Neighborhood Project is creating a map of city
+neighborhoods based on the collective opinions of internet users. Addresses and
+neighborhood data are translated into latitude and longitude values, and then
+drawn on the map....  This is an experiment in collective knowledge. The more
+people who add their opinion to the database, the more accurate the
+neighborhood boundaries become.  </blockquote></p>
+
+<p>They've started with San Francisco, and are using our free geocoder at <a
+href="http://geocoder.us/">geocoder.us</a> to do the address lookups. They've
+done a cute "magnifying" DHTML hack for viewing <a
+href="http://hood.theory.org/zoom_map.html">whole map</a> at once. If you're
+interested, they've published source under the GPL. I want one for London!</p>";}i:27;a:4:{s:5:"title";s:17:"GRASS 6.0 is out!";s:4:"link";s:53:"http://mappinghacks.com/index.cgi/2005/03/10#grass-60";s:11:"description";s:585:"<p>GRASS 6.0.0 was released yesterday, with the shiny new vector model finally
+in a stable version. Read the <a
+href="http://grass.itc.it/announces/announce_grass600.html">comprehensive
+announcement</a>, then get it from the <a
+href="http://grass.itc.it/grass60/">European</a> or <a
+href="http://grass.baylor.edu/grass60/">US</a> mirrors.</p>
+
+<p>You can also read the <a
+href="http://grass.ibiblio.org/devel/grasshist.html">full history</a>, as well
+as the <a
+href="http://grass.itc.it/pipermail/grass5/2004-August/015127.html">SLOC
+analysis</a>.</p>
+
+<p>GRASS turns 24 this year.</p>";s:7:"summary";s:585:"<p>GRASS 6.0.0 was released yesterday, with the shiny new vector model finally
+in a stable version. Read the <a
+href="http://grass.itc.it/announces/announce_grass600.html">comprehensive
+announcement</a>, then get it from the <a
+href="http://grass.itc.it/grass60/">European</a> or <a
+href="http://grass.baylor.edu/grass60/">US</a> mirrors.</p>
+
+<p>You can also read the <a
+href="http://grass.ibiblio.org/devel/grasshist.html">full history</a>, as well
+as the <a
+href="http://grass.itc.it/pipermail/grass5/2004-August/015127.html">SLOC
+analysis</a>.</p>
+
+<p>GRASS turns 24 this year.</p>";}i:28;a:4:{s:5:"title";s:37:"Phone Numbers are (sometimes) a place";s:4:"link";s:52:"http://mappinghacks.com/index.cgi/2005/03/10#google2";s:11:"description";s:2436:"
+In their continuing quest to have something to say about everything on the web, 
+Google has a phone book service.  If you enter a phone number it will often
+return listing information, along with an address.
+<p>
+One could refer to this as YACK, Yet Another Category Killer.  Google seems 
+to be good at these.  A slightly amusing, albeit I suspect temporary,
+aspect of the Google PhoneBook is that they include links to map 
+that phone number.  Well, that isn't amusing.  The amusing thing 
+is that they link to Yahoo! Maps and MapQuest.  Notice anyone missing?
+<p>
+Right!  Google Maps isn't in the house.  Another funny thing is that 
+it doesn't actually matter that much if you use Yahoo! Maps or MapQuest,
+you are getting NAVTEQ data.
+<p>
+But that isn't very interesting either.  What is interesting is that
+you can use the Google PhoneBook to map telephone numbers.  And at 
+GMacker.com, 'Where lazy scientists congregate to excorgitate about,'
+they've <a href="http://www.gmacker.com/web/content/mapit/mapit.htm">
+created a Firefox extension to get driving directions based on
+phone numbers</a>.
+<p>
+It has one UI quirk: you can enter your starting phone number, but 
+you have to highlight the destination from a web page.  It also seemed
+to take a bit longer to run then seemed necesary.  Which brings up
+another point...I'm not completely sure that installing random dodgy 
+Firefox extensions is a completely good idea.
+<p>
+I don't actually _know_ that my browser has been p0wn3d, but 
+the plug in was written by "inahg asum" which seems to be an obvious
+acronym for 'I Now am having good amusement (you) Silly User (of) Mozilla.'
+<p>
+(later)
+I unpacked the extension and took a look inside.  It appears that the 
+extension is a bit of a wrapper to let you select phone numbers, and the
+it sends those to a web service running on the gmacker.com web site.
+This has some privacy implications in that all your phone numbers 
+are belong to gmacker, and stability risks (like, what happens when 
+gmacker gets too much traffic?), but it explains why the search 
+takes a bit of time.
+<P>
+But this also reveals a bit about how you can create Firefox extensions
+to provide the UI glue to otherwise normal web service.  Which 'obviously'
+means that we need to hop right on creating an address or phonenumber 
+to geocoder.us Firefox extension, as well as a straight phone-number to 
+geocoder form on geocoder.us.
+<p>
+happy happy fun fun.
+";s:7:"summary";s:2436:"
+In their continuing quest to have something to say about everything on the web, 
+Google has a phone book service.  If you enter a phone number it will often
+return listing information, along with an address.
+<p>
+One could refer to this as YACK, Yet Another Category Killer.  Google seems 
+to be good at these.  A slightly amusing, albeit I suspect temporary,
+aspect of the Google PhoneBook is that they include links to map 
+that phone number.  Well, that isn't amusing.  The amusing thing 
+is that they link to Yahoo! Maps and MapQuest.  Notice anyone missing?
+<p>
+Right!  Google Maps isn't in the house.  Another funny thing is that 
+it doesn't actually matter that much if you use Yahoo! Maps or MapQuest,
+you are getting NAVTEQ data.
+<p>
+But that isn't very interesting either.  What is interesting is that
+you can use the Google PhoneBook to map telephone numbers.  And at 
+GMacker.com, 'Where lazy scientists congregate to excorgitate about,'
+they've <a href="http://www.gmacker.com/web/content/mapit/mapit.htm">
+created a Firefox extension to get driving directions based on
+phone numbers</a>.
+<p>
+It has one UI quirk: you can enter your starting phone number, but 
+you have to highlight the destination from a web page.  It also seemed
+to take a bit longer to run then seemed necesary.  Which brings up
+another point...I'm not completely sure that installing random dodgy 
+Firefox extensions is a completely good idea.
+<p>
+I don't actually _know_ that my browser has been p0wn3d, but 
+the plug in was written by "inahg asum" which seems to be an obvious
+acronym for 'I Now am having good amusement (you) Silly User (of) Mozilla.'
+<p>
+(later)
+I unpacked the extension and took a look inside.  It appears that the 
+extension is a bit of a wrapper to let you select phone numbers, and the
+it sends those to a web service running on the gmacker.com web site.
+This has some privacy implications in that all your phone numbers 
+are belong to gmacker, and stability risks (like, what happens when 
+gmacker gets too much traffic?), but it explains why the search 
+takes a bit of time.
+<P>
+But this also reveals a bit about how you can create Firefox extensions
+to provide the UI glue to otherwise normal web service.  Which 'obviously'
+means that we need to hop right on creating an address or phonenumber 
+to geocoder.us Firefox extension, as well as a straight phone-number to 
+geocoder form on geocoder.us.
+<p>
+happy happy fun fun.
+";}i:29;a:4:{s:5:"title";s:14:"Noise Mapping ";s:4:"link";s:57:"http://mappinghacks.com/index.cgi/2005/03/10#noisemapping";s:11:"description";s:994:"
+<img src="/misc/2005/03/noise1.png" alt="a tile of a noise map" class="imgright">The English 'defra' (Department for Environment, Food, and Rural Affairs) has 
+a site on <a href="http://www.noisemapping.org/Default.asp">Noise Mapping England</a>
+<p>
+<blockquote>
+Noise - unwanted sound - is a universal problem and most of us have been affected by it at some point in our lives.
+</blockquote>
+<p>
+It goes way beyond noise as a problem.  Noise is.  And it has effects, and
+those effects are seldom just good, or bad.  But before we can start to
+examine the effects of sound (note the clever shift from the mostly
+negative 'noise' to the more neutral 'sound') in the human environment 
+we need to track and map it.
+<p>
+So it is all pretty groovy to fine the defra site.  And of course, more then a
+bit what I call infuriating to see those beautiful Tower Hamlets maps with 
+those dreaded words on the bottom.<p>
+Yes, those words "© Crown copyright. All rights reserved Defra 100018880
+2004"
+<p>";s:7:"summary";s:994:"
+<img src="/misc/2005/03/noise1.png" alt="a tile of a noise map" class="imgright">The English 'defra' (Department for Environment, Food, and Rural Affairs) has 
+a site on <a href="http://www.noisemapping.org/Default.asp">Noise Mapping England</a>
+<p>
+<blockquote>
+Noise - unwanted sound - is a universal problem and most of us have been affected by it at some point in our lives.
+</blockquote>
+<p>
+It goes way beyond noise as a problem.  Noise is.  And it has effects, and
+those effects are seldom just good, or bad.  But before we can start to
+examine the effects of sound (note the clever shift from the mostly
+negative 'noise' to the more neutral 'sound') in the human environment 
+we need to track and map it.
+<p>
+So it is all pretty groovy to fine the defra site.  And of course, more then a
+bit what I call infuriating to see those beautiful Tower Hamlets maps with 
+those dreaded words on the bottom.<p>
+Yes, those words "© Crown copyright. All rights reserved Defra 100018880
+2004"
+<p>";}i:30;a:4:{s:5:"title";s:53:"HOW-TO: Make your own annotated multimedia Google map";s:4:"link";s:52:"http://mappinghacks.com/index.cgi/2005/03/09#google1";s:11:"description";s:1443:"
+How would you like to create your own geo-annotations and lay them on top of Google 
+Maps?  Do I hear 'Yes sir, please sir?'  Jon Udell wrote about his 
+<a href="http://weblog.infoworld.com/udell/2005/02/25.html#a1185">Five minute walking tour of Keene, NY</a>. He also created a Flash Animation that 
+<a href="http://weblog.infoworld.com/udell/gems/gmap2_flash.html"">demonstrates the power of showing context with the big view</a> before zooming in (which I was trying to do with my 
+<a href="http://www.testingrange.com/cgi-bin/boomzoom.cgi">Boom Zoom</a> tool).
+<p>
+And now 
+<a href="http://www.engadget.com/entry/1234000917034960">engadget</a> has a great 
+tutorial on adding your own annotations to Google Maps.  
+<p>
+Jon's post <a href="http://weblog.infoworld.com/udell/2005/03/08.html#a1192">Annotating 
+The Planet</a> gets it right.  
+<blockquote>
+When I finished making the interactive version of my neighborhood tour, along with a screencast, it was clear that Google Maps is every bit as revolutionary as my first instincts told me. Not because Google invented a new geospatial engine or compiled better data. They didn't. But simply -- and yet profoundly -- because Google Maps is a framework we can all use to annotate the physical world. 
+</blockquote>
+I don't think that Google Maps is necesarily the <i>best</i> way to solve these problems, but damn!  It makes things possible that were a pain before.  Platforms are good.
+
+";s:7:"summary";s:1443:"
+How would you like to create your own geo-annotations and lay them on top of Google 
+Maps?  Do I hear 'Yes sir, please sir?'  Jon Udell wrote about his 
+<a href="http://weblog.infoworld.com/udell/2005/02/25.html#a1185">Five minute walking tour of Keene, NY</a>. He also created a Flash Animation that 
+<a href="http://weblog.infoworld.com/udell/gems/gmap2_flash.html"">demonstrates the power of showing context with the big view</a> before zooming in (which I was trying to do with my 
+<a href="http://www.testingrange.com/cgi-bin/boomzoom.cgi">Boom Zoom</a> tool).
+<p>
+And now 
+<a href="http://www.engadget.com/entry/1234000917034960">engadget</a> has a great 
+tutorial on adding your own annotations to Google Maps.  
+<p>
+Jon's post <a href="http://weblog.infoworld.com/udell/2005/03/08.html#a1192">Annotating 
+The Planet</a> gets it right.  
+<blockquote>
+When I finished making the interactive version of my neighborhood tour, along with a screencast, it was clear that Google Maps is every bit as revolutionary as my first instincts told me. Not because Google invented a new geospatial engine or compiled better data. They didn't. But simply -- and yet profoundly -- because Google Maps is a framework we can all use to annotate the physical world. 
+</blockquote>
+I don't think that Google Maps is necesarily the <i>best</i> way to solve these problems, but damn!  It makes things possible that were a pain before.  Platforms are good.
+
+";}i:31;a:4:{s:5:"title";s:18:"Georegister a PDF?";s:4:"link";s:48:"http://mappinghacks.com/index.cgi/2005/03/08#pdf";s:11:"description";s:2231:"
+<a href="http://www.layton-graphics.com/">Layton Graphics</a> has released a 
+plug in for Adobe Acrobat and Adobe Reader that lets you georegister a PDF.
+This is more or less the same as georeferencing a raster image.
+
+<p>
+George Demmy says it best, so I'll just quote his mail to the geowankers list
+<blockquote>
+Layton Graphics, the company I work for, has released a plug-in to
+Adobe Acrobat and Adobe Reader that makes it possible to georegister a
+PDF, after which you can do stuff like display coordinates in
+different projections and datums, zoom to coordinates, make
+measurements, get the map azimuth of a line, and check the magnetic
+declination (via WMM 2005), import data from CSV and shape files,
+etc. If your laptop has a GPS, you display where you are on a
+GeoPDF. It's free to play with, and the you can temporarily
+georegister PDFs in either version.  A fellow employee bought a
+panasonic toughbook off ebay for $150, and with a $50 GPS has got
+himself a Dusie of system for recording where his bass holes are.
+<p>
+The plug-in is available at 
+<a href="http://www.layton-graphics.com/downloads.html">
+http://www.layton-graphics.com/downloads.html</a>. 
+We've got a blog in its
+infant stages at 
+<a href="http://geopdf.blogspot.com"> 
+http://geopdf.blogspot.com</a>, 
+wherein we're going to
+post tips, tricks, and what's going on with the development of the
+plug-in.  I work on the geodesy naughty bits. If you've got questions
+or concerns fire away.
+<p>                                                                                
+There are a couple of example maps on the download site, but you can
+georegister any PDF, whether it's a map or not. You're probably
+familiar with the UT library map collection at
+<a href="http://www.lib.utexas.edu/maps/index.html">http://www.lib.utexas.edu/maps/index.html</a> -- it's a good place to get
+PDF maps and JPEGs easily converted to PDF, and then to GeoPDF.
+</blockquote>
+
+One of the more interesting bits of information from that post is that Toughbooks
+are available on ebay for $150.  Those are great computers.  I remember Matt Westervelt and Terry talking about their Toughbook fights when we were at  Etech in 2002...any computer you can fight with is 'da bomb.'
+";s:7:"summary";s:2231:"
+<a href="http://www.layton-graphics.com/">Layton Graphics</a> has released a 
+plug in for Adobe Acrobat and Adobe Reader that lets you georegister a PDF.
+This is more or less the same as georeferencing a raster image.
+
+<p>
+George Demmy says it best, so I'll just quote his mail to the geowankers list
+<blockquote>
+Layton Graphics, the company I work for, has released a plug-in to
+Adobe Acrobat and Adobe Reader that makes it possible to georegister a
+PDF, after which you can do stuff like display coordinates in
+different projections and datums, zoom to coordinates, make
+measurements, get the map azimuth of a line, and check the magnetic
+declination (via WMM 2005), import data from CSV and shape files,
+etc. If your laptop has a GPS, you display where you are on a
+GeoPDF. It's free to play with, and the you can temporarily
+georegister PDFs in either version.  A fellow employee bought a
+panasonic toughbook off ebay for $150, and with a $50 GPS has got
+himself a Dusie of system for recording where his bass holes are.
+<p>
+The plug-in is available at 
+<a href="http://www.layton-graphics.com/downloads.html">
+http://www.layton-graphics.com/downloads.html</a>. 
+We've got a blog in its
+infant stages at 
+<a href="http://geopdf.blogspot.com"> 
+http://geopdf.blogspot.com</a>, 
+wherein we're going to
+post tips, tricks, and what's going on with the development of the
+plug-in.  I work on the geodesy naughty bits. If you've got questions
+or concerns fire away.
+<p>                                                                                
+There are a couple of example maps on the download site, but you can
+georegister any PDF, whether it's a map or not. You're probably
+familiar with the UT library map collection at
+<a href="http://www.lib.utexas.edu/maps/index.html">http://www.lib.utexas.edu/maps/index.html</a> -- it's a good place to get
+PDF maps and JPEGs easily converted to PDF, and then to GeoPDF.
+</blockquote>
+
+One of the more interesting bits of information from that post is that Toughbooks
+are available on ebay for $150.  Those are great computers.  I remember Matt Westervelt and Terry talking about their Toughbook fights when we were at  Etech in 2002...any computer you can fight with is 'da bomb.'
+";}i:32;a:4:{s:5:"title";s:36:"HostGIS: Linux + PostGIS + MapServer";s:4:"link";s:52:"http://mappinghacks.com/index.cgi/2005/03/02#hostgis";s:11:"description";s:957:"<p>We recently ran across <a
+href="http://copia2.copia.net/cgi-bin/Webpage.mcgi?UF.profile=HostGIS&UF.username=&UF.password=&WEBPAGE.action=view&WEBPAGE.pageid=7">HostGIS
+Linux</a>, which purports to be a compact, easy-to-install, self-contained
+Linux distro, with PostGIS, MapServer, etc. built-in. I don't think I would use
+this myself, given the availability of GIS packages for Linux distros with <a
+href="http://pkg-grass.alioth.debian.org/cgi-bin/wiki.pl">packaging</a> <a
+href="http://mappinghacks.com/">systems</a>, but it might remove some of the
+sting for someone who's just getting started - word has it that HostGIS runs
+just fine in VMWare, for example.</p>
+<p>In other news, here's a nice case study on <a
+href="http://www.geoplace.com/uploads/FeatureArticle/0502lg.asp">Open Source
+GIS in municipal government</a>, via FreeNode #mapserver.</p>
+<p>Finally, you might have noticed that <a href="http://geourl.org/">GeoURL 2.0</a> is live...</p>";s:7:"summary";s:957:"<p>We recently ran across <a
+href="http://copia2.copia.net/cgi-bin/Webpage.mcgi?UF.profile=HostGIS&UF.username=&UF.password=&WEBPAGE.action=view&WEBPAGE.pageid=7">HostGIS
+Linux</a>, which purports to be a compact, easy-to-install, self-contained
+Linux distro, with PostGIS, MapServer, etc. built-in. I don't think I would use
+this myself, given the availability of GIS packages for Linux distros with <a
+href="http://pkg-grass.alioth.debian.org/cgi-bin/wiki.pl">packaging</a> <a
+href="http://mappinghacks.com/">systems</a>, but it might remove some of the
+sting for someone who's just getting started - word has it that HostGIS runs
+just fine in VMWare, for example.</p>
+<p>In other news, here's a nice case study on <a
+href="http://www.geoplace.com/uploads/FeatureArticle/0502lg.asp">Open Source
+GIS in municipal government</a>, via FreeNode #mapserver.</p>
+<p>Finally, you might have noticed that <a href="http://geourl.org/">GeoURL 2.0</a> is live...</p>";}i:33;a:4:{s:5:"title";s:30:"GeoURL 2.0 Slated to Open Soon";s:4:"link";s:61:"http://mappinghacks.com/index.cgi/2005/02/25#geourl-returning";s:11:"description";s:529:"<p>Joshua Schachter's <a href="http://geourl.org/">GeoURL</a>, one of the
+original webpage geo-mapping sites, fell into spam and disuse about a year ago
+(and was sadly only given brief mention in the book), but it's now being given
+new life by Ask Bjorn Hanson of CPAN fame. The website reports that its 2.0
+launch will be "Real Soon Now". It should be interesting to see if the concept
+can be expanded, given the frankly astonishing (pun unintended) developments
+in Open Source GIS that have come about since GeoURL's birth.</p>";s:7:"summary";s:529:"<p>Joshua Schachter's <a href="http://geourl.org/">GeoURL</a>, one of the
+original webpage geo-mapping sites, fell into spam and disuse about a year ago
+(and was sadly only given brief mention in the book), but it's now being given
+new life by Ask Bjorn Hanson of CPAN fame. The website reports that its 2.0
+launch will be "Real Soon Now". It should be interesting to see if the concept
+can be expanded, given the frankly astonishing (pun unintended) developments
+in Open Source GIS that have come about since GeoURL's birth.</p>";}i:34;a:4:{s:5:"title";s:31:"Free Geodata Torrents Available";s:4:"link";s:55:"http://mappinghacks.com/index.cgi/2005/02/24#bittorrent";s:11:"description";s:570:"<p>We're pleased to announce that mappinghacks.com is hosting a tracker for
+free sources of geodata available through BitTorrent. Supported by the
+community, the tracker is already hosting torrents for VMap0, TIGER/Line 2004
+FE, and SRTM 30, with more in the works. The UO Faculty of Cartography <a
+href="http://uo.space.frot.org/?GeodataTorrents">GeodataTorrents</a> has links
+to the available torrents. (There's also a link to this listing on our <a
+href="/data/">geodata</a> page.) Please contact us if you are interested in
+seeding a new torrent of free geodata.</p>";s:7:"summary";s:570:"<p>We're pleased to announce that mappinghacks.com is hosting a tracker for
+free sources of geodata available through BitTorrent. Supported by the
+community, the tracker is already hosting torrents for VMap0, TIGER/Line 2004
+FE, and SRTM 30, with more in the works. The UO Faculty of Cartography <a
+href="http://uo.space.frot.org/?GeodataTorrents">GeodataTorrents</a> has links
+to the available torrents. (There's also a link to this listing on our <a
+href="/data/">geodata</a> page.) Please contact us if you are interested in
+seeding a new torrent of free geodata.</p>";}i:35;a:4:{s:5:"title";s:55:"Mini-HOWTO: Prepping Large Rasters for Use in MapServer";s:4:"link";s:59:"http://mappinghacks.com/index.cgi/2005/02/24#gdal-overviews";s:11:"description";s:1420:"
+<p>In yet another informative post to the MapServer users <a
+href="http://lists.umn.edu/archives/mapserver-users.html">mailing list</a>
+(login required), Frank Warmerdam explains how to use the tiling and overview
+features of <a href="http://gdal.org/">GDAL</a>'s GeoTIFF driver to get
+optimal performance on large raster images in MapServer, QGIS, OpenEV, etc.:</p>
+
+<p><blockquote>
+Assuming your GeoTIFF input is in.tif, you would do something
+like:
+
+<pre>
+$ gdalwarp in.tif latlong.tif -t_srs WGS84 -co TILED=YES
+$ gdaladdo latlong.tif 2 4 8 16 32 64 128 256
+</pre>
+
+The warp reprojects to lat/long (WGS84) and the output file is
+created tiled.  The gdaladdo call adds overviews.  You might want
+to skip the level 2 overview if you are wanting to avoid using too
+much disk space. Keep in mind that TIFF files cannot be larger
+than 4GB.
+</blockquote></p>
+
+<p>Tiling the GeoTIFF allows apps to fetch rectangular sub-areas of the raster
+more efficiently. Similarly, adding overviews (basically embedded thumbnails)
+allows apps to retrieve less data from the file at larger scales, at the
+expense of disk space (because all the overviews have to be stored in the
+GeoTIFF alongside the original data). Most commercial web mapping apps use one
+or both of these techniques to improve server response time. Note that the
+reprojection is unnecessary if the GeoTIFF is already in the right projection
+for your application.</p>";s:7:"summary";s:1420:"
+<p>In yet another informative post to the MapServer users <a
+href="http://lists.umn.edu/archives/mapserver-users.html">mailing list</a>
+(login required), Frank Warmerdam explains how to use the tiling and overview
+features of <a href="http://gdal.org/">GDAL</a>'s GeoTIFF driver to get
+optimal performance on large raster images in MapServer, QGIS, OpenEV, etc.:</p>
+
+<p><blockquote>
+Assuming your GeoTIFF input is in.tif, you would do something
+like:
+
+<pre>
+$ gdalwarp in.tif latlong.tif -t_srs WGS84 -co TILED=YES
+$ gdaladdo latlong.tif 2 4 8 16 32 64 128 256
+</pre>
+
+The warp reprojects to lat/long (WGS84) and the output file is
+created tiled.  The gdaladdo call adds overviews.  You might want
+to skip the level 2 overview if you are wanting to avoid using too
+much disk space. Keep in mind that TIFF files cannot be larger
+than 4GB.
+</blockquote></p>
+
+<p>Tiling the GeoTIFF allows apps to fetch rectangular sub-areas of the raster
+more efficiently. Similarly, adding overviews (basically embedded thumbnails)
+allows apps to retrieve less data from the file at larger scales, at the
+expense of disk space (because all the overviews have to be stored in the
+GeoTIFF alongside the original data). Most commercial web mapping apps use one
+or both of these techniques to improve server response time. Note that the
+reprojection is unnecessary if the GeoTIFF is already in the right projection
+for your application.</p>";}i:36;a:4:{s:5:"title";s:48:"Blender + GDAL + Python = 3-D Terrain Models...?";s:4:"link";s:59:"http://mappinghacks.com/index.cgi/2005/02/24#blender-python";s:11:"description";s:602:"
+<p>Via a post to the <a
+href="http://xserve.flids.com/pipermail/gdal-dev/2005-February/008160.html">GDAL
+mailing list</a>, word comes to us that one Chris Soriano has figured out how
+to use <a href="http://gdal.org/">GDAL</a> and Python to <a
+href="http://www.elysiun.com/forum/viewtopic.php?t=38108">convert digital
+elevation models (DEMs) into 3-D mesh data</a> for use with <a
+href="http://www.blender.org/">Blender</a>, an Open Source 3-D modelling
+package. Although the book contains some <a href="/projects/povray">POV-Ray
+examples</a>, my curiosity about Blender is now thoroughly piqued...</p>";s:7:"summary";s:602:"
+<p>Via a post to the <a
+href="http://xserve.flids.com/pipermail/gdal-dev/2005-February/008160.html">GDAL
+mailing list</a>, word comes to us that one Chris Soriano has figured out how
+to use <a href="http://gdal.org/">GDAL</a> and Python to <a
+href="http://www.elysiun.com/forum/viewtopic.php?t=38108">convert digital
+elevation models (DEMs) into 3-D mesh data</a> for use with <a
+href="http://www.blender.org/">Blender</a>, an Open Source 3-D modelling
+package. Although the book contains some <a href="/projects/povray">POV-Ray
+examples</a>, my curiosity about Blender is now thoroughly piqued...</p>";}i:37;a:4:{s:5:"title";s:27:"LandSat-7 Compositing HOWTO";s:4:"link";s:56:"http://mappinghacks.com/index.cgi/2005/02/21#compositing";s:11:"description";s:1114:"
+<p>Our good friend <a href="http://www.wiw.org/~ams/">Abhijit Menon-Sen</a> has
+compiled a pretty thorough guide to <a
+href="http://www.oryx.com/ams/landsat.html">compositing your own LandSat-7
+scenes</a> from the raw spectral layers available from the <a
+href="http://landcover.org/">Global Land Cover Facility</a>. We used similar
+techniques to make the composites used in our <a
+href="http://mappinghacks.com/projects/povray/">fly-over of Bilbao</a> and as a
+backdrop to the <a
+href="http://locative.us/places/london/map.cgi?layer=landsat">London Free
+Map</a> demo.</p>
+
+<p>As an aside, if you don't want to go the trouble of making your own LandSat
+composites, you can always get composited images on the fly from NASA's <a
+href="http://onearth.jpl.nasa.gov/">OnEarth</a> server (assuming it hasn't
+been hammered by all those WorldWind fans). We used their Web Mapping Service
+to provide the satellite imagery background to our <a
+href="http://locative.us/places/earth/map.cgi?layer=satellite&layer=vmap0">Vector
+Map of the World</a> demo (though you have to zoom in to get to the LandSat
+imagery itself).</p>";s:7:"summary";s:1114:"
+<p>Our good friend <a href="http://www.wiw.org/~ams/">Abhijit Menon-Sen</a> has
+compiled a pretty thorough guide to <a
+href="http://www.oryx.com/ams/landsat.html">compositing your own LandSat-7
+scenes</a> from the raw spectral layers available from the <a
+href="http://landcover.org/">Global Land Cover Facility</a>. We used similar
+techniques to make the composites used in our <a
+href="http://mappinghacks.com/projects/povray/">fly-over of Bilbao</a> and as a
+backdrop to the <a
+href="http://locative.us/places/london/map.cgi?layer=landsat">London Free
+Map</a> demo.</p>
+
+<p>As an aside, if you don't want to go the trouble of making your own LandSat
+composites, you can always get composited images on the fly from NASA's <a
+href="http://onearth.jpl.nasa.gov/">OnEarth</a> server (assuming it hasn't
+been hammered by all those WorldWind fans). We used their Web Mapping Service
+to provide the satellite imagery background to our <a
+href="http://locative.us/places/earth/map.cgi?layer=satellite&layer=vmap0">Vector
+Map of the World</a> demo (though you have to zoom in to get to the LandSat
+imagery itself).</p>";}i:38;a:4:{s:5:"title";s:17:"Spatial DB in Box";s:4:"link";s:64:"http://mappinghacks.com/index.cgi/2005/02/21#spatial-db-in-a-box";s:11:"description";s:950:"
+<p>David Blasby, the new maintainer of GeoServer, has had a pretty keen idea -
+why, he reckons, shouldn't <em>all</em> databases have spatial geometry
+columns, operations, and indexes, rather than just the usual suspects, like
+Oracle, PostgreSQL, and so on. He's hacked a wrapper around the Java Topology
+Suite (the precursor to Refractions's excellent GEOS library, which PostGIS
+uses) with libgcj, and voil&aacute; -- it's a <a
+href="http://docs.codehaus.org/display/GEOS/spatialDBbox">Spatial Database in a
+Box</a>. Currently, there's support for Apache's Derby (aka IBM's Cloudscape),
+PostgreSQL and HSQLDB, a Java database engine. Personally, I'd like to see an
+SQLite port, as well. Although this project is still at a very embryonic stage,
+it's interesting to see the idea of spatial databasing abstracted out in a way
+that can be put to use on more and different platforms, like embedded systems,
+for example. We'll be watching this one.</p>";s:7:"summary";s:950:"
+<p>David Blasby, the new maintainer of GeoServer, has had a pretty keen idea -
+why, he reckons, shouldn't <em>all</em> databases have spatial geometry
+columns, operations, and indexes, rather than just the usual suspects, like
+Oracle, PostgreSQL, and so on. He's hacked a wrapper around the Java Topology
+Suite (the precursor to Refractions's excellent GEOS library, which PostGIS
+uses) with libgcj, and voil&aacute; -- it's a <a
+href="http://docs.codehaus.org/display/GEOS/spatialDBbox">Spatial Database in a
+Box</a>. Currently, there's support for Apache's Derby (aka IBM's Cloudscape),
+PostgreSQL and HSQLDB, a Java database engine. Personally, I'd like to see an
+SQLite port, as well. Although this project is still at a very embryonic stage,
+it's interesting to see the idea of spatial databasing abstracted out in a way
+that can be put to use on more and different platforms, like embedded systems,
+for example. We'll be watching this one.</p>";}i:39;a:4:{s:5:"title";s:29:"Mikel's new worldKit geocoder";s:4:"link";s:53:"http://mappinghacks.com/index.cgi/2005/02/17#geocoder";s:11:"description";s:310:"<p>Mapping Hacks contributor <a href="http://brainoff.com/">Mikel Maron</a>
+has produced a nice <a href="http://brainoff.com/worldkit/geocoder/">world gazetteer</a> in Flash using worldKit, which makes
+uses of our own <a href="http://geocoder.us/">geocoder.us</a> to geocode
+addresses in the United States.</p>";s:7:"summary";s:310:"<p>Mapping Hacks contributor <a href="http://brainoff.com/">Mikel Maron</a>
+has produced a nice <a href="http://brainoff.com/worldkit/geocoder/">world gazetteer</a> in Flash using worldKit, which makes
+uses of our own <a href="http://geocoder.us/">geocoder.us</a> to geocode
+addresses in the United States.</p>";}}s:7:"channel";a:5:{s:5:"title";s:16:"Mapping Hacks   ";s:4:"link";s:33:"http://mappinghacks.com/index.cgi";s:11:"description";s:26:"Location: It's Everywhere.";s:8:"language";s:2:"en";s:7:"tagline";s:26:"Location: It's Everywhere.";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:4:"0.91";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

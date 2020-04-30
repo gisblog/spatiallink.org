@@ -1,0 +1,1 @@
+function checkstringcomplex_b(inputstringcomplex_b){var ok;ok="q .,$&()@wertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";var i;for(i=0;i<inputstringcomplex_b.length;i++){if(ok.indexOf(inputstringcomplex_b.charAt(i))<0){return false}else{}}return true}

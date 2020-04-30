@@ -1,0 +1,588 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:30:{i:0;a:12:{s:5:"title";s:45:"ArcGIS 9.2 Webhelp is on-line and ready to go";s:4:"link";s:136:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/http%3A%2F%2Fwww.spatiallyenabled.com%2F2006%2F07%2Farcgis_92_webhe.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11764324";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/07/arcgis_92_webhe.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11764324";s:9:"published";s:25:"2006-07-20T08:35:18-07:00";s:7:"updated";s:20:"2006-07-20T15:35:37Z";s:7:"summary";s:218:"The ArcGIS 9.2 desktop help is back on-line and looking great. Personally, I use this all the time. As a developer the concepts in the desktop help system are key and in some cases not available in the EDN developer...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1266:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >The <a href="http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=welcome">ArcGIS 9.2 desktop help</a> is back on-line and looking great. </p>
+
+<p >Personally, I use this all the time. As a developer the concepts in the desktop help system are key and in some cases not available in the EDN developer help. The 9.2 release is huge and quite possibly one of the largest releases of new functionality since 8.0.</p>
+
+<p >If i were looking at 9.2 for the first time i'd go straight for the <a href="http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=What%27s%20new%20in%20ArcGIS%209%2E2">what's new section</a>. After that i'd hit the new video tutorials such as this one on <a href="http://webhelp.esri.com/arcgisdesktop/9.2/tutorials/maplex_tutorial_index.htm">maplex</a>.</p>
+
+<p >My only beef with the help system is that its not indexed on google. a search for "geodatabase topology" on <a href="http://www.google.com/search?sourceid=navclient-ff&ie=UTF-8&rlz=1B2GGGL_enUS177&q=geodatabase+topology">google returns nada</a>; but one on the help system returns <a href="http://webhelp.esri.com/arcgisdesktop/9.2/search/results.cfm?v=2&q=geodatabase+topology">all sorts of goodness</a>.</p>
+
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/07/arcgis_92_webhe.html";}}i:1;a:12:{s:5:"title";s:37:"Automating the ArcGIS Install process";s:4:"link";s:136:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/http%3A%2F%2Fwww.spatiallyenabled.com%2F2006%2F07%2Fautomating_the_.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11763713";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/07/automating_the_.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11763713";s:9:"published";s:25:"2006-07-19T15:32:05-07:00";s:7:"updated";s:20:"2006-07-19T22:32:21Z";s:7:"summary";s:224:"I just kicked off the 4-5 hour process of uninstalling and then reinstalling my ArcGIS software. This is going to leave my hard drive thrashing like crazy so I’ve moved over to a different machine. So why do this? Well,...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1688:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >I just kicked off the 4-5 hour process of uninstalling and then reinstalling my ArcGIS software. This is going to leave my hard drive thrashing like crazy so I’ve moved over to a different machine.
+</p><p >So why do this? Well, we’re still running daily builds of ArcGIS 9.2 and I need to pick up updates to not only the software but also the developer resources and help systems. Internally we have some tools that allow you to pull the latest build without having to use “add remove programs” to uninstall and then re-install the software. I use this often but I like to go through the painful process of uninstalling everything and then rerunning the installs from scratch once every week or so.
+</p><p >To make me life easier I’ve got a batch file that queues up the uninstall and reinstall process so that it runs not only synchronously but also quietly.
+</p><p >This is all documented in the help system. You can read about it via the help system (<span style="font-family:Courier New">c:\program files\arcgis\documentation\install guides</span>) pick the product and then look for a TOC entry called “Installing XX_product silently”. Don’t have the product installed just run the installer and then click on the install program’s help button.
+</p><p ><a href="http://spatiallyenabled.blogs.com/downloads/AutoInstall92.txt">Here’s my script for 9.2</a> and a few notes on using it:
+</p><ol ><li ><div >don’t forget to change the extension to .bat 
+</div></li><li ><div >these guids are for 9.2 if you want to  use it for 9.1 you’ll have to update them (read the doc or check the registry)</div></li></ol></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/07/automating_the_.html";}}i:2;a:12:{s:5:"title";s:18:"Precious Bandwidth";s:4:"link";s:136:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/http%3A%2F%2Fwww.spatiallyenabled.com%2F2006%2F07%2Fprecious_bandwi.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11762215";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/07/precious_bandwi.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11762215";s:9:"published";s:25:"2006-07-19T13:45:49-07:00";s:7:"updated";s:20:"2006-07-19T20:46:03Z";s:7:"summary";s:247:"This week I keep thinking about bandwidth First, I spent last week in New Jersey teaching a ArcGIS System Architecture and Design class to some program managers (and a few developers) working with the Commerical Joint Mappint Toolkit (CJMTK). A...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:4575:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >This week I keep thinking about bandwidth
+</p><p >First, I spent last week in New Jersey teaching a ArcGIS System Architecture and Design class to some program managers (and a few developers) working with the <a href="http://www.cjmtk.com/">Commerical Joint Mappint Toolkit</a> (CJMTK). A key point that kept coming up was bandwidth and in particular the lack of it. During the workshop we spend a lot of time talking about strategies for  handling data (both static data as well as real time feeds) this evolved into methodologies for handling data transmission with ArcObjects and also how do some basic GIS analysis, both on the client and also on a server.  All of this hits home once you start measuring how much is really being transferred over the network. 
+</p><p >I sometimes think of it like a giger counter, one that you can hold up to your application, the network, server and databases. Given a particular scenario where is the lifting happening and how much data is being transferred up and down the stack of software. You can’t start dialing in the performance until you know where things are happening.
+</p><p >It is easy to develop applications assuming unlimited bandwidth. Heck, my mouth is already watering just thinking about the rollout of  Verizon’s  <a href="http://www22.verizon.com/content/ConsumerFiOS/">FIOS</a> network in Redlands (think 5-30Mbps) of at home broadband.  It’s too bad we don’t have this for boys on the battlefield.
+</p><p ><strong >No WiFi?</strong>
+	</p><p >What do you do when there isn’t a network cable or Wi-Fi in the vicinity? For me I whip out my <a href="https://business.cingular.com/cingular/generic/phone_details.jsp?skuId=sku73950382&parentCatId=cat17840066&productId=prod82440260&categoryId=cat17840084">cingular 2125 smartie phone</a> and use its data connection over Bluetooth. The connection is reliable but since I don’t have the fancy EDGE network I’m pinned down to about 130 kbps.  Yes, a little slow but at least there’s plenty of it given my $19.99 unlimited usage plan. This isn’t bad for syncing e-mail and visiting most web pages but it makes me realize what I take for granted. On a connection like this I start turning things off skype, gtalk, msn messenger, shutdown the RSS aggregator, put outlook in off-line mode and then turn things on as I need them.
+</p><p >Last week we were working in the basement with not only no internet access but also some pretty crappy cell phone service. I’m used to my cingular data connection to being slow but not intermittent. Using it in the room was useless but using it in the hall with a Bluetooth connection to my laptop about 30-40 feed away was a different story. This worked (I hid the cell in a planter so it wouldn’t be disturbed) and used the network connection but unfortunately,  the bluetooth signal started to deteriorate and thus I was left with an even slower connection. 
+</p><p >I did a little experiment with ArcWeb vector and image services over the connection and all worked well. Unfortunately, I didn’t have any ArcGIS Servers that I could test with outside of the firewall.
+</p><p ><strong >In catching up with the news: 
+</strong></p><p >Tim O’Reilly has an interesting article on the importance of datacenters (<a href="http://radar.oreilly.com/archives/2006/07/cloudy_with_a_chance_of_server_1.html"><em >operations: the new secret sauce</em></a>) in an environment where being a developer on someone else’s platform means running your application in their datacenters. This translates to a web platform where hundreds of thousands of servers that need to be located near cheap power and favorable bandwidth deals. I liked Tim’s closing point  in that where operations centers used to be boring they are now the ground zero of today’s computing wars.
+</p><p >Yesterday YouTube announced that they just broke the <a href="http://www.techcrunch.com/2006/07/17/youtube-serves-100m-videos-each-day/">100 million videos a day barrier</a> and that they host 60% of the videos viewed online.  Holy crap the internet pipe coming out of these guys must be on fire. How do you sustain the cost of this much bandwidth without going out of business? Are the ads really paying the way? I guess this is the web 2.0 social services model of building community and then hoping someone buys them.
+</p><p >I guess the <a href="http://wired.com/wired/archive/12.10/tail.html">long tail</a> applies to YouTube as well. See there is something for everyone.
+</p><p >
+ </p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/07/precious_bandwi.html";}}i:3;a:12:{s:5:"title";s:20:"oldschool technology";s:4:"link";s:136:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/http%3A%2F%2Fwww.spatiallyenabled.com%2F2006%2F07%2Foldschool_techn.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11633114";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/07/oldschool_techn.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11633114";s:9:"published";s:25:"2006-07-13T07:11:56-07:00";s:7:"updated";s:20:"2006-07-13T14:12:09Z";s:7:"summary";s:220:"I just passed a business services kiosk in the Marriott lobby and noticed their gracious offer for free laser printing. When was the last time you had a parallel port on the back of your laptop? also, don't forget the...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:825:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >I just passed a business services kiosk in the Marriott lobby and noticed their gracious offer for free laser printing. </p>
+
+<p >When was the last time you had a parallel port on the back of your laptop? also, don't forget the terminator which they conveniently offer (at the bottom of the photo).</p>
+
+<p ><a onclick="window.open(this.href, '_blank', 'width=800,height=640,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/oldschool_printer.jpg"><img width="200" height="160" border="0" src="http://www.spatiallyenabled.com/images/oldschool_printer.jpg" title="Oldschool_printer" alt="Oldschool_printer"></img></a>
+
+
+
+</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/07/oldschool_techn.html";}}i:4;a:12:{s:5:"title";s:42:"peek-a-boo: ArcGIS 9.2 on-line help system";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76615929/peekaboo_arcgis.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11331013";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/peekaboo_arcgis.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11331013";s:9:"published";s:25:"2006-06-29T15:37:17-07:00";s:7:"updated";s:20:"2006-06-29T22:37:34Z";s:7:"summary";s:207:"Jay, over on scrapped, was quick to note the short lived debut of the 9.2 on-line help system. Things are cooking here in Redlands (100° F / 38° C), not only are we about done baking the 9.2 source code...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1524:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >Jay, <a href="http://se7en.co.nz/cms/scrappad/archive/2006/06/29/2667.aspx">over on scrapped</a>, was quick to note the short lived debut of the 9.2 on-line help system.
+</p><p >Things are cooking here in Redlands (<span style="color:black">100° F / 38° C</span><span style="font-size:13">)</span>, not only are we about done baking the 9.2 source code but we’re also working on the garnishes and some of the side dishes, one of which is the on-line version of the help system.<span style="color:black"><strong >
+			</strong></span></p><p ><span style="color:black">The </span>on-line help mirrors the locally installed resources and we're currently testing this just as we do the rest of the system.  
+</p><p >We’re excited about the release and jumped the gun a little in making the 9.2 help system available on-line.  It’ll be back but before we start serving it up we want to do a little more taste testing to make sure that its ready to go.
+</p><p >Speaking of ready to go. ArcGIS 9.2 pre-release is in manufacturing so you'll have it in time to play with before the <a href="http://www.esri.com/events/uc/index.html">conference</a>. We'll make the on-line version of the help system available sometime between now and when we ship 9.2 final.
+</p><p >If you haven’t used the on-line help before it is a great resource; you can check out the <a href="http://webhelp.esri.com/arcgisdesktop/9.1/index.cfm?TopicName=welcome">9.1 version</a> to get a peek.</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/peekaboo_arcgis.html";}}i:5;a:12:{s:5:"title";s:48:"This gives spatial analysis a 'hole' new meaning";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76513842/this_give_spati.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11329435";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/this_give_spati.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11329435";s:9:"published";s:25:"2006-06-29T13:42:11-07:00";s:7:"updated";s:20:"2006-06-29T20:56:33Z";s:7:"summary";s:297:"Mapping the rectum: spatial analysis of transanal endoscopic microsurgical outcomes using GIS technology. This was a clinical study determining the relationship between rectal lesions and the performance of transanal endoscopic microsurgery. I suppose the value of organizing spatial data using...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:542:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p ><em ><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=16368487&dopt=Abstract">Mapping the rectum</a>: spatial analysis of transanal endoscopic microsurgical outcomes using GIS technology.</em> </p>
+
+<p >This was a clinical study determining the relationship between rectal lesions and the performance of transanal endoscopic microsurgery. I suppose the value of organizing spatial data using gis can penetrate any industry.</p><br ></br>
+<br ></br>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/this_give_spati.html";}}i:6;a:12:{s:5:"title";s:37:"Save the date - 2007 Developer Summit";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76530409/save_the_date_2.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11301269";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/save_the_date_2.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11301269";s:9:"published";s:25:"2006-06-28T09:57:36-07:00";s:7:"updated";s:20:"2006-06-28T17:30:37Z";s:7:"summary";s:237:"James is quick to pick up on the 2007 Developer Summit “save the date” campaign. You’ll notice that the next summit runs post business partner conference on Tuesday – Thursday (March 20-22). We did this for a few reasons. Most...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1546:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p ><a href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/devsummitlogo_2006_2.jpg" onclick="window.open(this.href, '_blank', 'width=150,height=122,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img width="100" height="81" border="0" alt="Devsummitlogo_2006_2" title="Devsummitlogo_2006_2" src="http://www.spatiallyenabled.com/images/devsummitlogo_2006_2.jpg" style="margin: 0px 5px 5px 0px; float: left;"></img></a>
+<a href="http://www.spatiallyadjusted.com/2006/06/27/ready-for-the-2007-esri-developer-summit/">James</a> is quick to pick up on the 2007 Developer Summit “save the date” campaign. You’ll notice that the next summit runs post business partner conference on Tuesday – Thursday (March 20-22). 
+</p>
+
+<p >We did this for a few reasons. Most importantly we wanted to extend the event by a day and logistically the only way we could do this was to move it mid week (post bpc). We also received a lot of feedback from the developers saying that they didn’t want to travel or work over the weekend. I was a little surprised at this but hey, that’s what you told us. 
+</p>
+
+<p >Lastly, when we started talking about the flow of both events, and the crossover between BPC and developer summit attendees, it simply made sense.</p>
+
+<p >Add the 2007 Developer Summit to your calendar [<a href="http://spatiallyenabled.blogs.com/downloads/ESRI_Devloper_Summit.ics">ical</a>].</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/save_the_date_2.html";}}i:7;a:12:{s:5:"title";s:35:"military secrets and spy satellites";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76627336/military_secret.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11288882";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/military_secret.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11288882";s:9:"published";s:25:"2006-06-27T15:52:35-07:00";s:7:"updated";s:20:"2006-06-28T01:45:46Z";s:7:"summary";s:246:"yet another article on web mapping services potentially revealing military secretes secrets. I say we let Thailand, India and the French black out (or heck just distort) their strategic military areas. Talk about push pin mapping - it would be...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1189:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p>yet another <a href="http://news.yahoo.com/s/nf/20060627/tc_nf/44075">article</a> on web mapping services potentially revealing military <del>secretes </del>secrets. I say we&nbsp; let Thailand, India and the French black out (or heck just distort) their strategic military areas. Talk about push pin mapping - it would be a call sign for where our image analysts should point our real satellites.</p>
+
+<p>Speaking of satellites. If you live anywhere near So Cal you'll want to step outside sometime between 7-9 tonight.</p><blockquote><p><em>&quot;<a href="http://www.signonsandiego.com/news/science/20060627-9999-1m27launch.html">Boeing will try to launch a Delta IV rocket</a> from the West Coast for the first time tonight. The Delta IV, part of Boeing's largest class of boosters, will loft a spy satellite for the National Reconnaissance Office.&quot;</em></p></blockquote><p>Definitely worth checking out. I've seen a few launches from both up close as well as here in Redlands. Evening launches are a pretty amazing site - especially when the 2nd or 3rd stages separate and the rocket is already into the upper atmosphere. </p> </div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/military_secret.html";}}i:8;a:12:{s:5:"title";s:35:"How to articles on the support site";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76615930/how_to_articles.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11279444";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/how_to_articles.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11279444";s:9:"published";s:25:"2006-06-27T10:00:57-07:00";s:7:"updated";s:20:"2006-06-28T06:34:34Z";s:7:"summary";s:213:"I’m running a daily build of the ArcGIS 9.2 and somehow beheaded my desktop help system. I was looking for a cheat sheet on the steps for creating raster catalogs. I did a quick search on the support site and...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:3936:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p>I’m running a daily build of the ArcGIS 9.2 and somehow beheaded my desktop help system. I was looking for a cheat sheet on the steps for creating raster catalogs. I did a quick search on the support site and quickly found what I was looking for – I also found a few other how to articles that caught my attention. 
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=28390">Create a geodatabase Raster Catalog</a> Instructions provided describe how to create a raster catalog in a geodatabase. At ArcGIS 9.0 rasters are fully supported in the geodatabase environment, both Personal Geodatabases and Enterprise (ArcSDE) Geodatabases.
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=21327">Select the correct geographic (datum) transformation when projecting between datums</a> It is necessary to specify a geographic (datum) transformation when using the ArcToolBox Project Wizard (ArcGIS version 8.x) or Project Tool (ArcGIS version 9.x) to project shapefiles or geodatabase feature classes between different geographic coordinate systems (datums).
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=23025">Projection Basics FAQ: What the GIS professional needs to know</a> Outlines the fundamental concepts needed to understanding the use of map projections in ArcGIS.
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=15380">Connect to an Excel spreadsheet in ArcCatalog</a> Steps to connect to an Excel spreadsheet from ArcCatalog. ArcCatalog can retrieve data from Microsoft Excel 5.0, 7.0, 97, or 2000 files.
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=22526">Clip a multiband image using ArcGIS and Spatial Analyst</a> Instructions provided explain the procedure to clip or sub-set a multiband image. The Spatial Analyst extension is required.
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=24893">Identify an unknown coordinate system using ArcMap</a> Instructions provided identify the coordinate system for data that do not have coordinate system information, using the project-on-the-fly utility in ArcMap.
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=26892">Repeat-run a geoprocessing tool-batch style processing</a> Users are able to use Model Builder in conjunction with geoprocessing tools to create time saving tools based on complex workflows. However, many users are interested in running these tools or their own tools over and over again, &quot;batch&quot; style. Scripting gives users this functionality in ArcGIS. A variety of scripting languages are supported in the geoprocessing environment of ArcGIS 9.0, including Python, VBScript, JScript, and Perl. In fact any scripting language that is COM compliant can be used to create successful geoprocessing scripts.
+</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=24985"><u>Index of&nbsp; technical articles concerning projecting raster data in ArcGIS</u></a>A collection of 6 articles which discuss when, and how to project raster data in ArcGIS.</p>
+
+<p><a href="http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=30859"><u>Convert coverage annotation to a geodatabase eliminating required fields</u></a> Instructions provided are for the conversion of annotation from an ArcInfo coverage to a personal or SDE database, eliminating all but two 'required' fields for the coverage annotation feature class from the geodatabase feature class in ArcCatalog. The Convert Coverage Annotation tool, a customize tool available in ArcMap is used for this procedure.</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/how_to_articles.html";}}i:9;a:12:{s:5:"title";s:40:"Back from vacation and the joy of e-mail";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76538367/back_from_vacat.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11278305";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/back_from_vacat.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11278305";s:9:"published";s:25:"2006-06-27T08:56:57-07:00";s:7:"updated";s:20:"2006-06-27T15:57:09Z";s:7:"summary";s:219:"I just got back on Sunday from a quick week of vacation in Punta Banda [kml] Baja California (just a hair south of Ensenada). If you live around SoCal and are thinking about a quick, cheap, getaway that’ll make you...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:2454:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><a onclick="window.open(this.href, '_blank', 'width=800,height=640,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/image_143.jpg"><img width="100" height="80" border="0" src="http://www.spatiallyenabled.com/images/image_143.jpg" title="Image_143" alt="Image_143" style="margin: 0px 5px 5px 0px; float: left;" /></a>
+I just got back on Sunday from a quick week of vacation in <a href="http://www.puntabanda.org/">Punta Banda</a> [<a href="http://spatiallyenabled.blogs.com/downloads/PuntaBanda_beachHouse.kmz">kml</a>] Baja California (just a hair south of Ensenada).&nbsp; If you live around SoCal and are thinking about a quick, cheap, getaway that’ll make you feel like you’re you in one of those corona commercials you should check this place out. It’s a beautiful area with long sandy beaches, warm water and&nbsp; some sweet little beach houses reaching out towards pacific on a giant sand spit. </p>
+
+<p>warning, If you surf don’t go – the beach faces west / north-west and rarely sees much of a swell, especially in the summer. I broke a couple ribs just before we left so for me it wasn’t that big of a deal – a little R&amp;R in my lounge chair with a fresh margarita which was just what the doctor ordered.
+</p>
+
+<p>Usually I do a little e-mail while I’m away – this time I was not only physically, but also mentally, far from a wifi hotspot. So what did I come home to? About 550 e-mails.&nbsp; The initial triage was fast – but still underway.
+</p>
+
+<p>My strategy? I first sorted on the normal internal spam messages (e-mails with daily build status, source code check-ins,&nbsp; etc) this knocked out about 150. Next I hit the messages where I was the only recipient then categorized messages into folders (and used some flags to set priority). This was pretty quick.
+</p>
+
+<p>65 – general 9.2 projects
+</p>
+
+<p>20 – 9.2 related web projects
+</p>
+
+<p>12 – 2006 user conference
+</p>
+
+<p>84 - ArcScripts narc button (complaints about commercial software) 
+</p>
+
+<p>8 – customer feedback from the EDN site
+</p>
+
+<p>33 – internal technical aliases
+</p>
+
+<p>Almost done getting back to everyone but not the best thing to come back to from vacation.
+</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/back_from_vacat.html";}}i:10;a:12:{s:5:"title";s:24:"Test post from word 2007";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76549407/test_post_from_.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=11274744";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/06/test_post_from_.html";s:2:"id";s:34:"tag:typepad.com,2003:post-11274744";s:9:"published";s:25:"2006-06-27T05:20:45-07:00";s:7:"updated";s:20:"2006-06-27T12:21:01Z";s:7:"summary";s:200:"We’ll see if this works. Configuring a word 2007 account using Typepad’s metaweblog api was a breeze but it looks like adding the ftp location for image upload is going to be a different story....";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:257:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >We’ll see if this works. Configuring a word 2007 account using Typepad’s metaweblog api  was a breeze but it looks like adding the ftp location for image upload is going to be a different story.
+</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/06/test_post_from_.html";}}i:11;a:12:{s:5:"title";s:24:"Technology Trends in GIS";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76590271/technology_tren.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=10801137";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/05/technology_tren.html";s:2:"id";s:34:"tag:typepad.com,2003:post-10801137";s:9:"published";s:25:"2006-05-30T18:25:34-07:00";s:7:"updated";s:20:"2006-05-31T21:20:06Z";s:7:"summary";s:208:"Last week I was working in the holistic testing lab and one of our visiting beta sites asked me about the technology trends in GIS feature on the main website. I hadn't seen it before so we checked it out....";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1781:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/swamp_lg_1.gif" onclick="window.open(this.href, '_blank', 'width=460,height=386,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img width="100" height="83" border="0" alt="Swamp_lg_1" title="Swamp_lg_1" src="http://www.spatiallyenabled.com/images/swamp_lg_1.gif" style="margin: 0px 5px 5px 0px; float: left;" /></a>
+ Last week I was working in the holistic testing lab and one of our visiting beta sites asked me about the<em><a href="http://www.esri.com/technology_trends/index.html"> technology trends in GIS</a></em> feature on the main website.&nbsp; I hadn't seen it before so we checked it out. </p>
+
+<p>Currently&nbsp; the only published trend focuses on cartography and in doing so it does a great job of highlighting some of the cartographic generalization and representation capabilities that are coming out at 9.2. This is a great run down on some of the things that you'll see soon such as:</p>
+
+<ul><li>database solution for storing multiple representations of geometry</li>
+
+<li>some really slick (and intuitive) editing tools for managing representations and generalizations</li>
+
+<li>geoprocessing support</li>
+
+<li>map production tools</li></ul>
+
+<p>I'm hoping that the site will focus on general trends and bigger architectural picture with pointers to reference implementations and other documentation to help with best practices etc.</p>
+
+<p>I also like the use of text, podcast and video to get message across. </p>
+
+<p>Given some of the new areas that GIS is headed with server and moblie solutions this should be a great place to keep your eyes on.</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/05/technology_tren.html";}}i:12;a:13:{s:5:"title";s:41:"The developer summit videos are available";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76509091/the_developer_s.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=10800861";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/05/the_developer_s.html";s:2:"id";s:34:"tag:typepad.com,2003:post-10800861";s:9:"published";s:25:"2006-05-30T17:54:51-07:00";s:7:"updated";s:20:"2006-05-31T00:55:40Z";s:7:"summary";s:243:"We've just published over 25 hours of session content from this years developer summit. The videos are available on the site as streaming quicktime files in the media center and the slides are available in the downloads section. An Overview...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:7612:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >We've just published over 25 hours of session content from this years developer summit. The videos are available on the site as streaming quicktime files in the <a href="http://edn.esri.com/index.cfm?fa=media.gateway">media center</a> and the slides are available in the downloads section.</p>
+
+<ul ><li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=37">An Overview of the ESRI Developer Network</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=36">Best Practices for Developing with ArcGlobe</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=38">Best Practices and Design Patterns for Defense Developers</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=39">Building Desktop Applications with Java</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=41">Building Web Services with ArcGIS Server and Java</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=42">Building Web Applications with ArcGIS Server and Java</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=43">Building Windows Applications with .NET</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=44">Delivering Secure ArcGIS Solutions</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=45">Developing Applications with ArcWeb Services</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=46">Developing Cross-Product Solutions with ArcGIS Desktop, ArcGIS Engine, and ArcGIS Server</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=47">Easy Ways to Turbocharge Your ArcObjects Solution</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=48">Effective ArcPad Customization</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=49">Enterprise Integration for Developers – Options, Considerations and Experiences</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=50">Extreme Makeover: Moving from MapObjects to ArcGIS Engine</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=51">Hitchhiker’s Guide to Cartography</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=52">Hitchhiker’s Guide to Geoprocessing</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=53">Hitchhiker’s Guide to Leveraging GPS</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=54">Hitchhiker’s Guide to Projections and Spatial References</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=55">Hitchhiker’s Guide to the Geodatabase</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=56">Leveraging ESRI Data Models in Your Custom Solution</a> </li>
+
+<li ><a href="http://edn.esri.com/index.cfm?fa=media.detail&media=57">Strategies for Packaging and Deploying Your ArcGIS Solutions</a> </li></ul>
+
+<p >The following sesssions are only available on the <a href="http://beta2.esri.com">9.2 Beta website</a>.</p>
+
+<ul ><li >Building Web Applications with ArcGIS Server and .NET</li>
+
+<li >Building Web Services with ArcGIS Server and .NET</li>
+
+<li >Deploying and Tuning ArcGIS Server</li>
+
+<li >Dynamic GIS: Managing an Animated Display</li>
+
+<li >Implementing Enterprise Applications with the Geodatabase and ArcSDE</li>
+
+<li >Programming Patterns for Application Development Using ArcGIS Server Mobile ADF</li>
+
+<li >Strategies for Implementing a Common Operating Picture</li></ul>
+
+<p >These sessions were not recorded due to some last minute room shuffling to accommodate larger audiences. </p>
+
+<ul ><li >Finding Your Way with ArcGIS Network Analyst</li>
+
+<li >GIS Service-Oriented Architecture: A Case Study of ArcWeb Services</li>
+
+<li >Overview of ArcGIS Solutions in Service-Oriented Architectures</li>
+
+<li >Performance and Scalability</li></ul>
+
+<p >Again, it's taken a little longer to get these up than we had planned but
+thanks to the coordination of a number of teams here these are now available and on-line.</p>
+
+<p >As a final note you can you can also access the streaming files directly at the following locations </p>
+
+<ul >
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_01.mp4">An_Overview_of_the_ESRI_Developer_Network.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_02.mp4">Best_Practices_for_Defense_Developers.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_03.mp4">Best_Practices_for_Developing_with_ArcGlobe.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_04.mp4">Building_Desktop_Applications_with_Java.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_05.mp4">Building_Web_Applications_with_ArcGIS_Server_and_Java.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_06.mp4">Building_Web_Services_with_ArcGIS_Server_and_Java.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_07.mp4">Building_Windows_Applications_with_NET.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_08.mp4">Delivering_Secure_ArcGIS_Solutions.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_09.mp4">Developing_Applications_with_ArcWeb_Services.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_10.mp4">Developing_Cross-Product_Solutions.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_11.mp4">Developing_with_the_ArcGIS_Cartographic_APIs.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_12.mp4">Developing_with_the_ArcGIS_Raster_APIs.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_13.mp4">Easy_Ways_to_Turbocharge_Your_ArcObjects_Solution.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_14.mp4">Effective_ArcPad_Customization.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_15.mp4">Enterprise_Integration.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_16.mp4">Extreme_Makeover_MO_to_Engine.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_17.mp4">Hitchhikers_Guide_to_Cartography.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_18.mp4">Hitchhikers_Guide_to_Geoprocessing.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_19.mp4">Hitchhikers_Guide_to_Leveraging_GPS.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_20.mp4">Hitchhikers_Guide_to_Projections.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_21.mp4">Hitchhikers_Guide_to_the_Geodatabase.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_22.mp4">Leveraging_ESRI_Data_Models_in_Your_Custom_Solution.mov</a> </li>
+
+<li ><a href="http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_23.mp4">Packaging_and_Deploying_Your_ArcGIS_Solutions.mov</a></li>
+</ul>
+
+<p >Enjoy and thanks for helping make the Developer Summit such a success</p>
+
+<p >Brian</p></div>
+";s:14:"link_enclosure";s:1541:"http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_01.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_02.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_03.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_04.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_05.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_06.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_07.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_08.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_09.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_10.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_11.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_12.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_13.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_14.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_15.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_16.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_17.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_18.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_19.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_20.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_21.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_22.mp4http://198.102.62.240:80/edn/2006_dev-summit/2006_dev-summit_23.mp4";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/05/the_developer_s.html";}}i:13;a:12:{s:5:"title";s:28:"Developer Summit Proceedings";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76530411/developer_summi.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=10329771";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/05/developer_summi.html";s:2:"id";s:34:"tag:typepad.com,2003:post-10329771";s:9:"published";s:25:"2006-05-04T11:50:21-07:00";s:7:"updated";s:20:"2006-05-04T18:52:07Z";s:7:"summary";s:226:"Rob and Jay recently pointed out that a portion of the developer summit proceedings are now available on the EDN site. We're in the process of uploading the content, right now we're in a funny state considering that we only...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:2066:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://myesri.blogspot.com/2006/05/dev-summit-slides-now-online.html">Rob</a> and <a href="http://se7en.co.nz/cms/scrappad/archive/2006/05/04/2477.aspx">Jay</a> recently pointed out that a portion of the developer summit proceedings are now available on the EDN site.</p>
+
+<p>We're in the process of uploading the content, right now we're in a funny state considering that we only have a portion of it up. </p>
+
+<p>Before I tell you about the plan you should first know that the content from the developer summit falls into a couple of different categories; first, videos from the individual sessions; and secondly, the slides and in some cases accompanying sample code wrapped up in a zip file.</p>
+
+<p>Our plan is to load the slides and sample code into the <a href="http://edn.esri.com/index.cfm?fa=downloads.gateway">downloads section</a> of the website and the videos into the <a href="http://edn.esri.com/index.cfm?fa=media.gateway">media center</a> under a new category called <em>Developer Summit 2006</em>. Once we get the content loaded we'll add links to the videos and slides from the corresponding session descriptions&nbsp; on the <a href="http://edn.esri.com/index.cfm?fa=devSummit.gateway">developer summit tab</a>. We'll also cross link the videos (in the media center) to the accompanying slides (in the downloads) section. </p>
+
+<p><strong>So where are we?</strong><br />As <a href="http://se7en.co.nz/cms/scrappad/archive/2006/05/04/2477.aspx">Jay</a> and <a href="http://myesri.blogspot.com/2006/05/dev-summit-slides-now-online.html">Rob</a> have already posted we're got the slides up on the downloads section. We're about ready to load the videos but before we do so they need to be re-encoded with some streaming hints for our quicktime server. This should be done shortly. Once this happens it is just a matter of copying up the files and then hooking up the links.<span style="font-size: 0.8em;"><span style="font-size: 10pt; font-family: Verdana;"><o:p></o:p></span></span></p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/05/developer_summi.html";}}i:14;a:12:{s:5:"title";s:14:"ArcGIS betaWeb";s:4:"link";s:92:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76530412/arcgis_betaweb.html";s:17:"link_service.edit";s:69:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=10176923";s:12:"link_replies";s:59:"http://www.spatiallyenabled.com/2006/04/arcgis_betaweb.html";s:2:"id";s:34:"tag:typepad.com,2003:post-10176923";s:9:"published";s:25:"2006-04-25T21:21:42-07:00";s:7:"updated";s:20:"2006-04-26T04:22:01Z";s:7:"summary";s:220:"I'd like to thank spatially adjusted and scrapped for pointing out the new ArcGIS 9.2 betaWeb The new site has been a work in progress for the past several months. It pulls together new web infrastructure a new way to...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:2021:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><a onclick="window.open(this.href, '_blank', 'width=359,height=480,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/betawebwoman.jpg"><img width="200" height="267" border="0" src="http://www.spatiallyenabled.com/images/betawebwoman.jpg" title="Betawebwoman" alt="Betawebwoman" style="margin: 0px 5px 5px 0px; float: left;" /></a>
+I'd like to thank <a href="http://www.spatiallyadjusted.com/2006/04/20/esri-betaweb">spatially adjusted</a> and <a href="http://se7en.co.nz/cms/scrappad/archive/2006/04/22/2462.aspx">scrapped</a> for pointing out the new ArcGIS 9.2 betaWeb&nbsp; </p>
+
+<p>The new site has been a work in progress for the past several months. It pulls together new web infrastructure a new way to organize content via information centers with corresponding blogs, forums, downloads, media and a wiki but most importantly we're working on some new editorial changes to keep the site stocked full of content. </p>
+
+<p>Hmm, that's nice but why didn't you know about it earlier?</p>
+
+<p>I'm seeing a trend in contributing to this site. I get really engaged with work, spend long days in front of my computer but fall short in posting here. So I think to myself, what better opportunity to cover the design aspects of the new betaWeb site than while it was being pulled together? Hmm, so much for the transparency that i've talked about.</p>
+
+<p>whats next?</p>
+
+<p>I had a little messenger chat with james the other day and he gave me some subtle grief that I shouldn't have an excuse for not getting stuff up on this site. after all i'll be done with this post in just a few minutes and how long with it take me to write the next one ~10-15 minutes? Maybe I just woke up from that coma again... after all, I can ramble about this content free stuff - lets see what I can do to give something more valuable.</p>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:59:"http://www.spatiallyenabled.com/2006/04/arcgis_betaweb.html";}}i:15;a:12:{s:5:"title";s:17:"Dev Summit Photos";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76562549/dev_summit_phot.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9581308";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/dev_summit_phot.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9581308";s:9:"published";s:25:"2006-03-21T21:59:16-08:00";s:7:"updated";s:20:"2006-03-22T05:59:34Z";s:7:"summary";s:101:"A few Developer Summit Photos on flickr: Steve'sA few from ESRI?Tag: devsummit06Rob'sa couple more...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:567:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >A few Developer Summit Photos on flickr:</p>
+
+<p ><a href="http://www.flickr.com/photos/thesteve0/tags/devsummit06/">Steve's</a><br ></br><a href="http://www.flickr.com/photos/esri/sets/72057594085227524/">A few from ESRI</a>?<br ></br><a href="http://www.flickr.com/photos/50574554@N00/sets/72057594086947166/">Tag: devsummit06</a><br ></br><a href="http://www.flickr.com/photos/relkins/tags/summit/">Rob's</a><br ></br>a couple <a href="http://www.flickr.com/photos/72513606@N00/tags/esri/">more</a></p><p ></p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/dev_summit_phot.html";}}i:16;a:13:{s:5:"title";s:16:"Developer Summit";s:4:"link";s:95:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76627337/developer_summi_4.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9580575";s:12:"link_replies";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_4.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9580575";s:9:"published";s:25:"2006-03-21T20:35:31-08:00";s:7:"updated";s:20:"2006-03-22T06:16:35Z";s:7:"summary";s:221:"Wow, what a great conference. There's going to be plenty of time over the next couple weeks to review the feedback, debrief on the logistics and to check out the sessions. Right now I really just want to thank everyone...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:2090:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p>Wow, what a great conference.</p>
+
+<p>There's going to be plenty of time over the next couple weeks to review the feedback, debrief on the logistics and to check out the sessions. </p>
+
+<p>Right now I really just want to thank everyone for being part of the event. I could go on and on about the incredible teams at ESRI in events, business partner program, marketing, prof. services, Information Services (our websites) and of course development. the fact is ESRI is an incredible organization and a truly amazing place to work. </p>
+
+<p>What really pulled the conference together were the people, and in particular those outside the fold of ESRI. I couldn't have had more fun talking developer with so many different people. Be it the hallway conversations, sessions, community center, at the pool, the bar - anywhere it great seeing everyone excited and in general just having fun. I can't say that we have some type of grass roots movement going on but I can say that this wasn't the BPC event and it definitely wasn't the UC. Between the technical content and the overall atmosphere I'm really happy with how everything went.</p>
+
+<p>All in all I'm really happy with where we've been over the past year with the EDN program, our changes to the developer products and especially where we're headed with 9.2 and the longer term. Who knows maybe we'll see sometype of tipping point for developers in the next year or two. I guess we'll have to wait and see.<br /> </p>
+
+<p>Until then for me the last couple days have been all about the business partner conference and today i'm in Washington DC for the <a href="http://www.cjmtk.com/">CJMTK developers conference</a>. I won't be covering the event (no cellphones, computers, pagers or anything else electronic and recordable). </p>
+
+<p>Until then here's a snapshot of the <a href="http://www.molw.org/blog">Steve</a> and I <a href="http://smogtownkickball.com/downloads/headed_to_the_devsummit.wmv">headed to the dev summit</a> on thursday last week.</p>
+
+<p>cheers</p>
+
+<p>&nbsp;</p>
+</div>
+";s:14:"link_enclosure";s:65:"http://smogtownkickball.com/downloads/headed_to_the_devsummit.wmv";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_4.html";}}i:17;a:12:{s:5:"title";s:21:"So many opportunities";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76590272/so_many_opportu.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9419379";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/so_many_opportu.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9419379";s:9:"published";s:25:"2006-03-12T20:03:39-08:00";s:7:"updated";s:20:"2006-03-13T14:37:32Z";s:7:"summary";s:82:"Just think of all the great things you'll learn at the ESRI Developer Summit......";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:598:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >Just think of all the great things you'll learn at the ESRI Developer Summit...<br ></br><a href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/ds_six_of_one_1.JPG" onclick="window.open(this.href, '_blank', 'width=360,height=750,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img width="300" height="625" border="0" alt="Ds_six_of_one_1" title="Ds_six_of_one_1" src="http://www.spatiallyenabled.com/images/ds_six_of_one_1.JPG"></img></a>
+
+
+</p>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/so_many_opportu.html";}}i:18;a:12:{s:5:"title";s:36:"What the heck is the tech talk area?";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76582846/what_the_heck_i.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9401639";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/what_the_heck_i.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9401639";s:9:"published";s:25:"2006-03-11T13:46:10-08:00";s:7:"updated";s:20:"2006-03-11T21:46:22Z";s:7:"summary";s:239:"Coming to the ESRI Developer Summit? Trying to figure out what a Tech Talk is? Here's a cheat sheet. Tech Talks are short discussion sessions that are held by technical workshop presenters after their sessions are over. Here's the idea....";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:2558:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p ><a onclick="window.open(this.href, '_blank', 'width=800,height=49,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/tech_talks2.JPG"><img width="400" height="24" border="0" src="http://www.spatiallyenabled.com/images/tech_talks2.JPG" title="Tech_talks2" alt="Tech_talks2"></img></a> 
+
+
+</p>
+
+<p >Coming to the ESRI Developer Summit? Trying to figure out what a Tech Talk is? Here's a cheat sheet.</p>
+
+<p >Tech Talks are short discussion sessions that are held by technical workshop presenters after their sessions are over. Here's the idea. Each technical workshop lasts 75 minutes. Presenters will cover their material and then take a few minutes to answer audience questions at the end of their session. As you all know each presenter has to scurry out of the room to allow the next presenter to start their session. Here's where the Tech Talks come in.</p>
+
+<p >After the session each of the presenters are scheduled to move over to an area of the community center (central gathering place at the conference) that we've cordoned off for Tech Talks. You'll be able to meet and greet the presenters, ask questions, do some networking and chat about whatever you like all on some comfy furniture in a casual environment. </p>
+
+<p >Not only will you have the chance to spend more time with the presenters (and yes they are there for you, and they do like to talk) but it also gives you a vehicle for meeting with presenters that you might not have been able to catch up with because you were busy in a different session.</p>
+
+<p >Here's an example: Say its Saturday 10:15AM and you're trying to decide between the <a href="http://edn.esri.com/index.cfm?fa=devSummit.detail&guid=0A894000-1244-4D86-B91F-7AFD644EEBC0">.NET Server session</a> or the <a href="http://edn.esri.com/index.cfm?fa=devSummit.detail&guid=A20DCD43-0A9B-4F37-A7BD-121A7B8A1691">Best Practices for Developing with ArcGlobe</a>. With the tech talks you'll be able to hit the Server session and then when it's over you can catch up with the Globe team in the tech talk area to get the highlights of their talk and to ask some of those pointed questions that have been nagging you. This is also a good way to simply see who the presenters are so that you can catch up with them later at the conference.</p>
+
+<p >oh ya, don't forget to let us know what you think about the conference... </p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/what_the_heck_i.html";}}i:19;a:12:{s:5:"title";s:28:"Developer Summit in the news";s:4:"link";s:95:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76513843/developer_summi_3.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9401207";s:12:"link_replies";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_3.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9401207";s:9:"published";s:25:"2006-03-11T12:57:27-08:00";s:7:"updated";s:20:"2006-03-11T20:58:07Z";s:7:"summary";s:228:"sometimes i feel like the human rss feed, this is one of those times... Here's a couple interviews that clint and I did respectively WebProNews - 1000 ESRI Developers taking in the first summit and The GIS Monitor Newsletter....";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:541:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >sometimes i feel like the human rss feed, this is one of those times...</p>
+
+<p >Here's a couple interviews that clint and I did respectively <a href="http://www.webpronews.com/blogtalk/blogtalk/wpn-58-200603101000ESRIdeveloperstakinginthefirstSummit.html"><span style="text-decoration: underline;">WebProNews - 1000 ESRI Developers taking in the first summit</span></a> and <a href="http://www.gismonitor.com/news/newsletter/archive/030906.php#ESRI">The GIS Monitor Newsletter</a>.</p>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_3.html";}}i:20;a:12:{s:5:"title";s:27:"Developer Summit Attendence";s:4:"link";s:95:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76582934/developer_summi_2.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9391384";s:12:"link_replies";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_2.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9391384";s:9:"published";s:25:"2006-03-10T16:45:47-08:00";s:7:"updated";s:20:"2006-03-11T00:45:57Z";s:7:"summary";s:236:"Developer Summit attendance is also looking great. As of last friday there are 640 people registered you take this plus the several hundred ESRI employees that will cycle thought the event and we're going to have a packed house. Note...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1213:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >Developer Summit attendance is also looking great. As of last friday there are <strong >640 people registered </strong>you take this plus the several hundred ESRI employees that will cycle thought the event and we're going to have a packed house<strong >.</strong> </p>
+
+<p >Note that this week on-line registration was closed but we'll pick registration back up next Friday at the start of the event. <strong >We will not sell out</strong> so grab that last minute flight and hotel package so that you can join us in beautiful palm springs.</p>
+
+<p >how do you like the start of my whiteboard marketing campaign...<br ></br><a href="http://spatiallyenabled.blogs.com/photos/uncategorized/image_032.jpg"><a onclick="window.open(this.href, '_blank', 'width=640,height=480,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/image_032_1.jpg"><img width="100" height="75" border="0" src="http://www.spatiallyenabled.com/images/image_032_1.jpg" title="Image_032_1" alt="Image_032_1"></img></a>
+
+
+<br ></br></a>
+
+
+
+</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_2.html";}}i:21;a:12:{s:5:"title";s:28:"Friday and what a crazy week";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76590273/friday_and_what.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9391298";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/friday_and_what.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9391298";s:9:"published";s:25:"2006-03-10T16:35:04-08:00";s:7:"updated";s:20:"2006-03-11T00:35:17Z";s:7:"summary";s:227:"I can't believe how fast the week has gone by. The Developer Summit is almost here. This week we've nailed down the plenary sessions, \ birds of a feather, SIGs, conference catalog, and a ton of staffing assignments. I'll be...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1384:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p>I can't believe how fast the week has gone by. </p>
+
+<p>The Developer Summit is almost here. This week we've nailed down the plenary sessions, \ birds of a feather, SIGs, conference catalog, and a ton of staffing assignments.</p>
+
+<p>I'll be your MC for the Friday and Saturday plenary. We've got Scott and a bunch of the development leads presenting the key tenants behind&nbsp; ArcGIS as well as our vision for forward. On Saturday there are some great talks by IBM and Microsoft on next generation web applications and some of the tooling that will allow you to build them today.</p>
+
+<p>The birds-of-a-feather combined with the SIGs will really fill out an already packed schedule. These will be up on the website shortly until then, here's a sneak peek:</p>
+
+<p><span style="font-size: 0.8em;"><strong>Friday</strong><br />ArcWeb Services<br />12pm 12:45pm – Pasadena<br /><br />Developing with ArcIMS <br />12pm - 12:45pm – Sierra / Ventura<br /><br />Unit Testing and ArcObjects<br />5:15pm – 6:00pm Community Center Tech Talk # 4<br /><br /><strong>Saturday</strong><br />ArcGIS Explorer<br />12pm - 12:45pm – Sierra / Ventura<br /><br />Migrating from VB 6 to .NET (Microsoft)<br />12:15pm – 12:45pm - Community Center Tech Talk # 4<br /><br />IBM (Need title)<br />12pm - 12:45pm – Smoketree A/B/C</span></p>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/friday_and_what.html";}}i:22;a:12:{s:5:"title";s:50:"Videos - alpha geek, marketer and Developer Summit";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76590274/videos_alpha_ge.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9327607";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/videos_alpha_ge.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9327607";s:9:"published";s:25:"2006-03-07T09:32:01-08:00";s:7:"updated";s:20:"2006-03-07T17:32:32Z";s:7:"summary";s:211:"there's so much great video content on the web. last night i couldn't get any sleep so here's a couple of my highlights. both definitely worth a watch. the first one is alpha geek Jim Gray the second is alpha...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1705:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >there's so much great video content on the web. last night i couldn't get any sleep so here's a couple of my highlights. both definitely worth a watch.</p>
+
+<p ><a onclick="window.open(this.href, '_blank', 'width=300,height=225,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/168181.jpg"><img width="100" height="75" border="0" src="http://www.spatiallyenabled.com/images/168181.jpg" title="168181" alt="168181"></img></a>
+
+
+the first one is <a href="http://channel9.msdn.com/showpost.aspx?postid=168181">alpha geek Jim Gray</a></p>
+
+<p ><a onclick="window.open(this.href, '_blank', 'width=314,height=267,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false" href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/sethgodin.JPG"><img width="100" height="85" border="0" src="http://www.spatiallyenabled.com/images/sethgodin.JPG" title="Sethgodin" alt="Sethgodin"></img></a>
+
+
+the second is <a href="http://video.google.com/videoplay?docid=-6909078385965257294">alpha marketer Seth Godin</a></p>
+
+<p >P.S. we're video taping all of the developer summit technical workshops this year. how geeky would it be to get all of these things on a <a href="http://store.apple.com/1-800-MY-APPLE/WebObjects/AppleStore?family=iPod&cid=AOSA10000015630&siteID=ukRUajDh%2AKU-VVMi3kYpK8y9SqtFILdNZA">video ipod?</a> Hey, maybe that's an idea; post conference we sell ipods with pre-installed developer summit content.</p><br ></br>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/videos_alpha_ge.html";}}i:23;a:12:{s:5:"title";s:56:"Host your own Birds of a Feather at the Developer Summit";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76615931/host_your_own_b.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9317635";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/host_your_own_b.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9317635";s:9:"published";s:25:"2006-03-06T18:51:17-08:00";s:7:"updated";s:20:"2006-03-07T02:51:37Z";s:7:"summary";s:241:"Interested in hosting a Birds of Feather talk at the ESRI Developer Summit? Submit your request via the EDN website now!Birds of a Feather (BOF) sessions provide a forum for face-to-face interaction on topics that are important to you and...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:741:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >Interested in hosting a Birds of Feather talk at the ESRI Developer Summit? Submit your request via the <a href="http://surveys.esri.com/qsDisplay.cfm?QS_ID=788">EDN website now</a>!</p><blockquote ><p ><em >Birds of a Feather (BOF) sessions provide a forum for face-to-face interaction 
+on topics that are important to you and others in the community.
+</em></p>
+
+<p ><em >BOF are easy and straight forward. You submit an interesting and engaging 
+topic; we’ll post the topic on the EDN Web site for others to comment on and at 
+the conference we’ll provide a space and time where you and others can flock 
+together for an interactive, and casual, discussion.</em></p></blockquote>
+
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/host_your_own_b.html";}}i:24;a:12:{s:5:"title";s:37:"Developer Summit tab is now available";s:4:"link";s:95:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76615933/developer_summi_1.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9310552";s:12:"link_replies";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_1.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9310552";s:9:"published";s:25:"2006-03-06T10:49:37-08:00";s:7:"updated";s:20:"2006-03-06T18:49:50Z";s:7:"summary";s:229:"Swing by the EDN website this afternoon to check out the Developer Summit tab. The tab mirrors most of the content on the marketing page but we've added comments for each of the activities at the conference. We're already fine...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1055:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p ><img border="0" src="http://spatiallyenabled.blogs.com/photos/uncategorized/dev_summit_tab_ednwebsite.jpg" title="Dev_summit_tab_ednwebsite" alt="Dev_summit_tab_ednwebsite" style="margin: 0px 5px 5px 0px; float: left;"></img>
+Swing by the <a href="http://edn.esri.com">EDN website</a> this afternoon to check out the Developer Summit tab. The tab mirrors most of the content on the marketing page but we've added comments for each of the activities at the conference. </p>
+
+<p >We're already fine tuning the summit as a response to the information that we've received from the conference survey. Last week was a major internal milestone for ArcGIS beta 2. Witht that behind us most of the presenters will be busy using this week to fine tuning their presentations and gear up for the summit. If you have time let the conference team know what you think and what you want to hear at the summit. Your opinions really count and all this is your conference so help us make it the best event possible.</p>
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://www.spatiallyenabled.com/2006/03/developer_summi_1.html";}}i:25;a:12:{s:5:"title";s:51:"Developer Summit On-Line registration ending Friday";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76509092/developer_summi.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9246667";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/03/developer_summi.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9246667";s:9:"published";s:25:"2006-03-02T09:47:28-08:00";s:7:"updated";s:20:"2006-03-02T17:47:48Z";s:7:"summary";s:235:"Don't forget that tomorrow is the last day for on-line Developer Summit registration. If you can't get your registration in by Friday don't worry; you'll still be able to register, on site, at the event. And yes, everyone is welcome...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1178:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://spatiallyenabled.blogs.com/photos/uncategorized/esri_developer.JPG"></a><a href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/esri_developer_1.JPG" onclick="window.open(this.href, '_blank', 'width=800,height=68,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img width="400" height="34" border="0" alt="Esri_developer_1" title="Esri_developer_1" src="http://www.spatiallyenabled.com/images/esri_developer_1.JPG" /></a>
+
+
+<br />
+
+
+</p>
+
+<p>Don't forget that <strong>tomorrow is the last day</strong> for <a href="http://www.esri.com/events/devsummit/register.html">on-line Developer Summit registration</a>. If you can't get&nbsp; your registration in by Friday don't worry; you'll still be able to register, on site, at the event.</p>
+
+<p> And yes, everyone is welcome - registration will NOT fill up. So get on-line now or bring your credit card to the event.</p>
+
+<p><em>P.S. don't forget to pack your green going out shirt - you don't want to get pinched on St. Patty's day.<br /><br />cheers<br /></em></p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/03/developer_summi.html";}}i:26;a:12:{s:5:"title";s:37:"Feeling confused by the ESRI RSS Feed";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76530413/feeling_confuse.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9216915";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/02/feeling_confuse.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9216915";s:9:"published";s:25:"2006-02-28T17:15:11-08:00";s:7:"updated";s:20:"2006-03-01T01:19:32Z";s:7:"summary";s:196:"I love the fact that ESRI has an RSS feed with tons of great information but am I the only one that gets a headache trying to read the content? RSS is great but how about splitting the feed out...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1654:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p ><a href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/esri_rss_feeds.jpg" onclick="window.open(this.href, '_blank', 'width=252,height=162,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img width="100" height="64" border="0" alt="Esri_rss_feeds" title="Esri_rss_feeds" src="http://www.spatiallyenabled.com/images/esri_rss_feeds.jpg"></img></a>
+
+
+I love the fact that <a href="http://www.esri.com">ESRI</a> has an <a href="http://www.esri.com/news/rss/rss.xml">RSS feed</a> with tons of great information but am I the only one that gets a headache trying to read the content?</p>
+
+<p >RSS is great but how about splitting the feed out to multiple channels? this way i could subscribe to press releases, general announcements, conference updates, case studies, jobs and all the other great stuff on the feed separately. If this doesn't work how about adding categories (tags) to each item?</p>
+
+<p >It's probably just me but it's hard troll the feed for valuable headlines when I'm constantly having to switch contexts between content areas. <br ></br><a href="http://spatiallyenabled.blogs.com/.shared/image.html?/photos/uncategorized/esri_news_feed.jpg" onclick="window.open(this.href, '_blank', 'width=799,height=734,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img width="500" height="459" border="0" alt="Esri_news_feed" title="Esri_news_feed" src="http://www.spatiallyenabled.com/images/esri_news_feed.jpg"></img></a>
+
+
+
+</p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/02/feeling_confuse.html";}}i:27;a:12:{s:5:"title";s:35:"Developer Summit Keynotes Announced";s:4:"link";s:95:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76590275/developer_summi_3.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9216335";s:12:"link_replies";s:62:"http://www.spatiallyenabled.com/2006/02/developer_summi_3.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9216335";s:9:"published";s:25:"2006-02-28T16:17:34-08:00";s:7:"updated";s:20:"2006-03-01T00:17:49Z";s:7:"summary";s:249:"The ESRI Developer Summit keynote details are now available on the conference site. If you've been to other ESRI conferences you'll probably notice that these keynotes are little different. The conference is a two day event with each day starting...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:3600:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p >The ESRI <a href="http://www.devsummit.com">Developer Summit </a>keynote details are now available on the <a href="http://www.esri.com/events/devsummit/sessions/keynote.html">conference site.</a> If you've been to other ESRI conferences you'll probably notice that these keynotes are little different. The conference is a two day event with each day starting off with a 90 minute keynote to be moderated by yours truly. that's right no long plenary, just lots of great content that you can actually take home and use.</p>
+
+<p >Here are the details:</p>
+
+<p ><strong >Friday March 17</strong><br ></br>Scott Morehouse, ESRI Director of Research and Development, is chief
+software architect and visionary for ESRI, responsible for software
+development strategy and implementation. In his keynote presentation,
+Morehouse will discuss the ArcGIS platform, covering software
+architecture; product vision; deployment frameworks; and developer
+options for building desktop, server, and mobile GIS applications.</p>
+
+<p ><strong ><span style="font-size: 1.2em;">Saturday March 18</span></strong><br ></br><strong >IBM Presents: Business Processes, Service-Oriented Architecture and Governance for the Enterprise -</strong><strong > Martin Nally, IBM</strong><br ></br>Companies are under increasing pressure to implement software support
+for new products and business processes more rapidly. They also need to
+be able to integrate their systems with external systems either to
+integrate with larger supply chains, or because they wish to outsource
+non-strategic function to external suppliers. Mergers and acquisitions
+also continue to create the need for integration of systems. The
+combination of these and other business pressures are fueling a strong
+interest in service-oriented architectures (SOA). SOA holds the promise
+of reducing the time to implement new business processes by recombining
+core function in a flexible, loosely-coupled manner. Because SOA
+implementations can be based on open internet standards, they also hold
+the promise of more easily supporting business processes that span
+locations and organizations. Companies are also bringing the business
+value for their IT investments under increasing scrutiny and at the
+same time must comply with increasing levels of regulatory
+requirements. This is creating a strong focus on the issues of
+governance of the processes of software development and resulting
+applications. This talk will explore these topics and describe the
+solutions that IBM offers customers for the building, deployment and
+governance of SOA applications.</p>
+
+<p ><strong >Microsoft Presents: Next Web Now - </strong><strong >Eddie Amos, Microsoft Corp.</strong><br ></br>Rising from the droplets of the bubble that burst in 2000, the next
+generation of the Web is coming. Often called Web 2.0. As Web-based
+content and services become increasingly indispensable, users are
+expecting to interact with your offerings in new ways and in new
+locations. Come to learn Microsoft's take on "the web as a service,"
+"folksonomies," "the Long Tail" and other Web 2.0 concepts. You'll hear
+about Microsoft's roadmap for the Web, and learn the latest about
+Windows Presentation Foundation, Windows Vista, ASP.NET, Windows Live!,
+as well as "Atlas", Microsoft's new AJAX framework, but who know just
+where the conversation will go? And of course, the ESRI attendees may
+have an opportunity to join in the discussion and get in a few
+questions of their own.</p>
+
+<p >PS we're getting close to 600 registered attendees... </p></div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://www.spatiallyenabled.com/2006/02/developer_summi_3.html";}}i:28;a:12:{s:5:"title";s:25:"Narc Button on ArcScripts";s:4:"link";s:93:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76530414/narc_button_on_.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9194832";s:12:"link_replies";s:60:"http://www.spatiallyenabled.com/2006/02/narc_button_on_.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9194832";s:9:"published";s:25:"2006-02-27T17:59:15-08:00";s:7:"updated";s:20:"2006-02-28T02:00:20Z";s:7:"summary";s:227:"If you've been to ArcScripts today, like James has, you'll probably notice that we added a Narc button to help keep track of scripts that violate our terms of use. ArcScripts has a long history in helping the community share...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:3834:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><img border="0" alt="Arcscripts_narc_button" title="Arcscripts_narc_button" src="http://spatiallyenabled.blogs.com/photos/uncategorized/arcscripts_narc_button.jpg" style="margin: 0px 5px 5px 0px; float: left;" />
+If you've been to <a href="http://arcscripts.esri.com/">ArcScripts</a> today, <a href="http://www.spatiallyadjusted.com/2006/02/27/help-clean-up-arcscripts/">like James has</a>, you'll probably notice that we added a Narc button to help keep track of scripts that violate our terms of use. </p>
+
+<p>ArcScripts has a long history in helping the community share samples and utilities targeting the ESRI platform. Unfortunately we occasionally find something that doesn't quite agree with the intention of the site. This is usually ends up being a piece of demo software or a trial-version.</p>
+
+<p>I agree that we need to preserve the intention of the site but disagree with Jame's comment that we're trying to <em>&quot;get a handle on the ArcScripts disaster&quot;</em>. The site still serves it's intended purpose and it's far from a disaster.</p>
+
+<p>I will say this, James has helped us take note (&quot;<a href="http://www.spatiallyadjusted.com/2006/02/02/how-to-increase-your-sales-via-arcscripts/">how to increase your sales</a>&quot;, &quot;<a href="http://www.spatiallyadjusted.com/2005/09/25/better-than-buying-an-ad/">Better than buying an ad</a>&quot;, &quot;<a href="http://www.spatiallyadjusted.com/2005/10/16/more-on-commercial-software-in-esris-arcscripts/">more on commercial software...</a>&quot;) and to his credit has fueled some of the recent work that we're doing in this area.</p>
+
+<p>So I did a little research into ArcScripts and can therefore tell you where we're at. First, ArcScripts has been in business for the past 8 years. If used to write Avenue code you're probably intimately familiar with the site. I also found out that the site has been relatively unchanged since it was first launched and because it straddles a line between the support and edn sites it doesn't really have a proper home. Here's some numbers: ArcScripts currently hosts 3900 scripts; in the past month 30 new scripts have been added; and in the past 5 months almost 400 deleted. </p>
+
+<p><strong>Where are we?</strong><br />I've taken ownership of the site. We're in the process of doing another pass to review the content. we won't go through every script but we will check the obvious areas where this type of stuff might crop up. Given that this is a community site I thought it would be appropriate to ask the community to help keep it in check; hence the narc button. if you hit the button you'll be asked to let us know why you think a particular script should be reviewed. If you like you can include your e-mail when you send us the information and we'll keep you in the loop as we review the content and take action.</p>
+
+<p>Additions to the site will still be pass through (i.e. we won't review each one for approval). We will however check uploads every couple week.</p>
+
+<p><strong>Where are we headed?</strong><br />As we move forward we'll put together a design to tear ArcScripts down and then rebuild it with a more modern design. This shouldn't be that hard and we'll be sure to take pages out of the open source playbook. Our goal will be a site that we can use to share code, data models, geoprocessing scripts, address data models and all kinds of other content. In doing this we'll have to make decisions; do we want source code control? be able to have threaded discussions on scripts? rate content? screen shots?&nbsp; </p>
+
+<p>With the Dev Summit coming up and ArcGIS Beta 2 on the horizon we'll have to let this simmer for a couple of months. In the meantime let me know if you have and requests.</p> <br /><br /><br /><br /><br /><br />
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:60:"http://www.spatiallyenabled.com/2006/02/narc_button_on_.html";}}i:29;a:12:{s:5:"title";s:30:"Very Spatial podcast available";s:4:"link";s:95:"http://feeds.feedburner.com/~r/typepad/spatiallyenabled/blog/~3/76509093/very_spatial_po_2.html";s:17:"link_service.edit";s:68:"http://www.typepad.com/t/atom/weblog/blog_id=182159/entry_id=9188304";s:12:"link_replies";s:62:"http://www.spatiallyenabled.com/2006/02/very_spatial_po_2.html";s:2:"id";s:33:"tag:typepad.com,2003:post-9188304";s:9:"published";s:25:"2006-02-27T10:19:50-08:00";s:7:"updated";s:20:"2006-02-27T18:20:04Z";s:7:"summary";s:228:"Over the weekend Jesse and Sue posted the Very Spatial podcast interview. I've done some interviews over the phone before but nothing that was ever recorded and distributed as an audio file. All in all it came out pretty good...";s:6:"author";s:22:"
+            
+        ";s:11:"author_name";s:12:"Brian Goldin";s:12:"atom_content";s:1584:"
+<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://spatiallyenabled.blogs.com/photos/uncategorized/avsp_banner_lg_1.jpg"><img border="0" src="http://spatiallyenabled.blogs.com/photos/uncategorized/avsp_banner_lg_1.jpg" title="Avsp_banner_lg_1" alt="Avsp_banner_lg_1" class="image-full" /></a>
+
+
+ <br />Over the weekend Jesse and Sue posted the <a href="http://veryspatial.com/?p=651">Very Spatial</a> podcast interview. I've done some interviews over the phone before but nothing that was ever recorded and distributed as an audio file. All in all it came out pretty good but I think the audio could have been a little better. I'll take the blame for this - the speaker phone in my office is less than optimal. Oh well, I guess we can try something different next time.&nbsp; Regardless, I really appreciate Jesse and Sue's help.</p>
+
+<p>I should also say that its great to see ESRI <a href="http://www.esri.com/news/podcasts/veryspatial.html">sponsoring podcasts </a>like this. You've probably already noticed that ESRI is spending a lot of time working on areas related to RSS, podcasts, blogging as well as other ways to get information to our customers. It isn't just a coincidence that we sponsor programs like this. ESRI is activly embracing changes in the web and in how people communicate, and hold conversations, on-line.</p>
+
+<p>If you haven't noticed yet we've got a few RSS feeds on the main ESRI page as well as on the support site. you'll start seeing more blogs shortly as well as podcasts coming from various teams from around ESRI.</p><br /><br />
+
+</div>
+";s:10:"feedburner";a:1:{s:8:"origlink";s:62:"http://www.spatiallyenabled.com/2006/02/very_spatial_po_2.html";}}}s:7:"channel";a:6:{s:5:"title";s:17:"Spatially Enabled";s:4:"link";s:32:"http://www.spatiallyenabled.com/";s:17:"link_service.post";s:51:"http://www.typepad.com/t/atom/weblog/blog_id=182159";s:2:"id";s:34:"tag:typepad.com,2003:weblog-182159";s:9:"generator";s:7:"TypePad";s:9:"link_self";s:57:"http://feeds.feedburner.com/typepad/spatiallyenabled/blog";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Wed, 17 Jan 2007 15:12:29 GMT
+";s:4:"etag";s:29:"Idef64sWkhHnWfQy4/QLeFHzT3g
+";}

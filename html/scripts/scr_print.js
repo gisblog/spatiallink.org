@@ -1,0 +1,1 @@
+function printdoc(text){text=document print(text)}

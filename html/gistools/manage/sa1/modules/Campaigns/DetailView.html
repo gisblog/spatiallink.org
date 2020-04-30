@@ -1,0 +1,131 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: DetailView.html,v 1.9 2005/04/29 21:19:58 joey Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="padding-bottom: 2px;">
+<form action="index.php" method="post" name="DetailView" id="form">
+
+			<input type="hidden" name="module" value="Campaigns">
+			<input type="hidden" name="record" value="{ID}">
+			<input type="hidden" name="isDuplicate" value=false>
+			<input type="hidden" name="action">
+			<input type="hidden" name="return_module">
+			<input type="hidden" name="return_action">
+			<input type="hidden" name="return_id" >
+			<input type="hidden" name="campaign_id" value="{ID}">
+		<input title="{APP.LBL_EDIT_BUTTON_TITLE}" accessKey="{APP.LBL_EDIT_BUTTON_KEY}" class="button" onclick="this.form.return_module.value='Campaigns'; this.form.return_action.value='DetailView'; this.form.return_id.value='{ID}'; this.form.action.value='EditView'" type="submit" name="button" value="  {APP.LBL_EDIT_BUTTON_LABEL}  ">  <input title="{APP.LBL_DELETE_BUTTON_TITLE}" accessKey="{APP.LBL_DELETE_BUTTON_KEY}" class="button" onclick="this.form.return_module.value='Campaigns'; this.form.return_action.value='ListView'; this.form.action.value='Delete'; return confirm('{APP.NTC_DELETE_CONFIRMATION}')" type="submit" name="button" value=" {APP.LBL_DELETE_BUTTON_LABEL} ">
+	</td>
+
+	</form>
+	<td align='right'>{ADMIN_EDIT}</td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="{GRIDLINE}" cellpadding="0" class="tabDetailView">
+<tr>
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_NAME}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{NAME}</slot></td>
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_ASSIGNED_TO}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{ASSIGNED_TO}</slot></td>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_CAMPAIGN_STATUS}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{STATUS}</slot></td>
+<!-- BEGIN: pro -->
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_TEAM}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{TEAM_NAME}</slot></td>
+<!-- END: pro -->
+<!-- BEGIN: open_source -->
+	<td width="20%" class="tabDetailViewDL"><slot>&nbsp;</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>&nbsp;</slot></td>
+<!-- END: open_source -->
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_CAMPAIGN_START_DATE}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{START_DATE}</slot></td>
+	<td  class="tabDetailViewDL"><slot>{APP.LBL_DATE_MODIFIED}&nbsp;</slot></td>
+	<td  class="tabDetailViewDF"><slot>{DATE_MODIFIED} {APP.LBL_BY} {MODIFIED_BY}</slot></td>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_CAMPAIGN_END_DATE}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{END_DATE}</slot></td>
+	<td  class="tabDetailViewDL"><slot>{APP.LBL_DATE_ENTERED}&nbsp;</slot></td>
+	<td  class="tabDetailViewDF"><slot>{DATE_ENTERED} {APP.LBL_BY} {CREATED_BY}</slot></td>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL"><slot>{MOD.LBL_CAMPAIGN_TYPE}</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{TYPE}</slot></td>
+	<td width="20%" class="tabDetailViewDL"><slot>&nbsp;</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL"><slot>&nbsp;</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>&nbsp;</slot></td>
+	<td width="20%" class="tabDetailViewDL"><slot>&nbsp;</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>&nbsp;</slot></td>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL" nowrap><slot>{MOD.LBL_CAMPAIGN_BUDGET} ({CURRENCY})</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{BUDGET}</slot></td>
+	<td width="20%" class="tabDetailViewDL" nowrap><slot>{MOD.LBL_CAMPAIGN_ACTUAL_COST} ({CURRENCY})</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{ACTUAL_COST}</slot></td>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL" nowrap><slot>{MOD.LBL_CAMPAIGN_EXPECTED_REVENUE} ({CURRENCY})</slot></td>
+	<td width="30%" class="tabDetailViewDF" nowrap><slot>{EXPECTED_REVENUE}</slot></td>
+	<td width="20%" class="tabDetailViewDL" nowrap><slot>{MOD.LBL_CAMPAIGN_EXPECTED_COST} ({CURRENCY})</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>{EXPECTED_COST}</slot></td>
+	</tr><tr>
+	</tr><tr>
+	<td width="20%" class="tabDetailViewDL"><slot>&nbsp;</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>&nbsp;</slot></td>
+	<td width="20%" class="tabDetailViewDL"><slot>&nbsp;</slot></td>
+	<td width="30%" class="tabDetailViewDF"><slot>&nbsp;</slot></td>
+	</tr>
+	<tr>
+	<td width="20%" valign="top" valign="top" class="tabDetailViewDL"><slot>{MOD.LBL_CAMPAIGN_OBJECTIVE}</slot></td>
+	<td colspan="3" class="tabDetailViewDF"><slot>{OBJECTIVE}</slot></td>
+</tr><tr>
+	<td width="20%" valign="top" valign="top" class="tabDetailViewDL"><slot>{MOD.LBL_CAMPAIGN_CONTENT}</slot></td>
+	<td colspan="3" class="tabDetailViewDF"><slot>{CONTENT}</slot></td>
+</tr><tr>
+	<td width="20%" valign="top" valign="top" class="tabDetailViewDL"><slot>{MOD.LBL_TRACKER_URL}</slot></td>
+	<td colspan="3" class="tabDetailViewDF"><slot>{TRACKER_URL}</slot></td>
+</tr>
+<tr>
+	<td width="20%" valign="top" valign="top" class="tabDetailViewDL"><slot>{MOD.LBL_TRACKER_TEXT}</slot></td>
+	<td colspan="3" class="tabDetailViewDF"><slot>{TRACKER_TEXT}</slot></td>
+</tr>
+<tr>
+	<td width="20%" valign="top" valign="top" class="tabDetailViewDL"><slot>{MOD.LBL_REFER_URL}</slot></td>
+	<td colspan="3" class="tabDetailViewDF"><slot>{REFER_URL}</slot></td>
+</tr>
+<tr>
+	<td width="20%" valign="top" valign="top" class="tabDetailViewDL"><slot>{MOD.LBL_TRACKER_COUNT}</slot></td>
+	<td colspan="3" class="tabDetailViewDF"><slot>{TRACKER_COUNT}</slot></td>
+</tr>
+</table>
+<!-- END: main -->
+
+<!-- BEGIN: subpanel -->
+<slot>{SUBPROSPECTLISTS}</slot>
+<slot>{SUBEMAILMARKETING}</slot>
+<!-- END: subpanel -->

@@ -1,0 +1,342 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * {LBL_CURRENCY_SYM}Header: /cvsroot/sugarcrm/sugarcrm/themes/Amazon/header.html,v 1.14 2004/07/04 04:00:48 sugarclint Exp {LBL_CURRENCY_SYM}
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD html 4.01 Transitional//EN">
+<html>
+<head>
+<link REL="SHORTCUT ICON" HREF="include/images/sugar_icon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset={LBL_CHARSET}">
+<title>{APP.LBL_BROWSER_TITLE}</title>
+<style type="text/css">@import url("themes/{THEME}/style.css"); </style>
+<link href="themes/{THEME}/navigation.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="themes/{THEME}/menu.js"></script>
+<script language="javascript" src="themes/{THEME}/cookie.js"></script>
+<script language="javascript">
+
+function hideLeftCol(id){
+
+	if(this.document.getElementById( id).style.display=='none'){
+		this.document.getElementById( id).style.display='inline';
+
+		Set_Cookie('showLeftCol','true',30,'/','','');
+		var show = Get_Cookie('showLeftCol');
+		document['HideHandle'].src = '{IMAGE_PATH}hide.gif';		
+	}else{
+		this.document.getElementById(  id).style.display='none';
+
+		Set_Cookie('showLeftCol','false',30,'/','','');
+		var show = Get_Cookie('showLeftCol');
+		document['HideHandle'].src = '{IMAGE_PATH}show.gif';	
+
+	}
+}
+
+function showSubMenu(id){
+	if(this.document.getElementById( id).style.display=='none'){
+		tbButtonMouseOver('HideHandle',145,'',10);
+	}
+}
+
+
+</script>
+</head>
+<body {ONLOAD} onMouseOut="closeMenus();">
+<script language="JavaScript1.2">
+var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+var ie4up = (document.all) ? 1 : 0;
+var ns6 = (document.getElementById&&!document.all)?1:0;
+if (ie4up) {
+	var right_padding = 230;
+	var ball_y_stop = 87;
+} else {
+	var right_padding = 245;
+	var ball_y_stop = 90;
+}
+	
+doc_height=(ns4up||ns6)?window.innerHeight:window.document.body.clientHeight;
+doc_width=(ns4up||ns6)?window.innerWidth:window.document.body.clientWidth;
+ball_x = doc_width-right_padding;
+ball_y=-6;
+
+if (ns4up) {
+	document.write("<layer name='ball' visibility='show' left='"+ball_x+"' top='"+ball_y+"'><img src='{IMAGE_PATH}golfball.png' height='6' width='6'></layer>");
+} else {
+	document.write("<div id='ball' style='position: absolute;z-index:1000l; top:"+ ball_y +"; visibility: visible; left:" + ball_x + "'><img src='{IMAGE_PATH}golfball.png' height='6' width='6'></div>");
+}
+i =0;
+bb=false;
+polarity = false;
+var smoothness=1;
+var yspeed=3;
+var xspeed=.2;
+
+function animate_ball () {
+	
+
+	if (i == 0) {
+		ball_x = doc_width-right_padding;
+		ball_y=-6;
+	}
+
+	ball_x_stop = doc_width-right_padding+25;
+	if(ball_y < ball_y_stop && bb == false) {
+		ball_y = ball_y+yspeed;
+		ball_x = ball_x+xspeed;
+	} else {
+		bb=true;
+		if(ball_x < ball_x_stop) {
+			ball_x = ball_x+.3;
+			if (polarity == false) {polarity=true;} else {polarity=false;}
+			if (polarity==true)
+			{
+				ball_y = ball_y-1;
+			} else {
+				ball_y = ball_y+1;
+			}
+
+		} else {
+			clearTimeout(ball_timer);
+			if (ie4up) {
+				document.all["ball"].style.visibility = 'hidden';
+			} else if (ns4up) {
+				document.layers["ball"].visibility = 'hide';
+			} else if (ns6) {
+				document.getElementById("ball").style.visibility='hidden';
+			}
+		}
+
+	}
+
+	if (ie4up) {
+		document.all["ball"].style.pixelTop = ball_y;
+		document.all["ball"].style.pixelLeft = ball_x;
+	} else if (ns4up) {
+		document.layers["ball"].top = ball_y;
+		document.layers["ball"].left = ball_x;
+	} else if (ns6) {
+		document.getElementById("ball").style.top=ball_y;
+		document.getElementById("ball").style.left=ball_x;
+	}
+		
+		
+
+ball_timer = setTimeout("animate_ball()", smoothness);
+	i++;
+}
+
+function start_animation() {
+bb=false;
+i=0;
+	if (ie4up) {
+		document.all["ball"].style.visibility = 'visible';
+	} else if (ns4up) {
+		document.layers["ball"].visibility = 'show';
+	} else if (ns6) {
+		document.getElementById("ball").style.visibility='visible';
+	}
+	
+	animate_ball();
+
+}
+//window.onload=animate_ball;
+</script>
+	<!-- BEGIN: sub_more -->
+	<div id="SubMoreMenu" class="menu">
+	<!-- BEGIN: sub_more_item -->
+	<a class="menuItem" href="{URL}" id="{SC_MODULE_NAME}Handle" parentid="SubMoreMenu" onMouseOver="hiliteItem(this,'yes'); closeSubMenus(this);" onMouseOut="unhiliteItem(this);">{LABEL}</A>
+	<!-- END: sub_more_item -->
+	</div>
+	<!-- END: sub_more -->
+	<div id="HideMenu" class="subDmenu">
+<table cellspacing="0" cellpadding="0" border="0" width="160" onMouseOver="hiliteItem(this,'no');">
+	<tr>
+	<td><img src="{IMAGE_PATH}leftNav_left.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	<td width="100%" style="border-top: 1px solid #164D00; background-image: url({IMAGE_PATH}grass_bg2.gif);"><img src="include/images/blank.gif" width="1" height="1" alt=""></td>
+	<td align="right"><img src="{IMAGE_PATH}leftNav_right.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	</tr>
+		<!-- BEGIN: hide -->
+
+<tr>
+    <td colspan="3" style="background-image: url({IMAGE_PATH}grass_bg2.gif);"><table class="tabTable" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td class="{TAB_CLASS}" {MOUSEOVER} onclick="document.location.href='index.php?module={MODULE_KEY}&action=index{MODULE_QUERY}'"><a   class="{TAB_CLASS}Link"  href="index.php?module={MODULE_KEY}&action=index{MODULE_QUERY}">{MODULE_NAME}</A></td>
+</tr>
+</table></td>
+
+<!-- BEGIN: sub_hide -->
+<tr>
+<td  colspan="3"><table class="subMenuTable" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td class="subMenu" onmouseover="this.style.background='#76BD71';this.style.cursor='hand';" onmouseout="this.style.background='#6AAA66';this.style.cursor='auto';" onclick="document.location.href='{URL}'" nowrap><a class="subMenuLink" href="{URL}"><img alt="{LABEL}" src="{IMAGE_PATH}{SC_MODULE_NAME}.gif" width="16" height="16" border="0" align="absmiddle"></a>&nbsp;<a class="subMenuLink" href="{URL}">{LABEL}</A></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- END: sub_hide -->
+		</tr>
+				<!-- END: hide -->
+	<tr>
+	<td><img src="{IMAGE_PATH}leftNav_lowerLeft.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	<td width="100%" style="border-bottom: 1px solid #164D00; background-image: url({IMAGE_PATH}grass_bg2.gif);"><img src="include/images/blank.gif" width="1" height="1" alt=""></td>
+	<td align="right"><img src="{IMAGE_PATH}leftNav_lowerRight.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	</tr>
+	</table>
+	</div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" onMouseOut="closeMenus();">
+<tr>
+    <td colspan="2" style="background-image : url({IMAGE_PATH}/header_bg.png);">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+		<tr height="100" valign="top">
+		    <td nowrap><img src="{IMAGE_PATH}company_logo.png" width="212" height="40" alt="Company Logo" border="0" style="margin-left: 10px;" align="top"><img onclick="start_animation();" src="{IMAGE_PATH}golfer.png" width="226" height="100" alt="""></td>
+		    <td width="100%" align="right"><img src="{IMAGE_PATH}flag_header.png" width="20" height="100" alt="Flag"></td>
+				<form name='UnifiedSearch'>
+				  <input type="hidden" name="action" value="UnifiedSearch">
+				  <input type="hidden" name="module" value="Home">
+				  <input type="hidden" name="search_form" value="false">
+		    <td valign="top" align="right" nowrap  style="padding-right: 10px;">
+			<img src="include/images/sugarsales_myarea.png" alt="Sugar Sales" width="180" height="20" border="0" style="margin-bottom: 4px;margin-top: 4px;"><br>
+			<!-- BEGIN: left_form_search -->
+
+			<div style="padding-bottom: 4px;" class="search"><b>{TITLE}</b> <input type="text" class="searchField" name="query_string" size="14" value="{SEARCH}">&nbsp;<input type="image" class="searchButton" src="{IMAGE_PATH}searchButton.png" width="26" height="18" value="{APP.LBL_SEARCH_BUTTON_LABEL}" align="absmiddle" alt="{APP.LBL_SEARCH_BUTTON_LABEL}"></div>
+		<!-- END: left_form_search -->
+	</td>			</form>
+		</tr>
+		<tr>
+		<td width="100%" nowrap colspan="3" class="subMenuBar2">
+
+		
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr><td width="100%" class="subMenu2" align="right"><!-- BEGIN: sub_menu2 -->
+			<!-- BEGIN: sub_menu_item2 --><a href="{URL}" class="subMenu2Link">{LABEL}</a>&nbsp;{SEPARATOR}&nbsp;<!-- END: sub_menu_item2 -->
+			<!-- END: sub_menu2 --></td>
+    <td width="1"><img src="{IMAGE_PATH}myAreaLeft.gif" width="24" height="19" border="0" alt=""></td>
+    <td nowrap class="myArea"><a  href="index.php?module=Users&action=DetailView&record={CURRENT_USER_ID}" class="myAreaLink">{MY_SBOLD}{APP.LBL_MY_ACCOUNT}{MY_EBOLD}</a>&nbsp;|&nbsp;<a href="index.php?module=Employees&action=ListView" class="myAreaLink">{EMP_SBOLD}{APP.LBL_EMPLOYEES}{EMP_EBOLD}</a>&nbsp;|&nbsp;{ADMIN_SBOLD}{ADMIN_LINK}{ADMIN_EBOLD}<a href="index.php?module=Users&action=Logout" class="myAreaLink">{APP.LBL_LOGOUT}</a>&nbsp;|&nbsp;<a href="index.php?module=Home&action=About" class="myAreaLink">{ABOUT_SBOLD}{APP.LNK_ABOUT}{ABOUT_EBOLD}</a></td>
+</tr>
+</table>
+
+		</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr height="20">
+<td colspan="2">
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+	<td class="welcome" width="160"><img src="{IMAGE_PATH}flag.png" width="14" height="14" align="absmiddle">&nbsp;{APP.NTC_WELCOME} {CURRENT_USER}</td>
+	<td nowrap  class="lastView"><!-- BEGIN: left_form_recent_view -->
+		<b>{TITLE_LAST_VIEW}:</b>&nbsp;&nbsp;<!-- BEGIN: left_form_recent_view_row --><a class="lastViewLink" title="[{APP.LBL_ALT_HOT_KEY}{ROW_NUMBER}]" accessKey="{ROW_NUMBER}" href="{RECENT_URL}"><img alt="{RECENT_LABEL_FULL}" src="{IMAGE_PATH}{MODULE_NAME}.gif" width="16" height="16" border="0" align="absmiddle"></a>&nbsp;<a class="lastViewLink" title="[{APP.LBL_ALT_HOT_KEY}{ROW_NUMBER}]" accessKey="{ROW_NUMBER}" href="{RECENT_URL}">{RECENT_LABEL}</A>&nbsp;
+		<!-- END: left_form_recent_view_row -->
+		<!-- BEGIN: left_form_recent_view_empty -->
+
+			{APP.NTC_NO_ITEMS_DISPLAY}
+
+		<!-- END: left_form_recent_view_empty -->
+
+		<!-- END: left_form_recent_view --></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<td valign="top" style="width: 10px;"><img style="cursor: hand;" id="HideHandle" name="HideHandle" src="{IMAGE_PATH}show.gif" alt="" onclick='hideLeftCol("leftCol");closeMenus();' onmouseover="showSubMenu('leftCol')"></td>
+	<td valign="top" style="width: 160px;"><div style="display: none;" id="leftCol"><table cellpadding="0" cellspacing="0" border="0" width="160"><tr><td style="padding-right: 10px;">
+	<!-- BEGIN: left_form -->
+	<p>
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+	<td><img src="{IMAGE_PATH}leftNav_left.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	<td width="100%" style="border-top: 1px solid #164D00;background-image: url({IMAGE_PATH}grass_bg2.gif);"><img src="include/images/blank.gif" width="1" height="1" alt=""></td>
+	<td align="right"><img src="{IMAGE_PATH}leftNav_right.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	</tr>
+					<!-- BEGIN: tab -->
+
+<tr>
+    <td colspan="3" style="background-image: url({IMAGE_PATH}grass_bg2.gif);"><table class="tabTable" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td class="{TAB_CLASS}" {MOUSEOVER} onclick="document.location.href='index.php?module={MODULE_KEY}&action=index{MODULE_QUERY}'"><a   class="{TAB_CLASS}Link"  href="index.php?module={MODULE_KEY}&action=index{MODULE_QUERY}">{MODULE_NAME}</A></td>
+</tr>
+</table></td>
+
+<!-- BEGIN: sub_menu -->
+
+<!-- BEGIN: sub_menu_item -->
+<tr>
+<td  colspan="3"><table class="subMenuTable" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td class="subMenu" onmouseover="this.style.background='#76BD71';this.style.cursor='hand';" onmouseout="this.style.background='#6AAA66';this.style.cursor='auto';" onclick="document.location.href='{URL}'" nowrap><a class="subMenuLink" href="{URL}"><img alt="{LABEL}" src="{IMAGE_PATH}{SC_MODULE_NAME}.gif" width="16" height="16" border="0" align="absmiddle"></a>&nbsp;<a class="subMenuLink" href="{URL}">{LABEL}</A></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- END: sub_menu_item -->
+
+
+			<!-- END: sub_menu -->
+		</tr>
+				<!-- END: tab -->
+	<tr>
+	<td><img src="{IMAGE_PATH}leftNav_lowerLeft.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	<td width="100%" style="border-bottom: 1px solid #164D00; background-image: url({IMAGE_PATH}grass_bg2.gif);"><img src="include/images/blank.gif" width="1" height="1" alt=""></td>
+	<td align="right"><img src="{IMAGE_PATH}leftNav_lowerRight.gif" width="6" height="6" border="0" alt="Navigation"></td>
+	</tr>
+	</table>	</p>
+	<script language="Javascript">
+	if (!Get_Cookie('showLeftCol')) {
+		Set_Cookie('showLeftCol','true',30,'/','','');
+	}
+	var show = Get_Cookie('showLeftCol');
+
+	if (show == 'true') {
+		this.document.getElementById('leftCol').style.display='inline';
+		document['HideHandle'].src = '{IMAGE_PATH}hide.gif';
+	} else {
+		this.document.getElementById('leftCol').style.display='none';
+		document['HideHandle'].src = '{IMAGE_PATH}show.gif';	
+		
+	}
+	</script>
+	<!-- END: left_form -->
+	<p>
+	<!-- BEGIN: left_form_new_record -->
+	{NEW_RECORD}
+	<!-- END: left_form_new_record -->
+	<img src="{IMAGE_PATH}blank.gif" alt="" width="160" height="1" border="0"></td></tr></table></div></td>
+
+
+    <td style="vertical-align: top; width: 100%">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="background-image: url({IMAGE_PATH}grass_bg2.gif);">
+	<tr>
+    	<td style="background-image: url('{IMAGE_PATH}grass_bg.gif');" width="10"><img src="{IMAGE_PATH}leftColumnCorner.gif" height="10" width="10" alt=""></td>
+    	<td style="border-top: 1px solid #164D00" width="100%" colspan="2"><img src="include/images/blank.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+    	<td style="border-left: 1px solid #164D00"><img src="include/images/blank.gif" width="1" height="1" alt=""></td>
+    	<td>
+<!-- END: main -->

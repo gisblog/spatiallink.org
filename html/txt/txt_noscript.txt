@@ -1,0 +1,3 @@
+<noscript>
+	It seems that your browser has either disabled Javascript or blocked active content. Please enable Javascript by changing your browser options and allow active content, then refresh the page and try again.
+</noscript>

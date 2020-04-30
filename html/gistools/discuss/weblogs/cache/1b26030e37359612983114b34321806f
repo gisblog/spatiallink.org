@@ -1,0 +1,257 @@
+O:9:"MagpieRSS":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:5:{s:5:"title";s:79:"Suggesting Carbon with Composer – Date and Time the Right Way - SitePoint PHP";s:4:"link";s:85:"http://www.sitepoint.com/suggesting-carbon-with-composer-date-and-time-the-right-way/";s:7:"pubdate";s:31:"Fri, 13 Nov 2015 17:00:42 +0000";s:11:"description";s:5132:"<p><a href="http://carbon.nesbot.com/">Carbon</a> is a small library for date and time manipulation in PHP. It relies on and extends the core <a href="http://php.net/manual/en/class.datetime.php">DateTime</a> class, adding helpful methods for a significantly saner experience.</p>
+<p>In this article, we’ll take a look at some basic usage examples, and then use it in a real project.</p>
+<p><img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/11/1446980068datetime-1024x682.jpg" alt="Date and time image"/></p>
+<h2 id="introduction">Introduction</h2>
+<p>Carbon is just a class which is designed to be used <em>instead</em> of DateTime. Due to extending DateTime, all DateTime methods are available to users of Carbon. Additionally, it implements a <code>__toString</code> method, allowing users to put it in place of string representations of date and time as well.</p>
+<p>It can easily be installed with Composer:</p>
+<pre><code>composer require nesbot/carbon
+</code></pre>
+<p>Let’s see some example uses, as presented in their <a href="http://carbon.nesbot.com/docs">excellent documentation</a>.</p>
+<h2 id="example-uses">Example Uses</h2>
+<p>The easiest way to get started with Carbon is to just pass a human readable date string into its constructor, along with an optional timezone - if the timezone is omitted, the one set by the current PHP installation will be used.</p>
+<pre><code>$carbon = new Carbon('first day of next week');
+</code></pre>
+<p>It can also be instantiated from strings, timestamps, even other instances of DateTime or even Carbon. The instance can be copied with the <code>copy()</code> method, for efficient cloning.</p>
+<p>From there, we have access to a smorgasbord of helper checkers and getters:</p>
+<pre><code>$carbon->isWeekend();
+$carbon->isFuture();
+$carbon->isLeapYear();
+
+$carbon->year;
+$carbon->month;
+
+$carbon->daysInMonth;
+$carbon->weekOfYear;
+</code></pre>
+<p>The package also exposes static methods for creating new instances quickly:</p>
+<pre><code>echo Carbon::now()->addYear()->diffForHumans();    // in 1 year
+</code></pre>
+<p>Even birthdays can be checked, as we can see by this example from the docs:</p>
+<pre><code>$born = Carbon::createFromDate(1987, 4, 23);
+$noCake = Carbon::createFromDate(2014, 9, 26);
+$yesCake = Carbon::createFromDate(2014, 4, 23);
+$overTheHill = Carbon::now()->subYears(50);
+var_dump($born->isBirthday($noCake));              // bool(false)
+var_dump($born->isBirthday($yesCake));             // bool(true)
+var_dump($overTheHill->isBirthday());              // bool(true) -> default compare it to today!
+</code></pre>
+<h3 id="localization">Localization</h3>
+<p>Localization is also supported, so that output can be given in any desired language installed on the machine powering the PHP app. Note that you <strong>do</strong> need to install the necessary locales for this to work - refer to your operating system’s documentation for details on how to do that.</p>
+<p>To localize date and time strings, the standard PHP function <code>setlocale</code> can be used:</p>
+<pre><code>setlocale(LC_TIME, 'German');
+echo $dt->formatLocalized('%A %d %B %Y');          // Mittwoch 21 Mai 1975
+</code></pre>
+<p>To localize the <code>diffForHumans</code> method which outputs a human-readable difference in time, the class offers its own <code>setLocale</code> method:</p>
+<pre><code>Carbon::setLocale('de');
+echo Carbon::now()->addYear()->diffForHumans();    // in 1 Jahr
+</code></pre>
+<h3 id="interval">Interval</h3>
+<p>A CarbonInterval class is also provided, which is an extension of <a href="http://php.net/manual/en/class.dateinterval.php">DateInterval</a>. Self-descriptively, it holds interval values, just like the base class, but adds helper methods on top. As per examples:</p>
+<pre class=" language-php"><code class="prism  language-php"><span class="token keyword">echo</span> CarbonInterval<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">year<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>                          <span class="token comment" spellcheck="true"> // 1 year
+</span><span class="token keyword">echo</span> CarbonInterval<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">months<span class="token punctuation">(</span></span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                       <span class="token comment" spellcheck="true"> // 3 months
+</span><span class="token keyword">echo</span> CarbonInterval<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">days<span class="token punctuation">(</span></span><span class="token number">3</span><span class="token punctuation">)</span><s/></code></pre><p><i>Truncated by Planet PHP, read more at <a href="http://www.sitepoint.com/suggesting-carbon-with-composer-date-and-time-the-right-way/">the original</a> (another 3221 bytes)</i></p>";s:7:"summary";s:5132:"<p><a href="http://carbon.nesbot.com/">Carbon</a> is a small library for date and time manipulation in PHP. It relies on and extends the core <a href="http://php.net/manual/en/class.datetime.php">DateTime</a> class, adding helpful methods for a significantly saner experience.</p>
+<p>In this article, we’ll take a look at some basic usage examples, and then use it in a real project.</p>
+<p><img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/11/1446980068datetime-1024x682.jpg" alt="Date and time image"/></p>
+<h2 id="introduction">Introduction</h2>
+<p>Carbon is just a class which is designed to be used <em>instead</em> of DateTime. Due to extending DateTime, all DateTime methods are available to users of Carbon. Additionally, it implements a <code>__toString</code> method, allowing users to put it in place of string representations of date and time as well.</p>
+<p>It can easily be installed with Composer:</p>
+<pre><code>composer require nesbot/carbon
+</code></pre>
+<p>Let’s see some example uses, as presented in their <a href="http://carbon.nesbot.com/docs">excellent documentation</a>.</p>
+<h2 id="example-uses">Example Uses</h2>
+<p>The easiest way to get started with Carbon is to just pass a human readable date string into its constructor, along with an optional timezone - if the timezone is omitted, the one set by the current PHP installation will be used.</p>
+<pre><code>$carbon = new Carbon('first day of next week');
+</code></pre>
+<p>It can also be instantiated from strings, timestamps, even other instances of DateTime or even Carbon. The instance can be copied with the <code>copy()</code> method, for efficient cloning.</p>
+<p>From there, we have access to a smorgasbord of helper checkers and getters:</p>
+<pre><code>$carbon->isWeekend();
+$carbon->isFuture();
+$carbon->isLeapYear();
+
+$carbon->year;
+$carbon->month;
+
+$carbon->daysInMonth;
+$carbon->weekOfYear;
+</code></pre>
+<p>The package also exposes static methods for creating new instances quickly:</p>
+<pre><code>echo Carbon::now()->addYear()->diffForHumans();    // in 1 year
+</code></pre>
+<p>Even birthdays can be checked, as we can see by this example from the docs:</p>
+<pre><code>$born = Carbon::createFromDate(1987, 4, 23);
+$noCake = Carbon::createFromDate(2014, 9, 26);
+$yesCake = Carbon::createFromDate(2014, 4, 23);
+$overTheHill = Carbon::now()->subYears(50);
+var_dump($born->isBirthday($noCake));              // bool(false)
+var_dump($born->isBirthday($yesCake));             // bool(true)
+var_dump($overTheHill->isBirthday());              // bool(true) -> default compare it to today!
+</code></pre>
+<h3 id="localization">Localization</h3>
+<p>Localization is also supported, so that output can be given in any desired language installed on the machine powering the PHP app. Note that you <strong>do</strong> need to install the necessary locales for this to work - refer to your operating system’s documentation for details on how to do that.</p>
+<p>To localize date and time strings, the standard PHP function <code>setlocale</code> can be used:</p>
+<pre><code>setlocale(LC_TIME, 'German');
+echo $dt->formatLocalized('%A %d %B %Y');          // Mittwoch 21 Mai 1975
+</code></pre>
+<p>To localize the <code>diffForHumans</code> method which outputs a human-readable difference in time, the class offers its own <code>setLocale</code> method:</p>
+<pre><code>Carbon::setLocale('de');
+echo Carbon::now()->addYear()->diffForHumans();    // in 1 Jahr
+</code></pre>
+<h3 id="interval">Interval</h3>
+<p>A CarbonInterval class is also provided, which is an extension of <a href="http://php.net/manual/en/class.dateinterval.php">DateInterval</a>. Self-descriptively, it holds interval values, just like the base class, but adds helper methods on top. As per examples:</p>
+<pre class=" language-php"><code class="prism  language-php"><span class="token keyword">echo</span> CarbonInterval<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">year<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>                          <span class="token comment" spellcheck="true"> // 1 year
+</span><span class="token keyword">echo</span> CarbonInterval<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">months<span class="token punctuation">(</span></span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                       <span class="token comment" spellcheck="true"> // 3 months
+</span><span class="token keyword">echo</span> CarbonInterval<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">days<span class="token punctuation">(</span></span><span class="token number">3</span><span class="token punctuation">)</span><s/></code></pre><p><i>Truncated by Planet PHP, read more at <a href="http://www.sitepoint.com/suggesting-carbon-with-composer-date-and-time-the-right-way/">the original</a> (another 3221 bytes)</i></p>";}i:1;a:5:{s:5:"title";s:72:"Upgrade concrete5 Sites to 5.7 Using Our Migration Tools - Andrew Embler";s:4:"link";s:85:"http://andrewembler.com/2015/11/upgrade-concrete5-sites-57-using-our-migration-tools/";s:7:"pubdate";s:31:"Fri, 13 Nov 2015 16:00:00 +0000";s:11:"description";s:183:"<p><img src="http://andrewembler.com/application/files/5214/4743/0479/migration.jpg" /></p>With concrete5's new migration tools, you can upgrade legacy concrete5 sites to version 5.7.";s:7:"summary";s:183:"<p><img src="http://andrewembler.com/application/files/5214/4743/0479/migration.jpg" /></p>With concrete5's new migration tools, you can upgrade legacy concrete5 sites to version 5.7.";}i:2;a:5:{s:5:"title";s:47:"Launching my Patreon page - Stefan Koopmanschap";s:4:"link";s:65:"http://leftontheweb.com/blog/2015/11/13/launching-my-patreon-page";s:7:"pubdate";s:31:"Fri, 13 Nov 2015 11:55:00 +0000";s:11:"description";s:4664:"<p>In June, I <a href="http://leftontheweb.com/blog/2015/06/05/I_Want_To_Support/">launched</a> <a href="http://iwantto.support/">IWantTo.Support</a>, a website dedicated to displaying people and projects that you can support. Not just by helping them, but also financially. For a long time I've been thinking about this. While helping a project or developer by coding, documenting or promoting, it sometimes is actually nice to help them by buying them a beer, book or something else they want.</p>
+
+<p>Now I am at a lot of conferences, so every once in a while I can buy someone a beer. I've also on occasion purchased something off an Amazon wishlist to show my appreciation. But not a lot of projects and developers actually allow simply donating some money. I think more people should give the opportunity of donating some money.</p>
+
+<p>Earlier this year I got introduced to the concept of <a href="http://patreon.com/">Patreon</a>, which is used mostly by artists (yes, it was through <a href="https://www.patreon.com/amandapalmer">Amanda Palmer</a> that I found out about it). From the moment I heard by it I was intrigued by the approach they take to payments for content and I started wondering <a href="https://twitter.com/skoop/status/574964982032568320">out loud</a> if we could somehow use the concept for open source contributors.</p>
+
+<h2 id="so-can-we%3F">So can we?</h2>
+
+<p>Yes, we can. And actually, <a href="https://www.patreon.com/rdohms">Rafael already did</a>. You can (and should) support him. His approach is one of monthly payments. Every month, you donate an amount in appreciation of his work for the open source community, which includes the hours he puts into usergroups but also the work he does on <a href="https://chrome.google.com/webstore/detail/pronto/ceppkbmiglldpkelkicajinlfdkbpihh?hl=en">Pronto!</a>, which is clearly mostly for (aspiring) speakers, but still takes quite some time.</p>
+
+<p>The other approach you can take on Patreon is one where you pay per "thing". This makes a lot of sense for open source projects: They could charge people for each release, for instance. And Patreon protects you as supporter against projects that do a lot of releases, because you can choose a maximum amount of money you spend on a project per month. And of course, the project could simply limit the amount of releases that they charge for. This approach would be perfect for libraries, frameworks but also applications. I would happily support some of the projects I've been using in the past years in this way.</p>
+
+<h2 id="my-patreon">My Patreon</h2>
+
+<p>I have also chosen this second approach for <a href="https://www.patreon.com/skoop">my Patreon page</a>. Since I don't release a lot of code, I can't really charge per release of my code. One thing I do on a (sort of) regular basis though is to write blogposts. Whether it is here, on the <a href="https://dutchweballiance.nl/category/techblog/">DWA site</a> or <a href="http://dev-human.io/~skoop">elsewhere</a>, I do write regularly. And while these articles are released for free, it is something people could support. It is an experiment, I have no idea if this will be successful and if it will be, how successful it will be, but let's hope it will work.</p>
+
+<h3 id="donate-more%2C-get-more">Donate more, get more</h3>
+
+<p>I've also added some rewards! When you start with a single dollar, you'll get an e-mail from me. If you donate more than $25 per thing, I will do a brainstorm session over skype or hangout on any PHP-related topic. If you donate over $30, I'll also send you some actual snailmail stuff like a postcard, perhaps some stickers or anything else I might have lying around. Again, it's all an experiment. I'm also very much open to any suggestions you might have to improve the rewards, so do let me know if you have any ideas about this.</p>
+
+<h3 id="recurring-support-too-much%3F">Recurring support too much?</h3>
+
+<p>If recurring support for the same person (in this case: me) is too much (I can understand that) but you want to do a one-off donation, that is possible too. I've added an <a href="http://leftontheweb.com/about/">about page</a> that contains a <a href="https://www.paypal.me/skoopmanschap">Paypal.me link</a> where you can donate.</p>
+
+<h2 id="accept-donations">Accept donations</h2>
+
+<p>So, now that Rafael has taken the step to accept donations and I have taken the step to accept donations, will you? I would love it if more people would take the step of accepting donations, either one-off or recurring. Even if you only get a single donation. Even if you get no donation. If you don't try, you won't get anything anyway.</p>
+";s:7:"summary";s:4664:"<p>In June, I <a href="http://leftontheweb.com/blog/2015/06/05/I_Want_To_Support/">launched</a> <a href="http://iwantto.support/">IWantTo.Support</a>, a website dedicated to displaying people and projects that you can support. Not just by helping them, but also financially. For a long time I've been thinking about this. While helping a project or developer by coding, documenting or promoting, it sometimes is actually nice to help them by buying them a beer, book or something else they want.</p>
+
+<p>Now I am at a lot of conferences, so every once in a while I can buy someone a beer. I've also on occasion purchased something off an Amazon wishlist to show my appreciation. But not a lot of projects and developers actually allow simply donating some money. I think more people should give the opportunity of donating some money.</p>
+
+<p>Earlier this year I got introduced to the concept of <a href="http://patreon.com/">Patreon</a>, which is used mostly by artists (yes, it was through <a href="https://www.patreon.com/amandapalmer">Amanda Palmer</a> that I found out about it). From the moment I heard by it I was intrigued by the approach they take to payments for content and I started wondering <a href="https://twitter.com/skoop/status/574964982032568320">out loud</a> if we could somehow use the concept for open source contributors.</p>
+
+<h2 id="so-can-we%3F">So can we?</h2>
+
+<p>Yes, we can. And actually, <a href="https://www.patreon.com/rdohms">Rafael already did</a>. You can (and should) support him. His approach is one of monthly payments. Every month, you donate an amount in appreciation of his work for the open source community, which includes the hours he puts into usergroups but also the work he does on <a href="https://chrome.google.com/webstore/detail/pronto/ceppkbmiglldpkelkicajinlfdkbpihh?hl=en">Pronto!</a>, which is clearly mostly for (aspiring) speakers, but still takes quite some time.</p>
+
+<p>The other approach you can take on Patreon is one where you pay per "thing". This makes a lot of sense for open source projects: They could charge people for each release, for instance. And Patreon protects you as supporter against projects that do a lot of releases, because you can choose a maximum amount of money you spend on a project per month. And of course, the project could simply limit the amount of releases that they charge for. This approach would be perfect for libraries, frameworks but also applications. I would happily support some of the projects I've been using in the past years in this way.</p>
+
+<h2 id="my-patreon">My Patreon</h2>
+
+<p>I have also chosen this second approach for <a href="https://www.patreon.com/skoop">my Patreon page</a>. Since I don't release a lot of code, I can't really charge per release of my code. One thing I do on a (sort of) regular basis though is to write blogposts. Whether it is here, on the <a href="https://dutchweballiance.nl/category/techblog/">DWA site</a> or <a href="http://dev-human.io/~skoop">elsewhere</a>, I do write regularly. And while these articles are released for free, it is something people could support. It is an experiment, I have no idea if this will be successful and if it will be, how successful it will be, but let's hope it will work.</p>
+
+<h3 id="donate-more%2C-get-more">Donate more, get more</h3>
+
+<p>I've also added some rewards! When you start with a single dollar, you'll get an e-mail from me. If you donate more than $25 per thing, I will do a brainstorm session over skype or hangout on any PHP-related topic. If you donate over $30, I'll also send you some actual snailmail stuff like a postcard, perhaps some stickers or anything else I might have lying around. Again, it's all an experiment. I'm also very much open to any suggestions you might have to improve the rewards, so do let me know if you have any ideas about this.</p>
+
+<h3 id="recurring-support-too-much%3F">Recurring support too much?</h3>
+
+<p>If recurring support for the same person (in this case: me) is too much (I can understand that) but you want to do a one-off donation, that is possible too. I've added an <a href="http://leftontheweb.com/about/">about page</a> that contains a <a href="https://www.paypal.me/skoopmanschap">Paypal.me link</a> where you can donate.</p>
+
+<h2 id="accept-donations">Accept donations</h2>
+
+<p>So, now that Rafael has taken the step to accept donations and I have taken the step to accept donations, will you? I would love it if more people would take the step of accepting donations, either one-off or recurring. Even if you only get a single donation. Even if you get no donation. If you don't try, you won't get anything anyway.</p>
+";}i:3;a:5:{s:5:"title";s:36:"Interview with Rob Allen - Cal Evans";s:4:"link";s:67:"http://feedproxy.google.com/~r/VoicesOfTheElephpant/~3/NlZ4CYOeGF4/";s:7:"pubdate";s:31:"Fri, 13 Nov 2015 04:00:22 +0000";s:11:"description";s:1151:"<div style="width:600px;">
+<p><a href="https://twitter.com/akrabat" target="_blank">@akrabat</a></p>
+<h3>Show Notes</h3>
+<ul>
+<li><a href="http://www.slimframework.com/" target="_blank">Slim Framework</a></li>
+<li><a href="http://19ft.com/" target="_blank">Nineteen Feet</a></li>
+<li><a href="http://phpsw.uk/" target="_blank">PHP SW User Group</a></li>
+</ul>
+</div>
+<p>The post <a rel="nofollow" href="https://voicesoftheelephpant.com/2015/11/13/interview-with-rob-allen/">Interview with Rob Allen</a> appeared first on <a rel="nofollow" href="https://voicesoftheelephpant.com">Voices of the ElePHPant</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=NlZ4CYOeGF4:nl1ZjqrybKc:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=NlZ4CYOeGF4:nl1ZjqrybKc:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/VoicesOfTheElephpant/~4/NlZ4CYOeGF4" height="1" width="1" alt=""/>";s:7:"summary";s:1151:"<div style="width:600px;">
+<p><a href="https://twitter.com/akrabat" target="_blank">@akrabat</a></p>
+<h3>Show Notes</h3>
+<ul>
+<li><a href="http://www.slimframework.com/" target="_blank">Slim Framework</a></li>
+<li><a href="http://19ft.com/" target="_blank">Nineteen Feet</a></li>
+<li><a href="http://phpsw.uk/" target="_blank">PHP SW User Group</a></li>
+</ul>
+</div>
+<p>The post <a rel="nofollow" href="https://voicesoftheelephpant.com/2015/11/13/interview-with-rob-allen/">Interview with Rob Allen</a> appeared first on <a rel="nofollow" href="https://voicesoftheelephpant.com">Voices of the ElePHPant</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=NlZ4CYOeGF4:nl1ZjqrybKc:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=NlZ4CYOeGF4:nl1ZjqrybKc:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/VoicesOfTheElephpant/~4/NlZ4CYOeGF4" height="1" width="1" alt=""/>";}i:4;a:5:{s:5:"title";s:38:"Review: PHP Web Services - PHP Classes";s:4:"link";s:62:"http://www.phpclasses.org/reviews/id/phpwebserv.html#review190";s:7:"pubdate";s:31:"Thu, 12 Nov 2015 03:31:23 +0000";s:11:"description";s:1474:"<div style="clear: both">
+<div style="float: right"><img class="photo" src="http://akamaicovers.oreilly.com/images/110000648/cat.gif" width="180" height="278" alt="PHP Web Services" /></div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Title</div>
+<div><a href="http://www.phpclasses.org/reviews/id/phpwebserv.html#review190">PHP Web Services</a></div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Reviewer</div>
+<div>Jose Gomez</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Category</div>
+<div>PHP videos</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Publisher</div>
+<div>O'Reilly</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Author</div>
+<div>Lorna Jane Mitchell</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Summary</div>
+<div><span name="description">PHP Web services is a video course that deals with all the most important issues that involve HTTP web services such HTTP protocol concepts, the different ways the developer can work with HTTP with PHP, different types of Web services (RPC, SOAP and RESTfull APIs) including how to build services and consume them, tools and techniques for debugging HTTP protocol in our applications and the different topics are involved the Web API design.<br />
+<br />
+Read the whole review to learn more about the details about that this video course offers.</span></div>
+</div>
+";s:7:"summary";s:1474:"<div style="clear: both">
+<div style="float: right"><img class="photo" src="http://akamaicovers.oreilly.com/images/110000648/cat.gif" width="180" height="278" alt="PHP Web Services" /></div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Title</div>
+<div><a href="http://www.phpclasses.org/reviews/id/phpwebserv.html#review190">PHP Web Services</a></div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Reviewer</div>
+<div>Jose Gomez</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Category</div>
+<div>PHP videos</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Publisher</div>
+<div>O'Reilly</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Author</div>
+<div>Lorna Jane Mitchell</div>
+<div style="font-weight: bold; font-size: larger; margin-top: 1ex">Summary</div>
+<div><span name="description">PHP Web services is a video course that deals with all the most important issues that involve HTTP web services such HTTP protocol concepts, the different ways the developer can work with HTTP with PHP, different types of Web services (RPC, SOAP and RESTfull APIs) including how to build services and consume them, tools and techniques for debugging HTTP protocol in our applications and the different topics are involved the Web API design.<br />
+<br />
+Read the whole review to learn more about the details about that this video course offers.</span></div>
+</div>
+";}i:5;a:5:{s:5:"title";s:64:"Meet Elixir, the Laravel Way of Compiling Assets - SitePoint PHP";s:4:"link";s:73:"http://www.sitepoint.com/meet-elixir-the-laravel-way-of-compiling-assets/";s:7:"pubdate";s:31:"Wed, 11 Nov 2015 17:00:24 +0000";s:11:"description";s:532:"<p>Many thanks to Jad Joubran, Gabriel Zerbib, Anthony Chambers, and Scott Molinari for peer reviewing this post, and thanks to all of SitePoint’s peer reviewers for making SitePoint content the best it can be! In today’s web applications, we use a wide variety of tools to speed up the development workflow while keeping the code […]</p>
+<p><em>Continue reading %<a rel="nofollow" href="http://www.sitepoint.com/meet-elixir-the-laravel-way-of-compiling-assets/">Meet Elixir, the Laravel Way of Compiling Assets</a>%</em></p>
+";s:7:"summary";s:532:"<p>Many thanks to Jad Joubran, Gabriel Zerbib, Anthony Chambers, and Scott Molinari for peer reviewing this post, and thanks to all of SitePoint’s peer reviewers for making SitePoint content the best it can be! In today’s web applications, we use a wide variety of tools to speed up the development workflow while keeping the code […]</p>
+<p><em>Continue reading %<a rel="nofollow" href="http://www.sitepoint.com/meet-elixir-the-laravel-way-of-compiling-assets/">Meet Elixir, the Laravel Way of Compiling Assets</a>%</em></p>
+";}i:6;a:5:{s:5:"title";s:33:"Upgrading to PHP 7 - Davey Shafik";s:4:"link";s:62:"https://daveyshafik.com/archives/69401-upgrading-to-php-7.html";s:7:"pubdate";s:31:"Wed, 11 Nov 2015 16:00:08 +0000";s:11:"description";s:684:"<p>Yesterday, <a href="http://oreilly.com">O’Reilly</a> published my report on Upgrading to PHP 7. This 80-page mini-eBook is available <strong>free</strong> (<em>and</em> DRM free) in ePub, Mobi, and PDF formats.</p>
+<p><a href="http://www.oreilly.com/web-platform/free/upgrading-to-php-seven.csp">Grab it today</a> or read more details <a href="https://daveyshafik.com/archives/book/upgrading-to-php-7">here</a>.</p>
+<p><a href="http://www.oreilly.com/web-platform/free/upgrading-to-php-seven.csp"><img src="/wp-content/uploads/2015/11/upgrading-to-php-seven-200x300.png" alt="Upgrading to PHP 7" width="200" height="300" class="aligncenter size-medium wp-image-69399" /></a></p>
+";s:7:"summary";s:684:"<p>Yesterday, <a href="http://oreilly.com">O’Reilly</a> published my report on Upgrading to PHP 7. This 80-page mini-eBook is available <strong>free</strong> (<em>and</em> DRM free) in ePub, Mobi, and PDF formats.</p>
+<p><a href="http://www.oreilly.com/web-platform/free/upgrading-to-php-seven.csp">Grab it today</a> or read more details <a href="https://daveyshafik.com/archives/book/upgrading-to-php-7">here</a>.</p>
+<p><a href="http://www.oreilly.com/web-platform/free/upgrading-to-php-seven.csp"><img src="/wp-content/uploads/2015/11/upgrading-to-php-seven-200x300.png" alt="Upgrading to PHP 7" width="200" height="300" class="aligncenter size-medium wp-image-69399" /></a></p>
+";}i:7;a:5:{s:5:"title";s:94:"PHP Automated SMS Gateway for Request and Response Service - Part 1 - The Basics - PHP Classes";s:4:"link";s:134:"http://www.phpclasses.org/blog/package/9459/post/1-PHP-Automated-SMS-Gateway-for-Request-and-Response-Service--Part-1--The-Basics.html";s:7:"pubdate";s:31:"Wed, 11 Nov 2015 10:13:27 +0000";s:11:"description";s:898:"<div style="clear: both">
+<div style="margin-top: 1ex"><a href="http://www.phpclasses.org/blog/package/9459/post/1-PHP-Automated-SMS-Gateway-for-Request-and-Response-Service--Part-1--The-Basics.html">PHP Automated SMS Gateway for Request and Response Service - Part 1 - The Basics</a></div>
+<div style="margin-top: 1ex">By Dave Smith</a></div>
+<div style="margin-top: 1ex">Would you like to set up an automated service on your web site that can interact with SMS text messages sent by your users?<br />
+<br />
+Setting up your own interactive web based text messaging service can be a daunting and expensive undertaking. Fortunately for us, there is a web service that can do the heavy lifting for us and the best part... it is free.<br />
+<br />
+Read this article to learn how to use the dotGo gateway service to receive and respond to requests sent via SMS using PHP Web scripts.</a></div>
+</div>
+";s:7:"summary";s:898:"<div style="clear: both">
+<div style="margin-top: 1ex"><a href="http://www.phpclasses.org/blog/package/9459/post/1-PHP-Automated-SMS-Gateway-for-Request-and-Response-Service--Part-1--The-Basics.html">PHP Automated SMS Gateway for Request and Response Service - Part 1 - The Basics</a></div>
+<div style="margin-top: 1ex">By Dave Smith</a></div>
+<div style="margin-top: 1ex">Would you like to set up an automated service on your web site that can interact with SMS text messages sent by your users?<br />
+<br />
+Setting up your own interactive web based text messaging service can be a daunting and expensive undertaking. Fortunately for us, there is a web service that can do the heavy lifting for us and the best part... it is free.<br />
+<br />
+Read this article to learn how to use the dotGo gateway service to receive and respond to requests sent via SMS using PHP Web scripts.</a></div>
+</div>
+";}i:8;a:3:{s:5:"title";s:32:"How to Validate Data - thePHP.cc";s:4:"link";s:51:"https://thephp.cc/news/2015/11/how-to-validate-data";s:7:"pubdate";s:31:"Tue, 10 Nov 2015 07:00:00 +0000";}i:9;a:5:{s:5:"title";s:38:"Interview with Pierre Joye - Cal Evans";s:4:"link";s:67:"http://feedproxy.google.com/~r/VoicesOfTheElephpant/~3/63LfL3Izpek/";s:7:"pubdate";s:31:"Tue, 10 Nov 2015 04:00:48 +0000";s:11:"description";s:902:"<div style="width:600px;">
+<p><a href="https://twitter.com/PierreJoye" target="_blank">@PierreJoye</a></p>
+</div>
+<p>The post <a rel="nofollow" href="https://voicesoftheelephpant.com/2015/11/10/interview-with-pierre-joye/">Interview with Pierre Joye</a> appeared first on <a rel="nofollow" href="https://voicesoftheelephpant.com">Voices of the ElePHPant</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=63LfL3Izpek:PU6Egebe838:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=63LfL3Izpek:PU6Egebe838:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/VoicesOfTheElephpant/~4/63LfL3Izpek" height="1" width="1" alt=""/>";s:7:"summary";s:902:"<div style="width:600px;">
+<p><a href="https://twitter.com/PierreJoye" target="_blank">@PierreJoye</a></p>
+</div>
+<p>The post <a rel="nofollow" href="https://voicesoftheelephpant.com/2015/11/10/interview-with-pierre-joye/">Interview with Pierre Joye</a> appeared first on <a rel="nofollow" href="https://voicesoftheelephpant.com">Voices of the ElePHPant</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=63LfL3Izpek:PU6Egebe838:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?a=63LfL3Izpek:PU6Egebe838:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/VoicesOfTheElephpant?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/VoicesOfTheElephpant/~4/63LfL3Izpek" height="1" width="1" alt=""/>";}}s:7:"channel";a:5:{s:5:"title";s:10:"Planet PHP";s:4:"link";s:21:"http://planet-php.net";s:11:"description";s:25:"People blogging about PHP";s:8:"language";s:2:"en";s:7:"tagline";s:25:"People blogging about PHP";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:4:"0.91";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:4:"etag";s:36:""6df9eda81530cc00ce0f13812ae33a5c"
+";s:13:"last_modified";s:31:"Fri, 13 Nov 2015 17:09:16 GMT
+";}

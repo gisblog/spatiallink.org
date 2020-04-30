@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"	><html	xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!--header-->
+	<head>
+<title>spatiallink_org:: Linking Spatial Professionals and Volunteers Through Search, Profile, News, Blog, Forum, Map, Chat, WIKI, WAP and Other GIS Tools</title><!-- meta/link: start -->
+<meta name="robots" content="index, follow" />
+<meta name="robots" content="noarchive" />
+<meta name="title" content="spatiallink_org" />
+<meta name="author" content="spatiallink_org, contact@spatiallink.org" />
+<meta name="copyright" content="2007, spatiallink_org" />
+<meta name="keywords" content="spatiallink, spatial, link, geospatial, geo, geographic, information, system, GIS, GPS, webGIS, discuss, manage, empathy, collaborate, share, coordinate, proactive, active, action, volunteer, volunteerism, distributed volunteering, smart volunteering, cyber volunteering, open, source, opensource, tool, gistool, resource, create, search, match, profile, news, blog, chat, forum, WAP, wiki, map, plan, PHP, MySQL, XML, database, geodatabase, disaster, community, world, globe, planet, earth, US, USA, united states, north america, america" />
+<meta name="description" content="
+spatiallink_org is a volunteer based resource coordination website supporting the spatial needs of the world through a global directory of interested professionals and volunteers, and other GIS tools. Our objective is to streamline project management for volunteers through reliable web access to selected opensource technology." />
+<link rel="stylesheet" type="text/css" href="/css/spatiallink.css" />
+<link rel="icon" href="http://www.spatiallink.org/favicon.ico" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<!-- meta/link: end -->
+<!-- scripts: start -->
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-206037-6";
+	urchinTracker();
+	</script>
+	<script src="/scripts/scr_sort.js" type="text/javascript">
+	</script>
+<!-- scripts: end -->
+	</head>
+<!--header--><!--header-->
+<body>
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;">
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+//\/////
+//\modified from overlib- copyright (c) erik bosrup 1998-2004. $revision: 1.112 $date: 2005/03/08 19:22:53
+//\/////
+
+////////
+// PRE-INIT
+// Ignore these lines, configuration is below.
+////////
+var olLoaded = 0;var pmStart = 10000000; var pmUpper = 10001000; var pmCount = pmStart+1; var pmt=''; var pms = new Array(); var olInfo = new Info('4.17', 1);
+var FREPLACE = 0; var FBEFORE = 1; var FAFTER = 2; var FALTERNATE = 3; var FCHAIN=4;
+var olHideForm=0;  // parameter for hiding SELECT and ActiveX elements in IE5.5+ 
+var olHautoFlag = 0;  // flags for over-riding VAUTO and HAUTO if corresponding
+var olVautoFlag = 0;  // positioning commands are used on the command line
+registerCommands('donothing,inarray,caparray,sticky,background,noclose,caption,left,right,center,offsetx,offsety,fgcolor,bgcolor,textcolor,capcolor,closecolor,width,border,cellpad,status,autostatus,autostatuscap,height,closetext,snapx,snapy,fixx,fixy,relx,rely,fgbackground,bgbackground,padx,pady,fullhtml,above,below,capicon,textfont,captionfont,closefont,textsize,captionsize,closesize,timeout,function,delay,hauto,vauto,closeclick,wrap,followmouse,mouseoff,closetitle,cssoff,compatmode,cssclass,fgclass,bgclass,textfontclass,captionfontclass,closefontclass');
+
+////////
+// DEFAULT CONFIGURATION
+// Settings you want everywhere are set here. All of this can also be
+// changed on your html page or through an overLIB call.
+////////
+if (typeof ol_fgcolor=='undefined') var ol_fgcolor="#edecec";
+if (typeof ol_bgcolor=='undefined') var ol_bgcolor="#c2c0c0";
+if (typeof ol_textcolor=='undefined') var ol_textcolor="#000000";
+if (typeof ol_capcolor=='undefined') var ol_capcolor="#ffffff";
+if (typeof ol_closecolor=='undefined') var ol_closecolor="#dddddd";
+if (typeof ol_textfont=='undefined') var ol_textfont="verdana";
+if (typeof ol_captionfont=='undefined') var ol_captionfont="verdana";
+if (typeof ol_closefont=='undefined') var ol_closefont="verdana";
+if (typeof ol_textsize=='undefined') var ol_textsize="2";
+if (typeof ol_captionsize=='undefined') var ol_captionsize="1";
+if (typeof ol_closesize=='undefined') var ol_closesize="1";
+if (typeof ol_width=='undefined') var ol_width="300";
+if (typeof ol_border=='undefined') var ol_border="1";
+if (typeof ol_cellpad=='undefined') var ol_cellpad=0;
+if (typeof ol_offsetx=='undefined') var ol_offsetx=10;
+if (typeof ol_offsety=='undefined') var ol_offsety=10;
+if (typeof ol_text=='undefined') var ol_text="Default Text";
+if (typeof ol_cap=='undefined') var ol_cap="";
+if (typeof ol_sticky=='undefined') var ol_sticky=0;
+if (typeof ol_background=='undefined') var ol_background="";
+if (typeof ol_close=='undefined') var ol_close="Close";
+if (typeof ol_hpos=='undefined') var ol_hpos=RIGHT;
+if (typeof ol_status=='undefined') var ol_status="";
+if (typeof ol_autostatus=='undefined') var ol_autostatus=0;
+if (typeof ol_height=='undefined') var ol_height=-1;
+if (typeof ol_snapx=='undefined') var ol_snapx=0;
+if (typeof ol_snapy=='undefined') var ol_snapy=0;
+if (typeof ol_fixx=='undefined') var ol_fixx=-1;
+if (typeof ol_fixy=='undefined') var ol_fixy=-1;
+if (typeof ol_relx=='undefined') var ol_relx=null;
+if (typeof ol_rely=='undefined') var ol_rely=null;
+if (typeof ol_fgbackground=='undefined') var ol_fgbackground="";
+if (typeof ol_bgbackground=='undefined') var ol_bgbackground="";
+if (typeof ol_padxl=='undefined') var ol_padxl=1;
+if (typeof ol_padxr=='undefined') var ol_padxr=1;
+if (typeof ol_padyt=='undefined') var ol_padyt=1;
+if (typeof ol_padyb=='undefined') var ol_padyb=1;
+if (typeof ol_fullhtml=='undefined') var ol_fullhtml=0;
+if (typeof ol_vpos=='undefined') var ol_vpos=BELOW;
+if (typeof ol_aboveheight=='undefined') var ol_aboveheight=0;
+if (typeof ol_capicon=='undefined') var ol_capicon="";
+if (typeof ol_frame=='undefined') var ol_frame=self;
+if (typeof ol_timeout=='undefined') var ol_timeout=0;
+if (typeof ol_function=='undefined') var ol_function=null;
+if (typeof ol_delay=='undefined') var ol_delay=0;
+if (typeof ol_hauto=='undefined') var ol_hauto=0;
+if (typeof ol_vauto=='undefined') var ol_vauto=0;
+if (typeof ol_closeclick=='undefined') var ol_closeclick=0;
+if (typeof ol_wrap=='undefined') var ol_wrap=0;
+if (typeof ol_followmouse=='undefined') var ol_followmouse=1;
+if (typeof ol_mouseoff=='undefined') var ol_mouseoff=0;
+if (typeof ol_closetitle=='undefined') var ol_closetitle='Close';
+if (typeof ol_compatmode=='undefined') var ol_compatmode=0;
+if (typeof ol_css=='undefined') var ol_css=CSSOFF;
+if (typeof ol_fgclass=='undefined') var ol_fgclass="";
+if (typeof ol_bgclass=='undefined') var ol_bgclass="";
+if (typeof ol_textfontclass=='undefined') var ol_textfontclass="";
+if (typeof ol_captionfontclass=='undefined') var ol_captionfontclass="";
+if (typeof ol_closefontclass=='undefined') var ol_closefontclass="";
+
+////////
+// ARRAY CONFIGURATION
+////////
+
+// You can use these arrays to store popup text here instead of in the html.
+if (typeof ol_texts=='undefined') var ol_texts = new Array("Text 0", "Text 1");
+if (typeof ol_caps=='undefined') var ol_caps = new Array("Caption 0", "Caption 1");
+
+////////
+// END OF CONFIGURATION
+// Don't change anything below this line, all configuration is above.
+////////
+
+////////
+// INIT
+////////
+// Runtime variables init. Don't change for config!
+var o3_text="";
+var o3_cap="";
+var o3_sticky=0;
+var o3_background="";
+var o3_close="Close";
+var o3_hpos=RIGHT;
+var o3_offsetx=2;
+var o3_offsety=2;
+var o3_fgcolor="";
+var o3_bgcolor="";
+var o3_textcolor="";
+var o3_capcolor="";
+var o3_closecolor="";
+var o3_width=100;
+var o3_border=1;
+var o3_cellpad=2;
+var o3_status="";
+var o3_autostatus=0;
+var o3_height=-1;
+var o3_snapx=0;
+var o3_snapy=0;
+var o3_fixx=-1;
+var o3_fixy=-1;
+var o3_relx=null;
+var o3_rely=null;
+var o3_fgbackground="";
+var o3_bgbackground="";
+var o3_padxl=0;
+var o3_padxr=0;
+var o3_padyt=0;
+var o3_padyb=0;
+var o3_fullhtml=0;
+var o3_vpos=BELOW;
+var o3_aboveheight=0;
+var o3_capicon="";
+var o3_textfont="verdana";
+var o3_captionfont="verdana";
+var o3_closefont="verdana";
+var o3_textsize="1";
+var o3_captionsize="1";
+var o3_closesize="1";
+var o3_frame=self;
+var o3_timeout=0;
+var o3_timerid=0;
+var o3_allowmove=0;
+var o3_function=null; 
+var o3_delay=0;
+var o3_delayid=0;
+var o3_hauto=0;
+var o3_vauto=0;
+var o3_closeclick=0;
+var o3_wrap=0;
+var o3_followmouse=1;
+var o3_mouseoff=0;
+var o3_closetitle='';
+var o3_compatmode=0;
+var o3_css=CSSOFF;
+var o3_fgclass="";
+var o3_bgclass="";
+var o3_textfontclass="";
+var o3_captionfontclass="";
+var o3_closefontclass="";
+
+// Display state variables
+var o3_x = 0;
+var o3_y = 0;
+var o3_showingsticky = 0;
+var o3_removecounter = 0;
+
+// Our layer
+var over = null;
+var fnRef, hoveringSwitch = false;
+var olHideDelay;
+
+// Decide browser version
+var isMac = (navigator.userAgent.indexOf("Mac") != -1);
+var olOp = (navigator.userAgent.toLowerCase().indexOf('opera') > -1 && document.createTextNode);  // Opera 7
+var olNs4 = (navigator.appName=='Netscape' && parseInt(navigator.appVersion) == 4);
+var olNs6 = (document.getElementById) ? true : false;
+var olKq = (olNs6 && /konqueror/i.test(navigator.userAgent));
+var olIe4 = (document.all) ? true : false;
+var olIe5 = false; 
+var olIe55 = false; // Added additional variable to identify IE5.5+
+var docRoot = 'document.body';
+
+// Resize fix for NS4.x to keep track of layer
+if (olNs4) {
+	var oW = window.innerWidth;
+	var oH = window.innerHeight;
+	window.onresize = function() { if (oW != window.innerWidth || oH != window.innerHeight) location.reload(); }
+}
+
+// Microsoft Stupidity Check(tm)!
+if (olIe4) {
+	var agent = navigator.userAgent;
+	if (/MSIE/.test(agent)) {
+		var versNum = parseFloat(agent.match(/MSIE[ ](\d\.\d+)\.*/i)[1]);
+		if (versNum >= 5){
+			olIe5=true;
+			olIe55=(versNum>=5.5&&!olOp) ? true : false;
+			if (olNs6) olNs6=false;
+		}
+	}
+	if (olNs6) olIe4 = false;
+}
+
+// Check for compatability mode.
+if (document.compatMode && document.compatMode == 'CSS1Compat') {
+	docRoot= ((olIe4 && !olOp) ? 'document.documentElement' : docRoot);
+}
+
+// Add window onload handlers to indicate when all modules have been loaded
+// For Netscape 6+ and Mozilla, uses addEventListener method on the window object
+// For IE it uses the attachEvent method of the window object and for Netscape 4.x
+// it sets the window.onload handler to the OLonload_handler function for Bubbling
+if(window.addEventListener) window.addEventListener("load",OLonLoad_handler,false);
+else if (window.attachEvent) window.attachEvent("onload",OLonLoad_handler);
+
+// Capture events, alt. diffuses the overlib function.
+var olCheckMouseCapture = true;
+if ((olNs4 || olNs6 || olIe4)) {
+	olMouseCapture();
+} else {
+	overlib = no_overlib;
+	nd = no_overlib;
+	ver3fix = true;
+}
+
+////////
+// PUBLIC FUNCTIONS
+////////
+
+// overlib(arg0,...,argN)
+// Loads parameters into global runtime variables.
+function overlib() {
+	if (!olLoaded || isExclusive(overlib.arguments)) return true;
+	if (olCheckMouseCapture) olMouseCapture();
+	if (over) {
+		over = (typeof over.id != 'string') ? o3_frame.document.all['overDiv'] : over;
+		cClick();
+	}
+
+	// Load defaults to runtime.
+  olHideDelay=0;
+	o3_text=ol_text;
+	o3_cap=ol_cap;
+	o3_sticky=ol_sticky;
+	o3_background=ol_background;
+	o3_close=ol_close;
+	o3_hpos=ol_hpos;
+	o3_offsetx=ol_offsetx;
+	o3_offsety=ol_offsety;
+	o3_fgcolor=ol_fgcolor;
+	o3_bgcolor=ol_bgcolor;
+	o3_textcolor=ol_textcolor;
+	o3_capcolor=ol_capcolor;
+	o3_closecolor=ol_closecolor;
+	o3_width=ol_width;
+	o3_border=ol_border;
+	o3_cellpad=ol_cellpad;
+	o3_status=ol_status;
+	o3_autostatus=ol_autostatus;
+	o3_height=ol_height;
+	o3_snapx=ol_snapx;
+	o3_snapy=ol_snapy;
+	o3_fixx=ol_fixx;
+	o3_fixy=ol_fixy;
+	o3_relx=ol_relx;
+	o3_rely=ol_rely;
+	o3_fgbackground=ol_fgbackground;
+	o3_bgbackground=ol_bgbackground;
+	o3_padxl=ol_padxl;
+	o3_padxr=ol_padxr;
+	o3_padyt=ol_padyt;
+	o3_padyb=ol_padyb;
+	o3_fullhtml=ol_fullhtml;
+	o3_vpos=ol_vpos;
+	o3_aboveheight=ol_aboveheight;
+	o3_capicon=ol_capicon;
+	o3_textfont=ol_textfont;
+	o3_captionfont=ol_captionfont;
+	o3_closefont=ol_closefont;
+	o3_textsize=ol_textsize;
+	o3_captionsize=ol_captionsize;
+	o3_closesize=ol_closesize;
+	o3_timeout=ol_timeout;
+	o3_function=ol_function;
+	o3_delay=ol_delay;
+	o3_hauto=ol_hauto;
+	o3_vauto=ol_vauto;
+	o3_closeclick=ol_closeclick;
+	o3_wrap=ol_wrap;	
+	o3_followmouse=ol_followmouse;
+	o3_mouseoff=ol_mouseoff;
+	o3_closetitle=ol_closetitle;
+	o3_css=ol_css;
+	o3_compatmode=ol_compatmode;
+	o3_fgclass=ol_fgclass;
+	o3_bgclass=ol_bgclass;
+	o3_textfontclass=ol_textfontclass;
+	o3_captionfontclass=ol_captionfontclass;
+	o3_closefontclass=ol_closefontclass;
+	
+	setRunTimeVariables();
+	
+	fnRef = '';
+	
+	// Special for frame support, over must be reset...
+	o3_frame = ol_frame;
+	
+	if(!(over=createDivContainer())) return false;
+
+	parseTokens('o3_', overlib.arguments);
+	if (!postParseChecks()) return false;
+
+	if (o3_delay == 0) {
+		return runHook("olMain", FREPLACE);
+ 	} else {
+		o3_delayid = setTimeout("runHook('olMain', FREPLACE)", o3_delay);
+		return false;
+	}
+}
+
+// Clears popups if appropriate
+function nd(time) {
+	if (olLoaded && !isExclusive()) {
+		hideDelay(time);  // delay popup close if time specified
+
+		if (o3_removecounter >= 1) { o3_showingsticky = 0 };
+		
+		if (o3_showingsticky == 0) {
+			o3_allowmove = 0;
+			if (over != null && o3_timerid == 0) runHook("hideObject", FREPLACE, over);
+		} else {
+			o3_removecounter++;
+		}
+	}
+	
+	return true;
+}
+
+// The Close onMouseOver function for stickies
+function cClick() {
+	if (olLoaded) {
+		runHook("hideObject", FREPLACE, over);
+		o3_showingsticky = 0;	
+	}	
+	return false;
+}
+
+// Method for setting page specific defaults.
+function overlib_pagedefaults() {
+	parseTokens('ol_', overlib_pagedefaults.arguments);
+}
+
+////////
+// OVERLIB MAIN FUNCTION
+////////
+
+// This function decides what it is we want to display and how we want it done.
+function olMain() {
+	var layerhtml, styleType;
+ 	runHook("olMain", FBEFORE);
+ 	
+	if (o3_background!="" || o3_fullhtml) {
+		// Use background instead of box.
+		layerhtml = runHook('ol_content_background', FALTERNATE, o3_css, o3_text, o3_background, o3_fullhtml);
+	} else {
+		// They want a popup box.
+		styleType = (pms[o3_css-1-pmStart] == "cssoff" || pms[o3_css-1-pmStart] == "cssclass");
+
+		// Prepare popup background
+		if (o3_fgbackground != "") o3_fgbackground = "background=\""+o3_fgbackground+"\"";
+		if (o3_bgbackground != "") o3_bgbackground = (styleType ? "background=\""+o3_bgbackground+"\"" : o3_bgbackground);
+
+		// Prepare popup colors
+		if (o3_fgcolor != "") o3_fgcolor = (styleType ? "bgcolor=\""+o3_fgcolor+"\"" : o3_fgcolor);
+		if (o3_bgcolor != "") o3_bgcolor = (styleType ? "bgcolor=\""+o3_bgcolor+"\"" : o3_bgcolor);
+
+		// Prepare popup height
+		if (o3_height > 0) o3_height = (styleType ? "height=\""+o3_height+"\"" : o3_height);
+		else o3_height = "";
+
+		// Decide which kinda box.
+		if (o3_cap=="") {
+			// Plain
+			layerhtml = runHook('ol_content_simple', FALTERNATE, o3_css, o3_text);
+		} else {
+			// With caption
+			if (o3_sticky) {
+				// Show close text
+				layerhtml = runHook('ol_content_caption', FALTERNATE, o3_css, o3_text, o3_cap, o3_close);
+			} else {
+				// No close text
+				layerhtml = runHook('ol_content_caption', FALTERNATE, o3_css, o3_text, o3_cap, "");
+			}
+		}
+	}	
+
+	// We want it to stick!
+	if (o3_sticky) {
+		if (o3_timerid > 0) {
+			clearTimeout(o3_timerid);
+			o3_timerid = 0;
+		}
+		o3_showingsticky = 1;
+		o3_removecounter = 0;
+	}
+
+	// Created a separate routine to generate the popup to make it easier
+	// to implement a plugin capability
+	if (!runHook("createPopup", FREPLACE, layerhtml)) return false;
+
+	// Prepare status bar
+	if (o3_autostatus > 0) {
+		o3_status = o3_text;
+		if (o3_autostatus > 1) o3_status = o3_cap;
+	}
+
+	// When placing the layer the first time, even stickies may be moved.
+	o3_allowmove = 0;
+
+	// Initiate a timer for timeout
+	if (o3_timeout > 0) {          
+		if (o3_timerid > 0) clearTimeout(o3_timerid);
+		o3_timerid = setTimeout("cClick()", o3_timeout);
+	}
+
+	// Show layer
+	runHook("disp", FREPLACE, o3_status);
+	runHook("olMain", FAFTER);
+
+	return (olOp && event && event.type == 'mouseover' && !o3_status) ? '' : (o3_status != '');
+}
+
+////////
+// LAYER GENERATION FUNCTIONS
+////////
+// These functions just handle popup content with tags that should adhere to the W3C standards specification.
+
+// Makes simple table without caption
+function ol_content_simple(text) {
+	txt='<table width="'+o3_width+ '" border="0" cellpadding="'+o3_border+'" cellspacing="0" '+(o3_bgclass ? 'class="'+o3_bgclass+'"' : o3_bgcolor+' '+o3_height)+'><tr><td><table width="100%" border="0" cellpadding="' + o3_cellpad + '" cellspacing="0" '+(o3_fgclass ? 'class="'+o3_fgclass+'"' : o3_fgcolor+' '+o3_fgbackground+' '+o3_height)+'><tr><td valign="TOP"'+(o3_textfontclass ? ' class="'+o3_textfontclass+'">' : '>')+(o3_textfontclass ? '' : wrapStr(0,o3_textsize,'text'))+text+(o3_textfontclass ? '' : wrapStr(1,o3_textsize))+'</td></tr></table></td></tr></table>';
+
+	set_background("");
+	return txt;
+}
+
+// Makes table with caption and optional close link
+function ol_content_caption(text,title,close) {
+	var nameId;
+	closing="";
+	closeevent="onmouseover";
+	if (o3_closeclick==1) closeevent= (o3_closetitle ? "title='" + o3_closetitle +"'" : "") + " onclick";
+	if (o3_capicon!="") {
+		nameId=' hspace=\"5\"'+' align=\"middle\" alt=\"\"';
+		if (typeof o3_dragimg!='undefined'&&o3_dragimg) nameId=' hspace=\"5\"'+' name=\"'+o3_dragimg+'\" id=\"'+o3_dragimg+'\" align=\"middle\" alt=\"Drag Enabled\" title=\"Drag Enabled\"';
+		o3_capicon='<img src=\"'+o3_capicon+'\"'+nameId+' />';
+	}
+
+	if (close != "") 
+		closing='<td '+(!o3_compatmode && o3_closefontclass ? 'class="'+o3_closefontclass : 'align="RIGHT')+'"><a href="javascript:return '+fnRef+'cClick();"'+((o3_compatmode && o3_closefontclass) ? ' class="' + o3_closefontclass + '" ' : ' ')+closeevent+'="return '+fnRef+'cClick();">'+(o3_closefontclass ? '' : wrapStr(0,o3_closesize,'close'))+close+(o3_closefontclass ? '' : wrapStr(1,o3_closesize,'close'))+'</a></td>';
+	txt='<table width="'+o3_width+ '" border="0" cellpadding="'+o3_border+'" cellspacing="0" '+(o3_bgclass ? 'class="'+o3_bgclass+'"' : o3_bgcolor+' '+o3_bgbackground+' '+o3_height)+'><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td'+(o3_captionfontclass ? ' class="'+o3_captionfontclass+'">' : '>')+(o3_captionfontclass ? '' : '<b>'+wrapStr(0,o3_captionsize,'caption'))+o3_capicon+title+(o3_captionfontclass ? '' : wrapStr(1,o3_captionsize)+'</b>')+'</td>'+closing+'</tr></table><table width="100%" border="0" cellpadding="' + o3_cellpad + '" cellspacing="0" '+(o3_fgclass ? 'class="'+o3_fgclass+'"' : o3_fgcolor+' '+o3_fgbackground+' '+o3_height)+'><tr><td valign="TOP"'+(o3_textfontclass ? ' class="'+o3_textfontclass+'">' :'>')+(o3_textfontclass ? '' : wrapStr(0,o3_textsize,'text'))+text+(o3_textfontclass ? '' : wrapStr(1,o3_textsize)) + '</td></tr></table></td></tr></table>';
+
+	set_background("");
+	return txt;
+}
+
+// Sets the background picture,padding and lots more. :)
+function ol_content_background(text,picture,hasfullhtml) {
+	if (hasfullhtml) {
+		txt=text;
+	} else {
+		txt='<table width="'+o3_width+'" border="0" cellpadding="0" cellspacing="0" height="'+o3_height+'"><tr><td colspan="3" height="'+o3_padyt+'"></td></tr><tr><td width="'+o3_padxl+'"></td><td valign="TOP" width="'+(o3_width-o3_padxl-o3_padxr)+(o3_textfontclass ? '" class="'+o3_textfontclass : '')+'">'+(o3_textfontclass ? '' : wrapStr(0,o3_textsize,'text'))+text+(o3_textfontclass ? '' : wrapStr(1,o3_textsize))+'</td><td width="'+o3_padxr+'"></td></tr><tr><td colspan="3" height="'+o3_padyb+'"></td></tr></table>';
+	}
+
+	set_background(picture);
+	return txt;
+}
+
+// Loads a picture into the div.
+function set_background(pic) {
+	if (pic == "") {
+		if (olNs4) {
+			over.background.src = null; 
+		} else if (over.style) {
+			over.style.backgroundImage = "none";
+		}
+	} else {
+		if (olNs4) {
+			over.background.src = pic;
+		} else if (over.style) {
+			over.style.width=o3_width + 'px';
+			over.style.backgroundImage = "url("+pic+")";
+		}
+	}
+}
+
+////////
+// HANDLING FUNCTIONS
+////////
+var olShowId=-1;
+
+// Displays the popup
+function disp(statustext) {
+	runHook("disp", FBEFORE);
+	
+	if (o3_allowmove == 0) {
+		runHook("placeLayer", FREPLACE);
+		(olNs6&&olShowId<0) ? olShowId=setTimeout("runHook('showObject', FREPLACE, over)", 1) : runHook("showObject", FREPLACE, over);
+		o3_allowmove = (o3_sticky || o3_followmouse==0) ? 0 : 1;
+	}
+	
+	runHook("disp", FAFTER);
+
+	if (statustext != "") self.status = statustext;
+}
+
+// Creates the actual popup structure
+function createPopup(lyrContent){
+	runHook("createPopup", FBEFORE);
+	
+	if (o3_wrap) {
+		var wd,ww,theObj = (olNs4 ? over : over.style);
+		theObj.top = theObj.left = ((olIe4&&!olOp) ? 0 : -10000) + (!olNs4 ? 'px' : 0);
+		layerWrite(lyrContent);
+		wd = (olNs4 ? over.clip.width : over.offsetWidth);
+		if (wd > (ww=windowWidth())) {
+			lyrContent=lyrContent.replace(/\&nbsp;/g, ' ');
+			o3_width=ww;
+			o3_wrap=0;
+		} 
+	}
+
+	layerWrite(lyrContent);
+	
+	// Have to set o3_width for placeLayer() routine if o3_wrap is turned on
+	if (o3_wrap) o3_width=(olNs4 ? over.clip.width : over.offsetWidth);
+	
+	runHook("createPopup", FAFTER, lyrContent);
+
+	return true;
+}
+
+// Decides where we want the popup.
+function placeLayer() {
+	var placeX, placeY, widthFix = 0;
+	
+	// HORIZONTAL PLACEMENT, re-arranged to work in Safari
+	if (o3_frame.innerWidth) widthFix=18; 
+	iwidth = windowWidth();
+
+	// Horizontal scroll offset
+	winoffset=(olIe4) ? eval('o3_frame.'+docRoot+'.scrollLeft') : o3_frame.pageXOffset;
+
+	placeX = runHook('horizontalPlacement',FCHAIN,iwidth,winoffset,widthFix);
+
+	// VERTICAL PLACEMENT, re-arranged to work in Safari
+	if (o3_frame.innerHeight) {
+		iheight=o3_frame.innerHeight;
+	} else if (eval('o3_frame.'+docRoot)&&eval("typeof o3_frame."+docRoot+".clientHeight=='number'")&&eval('o3_frame.'+docRoot+'.clientHeight')) { 
+		iheight=eval('o3_frame.'+docRoot+'.clientHeight');
+	}			
+
+	// Vertical scroll offset
+	scrolloffset=(olIe4) ? eval('o3_frame.'+docRoot+'.scrollTop') : o3_frame.pageYOffset;
+	placeY = runHook('verticalPlacement',FCHAIN,iheight,scrolloffset);
+
+	// Actually move the object.
+	repositionTo(over, placeX, placeY);
+}
+
+// Moves the layer
+function olMouseMove(e) {
+	var e = (e) ? e : event;
+
+	if (e.pageX) {
+		o3_x = e.pageX;
+		o3_y = e.pageY;
+	} else if (e.clientX) {
+		o3_x = eval('e.clientX+o3_frame.'+docRoot+'.scrollLeft');
+		o3_y = eval('e.clientY+o3_frame.'+docRoot+'.scrollTop');
+	}
+	
+	if (o3_allowmove == 1) runHook("placeLayer", FREPLACE);
+
+	// MouseOut handler
+	if (hoveringSwitch && !olNs4 && runHook("cursorOff", FREPLACE)) {
+		(olHideDelay ? hideDelay(olHideDelay) : cClick());
+		hoveringSwitch = !hoveringSwitch;
+	}
+}
+
+// Fake function for 3.0 users.
+function no_overlib() { return ver3fix; }
+
+// Capture the mouse and chain other scripts.
+function olMouseCapture() {
+	capExtent = document;
+	var fN, str = '', l, k, f, wMv, sS, mseHandler = olMouseMove;
+	var re = /function[ ]*(\w*)\(/;
+	
+	wMv = (!olIe4 && window.onmousemove);
+	if (document.onmousemove || wMv) {
+		if (wMv) capExtent = window;
+		f = capExtent.onmousemove.toString();
+		fN = f.match(re);
+		if (fN == null) {
+			str = f+'(e); ';
+		} else if (fN[1] == 'anonymous' || fN[1] == 'olMouseMove' || (wMv && fN[1] == 'onmousemove')) {
+			if (!olOp && wMv) {
+				l = f.indexOf('{')+1;
+				k = f.lastIndexOf('}');
+				sS = f.substring(l,k);
+				if ((l = sS.indexOf('(')) != -1) {
+					sS = sS.substring(0,l).replace(/^\s+/,'').replace(/\s+$/,'');
+					if (eval("typeof " + sS + " == 'undefined'")) window.onmousemove = null;
+					else str = sS + '(e);';
+				}
+			}
+			if (!str) {
+				olCheckMouseCapture = false;
+				return;
+			}
+		} else {
+			if (fN[1]) str = fN[1]+'(e); ';
+			else {
+				l = f.indexOf('{')+1;
+				k = f.lastIndexOf('}');
+				str = f.substring(l,k) + '\n';
+			}
+		}
+		str += 'olMouseMove(e); ';
+		mseHandler = new Function('e', str);
+	}
+
+	capExtent.onmousemove = mseHandler;
+	if (olNs4) capExtent.captureEvents(Event.MOUSEMOVE);
+}
+
+////////
+// PARSING FUNCTIONS
+////////
+
+// Does the actual command parsing.
+function parseTokens(pf, ar) {
+	// What the next argument is expected to be.
+	var v, mode=-1, par = (pf != 'ol_');	
+	var fnMark = (par && !ar.length ? 1 : 0);
+
+	for (i = 0; i < ar.length; i++) {
+		if (mode < 0) {
+			// Arg is maintext,unless its a number between pmStart and pmUpper
+			// then its a command.
+			if (typeof ar[i] == 'number' && ar[i] > pmStart && ar[i] < pmUpper) {
+				fnMark = (par ? 1 : 0);
+				i--;   // backup one so that the next block can parse it
+			} else {
+				switch(pf) {
+					case 'ol_':
+						ol_text = ar[i].toString();
+						break;
+					default:
+						o3_text=ar[i].toString();  
+				}
+			}
+			mode = 0;
+		} else {
+			// Note: NS4 doesn't like switch cases with vars.
+			if (ar[i] >= pmCount || ar[i]==DONOTHING) { continue; }
+			if (ar[i]==INARRAY) { fnMark = 0; eval(pf+'text=ol_texts['+ar[++i]+'].toString()'); continue; }
+			if (ar[i]==CAPARRAY) { eval(pf+'cap=ol_caps['+ar[++i]+'].toString()'); continue; }
+			if (ar[i]==STICKY) { if (pf!='ol_') eval(pf+'sticky=1'); continue; }
+			if (ar[i]==BACKGROUND) { eval(pf+'background="'+ar[++i]+'"'); continue; }
+			if (ar[i]==NOCLOSE) { if (pf!='ol_') opt_NOCLOSE(); continue; }
+			if (ar[i]==CAPTION) { eval(pf+"cap='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==CENTER || ar[i]==LEFT || ar[i]==RIGHT) { eval(pf+'hpos='+ar[i]); if(pf!='ol_') olHautoFlag=1; continue; }
+			if (ar[i]==OFFSETX) { eval(pf+'offsetx='+ar[++i]); continue; }
+			if (ar[i]==OFFSETY) { eval(pf+'offsety='+ar[++i]); continue; }
+			if (ar[i]==FGCOLOR) { eval(pf+'fgcolor="'+ar[++i]+'"'); continue; }
+			if (ar[i]==BGCOLOR) { eval(pf+'bgcolor="'+ar[++i]+'"'); continue; }
+			if (ar[i]==TEXTCOLOR) { eval(pf+'textcolor="'+ar[++i]+'"'); continue; }
+			if (ar[i]==CAPCOLOR) { eval(pf+'capcolor="'+ar[++i]+'"'); continue; }
+			if (ar[i]==CLOSECOLOR) { eval(pf+'closecolor="'+ar[++i]+'"'); continue; }
+			if (ar[i]==WIDTH) { eval(pf+'width='+ar[++i]); continue; }
+			if (ar[i]==BORDER) { eval(pf+'border='+ar[++i]); continue; }
+			if (ar[i]==CELLPAD) { i=opt_MULTIPLEARGS(++i,ar,(pf+'cellpad')); continue; }
+			if (ar[i]==STATUS) { eval(pf+"status='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==AUTOSTATUS) { eval(pf +'autostatus=('+pf+'autostatus == 1) ? 0 : 1'); continue; }
+			if (ar[i]==AUTOSTATUSCAP) { eval(pf +'autostatus=('+pf+'autostatus == 2) ? 0 : 2'); continue; }
+			if (ar[i]==HEIGHT) { eval(pf+'height='+pf+'aboveheight='+ar[++i]); continue; } // Same param again.
+			if (ar[i]==CLOSETEXT) { eval(pf+"close='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==SNAPX) { eval(pf+'snapx='+ar[++i]); continue; }
+			if (ar[i]==SNAPY) { eval(pf+'snapy='+ar[++i]); continue; }
+			if (ar[i]==FIXX) { eval(pf+'fixx='+ar[++i]); continue; }
+			if (ar[i]==FIXY) { eval(pf+'fixy='+ar[++i]); continue; }
+			if (ar[i]==RELX) { eval(pf+'relx='+ar[++i]); continue; }
+			if (ar[i]==RELY) { eval(pf+'rely='+ar[++i]); continue; }
+			if (ar[i]==FGBACKGROUND) { eval(pf+'fgbackground="'+ar[++i]+'"'); continue; }
+			if (ar[i]==BGBACKGROUND) { eval(pf+'bgbackground="'+ar[++i]+'"'); continue; }
+			if (ar[i]==PADX) { eval(pf+'padxl='+ar[++i]); eval(pf+'padxr='+ar[++i]); continue; }
+			if (ar[i]==PADY) { eval(pf+'padyt='+ar[++i]); eval(pf+'padyb='+ar[++i]); continue; }
+			if (ar[i]==FULLHTML) { if (pf!='ol_') eval(pf+'fullhtml=1'); continue; }
+			if (ar[i]==BELOW || ar[i]==ABOVE) { eval(pf+'vpos='+ar[i]); if (pf!='ol_') olVautoFlag=1; continue; }
+			if (ar[i]==CAPICON) { eval(pf+'capicon="'+ar[++i]+'"'); continue; }
+			if (ar[i]==TEXTFONT) { eval(pf+"textfont='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==CAPTIONFONT) { eval(pf+"captionfont='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==CLOSEFONT) { eval(pf+"closefont='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==TEXTSIZE) { eval(pf+'textsize="'+ar[++i]+'"'); continue; }
+			if (ar[i]==CAPTIONSIZE) { eval(pf+'captionsize="'+ar[++i]+'"'); continue; }
+			if (ar[i]==CLOSESIZE) { eval(pf+'closesize="'+ar[++i]+'"'); continue; }
+			if (ar[i]==TIMEOUT) { eval(pf+'timeout='+ar[++i]); continue; }
+			if (ar[i]==FUNCTION) { if (pf=='ol_') { if (typeof ar[i+1]!='number') { v=ar[++i]; ol_function=(typeof v=='function' ? v : null); }} else {fnMark = 0; v = null; if (typeof ar[i+1]!='number') v = ar[++i];  opt_FUNCTION(v); } continue; }
+			if (ar[i]==DELAY) { eval(pf+'delay='+ar[++i]); continue; }
+			if (ar[i]==HAUTO) { eval(pf+'hauto=('+pf+'hauto == 0) ? 1 : 0'); continue; }
+			if (ar[i]==VAUTO) { eval(pf+'vauto=('+pf+'vauto == 0) ? 1 : 0'); continue; }
+			if (ar[i]==CLOSECLICK) { eval(pf +'closeclick=('+pf+'closeclick == 0) ? 1 : 0'); continue; }
+			if (ar[i]==WRAP) { eval(pf +'wrap=('+pf+'wrap == 0) ? 1 : 0'); continue; }
+			if (ar[i]==FOLLOWMOUSE) { eval(pf +'followmouse=('+pf+'followmouse == 1) ? 0 : 1'); continue; }
+			if (ar[i]==MOUSEOFF) { eval(pf +'mouseoff=('+pf+'mouseoff==0) ? 1 : 0'); v=ar[i+1]; if (pf != 'ol_' && eval(pf+'mouseoff') && typeof v == 'number' && (v < pmStart || v > pmUpper)) olHideDelay=ar[++i]; continue; }
+			if (ar[i]==CLOSETITLE) { eval(pf+"closetitle='"+escSglQuote(ar[++i])+"'"); continue; }
+			if (ar[i]==CSSOFF||ar[i]==CSSCLASS) { eval(pf+'css='+ar[i]); continue; }
+			if (ar[i]==COMPATMODE) { eval(pf+'compatmode=('+pf+'compatmode==0) ? 1 : 0'); continue; }
+			if (ar[i]==FGCLASS) { eval(pf+'fgclass="'+ar[++i]+'"'); continue; }
+			if (ar[i]==BGCLASS) { eval(pf+'bgclass="'+ar[++i]+'"'); continue; }
+			if (ar[i]==TEXTFONTCLASS) { eval(pf+'textfontclass="'+ar[++i]+'"'); continue; }
+			if (ar[i]==CAPTIONFONTCLASS) { eval(pf+'captionfontclass="'+ar[++i]+'"'); continue; }
+			if (ar[i]==CLOSEFONTCLASS) { eval(pf+'closefontclass="'+ar[++i]+'"'); continue; }
+			i = parseCmdLine(pf, i, ar);
+		}
+	}
+
+	if (fnMark && o3_function) o3_text = o3_function();
+	
+	if ((pf == 'o3_') && o3_wrap) {
+		o3_width = 0;
+		
+		var tReg=/<.*\n*>/ig;
+		if (!tReg.test(o3_text)) o3_text = o3_text.replace(/[ ]+/g, '&nbsp;');
+		if (!tReg.test(o3_cap))o3_cap = o3_cap.replace(/[ ]+/g, '&nbsp;');
+	}
+	if ((pf == 'o3_') && o3_sticky) {
+		if (!o3_close && (o3_frame != ol_frame)) o3_close = ol_close;
+		if (o3_mouseoff && (o3_frame == ol_frame)) opt_NOCLOSE(' ');
+	}
+}
+
+////////
+// LAYER FUNCTIONS
+////////
+
+// Writes to a layer
+function layerWrite(txt) {
+	txt += "\n";
+	if (olNs4) {
+		var lyr = o3_frame.document.layers['overDiv'].document
+		lyr.write(txt)
+		lyr.close()
+	} else if (typeof over.innerHTML != 'undefined') {
+		if (olIe5 && isMac) over.innerHTML = '';
+		over.innerHTML = txt;
+	} else {
+		range = o3_frame.document.createRange();
+		range.setStartAfter(over);
+		domfrag = range.createContextualFragment(txt);
+		
+		while (over.hasChildNodes()) {
+			over.removeChild(over.lastChild);
+		}
+		
+		over.appendChild(domfrag);
+	}
+}
+
+// Make an object visible
+function showObject(obj) {
+	runHook("showObject", FBEFORE);
+
+	var theObj=(olNs4 ? obj : obj.style);
+	theObj.visibility = 'visible';
+
+	runHook("showObject", FAFTER);
+}
+
+// Hides an object
+function hideObject(obj) {
+	runHook("hideObject", FBEFORE);
+
+	var theObj=(olNs4 ? obj : obj.style);
+	if (olNs6 && olShowId>0) { clearTimeout(olShowId); olShowId=0; }
+	theObj.visibility = 'hidden';
+	theObj.top = theObj.left = ((olIe4&&!olOp) ? 0 : -10000) + (!olNs4 ? 'px' : 0);
+
+	if (o3_timerid > 0) clearTimeout(o3_timerid);
+	if (o3_delayid > 0) clearTimeout(o3_delayid);
+
+	o3_timerid = 0;
+	o3_delayid = 0;
+	self.status = "";
+
+	if (obj.onmouseout || obj.onmouseover) {
+		if (olNs4) obj.releaseEvents(Event.MOUSEOUT || Event.MOUSEOVER);
+		obj.onmouseout = obj.onmouseover = null;
+	}
+
+	runHook("hideObject", FAFTER);
+}
+
+// Move a layer
+function repositionTo(obj, xL, yL) {
+	var theObj=(olNs4 ? obj : obj.style);
+	theObj.left = xL + (!olNs4 ? 'px' : 0);
+	theObj.top = yL + (!olNs4 ? 'px' : 0);
+}
+
+// Check position of cursor relative to overDiv DIVision; mouseOut function
+function cursorOff() {
+	var left = parseInt(over.style.left);
+	var top = parseInt(over.style.top);
+	var right = left + (over.offsetWidth >= parseInt(o3_width) ? over.offsetWidth : parseInt(o3_width));
+	var bottom = top + (over.offsetHeight >= o3_aboveheight ? over.offsetHeight : o3_aboveheight);
+
+	if (o3_x < left || o3_x > right || o3_y < top || o3_y > bottom) return true;
+
+	return false;
+}
+
+////////
+// COMMAND FUNCTIONS
+////////
+
+// Calls callme or the default function.
+function opt_FUNCTION(callme) {
+	o3_text = (callme ? (typeof callme=='string' ? (/.+\(.*\)/.test(callme) ? eval(callme) : callme) : callme()) : (o3_function ? o3_function() : 'No Function'));
+
+	return 0;
+}
+
+// Handle hovering
+function opt_NOCLOSE(unused) {
+	if (!unused) o3_close = "";
+
+	if (olNs4) {
+		over.captureEvents(Event.MOUSEOUT || Event.MOUSEOVER);
+		over.onmouseover = function () { if (o3_timerid > 0) { clearTimeout(o3_timerid); o3_timerid = 0; } }
+		over.onmouseout = function (e) { if (olHideDelay) hideDelay(olHideDelay); else cClick(e); }
+	} else {
+		over.onmouseover = function () {hoveringSwitch = true; if (o3_timerid > 0) { clearTimeout(o3_timerid); o3_timerid =0; } }
+	}
+
+	return 0;
+}
+
+// Function to scan command line arguments for multiples
+function opt_MULTIPLEARGS(i, args, parameter) {
+  var k=i, re, pV, str='';
+
+  for(k=i; k<args.length; k++) {
+		if(typeof args[k] == 'number' && args[k]>pmStart) break;
+		str += args[k] + ',';
+	}
+	if (str) str = str.substring(0,--str.length);
+
+	k--;  // reduce by one so the for loop this is in works correctly
+	pV=(olNs4 && /cellpad/i.test(parameter)) ? str.split(',')[0] : str;
+	eval(parameter + '="' + pV + '"');
+
+	return k;
+}
+
+// Remove &nbsp; in texts when done.
+function nbspCleanup() {
+	if (o3_wrap) {
+		o3_text = o3_text.replace(/\&nbsp;/g, ' ');
+		o3_cap = o3_cap.replace(/\&nbsp;/g, ' ');
+	}
+}
+
+// Escape embedded single quotes in text strings
+function escSglQuote(str) {
+  return str.toString().replace(/'/g,"\\'");
+}
+
+// Onload handler for window onload event
+function OLonLoad_handler(e) {
+	var re = /\w+\(.*\)[;\s]+/g, olre = /overlib\(|nd\(|cClick\(/, fn, l, i;
+
+	if(!olLoaded) olLoaded=1;
+
+  // Remove it for Gecko based browsers
+	if(window.removeEventListener && e.eventPhase == 3) window.removeEventListener("load",OLonLoad_handler,false);
+	else if(window.detachEvent) { // and for IE and Opera 4.x but execute calls to overlib, nd, or cClick()
+		window.detachEvent("onload",OLonLoad_handler);
+		var fN = document.body.getAttribute('onload');
+		if (fN) {
+			fN=fN.toString().match(re);
+			if (fN && fN.length) {
+				for (i=0; i<fN.length; i++) {
+					if (/anonymous/.test(fN[i])) continue;
+					while((l=fN[i].search(/\)[;\s]+/)) != -1) {
+						fn=fN[i].substring(0,l+1);
+						fN[i] = fN[i].substring(l+2);
+						if (olre.test(fn)) eval(fn);
+					}
+				}
+			}
+		}
+	}
+}
+
+// Wraps strings in Layer Generation Functions with the correct tags
+//    endWrap true(if end tag) or false if start tag
+//    fontSizeStr - font size string such as '1' or '10px'
+//    whichString is being wrapped -- 'text', 'caption', or 'close'
+function wrapStr(endWrap,fontSizeStr,whichString) {
+	var fontStr, fontColor, isClose=((whichString=='close') ? 1 : 0), hasDims=/[%\-a-z]+$/.test(fontSizeStr);
+	fontSizeStr = (olNs4) ? (!hasDims ? fontSizeStr : '1') : fontSizeStr;
+	if (endWrap) return (hasDims&&!olNs4) ? (isClose ? '</span>' : '</div>') : '</font>';
+	else {
+		fontStr='o3_'+whichString+'font';
+		fontColor='o3_'+((whichString=='caption')? 'cap' : whichString)+'color';
+		return (hasDims&&!olNs4) ? (isClose ? '<span style="font-family: '+quoteMultiNameFonts(eval(fontStr))+'; color: '+eval(fontColor)+'; font-size: '+fontSizeStr+';">' : '<div style="font-family: '+quoteMultiNameFonts(eval(fontStr))+'; color: '+eval(fontColor)+'; font-size: '+fontSizeStr+';">') : '<font face="'+eval(fontStr)+'" color="'+eval(fontColor)+'" size="'+(parseInt(fontSizeStr)>7 ? '7' : fontSizeStr)+'">';
+	}
+}
+
+// Quotes Multi word font names; needed for CSS Standards adherence in font-family
+function quoteMultiNameFonts(theFont) {
+	var v, pM=theFont.split(',');
+	for (var i=0; i<pM.length; i++) {
+		v=pM[i];
+		v=v.replace(/^\s+/,'').replace(/\s+$/,'');
+		if(/\s/.test(v) && !/['"]/.test(v)) {
+			v="\'"+v+"\'";
+			pM[i]=v;
+		}
+	}
+	return pM.join();
+}
+
+// dummy function which will be overridden 
+function isExclusive(args) {
+	return false;
+}
+
+// function will delay close by time milliseconds
+function hideDelay(time) {
+	if (time&&!o3_delay) {
+		if (o3_timerid > 0) clearTimeout(o3_timerid);
+
+		o3_timerid=setTimeout("cClick()",(o3_timeout=time));
+	}
+}
+
+// Was originally in the placeLayer() routine; separated out for future ease
+function horizontalPlacement(browserWidth, horizontalScrollAmount, widthFix) {
+	var placeX, iwidth=browserWidth, winoffset=horizontalScrollAmount;
+	var parsedWidth = parseInt(o3_width);
+
+	if (o3_fixx > -1 || o3_relx != null) {
+		// Fixed position
+		placeX=(o3_relx != null ? ( o3_relx < 0 ? winoffset +o3_relx+ iwidth - parsedWidth - widthFix : winoffset+o3_relx) : o3_fixx);
+	} else {  
+		// If HAUTO, decide what to use.
+		if (o3_hauto == 1) {
+			if ((o3_x - winoffset) > (iwidth / 2)) {
+				o3_hpos = LEFT;
+			} else {
+				o3_hpos = RIGHT;
+			}
+		}  		
+
+		// From mouse
+		if (o3_hpos == CENTER) { // Center
+			placeX = o3_x+o3_offsetx-(parsedWidth/2);
+
+			if (placeX < winoffset) placeX = winoffset;
+		}
+
+		if (o3_hpos == RIGHT) { // Right
+			placeX = o3_x+o3_offsetx;
+
+			if ((placeX+parsedWidth) > (winoffset+iwidth - widthFix)) {
+				placeX = iwidth+winoffset - parsedWidth - widthFix;
+				if (placeX < 0) placeX = 0;
+			}
+		}
+		if (o3_hpos == LEFT) { // Left
+			placeX = o3_x-o3_offsetx-parsedWidth;
+			if (placeX < winoffset) placeX = winoffset;
+		}  	
+
+		// Snapping!
+		if (o3_snapx > 1) {
+			var snapping = placeX % o3_snapx;
+
+			if (o3_hpos == LEFT) {
+				placeX = placeX - (o3_snapx+snapping);
+			} else {
+				// CENTER and RIGHT
+				placeX = placeX+(o3_snapx - snapping);
+			}
+
+			if (placeX < winoffset) placeX = winoffset;
+		}
+	}	
+
+	return placeX;
+}
+
+// was originally in the placeLayer() routine; separated out for future ease
+function verticalPlacement(browserHeight,verticalScrollAmount) {
+	var placeY, iheight=browserHeight, scrolloffset=verticalScrollAmount;
+	var parsedHeight=(o3_aboveheight ? parseInt(o3_aboveheight) : (olNs4 ? over.clip.height : over.offsetHeight));
+
+	if (o3_fixy > -1 || o3_rely != null) {
+		// Fixed position
+		placeY=(o3_rely != null ? (o3_rely < 0 ? scrolloffset+o3_rely+iheight - parsedHeight : scrolloffset+o3_rely) : o3_fixy);
+	} else {
+		// If VAUTO, decide what to use.
+		if (o3_vauto == 1) {
+			if ((o3_y - scrolloffset) > (iheight / 2) && o3_vpos == BELOW && (o3_y + parsedHeight + o3_offsety - (scrolloffset + iheight) > 0)) {
+				o3_vpos = ABOVE;
+			} else if (o3_vpos == ABOVE && (o3_y - (parsedHeight + o3_offsety) - scrolloffset < 0)) {
+				o3_vpos = BELOW;
+			}
+		}
+
+		// From mouse
+		if (o3_vpos == ABOVE) {
+			if (o3_aboveheight == 0) o3_aboveheight = parsedHeight; 
+
+			placeY = o3_y - (o3_aboveheight+o3_offsety);
+			if (placeY < scrolloffset) placeY = scrolloffset;
+		} else {
+			// BELOW
+			placeY = o3_y+o3_offsety;
+		} 
+
+		// Snapping!
+		if (o3_snapy > 1) {
+			var snapping = placeY % o3_snapy;  			
+
+			if (o3_aboveheight > 0 && o3_vpos == ABOVE) {
+				placeY = placeY - (o3_snapy+snapping);
+			} else {
+				placeY = placeY+(o3_snapy - snapping);
+			} 			
+
+			if (placeY < scrolloffset) placeY = scrolloffset;
+		}
+	}
+
+	return placeY;
+}
+
+// checks positioning flags
+function checkPositionFlags() {
+	if (olHautoFlag) olHautoFlag = o3_hauto=0;
+	if (olVautoFlag) olVautoFlag = o3_vauto=0;
+	return true;
+}
+
+// get Browser window width
+function windowWidth() {
+	var w;
+	if (o3_frame.innerWidth) w=o3_frame.innerWidth;
+	else if (eval('o3_frame.'+docRoot)&&eval("typeof o3_frame."+docRoot+".clientWidth=='number'")&&eval('o3_frame.'+docRoot+'.clientWidth')) 
+		w=eval('o3_frame.'+docRoot+'.clientWidth');
+	return w;			
+}
+
+// create the div container for popup content if it doesn't exist
+function createDivContainer(id,frm,zValue) {
+	id = (id || 'overDiv'), frm = (frm || o3_frame), zValue = (zValue || 1000);
+	var objRef, divContainer = layerReference(id);
+
+	if (divContainer == null) {
+		if (olNs4) {
+			divContainer = frm.document.layers[id] = new Layer(window.innerWidth, frm);
+			objRef = divContainer;
+		} else {
+			var body = (olIe4 ? frm.document.all.tags('BODY')[0] : frm.document.getElementsByTagName("BODY")[0]);
+			if (olIe4&&!document.getElementById) {
+				body.insertAdjacentHTML("beforeEnd",'<div id="'+id+'"></div>');
+				divContainer=layerReference(id);
+			} else {
+				divContainer = frm.document.createElement("DIV");
+				divContainer.id = id;
+				body.appendChild(divContainer);
+			}
+			objRef = divContainer.style;
+		}
+
+		with (objRef) {
+			position = 'absolute';
+			visibility = 'hidden';
+			top = left = -10000 + (!olNs4) ? 'px' : 0;
+			zIndex = zValue;
+		}
+	}
+
+	return divContainer;
+}
+
+// get reference to a layer with ID=id
+function layerReference(id) {
+	return (olNs4 ? o3_frame.document.layers[id] : (document.all ? o3_frame.document.all[id] : o3_frame.document.getElementById(id)));
+}
+
+////////
+//  PLUGIN ACTIVATION FUNCTIONS
+////////
+
+// Runs plugin functions to set runtime variables.
+function setRunTimeVariables(){
+	if (typeof runTime != 'undefined' && runTime.length) {
+		for (var k = 0; k < runTime.length; k++) {
+			runTime[k]();
+		}
+	}
+}
+
+// Runs plugin functions to parse commands.
+function parseCmdLine(pf, i, args) {
+	if (typeof cmdLine != 'undefined' && cmdLine.length) { 
+		for (var k = 0; k < cmdLine.length; k++) { 
+			var j = cmdLine[k](pf, i, args);
+			if (j >- 1) {
+				i = j;
+				break;
+			}
+		}
+	}
+
+	return i;
+}
+
+// Runs plugin functions to do things after parse.
+function postParseChecks(){
+	if (typeof postParse != 'undefined' && postParse.length) {
+		for (var k = 0; k < postParse.length; k++) {
+			if (postParse[k]()) continue;
+			return false;  // end now since have an error
+		}
+	}
+	return true;
+}
+
+////////
+//  PLUGIN REGISTRATION FUNCTIONS
+////////
+
+// Registers commands and creates constants.
+function registerCommands(cmdStr) {
+	if (typeof cmdStr!='string') return;
+
+	var pM = cmdStr.split(',');
+	pms = pms.concat(pM);
+
+	for (var i = 0; i< pM.length; i++) {
+		eval(pM[i].toUpperCase()+'='+pmCount++);
+	}
+}
+
+// Registers no-parameter commands
+function registerNoParameterCommands(cmdStr) {
+	if (!cmdStr && typeof cmdStr!='string') return;
+	pmt=(!pmt) ? cmdStr : pmt + ',' + cmdStr;
+}
+
+// Register a function to hook at a certain point.
+function registerHook(fnHookTo, fnRef, hookType, optPm) {
+	var hookPt, last = typeof optPm;
+	
+	if (fnHookTo == 'plgIn'||fnHookTo == 'postParse') return;
+	if (typeof hookPts == 'undefined') hookPts = new Array();
+	if (typeof hookPts[fnHookTo] == 'undefined') hookPts[fnHookTo] = new FunctionReference();
+
+	hookPt = hookPts[fnHookTo];
+
+	if (hookType != null) {
+		if (hookType == FREPLACE) {
+			hookPt.ovload = fnRef;  // replace normal overlib routine
+			if (fnHookTo.indexOf('ol_content_') > -1) hookPt.alt[pms[CSSOFF-1-pmStart]]=fnRef; 
+
+		} else if (hookType == FBEFORE || hookType == FAFTER) {
+			var hookPt=(hookType == 1 ? hookPt.before : hookPt.after);
+
+			if (typeof fnRef == 'object') {
+				hookPt = hookPt.concat(fnRef);
+			} else {
+				hookPt[hookPt.length++] = fnRef;
+			}
+
+			if (optPm) hookPt = reOrder(hookPt, fnRef, optPm);
+
+		} else if (hookType == FALTERNATE) {
+			if (last=='number') hookPt.alt[pms[optPm-1-pmStart]] = fnRef;
+		} else if (hookType == FCHAIN) {
+			hookPt = hookPt.chain; 
+			if (typeof fnRef=='object') hookPt=hookPt.concat(fnRef); // add other functions 
+			else hookPt[hookPt.length++]=fnRef;
+		}
+
+		return;
+	}
+}
+
+// Register a function that will set runtime variables.
+function registerRunTimeFunction(fn) {
+	if (isFunction(fn)) {
+		if (typeof runTime == 'undefined') runTime = new Array();
+		if (typeof fn == 'object') {
+			runTime = runTime.concat(fn);
+		} else {
+			runTime[runTime.length++] = fn;
+		}
+	}
+}
+
+// Register a function that will handle command parsing.
+function registerCmdLineFunction(fn){
+	if (isFunction(fn)) {
+		if (typeof cmdLine == 'undefined') cmdLine = new Array();
+		if (typeof fn == 'object') {
+			cmdLine = cmdLine.concat(fn);
+		} else {
+			cmdLine[cmdLine.length++] = fn;
+		}
+	}
+}
+
+// Register a function that does things after command parsing. 
+function registerPostParseFunction(fn){
+	if (isFunction(fn)) {
+		if (typeof postParse == 'undefined') postParse = new Array();
+		if (typeof fn == 'object') {
+			postParse = postParse.concat(fn);
+		} else {
+			postParse[postParse.length++] = fn;
+		}
+	}
+}
+
+////////
+//  PLUGIN REGISTRATION FUNCTIONS
+////////
+
+// Runs any hooks registered.
+function runHook(fnHookTo, hookType) {
+	var l = hookPts[fnHookTo], k, rtnVal, optPm, arS, ar = runHook.arguments;
+
+	if (hookType == FREPLACE) {
+		arS = argToString(ar, 2);
+
+		if (typeof l == 'undefined' || !(l = l.ovload)) return eval(fnHookTo+'('+arS+')');
+		else return eval('l('+arS+')');
+
+	} else if (hookType == FBEFORE || hookType == FAFTER) {
+		if (typeof l == 'undefined') return;
+		l=(hookType == 1 ? l.before : l.after);
+
+		if (!l.length) return;
+
+		arS = argToString(ar, 2);
+		for (var k = 0; k < l.length; k++) eval('l[k]('+arS+')'); 
+
+	} else if (hookType == FALTERNATE) {
+		optPm = ar[2];
+		arS = argToString(ar, 3);
+
+		if (typeof l == 'undefined' || (l = l.alt[pms[optPm-1-pmStart]]) == 'undefined') {
+			return eval(fnHookTo+'('+arS+')');
+		} else {
+			return eval('l('+arS+')');
+		}
+	} else if (hookType == FCHAIN) {
+		arS=argToString(ar,2);
+		l=l.chain;
+
+		for (k=l.length; k > 0; k--) if((rtnVal=eval('l[k-1]('+arS+')'))!=void(0)) return rtnVal;
+	}
+}
+
+////////
+//  UTILITY FUNCTIONS
+////////
+
+// Checks if something is a function.
+function isFunction(fnRef) {
+	var rtn = true;
+
+	if (typeof fnRef == 'object') {
+		for (var i = 0; i < fnRef.length; i++) {
+			if (typeof fnRef[i]=='function') continue;
+			rtn = false;
+			break;
+		}
+	} else if (typeof fnRef != 'function') {
+		rtn = false;
+	}
+	
+	return rtn;
+}
+
+// Converts an array into an argument string for use in eval.
+function argToString(array, strtInd, argName) {
+	var jS = strtInd, aS = '', ar = array;
+	argName=(argName ? argName : 'ar');
+	
+	if (ar.length > jS) {
+		for (var k = jS; k < ar.length; k++) aS += argName+'['+k+'], ';
+		aS = aS.substring(0, aS.length-2);
+	}
+	
+	return aS;
+}
+
+// Places a hook in the correct position in a hook point.
+function reOrder(hookPt, fnRef, order) {
+	if (!order || typeof order == 'undefined' || typeof order == 'number') return;
+	
+	var newPt = new Array(), match;
+
+	if (typeof order=='function') {
+		if (typeof fnRef=='object') {
+			newPt = newPt.concat(fnRef);
+		} else {
+			newPt[newPt.length++]=fnRef;
+		}
+		
+		for (var i = 0; i < hookPt.length; i++) {
+			match = false;
+			if (typeof fnRef == 'function' && hookPt[i] == fnRef) {
+				continue;
+			} else {
+				for(var j = 0; j < fnRef.length; j++) if (hookPt[i] == fnRef[j]) {
+					match = true;
+					break;
+				}
+			}
+			if (!match) newPt[newPt.length++] = hookPt[i];
+		}
+
+		newPt[newPt.length++] = order;
+
+	} else if (typeof order == 'object') {
+		if (typeof fnRef == 'object') {
+			newPt = newPt.concat(fnRef);
+		} else {
+			newPt[newPt.length++] = fnRef;
+		}
+		
+		for (var j = 0; j < hookPt.length; j++) {
+			match = false;
+			if (typeof fnRef == 'function' && hookPt[j] == fnRef) {
+				continue;
+			} else {
+				for (var i = 0; i < fnRef.length; i++) if (hookPt[j] == fnRef[i]) {
+					match = true;
+					break;
+				}
+			}
+			if (!match) newPt[newPt.length++]=hookPt[j];
+		}
+
+		for (i = 0; i < newPt.length; i++) hookPt[i] = newPt[i];
+		newPt.length = 0;
+		
+		for (var j = 0; j < hookPt.length; j++) {
+			match = false;
+			for (var i = 0; i < order.length; i++) {
+				if (hookPt[j] == order[i]) {
+					match = true;
+					break;
+				}
+			}
+			if (!match) newPt[newPt.length++] = hookPt[j];
+		}
+		newPt = newPt.concat(order);
+	}
+
+	for(i = 0; i < newPt.length; i++) hookPt[i] = newPt[i];
+
+	return hookPt;
+}
+
+////////
+// OBJECT CONSTRUCTORS
+////////
+
+// Object for handling hooks.
+function FunctionReference() {
+	this.ovload = null;
+	this.before = new Array();
+	this.after = new Array();
+	this.alt = new Array();
+	this.chain = new Array();
+}
+
+// Object for simple access to the overLIB version used.
+// Examples: simpleversion:351 major:3 minor:5 revision:1
+function Info(version, prerelease) {
+	this.version = version;
+	this.prerelease = prerelease;
+
+	this.simpleversion = Math.round(this.version*100);
+	this.major = parseInt(this.simpleversion / 100);
+	this.minor = parseInt(this.simpleversion / 10) - this.major * 10;
+	this.revision = parseInt(this.simpleversion) - this.major * 100 - this.minor * 10;
+	this.meets = meets;
+}
+
+// checks for Core Version required
+function meets(reqdVersion) {
+	return (!reqdVersion) ? false : this.simpleversion >= Math.round(100*parseFloat(reqdVersion));
+}
+
+////////
+// STANDARD REGISTRATIONS
+////////
+registerHook("ol_content_simple", ol_content_simple, FALTERNATE, CSSOFF);
+registerHook("ol_content_caption", ol_content_caption, FALTERNATE, CSSOFF);
+registerHook("ol_content_background", ol_content_background, FALTERNATE, CSSOFF);
+registerHook("ol_content_simple", ol_content_simple, FALTERNATE, CSSCLASS);
+registerHook("ol_content_caption", ol_content_caption, FALTERNATE, CSSCLASS);
+registerHook("ol_content_background", ol_content_background, FALTERNATE, CSSCLASS);
+registerPostParseFunction(checkPositionFlags);
+registerHook("hideObject", nbspCleanup, FAFTER);
+registerHook("horizontalPlacement", horizontalPlacement, FCHAIN);
+registerHook("verticalPlacement", verticalPlacement, FCHAIN);
+if (olNs4||(olIe5&&isMac)||olKq) olLoaded=1;
+registerNoParameterCommands('sticky,autostatus,autostatuscap,fullhtml,hauto,vauto,closeclick,wrap,followmouse,mouseoff,compatmode');
+
+/* ]]> */
+</script>
+<noscript>
+	It seems that your browser or webserver has either disabled Javascript or blocked active content. Please enable Javascript by changing your browser options and allow active content, then refresh the page and try again.
+</noscript>
+			<table width="760" cellspacing="0" cellpadding="0">
+		<tr>
+	<td bgcolor="#c2c0c0" class="medium">
+		<a name="top">
+		<!--headersimple: <noscript>
+		<span class="header">spatiallink</span><span class="header_red">_</span><span class="header">org</span>
+		headersimple-->
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="328" height="44" id="headerflash">
+	<param name="movie" value="/mmx/headerflash.swf" />
+	<param name="menu" value="false" />
+	<param name="quality" value="autohigh" />
+	<param name="scale" value="exactfit" />
+	<param name="bgcolor" value="#c2c0c0" />
+	<embed src="/mmx/headerflash.swf" menu="false" quality="autohigh" scale="exactfit" bgcolor="#c2c0c0" width="328" height="44" name="headerflash" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>		</a>
+		<span class="small">
+				</span>
+	</td>
+	<td bgcolor="#c2c0c0" class="medium_right_middle">
+		<!--google: <span> can NOT enclose <form> for xhtml-->
+<form method="get" action="http://www.google.com/custom">
+	<input type="text" name="q" size="17" maxlength="255" value="" />
+	<input type="image" src="/images/img_header_search.gif" alt="spatiallink_org" width="57" height="18" value="spatiallink_org" name="sa" />
+	<input type="hidden" name="cof" value="" />
+	<input type="hidden" name="domains" value="www.spatiallink.org" />
+	<input type="hidden" name="sitesearch" value="www.spatiallink.org" />
+</form>
+<!--google-->		<a href="/">Home</a>
+		 |
+		<a href="mailto:contact@spatiallink.org?subject=spatiallink_org">Contact</a>
+		 |
+		<a href="https://email.secureserver.net/login.php?domain=email.spatiallink.org">Login</a>
+		 |
+		<script type="text/javascript">
+// <![CDATA[
+	function popup_tos()
+	{ window.open ("/popup/popup_tos.php","popup","width=400,height=400,location=0,menubar=0,resizable=0,scrollbars=1,status=0,titlebar=0,toolbar=0")
+	}
+// ]]>
+</script>		<a href="javascript:popup_tos()">ToS</a>
+		[<a href="http://fets3.freetranslation.com/?sequence=core&amp;url=http://www.spatiallink.org/gistools/discuss/weblogs/contents.php&amp;language=English%2FSpanish">Spanish</a> | <a href="http://fets3.freetranslation.com/?sequence=core&amp;url=http://www.spatiallink.org/gistools/discuss/weblogs/contents.php&amp;language=English%2FFrench">French</a>]	</td>
+	<td bgcolor="#c2c0c0">
+	&nbsp;
+			</td>
+		</tr>
+		<tr>
+	<td colspan="3">
+	<script type="text/javascript">
+/* <![CDATA[ */
+
+/***********************************************
+Modified from AnyLink CSS Menu @ Dynamic Drive
+***********************************************/
+
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var enableanchorlink=0 //Enable or disable the anchor link when clicked on? (1=e, 0=d)
+var hidemenu_onclick=1 //hide menu when user clicks within menu? (1=yes, 0=no)
+
+/////No further editting needed
+
+var ie5=document.all
+var ns6=document.getElementById&&!document.all
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function showhide(obj, e, visible, hidden){
+if (ie5||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie5 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var windowedge=ie5 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+}
+return edgeoffset
+}
+
+function dropdownmenu(obj, e, dropmenuID){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+if (typeof dropmenuobj!="undefined") //hide previous menu
+dropmenuobj.style.visibility="hidden"
+clearhidemenu()
+if (ie5||ns6){
+obj.onmouseout=delayhidemenu
+dropmenuobj=document.getElementById(dropmenuID)
+if (hidemenu_onclick) dropmenuobj.onclick=function(){dropmenuobj.style.visibility='hidden'}
+dropmenuobj.onmouseover=clearhidemenu
+dropmenuobj.onmouseout=ie5? function(){ dynamichide(event)} : function(event){ dynamichide(event)}
+showhide(dropmenuobj.style, e, "visible", "hidden")
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if ((ie5||ns6) && !enableanchorlink) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie5&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function delayhidemenu(){
+delayhide=setTimeout("dropmenuobj.style.visibility='hidden'",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+/* ]]> */
+</script>			<table class="anytable">
+		<tr>		
+	<!--0 anchor link and menu-->
+	<td width="152" class="anytd">
+		<span class="whitetext">
+		<!--LINKED-->
+		<a href="/about.php">About</a>
+		</span>
+	</td>
+	
+	<!--1st anchor link and menu-->
+	<td width="152" class="anytd">
+		<span class="whitetext">
+		<!--LINKED-->
+		<a href="/partners.php">Partners</a>
+		</span>
+	</td>
+	
+	<!--2nd anchor link and menu-->
+	<td width="152" class="anytd">
+		<span class="whitetext">
+		<!--UNlinked-->
+		<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, 'anymenu1')">Discuss</a>
+		</span>
+		<div id="anymenu1" style="width:152px;" class="anycss">
+			<a href="/gistools/discuss/weblogs/">Blogs</a>
+			<a href="/gistools/discuss/pubchat/chat/">Chat</a>
+			<a href="/gistools/discuss/pubforum/">Forums</a>
+			<a href="/gistools/discuss/news/">News</a>
+			<a href="/gistools/discuss/wap/">WAP</a>
+			<a href="/gistools/discuss/wiki/wiki.php">WIKI</a>
+			<a href="/gistools/discuss/">More...</a>
+		</div>
+	</td>
+	
+	<!--3rd anchor link and menu-->
+	<td width="152" class="anytd">
+		<span class="whitetext">
+		<!--UNlinked-->
+		<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, 'anymenu2')">Manage</a>
+		</span>                                                    
+		<div id="anymenu2" style="width:152px;" class="anycss">
+			<a href="/gistools/manage/sa1/">CRM</a>
+			<a href="/gistools/manage/pa1/">WMS</a>
+			<a href="/gistools/manage/">More...</a>
+		</div>
+	</td>
+	
+	<!--4th anchor link and menu-->
+	<td width="152" class="anytd">
+		<span class="faintredtext">
+		<!--LINKED-->
+				<a href="">Plus</a>
+		</span>
+	</td>	
+		</tr>
+			</table>	</td>
+		</tr>
+			</table>
+<!--header-->		<table width="760" cellspacing="0" cellpadding="0">
+	<tr>
+<!--left <td> begins-->
+<td width="120" bgcolor="#dddddd" class="medium">
+	<!--include be_a_link: <span> can NOT enclose <form> or <table> for XHTML-->
+			<table cellspacing="0" cellpadding="0">
+		<tr>
+	<td width="120" bgcolor="#c2c0c0" class="medium">
+	>> <a href="http://www.spatiallink.org/gistools/volunteer/">Be a Link</a>
+	</td>
+		</tr>
+		<tr>
+	<td width="120" bgcolor="#dddddd" class="medium">
+	<a href="mailto:contact@spatiallink.org?subject=spatiallink_org">Submit</a> an essay describing your purpose and skillset along with a volunteer project that you would like to manage. On joining, you would have reliable web access to selected opensource technology.
+	</td>
+		</tr>
+			</table>
+	<!--include be_a_link: <span> can NOT enclose <form> or <table> for XHTML-->
+</td>
+<!--left <td> ends-->
+<!--center <td> begins-->			
+<td width="520" bgcolor="#ffffff" class="medium">
+	<!--include content-->	<!-- include content-->
+	<!-- <span> can NOT enclose <table> for XHTML, but it can enclose <span>. <span> can include its subsets, but outside of elements like <form> -->
+			<table width="520" cellspacing="0" cellpadding="0" class="medium">
+		<tr>
+	<td class="medium_bold">
+		>> Blogs
+	</td>
+	<td class="medium_right_middle">
+		<img src="/images/phpthumb/phpThumb.php?src=/images/img_blog.gif" alt="spatiallink_org" width="50" height="50" />
+	</td>
+		</tr>
+		<tr>
+	<td colspan="2" class="medium">
+		<!-- google blog search -->
+		<form method="get" action="http://blogsearch.google.com/blogsearch">
+		<input type="text" name="q" size="55" maxlength="255" value="" />
+		<input type="submit" name="btng" value="G Blog Search" />
+		</form>
+		<!-- google blog search -->
+		<br />
+		&#8226;&nbsp;<a href="/gistools/discuss/weblogs/archives/">Archives</a>::<a href="http://www.placeblogger.com/location/directory">Find a place blog</a>::
+		<br />
+		<br />
+				&#8226;&nbsp;Spatial::
+		<div class="summary_visible">
+						<table id="sort_spatial" name="sort_spatial" style="border-collapse:collapse;" border="1" bordercolor="#808080" cellspacing="1" cellpadding="1" onclick="sortColumn(event)">
+			<thead>
+		<tr>
+	<!-- cursor compatibility -->
+	<td class="sort">
+		Sort by Date	</td>
+	<td class="sort">
+		Sort by Title	</td>
+	<td class="sort">
+		Sort by Name	</td>
+		</tr>
+			</thead>
+			<tbody>
+			<tr><td>20070707</td><td><a href="http://www.spatiallink.org/gistools/discuss/weblogs/blogs/pi.php?title=neogeography_101_word_association&amp;more=1&amp;c=1&amp;tb=1&amp;pb=1" onmouseover="return overlib('Question:Genre Books is to WriterasWeb Maps is to ...?Choices:? [a] iPhone [...since the buzz is about it- the Paris Hilton of IT]? [b] Paris Hilton [...since the buzz is about her- the iPhone of the glitterati]? [c] Geographer [...since ESRI Press said so]? [d] Programmer/DeveloperAnswer:? If you answered [c], you have spent a lot of time around ESRI-championed web maps with 8 direction tags, a dogged insistence on not exploiting browser cache and a ridiculous north arrow on every map- ne...');" onmouseout="return nd();">Neogeography 101: Word Association</a></td><td>&#960;</td></tr><tr><td>20070624</td><td><a href="http://www.spatiallink.org/gistools/discuss/weblogs/blogs/pi.php?title=follow_up_1_debating_net_neutrality_a_nu&amp;more=1&amp;c=1&amp;tb=1&amp;pb=1" onmouseover="return overlib('Bush Official Goes Nuclear in Net Neut Row. The Register. 2007Related:? Network Neutrality? Network Neutrality in the US? More...');" onmouseout="return nd();">Follow Up [1]: Debating Net Neutrality: A Nutshell</a></td><td>&#960;</td></tr><tr><td>20070611</td><td><a href="http://mappinghacks.com/2007/06/11/test-post-you-can-ignore/" onmouseover="return overlib('A google mymap...');" onmouseout="return nd();">Test post-you can ignore?</a></td><td>Mapping Hacks</td></tr><tr><td>20070609</td><td><a href="http://mappinghacks.com/2007/06/08/google-earth-is-still-weak-sauce/" onmouseover="return overlib('In spite of the enormous press, and the pretty pictures, Google Earth represents the pre-infancy of user oriented spatial tools.I hate to be &amp;#8216;just&amp;#8217; a freaking whiner&amp;#8230;so I have been actively trying to use the darn thing  as part of my attempts to collect and manage the raw data from my experiences.Sadly every time [...]...');" onmouseout="return nd();">Google Earth is still weak sauce</a></td><td>Mapping Hacks</td></tr><tr><td>20070711</td><td><a href="http://exterior.trevor.smith.name/2007/07/links-for-200-1.html" onmouseover="return overlib('Universal Artificial Intelligence An exploration of Sequential Decisions based on Algorithmic Probability, which makes me feel like I did when I first read about the aesthetics of UNIX, with a sense of messy refinement and raw utility. (tags: ai)......');" onmouseout="return nd();">links for 2007-07-11</a></td><td>Trevor Smith</td></tr><tr><td>20070709</td><td><a href="http://exterior.trevor.smith.name/2007/07/links-for-2007-.html" onmouseover="return overlib('Getting Real: The Book by 37signals Every person in a startup should read this book and take a long look at their new company.......');" onmouseout="return nd();">links for 2007-07-09</a></td><td>Trevor Smith</td></tr><tr><td>20070612</td><td><a href="http://www.perrygeo.net/wordpress/?p=71" onmouseover="return overlib('This might be a dup story for some but I thought it was interesting enough to post nonetheless:	Jeff Atwood wrote an interesting piece about Desktop vs Web UI that is directly relevant to mapping : Who Killed the Desktop Application?. He compares the usability of Microsoft Streets and Trips with Google Maps and concludes 	All [...]...');" onmouseout="return nd();">Desktop vs Web UI</a></td><td>Matt Perry</td></tr><tr><td>20070611</td><td><a href="http://www.perrygeo.net/wordpress/?p=70" onmouseover="return overlib('Jose Gomez-Dans posted a great example of using OGR, Postgis and Matplotlib with Python - OGR, Python y Matplotlib (Spanish only)....');" onmouseout="return nd();">OGR and matplotlib examples</a></td><td>Matt Perry</td></tr><tr><td>20070711</td><td><a href="http://www.edparsons.com/?p=501" onmouseover="return overlib('Following on from my post on their very cool technology, Jeff at PictEarth has pointed me in the direction of the DIY Drones website set up by Chris Anderson. Yes that is the Chris Anderson, Editor of Wired and Author of The Long Tail - Shame on you if you had not heard of him [...]...');" onmouseout="return nd();">DIY Drones</a></td><td>Ed Parsons</td></tr><tr><td>20070709</td><td><a href="http://www.edparsons.com/?p=500" onmouseover="return overlib('If you really want to take the temperature of the wider GI community this weekends The State of the Map meeting in Manchester should be well worth the trip. The potential for community generated geo data is now recognised by many of the major commercial providers of Geodata, and I&amp;#8217;m hearing rumours that the much [...]...');" onmouseout="return nd();">Heads-up : The State of the Map</a></td><td>Ed Parsons</td></tr><tr><td>20070706</td><td><a href="http://geothought.blogspot.com/2007/07/off-on-vacation-for-week.html" onmouseover="return overlib('...');" onmouseout="return nd();">Off on vacation for a week</a></td><td>Peter Batty</td></tr><tr><td>20070706</td><td><a href="http://geothought.blogspot.com/2007/07/iphone-after-almost-weeks-experience.html" onmouseover="return overlib('...');" onmouseout="return nd();">iPhone after almost a week's experience</a></td><td>Peter Batty</td></tr><tr><td>20070709</td><td><a href="http://geotips.blogspot.com/2007/07/minimum-abstraction.html" onmouseover="return overlib('...');" onmouseout="return nd();">The Minimum Abstraction</a></td><td>Paul Ramsey</td></tr><tr><td>20070703</td><td><a href="http://geotips.blogspot.com/2007/07/foss4g-program-review.html" onmouseover="return overlib('...');" onmouseout="return nd();">FOSS4G Program Review</a></td><td>Paul Ramsey</td></tr><tr><td>20070708</td><td><a href="http://thepcnews.blogspot.com/2007/07/eclipse-33-released.html" onmouseover="return overlib('...');" onmouseout="return nd();">Eclipse 3.3 Released</a></td><td>Tobin Bradley</td></tr><tr><td>20070705</td><td><a href="http://thepcnews.blogspot.com/2007/07/developers-shifting-target-from-windows.html" onmouseover="return overlib('...');" onmouseout="return nd();">Developers Shifting Target from Windows</a></td><td>Tobin Bradley</td></tr><tr><td>20070711</td><td><a href="http://gregsadetsky.com/?p=104" onmouseover="return overlib('Very nice find: &amp;#8220;Paper Vote Canada&amp;#8220;, a blog raising doubts on the integrity of e-voting. PG Elections, anyone?This is not a luddite&amp;#8217;s resource &acirc;€“ take a look at the post titled &amp;#8220;let&amp;#8217;s have a discussion&amp;#8220;.Nothing against computers per se&amp;#8230;...');" onmouseout="return nd();">Great find: ?Paper Vote Canada?</a></td><td>Greg Sadetsky</td></tr><tr><td>20061109</td><td><a href="http://denislaprise.com/2006/11/09/linux-and-its-crypt-function/" onmouseover="return overlib('Array...');" onmouseout="return nd();">linux and its crypt() function</a></td><td>Denis Laprise</td></tr><tr><td>20070712</td><td><a href="http://www.remotesensingtools.com/2007/07/11/diy-drones-and-remote-sensing/" onmouseover="return overlib('There&amp;#8217;s been a number of featured spots on several blogs, concerning DIY Drones &amp;#8212; a site that captures and shares the development work of amateurs and professionals, toward key technologies in building one&amp;#8217;s own UAV.A number of encouraging developments are available through the site, the most exciting for me being the auto-pilot technologies.As I think [...]...');" onmouseout="return nd();">DIY Drones and Remote Sensing</a></td><td>Daniel Denk</td></tr><tr><td>20070706</td><td><a href="http://www.remotesensingtools.com/2007/07/06/live-earth-7707/" onmouseover="return overlib('At the time this is being posted, the countdown to the Live Earth concert event is ~11 hours, 30 minutes. If you have no idea what this event is, then I would like to suggest that you visit the following web page.:www.liveearth.org...');" onmouseout="return nd();">Live Earth 7/7/07</a></td><td>Daniel Denk</td></tr><tr><td>20070712</td><td><a href="http://cfis.savagexi.com/articles/2007/07/12/cool-links-dont-change" onmouseover="return overlib('Peter and Tim have been blogging aboutone of the least undestood parts of REST - how state is handled. Tim puts it nicely:			The essence of REST is to make the states of the protocol explicit and addressible by URIs.		  		Unfortunately, the official REST terminology obscures this ...');" onmouseout="return nd();">Cool Links Don't Change</a></td><td>Charlie Savage</td></tr><tr><td>20070712</td><td><a href="http://cfis.savagexi.com/articles/2007/07/12/yues-new-look" onmouseover="return overlib('Being the local IT expert, I periodically update Yues WordPress blog.  I have to say WordPress just keeps getting better and better - the latest release lets you create and modify sidebars via drag-and-drop.  Nice!  And being able to easily swap in and out themes is great - Im particularly fond of Yues latest theme.Im still on Typo, which seems to have found a second life recen...');" onmouseout="return nd();">Yue's New Look</a></td><td>Charlie Savage</td></tr><tr><td>20070711</td><td><a href="http://cholmes.wordpress.com/2007/07/11/collaborative-mapping-tools/" onmouseover="return overlib('Continuing the collaborative mapping thread, I&amp;#8217;d like to think a bit about tools to make this happen.  Do a bit of dreaming, and maybe think through how we can get there.  Definitely as soon as I start to talk about this people want to do all kinds of crazy synchronization and distributed editing [...]...');" onmouseout="return nd();">Collaborative Mapping: Tools</a></td><td>Chris Holmes</td></tr><tr><td>20070705</td><td><a href="http://cholmes.wordpress.com/2007/07/05/collaborative-mapping-the-business-thread-cont/" onmouseover="return overlib('So if there is a future where collaboratively mapping could be economically competitive, how do we go about actually getting there?&Acirc;&nbsp; I actually think we&amp;#8217;re further than many might think, though I believe there is still a lot of work to be done, innovating with the tools, communities and workflows to make this happen.&Acirc;&nbsp; But [...]...');" onmouseout="return nd();">Collaborative Mapping: The Business Thread, cont.</a></td><td>Chris Holmes</td></tr><tr><td>20070711</td><td><a href="http://zcologia.com/news/506/north-and-south/" onmouseover="return overlib('Steve C.-P. pointed me to this bad analogy by David Chappell that Elliotte Rusty Harold picks off and runs the other way for a touchdown. [more ...]...');" onmouseout="return nd();">North and South</a></td><td>Sean Gillies</td></tr><tr><td>20070711</td><td><a href="http://zcologia.com/news/505/chocolate-and-peanut-butter/" onmouseover="return overlib('The combination of chocolate and peanut butter is in no way better than pure chocolate. Hanke is either a barbarian, or is cynically perpetuating the fraudulent premise of Reeses Peanut-Butter Cups. [more ...]...');" onmouseout="return nd();">Chocolate and Peanut Butter</a></td><td>Sean Gillies</td></tr><tr><td>20070628</td><td><a href="http://www.spatialdatalogic.com/CS/blogs/brian_flood/archive/2007/06/28/Google-Maps-Draggable-Routes.aspx" onmouseover="return overlib('this is simply amazing that I have to post about it...First, goto Google Maps and get some directions. You can now drag the endpoints and the route itself and it will recompute the route on the fly (using JSON request for each mouse move!!!!)');" onmouseout="return nd();">Google Maps Draggable Routes</a></td><td>Brian Flood</td></tr><tr><td>20070417</td><td><a href="http://www.spatialdatalogic.com/CS/blogs/brian_flood/archive/2007/04/17/REST-Services.aspx" onmouseover="return overlib('Sean points out that the REST discussion has been going on for quite awhile. He&amp;#39;s got a great example of REST enabled land parcels here. (update - forgot Keyur&amp;#39;s post as well) I&amp;rsquo;ll leave the specifics of REST (as it applies to geospatial) to others since I&amp;rsquo;m less interested in the ...');" onmouseout="return nd();">REST Services</a></td><td>Brian Flood</td></tr><tr><td>20060615</td><td><a href="http://geosql.blogspot.com/2006/06/oracle-spatial-where-20.html" onmouseover="return overlib('Ok...So I just got back from the Where 2.0 conference.  All in all it was a pretty good show.  I have my issues with some of the talks, but overall it was really good.  The question I have is.  Where was Oracle? Dont you think that Oracle Spatial should have been there?Maybe I missed them, but they were not presenting and they were not in the participant list.Intel, Google, Yahoo, Microsoft, Autodesk, ESRI, MapInfo, As...');" onmouseout="return nd();">Oracle Spatial + Where 2.0?</a></td><td>Jeremy</td></tr><tr><td>20060411</td><td><a href="http://geosql.blogspot.com/2006/04/consuming-rest-services-with-oracle.html" onmouseover="return overlib('I love REST services (representation state transfer).   They provide a powerful yet simple way of consuming data via the web (Some examples of REST services:  Yahoo, some ');" onmouseout="return nd();">Consuming REST services with Oracle</a></td><td>Jeremy</td></tr><tr><td>20070529</td><td><a href="http://feeds.feedburner.com/~r/random-stuff/think/~3/120669474/where-2-0-lightning-post" onmouseover="return overlib('&Acirc;&nbsp;A quick post on Where2.0 even though Im not there. PlanetGS is full of news. I was glued to the IRC channel most of the day.Schuyler gave a momentous talk. Mapping the Maximum City was about map...');" onmouseout="return nd();">Where 2.0 - Lightning Post</a></td><td>Allan Doyle</td></tr><tr><td>20070427</td><td><a href="http://feeds.feedburner.com/~r/random-stuff/think/~3/112458445/dreaming-in-code" onmouseover="return overlib('Drop everything and read this: Dreaming in Code by Scott Rosenberg. For the impatient, theres even a website full of reviews, excerpts, etc.&Acirc;&nbsp; When I heard about this book I immediately put in a request at our public library (cheapskate that I am...). It finally got here a coupl...');" onmouseout="return nd();">Dreaming in Code</a></td><td>Allan Doyle</td></tr><tr><td>20070623</td><td><a href="http://hobu.biz/index_html/flying-the-map-geeks-dream" onmouseover="return overlib('I cant think of many hobbies other than flying that require more usage, admiration, and verification of maps and cartographic output.  After almost 10 months of flying lessons, testing, and checkrides, I finally completed my private pilot license this past Wednesday.  ...');" onmouseout="return nd();">Flying: The Map Geek's Dream</a></td><td>Howard Butler</td></tr><tr><td>20070415</td><td><a href="http://hobu.biz/index_html/hire-me" onmouseover="return overlib('My tenure at Iowa State University ends this Wednesday.  Now is your chance to hire me for your open source geospatial programming dirty work. ...');" onmouseout="return nd();">Hire me</a></td><td>Howard Butler</td></tr><tr><td>20070711</td><td><a href="http://feeds.feedburner.com/~r/Spanring/~3/132660831/" onmouseover="return overlib('Video on demand without &amp;#8220;watch it within a day or we blow up your computer DRM&amp;#8221;:Mashable provides a list of 50 full length movies available on Google Video, not quite legal though.[via Basic Thinking]...');" onmouseout="return nd();">Google VOD</a></td><td>Chris Spanring</td></tr><tr><td>20070711</td><td><a href="http://feeds.feedburner.com/~r/Spanring/~3/132564019/" onmouseover="return overlib('Everyone who ever tried chocolate made by Zotter knows that it&amp;#8217;s possible to combine chocolate with almost any other ingredient. Yes, even chocolate covered cheese or balsamic vinegar flavored chocolate taste excellent.Still, I really had may doubts if salty popcorn goes well together with chocolate, but surprisingly it does. Initially the salty and sweet chocolate [...]...');" onmouseout="return nd();">Sweet &amp; Salty</a></td><td>Chris Spanring</td></tr><tr><td>20070630</td><td><a href="http://www.jasonbirch.com/nodes/2007/06/30/103/foss4g-2007-too-much-goodness/" onmouseover="return overlib('Over 200 proposals were made for presentations at FOSS4G 2007.  Narrowing these down to the required 120 would be an impossible task for one committee, so we&amp;#8217;ve taken the community-based approach of allowing you to choose your favourites.I completed my selection this morning, after visiting the website and getting an email telling me how [...]...');" onmouseout="return nd();">FOSS4G 2007:  Too much goodness!</a></td><td>Jason Birch</td></tr><tr><td>20070629</td><td><a href="http://www.jasonbirch.com/nodes/2007/06/29/101/i-heart-kml-schema/" onmouseover="return overlib('Recently, Chris over at FortiusOne has written a couple articles, focusing largely on the Schema tag in KML.  One thing in particular from this article got me thinking:Google Earth will display your custom fields in the markers that get displayed in a Schema-based KML file, but it&acirc;€™s still up to you to make a [...]...');" onmouseout="return nd();">I Heart KML Schema!</a></td><td>Jason Birch</td></tr><tr><td>20070707</td><td><a href="http://crschmidt.net/blog/archives/228/povray-rendering-reflection/" onmouseover="return overlib('A long time ago, I played with Povray. Now, with a recent revamp of my website, I&amp;#8217;ve decided to take another poke at playing with it. I&amp;#8217;ll post my work here in the Povray category as I progress.My first piece is Reflection: A reflective sphere over a checkerboard sphere. I liked the look of the [...]...');" onmouseout="return nd();">Povray Rendering: Reflection</a></td><td>Chris Schmidt</td></tr><tr><td>20070629</td><td><a href="http://crschmidt.net/blog/archives/227/honeymoon-time/" onmouseover="return overlib('As of 5PM today, I will be unavailable on the web until July 9th. I&amp;#8217;m going on a honeymoon, and I&amp;#8217;m leaving my computer offline for the entire trip. (Yes, I am a workaholic. Heck, I committed to OpenLayers less than 2 hours before my wedding.) So, although I will be at home slightly more [...]...');" onmouseout="return nd();">Honeymoon Time</a></td><td>Chris Schmidt</td></tr><tr><td>20051025</td><td><a href="http://www.jdoneill.com/blog/2005/10/25/designing-soa-frameworks-with-gis/" onmouseover="return overlib('Consider an example of an organization where various systems - such as finance, billing, and even GIS - need to interact with each other.  Maybe spatial boundaries, like acreage reporting, help determine billing.  Moreover, some of the applications need to be exposed to the outside to help modernize the business process.  This [...]...');" onmouseout="return nd();">Designing SOA Frameworks with GIS</a></td><td>Daniel O&#180;Neill</td></tr><tr><td>20050914</td><td><a href="http://www.jdoneill.com/blog/2005/09/14/get-data-path-from-feature-layer/" onmouseover="return overlib('In order for a Java application to be a serious player inside of ArcGIS Desktop it not only needs to deal with native ArcGIS types, but it needs to deal with features from the current map session, like a Feature Layer in the map document.  This is a bit trickier than a Feature Class [...]...');" onmouseout="return nd();">Get Data Path from Feature Layer in ArcGIS</a></td><td>Daniel O&#180;Neill</td></tr><tr><td>20070627</td><td><a href="http://www.dankarran.com/blog/archives/2007/06/27/state_of_the_manx_map.php" onmouseover="return overlib('The map of the Isle of Man is the featured image this week on OpenStreetMap so I think now is a good time for the State of The (Manx) Map post that Ive been considering doing for a while. (Obviously borrowing ever so slightly from the name of the upcoming ');" onmouseout="return nd();">State of The (Manx) Map</a></td><td>Dan Karran</td></tr><tr><td>20070612</td><td><a href="http://www.dankarran.com/blog/archives/2007/06/12/3dconnexion_spacenavigator.php" onmouseover="return overlib('I folded last week and bought myself a SpaceNavigator 3D mouse from Amazon after reading great reviews of it. They have been out a little while but only recently has the com...');" onmouseout="return nd();">3Dconnexion SpaceNavigator</a></td><td>Dan Karran</td></tr><tr><td>20070107</td><td><a href="http://www.eicher-gis.com/Blog/2007/01/assessing-gis-job-market-for-someone.html" onmouseover="return overlib('I received an email before Christmas from someone just entering the GIS job market. He had a few brief questions for me. I thought Id post my reply here as well.--------------------------------------Q ...');" onmouseout="return nd();">Assessing the GIS job market for someone just entering the market</a></td><td>Cory Eicher</td></tr><tr><td>20070107</td><td><a href="http://www.eicher-gis.com/Blog/2007/01/cartographic-data-modeling.html" onmouseover="return overlib('Its been awhile since my last post.I have been working on some interesting stuff including building data models for cartographic data at scales 1:300,000 and 1:25,000. This is for a project we are working on with the       Federal Office of Topography (swisstopo). For this work Ive been using Visio and the ESRI CASE Tools.We are using ArcGIS 9.2 and taking advantage of the new cartographic representatio...');" onmouseout="return nd();">Cartographic Data Modeling</a></td><td>Cory Eicher</td></tr><tr><td>20070619</td><td><a href="http://mapwrecker.wordpress.com/2007/06/19/python-vs-ironpython-round-2/" onmouseover="return overlib('Yesterday&Acirc;&nbsp;I let IronPython battle it out with TileCache, which was written for CPython and CGI.&Acirc;&nbsp; IronPython was stumbling &amp;#8212; not seeming like a drop-in replacement for CPython yet &amp;#8212; but I didn&amp;#8217;t quite call the fight.&Acirc;&nbsp; I wanted to port TileCache&amp;#8217;s CGI library calls to ASP.NET calls and see what I came up with.After trivially [...]...');" onmouseout="return nd();">Python vs. IronPython : Round 2</a></td><td>Bill Thorp</td></tr><tr><td>20070618</td><td><a href="http://mapwrecker.wordpress.com/2007/06/18/python-vs-ironpython-tilecache/" onmouseover="return overlib('&amp;#8220;There is a maker&amp;#8217;s serial number 9906947-XB71. Interesting. Not fish. Snake scale.&amp;#8221;&Acirc;&nbsp; Blade Runner has shown&Acirc;&nbsp;how tell a real snake from a replicant snake:&Acirc;&nbsp; (Sys.Version).&Acirc;&nbsp; Beyond the superficial, what happens when we take the animoid IronPython , and attempt to replace CPython in a real-world battlefield?&Acirc;&nbsp; I chose MetaCarta&amp;#8217;s TileCache.For those who don&amp;#8217;t know, IronPython [...]...');" onmouseout="return nd();">Python vs. IronPython : TileCache</a></td><td>Bill Thorp</td></tr><tr><td>20070423</td><td><a href="http://mapzlibrarian.blogspot.com/2007/04/position-map-and-data-services.html" onmouseover="return overlib('Map and Data Services Librarian and Assistant Professor (University of Illinois at Chicago)The University of Illinois at Chicago Library seeks a dynamic and energetic librarian to provide reference, research consultation/user education services for cartographic material and social science data sets, as well as implementation of GIS applications within the library and the university community....');" onmouseout="return nd();">Position: Map and Data Services Librarian (University of Illinois at Chicago)</a></td><td>mapz</td></tr><tr><td>20070420</td><td><a href="http://mapzlibrarian.blogspot.com/2007/04/firefox-mapping-extensions-in-single.html" onmouseover="return overlib('Lots and lots of fantastic mapping extensions for the Firefox browser.  Which ones, you ask?  Well, the 16 extensions listed below.There are also a couple of extensions that allow users to back up all the extensions installed in their browser and package them into one .xpi extension file.  The extensions are Firefox Extension Backup Extension and its partner Compact Library Extension Organizer....');" onmouseout="return nd();">Firefox Mapping Extensions in a Single .XPI Package</a></td><td>mapz</td></tr><tr><td>20070702</td><td><a href="http://surveying-mapping-gis.blogspot.com/2007/07/usepa-geospatial-information-officer.html" onmouseover="return overlib('From a memo circulated by USEPA CIO and AA for USEPAs Office of Environmental Information (OEI), Molly ONeill:I am very pleased to announce and welcome Jerry L. Johnston, Ph.D as the new Geospatial Information Officer (GIO) for EPA. Jerry has many years of geospatial experience in a variety of public and ...');" onmouseout="return nd();">USEPA Geospatial Information Officer Selected</a></td><td>David Smith</td></tr><tr><td>20070630</td><td><a href="http://surveying-mapping-gis.blogspot.com/2007/06/iphone-madness.html" onmouseover="return overlib('Yesterday, I was offered an iPhone, out of the blue. Yea, its really cool, has an incredible interface, is power-packed with features, and just amazing technological innovat...');" onmouseout="return nd();">iPhone Madness</a></td><td>David Smith</td></tr><tr><td>20070705</td><td><a href="http://weblogs.java.net/blog/jive/archive/2007/07/jsr275_and_why.html" onmouseover="return overlib('The deadline for JSR0275 is coming up on July 8th, as one of the top users of the JSR108 (which was withdrawn) you would think GeoTools would care about what is going on ... here is why we dont: Java 1.4...');" onmouseout="return nd();">JSR-275 And why GeoTools does not care yet</a></td><td>Jody Garnett</td></tr><tr><td>20070613</td><td><a href="http://weblogs.java.net/blog/jive/archive/2007/06/java_gis_so_why.html" onmouseover="return overlib('Yet another project has come out, and it includes a GIS component! Problem is we are not sharing code, I wonder if our approach is wrong ......');" onmouseout="return nd();">Java GIS - So why don't we work together?</a></td><td>Jody Garnett</td></tr><tr><td>20070629</td><td><a href="http://www.rajsingh.org/blog/2007/06/29/arcmap-to-georss-gml-script-followup/" onmouseover="return overlib('The &amp;#8220;map butcher&amp;#8221; answered my plea and built a handy GeoRSS export tool for ArcMap. Check out his post here or go straight to the script on ArcScripts. ESRI might eventually implement a nice, full-featured, professional GeoRSS exporter, but if you want something this year, this is probably your best bet....');" onmouseout="return nd();">ArcMap to GeoRSS GML script followup</a></td><td>Raj Singh</td></tr><tr><td>20070624</td><td><a href="http://www.rajsingh.org/blog/2007/06/24/remote-sensing-for-the-masses/" onmouseover="return overlib('How cool is this georeferenced aerial imaging system I originally heard about on Engadget Mobile.I&amp;#8217;ve been holding out on getting an N95 until Nokia includes high-speed data support for the US frequencies, but it&amp;#8217;s getting tough&amp;#8230;...');" onmouseout="return nd();">Remote Sensing for the Masses</a></td><td>Raj Singh</td></tr><tr><td>20070626</td><td><a href="http://www.osgeo.org/tyler/finance_june07" onmouseover="return overlib('Financial Ive been working on getting a process in place for reporting on the financial picture behind OSGeo.  We are currently moving to an online system for tracking our accounts as well, so reporting and tracking can be done collaboratively with those managing the finances.We continue to receive more project level sponsors (i.e. GDAL/OGR sponsors) as well as additional Associate level sponsors for OSGeo (i.e. Firstbasesolutions).  T...');" onmouseout="return nd();">Various OSGeo update tidbits</a></td><td>Tyler Mitchell</td></tr><tr><td>20070626</td><td><a href="http://www.osgeo.org/tyler/membership_june07" onmouseover="return overlib('I just wrapped up the nomination and election process for new Charter Members.  I believe it was very successful - with 93% turnout (thats only 3 votes not received) and about 70% of the votes going to the top 15 nominees - so it was very representative of the groups wishes.It was a busy couple of weeks - lining up all the nominations, confirming with nominees, confirming that all charter members received the instructi...');" onmouseout="return nd();">Membership Elections etc</a></td><td>Tyler Mitchell</td></tr><tr><td>20061029</td><td><a href="http://ccablog.blogspot.com/2006/10/last-post.html" onmouseover="return overlib('Because new time commitments and potential conflict of interest issues prevent me from maintaining this blog to the full extent that I would like, I regretfully must cease writing posts. Loyal subscribers and regular visitors will have noted a decline in the quality and the quantity of posts since I began my new job about 1 month ago. Any member of the Canadian Cartographic Association that is ...');" onmouseout="return nd();">The Last Post</a></td><td>CCA</td></tr><tr><td>20061022</td><td><a href="http://ccablog.blogspot.com/2006/10/tracking-my-days-week-3.html" onmouseover="return overlib('An update to the weekly movements. Another 1,200 kilometres, mostly taken up in commuting to and from work.I earned that, no matter how hard I tried, I inevitably ended up taking many of the same roads, especially around home. See the map below (brighter lines indicate a higher frequency of travel along that route):...');" onmouseout="return nd();">Tracking My Days: Week 3</a></td><td>CCA</td></tr><tr><td>20070711</td><td><a href="http://www.opengeodata.org/?p=227" onmouseover="return overlib('Hi,after almost 9 months of more or less JOSM-coding, I finally announce a new JOSM release. In shortage of a better name and in spirit of the good old Sam &amp;#38; Max adventure game (which I finished yesterday.. Hurray!), I hereby call this release: &amp;#8220;Hit The Road&amp;#8221;.  Before I get to the new features, [...]...');" onmouseout="return nd();">New Release: JOSM 1.5 ?Hits The Road?</a></td><td>Open Geo Data</td></tr><tr><td>20070710</td><td><a href="http://www.opengeodata.org/?p=226" onmouseover="return overlib('I&amp;#8217;m deeply impressed with this set of interviews on the state of crowdsourcing now and in the future. Of course there&amp;#8217;s one about maps....');" onmouseout="return nd();">AssignmentZero / Wired articles</a></td><td>Open Geo Data</td></tr><tr><td>20070626</td><td><a href="http://freegeotools.blogspot.com/2007/06/last-day-of-new-posts-at-this-old-site.html" onmouseover="return overlib('...');" onmouseout="return nd();">Last Day Of New Posts At This Old Site</a></td><td>Free Geo Tools</td></tr><tr><td>20070626</td><td><a href="http://freegeotools.blogspot.com/2007/06/gis-oriented-linux-distributions.html" onmouseover="return overlib('...');" onmouseout="return nd();">GIS-Oriented Linux Distributions</a></td><td>Free Geo Tools</td></tr><tr><td>20070330</td><td><a href="http://batchgeocode.blogspot.com/2007/03/faster-geocoding.html" onmouseover="return overlib('...');" onmouseout="return nd();">Faster Geocoding</a></td><td>Geocoding Etc</td></tr><tr><td>20061115</td><td><a href="http://batchgeocode.blogspot.com/2006/11/new-feature-different-colored-markers.html" onmouseover="return overlib('...');" onmouseout="return nd();">New Feature: Different Colored Markers / Grouping</a></td><td>Geocoding Etc</td></tr><tr><td>20070707</td><td><a href="http://maps.huge.info/blog/2007/07/doing_a_radius_search_code.html" onmouseover="return overlib('...');" onmouseout="return nd();">Doing a Radius Search - Code</a></td><td>maps.huge.info</td></tr><tr><td>20070629</td><td><a href="http://maps.huge.info/blog/2007/06/samples_of_zip_code_and_zcta_p.html" onmouseover="return overlib('...');" onmouseout="return nd();">Samples of Zip Code and ZCTA polygons</a></td><td>maps.huge.info</td></tr><tr><td>20070713</td><td><a href="http://digitalurban.blogspot.com/2007/07/tutorial-quick-and-easy-augmented.html" onmouseover="return overlib('...');" onmouseout="return nd();">Tutorial - Quick and Easy Augmented Reality from SketchUp/3DMax etc</a></td><td>Digital Urban</td></tr><tr><td>20070711</td><td><a href="http://digitalurban.blogspot.com/2007/07/second-life-first-build-rapid-modelling.html" onmouseover="return overlib('...');" onmouseout="return nd();">Second Life - First Build Rapid Modelling</a></td><td>Digital Urban</td></tr><tr><td>20070709</td><td><a href="http://www.gisblog.net/news/ogc-tc-meeting-paris/" onmouseover="return overlib('This was originally intendend to be a live blog from the ongoing OGC TC Meeting in Paris, but live blogging relies on an internet connection. And as usual on conferences, wireless has been promised but fails in the moment it is needed. Anyway, I managed to get online somehow.This is my first TC Meeting, and [...]...');" onmouseout="return nd();">OGC TC Meeting, Paris</a></td><td>gisblog.net</td></tr><tr><td>20070702</td><td><a href="http://www.gisblog.net/conferences/open-review-process-for-foss4g-conference/" onmouseover="return overlib('The foss4g conference, which is held this year in Victoria, is the biggest event on Open Source GI-software development. As already stated in Paul Ramsey&amp;#8217;s blog there are 217 submissions, of which 120 presentations have to be selected for a presentation. The comittee decided to go for an open review process. Anybody can start and [...]...');" onmouseout="return nd();">Open review process for foss4g conference started</a></td><td>gisblog.net</td></tr><tr><td>20070121</td><td><a href="http://www.webmapper.net/blog/2007_01_01_archive.inc#6551223645981883878" onmouseover="return overlib('...');" onmouseout="return nd();">Here and now</a></td><td>webmapper</td></tr><tr><td>20070117</td><td><a href="http://www.webmapper.net/blog/2007_01_01_archive.inc#8897465419849311683" onmouseover="return overlib('...');" onmouseout="return nd();">Testing the waters</a></td><td>webmapper</td></tr><tr><td>20070712</td><td><a href="http://mapperz.blogspot.com/2007/07/batch-geocoder-to-arcgis.html" onmouseover="return overlib('Batch Geocoder to ArcGIS Tutorial(for getting Latitude and Longitude for Postcodes and Addresses)Now this requires a bit of prior knowledge on Geocoding and Basic GIS SkillsThanks to Google for providing the UK Geocoding in the Google Maps APIHave a set of addresses or postcodes ready.*but if you intend to do a huge amount of geocoding its politer to have your own api key...');" onmouseout="return nd();">Batch Geocoder to ArcGIS</a></td><td>Mapperz</td></tr><tr><td>20070710</td><td><a href="http://mapperz.blogspot.com/2007/07/superpages-beta.html" onmouseover="return overlib('SuperPages Beta - using Microsoft Virtual EarthWeb-based version of the SuperPages. Uses Virtual Earth mapping technology to find businesses and services in your area. Driving directions, hours, and more are provided. Good wifi finder.Programmable Web');" onmouseout="return nd();">SuperPages Beta</a></td><td>Mapperz</td></tr><tr><td>20070711</td><td><a href="http://www.cadmaps.com/gisblog.htm#07112007" onmouseover="return overlib('In this experiment the WPF camera flight control is used in a terrain of the Pikes Peak Colorado area. 							This is similar to the previous Broadmoor Flyby but uses a larger terrain model. The YouTube video below is a screen recording							using iCord screen capture from sourceforge.net. The screen capture was done from a low end tier0 XP PC, which would be a 							worst case system.		  	  ...');" onmouseout="return nd();">WPF Camera flight over Pikes Peak terrain model</a></td><td>Micro Map & CAD</td></tr><tr><td>20070702</td><td><a href="http://www.cadmaps.com/gisblog.htm#07022007" onmouseover="return overlib('In the past few experiments using WPF terrain meshes Ive made use of scrollbar bindings to manipulate the scene. Although this is satisfactory for experimental proof of concept it remains an obstacle for flying through a 3D scene. This week I finally built a flying camera with instrument controls for throttle, banking, and tilting which lets me fly my camera around in the model and swivel its LookDirection with a gimbal tool.		  	  ...');" onmouseout="return nd();">Flying the Camera</a></td><td>Micro Map & CAD</td></tr><tr><td>20070704</td><td><a href="http://kellylab.berkeley.edu/blog/?p=174" onmouseover="return overlib('OK, so there might not be many in this new category, but Bjork&amp;#8217;s &amp;#8220;J&Atilde;&sup3;ga&amp;#8221; video is kickin. Saw it at the gym.  You know Bjork, Bono said of her: &amp;#8220;She has a            voice like an icepick that cut straight through to me heart!&amp;#8230;&amp;#8221; [...]...');" onmouseout="return nd();">New Category - Geographic Music Videos</a></td><td>Kelly Lab</td></tr><tr><td>20070620</td><td><a href="http://kellylab.berkeley.edu/blog/?p=173" onmouseover="return overlib('Check out Oscar&amp;#8217;s hint from Europe: Pictometry. Rad 3-D images of European cities derived from a airborne 5-camera system....');" onmouseout="return nd();">Pictometry Images of Europe</a></td><td>Kelly Lab</td></tr><tr><td>20070706</td><td><a href="http://www.nsgic.org/blog/2007/07/candidates-wanted-nsgic-board-of.html" onmouseover="return overlib('...');" onmouseout="return nd();">Candidates Wanted: NSGIC Board of Directors</a></td><td>NSGIC</td></tr><tr><td>20070705</td><td><a href="http://www.nsgic.org/blog/2007/07/job-posting-idaho-gio.html" onmouseover="return overlib('...');" onmouseout="return nd();">Job Posting: Idaho GIO</a></td><td>NSGIC</td></tr><tr><td>20070622</td><td><a href="http://www.roktech.net/devblog/index.cfm/2007/6/22/Coldfusion-Based-ArcIMS-Public-Viewer-Sites" onmouseover="return overlib('Here is a updated list of sites that we have just recently released.  All of them are Coldfusion 7 / ArcIMS based sites.  Each one is a little different that the other.  Everyone has specific tools they like.The list is growing everyday.  Below a...												...');" onmouseout="return nd();">Coldfusion Based ArcIMS Public Viewer Sites</a></td><td>ROK Technologies</td></tr><tr><td>20070604</td><td><a href="http://www.roktech.net/devblog/index.cfm/2007/6/4/Coldfusion-8--ArcIMS-92" onmouseover="return overlib('Well, just a quick update...Coldfusion 8 and ArcIMS 9.2 seem to play together nicely.  At least the cfx_esrimap works ok. While I have not fully tested my apps against 8 yet, I have heard reports of pretty substantial speed increases (which sort of s...												...');" onmouseout="return nd();">Coldfusion 8 &amp; ArcIMS 9.2</a></td><td>ROK Technologies</td></tr><tr><td>20070710</td><td><a href="http://spatiallaw.blogspot.com/2007/07/new-york-citys-plans-to-collect-spatial.html" onmouseover="return overlib('...');" onmouseout="return nd();">New York City's Plans to Collect Spatial Data</a></td><td>Spatial Law</td></tr><tr><td>20070704</td><td><a href="http://spatiallaw.blogspot.com/2007/07/spatial-data-and-national-security-time.html" onmouseover="return overlib('...');" onmouseout="return nd();">Spatial Data And National Security - Time For A Dialogue</a></td><td>Spatial Law</td></tr><tr><td>20070712</td><td><a href="http://people.planetpostgresql.org/xzilla/index.php?/archives/307-OSCon-2007.html" onmouseover="return overlib('While my blog may not have reflected it, I really am going to OSCon this year. In fact, Ill be presenting both a tutorial (Pro PostgreSQL) and a regular session (');" onmouseout="return nd();">Robert Treat: OSCon 2007</a></td><td>PostgreSQL</td></tr><tr><td>20070712</td><td><a href="http://blog.guillaume.lelarge.info/index.php/post/2007/07/12/pgdayit-2007-RML-2007" onmouseover="return overlib('I think the french guys were the only one who didnt blog (in english) on pgday.it so lets try to put an end to this We really had a great time in Prato. The complete pgd...');" onmouseout="return nd();">Guillaume LELARGE: pgday.it 2007, RMLL 2007</a></td><td>PostgreSQL</td></tr><tr><td>20070713</td><td><a href="http://eriksdiary.blogspot.com/2007/07/xml-output-from-mysql.html" onmouseover="return overlib('Many times you need to produce XML output from your MySql database. MySql has no built-in support for creating XML in its SQL implementation but you can easily add support using the stored function feature.To make xml output easier I have made three small stored SQL functions. They produce xml fragments, which you can easily put together to get a complete xml:   xml_escape(value)    replace characters not allowed in xml with the escape sequences   xml_attr(name, value) create an xml attribute    xml_tag(ta...');" onmouseout="return nd();">XML output from MySql</a></td><td>MySQL</td></tr><tr><td>20070713</td><td><a href="http://datacharmer.blogspot.com/2007/07/tell-world-about-your-first-time.html" onmouseover="return overlib('MySQL, like most software companies, has a complex organization to deal with the creation and improvement of its products.There is a well oiled machinery that evaluates the needs and decides where to invest resources to create new products or to expand or change existing ones.Ultimately, what affects the decision is the users satisfaction.However, funnily as it may sound, the best organized activity in our company is bugs processing i.e. the one dealing with users dissatisfaction.I would like to see more po...');" onmouseout="return nd();">Tell the world about your first time impression - Usability Reports</a></td><td>MySQL</td></tr><tr><td></td><td><a href="http://www.oreillynet.com/xml/blog/2007/07/oleg_tkachenkoxincludenet_usin.html?CMP=OTC-TY3388567169&amp;ATT=Oleg+Tkachenko+XInclude+NET+Using+XInclude+NET+and+Saxon+on+NET+Together" onmouseover="return overlib('Signs on the Sand: Saxon, NET and XInclude Saxon, famous XSLT 2.0 and XQuery processor, supports XInclude since version 8.9. But in Java version only! When I first heard about it I thought I have good XInclude implementation for .NET...	...');" onmouseout="return nd();">[Oleg Tkachenko:XInclude.NET] Using XInclude.NET and Saxon on .NET Together</a></td><td>XML.com</td></tr><tr><td></td><td><a href="http://www.topxml.com/code/default.asp?p=3&amp;id=v20070712053731" onmouseover="return overlib('J2ME stands for Java 2 Micro Edition. This platform of Java is used to develop applications for resource constraint devices such as mobile phones, PDAs, set top boxes, etc....');" onmouseout="return nd();">Java 2 Platform Micro Edition (J2ME)</a></td><td>TopXML</td></tr><tr><td>20061027</td><td><a href="http://blog.360.yahoo.com/blog-FpNKzAEjd6M5b.AhogwN7Q--?cq=1&amp;p=88" onmouseover="return overlib('Every hour on the hour in any given conference room, some meeting is starting.&amp;nbsp; Nobody really knows who is invited and who isnt, so if you walk in and look like you belong, you are in.&amp;nbsp; Sometimes it is even interesting and you certainly get a unique view of what is happening in the company if you make a habit of attending random meetings.I am not actually conducting any sort of social experiment and I hate meetings with a passion, but this week I have ended up in two random meetings...');" onmouseout="return nd();">Attending random meetings</a></td><td>Rasmus Lerdorf</td></tr><tr><td>20070208</td><td><a href="http://toys.lerdorf.com/archives/45-Pipes.html" onmouseover="return overlib('http://pipes.yahoo.com is a cool toy, and by toy I mean it in the useful and cant-stop-playing-with-it sense.  My first impression when I saw an early version a couple of months ago was, How the heck did they do that?  I was reading the Javascript source ...');" onmouseout="return nd();">Pipes</a></td><td>Rasmus' Toys</td></tr><tr><td>20070713</td><td><a href="http://seanmcgrath.blogspot.com/2007_07_08_seanmcgrath_archive.html#2868939655223960782" onmouseover="return overlib('...');" onmouseout="return nd();">Sean McGrath, CTO, Propylon: Spreadsheet entropy velocity</a></td><td>Python</td></tr><tr><td>20070713</td><td><a href="http://seanmcgrath.blogspot.com/2007_07_08_seanmcgrath_archive.html#3002773308208780197" onmouseover="return overlib('...');" onmouseout="return nd();">Sean McGrath, CTO, Propylon: What a great idea!</a></td><td>Python</td></tr><tr><td>20070713</td><td><a href="http://www.thespanner.co.uk/2007/07/13/increasing-php-performance/" onmouseover="return overlib('This is just a short post on a couple of performance increases you can do in your code that was kindly pointed out to me by WhiteAcid, when he looked through the source code of my captcha. I must admit I wasn&acirc;€™t aware of these slight improvements and I&acirc;€™m sure this post will inform a few people of the potential performance gains. I&acirc;€™ve haven&acirc;€™t done any benchmarking on the following examples so if anyone knows of a good PHP benchmarking site, please send it in ...');" onmouseout="return nd();">Increasing PHP performance - Gareth Heyes</a></td><td>PHP</td></tr><tr><td>20070713</td><td><a href="http://blog.astrumfutura.com/archives/298-OpenID-for-PEAR-Services_Yadis-proposed.html" onmouseover="return overlib('The Services_Yadis package is now proposed to PEAR. This provides a PHP5 implementation of the Yadis Specification 1.0 a requirement of the OpenID Authentication 2.0 Specification. There are way too many specifications out there! The proposal is a reflection of Februarys Zend_Service_Yadis proposal to the Zend Framework. The main differences (beside t...');" onmouseout="return nd();">OpenID for PEAR: Services_Yadis proposed - P&aacute;draic Brady</a></td><td>PHP</td></tr><tr><td>20070710</td><td><a href="http://mapserver.gis.umn.edu/development/rfc/ms-rfc-33" onmouseover="return overlib('This RFC details removal of the function msLayerWhichItems in maplayer.c and the resulting changes to the rest of the code base. This change is necessary in support of feature caching for long running processes and to facilitate one-pass queries. ...');" onmouseout="return nd();">MS RFC 33: Removing msLayerWhichItems() function from maplayer.c</a></td><td>MapServer</td></tr><tr><td>20070709</td><td><a href="http://mapserver.gis.umn.edu/download/nightly/nightly" onmouseover="return overlib('...');" onmouseout="return nd();">Nightly CVS Tarball</a></td><td>MapServer</td></tr><tr><td>20070622</td><td><a href="http://openjump.blogspot.com/2007/06/standards-in-software-ugly-truth.html" onmouseover="return overlib('I want to take a few moments to deal with the ugly truth about software standards. &acirc;€œStandards&acirc;€ have become the hip thing in the GIS world, especially among the open source Java GIS commuity, since the OGC gained momentum. Here is an example of what I am talking about:Deegree Project: &acirc;€œdeegree is a Java Framework offering the main building blocks for Spatial Data Infrastructures. Its entire architecture is developed using standards of the ...');" onmouseout="return nd();">Standards in Software &acirc;€“ The Ugly Truth</a></td><td>OpenJUMP</td></tr><tr><td>20070621</td><td><a href="http://openjump.blogspot.com/2007/06/organizing-features-in-openjump.html" onmouseover="return overlib('Features are the basic unit of &acirc;€œwork&acirc;€ in OpenJUMP. They are the fundamental &acirc;€œthing&acirc;€ that users are interested in manipulating. There are several ways to organize or group features to make the tasks of the user easier to accomplish. OpenJUMP currently uses a single &acirc;€œcontainer&acirc;€ to organize Features from the user&acirc;€™s perspective. This container is a Layer. Use...');" onmouseout="return nd();">Organizing Features in OpenJUMP (Simplicity or Flexibility?)</a></td><td>OpenJUMP</td></tr><tr><td>20070506</td><td><a href="http://geocarta.blogspot.com/2007/05/ivy-league-students-tackle-problems.html" onmouseover="return overlib('...');" onmouseout="return nd();">Ivy League Students Tackle Problems With GIS</a></td><td>GeoCarta</td></tr><tr><td>20070430</td><td><a href="http://geocarta.blogspot.com/2007/04/artists-maps-dont-lie.html" onmouseover="return overlib('...');" onmouseout="return nd();">Artist's Maps Don't Lie</a></td><td>GeoCarta</td></tr><tr><td>20070701</td><td><a href="http://georss.org/blog/2007/06/30/georss-site-back-up/" onmouseover="return overlib('Sorry for the long delay in getting the GeoRSS site back up. We had an unforseen (as they tend to be) loss of the original host, and recovering the data led to problems. But thanks to the heroic efforts of many, the site is restored on a new host (and backups).We&amp;#8217;ll be updating the content [...]...');" onmouseout="return nd();">GeoRSS Site back up</a></td><td>GeoRSS</td></tr><tr><td>20070601</td><td><a href="http://georss.org/blog/2007/06/01/arcmap-to-georss-gml-script-needed/" onmouseover="return overlib('I need some pretty basic GeoRSS GML export functionality from ArcMap. Beta quality is fine. Has anyone done this or can it be whipped up in a week? I&amp;#8217;d be happy to take a stab at maintaining it as open source, but there&amp;#8217;s always ArcScripts for this as well....');" onmouseout="return nd();">ArcMap to GeoRSS GML script needed</a></td><td>GeoRSS</td></tr><tr><td>20070516</td><td><a href="http://geopdf.blogspot.com/2007/05/getting-interesting.html" onmouseover="return overlib('Its been interesting to watch the company grow. Watching how the start-up got funded has been a real eye opener, and the dynamics have been fascinating. Weve recently closed a round of VC, which is a definite milestone in the evolution of the company....');" onmouseout="return nd();">Getting Interesting</a></td><td>GeoPDF</td></tr><tr><td>20070510</td><td><a href="http://geopdf.blogspot.com/2007/05/if-reader-were-country.html" onmouseover="return overlib('Over a Fantom Planet, youll find the following posted:Michael Jones, the CTO of Google, noted that GE&acirc;€™s user base is approximately the tenth most populated country coming in with 200,000,000 users in the world in his keynote. Today we also learned that ...');" onmouseout="return nd();">If Reader were a Country...</a></td><td>GeoPDF</td></tr><tr><td>2007073</td><td><a href="http://blogs.esri.com/roller/page/geographymatters?entry=bring_back_geography" onmouseover="return overlib('Jerry Dobson, geography, professor, and President of the American Geographical Society, talks about his recent article in ESRIs ArcNews. The article is a must-read for anyone asking, What is geography? and Why do we need to bring it back?-In the spring 2007 issue of ArcNews, I wrote about the compelling need to bring geography back to government, business, and education at all levels. It was something I felt I had to say, and it seems to have struck a chord with many readers. Reader response...');" onmouseout="return nd();">Bring Back Geography!</a></td><td>Geography Matters</td></tr><tr><td>2007079</td><td><a href="http://feeds.esri.com/~r/MappingCenter/~3/132114514/mappingcenter" onmouseover="return overlib('Quite a few people saw technical sessions in San Diego at the Users Conference where the ESRI_Optimized.style was mentioned. A number of you have written in, asking, What exactly is it? and Where can I find it?The ESRI_Optimized style contains a set of symbols that provide optimized performance for display, exporting, and ArcGIS Server.  This style contains a set of line and fill symbols that are designed to perform better while still matching the intent and visual character of th...');" onmouseout="return nd();">ESRI_Optimized.style available in ArcGIS 9.2 </a></td><td>Mapping Center</td></tr><tr><td>20070712</td><td><a href="http://blogs.esri.com/Dev/blogs/arcgisserver/archive/2007/07/12/Strategies-for-large-caching-jobs.aspx" onmouseover="return overlib('Strategies for large caching jobs&amp;nbsp;ArcGIS Server 9.2 introduced map caching for map services. A cached map service is a regular map service that has been enhanced to serve maps very quickly using a ca...');" onmouseout="return nd();">Strategies for large caching jobs</a></td><td>ArcGIS Server</td></tr><tr><td>20070712</td><td><a href="http://googlemapsapi.blogspot.com/2007/07/v284-changes-ggeoxml-methods.html" onmouseover="return overlib('...');" onmouseout="return nd();">v2.84 Changes: GGeoXML Methods, GDraggableObject Events, &amp; Geodesic Polylines</a></td><td>Google Maps API</td></tr><tr><td>20070711</td><td><a href="http://googlemapsapi.blogspot.com/2007/07/mapplets-launched-add-your-mapplet-to.html" onmouseover="return overlib('...');" onmouseout="return nd();">Mapplets Launched - Add Your Mapplet to the Growing Gallery of Maps Plugins</a></td><td>Google Maps API</td></tr><tr><td>20070713</td><td><a href="http://feeds.ogleearth.com/~r/ogleearth/~3/133188764/mobile_gmaps_up.html" onmouseover="return overlib('Over the past few weeks, the mobile mapping application I use most on my Nokia N95 &amp;mdash; the excellent and free Mobile GMaps (for Symbian S60) &amp;mdash; has gotten a slew of updates that together make for a significantly better user experience. Its worth the download, especially now that the N95s slow GPS location fixing has been improved with the latest firmware upgrade.My favorite new feature is that I ...');" onmouseout="return nd();">Mobile GMaps update (and a look at personal location publishing )</a></td><td>Ogle Earth</td></tr><tr><td>20070710</td><td><a href="http://feeds.ogleearth.com/~r/ogleearth/~3/132222316/new_imagery_of.html" onmouseover="return overlib('A Washington Post article alerted me to a new report on Iran by the Institute for Science and International Security, released as a PDF on July 9, 2007. The report shows new tunneling activity near the Natanz nuclear complex on imagery taken by a Digital Globe satellites on June 11, ...');" onmouseout="return nd();">New imagery of Iran's nuclear project now on Google Earth</a></td><td>Ogle Earth</td></tr><tr><td>20070712</td><td><a href="http://virtualearth.spaces.live.com/Blog/cns!2BBC66E99FDCDB98!8910.entry" onmouseover="return overlib('The Mobile Search team has released V2 of the rich client application for Windows Mobile, as well as a major update to the browser based interface. Whether you have a J2ME (Java) phone, Windows Mobile phone, or any other device with a mobile browser, Live Search has you covered with maps, directions and business search. The J2ME and Windows mobile applications add a bunch of advanced features not possible in the browser based&Acirc;&nbsp;app. Theres also a beta version of the client app for Blackberry devices...');" onmouseout="return nd();">Mobile Search V2 released - Improved Navigation, Cache, Movie Searching, GPS, Traffic reporting and more!</a></td><td>Virtual Earth</td></tr><tr><td>20070709</td><td><a href="http://virtualearth4gov.spaces.live.com/Blog/cns!369B39F890CE30C1!425.entry" onmouseover="return overlib('A little while back, I shared a video of Virtual Earth 3D scenes with Brian Miyake of i-Ten Associates who had seen Rob Roy speak on Virtual Earth at the ');" onmouseout="return nd();">Digital Earth for a New Generation</a></td><td>virtualearth4gov</td></tr><tr><td>20070619</td><td><a href="http://ylocalblog.com/blog/2007/06/19/yahoo-maps-wins-2007-cnet-webware-100-award/" onmouseover="return overlib('As proclaimed yesterday by c&amp;#124;net, &amp;#8220;The Webware 100 awards recognize the best Web 2.0 apps.&amp;#8221; So, it&acirc;€™s my pleasure to share with you that Yahoo! Maps has been named a winner in the Reference category for 2007.We&acirc;€™ve made a number of improvements in the last few months, including an improved mapping platform, better design, mobile [...]...');" onmouseout="return nd();">Yahoo! Maps wins 2007 c|net Webware 100 award</a></td><td>Yahoo! Local Maps</td></tr><tr><td>20070601</td><td><a href="http://ylocalblog.com/blog/2007/06/01/calling-all-maps-and-local-hackers/" onmouseover="return overlib('As many of you know, Where 2.0 was earlier this week and Digital Earth 5 is next week.  Bridging the gap, Yahoo! is hosting WhereCamp, a free &amp;#8216;unconference&amp;#8217; at the Yahoo! Sunnyvale campus, focusing on all things Map and Geography related.  The fun starts Saturday morning at 10am, bring a sleeping bag and [...]...');" onmouseout="return nd();">Calling all ?Maps and Local? Hackers</a></td><td>Yahoo! Local Maps</td></tr><tr><td>20070519</td><td><a href="http://bullsworld.blogspot.com/2007/05/blog-moved-please-update-your-links.html" onmouseover="return overlib('http://bullsworld.netI have noticed this blog still gets a lot of hits, this site is no longer updated, I have moved it to http://bu...');" onmouseout="return nd();">Blog MOVED please update your links</a></td><td>Bull's rambles</td></tr><tr><td>20070419</td><td><a href="http://bullsworld.blogspot.com/2007/04/switched-to-wordpress.html" onmouseover="return overlib('After days of trying to get a post to submit on blogger I have finally given up, I decided to set up a free WordPress blog instead, I may at some point host it on my own server, but for now I&acirc;€™ll use wordpress.com.Please update any links you have to http://bullsworld2007.wordpress.com and subscribe to the new RSS feed.The only downside is I lose adsense, but I have yet to make my first $100 anyway, I may add a paypal donate button in...');" onmouseout="return nd();">Switched to WordPress</a></td><td>Bull's rambles</td></tr><tr><td>20070517</td><td><a href="http://feeds.feedburner.com/~r/typepad/jlt/uc/~3/117566288/a_loathsome_pro.html" onmouseover="return overlib('...');" onmouseout="return nd();">A Loathsome Promiscuity of Animals</a></td><td>urbancartography</td></tr><tr><td>20070515</td><td><a href="http://feeds.feedburner.com/~r/typepad/jlt/uc/~3/116946737/pictures_of_spr.html" onmouseover="return overlib('...');" onmouseout="return nd();">Pictures of Sprawl</a></td><td>urbancartography</td></tr><tr><td>20070705</td><td><a href="http://blog.urbanmapping.com/articles/2007/07/05/urban-mapping-seeks-geo-data-analyst" onmouseover="return overlib('...');" onmouseout="return nd();">Urban Mapping Seeks (Geo)data Analyst</a></td><td>Urban Mapping</td></tr><tr><td>20070702</td><td><a href="http://blog.urbanmapping.com/articles/2007/07/02/umi-seeks-project-manager-with-planning-background" onmouseover="return overlib('...');" onmouseout="return nd();">UMI Seeks Project Manager with Planning Background</a></td><td>Urban Mapping</td></tr><tr><td>20070713</td><td><a href="http://veryspatial.com/?p=1683" onmouseover="return overlib('Information from Drew Stephens, founder of Service At Sea, about the mission, goals, and a few details about Service At Sea.Click to download mp3 versionClick to download aac version...');" onmouseout="return nd();">A VerySpatial Podcast - Special Episode 21</a></td><td>VerySpatial</td></tr><tr><td>20070711</td><td><a href="http://veryspatial.com/?p=1682" onmouseover="return overlib('In an article yesterday, PC Pro&amp;#8217;s (a UK-based tech news site) Darien Graham-Smith comments on the upcoming release of TomTom&amp;#8217;s &amp;#8220;MapShare&amp;#8221; technology (here&amp;#8217;s my previous post), and predicts that its impact will be much more far-reaching than the fairly quiet launch announcement. He argues that this will break consumer SatNav systems&amp;#8217; reliance on commercial map [...]...');" onmouseout="return nd();">Will TomTom?s Map Share herald the end of professional mapping?</a></td><td>VerySpatial</td></tr><tr><td>20070713</td><td><a href="http://apb.directionsmag.com/archives/3091-New-Locations-for-Ads.html" onmouseover="return overlib('Shaan Hurley over at Between the Lines (an AutoCAD blog) notes he found actual ads in the lines that separate the spaces in a parking lot. They were for car insurance in the case he notes.  I confess that I wouldnt expect to look at the lines with such intensity to see such an ad, but I suppose advertisers are looking for new locations all the time.    ...');" onmouseout="return nd();">New Locations for Ads</a></td><td>All Points</td></tr><tr><td>20070713</td><td><a href="http://apb.directionsmag.com/archives/3090-New-Map-Books-Still-Appearing-in-US.html" onmouseover="return overlib('From the all knowledge is local department comes news of a printed atlas for Mojave County, Arizona. After producing a few municipal maps, a local realtor built one of the county. Its printed and sells for $35. He used a GPS and the good old driving around method to confirm data; its not clear if public maps were a starting point. Also of interest: areas with low population were indeed left off and township and range information is provided.- ');" onmouseout="return nd();">New Map Books Still Appearing in US</a></td><td>All Points</td></tr>				</tbody>
+					</table>
+		</div>
+		<!-- note: <br /> included in rss -->
+		<br />
+		&#8226;&nbsp;Science &amp; Technology::
+		<div class="summary_visible">
+						<table id="sort_scitech" name="sort_scitech" style="border-collapse:collapse;" border="1" bordercolor="#808080" cellspacing="1" cellpadding="1" onclick="sortColumn(event)">
+			<thead>
+		<tr>
+	<!-- cursor compatibility -->
+	<td class="sort">
+		Sort by Date	</td>
+	<td class="sort">
+		Sort by Title	</td>
+	<td class="sort">
+		Sort by Name	</td>
+		</tr>
+			</thead>
+			<tbody>
+			<tr><td>20070711</td><td><a href="http://blog.thehill.com/2007/07/11/innovation-doesnt-conflict-with-access-to-medicine/" onmouseover="return overlib('In this video, Desiree Filippone, a lobbyist for the pharmaceutical company Eli Lilly and Co., emphasizes the importance of innovation in the pharmaceutical industry. Read more about Filippone here....');" onmouseout="return nd();">Innovation Doesn?t Conflict With Access to Medicine</a></td><td>The Hill</td></tr><tr><td>20070702</td><td><a href="http://blog.thehill.com/2007/07/02/we-must-maintain-the-worlds-safest-air-space-rep-jerry-costello/" onmouseover="return overlib('The Aviation Subcommittee held a rigorous schedule of hearings this spring to examine not only the Bush administration&amp;#8217;s proposal for reauthorization of the FAA, but the state of FAA operations and our air transportation system.  I said many times during that process that I believed that our current financing system could handle the transition [...]...');" onmouseout="return nd();">We Must Maintain the World?s Safest Air Space (Rep. Jerry Costello)</a></td><td>The Hill</td></tr><tr><td>20070711</td><td><a href="http://blogs.sun.com/jonathan/entry/more_on_free_media" onmouseover="return overlib('...');" onmouseout="return nd();">Will We Make a Dent?</a></td><td>Jonathan Schwartz</td></tr><tr><td>20070628</td><td><a href="http://blogs.sun.com/jonathan/entry/size_matters" onmouseover="return overlib('...');" onmouseout="return nd();">Switching Subjects</a></td><td>Jonathan Schwartz</td></tr><tr><td>20070712</td><td><a href="http://feeds.feedburner.com/~r/typepad/sethsmainblog/~3/133015048/small-before-bi.html" onmouseover="return overlib('One of the luxuries of being in a low-cost business or in having access to capital is that you can scale quickly. You can go from one salesperson to a hundred, one store to twenty, no franchises to a thousand.......');" onmouseout="return nd();">Small before big</a></td><td>Seth Godin</td></tr><tr><td>20070711</td><td><a href="http://feeds.feedburner.com/~r/typepad/sethsmainblog/~3/132681476/the-first-thing.html" onmouseover="return overlib('Before you start firing customers, you better be committed to satisfying the rest of your customers. The giant flaw in Sprints logic, as many readers have pointed out, is that plenty (almost half) of their customers dont like them. Getting......');" onmouseout="return nd();">The first thing</a></td><td>Seth Godin</td></tr><tr><td>20070713</td><td><a href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/133303811/support_open_so.html" onmouseover="return overlib('I love reading Robin Hansons blog Overcoming Bias. Today, a post on conspicuous consumption and public causes caught my eye. It reminded me of Tor Norretranderss keynote at EuroOSCON last year, and not just because Robin is keynoting this year.......');" onmouseout="return nd();">Support Open Source: Seduce A Woman Today</a></td><td>O'Reilly Radar</td></tr><tr><td>20070712</td><td><a href="http://feeds.feedburner.com/~r/oreilly/radar/rss10/~3/132979049/the_gpl_and_sof_1.html" onmouseover="return overlib('Linux Magazines article The GPL Has No (Networked) Future recognizes a point that Ive been making for years: that free software license requirements to release source code are all triggered by the act of distribution, and that web applications, which...    ...');" onmouseout="return nd();">The GPL and Software as a Service</a></td><td>Tim O'Reilly</td></tr><tr><td>20070713</td><td><a href="http://feeds.feedburner.com/~r/OmMalik/~3/133305913/" onmouseover="return overlib('If you are one of those fortunate (and rich) enough to afford a nice Plasma or a LCD TV, then you should be excited about a new wireless networking standard called WirelessHD. In simplest terms, it would eliminate those ugly wires that hang like vines of an old Banyan tree from your gorgeous big screen [...]...');" onmouseout="return nd();">WirelessHD, Your Plasma&acirc;€™s New Best Friend?</a></td><td>GigaOM</td></tr><tr><td>20070713</td><td><a href="http://feeds.feedburner.com/~r/OmMalik/~3/133230807/" onmouseover="return overlib('Isn&amp;#8217;t anyone going to stick up for poor Vic - er, I mean, John Mackey? You know, the volatile CEO of one of the decade&amp;#8217;s biggest retail success stories whose renegade, loose-cannon style spurred the growth of Whole Foods before leading to his professional unraveling via some anonymous - well, supposedly anonymous - postings on [...]...');" onmouseout="return nd();">Mackey and Me: Why rahodeb speaks for all of us.</a></td><td>GigaOM</td></tr><tr><td>20070712</td><td><a href="http://www.markshuttleworth.com/archives/131" onmouseover="return overlib('With projects like Gobuntu and gNewSense aiming to provide a platform that is zealous about free software, the obvious question is &amp;#8220;where can I run it?&amp;#8221;. And right now, as far as laptops go, there are no good answers. Pretty much any laptop you can buy today needs some sort of non-free bits to make [...]...');" onmouseout="return nd();">Willing to buy a high-end, free-software-only laptop?</a></td><td>Mark Shuttleworth</td></tr><tr><td>20070710</td><td><a href="http://www.markshuttleworth.com/archives/130" onmouseover="return overlib('Thanks to Colin and Evan&amp;#8217;s efforts we now have daily images of a freedom-focused flavour of Ubuntu, &amp;#8220;Gobuntu&amp;#8221;. This is a call for developers who are interested in pushing the limits of content and code freedom - including firmware, content, and authoring infrastructure, to join the team and help identify places where we must separate [...]...');" onmouseout="return nd();">Gobuntu is? go</a></td><td>Mark Shuttleworth</td></tr><tr><td>20061119</td><td><a href="http://www.johnniemanzari.com/archives/2006/11/its_hard_to_pre.html" onmouseover="return overlib('Slide, the company I work for, recently announced that we raised a round of financing. The additional funds will help us grow faster as we ramp up our infrastructure and bring on more engineers and designers to build out our service. It also adds Vinod Khosla, co-founder of Sun Microsystems and former general partner at Kleiner Perkins Caufield &amp; Byers to our team.');" onmouseout="return nd();">It's Hard to Predict the Future</a></td><td>Johnnie Manzari</td></tr><tr><td>20060724</td><td><a href="http://www.johnniemanzari.com/archives/2006/07/advertising.html" onmouseover="return overlib('Monetizing EyeballsAs the online advertising market shot up from $0 in 1995 to $6B in 1999--with projections of hitting $16B by 2005--there was a surge of companies building websites that could monetizing eyeballs. With the advertising slump that accompanied the dot com crash, in conjunction with the economic recession and post-9/11 economic stagnation, a lot of companies moved away from the online advertising model to premium and subscription based revenue streams. Today, with an ...');" onmouseout="return nd();">Advertising</a></td><td>Johnnie Manzari</td></tr><tr><td>20070713</td><td><a href="http://www-03.ibm.com/developerworks/blogs/page/BobSutor?entry=groklaw_massachusetts_and_ooxml&amp;ca=drs-bl" onmouseover="return overlib('Pam Jones just updated some of her comments and suggestions about how you can make your opinions known regarding Massachusetts including OOXML in their draft technical reference model. See &amp;#8220;About Massachusetts&amp;#8230;&amp;#8221;.		&amp;#169; Robert S. Sutor for Bob Sutors Open Blog, 2007.    Posted under: Massachusetts,  Standards.	  Permalink &amp;#124;    No [...]');" onmouseout="return nd();">Groklaw, Massachusetts, and OOXML</a></td><td>Bob Sutor</td></tr><tr><td>20070712</td><td><a href="http://www-03.ibm.com/developerworks/blogs/page/BobSutor?entry=links_for_2007_07_12&amp;ca=drs-bl" onmouseover="return overlib('ITworld.com - Microsoft OOXML spec &amp;#8216;dangerously flawed&amp;#8217;&amp;#8220;Microsoft&amp;#8217;s Office Open XML (OOXML) document format specification is fatally flawed where it comes to spreadsheets, with many functions filled with careless errors, according to a critic.&amp;#8221;(tags: ooxml odf microsoft)		&amp;#169; Robert S. Sutor for Bob Sutors Open Blog, 2007.    Posted under: del.icio.us Links,  Microsoft.	  [...]');" onmouseout="return nd();">links for 2007-07-12</a></td><td>Bob Sutor</td></tr><tr><td>20070711</td><td><a href="http://www.creativesynthesis.net/blog/2007/07/11/calligraphy-and-the-camera/" onmouseover="return overlib('Photographer and artist Don Hong-Oai explored life&Acirc;&nbsp;and the environment in China and Vietnam in a way that&Acirc;&nbsp;blended&Acirc;&nbsp;traditional Chinese art with a sense of photography&amp;#8217;s potential.&Acirc;&nbsp;&Acirc;&nbsp;Don&Acirc;&nbsp;learned photography as an apprentice in a Vietnamese portrait studio.&Acirc;&nbsp; He began taking pictures of landscapes in his spare&Acirc;&nbsp;time, but was disappointed by the results.&Acirc;&nbsp; To give the images more depth [...]...');" onmouseout="return nd();">Calligraphy and the Camera</a></td><td>Creative Synthesis</td></tr><tr><td>20070711</td><td><a href="http://www.creativesynthesis.net/blog/2007/07/11/day-trips-show-maps-as-art-and-interface/" onmouseover="return overlib('Bugaboo, a Dutch stroller company, recently added a complimentary site focused on &amp;#8216;Day Trips&amp;#8217;. For those of you unfamiliar with this term, a day trip is a little trip you take during the day. For couples, this often takes the form of a date. For Bugaboo, presumably, it is a little more of a family [...]...');" onmouseout="return nd();">Day Trips show Maps as Art and Interface</a></td><td>Creative Synthesis</td></tr><tr><td>20070713</td><td><a href="http://feeds.feedburner.com/~r/scienceblogs/pharyngula/~3/133339265/friday_cephalopod_origin_of_th.php" onmouseover="return overlib('Mastigoteuthis sp.Since I recently pointed out the strange news reports of an octosquid that even went so far as to call it half squid/half octopus, I thought Id show why the preliminary assignment to the genus Mastigoteuthis was su...');" onmouseout="return nd();">Friday Cephalopod: Origin of the Octosquid?</a></td><td>Pharyngula</td></tr><tr><td>20070713</td><td><a href="http://feeds.feedburner.com/~r/scienceblogs/pharyngula/~3/133277250/good_ol_christian_tolerance.php" onmouseover="return overlib('This is amusing in so many ways to an atheist. Christian activists tried to disrupt a Hindu prayer in the Senate.');" onmouseout="return nd();">Good ol' Christian tolerance</a></td><td>Pharyngula</td></tr><tr><td>20070713</td><td><a href="http://www.newscientist.com/blog/technology/2007/07/many-unhappy-returns.html" onmouseover="return overlib('...');" onmouseout="return nd();">Many unhappy returns</a></td><td>New Scientist</td></tr><tr><td>20070712</td><td><a href="http://www.newscientist.com/blog/technology/2007/07/is-facebook-doomed.html" onmouseover="return overlib('...');" onmouseout="return nd();">Is Facebook doomed?</a></td><td>New Scientist</td></tr><tr><td>20070712</td><td><a href="http://www.technologyreview.com/blog/duncan/17651/" onmouseover="return overlib('Former surgeon general Richard Carmona is telling us what we already know: that the Bush administration has, from the beginning, put ideology ahead of science....');" onmouseout="return nd();">The Anti-Science President</a></td><td>Technology Review</td></tr><tr><td>20050501</td><td><a href="http://www.technologyreview.com/blog/blog.asp?blogID=1798&amp;trk=blog" onmouseover="return overlib('A study of distraction caused by email in the UK found that people who do frequent email or SMS suffer a 10-point IQ drop---roughly twice the IQ ......');" onmouseout="return nd();">Email Hurts IQ More Than Pot</a></td><td>Technology Review</td></tr><tr><td>20070712</td><td><a href="http://news.com.com/8301-10784_3-9743802-7.html?part=rss&amp;tag=feed&amp;subj=NewsBlog" onmouseover="return overlib('Sorry, Justin.  I couldnt help that headline.  :-)The headline is a bit of a joke, but the news is serious:  Novell just announced Europes largest rollout of Linux desktops with the Italian parliament.  3,500 PCs will be migrated to SUSE Linux Enterprise Desktop, including the 630 ...                                        ...');" onmouseout="return nd();">Italian Communists choose Novell's SUSE Linux Enterprise Desktop</a></td><td>c|net</td></tr><tr><td>20070712</td><td><a href="http://news.com.com/8301-10784_3-9743331-7.html?part=rss&amp;tag=feed&amp;subj=NewsBlog" onmouseover="return overlib('IBM on Thursday released the beta of AIX 6, the operating system for its Unix servers, which will be commercially available in the fourth quarter this year. In an effort to make AIX easier to try out, IBM for the first time is making the beta available for free to ...                                        ...');" onmouseout="return nd();">IBM launches open beta for virtualization-enhanced AIX</a></td><td>c|net</td></tr><tr><td>20070712</td><td><a href="http://feeds.pcworld.com/~r/pcworld/techlog/~3/133189006/004887.html" onmouseover="return overlib('Psssst! For the past few months, we PC World editors, designers, and lab analysts have been quietly working on a pretty nifty secret project: the most ambitious makeover weve given our magazine in a decade. It shouldnt come as a...');" onmouseout="return nd();">Coming Soon: A Whole New PC World</a></td><td>PC World</td></tr><tr><td>20070705</td><td><a href="http://feeds.pcworld.com/~r/pcworld/techlog/~3/132475459/004830.html" onmouseover="return overlib('Were almost a week into the Age of iPhone, and we at PC World, along with much of the gadget-lovin world, are still exploring this remarkable, entertaining, and often frustrating device. A few notes of follow up to my first...');" onmouseout="return nd();">More Things I Now Know About the iPhone</a></td><td>PC World</td></tr><tr><td>20070713</td><td><a href="http://techdirt.com/articles/20070712/181551.shtml" onmouseover="return overlib('A service called Imeem launched a little while back, and it allowed users to build playlists of music, videos and photos and share them with their friends. Despite the fact that it didnt offer any way to download copyrighted music, Warner Music sued Imeem, saying it was making money on the illegal use of free music. How quickly things change: Warner has now ');" onmouseout="return nd();">Now That It's Getting A Cut, Warner Says Imeem's Not So Bad</a></td><td>Techdirt</td></tr><tr><td>20070713</td><td><a href="http://techdirt.com/articles/20070712/220759.shtml" onmouseover="return overlib('On Thursday, an appeals court denied a stay of the new (and significantly increased) royalty rates webcasters would have to pay to stream music online. However, as pointed out in the comments on that post, a Wired blog reports that SoundExchange says its wont enforce the new rates as discussion...');" onmouseout="return nd();">Wow -- Sound Exchange Does Something Reasonable, Says It Won't Enforce New Webcast Royalties Yet</a></td><td>Techdirt</td></tr><tr><td>20070712</td><td><a href="http://pogue.blogs.nytimes.com/2007/07/12/behind-the-scenes-of-iphone-the-musical/" onmouseover="return overlib('I had a lot of crazy fun making my video &amp;#8220;iPhone: The Musical&amp;#8221; last week&amp;#8211;and a lot of fun watching the reaction online.Most people found it funny, out-there, or at least entertaining (agreed). Many accused me of not being the greatest singer in the world and being a ham (agreed). And a few people were [...]...');" onmouseout="return nd();">Behind the Scenes of ?iPhone: The Musical?</a></td><td>Pogue</td></tr><tr><td>20070713</td><td><a href="http://bits.blogs.nytimes.com/2007/07/13/dealbook-at-sun-valley-late-night-with-eric-schmidt/" onmouseover="return overlib('After two days of watching boldface names from afar, David Carr sits down with Eric Schmidt of Google for a late night chat. Surprise: He thinks Viacoms $1 billion copyright suit against Google is nonsense. ...');" onmouseout="return nd();">DealBook at Sun Valley: Late Night With Eric Schmidt</a></td><td>Bits</td></tr><tr><td>20070713</td><td><a href="http://blog.washingtonpost.com/posttech/2007/07/the_e3_grind_continues.html?nav=rss_blog" onmouseover="return overlib('SANTA MONICA--For the third straight day, Santa Monica was overtaken yesterday by about 5,000 videogame journalists, analysts and game makers. The Fairmont Hotel was home to another full day of press conferences, which began at 8 a.m. with Take-Two Interactive showing its line-up of 2K Games, 2K Sports and Rockstar......');" onmouseout="return nd();">The E3 Grind Continues</a></td><td>Bits</td></tr><tr><td>20070713</td><td><a href="http://blogs.guardian.co.uk/technology/archives/2007/07/13/no_sony_has_not_cut_the_price_of_the_playstation_3.html" onmouseover="return overlib('Sony hasnt cut the price of the PlayStation 3 in the US or the UK, in spite of reports saying it had. The Americans are getting an 80GB machine for the the old 60GB price, while in the UK, we keep the 60GB model at the same old price.......');" onmouseout="return nd();">No, Sony has not cut the price of the PlayStation 3</a></td><td>Guardian Unlimited</td></tr><tr><td>20070713</td><td><a href="http://blogs.guardian.co.uk/technology/archives/2007/07/13/the_making_of_david_pogues_iphone_video.html" onmouseover="return overlib('New York Times columnist David Pogue has now explained how he made his funny video, iPhone: The Musical. He says: I think these spoofs are funniest when they closely match the original--for example, I did one to the tune of......');" onmouseout="return nd();">The making of David Pogue's iPhone video</a></td><td>Guardian Unlimited</td></tr><tr><td>20070618</td><td><a href="http://googleresearch.blogspot.com/2007/06/new-conference-on-web-search-and-data.html" onmouseover="return overlib('...');" onmouseout="return nd();">New Conference on Web Search and Data Mining</a></td><td>Google Research</td></tr><tr><td>20070618</td><td><a href="http://googleresearch.blogspot.com/2007/06/videos-of-talks.html" onmouseover="return overlib('...');" onmouseout="return nd();">Videos of talks</a></td><td>Google Research</td></tr><tr><td>20070606</td><td><a href="http://labs.live.com/photosynth/blogs/Britain+In+Pictures+BBC+Collection.aspx" onmouseover="return overlib('      Over the last 6 months we&acirc;€™ve been working with the BBC on a time limited technical   trial of the Photosynth technology in support of the How   We Built Britain television series. Viewers will be able to explore synths of...');" onmouseout="return nd();">Britain in Pictures: BBC Collection</a></td><td>Microsoft Labs</td></tr><tr><td>20070604</td><td><a href="http://labs.live.com/photosynth/blogs/Photosynth+At+TED+Conference.aspx" onmouseover="return overlib('      ');" onmouseout="return nd();">Photosynth at TED Conference</a></td><td>Microsoft Labs</td></tr><tr><td>20070712</td><td><a href="http://blogs.intel.com/it/2007/07/why_cant_a_mobile_phone_just_b.html" onmouseover="return overlib('I remember my very first mobile phone. It was a popular brand of device that could do nothing more than place and receive phone calls. The quality of the calls wasn&amp;#8217;t all that great; it was heavy to hold in my hand; it barely fit in my pocket; calls were dropped randomly; I, and the person I was talking to sounded like we were placing the call from the bottom of a dry well. But it did place and receive calls - and when I got that flat tire on the way home from work, it was nice to be able to call ...');" onmouseout="return nd();">Why can't a mobile phone just be a phone?</a></td><td>IT@Intel</td></tr><tr><td>20070711</td><td><a href="http://blogs.intel.com/it/2007/07/deja_20.html" onmouseover="return overlib('I wonder how many stupid variations I can do on Web 2.0 component names.  I may have to devote an entire post to it and see if I can get this out of my system once and for all. Anyhoo, last week I wrote about how I thought Web 2.0 could help Intel.  I posted a variant of that on our internal blogs and got a lot of interesting reaction, especially a post that basically said everything in Web 2.0 has been around be...');" onmouseout="return nd();">Deja 2.0</a></td><td>IT@Intel</td></tr><tr><td>20070709</td><td><a href="http://feeds.popularmechanics.com/~r/pm/blogs/science_news/~3/132020731/4219067.html" onmouseover="return overlib('Get in line if you want a Dreamliner, NASA picks an arctic Martian plain for Phoenix, and floating wind turbines generate no complaints, just electricity.      ');" onmouseout="return nd();">787 Dreamliner Takes Flight, Phoenix to Perch on Mars, Eyesore Moves Out to Sea and More: News Briefs</a></td><td>PopularMechanics</td></tr><tr><td>20070712</td><td><a href="http://feeds.popularmechanics.com/~r/pm/blogs/technology_news/~3/133062516/4219218.html" onmouseover="return overlib('The most impressive thing about the Wii Zapper-Nintendos new gun-shaped controller housing for the Wii-might be that its already playable (and weve got video). Heres the bad news: It became impossible to ignore the sensor lag.  ');" onmouseout="return nd();">Third-Party Wii Games Still Plagued by Technical Issues: Live from E3 2007 (with VIDEO)</a></td><td>PopularMechanics</td></tr>				</tbody>
+					</table>
+		</div>
+		<!-- note: <br /> included in rss -->
+		<br />
+		&#8226;&nbsp;Data::
+		<div class="summary_visible">
+						<table id="sort_data" name="sort_data" style="border-collapse:collapse;" border="1" bordercolor="#808080" cellspacing="1" cellpadding="1" onclick="sortColumn(event)">
+			<thead>
+		<tr>
+	<!-- cursor compatibility -->
+	<td class="sort">
+		Sort by Date	</td>
+	<td class="sort">
+		Sort by Title	</td>
+	<td class="sort">
+		Sort by Name	</td>
+		</tr>
+			</thead>
+			<tbody>
+			<tr><td></td><td><a href="http://www.geotorrent.org/details.php?id=65&amp;hit=1" onmouseover="return overlib('Blue Marble Cloud layer-----------------------Dataset: MOD021KM, MOD03, MOD35_L2, MOD06_L2Format: 8bit cloud reflectance, 43200x21600Compositing period: Day 210/2001 (day 320/2001 stitched at the south)When using these datasets please give credits to:-------------------------------------------------Author: Reto St&ouml;ckli, NASA/Goddard Space Flight Center, stockli@cyberlink.chAddress of correspondance:Reto St&ouml;ckli                    Phone:  +41 (0)1 271 8463NASA GSFC/ SSAI                 Email:  ...');" onmouseout="return nd();">BlueMarbleClouds (World)</a></td><td>geoTorrent</td></tr><tr><td></td><td><a href="http://www.geotorrent.org/details.php?id=64&amp;hit=1" onmouseover="return overlib('World Landsat 742 - JP2 Format...');" onmouseout="return nd();">World Landsat 742 - JP2 Format (World)</a></td><td>geoTorrent</td></tr>				</tbody>
+					</table>
+		</div>
+		<!-- note: <br /> included in rss -->
+		<br />
+	</td>
+		</tr>
+			</table>
+	<!-- include content --></td>
+<!--center <td> ends-->
+<!--right <td> begins-->
+<td width="120" bgcolor="#dddddd" class="medium">
+			<!--include poll-->			
+				<table cellspacing="0" cellpadding="0">
+			<tr>
+		<td width="120" bgcolor="#c2c0c0" class="medium">
+		>> Poll
+		</td>
+			</tr>
+			<tr>
+		<td width="120" bgcolor="#dddddd" class="medium">
+		<!--span: <span> can NOT enclose <form> or <table> for XHTML-->
+					<!--form: vote-->
+			<form method="post" name="poll_vote" action="/poll/poll_voteresult.php">
+				<span class="medium">
+				To be most effective as a volunteer, it is essential to offer your strongest skills?	
+				<br />
+				<input type="radio" name="answer" value="0" /> It does not matter
+<br /><input type="radio" name="answer" value="1" /> No, you get boxed into doing one thing
+<br /><input type="radio" name="answer" value="2" /> Yes
+<br /><input type="radio" name="answer" value="3" /> I do not volunteer<br />				<input type="submit" name="vote" value="Vote" />
+				</span>
+			</form>
+			<!--form: vote-->
+			</td>
+				</tr>
+					</table>
+				
+</td>
+<!--right <td> ends-->
+	</tr>
+		</table><!--footer-->
+		<table width="760" cellspacing="0" cellpadding="0">
+	<tr>
+<td width="760" bgcolor="#c2c0c0" colspan="3" class="small">
+    	<!--footernavigate-->
+		<table bgcolor="#000000" cellspacing="0" cellpadding="0">
+	<tr>
+<td width="253"  class="medium_left_middle">
+	<span class="whitetext">
+	<a href="javascript:history.back()">&#8226;&nbsp;</a>
+	</span>
+</td>
+<td width="254" class="medium_center_middle">
+	<span class="whitetext">
+	<a href="#top">&#8226;</a>
+	</span>
+</td>
+<td width="253" class="medium_right_middle">
+	<span class="whitetext">
+	<a href="javascript:history.forward()">&nbsp;&#8226;</a>
+	</span>
+</td>
+	</tr>
+		</table>
+<!--footernavigate-->	<!--place <hr> outside <span> for XHTML-->
+	copyright &copy; 2007 spatiallink_org. all rights reserved
+	 |
+	Operation Failure. Lost connection to MySQL server during query.

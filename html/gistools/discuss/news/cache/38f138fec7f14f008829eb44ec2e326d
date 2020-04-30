@@ -1,0 +1,14 @@
+O:9:"MagpieRSS":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:1:{i:0;a:5:{s:5:"title";s:50:"
+This feed has moved, please update your settings
+";s:4:"link";s:31:"
+http://www.cnet.com/news-rss/
+";s:7:"pubdate";s:29:"Tue, 30 Jul 2013 15:00:00 GMT";s:11:"description";s:236:"
+This feed has moved.  Please update your settings by modifying the beginning of the feed URL from http://news.com.com to http://news.cnet.com
+ to see the latest updates.  Or subscribe to any of our current feeds by visiting this page.
+";s:7:"summary";s:236:"
+This feed has moved.  Please update your settings by modifying the beginning of the feed URL from http://news.com.com to http://news.cnet.com
+ to see the latest updates.  Or subscribe to any of our current feeds by visiting this page.
+";}}s:7:"channel";a:8:{s:5:"title";s:9:"CNET News";s:4:"link";s:21:"http://news.cnet.com/";s:8:"language";s:2:"en";s:9:"copyright";s:45:"2013 CBS Interactive Inc. All rights reserved";s:7:"pubdate";s:29:"Tue, 30 Jul 2013 15:05:00 GMT";s:13:"lastbuilddate";s:29:"Tue, 30 Jul 2013 15:00:00 GMT";s:11:"description";s:169:"This feed has moved.  Please update your settings by modifying the beginning of the feed URL from http://news.com.com to http://news.cnet.com
+ to see the latest updates.";s:7:"tagline";s:169:"This feed has moved.  Please update your settings by modifying the beginning of the feed URL from http://news.com.com to http://news.cnet.com
+ to see the latest updates.";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Tue, 30 Jul 2013 19:45:15 GMT
+";}

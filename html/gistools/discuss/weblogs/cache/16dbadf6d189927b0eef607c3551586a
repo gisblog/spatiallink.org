@@ -1,0 +1,26 @@
+O:9:"magpierss":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:2:{i:0;a:9:{s:6:"author";s:12:"
+      
+    ";s:11:"author_name";s:6:"umibot";s:2:"id";s:45:"urn:uuid:f5b9e7cf-8942-49ed-aed8-be3d904f0eb9";s:9:"published";s:25:"2008-07-30T20:00:00+00:00";s:7:"updated";s:25:"2008-07-30T20:02:21+00:00";s:5:"title";s:41:"Actung Subscribers! Blog feed changing...";s:4:"link";s:86:"http://blog.urbanmapping.com/articles/2008/07/30/actung-subscribers-blog-feed-changing";s:7:"summary";s:301:"<p>We&#8217;re moving to a new blog platform and will have a new URL for subscribers. This URL will die a quick death, so please ensure you update your reader with a new URL:</p>
+
+<blockquote>
+    <blockquote>
+        <p>http://urbanmapping.com/blog/index.php/feed/</p>
+    </blockquote>
+</blockquote>";s:12:"atom_content";s:301:"<p>We&#8217;re moving to a new blog platform and will have a new URL for subscribers. This URL will die a quick death, so please ensure you update your reader with a new URL:</p>
+
+<blockquote>
+    <blockquote>
+        <p>http://urbanmapping.com/blog/index.php/feed/</p>
+    </blockquote>
+</blockquote>";}i:1;a:9:{s:6:"author";s:12:"
+      
+    ";s:11:"author_name";s:6:"umibot";s:2:"id";s:45:"urn:uuid:a5ff2f6e-992e-4849-a6b8-24e1bb49d8cd";s:9:"published";s:25:"2008-07-22T02:20:00+00:00";s:7:"updated";s:25:"2008-07-23T02:21:12+00:00";s:5:"title";s:69:"Urban Mapping Neighborhood Database Surpasses 50,000 US Neighborhoods";s:4:"link";s:118:"http://blog.urbanmapping.com/articles/2008/07/22/urban-mapping-neighborhood-database-surpasses-50-000-us-neighborhoods";s:7:"summary";s:557:"<p>Another day, another milestone&#8230;</p>
+
+<p>Our neighborhood database now includes over 2,400 cities across 50 states (and a few territories). We continue to increase breadth and depth, supporting <a href="http://urbanmapping.com/customers.html">enterprise customers</a> and startups leveraging our <a href="http://developer.urbanmapping.com/">Neighborhood API</a>. International coverage continues to grow, and more news shortly!</p>
+
+<p>The <a href="http://www.reuters.com/article/pressRelease/idUS111485+22-Jul-2008+MW20080722">official</a> word</p>";s:12:"atom_content";s:557:"<p>Another day, another milestone&#8230;</p>
+
+<p>Our neighborhood database now includes over 2,400 cities across 50 states (and a few territories). We continue to increase breadth and depth, supporting <a href="http://urbanmapping.com/customers.html">enterprise customers</a> and startups leveraging our <a href="http://developer.urbanmapping.com/">Neighborhood API</a>. International coverage continues to grow, and more news shortly!</p>
+
+<p>The <a href="http://www.reuters.com/article/pressRelease/idUS111485+22-Jul-2008+MW20080722">official</a> word</p>";}}s:7:"channel";a:6:{s:5:"title";s:11:"Off The Map";s:2:"id";s:35:"tag:blog.urbanmapping.com,2005:Typo";s:9:"generator";s:4:"Typo";s:9:"link_self";s:46:"http://blog.urbanmapping.com/xml/atom/feed.xml";s:4:"link";s:28:"http://blog.urbanmapping.com";s:7:"updated";s:25:"2008-07-30T20:02:21+00:00";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Wed, 30 Jul 2008 20:06:47 GMT
+";}

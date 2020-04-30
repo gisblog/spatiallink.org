@@ -1,0 +1,44 @@
+<!-- include content:inc_con_indexgiswiki.php-->
+	<!--span: <span> can NOT enclose <form> or <table> for xhtml-->
+	</span>
+		<!--wiki-->
+		<div id="title">
+		Editing <a href="index.php?wiki=<!--wikiname-->"><!--wikiname--></a>
+		</div>
+		<span class="medium">
+		You are encouraged to create or edit articles. Since all submissions are visible immediately, please use the <a href="/gistools/discuss/wiki/index.php?wiki=SandBox" target="_blank">SandBox</a> <img src="/images/img_newwindow.gif" alt="spatiallink_org" /> for any testing. Refer to the ToS for copyright information.
+		<br />
+		<br />
+		All edits are logged. Click <a href="/gistools/discuss/wiki/wiki.php" target="_blank">here</a> <img src="/images/img_newwindow.gif" alt="spatiallink_org" /> to check edit history. Each edit session is locked to prevent simultaneous editing. Please limit the edit session to 15 minutes.
+		<br />
+		<br />
+		It is advisable to copy edits before submission. To successfully submit edits, please enter the correct 5-digit case-sensitive verification code shown above. When [*] appears in the box below, your submission will be accepted. This helps prevent abuse through automated sign-ups or comments.
+		<br />
+		<br />
+		</span>
+			<form method="post" name="wiki" action="index.php?wiki=<!--wikiname-->" onsubmit="return check_wiki_submit()">
+			<center>
+		<input type="hidden" name="wikiname" id="wikiname" value="<!--wikiname-->" />
+		<input type="text" name="input_code" id="input_code" value="" size="5" maxlength="5" />
+		<input readonly="readonly" type="text" name="verify" id="verify" value="" size="1" maxlength="1" class="read_only" />
+		<!--note: <input disabled type="radio" name="radio" id="radio" class="read_only" />; <input disabled type="checkbox" name="checkbox" id="checkbox" class="read_only" />-->
+		<input type="submit" name="submit" id="submit" value="Submit Edit" />
+		<input type="reset" name="reset" id="reset" value="Cancel Edit" />
+		<textarea name="content" cols="60" rows="30" wrap="soft"><!--already--></textarea>
+			</center>
+			</form>
+		<ul id="footer" style="text-align: left;">
+			<li>* before a line puts a bullet in front</li>
+			<li>! is a big headline</li>
+			<li>!! is a small headline</li>
+			<li>!!! is a smaller headline</li>
+			<li>** before and after something makes it bold</li>
+			<li>__ before and after something underlines it</li>
+			<li>'' before and after something makes it italic</li>
+			<li>| before and after something puts it in a box</li>
+			<li> space at the beginning of a line makes it preformatted</li>
+		</ul>
+		<!--wiki-->
+	<span class="medium">
+	<!--span-->
+<!-- include content-->

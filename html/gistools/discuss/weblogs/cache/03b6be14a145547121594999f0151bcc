@@ -1,0 +1,529 @@
+O:9:"MagpieRSS":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:14:{s:5:"title";s:58:"Using Bower for Custom Builds of ArcGIS API for JavaScript";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/LbNXAVYIC90/";s:8:"comments";s:113:"http://blogs.esri.com/esri/arcgis/2015/11/13/using-bower-for-custom-builds-of-arcgis-api-for-javascript/#comments";s:7:"pubdate";s:31:"Fri, 13 Nov 2015 23:15:45 +0000";s:2:"dc";a:1:{s:7:"creator";s:15:"Björn Svensson";}s:8:"category";s:53:"DeveloperWebArcGIS API for JavaScriptJavaScriptJS API";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56314";s:11:"description";s:431:"Esri recently released a Bower package to enable local custom builds of the API. The advantage of using a custom build is that your application downloads and parses only the required JavaScript resources which will make your application load faster. &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/13/using-bower-for-custom-builds-of-arcgis-api-for-javascript/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:4894:"<p><img class="alignnone size-medium wp-image-56319" src="http://blogs.esri.com/esri/arcgis/files/2015/11/esri-and-bower-300x150.png" alt="" width="200" height="100" /></p>
+<p>Esri recently released a <a href="https://github.com/Esri/arcgis-js-api">Bower package</a> to enable local custom builds of the API. The advantage of using a custom build is that your application downloads and parses only the required JavaScript resources which will make your application load faster. The Bower package can be used in conjunction with other JavaScript tools like <a href="http://gruntjs.com/">Grunt</a> to do optimized builds of your applications.</p>
+<p><span id="more-56314"></span></p>
+<h1>How does it work?</h1>
+<p><a href="http://bower.io/">Bower</a> is a front-end package manager for your JavaScript projects. It allows you to download JavaScript packages that you can use in developing your applications. You can see examples of how to do optimized local builds in <a href="https://github.com/Esri/jsapi-resources/tree/master/bower">this resources project</a> that demonstrates how to do builds with <a href="http://dojotoolkit.org/">Dojo</a> or <a href="http://requirejs.org/">RequireJS</a>.</p>
+<p>If you don&#8217;t have Bower installed, you can do so by following the <a href="http://bower.io/#install-bower">instructions here</a>. Once you have Bower installed, it&#8217;s very easy to install the ArcGIS API for JavaScript into your application with the following terminal command.</p>
+<p><code>bower install --save arcgis-js-api</code></p>
+<p>This will install the ArcGIS API for JavaScript into a directory called <em>bower_components</em> and you can start working with it in your application.</p>
+<h1>What are the drawbacks?</h1>
+<ul>
+<li>You have to host the API yourself.</li>
+<li>Longer than normal startup times.</li>
+<li>Need to learn about how to build AMD projects.</li>
+</ul>
+<p>The CDN version (Esri hosted using a Content Delivery Network) has its advantages in that you do not have to host the API yourself. This may or may not be an issue for your development workflow.</p>
+<p>The ArcGIS API for JavaScript is a large library with lots of modules to meet a variety of needs. While developing your application this can lead to longer than normal startup times as each individual module is loaded. This is however only an issue during the development process. AMD projects are meant to be run through a build process and once you do build your application, it will be highly optimized and load a minimial amount of files.</p>
+<p>When you have completed developing your application and you are ready to deploy a release build, you will need to get familiar the build process. We recommend using the <a href="https://dojotoolkit.org/documentation/tutorials/1.10/build/">Dojo build tools</a> to optimize your applications. You can however use the <a href="http://requirejs.org/docs/optimization.html">RequireJS Optimizer</a> to build your applications.</p>
+<p>We have provided build examples for both <a href="https://github.com/Esri/jsapi-resources/tree/master/bower/dojo">Dojo</a> and <a href="https://github.com/Esri/jsapi-resources/tree/master/bower/requirejs">RequireJS</a>.</p>
+<p>More detailed documentation will be available as part of the 3.15 release of the ArcGIS API for JavaScript in a few weeks.</p>
+<h1>Is Bower right for me?</h1>
+<p>The Bower package of the ArcGIS API for JavaScript is meant to compliment the other channels for the API, via the <a href="https://developers.arcgis.com/javascript/jshelp/intro_accessapi.html#cdn">CDN</a> or the <a href="https://developers.arcgis.com/en/downloads/">download to locally host it</a>. It is also not a replacement for the online <a href="https://developers.arcgis.com/javascript/jshelp/inside_web_optimizer.html">JavaScript Optimizer</a>.<br />
+The JavaScript Optimizer provides you various methods to create an opimized build of the ArcGIS API for JavaScript for use with your specific application. The Bower package is for developers that want to integrate the build process into their current development workflows.</p>
+<p>If you are currently using tools like <a href="http://gruntjs.com/">Grunt</a> or <a href="http://gulpjs.com/">Gulp</a> to write your applications, you will find the Bower package useful.</p>
+<h1>Summary</h1>
+<p>If you are comfortable with the CDN, locally hosting the API, or using the JavaScript Optimizer there is no reason for you to change your workflow.</p>
+<p>If you have had a <em>deep desire</em> to get your hands dirty and integrate the ArcGIS API for JavaScript into your current build steps, then the Bower package may be just right for you.</p>
+<p>Enjoy and build great things.</p>
+<p><em>Contributed by <a href="https://twitter.com/odoenet">Rene Rubalcava</a>.</em></p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/LbNXAVYIC90" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:109:"http://blogs.esri.com/esri/arcgis/2015/11/13/using-bower-for-custom-builds-of-arcgis-api-for-javascript/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:104:"http://blogs.esri.com/esri/arcgis/2015/11/13/using-bower-for-custom-builds-of-arcgis-api-for-javascript/";}s:7:"summary";s:431:"Esri recently released a Bower package to enable local custom builds of the API. The advantage of using a custom build is that your application downloads and parses only the required JavaScript resources which will make your application load faster. &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/13/using-bower-for-custom-builds-of-arcgis-api-for-javascript/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:4894:"<p><img class="alignnone size-medium wp-image-56319" src="http://blogs.esri.com/esri/arcgis/files/2015/11/esri-and-bower-300x150.png" alt="" width="200" height="100" /></p>
+<p>Esri recently released a <a href="https://github.com/Esri/arcgis-js-api">Bower package</a> to enable local custom builds of the API. The advantage of using a custom build is that your application downloads and parses only the required JavaScript resources which will make your application load faster. The Bower package can be used in conjunction with other JavaScript tools like <a href="http://gruntjs.com/">Grunt</a> to do optimized builds of your applications.</p>
+<p><span id="more-56314"></span></p>
+<h1>How does it work?</h1>
+<p><a href="http://bower.io/">Bower</a> is a front-end package manager for your JavaScript projects. It allows you to download JavaScript packages that you can use in developing your applications. You can see examples of how to do optimized local builds in <a href="https://github.com/Esri/jsapi-resources/tree/master/bower">this resources project</a> that demonstrates how to do builds with <a href="http://dojotoolkit.org/">Dojo</a> or <a href="http://requirejs.org/">RequireJS</a>.</p>
+<p>If you don&#8217;t have Bower installed, you can do so by following the <a href="http://bower.io/#install-bower">instructions here</a>. Once you have Bower installed, it&#8217;s very easy to install the ArcGIS API for JavaScript into your application with the following terminal command.</p>
+<p><code>bower install --save arcgis-js-api</code></p>
+<p>This will install the ArcGIS API for JavaScript into a directory called <em>bower_components</em> and you can start working with it in your application.</p>
+<h1>What are the drawbacks?</h1>
+<ul>
+<li>You have to host the API yourself.</li>
+<li>Longer than normal startup times.</li>
+<li>Need to learn about how to build AMD projects.</li>
+</ul>
+<p>The CDN version (Esri hosted using a Content Delivery Network) has its advantages in that you do not have to host the API yourself. This may or may not be an issue for your development workflow.</p>
+<p>The ArcGIS API for JavaScript is a large library with lots of modules to meet a variety of needs. While developing your application this can lead to longer than normal startup times as each individual module is loaded. This is however only an issue during the development process. AMD projects are meant to be run through a build process and once you do build your application, it will be highly optimized and load a minimial amount of files.</p>
+<p>When you have completed developing your application and you are ready to deploy a release build, you will need to get familiar the build process. We recommend using the <a href="https://dojotoolkit.org/documentation/tutorials/1.10/build/">Dojo build tools</a> to optimize your applications. You can however use the <a href="http://requirejs.org/docs/optimization.html">RequireJS Optimizer</a> to build your applications.</p>
+<p>We have provided build examples for both <a href="https://github.com/Esri/jsapi-resources/tree/master/bower/dojo">Dojo</a> and <a href="https://github.com/Esri/jsapi-resources/tree/master/bower/requirejs">RequireJS</a>.</p>
+<p>More detailed documentation will be available as part of the 3.15 release of the ArcGIS API for JavaScript in a few weeks.</p>
+<h1>Is Bower right for me?</h1>
+<p>The Bower package of the ArcGIS API for JavaScript is meant to compliment the other channels for the API, via the <a href="https://developers.arcgis.com/javascript/jshelp/intro_accessapi.html#cdn">CDN</a> or the <a href="https://developers.arcgis.com/en/downloads/">download to locally host it</a>. It is also not a replacement for the online <a href="https://developers.arcgis.com/javascript/jshelp/inside_web_optimizer.html">JavaScript Optimizer</a>.<br />
+The JavaScript Optimizer provides you various methods to create an opimized build of the ArcGIS API for JavaScript for use with your specific application. The Bower package is for developers that want to integrate the build process into their current development workflows.</p>
+<p>If you are currently using tools like <a href="http://gruntjs.com/">Grunt</a> or <a href="http://gulpjs.com/">Gulp</a> to write your applications, you will find the Bower package useful.</p>
+<h1>Summary</h1>
+<p>If you are comfortable with the CDN, locally hosting the API, or using the JavaScript Optimizer there is no reason for you to change your workflow.</p>
+<p>If you have had a <em>deep desire</em> to get your hands dirty and integrate the ArcGIS API for JavaScript into your current build steps, then the Bower package may be just right for you.</p>
+<p>Enjoy and build great things.</p>
+<p><em>Contributed by <a href="https://twitter.com/odoenet">Rene Rubalcava</a>.</em></p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/LbNXAVYIC90" height="1" width="1" alt=""/>";}i:1;a:14:{s:5:"title";s:27:"CityEngine 2015.2 released!";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/d-4LqLYK1Ss/";s:8:"comments";s:60:"http://blogs.esri.com/esri/arcgis/2015/11/13/56227/#comments";s:7:"pubdate";s:31:"Fri, 13 Nov 2015 13:37:06 +0000";s:2:"dc";a:1:{s:7:"creator";s:11:"Matt Miller";}s:8:"category";s:56:"3D GIS3DCity ModelingCityEngineNew ReleaseUrban Planning";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56227";s:11:"description";s:413:"Introducing Esri CityEngine 2015.2! In this minor release, we present some enhancements such as Reporting Dashboards, improved KML and WGS84 support, better RenderMan export, and many others.  See the release notes for full details. Reporting Dashboards With reporting in CityEngine, &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/13/56227/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:3026:"<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-RenderMan-Export-Upgrades.jpg"><img class="alignnone size-full wp-image-56265 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-RenderMan-Export-Upgrades.jpg" alt="RenderMan export upgrade" width="600" height="337" /></a></p>
+<p>Introducing Esri CityEngine 2015.2! In this minor release, we present some enhancements such as Reporting Dashboards, improved KML and WGS84 support, better RenderMan export, and many others.  See the <a href="http://desktop.arcgis.com/en/cityengine/latest/get-started/cityengine-release-notes.htm">release notes</a> for full details.</p>
+<h1>Reporting Dashboards</h1>
+<p>With reporting in CityEngine, it is critical to see the necessary information about your scene in a concise manner for analysis and decision-making.  With this release, we present Reporting Dashboards.  With the new Dashboard window, you can quickly and easily understand key metrics of your project through compelling and dynamic visualization tools.</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-Introducing-Reporting-Dashboards.jpg"><img class="alignnone size-full wp-image-56267 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-Introducing-Reporting-Dashboards.jpg" alt="Reporting Dashboard" width="600" height="360" /></a></p>
+<h1>KML and WGS84 support</h1>
+<p>We’ve also improved KML and WGS84 support by enhancing the precision of the KML exporter with more stable WGS84 re-projection. In addition, CityEngine’s overall handling of projections is more accurate.</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-KML-WGS84-Improvements-e.g.-for-upcoming-ArcGIS-Earth.jpg"><img class="alignnone size-full wp-image-56264 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-KML-WGS84-Improvements-e.g.-for-upcoming-ArcGIS-Earth.jpg" alt="KML and WGS84 support" width="600" height="337" /></a></p>
+<h1><strong>New look</strong></h1>
+<p>You also probably noticed that something looks different on our website. Well, yes, with the release of CityEngine 2015.2, we&#8217;ve updated our look. With clearer structure, additional social and community links, and easier to find assets such as tutorials, videos, and software help, we think you’ll find the experience of our resource pages even more enjoyable.</p>
+<p>Visit <a href="http://desktop.arcgis.com/en/cityengine/">http://desktop.arcgis.com/en/cityengine/</a> to see for yourself.</p>
+<p>Upgrade to CityEngine 2015.2. at <a href="https://accounts.esri.com/">My Esri</a> or if you are new to CityEngine, try it now with a fully functional <a href="http://www.esri.com/software/cityengine">free trial version</a>.</p>
+<p>-Your CityEngine team</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/d-4LqLYK1Ss" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:56:"http://blogs.esri.com/esri/arcgis/2015/11/13/56227/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:51:"http://blogs.esri.com/esri/arcgis/2015/11/13/56227/";}s:7:"summary";s:413:"Introducing Esri CityEngine 2015.2! In this minor release, we present some enhancements such as Reporting Dashboards, improved KML and WGS84 support, better RenderMan export, and many others.  See the release notes for full details. Reporting Dashboards With reporting in CityEngine, &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/13/56227/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:3026:"<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-RenderMan-Export-Upgrades.jpg"><img class="alignnone size-full wp-image-56265 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-RenderMan-Export-Upgrades.jpg" alt="RenderMan export upgrade" width="600" height="337" /></a></p>
+<p>Introducing Esri CityEngine 2015.2! In this minor release, we present some enhancements such as Reporting Dashboards, improved KML and WGS84 support, better RenderMan export, and many others.  See the <a href="http://desktop.arcgis.com/en/cityengine/latest/get-started/cityengine-release-notes.htm">release notes</a> for full details.</p>
+<h1>Reporting Dashboards</h1>
+<p>With reporting in CityEngine, it is critical to see the necessary information about your scene in a concise manner for analysis and decision-making.  With this release, we present Reporting Dashboards.  With the new Dashboard window, you can quickly and easily understand key metrics of your project through compelling and dynamic visualization tools.</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-Introducing-Reporting-Dashboards.jpg"><img class="alignnone size-full wp-image-56267 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-Introducing-Reporting-Dashboards.jpg" alt="Reporting Dashboard" width="600" height="360" /></a></p>
+<h1>KML and WGS84 support</h1>
+<p>We’ve also improved KML and WGS84 support by enhancing the precision of the KML exporter with more stable WGS84 re-projection. In addition, CityEngine’s overall handling of projections is more accurate.</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-KML-WGS84-Improvements-e.g.-for-upcoming-ArcGIS-Earth.jpg"><img class="alignnone size-full wp-image-56264 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/CityEngine-2015.2-Released-KML-WGS84-Improvements-e.g.-for-upcoming-ArcGIS-Earth.jpg" alt="KML and WGS84 support" width="600" height="337" /></a></p>
+<h1><strong>New look</strong></h1>
+<p>You also probably noticed that something looks different on our website. Well, yes, with the release of CityEngine 2015.2, we&#8217;ve updated our look. With clearer structure, additional social and community links, and easier to find assets such as tutorials, videos, and software help, we think you’ll find the experience of our resource pages even more enjoyable.</p>
+<p>Visit <a href="http://desktop.arcgis.com/en/cityengine/">http://desktop.arcgis.com/en/cityengine/</a> to see for yourself.</p>
+<p>Upgrade to CityEngine 2015.2. at <a href="https://accounts.esri.com/">My Esri</a> or if you are new to CityEngine, try it now with a fully functional <a href="http://www.esri.com/software/cityengine">free trial version</a>.</p>
+<p>-Your CityEngine team</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/d-4LqLYK1Ss" height="1" width="1" alt=""/>";}i:2;a:14:{s:5:"title";s:60:"New Ocean Content Available in the Living Atlas of the World";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/TgqhCQuGJ8s/";s:8:"comments";s:115:"http://blogs.esri.com/esri/arcgis/2015/11/12/new-ocean-content-available-in-the-living-atlas-of-the-world/#comments";s:7:"pubdate";s:31:"Thu, 12 Nov 2015 23:44:27 +0000";s:2:"dc";a:1:{s:7:"creator";s:20:"Keith VanGraafeiland";}s:8:"category";s:131:"Analysis & GeoprocessingImageryOceans & MaritimeSciencesUncategorizedLiving AtlasLiving Atlas of the WorldOceansOceans and Maritime";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56253";s:11:"description";s:437:"Description As part of ArcGIS Online, Esri’s Ocean Content supports a vast GIS community. Thank You to our Contributors and Partners who help support the Living Atlas of the World by providing data and enriching these amazing resources. Oceans content &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/12/new-ocean-content-available-in-the-living-atlas-of-the-world/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:4485:"<h2>Description</h2>
+<p>As part of ArcGIS Online, Esri’s Ocean Content supports a vast GIS community. Thank You to our Contributors and Partners who help support the Living Atlas of the World by providing data and enriching these amazing resources.</p>
+<p>Oceans content is one of the many themes of data available within the Living Atlas of the World.  Last month Esri released nine new data layers expanding our curated collection of ready-to-use map layers.</p>
+<p>New Ocean content associated with this release:</p>
+<ul>
+<li><a href="http://www.arcgis.com/home/item.html?id=cfa36856878e48abbe4b7ac1d16ccfa4">Sea Surface Temperature</a> (Multi-Dimensional Time enabled)</li>
+<li><a href="/Box%20Sync/Living%20Atlas/Blogs/arcgis.com/home/item.html?id=3cfd4e7416ee4322af733f6ae75e31ea">Arctic Sea Surface Temperature</a> (projected for use with the Arctic Ocean Base Map)</li>
+<li><a href="http://www.arcgis.com/home/item.html?id=d742a2904d864517870a9baa4016d394">Distance from Shore</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=73f6b63e5a254672811c8c7a7590d342">Seafloor Aragonite</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=90541d47af85430792e80b1524e0535e">Seafloor Bathymetry</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=081e15780e2c412ba132325efd16c16e">Seafloor Dissolved Oxygen</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=0c4e280010354e9e93df72b769d3e3f9">Seafloor Salinity</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=7d429a2a74634e528e6f715c343f0167">Seafloor Silicate</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=d8f93d56b48b443994476f851e24edd8">Seafloor Temperature</a></li>
+</ul>
+<div id="attachment_56256" class="wp-caption alignnone" style="width: 985px"><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/BLOG_001_Photo_01.png"><img class="size-full wp-image-56256" src="http://blogs.esri.com/esri/arcgis/files/2015/11/BLOG_001_Photo_01.png" alt="" width="975" height="595" /></a><p class="wp-caption-text">Living Atlas Ocean Content</p></div>
+<p>Each one of these resources are global in coverage and hosted as image services to provide full functionality throughout the ArcGIS Platform.  These services do require an ArcGIS Online log-in but do not utilize credits.  You can connect directly to these services in ArcGIS Desktop or these services can be used in web and mobile applications.</p>
+<p>Some use-case examples of these datasets include:</p>
+<ul>
+<li>Deriving seafloor slope by accessing the Seafloor Bathymetry image service in ArcGIS Desktop and preforming Spatial Analysis Tools \ Surface \ Slope geoprocessing.</li>
+<li>Generating contours from the Distance from Shore image service in ArcGIS Desktop by preforming 3D Analyst Tools \ Raster Surface \ Contour geoprocessing.</li>
+<li>Obtaining seafloor temperatures for bottom fishing locations by accessing the Seafloor Temperature image service in ArcGIS Desktop and preforming Spatial Analysis Tools \ Extraction \ Extract Values to Points geoprocessing.</li>
+</ul>
+<p><span style="color: #000000;font-size: 1.8em;line-height: 1.5em">Living Atlas Community</span></p>
+<ul>
+<li>How do I Use? Combine content from the Living Atlas with your own data. <a href="http://doc.arcgis.com/en/living-atlas/use/use-the-living-atlas.htm">Create powerful new maps and applications!</a></li>
+<li>How do I contribute? Join the growing community of Living Atlas of the World contributors. <a href="http://doc.arcgis.com/en/living-atlas/contribute/contribute-to-the-living-atlas.htm">There are two ways to contribute</a>!</li>
+<li>Learn more about the ready-to-use content that is available in the <a href="http://livingatlas.arcgis.com/">Living Atlas of the World</a>, including how you can contribute your maps and data.</li>
+<li><a href="http://blogs.esri.com/esri/arcgis/2015/09/22/use-living-atlas-image-services-in-your-desktop-analysis/">Use Living Atlas Image Services in Your Desktop Analysis blog post</a></li>
+</ul>
+<h2>Useful Links</h2>
+<ul>
+<li><a href="http://blogs.esri.com/esri/arcgis/2015/09/22/use-living-atlas-image-services-in-your-desktop-analysis/">Use Living Atlas Image Services in Your Desktop Analysis blog post</a></li>
+<li><a href="http://www.arcgis.com/home/gallery.html#c=esri&amp;t=maps&amp;o=modified&amp;f=landscape-oceans">Living Atlas Oceans Gallery</a></li>
+</ul>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/TgqhCQuGJ8s" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:111:"http://blogs.esri.com/esri/arcgis/2015/11/12/new-ocean-content-available-in-the-living-atlas-of-the-world/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:106:"http://blogs.esri.com/esri/arcgis/2015/11/12/new-ocean-content-available-in-the-living-atlas-of-the-world/";}s:7:"summary";s:437:"Description As part of ArcGIS Online, Esri’s Ocean Content supports a vast GIS community. Thank You to our Contributors and Partners who help support the Living Atlas of the World by providing data and enriching these amazing resources. Oceans content &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/12/new-ocean-content-available-in-the-living-atlas-of-the-world/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:4485:"<h2>Description</h2>
+<p>As part of ArcGIS Online, Esri’s Ocean Content supports a vast GIS community. Thank You to our Contributors and Partners who help support the Living Atlas of the World by providing data and enriching these amazing resources.</p>
+<p>Oceans content is one of the many themes of data available within the Living Atlas of the World.  Last month Esri released nine new data layers expanding our curated collection of ready-to-use map layers.</p>
+<p>New Ocean content associated with this release:</p>
+<ul>
+<li><a href="http://www.arcgis.com/home/item.html?id=cfa36856878e48abbe4b7ac1d16ccfa4">Sea Surface Temperature</a> (Multi-Dimensional Time enabled)</li>
+<li><a href="/Box%20Sync/Living%20Atlas/Blogs/arcgis.com/home/item.html?id=3cfd4e7416ee4322af733f6ae75e31ea">Arctic Sea Surface Temperature</a> (projected for use with the Arctic Ocean Base Map)</li>
+<li><a href="http://www.arcgis.com/home/item.html?id=d742a2904d864517870a9baa4016d394">Distance from Shore</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=73f6b63e5a254672811c8c7a7590d342">Seafloor Aragonite</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=90541d47af85430792e80b1524e0535e">Seafloor Bathymetry</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=081e15780e2c412ba132325efd16c16e">Seafloor Dissolved Oxygen</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=0c4e280010354e9e93df72b769d3e3f9">Seafloor Salinity</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=7d429a2a74634e528e6f715c343f0167">Seafloor Silicate</a></li>
+<li><a href="http://www.arcgis.com/home/item.html?id=d8f93d56b48b443994476f851e24edd8">Seafloor Temperature</a></li>
+</ul>
+<div id="attachment_56256" class="wp-caption alignnone" style="width: 985px"><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/BLOG_001_Photo_01.png"><img class="size-full wp-image-56256" src="http://blogs.esri.com/esri/arcgis/files/2015/11/BLOG_001_Photo_01.png" alt="" width="975" height="595" /></a><p class="wp-caption-text">Living Atlas Ocean Content</p></div>
+<p>Each one of these resources are global in coverage and hosted as image services to provide full functionality throughout the ArcGIS Platform.  These services do require an ArcGIS Online log-in but do not utilize credits.  You can connect directly to these services in ArcGIS Desktop or these services can be used in web and mobile applications.</p>
+<p>Some use-case examples of these datasets include:</p>
+<ul>
+<li>Deriving seafloor slope by accessing the Seafloor Bathymetry image service in ArcGIS Desktop and preforming Spatial Analysis Tools \ Surface \ Slope geoprocessing.</li>
+<li>Generating contours from the Distance from Shore image service in ArcGIS Desktop by preforming 3D Analyst Tools \ Raster Surface \ Contour geoprocessing.</li>
+<li>Obtaining seafloor temperatures for bottom fishing locations by accessing the Seafloor Temperature image service in ArcGIS Desktop and preforming Spatial Analysis Tools \ Extraction \ Extract Values to Points geoprocessing.</li>
+</ul>
+<p><span style="color: #000000;font-size: 1.8em;line-height: 1.5em">Living Atlas Community</span></p>
+<ul>
+<li>How do I Use? Combine content from the Living Atlas with your own data. <a href="http://doc.arcgis.com/en/living-atlas/use/use-the-living-atlas.htm">Create powerful new maps and applications!</a></li>
+<li>How do I contribute? Join the growing community of Living Atlas of the World contributors. <a href="http://doc.arcgis.com/en/living-atlas/contribute/contribute-to-the-living-atlas.htm">There are two ways to contribute</a>!</li>
+<li>Learn more about the ready-to-use content that is available in the <a href="http://livingatlas.arcgis.com/">Living Atlas of the World</a>, including how you can contribute your maps and data.</li>
+<li><a href="http://blogs.esri.com/esri/arcgis/2015/09/22/use-living-atlas-image-services-in-your-desktop-analysis/">Use Living Atlas Image Services in Your Desktop Analysis blog post</a></li>
+</ul>
+<h2>Useful Links</h2>
+<ul>
+<li><a href="http://blogs.esri.com/esri/arcgis/2015/09/22/use-living-atlas-image-services-in-your-desktop-analysis/">Use Living Atlas Image Services in Your Desktop Analysis blog post</a></li>
+<li><a href="http://www.arcgis.com/home/gallery.html#c=esri&amp;t=maps&amp;o=modified&amp;f=landscape-oceans">Living Atlas Oceans Gallery</a></li>
+</ul>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/TgqhCQuGJ8s" height="1" width="1" alt=""/>";}i:3;a:14:{s:5:"title";s:57:"What’s New in Web AppBuilder for ArcGIS (November 2015)";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/36v8TqTapJY/";s:8:"comments";s:133:"http://blogs.esri.com/esri/arcgis/2015/11/12/whats-coming-in-web-appbuilder-for-arcgis-in-the-arcgis-online-november-update/#comments";s:7:"pubdate";s:31:"Thu, 12 Nov 2015 17:11:27 +0000";s:2:"dc";a:1:{s:7:"creator";s:3:"Law";}s:8:"category";s:233:"App DevelopersAppsArcGIS for ServerArcGIS OnlinePortal for ArcGISWebArcGIS API for JavaScriptArcGIS Developer CommunityArcGIS Developers blogJavaScriptWeb AppBuilderWeb AppBuilder for ArcGISWeb AppBuilder for ArcGIS Developer Edition";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56231";s:11:"description";s:457:"Chicago Black Hawks &#8211; Hockey. FC Barcelona and the US National Women’s Team &#8211; Soccer. Kansas City Royals &#8211; Baseball. The All Blacks &#8211; Rugby. (Note: All team logos in the graphic above are trademarked and owned by their respective &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/12/whats-coming-in-web-appbuilder-for-arcgis-in-the-arcgis-online-november-update/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:4684:"<p>Chicago Black Hawks &#8211; Hockey. FC Barcelona and the US National Women’s Team &#8211; Soccer. Kansas City Royals &#8211; Baseball. The All Blacks &#8211; Rugby.<span id="more-56231"></span></p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/WinningTeams.jpg"><img class="alignnone size-full wp-image-56238 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/WinningTeams.jpg" alt="Championship Teams" width="899" height="199" /></a></p>
+<p>(<em>Note: All team logos in the graphic above are trademarked and owned by their respective organizations</em>.)</p>
+<p>What do these sport teams have in common? In 2015, they all achieved success through teamwork. Teamwork is a fundamental component of success for many organizations and businesses. Esri is no different.</p>
+<p>This Web AppBuilder for ArcGIS update includes contributions from several other Esri development teams (Data Reviewer, Imagery, and Solutions) reinforcing and promoting the idea of teamwork. They have helped contribute their expertise for some exciting new widgets in this release.</p>
+<p><strong>4 new widgets</strong></p>
+<ul>
+<li>Feature Report widget &#8211; This widget leverages the data validation capabilities of the <a href="http://www.esri.com/software/arcgis/arcgisserver/extensions/data-reviewer">ArcGIS Data Reviewer for Server extension</a> to “redline” features that are missing, miscoded, or incorrectly positioned. It enables you to collect and manage data quality feedback from users.</li>
+<li>Reviewer Dashboard widget – This widget works with the reporting capabilities of the <a href="http://www.esri.com/software/arcgis/arcgisserver/extensions/data-reviewer">ArcGIS Data Reviewer for Server extension</a>. It displays data quality result statistics as infographics and &#8216;pie and bar charts&#8217; to summarize data quality issues identified in your GIS data.</li>
+</ul>
+<p>Learn more about both these widgets in this blog post: <a href="http://blogs.esri.com/esri/arcgis/2015/10/29/now-available-on-github-data-reviewer-widgets-for-web-appbuilder-for-arcgis/">Data Reviewer Widgets for Web AppBuilder for ArcGIS</a>. Both widgets are already available as <a href="https://github.com/Esri/datareviewer-webappbuilder-widgets">Dev samples on GitHub</a> for Web AppBuilder for ArcGIS Developer Edition v1.2, but will be part of Web AppBuilder embedded in ArcGIS Online soon!</p>
+<ul>
+<li>Image Measurement widget &#8211; Allows you to perform measurements on image services with mensuration capability. Mensuration is a method of applying geometric rules to find the lengths of lines, areas of surfaces, or volumes using information obtained from lines and angles.</li>
+<li>Batch Attribute Editor widget &#8211; Enables you to select multiple features and update common attributes at once.</li>
+</ul>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/WidgetScreenShots.jpg"><img class="alignnone size-full wp-image-56247" src="http://blogs.esri.com/esri/arcgis/files/2015/11/WidgetScreenShots.jpg" alt="WidgetScreenShots" width="982" height="334" /></a></p>
+<p><strong>Other enhancements</strong><br />
+Some additional enhancements to Web AppBuilder for ArcGIS include:</p>
+<ul>
+<li>Apps created with Web AppBuilder can be modified with URL parameters. This release adds support for 6 new URL parameters that enable you to find a location or a feature, authenticate users, query features, add a point on the map, switch locale, and specify WKID to zoom or pan the map.</li>
+<li>The ability to save app state, including map extent and layer visibility, is now automatically saved when you close your web browser.</li>
+<li>The Print widget supports custom text elements as layout metadata.</li>
+<li>The Search widget has options to add placeholder text for all search sources and can search the current map extent.</li>
+<li>The Attribute Table widget updates layers accordingly when they are changed in the map.</li>
+<li>The Edit widget now carries over the editable attributes configured in the map.</li>
+</ul>
+<p>One last news item: the core Web AppBuilder Dev team have been very busy working on enabling some exciting new functionality. The picture below is a hint at what we are working on:</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/3DGlasses.jpg"><img class="alignnone  wp-image-56241 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/3DGlasses.jpg" alt="3DGlasses" width="203" height="114" /></a></p>
+<p>Any guesses?</p>
+<p>Sincerely,<br />
+The Web AppBuilder for ArcGIS Dev team</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/36v8TqTapJY" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:129:"http://blogs.esri.com/esri/arcgis/2015/11/12/whats-coming-in-web-appbuilder-for-arcgis-in-the-arcgis-online-november-update/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"2";}s:10:"feedburner";a:1:{s:8:"origlink";s:124:"http://blogs.esri.com/esri/arcgis/2015/11/12/whats-coming-in-web-appbuilder-for-arcgis-in-the-arcgis-online-november-update/";}s:7:"summary";s:457:"Chicago Black Hawks &#8211; Hockey. FC Barcelona and the US National Women’s Team &#8211; Soccer. Kansas City Royals &#8211; Baseball. The All Blacks &#8211; Rugby. (Note: All team logos in the graphic above are trademarked and owned by their respective &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/12/whats-coming-in-web-appbuilder-for-arcgis-in-the-arcgis-online-november-update/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:4684:"<p>Chicago Black Hawks &#8211; Hockey. FC Barcelona and the US National Women’s Team &#8211; Soccer. Kansas City Royals &#8211; Baseball. The All Blacks &#8211; Rugby.<span id="more-56231"></span></p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/WinningTeams.jpg"><img class="alignnone size-full wp-image-56238 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/WinningTeams.jpg" alt="Championship Teams" width="899" height="199" /></a></p>
+<p>(<em>Note: All team logos in the graphic above are trademarked and owned by their respective organizations</em>.)</p>
+<p>What do these sport teams have in common? In 2015, they all achieved success through teamwork. Teamwork is a fundamental component of success for many organizations and businesses. Esri is no different.</p>
+<p>This Web AppBuilder for ArcGIS update includes contributions from several other Esri development teams (Data Reviewer, Imagery, and Solutions) reinforcing and promoting the idea of teamwork. They have helped contribute their expertise for some exciting new widgets in this release.</p>
+<p><strong>4 new widgets</strong></p>
+<ul>
+<li>Feature Report widget &#8211; This widget leverages the data validation capabilities of the <a href="http://www.esri.com/software/arcgis/arcgisserver/extensions/data-reviewer">ArcGIS Data Reviewer for Server extension</a> to “redline” features that are missing, miscoded, or incorrectly positioned. It enables you to collect and manage data quality feedback from users.</li>
+<li>Reviewer Dashboard widget – This widget works with the reporting capabilities of the <a href="http://www.esri.com/software/arcgis/arcgisserver/extensions/data-reviewer">ArcGIS Data Reviewer for Server extension</a>. It displays data quality result statistics as infographics and &#8216;pie and bar charts&#8217; to summarize data quality issues identified in your GIS data.</li>
+</ul>
+<p>Learn more about both these widgets in this blog post: <a href="http://blogs.esri.com/esri/arcgis/2015/10/29/now-available-on-github-data-reviewer-widgets-for-web-appbuilder-for-arcgis/">Data Reviewer Widgets for Web AppBuilder for ArcGIS</a>. Both widgets are already available as <a href="https://github.com/Esri/datareviewer-webappbuilder-widgets">Dev samples on GitHub</a> for Web AppBuilder for ArcGIS Developer Edition v1.2, but will be part of Web AppBuilder embedded in ArcGIS Online soon!</p>
+<ul>
+<li>Image Measurement widget &#8211; Allows you to perform measurements on image services with mensuration capability. Mensuration is a method of applying geometric rules to find the lengths of lines, areas of surfaces, or volumes using information obtained from lines and angles.</li>
+<li>Batch Attribute Editor widget &#8211; Enables you to select multiple features and update common attributes at once.</li>
+</ul>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/WidgetScreenShots.jpg"><img class="alignnone size-full wp-image-56247" src="http://blogs.esri.com/esri/arcgis/files/2015/11/WidgetScreenShots.jpg" alt="WidgetScreenShots" width="982" height="334" /></a></p>
+<p><strong>Other enhancements</strong><br />
+Some additional enhancements to Web AppBuilder for ArcGIS include:</p>
+<ul>
+<li>Apps created with Web AppBuilder can be modified with URL parameters. This release adds support for 6 new URL parameters that enable you to find a location or a feature, authenticate users, query features, add a point on the map, switch locale, and specify WKID to zoom or pan the map.</li>
+<li>The ability to save app state, including map extent and layer visibility, is now automatically saved when you close your web browser.</li>
+<li>The Print widget supports custom text elements as layout metadata.</li>
+<li>The Search widget has options to add placeholder text for all search sources and can search the current map extent.</li>
+<li>The Attribute Table widget updates layers accordingly when they are changed in the map.</li>
+<li>The Edit widget now carries over the editable attributes configured in the map.</li>
+</ul>
+<p>One last news item: the core Web AppBuilder Dev team have been very busy working on enabling some exciting new functionality. The picture below is a hint at what we are working on:</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/3DGlasses.jpg"><img class="alignnone  wp-image-56241 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/3DGlasses.jpg" alt="3DGlasses" width="203" height="114" /></a></p>
+<p>Any guesses?</p>
+<p>Sincerely,<br />
+The Web AppBuilder for ArcGIS Dev team</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/36v8TqTapJY" height="1" width="1" alt=""/>";}i:4;a:14:{s:5:"title";s:48:"Community Analyst – What’s coming (Nov 2015)";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/JAcBIIIMhWQ/";s:8:"comments";s:94:"http://blogs.esri.com/esri/arcgis/2015/11/11/community-analyst-whats-coming-nov-2015/#comments";s:7:"pubdate";s:31:"Thu, 12 Nov 2015 01:00:17 +0000";s:2:"dc";a:1:{s:7:"creator";s:11:"Lucy Guerra";}s:8:"category";s:152:"Local GovernmentLocation AnalyticsState GovernmentCommunity Analystdemographicsglobal contentTapestrytrafficwalk timeswhat's newwhat's new november 2015";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56201";s:11:"description";s:407:"Community Analyst is about to get an update! Later this month, Esri will be releasing several enhancements as well as demographic content updates. Here are some of those updates: Create areas using Walk Time or Distance. Walk times follow paths &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/11/community-analyst-whats-coming-nov-2015/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:3361:"<h1>Community Analyst is about to get an update!</h1>
+<h3>Later this month, Esri will be releasing several enhancements as well as demographic content updates. <span id="more-56201"></span></h3>
+<h3>Here are some of those updates:</h3>
+<ul>
+<li>Create areas using Walk Time or Distance.</li>
+</ul>
+<p>Walk times follow paths and roads that allow pedestrian traffic. Walking speed is set to 5 km per hour.<br />
+<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51walktimes.png" alt="" width="540" height="458" /></p>
+<ul>
+<li>Create drive time areas with live or historical traffic.</li>
+</ul>
+<p>The Live Traffic option is updated every 5 minutes from live traffic feeds and Historical Traffic can be selected by day and 15 minute increments.</p>
+<ul>
+<li>Create maps with the Dominant Tapestry Segment.</li>
+</ul>
+<p>When creating a Color-Coded Map in the U.S., you can browse and select the 2015 Dominant Tapestry Segment and quickly see socioeconomic and demographic pockets based on the dominant Tapestry segment of neighborhoods.<br />
+<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51tapestry.png" alt="" width="540" height="353" /></p>
+<ul>
+<li>Esri has a new Business Locations/Business Search provider in the U.S. and Canada.</li>
+</ul>
+<p>Infogroup maintains over 15 million active businesses across the U.S. and Canada. Infogroup data will be available in the Business and Facilities Search where you can choose from several new display options including a heat map.<br />
+<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51heatmap.png" alt="" width="508" height="388" /></p>
+<p>Infogroup data will be available in the Business Locator Report.<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocrpt1.png" alt="" width="571" height="333" /></p>
+<p>Infogroup data will be available to Export to Excel.<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsxls.png" alt="" width="572" height="158" /></p>
+<p>Infogroup data will be available to Share to ArcGIS Online.<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsagol.png" alt="" width="564" height="374" /></p>
+<p>While the business locations data in Community Analyst has never been permitted for direct mail or direct marketing purposes, you’ll notice that the street address number is not present when you Export to Excel or Share to ArcGIS Online. This is a restriction from our new data provider.</p>
+<ul>
+<li>Access <a title="2015 Canada Demographic Updates" href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_Canadian_data_from" target="_blank">2015 Canada Demographic Updates</a> as well as <a title="Standard Global Demographic Updates for 45 Countries." href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_45_countries_will" target="_blank">Standard Global Demographic Updates for 45 Countries</a>.</li>
+</ul>
+<ul>
+<li>Import and save a custom symbol or logo.</li>
+</ul>
+<p>Use it to represent sites you create or import as well as business searches.</p>
+<ul>
+<li>Re-order variables in saved lists.</li>
+</ul>
+<p>No more starting over, now you can simply drag and move variables in your lists.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/JAcBIIIMhWQ" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:90:"http://blogs.esri.com/esri/arcgis/2015/11/11/community-analyst-whats-coming-nov-2015/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:85:"http://blogs.esri.com/esri/arcgis/2015/11/11/community-analyst-whats-coming-nov-2015/";}s:7:"summary";s:407:"Community Analyst is about to get an update! Later this month, Esri will be releasing several enhancements as well as demographic content updates. Here are some of those updates: Create areas using Walk Time or Distance. Walk times follow paths &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/11/community-analyst-whats-coming-nov-2015/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:3361:"<h1>Community Analyst is about to get an update!</h1>
+<h3>Later this month, Esri will be releasing several enhancements as well as demographic content updates. <span id="more-56201"></span></h3>
+<h3>Here are some of those updates:</h3>
+<ul>
+<li>Create areas using Walk Time or Distance.</li>
+</ul>
+<p>Walk times follow paths and roads that allow pedestrian traffic. Walking speed is set to 5 km per hour.<br />
+<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51walktimes.png" alt="" width="540" height="458" /></p>
+<ul>
+<li>Create drive time areas with live or historical traffic.</li>
+</ul>
+<p>The Live Traffic option is updated every 5 minutes from live traffic feeds and Historical Traffic can be selected by day and 15 minute increments.</p>
+<ul>
+<li>Create maps with the Dominant Tapestry Segment.</li>
+</ul>
+<p>When creating a Color-Coded Map in the U.S., you can browse and select the 2015 Dominant Tapestry Segment and quickly see socioeconomic and demographic pockets based on the dominant Tapestry segment of neighborhoods.<br />
+<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51tapestry.png" alt="" width="540" height="353" /></p>
+<ul>
+<li>Esri has a new Business Locations/Business Search provider in the U.S. and Canada.</li>
+</ul>
+<p>Infogroup maintains over 15 million active businesses across the U.S. and Canada. Infogroup data will be available in the Business and Facilities Search where you can choose from several new display options including a heat map.<br />
+<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51heatmap.png" alt="" width="508" height="388" /></p>
+<p>Infogroup data will be available in the Business Locator Report.<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocrpt1.png" alt="" width="571" height="333" /></p>
+<p>Infogroup data will be available to Export to Excel.<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsxls.png" alt="" width="572" height="158" /></p>
+<p>Infogroup data will be available to Share to ArcGIS Online.<img src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsagol.png" alt="" width="564" height="374" /></p>
+<p>While the business locations data in Community Analyst has never been permitted for direct mail or direct marketing purposes, you’ll notice that the street address number is not present when you Export to Excel or Share to ArcGIS Online. This is a restriction from our new data provider.</p>
+<ul>
+<li>Access <a title="2015 Canada Demographic Updates" href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_Canadian_data_from" target="_blank">2015 Canada Demographic Updates</a> as well as <a title="Standard Global Demographic Updates for 45 Countries." href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_45_countries_will" target="_blank">Standard Global Demographic Updates for 45 Countries</a>.</li>
+</ul>
+<ul>
+<li>Import and save a custom symbol or logo.</li>
+</ul>
+<p>Use it to represent sites you create or import as well as business searches.</p>
+<ul>
+<li>Re-order variables in saved lists.</li>
+</ul>
+<p>No more starting over, now you can simply drag and move variables in your lists.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/JAcBIIIMhWQ" height="1" width="1" alt=""/>";}i:5;a:14:{s:5:"title";s:51:"Who’s contributing to the Community Maps Program?";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/vdPlxxTsakc/";s:8:"comments";s:102:"http://blogs.esri.com/esri/arcgis/2015/11/11/whos-contributing-to-the-community-maps-program/#comments";s:7:"pubdate";s:31:"Wed, 11 Nov 2015 23:00:24 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"tyoder";}s:8:"category";s:186:"ArcGIS OnlineCommunity MapsLocal GovernmentappArcGIS ContentCommunity Maps contributorscommunity maps programcontributorsLiving AtlasLiving Atlas of the Worldweb mapWorld Topographic map";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56175";s:11:"description";s:432:"Have you ever wondered who’s contributing to the World Topographic Map through the Community Maps Program? See the participation map on our Community Maps contributors web page. The map has recently been improved! It’s now updated daily, as new contributors &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/11/whos-contributing-to-the-community-maps-program/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:1700:"<p><a href="http://community.maps.arcgis.com/apps/MapTools/index.html?appid=59f3b48e649445bea5a3fb34082db56c"><img class="alignleft size-medium wp-image-56183" src="http://blogs.esri.com/esri/arcgis/files/2015/11/UpdatedContributorMap2-300x191.jpg" alt="" width="300" height="191" /></a>Have you ever wondered who’s contributing to the World Topographic Map through the <a href="http://doc.arcgis.com/en/community-maps/">Community Maps Program</a>? See the participation map on our <a href="http://doc.arcgis.com/en/community-maps/participants/map-of-participants.htm">Community Maps contributors web page</a>. The map has recently been improved! It’s now updated daily, as new contributors submit and publish data. You can even identify contributing organizations by clicking on the map. Take a look- there may be one or more contributors in your area! We welcome new members- please <a href="mailto:communitymaps@esri.com">contact us</a> if you would like to join the program.</p>
+<p><span id="more-56175"></span></p>
+<p>The efforts of our contributors help support a vast GIS community. Their vector data becomes part of the <a href="http://www.arcgis.com/home/gallery.html#c=esri&amp;t=maps&amp;o=modified&amp;f=basemaps-esribasemaps">ArcGIS Online basemaps</a> as part of the <a href="http://doc.arcgis.com/en/living-atlas/about/">Living Atlas of the World</a>, and the World Topographic Map alone averaged over one million daily users last year!</p>
+<p><!--more--></p>
+<p>Please send feedback regarding the map to <a href="mailto:communitymaps@esri.com">communitymaps@esri.com</a>.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/vdPlxxTsakc" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:98:"http://blogs.esri.com/esri/arcgis/2015/11/11/whos-contributing-to-the-community-maps-program/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:93:"http://blogs.esri.com/esri/arcgis/2015/11/11/whos-contributing-to-the-community-maps-program/";}s:7:"summary";s:432:"Have you ever wondered who’s contributing to the World Topographic Map through the Community Maps Program? See the participation map on our Community Maps contributors web page. The map has recently been improved! It’s now updated daily, as new contributors &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/11/whos-contributing-to-the-community-maps-program/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:1700:"<p><a href="http://community.maps.arcgis.com/apps/MapTools/index.html?appid=59f3b48e649445bea5a3fb34082db56c"><img class="alignleft size-medium wp-image-56183" src="http://blogs.esri.com/esri/arcgis/files/2015/11/UpdatedContributorMap2-300x191.jpg" alt="" width="300" height="191" /></a>Have you ever wondered who’s contributing to the World Topographic Map through the <a href="http://doc.arcgis.com/en/community-maps/">Community Maps Program</a>? See the participation map on our <a href="http://doc.arcgis.com/en/community-maps/participants/map-of-participants.htm">Community Maps contributors web page</a>. The map has recently been improved! It’s now updated daily, as new contributors submit and publish data. You can even identify contributing organizations by clicking on the map. Take a look- there may be one or more contributors in your area! We welcome new members- please <a href="mailto:communitymaps@esri.com">contact us</a> if you would like to join the program.</p>
+<p><span id="more-56175"></span></p>
+<p>The efforts of our contributors help support a vast GIS community. Their vector data becomes part of the <a href="http://www.arcgis.com/home/gallery.html#c=esri&amp;t=maps&amp;o=modified&amp;f=basemaps-esribasemaps">ArcGIS Online basemaps</a> as part of the <a href="http://doc.arcgis.com/en/living-atlas/about/">Living Atlas of the World</a>, and the World Topographic Map alone averaged over one million daily users last year!</p>
+<p><!--more--></p>
+<p>Please send feedback regarding the map to <a href="mailto:communitymaps@esri.com">communitymaps@esri.com</a>.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/vdPlxxTsakc" height="1" width="1" alt=""/>";}i:6;a:14:{s:5:"title";s:46:"A little more content in ArcGIS Earth 1.0 beta";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/z_LwGpebPjQ/";s:8:"comments";s:101:"http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/#comments";s:7:"pubdate";s:31:"Wed, 11 Nov 2015 19:06:56 +0000";s:2:"dc";a:1:{s:7:"creator";s:13:"Chris Andrews";}s:8:"category";s:49:"3D GISArcGIS Earth3DearthGoogle EarthLiving Atlas";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56193";s:11:"description";s:407:"We&#8217;ve been a bit busy getting ready for &#8220;code complete&#8221; for ArcGIS Earth 1.0.  I&#8217;ve had a few more questions from users about how different types of content can be used in ArcGIS Earth beta and there are a couple &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:3448:"<p>We&#8217;ve been a bit busy getting ready for &#8220;code complete&#8221; for ArcGIS Earth 1.0.  I&#8217;ve had a few more questions from users about how different types of content can be used in ArcGIS Earth beta and there are a couple of nuances that we haven&#8217;t talked about yet.</p>
+<h1>Partner hosted content</h1>
+<p>We have several partners who are already sharing content for trial through ArcGIS Online and we&#8217;ll be encouraging more to participate, especially as we improve the ArcGIS Marketplace next year.  Many of you have seen the <a title="Pictometry" href="http://www.eagleview.com/Products/ImageSolutionsAnalytics/PictometryImagery.aspx" target="_blank">Pictometry</a> San Francisco buildings that were referenced <a href="http://j.mp/EarthBeta3DContent2" target="_blank">in one of my last posts</a>.</p>
+<p>The pattern for partners (or customers) to share 3D and 2D content with their ecosystem is to establish an Organization in ArcGIS Online or in a Portal for ArcGIS Server that is outside a firewall, invite ecosystem participants (customers or partners) to their Organization, and then to share services into that Organization that can only be seen by participants.</p>
+<div id="attachment_56196" class="wp-caption alignnone" style="width: 310px"><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/EarthBetaHonoluluCyberCity2_R.png"><img class="size-medium wp-image-56196 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/EarthBetaHonoluluCyberCity2_R-300x167.png" alt="Earth with CyberCity3D data" width="300" height="167" /></a><p class="wp-caption-text">Earth with CyberCity3D data</p></div>
+<blockquote><p>Note that to share 3D content, such as the 3D building scene layer shown in this example, you&#8217;ll need to publish the content from ArcGIS Pro to an on premises Portal for ArcGIS Server federated with Server (10.3.1 or later).  We are looking at hosting such content in ArcGIS Online in the future.</p></blockquote>
+<h1>Living Atlas Content</h1>
+<p>Some Living Atlas content is not publicly shared and is available only to users with named user accounts (details available elsewhere).  Esri customers and ArcGIS Online trial users can find restricted data layers in ArcGIS Online through ArcGIS Earth and will be prompted to enter their credentials before the data is added to Earth.  Living Atlas content that is limited to named users can include curated and modeled ecological content, world traffic services, weather services, curated imagery services and more.</p>
+<h1>Video demo</h1>
+<p>Here&#8217;s a quick look at working with partner and Living Atlas content in ArcGIS Earth 1.0 beta. In this case, we&#8217;re working with some data provided courtesy of <a title="CyberCity 3D" href="http://www.cybercity3d.com/" target="_blank">CyberCity 3D</a>.</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/"><em>Click here to view the embedded video.</em></a></p>
+<p>If you haven&#8217;t downloaded Earth yet, <a title="ArcGIS Earth 1.0 beta" href="http://j.mp/EAE1Beta">the beta is available here</a>.  Let us know what else we can share to help you learn about ArcGIS Earth!</p>
+<p><img style="background: none;border: 0px" src="http://j.mp/EB1PremiumContentCounter" alt="" width="1" height="1" /></p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/z_LwGpebPjQ" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:97:"http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"1";}s:10:"feedburner";a:1:{s:8:"origlink";s:92:"http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/";}s:7:"summary";s:407:"We&#8217;ve been a bit busy getting ready for &#8220;code complete&#8221; for ArcGIS Earth 1.0.  I&#8217;ve had a few more questions from users about how different types of content can be used in ArcGIS Earth beta and there are a couple &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:3448:"<p>We&#8217;ve been a bit busy getting ready for &#8220;code complete&#8221; for ArcGIS Earth 1.0.  I&#8217;ve had a few more questions from users about how different types of content can be used in ArcGIS Earth beta and there are a couple of nuances that we haven&#8217;t talked about yet.</p>
+<h1>Partner hosted content</h1>
+<p>We have several partners who are already sharing content for trial through ArcGIS Online and we&#8217;ll be encouraging more to participate, especially as we improve the ArcGIS Marketplace next year.  Many of you have seen the <a title="Pictometry" href="http://www.eagleview.com/Products/ImageSolutionsAnalytics/PictometryImagery.aspx" target="_blank">Pictometry</a> San Francisco buildings that were referenced <a href="http://j.mp/EarthBeta3DContent2" target="_blank">in one of my last posts</a>.</p>
+<p>The pattern for partners (or customers) to share 3D and 2D content with their ecosystem is to establish an Organization in ArcGIS Online or in a Portal for ArcGIS Server that is outside a firewall, invite ecosystem participants (customers or partners) to their Organization, and then to share services into that Organization that can only be seen by participants.</p>
+<div id="attachment_56196" class="wp-caption alignnone" style="width: 310px"><a href="http://blogs.esri.com/esri/arcgis/files/2015/11/EarthBetaHonoluluCyberCity2_R.png"><img class="size-medium wp-image-56196 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/EarthBetaHonoluluCyberCity2_R-300x167.png" alt="Earth with CyberCity3D data" width="300" height="167" /></a><p class="wp-caption-text">Earth with CyberCity3D data</p></div>
+<blockquote><p>Note that to share 3D content, such as the 3D building scene layer shown in this example, you&#8217;ll need to publish the content from ArcGIS Pro to an on premises Portal for ArcGIS Server federated with Server (10.3.1 or later).  We are looking at hosting such content in ArcGIS Online in the future.</p></blockquote>
+<h1>Living Atlas Content</h1>
+<p>Some Living Atlas content is not publicly shared and is available only to users with named user accounts (details available elsewhere).  Esri customers and ArcGIS Online trial users can find restricted data layers in ArcGIS Online through ArcGIS Earth and will be prompted to enter their credentials before the data is added to Earth.  Living Atlas content that is limited to named users can include curated and modeled ecological content, world traffic services, weather services, curated imagery services and more.</p>
+<h1>Video demo</h1>
+<p>Here&#8217;s a quick look at working with partner and Living Atlas content in ArcGIS Earth 1.0 beta. In this case, we&#8217;re working with some data provided courtesy of <a title="CyberCity 3D" href="http://www.cybercity3d.com/" target="_blank">CyberCity 3D</a>.</p>
+<p><a href="http://blogs.esri.com/esri/arcgis/2015/11/11/a-little-more-content-in-arcgis-earth-1-0-beta/"><em>Click here to view the embedded video.</em></a></p>
+<p>If you haven&#8217;t downloaded Earth yet, <a title="ArcGIS Earth 1.0 beta" href="http://j.mp/EAE1Beta">the beta is available here</a>.  Let us know what else we can share to help you learn about ArcGIS Earth!</p>
+<p><img style="background: none;border: 0px" src="http://j.mp/EB1PremiumContentCounter" alt="" width="1" height="1" /></p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/z_LwGpebPjQ" height="1" width="1" alt=""/>";}i:7;a:14:{s:5:"title";s:62:"Business Analyst – What’s Coming in the web app (Nov 2015)";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/BwSxVHNi5Qg/";s:8:"comments";s:101:"http://blogs.esri.com/esri/arcgis/2015/11/10/business-analyst-web-app-whats-coming-nov-2015/#comments";s:7:"pubdate";s:31:"Wed, 11 Nov 2015 01:00:03 +0000";s:2:"dc";a:1:{s:7:"creator";s:11:"Lucy Guerra";}s:8:"category";s:123:"Location AnalyticsBA DesktopBA mobile appBA web appBAOBAO Mobilebao-onlyBusiness AnalystBusiness Analyst Onlinedemographics";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56043";s:11:"description";s:418:"The Business Analyst web app is about to get an update! Later this month, Esri will be releasing several enhancements as well as demographic content updates. Here are some of those updates: Esri has a new Business Locations/Business Search provider &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/10/business-analyst-web-app-whats-coming-nov-2015/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:3763:"<h1>The Business Analyst web app is about to get an update!</h1>
+<h3>Later this month, Esri will be releasing several enhancements as well as demographic content updates. <span id="more-56043"></span></h3>
+<h3>Here are some of those updates:</h3>
+<ul>
+<li>Esri has a new Business Locations/Business Search provider in the U.S. and Canada.</li>
+</ul>
+<p>Infogroup maintains over 15 million active businesses across the U.S. and Canada. Infogroup data will be available in Business Search where you can choose from several new display options including a heat map.<br />
+<img class="alignnone size-full wp-image-56095 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51heatmap.png" alt="" width="508" height="388" /></p>
+<p>Infogroup data will be available in the Business Locator Report.<img class="alignnone size-full wp-image-56107 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocrpt1.png" alt="" width="571" height="333" /></p>
+<p>Infogroup data will be available to Export to Excel.<img class="alignnone size-full wp-image-56101 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsxls.png" alt="" width="572" height="158" /></p>
+<p>Infogroup data will be available to Share to ArcGIS Online.<img class="alignnone size-full wp-image-56110 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsagol.png" alt="" width="564" height="374" /></p>
+<p>While the business locations data in Business Analyst has never been permitted for direct mail or direct marketing purposes, you&#8217;ll notice that the street address number is not present when you export to Excel or share to ArcGIS Online. This is a restriction from our new data provider.</p>
+<ul>
+<li>Access <a title="2015 Canada Demographic Updates" href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_Canadian_data_from" target="_blank">2015 Canada Demographic Updates</a> as well as <a title="Standard Global Demographic Updates for 45 Countries." href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_45_countries_will" target="_blank">Standard Global Demographic Updates for 45 Countries</a>.</li>
+</ul>
+<ul>
+<li>Create maps with the Dominant Tapestry Segment.</li>
+</ul>
+<p>When creating a Color-Coded Map in the U.S., you can browse and select the 2015 Dominant Tapestry Segment and quickly see socioeconomic and demographic pockets based on the dominant Tapestry segment of neighborhoods.<br />
+<img class="alignnone size-full wp-image-56074 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51tapestry.png" alt="" width="540" height="353" /></p>
+<ul>
+<li>Import and save a custom symbol or logo.</li>
+</ul>
+<p>Use it to represent sites you create or import as well as business searches.</p>
+<ul>
+<li>Re-order variables in saved lists.</li>
+</ul>
+<p>No more starting over, now you can simply drag and move variables in your lists.</p>
+<ul>
+<li>Create areas using Walk Time or Distance.</li>
+</ul>
+<p>Walk times follow paths and roads that allow pedestrian traffic. Walking speed is set to 5 km per hour. (Also available in the Business Analyst mobile app!)<br />
+<img class="alignnone size-full wp-image-56075 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51walktimes.png" alt="" width="540" height="458" /></p>
+<ul>
+<li>Create drive time areas with live or historical traffic.</li>
+</ul>
+<p>The Live Traffic option is updated every 5 minutes from live traffic feeds and Historical Traffic can be selected by day and 15 minute increments.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/BwSxVHNi5Qg" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:97:"http://blogs.esri.com/esri/arcgis/2015/11/10/business-analyst-web-app-whats-coming-nov-2015/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:92:"http://blogs.esri.com/esri/arcgis/2015/11/10/business-analyst-web-app-whats-coming-nov-2015/";}s:7:"summary";s:418:"The Business Analyst web app is about to get an update! Later this month, Esri will be releasing several enhancements as well as demographic content updates. Here are some of those updates: Esri has a new Business Locations/Business Search provider &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/10/business-analyst-web-app-whats-coming-nov-2015/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:3763:"<h1>The Business Analyst web app is about to get an update!</h1>
+<h3>Later this month, Esri will be releasing several enhancements as well as demographic content updates. <span id="more-56043"></span></h3>
+<h3>Here are some of those updates:</h3>
+<ul>
+<li>Esri has a new Business Locations/Business Search provider in the U.S. and Canada.</li>
+</ul>
+<p>Infogroup maintains over 15 million active businesses across the U.S. and Canada. Infogroup data will be available in Business Search where you can choose from several new display options including a heat map.<br />
+<img class="alignnone size-full wp-image-56095 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51heatmap.png" alt="" width="508" height="388" /></p>
+<p>Infogroup data will be available in the Business Locator Report.<img class="alignnone size-full wp-image-56107 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocrpt1.png" alt="" width="571" height="333" /></p>
+<p>Infogroup data will be available to Export to Excel.<img class="alignnone size-full wp-image-56101 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsxls.png" alt="" width="572" height="158" /></p>
+<p>Infogroup data will be available to Share to ArcGIS Online.<img class="alignnone size-full wp-image-56110 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51buslocsagol.png" alt="" width="564" height="374" /></p>
+<p>While the business locations data in Business Analyst has never been permitted for direct mail or direct marketing purposes, you&#8217;ll notice that the street address number is not present when you export to Excel or share to ArcGIS Online. This is a restriction from our new data provider.</p>
+<ul>
+<li>Access <a title="2015 Canada Demographic Updates" href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_Canadian_data_from" target="_blank">2015 Canada Demographic Updates</a> as well as <a title="Standard Global Demographic Updates for 45 Countries." href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#_45_countries_will" target="_blank">Standard Global Demographic Updates for 45 Countries</a>.</li>
+</ul>
+<ul>
+<li>Create maps with the Dominant Tapestry Segment.</li>
+</ul>
+<p>When creating a Color-Coded Map in the U.S., you can browse and select the 2015 Dominant Tapestry Segment and quickly see socioeconomic and demographic pockets based on the dominant Tapestry segment of neighborhoods.<br />
+<img class="alignnone size-full wp-image-56074 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51tapestry.png" alt="" width="540" height="353" /></p>
+<ul>
+<li>Import and save a custom symbol or logo.</li>
+</ul>
+<p>Use it to represent sites you create or import as well as business searches.</p>
+<ul>
+<li>Re-order variables in saved lists.</li>
+</ul>
+<p>No more starting over, now you can simply drag and move variables in your lists.</p>
+<ul>
+<li>Create areas using Walk Time or Distance.</li>
+</ul>
+<p>Walk times follow paths and roads that allow pedestrian traffic. Walking speed is set to 5 km per hour. (Also available in the Business Analyst mobile app!)<br />
+<img class="alignnone size-full wp-image-56075 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/11/blog51walktimes.png" alt="" width="540" height="458" /></p>
+<ul>
+<li>Create drive time areas with live or historical traffic.</li>
+</ul>
+<p>The Live Traffic option is updated every 5 minutes from live traffic feeds and Historical Traffic can be selected by day and 15 minute increments.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/BwSxVHNi5Qg" height="1" width="1" alt=""/>";}i:8;a:14:{s:5:"title";s:66:"Upcoming November 2015 Release of Standard Global Demographic Data";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/j0J7jtQRsq0/";s:8:"comments";s:97:"http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/#comments";s:7:"pubdate";s:31:"Thu, 05 Nov 2015 07:59:00 +0000";s:2:"dc";a:1:{s:7:"creator";s:11:"Lucy Guerra";}s:8:"category";s:203:"ArcGIS OnlineArcGIS ContentBAObao-onlyBusiness AnalystBusiness Analyst DesktopCommunity Analystdemographicdemographic datademographicsEsri DataEsri DemographicsEsri Global DemographicsGlobal demographics";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=55893";s:11:"description";s:405:"In the upcoming November release, we have lots of content updates scheduled! Follow the links below to read more: Canadian data from Environics Analytics will be updated to 2015. 45 countries will be updated with the most current data from &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:8511:"<p>In the upcoming November release, we have lots of content updates scheduled! Follow the links below to read more:</p>
+<blockquote>
+<ul>
+<li><a href="#_Canadian_data_from">Canadian data from Environics Analytics will be updated to 2015.</a></li>
+<li><a href="#_45_countries_will">45 countries will be updated with the most current data from Michael Bauer Research.</a></li>
+<li><a href="#_U.S._2015_Retail">U.S. 2015 Retail MarketPlace data will be updated with a new business data source, Infogroup.</a></li>
+</ul>
+</blockquote>
+<p>Or jump ahead to see how these updates will affect you:</p>
+<blockquote>
+<ul>
+<li><a href="#_For_the_Ready-to-Use">For the Ready-to-Use Maps User within ArcGIS Online.</a></li>
+<li><a href="#_For_the_Business">For the Business Analyst User.</a></li>
+<li><a href="#_For_the_Data">For the Data Enrichment user in ArcGIS Online or Esri Maps for Office.</a></li>
+<li><a href="#_For_the_Developer">For the Developer using REST endpoints for Standard Global Demographic Services.</a></li>
+</ul>
+</blockquote>
+<h3 id="_Canadian_data_from"></h3>
+<h3>Canadian data from Environics Analytics will be updated to 2015:</h3>
+<p>The 2015 DemoStats data includes expanded demographic attributes and all-new themes such as Condominium Status, Recent Immigrants by Country of Birth and Generation Status. In addition to additional themes, the 2015 DemoStats attribute names have changed significantly from the 2014 DemoStats database. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/DemoStats_2015-Variable_Change_List.pdf" target="_blank">DemoStats 2015 &#8211; Variable Change List.pdf</a></p>
+<p>The 2015 HouseholdSpend attribute names have changed significantly from the 2014 HouseholdSpend product. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/HouseholdSpend_2015-Variable_Change_List.pdf" target="_blank">HouseholdSpend 2015 &#8211; Variable Change List.pdf</a></p>
+<p>The 2015 DaytimePop attribute names have changed significantly from the 2014 Daytime Population database. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/DaytimePop_2015-Variable_Change_List.pdf" target="_blank">DaytimePop 2015 – Variable Change List.pdf</a></p>
+<p>Previously released as PRIZMC2, the 2015 segmentation database provided by Environics Analytics is now PRIZM5. This release represents a re-clustering of segments. There are now 69 segments, up two from PRIZMC2 in 2014 and the attribute names are not consistent across the two segmentation systems. As a result, Esri recommends that all analysis with PRIZM segmentation data be updated. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/PRIZM5_2015-Variable_Change_List.pdf" target="_blank">PRIZM5 2015 &#8211; Variable Change List.pdf</a></p>
+<p>Esri recommends you consult the documentation for all attribute changes in the Documentation Release Notes and take care to update any workflows that access this data.</p>
+<h3 id="_45_countries_will"></h3>
+<h3>45 countries will be updated with the most current data from Michael Bauer Research:</h3>
+<p><img class="alignnone size-full wp-image-55986 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/10/blognov2015_countries.png" alt="" width="506" height="508" /></p>
+<p>Standard Global Demographic data is sourced from Michael Bauer Research and available across the ArcGIS platform. Attributes vary from country to country, and include categories such as population, households, education, consumer spending and more. The datasets can be accessed in ArcGIS Online, Business Analyst, and apps such as Esri Maps for Office.</p>
+<p>In addition to a vintage update, some countries have new attributes, attributes that are no longer available, and changes to geography names which are now standardized in English. View the Release Notes for each country on the <a href="http://doc.arcgis.com/en/esri-demographics/data/data.htm" target="_blank">Esri Demographics documentation</a> pages for more details. Follow <a href="http://downloads.esri.com/esri_content_doc/dbl/int/Indonesia_MBR_2014.pdf" target="_blank">this link</a> to the release notes for Indonesia as an example.</p>
+<p>For easy access to web maps by country, visit our <a href="http://doc.arcgis.com/en/esri-demographics/coverage/" target="_blank">Esri Demographics Global Coverage map</a>. Click a country and follow the links in the popup to access the web maps and data attributes available for enrichment.</p>
+<h3 id="_U.S._2015_Retail"></h3>
+<h3>U.S. 2015 Retail MarketPlace data will be updated with a new business data source, Infogroup:</h3>
+<p>The 2015 USA Retail MarketPlace data will be updated due to a change in the underlying business data. Esri products now feature Infogroup business data. This data update does not impact the functionality of existing services or maps as there are no changes to feature IDs or attribute names. However, there are changes to attribute values due to the update. This update precludes comparison of 2015 Retail MarketPlace (with D&amp;B as the business source) and 2015 Retail MarketPlace (with Infogroup as the business source). Esri recommends that users of this data, in both maps and reports, redo any analysis involving this data after the update.</p>
+<h2>How will these updates affect me?</h2>
+<h3 id="_For_the_Ready-to-Use"></h3>
+<h3>For the Ready-to-Use Maps User within ArcGIS Online</h3>
+<p>Over 170 international demographic layers and maps, and a dozen United States layers and maps, will be updated.</p>
+<p>The Retail MarketPlace update changes the content. No other changes to functionality, features, or attributes were made.</p>
+<p>International demographic layers and maps now include geography levels presented in English, and no generalized layers in the content pane of ArcGIS Online. The left side of the picture below shows the older contents pane, and the right side shows the updated version available in this release.<br />
+<img class="alignnone size-full wp-image-55956 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/10/blognov2015_TOC.png" alt="" width="495" height="331" /></p>
+<h3 id="_For_the_Business"></h3>
+<h3>For the Business Analyst User</h3>
+<p>Business Analyst users will access the updated Canadian, U.S., and International data through reports and maps. The complete attribute list for each country is accessible through the <a href="http://doc.arcgis.com/en/esri-demographics/" target="_blank">Data Browser </a>contained in the application. Esri recommends that users of the 2015 Retail MarketPlace data, in both maps and reports, redo any analysis involving this data after the update to take advantage of the new source.</p>
+<h3 id="_For_the_Data"></h3>
+<h3>For the Data Enrichment user in ArcGIS Online or Esri Maps for Office</h3>
+<p>The November 2015 update provides access to the Canadian, U.S., and International datasets shown above. Esri recommends that users of the 2015 Retail MarketPlace data, in both maps and reports, redo any analysis involving this data after the update to take advantage of the new source.</p>
+<p>For a detailed explanation of new or deleted attributes in international datasets, see the Release Notes for each individual country available on the <a href="http://doc.arcgis.com/en/esri-demographics/data/data.htm" target="_blank">Esri Demographics documentation</a> pages.</p>
+<h3 id="_For_the_Developer"></h3>
+<h3>For the Developer using REST endpoints for Standard Global Demographic Services</h3>
+<p>No changes to the Retail MarketPlace REST endpoint were made to functionality, features, or attributes however the data has changed.</p>
+<p>The REST endpoints for Standard Global Demographic datasets being updated in November 2015 will change. Over-generalized boundary layers will be removed and geography names will be standardized to English. These changes will impact any application calling the services. Some of the changes to the REST endpoints included in this release are:</p>
+<ul>
+<li>Changes in layer IDs</li>
+<li>Changes to geography names (standardized to English)</li>
+<li>Changes to attributes: attribute additions, and attribute deletions</li>
+</ul>
+<p>To view the new REST endpoints, you will need to access the <a href="http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r300000054000000" target="_blank">REST API</a> with a developer or organizational account, using a token request.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/j0J7jtQRsq0" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:93:"http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:10:"feedburner";a:1:{s:8:"origlink";s:88:"http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/";}s:7:"summary";s:405:"In the upcoming November release, we have lots of content updates scheduled! Follow the links below to read more: Canadian data from Environics Analytics will be updated to 2015. 45 countries will be updated with the most current data from &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/04/upcoming-november-2015-release-demographic/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:8511:"<p>In the upcoming November release, we have lots of content updates scheduled! Follow the links below to read more:</p>
+<blockquote>
+<ul>
+<li><a href="#_Canadian_data_from">Canadian data from Environics Analytics will be updated to 2015.</a></li>
+<li><a href="#_45_countries_will">45 countries will be updated with the most current data from Michael Bauer Research.</a></li>
+<li><a href="#_U.S._2015_Retail">U.S. 2015 Retail MarketPlace data will be updated with a new business data source, Infogroup.</a></li>
+</ul>
+</blockquote>
+<p>Or jump ahead to see how these updates will affect you:</p>
+<blockquote>
+<ul>
+<li><a href="#_For_the_Ready-to-Use">For the Ready-to-Use Maps User within ArcGIS Online.</a></li>
+<li><a href="#_For_the_Business">For the Business Analyst User.</a></li>
+<li><a href="#_For_the_Data">For the Data Enrichment user in ArcGIS Online or Esri Maps for Office.</a></li>
+<li><a href="#_For_the_Developer">For the Developer using REST endpoints for Standard Global Demographic Services.</a></li>
+</ul>
+</blockquote>
+<h3 id="_Canadian_data_from"></h3>
+<h3>Canadian data from Environics Analytics will be updated to 2015:</h3>
+<p>The 2015 DemoStats data includes expanded demographic attributes and all-new themes such as Condominium Status, Recent Immigrants by Country of Birth and Generation Status. In addition to additional themes, the 2015 DemoStats attribute names have changed significantly from the 2014 DemoStats database. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/DemoStats_2015-Variable_Change_List.pdf" target="_blank">DemoStats 2015 &#8211; Variable Change List.pdf</a></p>
+<p>The 2015 HouseholdSpend attribute names have changed significantly from the 2014 HouseholdSpend product. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/HouseholdSpend_2015-Variable_Change_List.pdf" target="_blank">HouseholdSpend 2015 &#8211; Variable Change List.pdf</a></p>
+<p>The 2015 DaytimePop attribute names have changed significantly from the 2014 Daytime Population database. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/DaytimePop_2015-Variable_Change_List.pdf" target="_blank">DaytimePop 2015 – Variable Change List.pdf</a></p>
+<p>Previously released as PRIZMC2, the 2015 segmentation database provided by Environics Analytics is now PRIZM5. This release represents a re-clustering of segments. There are now 69 segments, up two from PRIZMC2 in 2014 and the attribute names are not consistent across the two segmentation systems. As a result, Esri recommends that all analysis with PRIZM segmentation data be updated. <a href="http://downloads.esri.com/esri_content_doc/dbl/int/PRIZM5_2015-Variable_Change_List.pdf" target="_blank">PRIZM5 2015 &#8211; Variable Change List.pdf</a></p>
+<p>Esri recommends you consult the documentation for all attribute changes in the Documentation Release Notes and take care to update any workflows that access this data.</p>
+<h3 id="_45_countries_will"></h3>
+<h3>45 countries will be updated with the most current data from Michael Bauer Research:</h3>
+<p><img class="alignnone size-full wp-image-55986 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/10/blognov2015_countries.png" alt="" width="506" height="508" /></p>
+<p>Standard Global Demographic data is sourced from Michael Bauer Research and available across the ArcGIS platform. Attributes vary from country to country, and include categories such as population, households, education, consumer spending and more. The datasets can be accessed in ArcGIS Online, Business Analyst, and apps such as Esri Maps for Office.</p>
+<p>In addition to a vintage update, some countries have new attributes, attributes that are no longer available, and changes to geography names which are now standardized in English. View the Release Notes for each country on the <a href="http://doc.arcgis.com/en/esri-demographics/data/data.htm" target="_blank">Esri Demographics documentation</a> pages for more details. Follow <a href="http://downloads.esri.com/esri_content_doc/dbl/int/Indonesia_MBR_2014.pdf" target="_blank">this link</a> to the release notes for Indonesia as an example.</p>
+<p>For easy access to web maps by country, visit our <a href="http://doc.arcgis.com/en/esri-demographics/coverage/" target="_blank">Esri Demographics Global Coverage map</a>. Click a country and follow the links in the popup to access the web maps and data attributes available for enrichment.</p>
+<h3 id="_U.S._2015_Retail"></h3>
+<h3>U.S. 2015 Retail MarketPlace data will be updated with a new business data source, Infogroup:</h3>
+<p>The 2015 USA Retail MarketPlace data will be updated due to a change in the underlying business data. Esri products now feature Infogroup business data. This data update does not impact the functionality of existing services or maps as there are no changes to feature IDs or attribute names. However, there are changes to attribute values due to the update. This update precludes comparison of 2015 Retail MarketPlace (with D&amp;B as the business source) and 2015 Retail MarketPlace (with Infogroup as the business source). Esri recommends that users of this data, in both maps and reports, redo any analysis involving this data after the update.</p>
+<h2>How will these updates affect me?</h2>
+<h3 id="_For_the_Ready-to-Use"></h3>
+<h3>For the Ready-to-Use Maps User within ArcGIS Online</h3>
+<p>Over 170 international demographic layers and maps, and a dozen United States layers and maps, will be updated.</p>
+<p>The Retail MarketPlace update changes the content. No other changes to functionality, features, or attributes were made.</p>
+<p>International demographic layers and maps now include geography levels presented in English, and no generalized layers in the content pane of ArcGIS Online. The left side of the picture below shows the older contents pane, and the right side shows the updated version available in this release.<br />
+<img class="alignnone size-full wp-image-55956 noIMGBackground" src="http://blogs.esri.com/esri/arcgis/files/2015/10/blognov2015_TOC.png" alt="" width="495" height="331" /></p>
+<h3 id="_For_the_Business"></h3>
+<h3>For the Business Analyst User</h3>
+<p>Business Analyst users will access the updated Canadian, U.S., and International data through reports and maps. The complete attribute list for each country is accessible through the <a href="http://doc.arcgis.com/en/esri-demographics/" target="_blank">Data Browser </a>contained in the application. Esri recommends that users of the 2015 Retail MarketPlace data, in both maps and reports, redo any analysis involving this data after the update to take advantage of the new source.</p>
+<h3 id="_For_the_Data"></h3>
+<h3>For the Data Enrichment user in ArcGIS Online or Esri Maps for Office</h3>
+<p>The November 2015 update provides access to the Canadian, U.S., and International datasets shown above. Esri recommends that users of the 2015 Retail MarketPlace data, in both maps and reports, redo any analysis involving this data after the update to take advantage of the new source.</p>
+<p>For a detailed explanation of new or deleted attributes in international datasets, see the Release Notes for each individual country available on the <a href="http://doc.arcgis.com/en/esri-demographics/data/data.htm" target="_blank">Esri Demographics documentation</a> pages.</p>
+<h3 id="_For_the_Developer"></h3>
+<h3>For the Developer using REST endpoints for Standard Global Demographic Services</h3>
+<p>No changes to the Retail MarketPlace REST endpoint were made to functionality, features, or attributes however the data has changed.</p>
+<p>The REST endpoints for Standard Global Demographic datasets being updated in November 2015 will change. Over-generalized boundary layers will be removed and geography names will be standardized to English. These changes will impact any application calling the services. Some of the changes to the REST endpoints included in this release are:</p>
+<ul>
+<li>Changes in layer IDs</li>
+<li>Changes to geography names (standardized to English)</li>
+<li>Changes to attributes: attribute additions, and attribute deletions</li>
+</ul>
+<p>To view the new REST endpoints, you will need to access the <a href="http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r300000054000000" target="_blank">REST API</a> with a developer or organizational account, using a token request.</p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/j0J7jtQRsq0" height="1" width="1" alt=""/>";}i:9;a:14:{s:5:"title";s:35:"Managing Imagery Data?  Start Here!";s:4:"link";s:57:"http://feeds.esri.com/~r/GeographyMatters/~3/ZTiXXlcxuO0/";s:8:"comments";s:60:"http://blogs.esri.com/esri/arcgis/2015/11/03/56025/#comments";s:7:"pubdate";s:31:"Tue, 03 Nov 2015 23:38:43 +0000";s:2:"dc";a:1:{s:7:"creator";s:12:"Renee Brandt";}s:8:"category";s:159:"Analysis & GeoprocessingArcGIS for ServerImageryMappingNational GovernmentServicesarcgisBig Datadata managementimagery managementmanaging imageryremote sensing";s:4:"guid";s:42:"http://blogs.esri.com/esri/arcgis/?p=56025";s:11:"description";s:371:"When people think about managing data, I can’t imagine anything as intimidating to an IT person as imagery data.  Why you may ask?  Because the file size is large, very large, the formats can be unfamiliar, and after you&#8217;ve acquired &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/03/56025/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:7:"content";a:1:{s:7:"encoded";s:4019:"<p>When people think about managing data, I can’t imagine anything as intimidating to an IT person as imagery data.  Why you may ask?  Because the file size is large, very large, the formats can be unfamiliar, and after you&#8217;ve acquired it, people want access to it immediately.  Imagery data can be so large in fact, that the first time I heard people regularly using the word ‘Terabyte’ was in conjunction with imagery data, and quickly it moved to ‘Petabytes’.  Remotely sensed data originates from many different types of sensors…multiple countries have their own satellites, aircraft equipped with cameras, drones, weather balloons, go pros…the list goes on and on.  In addition, you have all the different types of data i.e. Optical, Multispectral, Radar, Lidar. And to add to that, you end up with all the different formats from geoTIF, NITF, JP2, JPEG, MrSID… The possibilities are endless for the volume, variety and velocity of data that could be coming into a system.</p>
+<p>For an IT person, figuring out the best method to store the data is only the first part of the problem, because as soon as you have it, people want it.  And they want more than one type of data, they want multiple pieces of imagery data from different formats captured with different sensors taken at different times.  There are many challenges.  Efficiently managing, processing and providing suitable access to the data is what the industry affectionately refers to as a ‘big data’ challenge.</p>
+<p>Being able to solve that challenge however, can produce amazing results and understanding.  Check out this cool video from our 2015 Esri User Conference in which one of our Big Data specialists, Mansour Raad, discusses a problem best solved using imagery and our new Big Data analysis technology (due to be released in 2016) to perform over 300 billion spatial and temporal calculations.</p>
+<p><a href="http://video.esri.com/watch/4657/big-data-_and_-geoanalytics" target="_blank"><img class="alignnone size-medium wp-image-56026" src="http://blogs.esri.com/esri/arcgis/files/2015/11/Big-Data-on-stage-300x175.jpg" alt="" width="300" height="175" /></a></p>
+<p>But in order to take advantage of new advances in technology to analyze, visualize and understand big data sets, like imagery and remotely sensed data, you first need to effectively manage your data.</p>
+<p>Many times we get asked by customers as to the best way to get started, and there are several answers, depending upon the time, people and money resources your organization wants to invest.  You can manage everything yourself, on-premise, or break it up, and manage the transactional data on-premise and the static, less changing data in the cloud.  You can hire a professional services company, like Esri’s <a href="http://www.esri.com/services/professional-services/rent-a-tech" target="_blank">rent-a-tech</a>, who can provide a jump start package which does the dirty work of getting the foundation and structure started, and also on-site training for your people.  Or you can offload all of the effort to someone who can manage your imagery in the cloud, similar to our <a href="http://www.esri.com/services/emcs" target="_blank">managed services offerings</a>.  The choices are not cut and dried, and you can mix and match depending upon your needs and company requirements.  To help you get started on this journey, we’ve put together an Enterprise Image Management white paper, which covers a lot of the topics you need to think about in detail, and explains thoroughly how ArcGIS technology can simplify managing imagery.</p>
+<p><a href="http://www.esri.com/library/whitepapers/pdfs/enterprise-image-management.pdf" target="_blank"><img class="alignnone size-medium wp-image-56027" src="http://blogs.esri.com/esri/arcgis/files/2015/11/EIM-white-paper-250x300.png" alt="" width="250" height="300" /></a></p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/ZTiXXlcxuO0" height="1" width="1" alt=""/>";}s:3:"wfw";a:1:{s:10:"commentrss";s:56:"http://blogs.esri.com/esri/arcgis/2015/11/03/56025/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"1";}s:10:"feedburner";a:1:{s:8:"origlink";s:51:"http://blogs.esri.com/esri/arcgis/2015/11/03/56025/";}s:7:"summary";s:371:"When people think about managing data, I can’t imagine anything as intimidating to an IT person as imagery data.  Why you may ask?  Because the file size is large, very large, the formats can be unfamiliar, and after you&#8217;ve acquired &#8230; <a href="http://blogs.esri.com/esri/arcgis/2015/11/03/56025/">Continue reading <span class="meta-nav">&#8594;</span></a>";s:12:"atom_content";s:4019:"<p>When people think about managing data, I can’t imagine anything as intimidating to an IT person as imagery data.  Why you may ask?  Because the file size is large, very large, the formats can be unfamiliar, and after you&#8217;ve acquired it, people want access to it immediately.  Imagery data can be so large in fact, that the first time I heard people regularly using the word ‘Terabyte’ was in conjunction with imagery data, and quickly it moved to ‘Petabytes’.  Remotely sensed data originates from many different types of sensors…multiple countries have their own satellites, aircraft equipped with cameras, drones, weather balloons, go pros…the list goes on and on.  In addition, you have all the different types of data i.e. Optical, Multispectral, Radar, Lidar. And to add to that, you end up with all the different formats from geoTIF, NITF, JP2, JPEG, MrSID… The possibilities are endless for the volume, variety and velocity of data that could be coming into a system.</p>
+<p>For an IT person, figuring out the best method to store the data is only the first part of the problem, because as soon as you have it, people want it.  And they want more than one type of data, they want multiple pieces of imagery data from different formats captured with different sensors taken at different times.  There are many challenges.  Efficiently managing, processing and providing suitable access to the data is what the industry affectionately refers to as a ‘big data’ challenge.</p>
+<p>Being able to solve that challenge however, can produce amazing results and understanding.  Check out this cool video from our 2015 Esri User Conference in which one of our Big Data specialists, Mansour Raad, discusses a problem best solved using imagery and our new Big Data analysis technology (due to be released in 2016) to perform over 300 billion spatial and temporal calculations.</p>
+<p><a href="http://video.esri.com/watch/4657/big-data-_and_-geoanalytics" target="_blank"><img class="alignnone size-medium wp-image-56026" src="http://blogs.esri.com/esri/arcgis/files/2015/11/Big-Data-on-stage-300x175.jpg" alt="" width="300" height="175" /></a></p>
+<p>But in order to take advantage of new advances in technology to analyze, visualize and understand big data sets, like imagery and remotely sensed data, you first need to effectively manage your data.</p>
+<p>Many times we get asked by customers as to the best way to get started, and there are several answers, depending upon the time, people and money resources your organization wants to invest.  You can manage everything yourself, on-premise, or break it up, and manage the transactional data on-premise and the static, less changing data in the cloud.  You can hire a professional services company, like Esri’s <a href="http://www.esri.com/services/professional-services/rent-a-tech" target="_blank">rent-a-tech</a>, who can provide a jump start package which does the dirty work of getting the foundation and structure started, and also on-site training for your people.  Or you can offload all of the effort to someone who can manage your imagery in the cloud, similar to our <a href="http://www.esri.com/services/emcs" target="_blank">managed services offerings</a>.  The choices are not cut and dried, and you can mix and match depending upon your needs and company requirements.  To help you get started on this journey, we’ve put together an Enterprise Image Management white paper, which covers a lot of the topics you need to think about in detail, and explains thoroughly how ArcGIS technology can simplify managing imagery.</p>
+<p><a href="http://www.esri.com/library/whitepapers/pdfs/enterprise-image-management.pdf" target="_blank"><img class="alignnone size-medium wp-image-56027" src="http://blogs.esri.com/esri/arcgis/files/2015/11/EIM-white-paper-250x300.png" alt="" width="250" height="300" /></a></p>
+<img src="http://feeds.feedburner.com/~r/GeographyMatters/~4/ZTiXXlcxuO0" height="1" width="1" alt=""/>";}}s:7:"channel";a:8:{s:5:"title";s:11:"ArcGIS Blog";s:4:"link";s:33:"http://blogs.esri.com/esri/arcgis";s:11:"description";s:11:"ArcGIS Blog";s:13:"lastbuilddate";s:31:"Sat, 14 Nov 2015 03:21:16 +0000";s:8:"language";s:5:"en-US";s:2:"sy";a:2:{s:12:"updateperiod";s:6:"hourly";s:15:"updatefrequency";s:1:"1";}s:9:"generator";s:29:"http://wordpress.org/?v=3.4.2";s:7:"tagline";s:11:"ArcGIS Blog";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:4:"etag";s:29:"vJcz/48LlS5LzTOT+KD8UF9y0yo
+";s:13:"last_modified";s:31:"Sat, 14 Nov 2015 12:52:03 GMT
+";}

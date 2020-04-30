@@ -1,0 +1,73 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:29:"stanislav.boriso...@gmail.com";s:7:"updated";s:20:"2013-06-20T07:36:51Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/84a541b6689bd345";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/84a541b6689bd345";s:5:"title";s:70:"Error running xmlrpc Client and server under different Python versions";s:7:"summary";s:357:"
+  Hello. <br> <p>I need to run xmlrpc Server under Python 3.3 and Client under Python 2.7. But when I try to do so, I receive the following exception: <br> <p>&quot;&lt;class 'NameError'&gt;:global name 'xmlrpclib' is not defined&quot; <br> <p>What is the reason for such an exception. As far as I understand xmlrpc is language independent. Please help.
+  ";}i:1;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:14:"Chris Angelico";s:12:"author_email";s:16:"ros...@gmail.com";s:7:"updated";s:20:"2013-06-20T04:19:39Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/22f8bf7b91edcd73";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/22f8bf7b91edcd73";s:5:"title";s:24:"Re: About GIL Questions!";s:7:"summary";s:345:"
+  The GIL, massively simplified: One thread at a time can be accessing <br> Python objects. That means that Python threads are good for I/O-bound <br> operations (you can have three threads all waiting on the network at <br> once), but not for CPU-bound operations, unless you're calling on a <br> library that deliberately releases the GIL.
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:16:"Joseph L. Casale";s:12:"author_email";s:25:"jcas...@activenetwerx.com";s:7:"updated";s:20:"2013-06-19T23:03:05Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/98c4819ae0100354";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/98c4819ae0100354";s:5:"title";s:16:"Popen in Python3";s:7:"summary";s:326:"
+  I am trying to invoke a binary that requires dll's in two places all of <br> which are included in the path env variable in windows. When running <br> this binary with popen it can not find either, passing env=os.environ <br> to open made no difference. <br> Anyone know what might cause this or how to work around this?
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:15:"arturo balbuena";s:12:"author_email";s:21:"a7xrturo...@gmail.com";s:7:"updated";s:20:"2013-06-19T21:14:17Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/37ccffc50477ecdd";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/37ccffc50477ecdd";s:5:"title";s:34:"Problem with the "for" loop syntax";s:7:"summary";s:447:"
+  Hello guys... <br> I´m a begginer in Python, I'm doing a Hangman game, but I'm having trouble with this blank space. I would be greatful if you help me. :) <br> <p>Here's my code: <br> <p><a target="_blank" rel=nofollow href="http://snipplr.com/view/71581/hangman/">[link]</a> <br> <p>When I run the code it says: Invalid Syntax and this is the error: <br> <p><a target="_blank" rel=nofollow href="http://i.imgur.com/jKYOPMY.png">[link]</a>
+  ";}i:4;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:25:"jacksonkemp1...@gmail.com";s:7:"updated";s:20:"2013-06-19T20:18:49Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/0543bdb5bd0254f1";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/0543bdb5bd0254f1";s:5:"title";s:11:"python game";s:7:"summary";s:332:"
+  I made this game where you move a player over bears, but the bears keep loading over the plaeyer making it hard to see it, also when i move down the player goes down to the right <br> <p>here is my code: <br> <p>import pygame, sys, random <br> from pygame.locals import * <br> from threading import Timer <br> <p>pygame.init()
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:16:"Ahmed Abdulshafy";s:12:"author_email";s:20:"abdulsh...@gmail.com";s:7:"updated";s:20:"2013-06-19T19:17:35Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/b0d7bbf64e84aafe";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/b0d7bbf64e84aafe";s:5:"title";s:13:"Default Value";s:7:"summary";s:328:"
+  I'm reading the Python.org tutorial right now, and I found this part rather strange and incomprehensible to me&gt; <br> <p>Important warning: The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes <br> def f(a, L=[]):
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:9:"Jason Hsu";s:12:"author_email";s:20:"jhsu802...@gmail.com";s:7:"updated";s:20:"2013-06-19T16:18:11Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/bd53280d193dd2ea";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/bd53280d193dd2ea";s:5:"title";s:54:"How much memory does Django consume compared to Rails?";s:7:"summary";s:363:"
+  I have deployed two Ruby on Rails sites on WebFaction, and Passenger Rack takes up around 60 MB of memory apiece. <br> <p>I was planning on replacing my Drupal web sites with Rails, but I'm now considering replacing these Drupal sites with Django. Given that the baseline memory consumption for a Rails site is around 60 MB, how would a Django site compare?
+  ";}i:7;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:20:"russ.po...@gmail.com";s:7:"updated";s:20:"2013-06-19T16:14:30Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/59e7dce0cf9650f9";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/59e7dce0cf9650f9";s:5:"title";s:63:"Idea for key parameter in all() builting, would it be feasible?";s:7:"summary";s:346:"
+  I was mucking around, trying to code a prime sieve in one line. I don't know about filters and bit shifting and stuff like that but I thought I could do it with builtins, albeit a very long one line. This is the part of my stupid trick in question that got me wondering about a key parameter for all() and the &quot;why&quot; is below that.
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:12:"Sara Lochtie";s:12:"author_email";s:22:"sara.loch...@gmail.com";s:7:"updated";s:20:"2013-06-19T16:00:03Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/1a20247dbd103d52";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/1a20247dbd103d52";s:5:"title";s:50:"Question about using dictionaries and QTableWidget";s:7:"summary";s:390:"
+  I have a table that gets new entries added to it in real time. Each entry has an ID and I am storing the ID in a dictionary. What I am trying to do is to have each ID in its own row and update within that row instead of adding a new one each time. <br> <p>What I've done is store the ID in a dictionary and only added a new ID to the dictionary if it is not equal to any previous IDs.
+  ";}i:9;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:20:"augusto...@gmail.com";s:7:"updated";s:20:"2013-06-19T13:58:19Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/13638d0ec1e090e3";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/13638d0ec1e090e3";s:5:"title";s:18:"A Beginner's Doubt";s:7:"summary";s:844:"
+  Hello! <br> This is my first post in this group and the reason why I came across here is that, despite my complete lack of knowledge in the programming area, I received an order from my teacher to develop a visually interactive program, until 20th July, so we can participate in a kind of contest. <br> <p>My goal is to learn and program it by myself, as good as the time allows me. That said, what I seek here is advice from people who definitively have more experience than me on topics like: is it possible to develop this kind of program in such a short amount of time? What kinds of aspects of Python should I focus on learning? What tutorials and websites are out there that can help me? What kind of already done packages are out there that I can freely use, so I do not need to create all the aspects of the program froms scratch?
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:12:"Ivan Shmakov";s:12:"author_email";s:19:"oneing...@gmail.com";s:7:"updated";s:20:"2013-06-19T13:48:13Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/9fea88922c2ecfd6";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/9fea88922c2ecfd6";s:5:"title";s:34:"Re: another language with classes?";s:7:"summary";s:336:"
+  [Cross-posting to news:comp.lang.python, news:comp.lang.scheme, <br> looking for more first-hand experience with these. Sadly, <br> there's no news:comp.lang.go as of yet.] <br> <p> &gt; I came into first contact with objects and classes programming under <br> &gt; Visual Basic 5/6 (VB classic) and found theese capabilities were
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:14:"Aditya Avinash";s:12:"author_email";s:26:"adityaavinash...@gmail.com";s:7:"updated";s:20:"2013-06-18T10:24:19Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/908027df9a53f28d";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/908027df9a53f28d";s:5:"title";s:36:"Writing Extensions for Python 3 in C";s:7:"summary";s:347:"
+  Hi. This is the last place where I want to ask a question. I have searched <br> for lots of tutorials and documentation on the web but, didn't find a <br> decent one to develop extensions for Python 3 using a custom compiler <br> (mingw32, nvcc). Please help me. <br> PS: Don't point me to Python Documentation. It is not good for beginners.
+  ";}i:12;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:23:"andrewblun...@gmail.com";s:7:"updated";s:20:"2013-06-19T02:47:34Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/98e8ae521b389692";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/98e8ae521b389692";s:5:"title";s:28:"Beginner Question: 3D Models";s:7:"summary";s:537:"
+  Hi there, <br> <p>Sorry for the complete beginner question but I thought the readers here might be able to provide me with some guidance. <br> <p>I've done some programming with Visual Basic and VBA plus a little PHP, CSS and HTML. I'm looking at developing a program for work that can be distributed to others (i.e. and exe file). The application would open various dialogue boxes and ask the user for input and eventually perform mathematical calculations on the input. From what I've read Python would have no trouble with this.
+  ";}i:13;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:15:"zughumancapital";s:12:"author_email";s:28:"zughumancapi...@yahoo.com.br";s:7:"updated";s:20:"2013-06-18T19:42:15Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/aeea4b4216f65e33";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/aeea4b4216f65e33";s:5:"title";s:34:"Oportunidade: Desenvolvedor Python";s:7:"summary";s:406:"
+  Fabrica de software localizada na Barra da Tijuca contrata: <br> <p>Desenvolvedor Python <br> <p>Objetivo geral da Posição: <br> <p>Desenvolvimento de sistemas Web com Python/Django, HTML5, Javascript e CSS. <br> <p>Pré­requisitos: <br> <p>Experiência com Python/Django ou outro framework MVC. <br> Familiarizado com desenvolvimento front­end: padrões Web, (X)HTML, HTML5, CSS, javas (jQuery).
+  ";}i:14;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:9:"skunkwerk";s:12:"author_email";s:19:"skunkw...@gmail.com";s:7:"updated";s:20:"2013-06-18T18:38:23Z";s:2:"id";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/aaebb5d22e9ac368";s:5:"link_";s:85:"http://groups.google.com/group/comp.lang.python/browse_thread/thread/aaebb5d22e9ac368";s:5:"title";s:48:"collecting variable assignments through settrace";s:7:"summary";s:348:"
+  Hi, <br> I'm writing a custom profiler that uses sys.settrace. I was wondering if there was any way of tracing the assignments of variables inside a function as its executed, without looking at locals() at every single line and comparing them to see if anything has changed. <br> <p>Sort of like xdebug's collect_assignments parameter in PHP.
+  ";}}s:7:"channel";a:6:{s:2:"id";s:47:"http://groups.google.com/group/comp.lang.python";s:5:"title";s:29:"comp.lang.python Google Group";s:8:"subtitle";s:35:"
+  The Python computer language.
+  ";s:9:"link_self";s:49:"/group/comp.lang.python/feed/atom_v1_0_topics.xml";s:7:"updated";s:8:"-0-0T::Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

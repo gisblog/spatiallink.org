@@ -1,0 +1,895 @@
+O:9:"MagpieRSS":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/58-guid.html";s:5:"title";s:14:"Building a NAS";s:4:"link";s:56:"https://toys.lerdorf.com/archives/58-Building-a-NAS.html";s:11:"description";s:631:"
+    The HTPC box and various computers around the house use a mix of internal drives, external USB and eSATA drives. It is quite a mess, and backups are sporadic at best. The HTPC especially has grown organically with USB and eSATA as it needed more and more space. <br />
+<br />
+<!-- s9ymdb:119 --><img class="serendipity_image_center" width="800" height="533"  src="https://toys.lerdorf.com/uploads/nas_mess1.jpg" title="NAS Mess" alt="" />
+
+So it was finally time for a decent NAS.<br />
+ <a class="block_level" href="https://toys.lerdorf.com/archives/58-Building-a-NAS.html#extended">Continue reading "Building a NAS"</a>
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:5:"
+    ";s:4:"date";s:20:"2013-11-13T05:47:50Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=58";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=58";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:631:"
+    The HTPC box and various computers around the house use a mix of internal drives, external USB and eSATA drives. It is quite a mess, and backups are sporadic at best. The HTPC especially has grown organically with USB and eSATA as it needed more and more space. <br />
+<br />
+<!-- s9ymdb:119 --><img class="serendipity_image_center" width="800" height="533"  src="https://toys.lerdorf.com/uploads/nas_mess1.jpg" title="NAS Mess" alt="" />
+
+So it was finally time for a decent NAS.<br />
+ <a class="block_level" href="https://toys.lerdorf.com/archives/58-Building-a-NAS.html#extended">Continue reading "Building a NAS"</a>
+    ";}i:1;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/57-guid.html";s:5:"title";s:24:"ZeroMQ + libevent in PHP";s:4:"link";s:66:"https://toys.lerdorf.com/archives/57-ZeroMQ-+-libevent-in-PHP.html";s:11:"description";s:3026:"
+    While waiting for a connection in Frankfurt I had a quick look at what it would take to make ZeroMQ and libevent co-exist in PHP and it was actually quite easy. Well, easy after Mikko Koppanen added a way  to get the underlying socket fd from the ZeroMQ PHP extension.
+
+To get this working, install the <a href="http://www.zeromq.org/bindings:php">PHP ZeroMQ extension</a> and the <a href="http://pecl.php.net/package/libevent">PHP libevent extension</a>.
+
+First, a little event-driven server that listens on loopback port 5555 and waits for 10 messages and then exits.
+
+<br />
+<br />
+<p style="font-size:1.5em">Server.php</p>
+
+<pre style="margin: 10px 10px 10px 2px; background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; -moz-box-shadow: 10px 10px 5px #AAA; -webkit-box-shadow: 10px 10px 5px #AAA; box-shadow: 10px 10px 5px #AAA;">
+&lt;?php
+function print_line($fd, $events, $arg) {
+    static $msgs = 1;
+    echo "CALLBACK FIRED" . PHP_EOL;
+    if($arg[0]-&gt;getsockopt (ZMQ::SOCKOPT_EVENTS) &amp; ZMQ::POLL_IN) {
+        echo "Got incoming data" . PHP_EOL;
+        var_dump ($arg[0]-&gt;recv());
+        $arg[0]-&gt;send("Got msg $msgs");
+	if($msgs++ &gt;= 10) event_base_loopexit($arg[1]);
+    }
+}
+
+// create base and event
+$base = event_base_new();
+$event = event_new();
+
+// Allocate a new context
+$context = new ZMQContext();
+
+// Create sockets
+$rep = $context-&gt;getSocket(ZMQ::SOCKET_REP);
+
+// Connect the socket
+$rep->bind("tcp://127.0.0.1:5555");
+
+// Get the stream descriptor
+$fd = $rep-&gt;getsockopt(ZMQ::SOCKOPT_FD);
+
+// set event flags
+event_set($event, $fd, EV_READ | EV_PERSIST, "print_line", array($rep, $base));
+
+// set event base
+event_base_set($event, $base);
+
+// enable event
+event_add($event);
+
+// start event loop
+event_base_loop($base);
+</pre>
+
+<br />
+<p style="font-size: 1.5em">Client.php</p>
+
+<pre style="margin: 10px 10px 10px 2px; background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; -moz-box-shadow: 10px 10px 5px #AAA; -webkit-box-shadow: 10px 10px 5px #AAA; box-shadow: 10px 10px 5px #AAA;">
+&lt;?php
+// Create new queue object
+$queue = new ZMQSocket(new ZMQContext(), ZMQ::SOCKET_REQ, "MySock1");
+$queue-&gt;connect("tcp://127.0.0.1:5555");
+
+// Assign socket 1 to the queue, send and receive
+var_dump($queue-&gt;send("hello there!")-&gt;recv());
+</pre>
+<br />
+You will notice when you run it that the server gets a couple of events that are not actually incoming messages. Right now ZeroMQ doesn't expose the nature of these events, but they are the socket initialization and client connect. You will also get one for the client disconnect. A future version of the ZeroMQ library will expose these so you can properly catch when clients connect to your server.
+<br /><br />
+There really isn't much else to say. The code should be self-explanatory. If not, see the <a href="http://php.net/libevent">PHP libevent</a> docs and the <a href="http://php.zero.mq/">PHP ZeroMQ</a> docs. And if you build something cool with this, please let me know.
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:10:"
+    PHP, ";s:4:"date";s:20:"2011-09-29T06:10:16Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=57";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=57";}s:5:"slash";a:1:{s:8:"comments";s:1:"6";}s:7:"summary";s:3026:"
+    While waiting for a connection in Frankfurt I had a quick look at what it would take to make ZeroMQ and libevent co-exist in PHP and it was actually quite easy. Well, easy after Mikko Koppanen added a way  to get the underlying socket fd from the ZeroMQ PHP extension.
+
+To get this working, install the <a href="http://www.zeromq.org/bindings:php">PHP ZeroMQ extension</a> and the <a href="http://pecl.php.net/package/libevent">PHP libevent extension</a>.
+
+First, a little event-driven server that listens on loopback port 5555 and waits for 10 messages and then exits.
+
+<br />
+<br />
+<p style="font-size:1.5em">Server.php</p>
+
+<pre style="margin: 10px 10px 10px 2px; background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; -moz-box-shadow: 10px 10px 5px #AAA; -webkit-box-shadow: 10px 10px 5px #AAA; box-shadow: 10px 10px 5px #AAA;">
+&lt;?php
+function print_line($fd, $events, $arg) {
+    static $msgs = 1;
+    echo "CALLBACK FIRED" . PHP_EOL;
+    if($arg[0]-&gt;getsockopt (ZMQ::SOCKOPT_EVENTS) &amp; ZMQ::POLL_IN) {
+        echo "Got incoming data" . PHP_EOL;
+        var_dump ($arg[0]-&gt;recv());
+        $arg[0]-&gt;send("Got msg $msgs");
+	if($msgs++ &gt;= 10) event_base_loopexit($arg[1]);
+    }
+}
+
+// create base and event
+$base = event_base_new();
+$event = event_new();
+
+// Allocate a new context
+$context = new ZMQContext();
+
+// Create sockets
+$rep = $context-&gt;getSocket(ZMQ::SOCKET_REP);
+
+// Connect the socket
+$rep->bind("tcp://127.0.0.1:5555");
+
+// Get the stream descriptor
+$fd = $rep-&gt;getsockopt(ZMQ::SOCKOPT_FD);
+
+// set event flags
+event_set($event, $fd, EV_READ | EV_PERSIST, "print_line", array($rep, $base));
+
+// set event base
+event_base_set($event, $base);
+
+// enable event
+event_add($event);
+
+// start event loop
+event_base_loop($base);
+</pre>
+
+<br />
+<p style="font-size: 1.5em">Client.php</p>
+
+<pre style="margin: 10px 10px 10px 2px; background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; -moz-box-shadow: 10px 10px 5px #AAA; -webkit-box-shadow: 10px 10px 5px #AAA; box-shadow: 10px 10px 5px #AAA;">
+&lt;?php
+// Create new queue object
+$queue = new ZMQSocket(new ZMQContext(), ZMQ::SOCKET_REQ, "MySock1");
+$queue-&gt;connect("tcp://127.0.0.1:5555");
+
+// Assign socket 1 to the queue, send and receive
+var_dump($queue-&gt;send("hello there!")-&gt;recv());
+</pre>
+<br />
+You will notice when you run it that the server gets a couple of events that are not actually incoming messages. Right now ZeroMQ doesn't expose the nature of these events, but they are the socket initialization and client connect. You will also get one for the client disconnect. A future version of the ZeroMQ library will expose these so you can properly catch when clients connect to your server.
+<br /><br />
+There really isn't much else to say. The code should be self-explanatory. If not, see the <a href="http://php.net/libevent">PHP libevent</a> docs and the <a href="http://php.zero.mq/">PHP ZeroMQ</a> docs. And if you build something cool with this, please let me know.
+    ";}i:2;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/56-guid.html";s:5:"title";s:37:"ASRock Sandy Bridge Motherboard notes";s:4:"link";s:79:"https://toys.lerdorf.com/archives/56-ASRock-Sandy-Bridge-Motherboard-notes.html";s:11:"description";s:2566:"
+    I have pieced together two Sandy Bridge machines. This entry contains my notes on the two machines. Mostly for myself to refer back to later, but it might come in handy for others along the way.
+<br />
+<h3>Machine 1 - Overkill HTPC</h3>
+<ul>
+<li>Mythbuntu 10.10 initially but upgraded to full 11.04 when it was released</li>
+<li>i5-2500k CPU</li>
+<li>ASRock H67M LGA 1155 Intel H67 HDMI SATA 6Gb/s USB 3.0 Micro ATX Intel Motherboard</li>
+<li>Seasonic PSU</li>
+<li>G.SKILL Ripjaws X Series 8GB (2 x 4GB) 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10666) Model F3-10666CL9D-8GBXL</li>
+<li>Crucial RealSSD C300 CTFDDAC064MAG-1G1 2.5" 64GB SATA III MLC SSD</li>
+<li>Western Digital Caviar Green WD20EARS 2TB SATA 3.0Gb/s 3.5" HD</li>
+<li>ASUS ENGT430/DI/1GD3(LP) GeForce GT 430 (Fermi) 1GB 128-bit DDR3 PCI Express 2.0 x16 HDCP Graphics card</li>
+<li>AVS Gear GP-IR01BK Windows Vista Infrared MCE Black Remote Control</li>
+<li>SilverStone Aluminum/Steel Micro ATX HTPC Computer Case GD05B (Black)</li>
+<li>SiliconDust HDHomeRun HDHR-US Dual Tuner</li>
+<li>RCA ANT751 Outdoor Antenna (installed in attic - see <a href="http://flic.kr/p/9iFKer">http://flic.kr/p/9iFKer</a>)</li>
+</ul>
+<br />
+<h3>Machine 2 - Dev Box for the office</h3>
+<ul>
+<li>Ubuntu 11.04</li>
+<li>i7-2600k CPU</li>
+<li>ASRock Z68 Extreme4 LGA 1155 Intel Z68 HDMI SATA 6Gb/s USB 3.0 ATX Intel Motherboard</li>
+<li>G.SKILL Ripjaws X Series 8GB (2 x 4GB) 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10666) Model F3-10666CL9D-8GBXL</li>
+<li>G.SKILL Ripjaws Series 8GB (2 x 4GB) 240-Pin DDR3 SDRAM DDR3 1600 (PC3 12800) Model F3-12800CL9D-8GBRL</li>
+<li>Crucial M4 CT128M4SSD2 2.5" 128GB SATA III MLC Internal Solid State Drive (SSD)</li>
+<li>2 x SAMSUNG Spinpoint F4 HD204UI 2TB 5400 RPM SATA 3.0Gb/s 3.5" HD</li>
+<li>CORSAIR Builder Series CX430 CMPSU-430CX 430W ATX12V Active PFC PSU</li>
+<li>Old Antec case I had lying around</li>
+</ul>
+<p>I went scouring slickdeals and other deal sites for most of these components, so there are some mismatches. Like the slightly mismatched ram in the second machine, and the fact that I am using a 2500k in an H67 (B2!) board. No real point in an unlocked cpu in a locked board, but the k was cheaper than the non-k at the time, and who knows, I could swap the motherboard. And yes, it is a B2-stepping board, so the SATA2 ports are iffy. But since I am not using them it doesn't bother me.</p> <a class="block_level" href="https://toys.lerdorf.com/archives/56-ASRock-Sandy-Bridge-Motherboard-notes.html#extended">Continue reading "ASRock Sandy Bridge Motherboard notes"</a>
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:5:"
+    ";s:4:"date";s:20:"2011-05-21T08:06:56Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=56";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=56";}s:5:"slash";a:1:{s:8:"comments";s:1:"3";}s:7:"summary";s:2566:"
+    I have pieced together two Sandy Bridge machines. This entry contains my notes on the two machines. Mostly for myself to refer back to later, but it might come in handy for others along the way.
+<br />
+<h3>Machine 1 - Overkill HTPC</h3>
+<ul>
+<li>Mythbuntu 10.10 initially but upgraded to full 11.04 when it was released</li>
+<li>i5-2500k CPU</li>
+<li>ASRock H67M LGA 1155 Intel H67 HDMI SATA 6Gb/s USB 3.0 Micro ATX Intel Motherboard</li>
+<li>Seasonic PSU</li>
+<li>G.SKILL Ripjaws X Series 8GB (2 x 4GB) 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10666) Model F3-10666CL9D-8GBXL</li>
+<li>Crucial RealSSD C300 CTFDDAC064MAG-1G1 2.5" 64GB SATA III MLC SSD</li>
+<li>Western Digital Caviar Green WD20EARS 2TB SATA 3.0Gb/s 3.5" HD</li>
+<li>ASUS ENGT430/DI/1GD3(LP) GeForce GT 430 (Fermi) 1GB 128-bit DDR3 PCI Express 2.0 x16 HDCP Graphics card</li>
+<li>AVS Gear GP-IR01BK Windows Vista Infrared MCE Black Remote Control</li>
+<li>SilverStone Aluminum/Steel Micro ATX HTPC Computer Case GD05B (Black)</li>
+<li>SiliconDust HDHomeRun HDHR-US Dual Tuner</li>
+<li>RCA ANT751 Outdoor Antenna (installed in attic - see <a href="http://flic.kr/p/9iFKer">http://flic.kr/p/9iFKer</a>)</li>
+</ul>
+<br />
+<h3>Machine 2 - Dev Box for the office</h3>
+<ul>
+<li>Ubuntu 11.04</li>
+<li>i7-2600k CPU</li>
+<li>ASRock Z68 Extreme4 LGA 1155 Intel Z68 HDMI SATA 6Gb/s USB 3.0 ATX Intel Motherboard</li>
+<li>G.SKILL Ripjaws X Series 8GB (2 x 4GB) 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10666) Model F3-10666CL9D-8GBXL</li>
+<li>G.SKILL Ripjaws Series 8GB (2 x 4GB) 240-Pin DDR3 SDRAM DDR3 1600 (PC3 12800) Model F3-12800CL9D-8GBRL</li>
+<li>Crucial M4 CT128M4SSD2 2.5" 128GB SATA III MLC Internal Solid State Drive (SSD)</li>
+<li>2 x SAMSUNG Spinpoint F4 HD204UI 2TB 5400 RPM SATA 3.0Gb/s 3.5" HD</li>
+<li>CORSAIR Builder Series CX430 CMPSU-430CX 430W ATX12V Active PFC PSU</li>
+<li>Old Antec case I had lying around</li>
+</ul>
+<p>I went scouring slickdeals and other deal sites for most of these components, so there are some mismatches. Like the slightly mismatched ram in the second machine, and the fact that I am using a 2500k in an H67 (B2!) board. No real point in an unlocked cpu in a locked board, but the k was cheaper than the non-k at the time, and who knows, I could swap the motherboard. And yes, it is a B2-stepping board, so the SATA2 ports are iffy. But since I am not using them it doesn't bother me.</p> <a class="block_level" href="https://toys.lerdorf.com/archives/56-ASRock-Sandy-Bridge-Motherboard-notes.html#extended">Continue reading "ASRock Sandy Bridge Motherboard notes"</a>
+    ";}i:3;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/55-guid.html";s:5:"title";s:33:"Writing an OAuth Provider Service";s:4:"link";s:75:"https://toys.lerdorf.com/archives/55-Writing-an-OAuth-Provider-Service.html";s:11:"description";s:1017:"
+    Last year I showed how to use pecl/oauth to write a <a href="http://toys.lerdorf.com/archives/50-Using-pecloauth-to-post-to-Twitter.html">Twitter OAuth Consumer</a>.  But what about writing the other end of that?  What if you need to provide OAuth access to an API for your site?  How do you do it?
+<br /><br />
+Luckily John Jawed and Tjerk have put quite a bit of work into pecl/oauth lately and we now have full provider support in the extension.  It's not documented yet at php.net/oauth, but there are some examples in <a href="http://svn.php.net/viewvc/pecl/oauth/trunk/examples/provider/">svn</a>.  My particular project was to hook an OAuth provider service into a large existing Kohana-based codebase.  After a couple of iterations this should now be trivial for others to do with the current pecl/oauth extension.
+<br /><br /> <a class="block_level" href="https://toys.lerdorf.com/archives/55-Writing-an-OAuth-Provider-Service.html#extended">Continue reading "Writing an OAuth Provider Service"</a>
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:10:"
+    PHP, ";s:4:"date";s:20:"2010-05-23T04:50:22Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=55";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=55";}s:5:"slash";a:1:{s:8:"comments";s:1:"9";}s:7:"summary";s:1017:"
+    Last year I showed how to use pecl/oauth to write a <a href="http://toys.lerdorf.com/archives/50-Using-pecloauth-to-post-to-Twitter.html">Twitter OAuth Consumer</a>.  But what about writing the other end of that?  What if you need to provide OAuth access to an API for your site?  How do you do it?
+<br /><br />
+Luckily John Jawed and Tjerk have put quite a bit of work into pecl/oauth lately and we now have full provider support in the extension.  It's not documented yet at php.net/oauth, but there are some examples in <a href="http://svn.php.net/viewvc/pecl/oauth/trunk/examples/provider/">svn</a>.  My particular project was to hook an OAuth provider service into a large existing Kohana-based codebase.  After a couple of iterations this should now be trivial for others to do with the current pecl/oauth extension.
+<br /><br /> <a class="block_level" href="https://toys.lerdorf.com/archives/55-Writing-an-OAuth-Provider-Service.html#extended">Continue reading "Writing an OAuth Provider Service"</a>
+    ";}i:4;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/54-guid.html";s:5:"title";s:19:"A quick look at XHP";s:4:"link";s:61:"https://toys.lerdorf.com/archives/54-A-quick-look-at-XHP.html";s:11:"description";s:8604:"
+    Facebook released a new PHP extension today that supports inlining XML.  This is a feature known as <a href="http://msdn.microsoft.com/en-us/library/bb384832.aspx">XML Literals in Visual Basic</a>.  Go read their description here:
+<a href="http://www.facebook.com/notes/facebook-engineering/xhp-a-new-way-to-write-php/294003943919">http://www.facebook.com/notes/facebook-engineering/xhp-a-new-way-to-write-php/294003943919</a>
+<br />
+It adds an extra parsing step which maps inlined XML elements to PHP classes.  These classes are <a href="http://github.com/facebook/xhp/blob/master/php-lib/core.php">core.php</a> and <a href="http://github.com/facebook/xhp/blob/master/php-lib/html.php">html.php</a> which covers all the main HTML elements.  The syntax of those class definitions is a bit odd.  That oddness is explained in the <a href="http://wiki.github.com/facebook/xhp/how-it-works">How It Works</a> document.
+<br /><br />
+Essentially, it lets you turn:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width:60%;">
+&lt;?php
+if ($_POST['name']) {
+    echo "&lt;span&gt;Hello, {$_POST['name']}.&lt;/span&gt;";
+} else {
+?&gt;
+    &lt;form method="post"&gt;
+    What is your name?&lt;br&gt;
+    &lt;input type="text" name="name"&gt;
+    &lt;input type="submit"&gt;
+    &lt;/form&gt;
+&lt?php
+}
+</pre>
+
+into:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width: 60%;">
+&lt;?php
+require './core.php';
+require './html.php';
+if ($_POST['name']) {
+  echo &lt;span&gt;Hello, {$_POST['name']}.&lt;/span&gt;;
+} else {
+  echo
+    &lt;form method="post"&gt;
+      What is your name?&lt;br /&gt;
+      &lt;input type="text" name="name" /&gt;
+      &lt;input type="submit" /&gt;
+    &lt;/form&gt;;
+}
+</pre>
+
+The main interest, at least to me, is that because PHP now understands the XML it is outputting, filtering can be done in a context-sensitive manner.  The <a href="http://php.net/filter">input filtering</a> built into PHP can not know which context a string is going to be used in.  If you use a string inside an on-handler or a style attribute, for example, you need radically different filtering from it being used as regular XML PCDATA in the html body.  Some will say this form is more readable as well, but that isn't something that concerns me very much.
+<br /><br />
+The real question here is what is this runtime xml validation going to cost you.  I have given talks in the past where I have used "class br extends html { ... }" as a classic example of something you should never do.  A br tag is just a br tag.  When you need one, stick a &lt;br&gt; in your page, don't instantiate a class and call a render() method.  So, when I looked at <a href="http://github.com/facebook/xhp/blob/master/php-lib/html.php">html.php</a> and saw:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width:60%;">
+class :br extends :xhp:html-singleton {
+  category %flow, %phrase;
+  protected $tagName = 'br';
+}
+</pre>
+
+I got a bit skeptical.  Another thing I have been known to tell people is, "Friend don't let friends use Singletons."  Which isn't something I came up with.  Someone, a friend, I guess, told me that years ago.  Ok ok, as Marcel points out in the comments, this isn't a real singleton, just in name.
+<br /><br />
+The &quot;singleton&quot; looks like this:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width:60%;">
+abstract class :xhp:html-singleton extends :xhp:html-element {
+  children empty;
+
+  protected function stringify() {
+    return $this->renderBaseAttrs() . ' />';
+  }
+}
+</pre>
+
+which extends html-element which in turn extends primitive.  You can go read all the code for those yourself.
+<br /><br />
+Note that to build XHP you will need flex 2.5.35 which most distros won't have installed by default.  Grab the <a href="http://prdownloads.sourceforge.net/flex/flex-2.5.35.tar.gz?download">flex tarball</a> and ./configure &&amp; make install it.  Then you are ready to go.
+<br /><br />
+I pointed <a href="http://www.joedog.org/index/siege-home">Siege</a> at my rather underpowered AS1410 SU2300 with the above trivial form examples.  The plain PHP one and the XHP version.  Ran each one 5 times benchmarking for 30s each time.  The plain PHP one averaged around 1300 requests/sec.  Here is a representative sample:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+acer:~> siege -c 3 -b -t30s http://xhp.localhost/1.php
+** SIEGE 2.68
+** Preparing 3 concurrent users for battle.
+The server is now under siege...
+Lifting the server siege...      done.
+Transactions:		       38239 hits
+Availability:		      100.00 %
+Elapsed time:		       29.60 secs
+Data transferred:	        3.97 MB
+Response time:		        0.00 secs
+Transaction rate:	     1291.86 trans/sec
+Throughput:		        0.13 MB/sec
+Concurrency:		        2.93
+Successful transactions:       38239
+Failed transactions:	           0
+Longest transaction:	        0.05
+Shortest transaction:	        0.00
+</pre>
+
+And the XHP version:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+Transactions:		         868 hits
+Availability:		      100.00 %
+Elapsed time:		       29.28 secs
+Data transferred:	        0.08 MB
+Response time:		        0.10 secs
+Transaction rate:	       29.64 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        2.99
+Successful transactions:         868
+Failed transactions:	           0
+Longest transaction:	        0.21
+Shortest transaction:	        0.05
+</pre>
+
+So, a drop from 1300 to around 30 requests per second and latency from less than 10ms to 100ms.  Running XHP on plain PHP is definitely out of the question.  But, knowing that Facebook uses APC heavily and looking through the code (see the MINIT function in <a href="http://github.com/facebook/xhp/blob/master/ext.cpp">ext.cpp</a>) we can see that it should play nicely with APC.  So, re-running our PHP version of the form, now with APC enabled, that goes from 1300 to around 1460 requests per second, and no measurable latency:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+Transactions:		       43773 hits
+Availability:		      100.00 %
+Elapsed time:		       29.88 secs
+Data transferred:	        4.55 MB
+Response time:		        0.00 secs
+Transaction rate:	     1464.96 trans/sec
+Throughput:		        0.15 MB/sec
+Concurrency:		        2.93
+Successful transactions:       43773
+Failed transactions:	           0
+Longest transaction:	        0.07
+Shortest transaction:	        0.00
+</pre>
+
+The XHP version of the form now with APC enabled:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+Transactions:		        9707 hits
+Availability:		      100.00 %
+Elapsed time:		       29.45 secs
+Data transferred:	        0.94 MB
+Response time:		        0.01 secs
+Transaction rate:	      329.61 trans/sec
+Throughput:		        0.03 MB/sec
+Concurrency:		        2.97
+Successful transactions:        9707
+Failed transactions:	           0
+Longest transaction:	        0.21
+Shortest transaction:	        0.00
+</pre>
+
+Much better.  But it is still around a 75% performance drop from 1460 to 330 and a ~10ms latency penalty.  And yes, I did have a default filter enabled for these tests, so there was basic XSS filtering in place for the naked $_POST['name'] variable in the plain PHP version.  Of course, the default filtering would likely fail if the user data was used in a different context.  And this 75% is obviously going to depend on what else is going on during the request.  If you are spending most of your time calculating a fractal or waiting on MySQL, you may not notice XHP very much at all.
+<br /><br />
+The bulk of the time is spent in all the tag to class interaction.  If the core.php and html.php code was all baked into the XHP extension, it would be a lot quicker, of course.  So, when you combine XHP with HipHop PHP you can start to imagine that the performance penalty would be a lot less than 75% and it becomes a viable approach.  Of course, this also means that if you are unable to run HipHop you probably want to think a bit and run some tests before adopting this.  If you are already doing some sort of external templating, XHP could very well be a faster approach.
+
+ <a class="block_level" href="https://toys.lerdorf.com/archives/54-A-quick-look-at-XHP.html#extended">Continue reading "A quick look at XHP"</a>
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:5:"
+    ";s:4:"date";s:20:"2010-02-10T05:22:35Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=54";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=54";}s:5:"slash";a:1:{s:8:"comments";s:2:"12";}s:7:"summary";s:8604:"
+    Facebook released a new PHP extension today that supports inlining XML.  This is a feature known as <a href="http://msdn.microsoft.com/en-us/library/bb384832.aspx">XML Literals in Visual Basic</a>.  Go read their description here:
+<a href="http://www.facebook.com/notes/facebook-engineering/xhp-a-new-way-to-write-php/294003943919">http://www.facebook.com/notes/facebook-engineering/xhp-a-new-way-to-write-php/294003943919</a>
+<br />
+It adds an extra parsing step which maps inlined XML elements to PHP classes.  These classes are <a href="http://github.com/facebook/xhp/blob/master/php-lib/core.php">core.php</a> and <a href="http://github.com/facebook/xhp/blob/master/php-lib/html.php">html.php</a> which covers all the main HTML elements.  The syntax of those class definitions is a bit odd.  That oddness is explained in the <a href="http://wiki.github.com/facebook/xhp/how-it-works">How It Works</a> document.
+<br /><br />
+Essentially, it lets you turn:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width:60%;">
+&lt;?php
+if ($_POST['name']) {
+    echo "&lt;span&gt;Hello, {$_POST['name']}.&lt;/span&gt;";
+} else {
+?&gt;
+    &lt;form method="post"&gt;
+    What is your name?&lt;br&gt;
+    &lt;input type="text" name="name"&gt;
+    &lt;input type="submit"&gt;
+    &lt;/form&gt;
+&lt?php
+}
+</pre>
+
+into:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width: 60%;">
+&lt;?php
+require './core.php';
+require './html.php';
+if ($_POST['name']) {
+  echo &lt;span&gt;Hello, {$_POST['name']}.&lt;/span&gt;;
+} else {
+  echo
+    &lt;form method="post"&gt;
+      What is your name?&lt;br /&gt;
+      &lt;input type="text" name="name" /&gt;
+      &lt;input type="submit" /&gt;
+    &lt;/form&gt;;
+}
+</pre>
+
+The main interest, at least to me, is that because PHP now understands the XML it is outputting, filtering can be done in a context-sensitive manner.  The <a href="http://php.net/filter">input filtering</a> built into PHP can not know which context a string is going to be used in.  If you use a string inside an on-handler or a style attribute, for example, you need radically different filtering from it being used as regular XML PCDATA in the html body.  Some will say this form is more readable as well, but that isn't something that concerns me very much.
+<br /><br />
+The real question here is what is this runtime xml validation going to cost you.  I have given talks in the past where I have used "class br extends html { ... }" as a classic example of something you should never do.  A br tag is just a br tag.  When you need one, stick a &lt;br&gt; in your page, don't instantiate a class and call a render() method.  So, when I looked at <a href="http://github.com/facebook/xhp/blob/master/php-lib/html.php">html.php</a> and saw:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width:60%;">
+class :br extends :xhp:html-singleton {
+  category %flow, %phrase;
+  protected $tagName = 'br';
+}
+</pre>
+
+I got a bit skeptical.  Another thing I have been known to tell people is, "Friend don't let friends use Singletons."  Which isn't something I came up with.  Someone, a friend, I guess, told me that years ago.  Ok ok, as Marcel points out in the comments, this isn't a real singleton, just in name.
+<br /><br />
+The &quot;singleton&quot; looks like this:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em; width:60%;">
+abstract class :xhp:html-singleton extends :xhp:html-element {
+  children empty;
+
+  protected function stringify() {
+    return $this->renderBaseAttrs() . ' />';
+  }
+}
+</pre>
+
+which extends html-element which in turn extends primitive.  You can go read all the code for those yourself.
+<br /><br />
+Note that to build XHP you will need flex 2.5.35 which most distros won't have installed by default.  Grab the <a href="http://prdownloads.sourceforge.net/flex/flex-2.5.35.tar.gz?download">flex tarball</a> and ./configure &&amp; make install it.  Then you are ready to go.
+<br /><br />
+I pointed <a href="http://www.joedog.org/index/siege-home">Siege</a> at my rather underpowered AS1410 SU2300 with the above trivial form examples.  The plain PHP one and the XHP version.  Ran each one 5 times benchmarking for 30s each time.  The plain PHP one averaged around 1300 requests/sec.  Here is a representative sample:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+acer:~> siege -c 3 -b -t30s http://xhp.localhost/1.php
+** SIEGE 2.68
+** Preparing 3 concurrent users for battle.
+The server is now under siege...
+Lifting the server siege...      done.
+Transactions:		       38239 hits
+Availability:		      100.00 %
+Elapsed time:		       29.60 secs
+Data transferred:	        3.97 MB
+Response time:		        0.00 secs
+Transaction rate:	     1291.86 trans/sec
+Throughput:		        0.13 MB/sec
+Concurrency:		        2.93
+Successful transactions:       38239
+Failed transactions:	           0
+Longest transaction:	        0.05
+Shortest transaction:	        0.00
+</pre>
+
+And the XHP version:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+Transactions:		         868 hits
+Availability:		      100.00 %
+Elapsed time:		       29.28 secs
+Data transferred:	        0.08 MB
+Response time:		        0.10 secs
+Transaction rate:	       29.64 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        2.99
+Successful transactions:         868
+Failed transactions:	           0
+Longest transaction:	        0.21
+Shortest transaction:	        0.05
+</pre>
+
+So, a drop from 1300 to around 30 requests per second and latency from less than 10ms to 100ms.  Running XHP on plain PHP is definitely out of the question.  But, knowing that Facebook uses APC heavily and looking through the code (see the MINIT function in <a href="http://github.com/facebook/xhp/blob/master/ext.cpp">ext.cpp</a>) we can see that it should play nicely with APC.  So, re-running our PHP version of the form, now with APC enabled, that goes from 1300 to around 1460 requests per second, and no measurable latency:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+Transactions:		       43773 hits
+Availability:		      100.00 %
+Elapsed time:		       29.88 secs
+Data transferred:	        4.55 MB
+Response time:		        0.00 secs
+Transaction rate:	     1464.96 trans/sec
+Throughput:		        0.15 MB/sec
+Concurrency:		        2.93
+Successful transactions:       43773
+Failed transactions:	           0
+Longest transaction:	        0.07
+Shortest transaction:	        0.00
+</pre>
+
+The XHP version of the form now with APC enabled:
+
+<pre style="background: #000; border: 1px solid #fff; padding: 5px; line-height:1em; color:#fff; width:60%;">
+Transactions:		        9707 hits
+Availability:		      100.00 %
+Elapsed time:		       29.45 secs
+Data transferred:	        0.94 MB
+Response time:		        0.01 secs
+Transaction rate:	      329.61 trans/sec
+Throughput:		        0.03 MB/sec
+Concurrency:		        2.97
+Successful transactions:        9707
+Failed transactions:	           0
+Longest transaction:	        0.21
+Shortest transaction:	        0.00
+</pre>
+
+Much better.  But it is still around a 75% performance drop from 1460 to 330 and a ~10ms latency penalty.  And yes, I did have a default filter enabled for these tests, so there was basic XSS filtering in place for the naked $_POST['name'] variable in the plain PHP version.  Of course, the default filtering would likely fail if the user data was used in a different context.  And this 75% is obviously going to depend on what else is going on during the request.  If you are spending most of your time calculating a fractal or waiting on MySQL, you may not notice XHP very much at all.
+<br /><br />
+The bulk of the time is spent in all the tag to class interaction.  If the core.php and html.php code was all baked into the XHP extension, it would be a lot quicker, of course.  So, when you combine XHP with HipHop PHP you can start to imagine that the performance penalty would be a lot less than 75% and it becomes a viable approach.  Of course, this also means that if you are unable to run HipHop you probably want to think a bit and run some tests before adopting this.  If you are already doing some sort of external templating, XHP could very well be a faster approach.
+
+ <a class="block_level" href="https://toys.lerdorf.com/archives/54-A-quick-look-at-XHP.html#extended">Continue reading "A quick look at XHP"</a>
+    ";}i:5;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/53-guid.html";s:5:"title";s:25:"HipHop PHP - Nifty Trick?";s:4:"link";s:64:"https://toys.lerdorf.com/archives/53-HipHop-PHP-Nifty-Trick.html";s:11:"description";s:2349:"
+    In a response to a question from ReadWriteWeb, among other things, I wrote:
+
+<blockquote>
+My main worry here is that people think this is some kind of magic
+bullet that will solve their site performance problems.  Generating C++
+code from PHP code is a nifty trick and people seem to have gotten quite
+excited about it.  I'd love to see those same people get excited about
+basic profiling and identifying the most costly areas of an application.
+Speeding up one of the faster parts of your system isn't going to give
+you anywhere near as much of a benefit as speeding up, or eliminating,
+one of the slower parts of your overall system.
+</blockquote>
+
+The "nifty trick" part of that seems to have become the story, and them
+injecting a "just" in front it of it makes it sound more derogatory.  Anyone
+who knows me knows that I am a big fan of nifty tricks that solve the problem.
+When I first heard about the Facebook effort I was assuming they were writing
+a JIT based on LLVM V8 or something along those lines.  Writing a good JIT is
+hard.  Doing static code analysis and generating compilable C++ from it is
+indeed a nifty trick.  It's not "just" a nifty trick, it is a cool trick that takes
+advantage of a number of characteristics of PHP.  The main one being that
+you can't overload PHP functions.  strlen() is always strlen, for example.  In
+Python, this would be harder because you can overload everything.
+<br /><br />
+I also noted that most sites on the Web have a lot of lower hanging fruit that
+would provide a much bigger performance improvement, if fixed, than doubling
+the speed of the PHP execution phase.  The ReadWriteWeb site, for example,
+needs 160 separate HTTP requests and 41 distinct DNS lookups to load the
+front page.  And once you get beyond the frontend inefficiencies you usually
+find Database issues, inefficient system call issues and general architecture
+problems that again aren't solved by speeding up PHP execution.
+<br /><br />
+If you have done your homework and find that your web servers are cpu-bound,
+you are already using an opcode cache like <a href="http://pecl.php.net/apc">APC</a>
+and your <a href="http://valgrind.org/info/tools.html#callgrind">Callgrind</a> callgraph
+shows you that the PHP executor is a significant bottleneck, then HipHop PHP is
+definitely something you should be looking at.
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:5:"
+    ";s:4:"date";s:20:"2010-02-04T18:50:37Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=53";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=53";}s:5:"slash";a:1:{s:8:"comments";s:2:"13";}s:7:"summary";s:2349:"
+    In a response to a question from ReadWriteWeb, among other things, I wrote:
+
+<blockquote>
+My main worry here is that people think this is some kind of magic
+bullet that will solve their site performance problems.  Generating C++
+code from PHP code is a nifty trick and people seem to have gotten quite
+excited about it.  I'd love to see those same people get excited about
+basic profiling and identifying the most costly areas of an application.
+Speeding up one of the faster parts of your system isn't going to give
+you anywhere near as much of a benefit as speeding up, or eliminating,
+one of the slower parts of your overall system.
+</blockquote>
+
+The "nifty trick" part of that seems to have become the story, and them
+injecting a "just" in front it of it makes it sound more derogatory.  Anyone
+who knows me knows that I am a big fan of nifty tricks that solve the problem.
+When I first heard about the Facebook effort I was assuming they were writing
+a JIT based on LLVM V8 or something along those lines.  Writing a good JIT is
+hard.  Doing static code analysis and generating compilable C++ from it is
+indeed a nifty trick.  It's not "just" a nifty trick, it is a cool trick that takes
+advantage of a number of characteristics of PHP.  The main one being that
+you can't overload PHP functions.  strlen() is always strlen, for example.  In
+Python, this would be harder because you can overload everything.
+<br /><br />
+I also noted that most sites on the Web have a lot of lower hanging fruit that
+would provide a much bigger performance improvement, if fixed, than doubling
+the speed of the PHP execution phase.  The ReadWriteWeb site, for example,
+needs 160 separate HTTP requests and 41 distinct DNS lookups to load the
+front page.  And once you get beyond the frontend inefficiencies you usually
+find Database issues, inefficient system call issues and general architecture
+problems that again aren't solved by speeding up PHP execution.
+<br /><br />
+If you have done your homework and find that your web servers are cpu-bound,
+you are already using an opcode cache like <a href="http://pecl.php.net/apc">APC</a>
+and your <a href="http://valgrind.org/info/tools.html#callgrind">Callgrind</a> callgraph
+shows you that the PHP executor is a significant bottleneck, then HipHop PHP is
+definitely something you should be looking at.
+    ";}i:6;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/52-guid.html";s:5:"title";s:27:"SQLi Detection - Duh Moment";s:4:"link";s:67:"https://toys.lerdorf.com/archives/52-SQLi-Detection-Duh-Moment.html";s:11:"description";s:1837:"
+    Not sure why it took me so long to figure out what I am sure is obvious to most other people who have thought about this, but it never clicked for me how to get anywhere near useful SQL Injection detection.  The injection itself is trivial, of course, but determining whether it actually worked and weeding out false positives in an automated manner was something that seemed too hard.  <br />
+<br />
+During my run on Friday I had a Duh! moment on it.  Annoyingly simple.  Do it in 3 requests.  Request #1 is a normal request.  For example, &quot;<strong>?id=1</strong>&quot; in the URL.  If the id is being passed to an SQL request it will return a single record or perhaps no record, it doesn't really matter.  Now on request #2 do &quot;<strong>?id=1 or 3=4</strong>&quot;, that is, inject a false 'OR' condition.  If the output changes, we are done.  Nothing to see here.  However, if the output does not change we send request #3 with &quot;<strong>?id=1 or 3=3</strong>&quot; and if that output differs from request #2 then we have a potential SQLi situation.  There are of course still chances of false positives (and negatives) with page stamps and such, but filtering out the response headers and html comments cuts down on that a bit.  Add different combinations of single and double-quotes, like &quot;<strong>?id=1'or'3'='3</strong>&quot; (without the double-quotes, of course) and it might be able to catch something.<br />
+<br />
+The best thing about it is that it can slide into an existing scanner framework quite easily.  If you have a base reference request, then it just adds a single request to the common case where the false 'OR' condition output does not match the base reference.  You only need to do the true 'OR' condition request in case it does match.<br />
+<br />
+Anybody have any other approaches?
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:15:"
+    Software, ";s:4:"date";s:20:"2010-01-11T02:44:09Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=52";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=52";}s:5:"slash";a:1:{s:8:"comments";s:1:"8";}s:7:"summary";s:1837:"
+    Not sure why it took me so long to figure out what I am sure is obvious to most other people who have thought about this, but it never clicked for me how to get anywhere near useful SQL Injection detection.  The injection itself is trivial, of course, but determining whether it actually worked and weeding out false positives in an automated manner was something that seemed too hard.  <br />
+<br />
+During my run on Friday I had a Duh! moment on it.  Annoyingly simple.  Do it in 3 requests.  Request #1 is a normal request.  For example, &quot;<strong>?id=1</strong>&quot; in the URL.  If the id is being passed to an SQL request it will return a single record or perhaps no record, it doesn't really matter.  Now on request #2 do &quot;<strong>?id=1 or 3=4</strong>&quot;, that is, inject a false 'OR' condition.  If the output changes, we are done.  Nothing to see here.  However, if the output does not change we send request #3 with &quot;<strong>?id=1 or 3=3</strong>&quot; and if that output differs from request #2 then we have a potential SQLi situation.  There are of course still chances of false positives (and negatives) with page stamps and such, but filtering out the response headers and html comments cuts down on that a bit.  Add different combinations of single and double-quotes, like &quot;<strong>?id=1'or'3'='3</strong>&quot; (without the double-quotes, of course) and it might be able to catch something.<br />
+<br />
+The best thing about it is that it can slide into an existing scanner framework quite easily.  If you have a base reference request, then it just adds a single request to the common case where the false 'OR' condition output does not match the base reference.  You only need to do the true 'OR' condition request in case it does match.<br />
+<br />
+Anybody have any other approaches?
+    ";}i:7;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/51-guid.html";s:5:"title";s:20:"Playing with Gearman";s:4:"link";s:62:"https://toys.lerdorf.com/archives/51-Playing-with-Gearman.html";s:11:"description";s:1759:"
+    This was written in September 2009 when the current version of Gearman was 0.9.
+Thanks to Eric Day for answering my dumb questions along the way.
+<br /><br />
+To get started, install Gearman.  I am on Debian, so this is what I installed:
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em;">
+% apt-get install gearman gearman-job-server gearman-tools libgearman1 libgearman-dev libdrizzle-dev
+</pre>
+
+Enable Gearman in <strong>/etc/default/gearman-server</strong>
+<br />
+Set up Gearman to use MySQL for its persistent queue store in <strong>/etc/default/gearman-job-server</strong>
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em;">
+ PARAMS="-q libdrizzle --libdrizzle-host=127.0.0.1 --libdrizzle-user=gearman \
+                       --libdrizzle-password=your_pw --libdrizzle-db=gearman \
+                       --libdrizzle-table=gearman_queue --libdrizzle-mysql"
+
+% mysqladmin create gearman
+
+% mysql
+mysql> create USER gearman@localhost identified by 'your_pw';
+mysql> GRANT ALL on gearman.* to gearman@localhost;
+</pre>
+
+** <strong>Careful</strong>, if you are running MySQL using <strong>--old-passwords</strong> this won't work with libdrizzle.
+You will need to get the 41-char password hash with a little snippet of PHP that does
+the double sha1 encoding:
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em;">
+% php -r "echo '*'.strtoupper(sha1(sha1('your_pw',true)));"
+
+% mysql
+mysql> UPDATE mysql.user set Password='above_output' where User='gearman';
+
+% mysqladmin flush-privileges
+</pre>
+ <a class="block_level" href="https://toys.lerdorf.com/archives/51-Playing-with-Gearman.html#extended">Continue reading "Playing with Gearman"</a>
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:5:"
+    ";s:4:"date";s:20:"2009-09-24T21:57:32Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=51";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=51";}s:5:"slash";a:1:{s:8:"comments";s:2:"10";}s:7:"summary";s:1759:"
+    This was written in September 2009 when the current version of Gearman was 0.9.
+Thanks to Eric Day for answering my dumb questions along the way.
+<br /><br />
+To get started, install Gearman.  I am on Debian, so this is what I installed:
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em;">
+% apt-get install gearman gearman-job-server gearman-tools libgearman1 libgearman-dev libdrizzle-dev
+</pre>
+
+Enable Gearman in <strong>/etc/default/gearman-server</strong>
+<br />
+Set up Gearman to use MySQL for its persistent queue store in <strong>/etc/default/gearman-job-server</strong>
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em;">
+ PARAMS="-q libdrizzle --libdrizzle-host=127.0.0.1 --libdrizzle-user=gearman \
+                       --libdrizzle-password=your_pw --libdrizzle-db=gearman \
+                       --libdrizzle-table=gearman_queue --libdrizzle-mysql"
+
+% mysqladmin create gearman
+
+% mysql
+mysql> create USER gearman@localhost identified by 'your_pw';
+mysql> GRANT ALL on gearman.* to gearman@localhost;
+</pre>
+
+** <strong>Careful</strong>, if you are running MySQL using <strong>--old-passwords</strong> this won't work with libdrizzle.
+You will need to get the 41-char password hash with a little snippet of PHP that does
+the double sha1 encoding:
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px; line-height:1em;">
+% php -r "echo '*'.strtoupper(sha1(sha1('your_pw',true)));"
+
+% mysql
+mysql> UPDATE mysql.user set Password='above_output' where User='gearman';
+
+% mysqladmin flush-privileges
+</pre>
+ <a class="block_level" href="https://toys.lerdorf.com/archives/51-Playing-with-Gearman.html#extended">Continue reading "Playing with Gearman"</a>
+    ";}i:8;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/50-guid.html";s:5:"title";s:35:"Using pecl/oauth to post to Twitter";s:4:"link";s:76:"https://toys.lerdorf.com/archives/50-Using-pecloauth-to-post-to-Twitter.html";s:11:"description";s:1372:"
+    I have seen a lot of questions about <a href=" http://wiki.oauth.net/f/iiw-one-pager.pdf">OAuth</a> and specifically how to do OAuth from PHP.  We have a new <a href="http://pecl.php.net/oauth">pecl oauth extension</a> written by <a href="http://jawed.name/">John Jawed</a> which does a really good job simplifying OAuth.
+<br /><br />
+I added Twitter support to <a href="http://slowgeek.com">Slowgeek.com</a> the other day and it was extremely painless.  The goal was to let users have a way to have Slowgeek send a tweet on their behalf when they have completed a <a href="http://nikeplus.nike.com">Nike+</a> run.  Here is a simplified description of what I did.
+<br /><br />
+First, I needed to get the user to authorize Slowgeek to tweet on their behalf.  This is done by asking Twitter for an access token and secret which will be stored on Slowgeek.  This access token and secret will allow us to act on behalf of the user.  This is made a bit easier by the fact that <a href="http://apiwiki.twitter.com/OAuth-FAQ#Howlongdoesanaccesstokenlast">Twitter does not expire access tokens</a> at this point, so I didn't need to worry about an access token refresh workflow.
+<br /><br />
+
+
+
+ <a class="block_level" href="https://toys.lerdorf.com/archives/50-Using-pecloauth-to-post-to-Twitter.html#extended">Continue reading "Using pecl/oauth to post to Twitter"</a>
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:10:"
+    PHP, ";s:4:"date";s:20:"2009-04-27T22:20:08Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=50";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=50";}s:5:"slash";a:1:{s:8:"comments";s:2:"11";}s:7:"summary";s:1372:"
+    I have seen a lot of questions about <a href=" http://wiki.oauth.net/f/iiw-one-pager.pdf">OAuth</a> and specifically how to do OAuth from PHP.  We have a new <a href="http://pecl.php.net/oauth">pecl oauth extension</a> written by <a href="http://jawed.name/">John Jawed</a> which does a really good job simplifying OAuth.
+<br /><br />
+I added Twitter support to <a href="http://slowgeek.com">Slowgeek.com</a> the other day and it was extremely painless.  The goal was to let users have a way to have Slowgeek send a tweet on their behalf when they have completed a <a href="http://nikeplus.nike.com">Nike+</a> run.  Here is a simplified description of what I did.
+<br /><br />
+First, I needed to get the user to authorize Slowgeek to tweet on their behalf.  This is done by asking Twitter for an access token and secret which will be stored on Slowgeek.  This access token and secret will allow us to act on behalf of the user.  This is made a bit easier by the fact that <a href="http://apiwiki.twitter.com/OAuth-FAQ#Howlongdoesanaccesstokenlast">Twitter does not expire access tokens</a> at this point, so I didn't need to worry about an access token refresh workflow.
+<br /><br />
+
+
+
+ <a class="block_level" href="https://toys.lerdorf.com/archives/50-Using-pecloauth-to-post-to-Twitter.html#extended">Continue reading "Using pecl/oauth to post to Twitter"</a>
+    ";}i:9;a:8:{s:5:"about";s:46:"https://toys.lerdorf.com/archives/49-guid.html";s:5:"title";s:19:"Select * from World";s:4:"link";s:59:"https://toys.lerdorf.com/archives/49-Select-from-World.html";s:11:"description";s:7285:"
+    I have been having a lot of fun with two Yahoo! technologies that have been evolving quickly.  <a href="http://developer.yahoo.com/yql">YQL</a> and <a href="http://developer.yahoo.com/geo">GeoPlanet</a>.  The first, YQL, puts an SQL-like interface on top of all the data on the Internet.  And the second, GeoPlanet, introduces the concept of a WOEID (Where-On-Earth ID) that you can think of as a foreign key for your geo-related SQL expressions.<br /><br />
+
+First some example YQL queries to get you used to this concept of treating the Internet like a database.  Go to <a href="http://developer.yahoo.com/yql/console/">the YQL Console</a> and paste these queries into the console to follow along.<br /><br />
+
+<code>select * from geo.places where text="SJC"</code>
+<br /><br />
+This looks up "SJC" in GeoPlanet and returns an XML result containing this information:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px;"><code>        &lt;woeid&gt;12521722&lt;/woeid&gt;
+        &lt;placeTypeName code="14"&gt;Airport&lt;/placeTypeName&gt;
+        &lt;name>Norman Y Mineta San Jose International Airport&lt;/name&gt;
+        &lt;country code="US" type="Country">United States&lt;/country&gt;
+        &lt;admin1 code="US-CA" type="State">California&lt;/admin1&gt;
+        &lt;admin2 code="" type="County"&gt;Santa Clara&lt;/admin2&gt;
+        &lt;admin3/&gt;
+        &lt;locality1 type="Town"&gt;Downtown San Jose&lt;/locality1&gt;
+        &lt;locality2/&gt;
+        &lt;postal type="Zip Code"&gt;95110&lt;/postal&gt;
+        &lt;centroid&gt;
+            &lt;latitude>37.364079&lt;/latitude&gt;
+            &lt;longitude>-121.920662&lt;/longitude&gt;
+        &lt;/centroid&gt;
+        &lt;boundingBox&gt;
+            &lt;southWest&gt;
+                &lt;latitude&gt;37.35495&lt;/latitude&gt
+                &lt;longitude&gt;-121.932152&lt;/longitude&gt;
+            &lt;/southWest&gt;
+            &lt;northEast&gt;
+                &lt;latitude&gt;37.373211&lt;/latitude&gt;
+                &lt;longitude&gt;-121.909172&lt;/longitude&gt;
+            &lt;/northEast&gt;
+        &lt;/boundingBox&gt;</code></pre>
+
+The first thing to note is the <b>woeid</b>.  It is just an integer, but it uniquely identifies San Jose Airport.  If you were to search for "San Jose Airport" instead of "SJC" you would find that one of the places returned has the exact same woeid.  So, the woeid is a way to normalize placenames.  The other thing to note here is that you get an approximate bounding box.  This is what makes the woeid special.  A place is more than just a lat/lon.  If I told you that I would meet you in Paris next week, that doesn't tell you as much as if I told you that I would meet you at the Eiffel Tower next week.  If we pretend that the Eiffel tower is in the center of Paris, those two locations might actually have the same lat/lon, but the concept of the Eiffel Tower is much more precise than the concept of Paris.  The difference is the bounding box.  And yes, landmarks like the Eiffel Tower or Central Park also have unique woeids.  Try it:
+
+<pre><code>select * from geo.places where text="Eiffel Tower"</code></pre>
+
+Note that the YQL console also gives you a direct URL for the results.  This last one is at <a href="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places%20where%20text%3D%22Eiffel%20Tower%22&format=xml">http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places%20where%20text%3D%22Eiffel%20Tower%22&format=xml</a>.  Not the prettiest URL in the world, but you can feed that to a simple little PHP program to integrate these YQL queries in your PHP code.  Something like this:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px;"><code>&lt;?php
+$url = "http://query.yahooapis.com/v1/public/yql?q=";
+$q   = "select * from geo.places where text='Eiffel Tower'";
+$fmt = "xml";
+$x = simplexml_load_file($url.urlencode($q)."&format=$fmt");
+?&gt;</code></pre>
+
+For a higher daily limit on your YQL queries you can grab an OAuth consumer key and use the OAuth-authenticated YQL entry point.  There is an example of how to use <a href="http://pecl.php.net/oauth">pecl/oauth</a> with YQL at <a href="http://paul.slowgeek.com/hacku/examples/yql-oath.php">http://paul.slowgeek.com/hacku/examples/yql-oath.php</a>.  Take a close look at the YQL query in that example.  It is:<br /><br />
+
+<pre><code>select * from html where xpath= '//tr//a[@href="https://toys.lerdorf.com/wiki/Capital_(political)"]/../../../td[2]/a/text()'
+ and url in (select url from search.web where url like '%wikipedia%' and query='Denmark' limit 1) </code></pre>
+
+Sub-selects!  So, we do a web search for urls containing the string 'wikipedia' whose contents contains 'Denmark'.  That is going to get us the Wikipedia page for Denmark.  We then perform an xpath query on that page to extract the text of the link containing the name of the capital of Denmark.  Change 'Denmark' in that query to any country and the query will magically return the capital of that country.  So, YQL is also a general-purpose page scraper.<br /><br />
+
+But back to the woeid.  Places belong to other places, and they are next to other places and they contain even more places.  That is, a place has a parent, siblings and children.  You can query all of these.  Here is a woeid explorer application written entirely in Javascript:<br /><br />
+
+<a href="http://paul.slowgeek.com/hacku/examples/geoBoundingBoxTabs.html">http://paul.slowgeek.com/hacku/examples/geoBoundingBoxTabs.html</a><br /><br />
+
+Try entering some places or points of interest around the world and click on the various radio buttons and then the "Geo It" button to see the relationship between the places and the bounding boxes for all these various places.  If you look at the source for this application you can see that it uses YQL's callback-json output, so there is no server-side component required to get this to work.  Try doing a search for "Eiffel Tower" and turn on the "Sat" version of the map.  You can see that the bounding box is pretty damn good.  Try it for other landmarks.  Then walk up the parent tree, or across the siblings.  Or check out the Belongs-To data.<br /><br />
+
+Once you have a woeid for a place, you can start using it on other services such as Upcoming:<br />
+
+<pre><code>select * from upcoming.events where woeid=2487956</code></pre>
+
+and Flickr:<br />
+
+<pre><code>select * from flickr.photos.search where woe_id=2487956</code></pre>
+
+(yes, I know, it would have been nice if the column names were consistent there)<br /><br />
+
+And finally you can also add YQL support for any open API out there.  There is a long list of them here:<br /><br />
+<a href="http://github.com/spullara/yql-tables/tree/master">http://github.com/spullara/yql-tables/tree/master</a><br /><br />
+
+To use one of these, try something like this:
+
+<pre><code>use 'http://github.com/spullara/yql-tables/raw/master/yelp/yelp.review.search.xml' as yelp;
+select * from yelp where term='pizza' and location='sunnyvale, ca' and ywsid='6L0Lc-yn1OKMkCKeXLD4lg'</code></pre>
+
+As a bit of Geo and API nerd, this is super cool to me.  I hope you can find some interesting things to do with this as well.  If you build something cool with it, please let me know.
+
+
+    ";s:2:"dc";a:4:{s:9:"publisher";s:18:" Rasmus' Toys Page";s:7:"creator";s:27:"nospam@example.com (Rasmus)";s:7:"subject";s:10:"
+    PHP, ";s:4:"date";s:20:"2009-03-19T22:06:39Z";}s:3:"wfw";a:2:{s:7:"comment";s:46:"https://toys.lerdorf.com/wfwcomment.php?cid=49";s:10:"commentrss";s:65:"https://toys.lerdorf.com/rss.php?version=1.0&type=comments&cid=49";}s:5:"slash";a:1:{s:8:"comments";s:1:"3";}s:7:"summary";s:7285:"
+    I have been having a lot of fun with two Yahoo! technologies that have been evolving quickly.  <a href="http://developer.yahoo.com/yql">YQL</a> and <a href="http://developer.yahoo.com/geo">GeoPlanet</a>.  The first, YQL, puts an SQL-like interface on top of all the data on the Internet.  And the second, GeoPlanet, introduces the concept of a WOEID (Where-On-Earth ID) that you can think of as a foreign key for your geo-related SQL expressions.<br /><br />
+
+First some example YQL queries to get you used to this concept of treating the Internet like a database.  Go to <a href="http://developer.yahoo.com/yql/console/">the YQL Console</a> and paste these queries into the console to follow along.<br /><br />
+
+<code>select * from geo.places where text="SJC"</code>
+<br /><br />
+This looks up "SJC" in GeoPlanet and returns an XML result containing this information:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px;"><code>        &lt;woeid&gt;12521722&lt;/woeid&gt;
+        &lt;placeTypeName code="14"&gt;Airport&lt;/placeTypeName&gt;
+        &lt;name>Norman Y Mineta San Jose International Airport&lt;/name&gt;
+        &lt;country code="US" type="Country">United States&lt;/country&gt;
+        &lt;admin1 code="US-CA" type="State">California&lt;/admin1&gt;
+        &lt;admin2 code="" type="County"&gt;Santa Clara&lt;/admin2&gt;
+        &lt;admin3/&gt;
+        &lt;locality1 type="Town"&gt;Downtown San Jose&lt;/locality1&gt;
+        &lt;locality2/&gt;
+        &lt;postal type="Zip Code"&gt;95110&lt;/postal&gt;
+        &lt;centroid&gt;
+            &lt;latitude>37.364079&lt;/latitude&gt;
+            &lt;longitude>-121.920662&lt;/longitude&gt;
+        &lt;/centroid&gt;
+        &lt;boundingBox&gt;
+            &lt;southWest&gt;
+                &lt;latitude&gt;37.35495&lt;/latitude&gt
+                &lt;longitude&gt;-121.932152&lt;/longitude&gt;
+            &lt;/southWest&gt;
+            &lt;northEast&gt;
+                &lt;latitude&gt;37.373211&lt;/latitude&gt;
+                &lt;longitude&gt;-121.909172&lt;/longitude&gt;
+            &lt;/northEast&gt;
+        &lt;/boundingBox&gt;</code></pre>
+
+The first thing to note is the <b>woeid</b>.  It is just an integer, but it uniquely identifies San Jose Airport.  If you were to search for "San Jose Airport" instead of "SJC" you would find that one of the places returned has the exact same woeid.  So, the woeid is a way to normalize placenames.  The other thing to note here is that you get an approximate bounding box.  This is what makes the woeid special.  A place is more than just a lat/lon.  If I told you that I would meet you in Paris next week, that doesn't tell you as much as if I told you that I would meet you at the Eiffel Tower next week.  If we pretend that the Eiffel tower is in the center of Paris, those two locations might actually have the same lat/lon, but the concept of the Eiffel Tower is much more precise than the concept of Paris.  The difference is the bounding box.  And yes, landmarks like the Eiffel Tower or Central Park also have unique woeids.  Try it:
+
+<pre><code>select * from geo.places where text="Eiffel Tower"</code></pre>
+
+Note that the YQL console also gives you a direct URL for the results.  This last one is at <a href="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places%20where%20text%3D%22Eiffel%20Tower%22&format=xml">http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places%20where%20text%3D%22Eiffel%20Tower%22&format=xml</a>.  Not the prettiest URL in the world, but you can feed that to a simple little PHP program to integrate these YQL queries in your PHP code.  Something like this:
+
+<pre style="background: #ddd; border: 1px solid #000; padding: 5px;"><code>&lt;?php
+$url = "http://query.yahooapis.com/v1/public/yql?q=";
+$q   = "select * from geo.places where text='Eiffel Tower'";
+$fmt = "xml";
+$x = simplexml_load_file($url.urlencode($q)."&format=$fmt");
+?&gt;</code></pre>
+
+For a higher daily limit on your YQL queries you can grab an OAuth consumer key and use the OAuth-authenticated YQL entry point.  There is an example of how to use <a href="http://pecl.php.net/oauth">pecl/oauth</a> with YQL at <a href="http://paul.slowgeek.com/hacku/examples/yql-oath.php">http://paul.slowgeek.com/hacku/examples/yql-oath.php</a>.  Take a close look at the YQL query in that example.  It is:<br /><br />
+
+<pre><code>select * from html where xpath= '//tr//a[@href="https://toys.lerdorf.com/wiki/Capital_(political)"]/../../../td[2]/a/text()'
+ and url in (select url from search.web where url like '%wikipedia%' and query='Denmark' limit 1) </code></pre>
+
+Sub-selects!  So, we do a web search for urls containing the string 'wikipedia' whose contents contains 'Denmark'.  That is going to get us the Wikipedia page for Denmark.  We then perform an xpath query on that page to extract the text of the link containing the name of the capital of Denmark.  Change 'Denmark' in that query to any country and the query will magically return the capital of that country.  So, YQL is also a general-purpose page scraper.<br /><br />
+
+But back to the woeid.  Places belong to other places, and they are next to other places and they contain even more places.  That is, a place has a parent, siblings and children.  You can query all of these.  Here is a woeid explorer application written entirely in Javascript:<br /><br />
+
+<a href="http://paul.slowgeek.com/hacku/examples/geoBoundingBoxTabs.html">http://paul.slowgeek.com/hacku/examples/geoBoundingBoxTabs.html</a><br /><br />
+
+Try entering some places or points of interest around the world and click on the various radio buttons and then the "Geo It" button to see the relationship between the places and the bounding boxes for all these various places.  If you look at the source for this application you can see that it uses YQL's callback-json output, so there is no server-side component required to get this to work.  Try doing a search for "Eiffel Tower" and turn on the "Sat" version of the map.  You can see that the bounding box is pretty damn good.  Try it for other landmarks.  Then walk up the parent tree, or across the siblings.  Or check out the Belongs-To data.<br /><br />
+
+Once you have a woeid for a place, you can start using it on other services such as Upcoming:<br />
+
+<pre><code>select * from upcoming.events where woeid=2487956</code></pre>
+
+and Flickr:<br />
+
+<pre><code>select * from flickr.photos.search where woe_id=2487956</code></pre>
+
+(yes, I know, it would have been nice if the column names were consistent there)<br /><br />
+
+And finally you can also add YQL support for any open API out there.  There is a long list of them here:<br /><br />
+<a href="http://github.com/spullara/yql-tables/tree/master">http://github.com/spullara/yql-tables/tree/master</a><br /><br />
+
+To use one of these, try something like this:
+
+<pre><code>use 'http://github.com/spullara/yql-tables/raw/master/yelp/yelp.review.search.xml' as yelp;
+select * from yelp where term='pizza' and location='sunnyvale, ca' and ywsid='6L0Lc-yn1OKMkCKeXLD4lg'</code></pre>
+
+As a bit of Geo and API nerd, this is super cool to me.  I hope you can find some interesting things to do with this as well.  If you build something cool with it, please let me know.
+
+
+    ";}}s:7:"channel";a:6:{s:5:"title";s:18:" Rasmus' Toys Page";s:4:"link";s:25:"https://toys.lerdorf.com/";s:2:"dc";a:1:{s:8:"language";s:2:"en";}s:5:"items";s:12:"
+      
+    ";s:9:"items_seq";s:97:"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      ";s:7:"tagline";N;}s:9:"textinput";a:0:{}s:5:"image";a:5:{s:3:"url";s:67:"https://toys.lerdorf.com/templates/default/img/s9y_banner_small.png";s:5:"title";s:26:"RSS:  Rasmus' Toys Page - ";s:4:"link";s:25:"https://toys.lerdorf.com/";s:5:"width";s:3:"100";s:6:"height";s:2:"21";}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Thu, 20 Nov 2014 06:32:13 GMT
+";}

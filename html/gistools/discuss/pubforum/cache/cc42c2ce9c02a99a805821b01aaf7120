@@ -1,0 +1,77 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:4:"Nick";s:12:"author_email";s:20:"nboutel...@gmail.com";s:7:"updated";s:20:"2013-05-31T22:43:58Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/f259b065d2725ff7";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/f259b065d2725ff7";s:5:"title";s:50:"Issue with concurrent reads using GIN/GIST indexes";s:7:"summary";s:389:"
+  I noticed this query does not run concurrently: <br> <p>SELECT COUNT(*) FROM mytable WHERE ARRAY[1,2]::integer[] &amp;&amp; <br> array_col::integer[]; <br> <p>Running one concurrent queries takes 120s <br> Running two concurrent queries takes 240s <br> Running three concurrent queries queries takes 360s <br> <p>The table is quite big with 32mil records. The server has 32 cores and
+  ";}i:1;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:4:"Nick";s:12:"author_email";s:20:"nboutel...@gmail.com";s:7:"updated";s:20:"2013-04-21T00:20:48Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/6298b2a124479acd";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/6298b2a124479acd";s:5:"title";s:69:"All caution aside, what can I do to run the fastest queries possible?";s:7:"summary";s:244:"
+  I have a LOT (around 150 billion) queries I need to run on a 150GB table. Are there any dangerous settings I could set (that I would never do on a production system) to run my queries faster? The queries are COUNT()'s on field conditions.
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:22:""ТИПОГРАФИЯ"";s:12:"author_email";s:23:"freestyle8...@mssac.com";s:7:"updated";s:20:"2013-04-15T10:07:42Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/0b6243c21933d320";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/0b6243c21933d320";s:5:"title";s:92:"Клуб Любителей Честных Цен на ПОЛИГРАФИЮ Ждет Вас!";s:7:"summary";s:311:"
+  ����: ������ � ����. ������� ���� �� ���������� (��������, �������, �������, ������, <br> �� ���, ���������, ���, ��������)
+  ";}i:3;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:20:""Екатерина"";s:12:"author_email";s:30:"gustop...@nrgcommunication.com";s:7:"updated";s:20:"2013-04-15T04:45:09Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/216fc4947c88f310";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/216fc4947c88f310";s:5:"title";s:86:"Продается - 2-х комнатная кв-ра ул.Кастанаевская";s:7:"summary";s:346:"
+  ��������� - 2-� ��������� ��-�� ��.������������� 43 ����.4 - �������� ��� �� ������. ����� � ����������� ���������� � ��������� �����!
+  ";}i:4;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:34:""Часы От 8 900 рублей"";s:12:"author_email";s:25:"robbingg...@rconestop.com";s:7:"updated";s:20:"2013-04-15T04:18:02Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/e5db4805bf16af22";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/e5db4805bf16af22";s:5:"title";s:116:"Отличные скидки на шикарные часы! Только Швейцарские механизмы";s:7:"summary";s:386:"
+  ������ ������� ��������-����� ������! <br> <p>�� �������� ���������, � �� ������ �������� ��� ���! <br> � ��� ���� ����� ����� ������� ����� ����������!
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:24:"Честная игра!";s:12:"author_email";s:22:"bondi...@ringpower.com";s:7:"updated";s:20:"2013-04-15T03:04:38Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/bad49fa1c2b96e6d";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/bad49fa1c2b96e6d";s:5:"title";s:114:"Новейшее игры в казино и покер рум! Дают 100 евро за регистрацию!";s:7:"summary";s:700:"
+  �������� ���� ������ � ����� ���! ���������� �������� ��������� ��5, ������� ������� �������� �� ����� ������� ������! 100 ���� �������������� ����� ��� ��������! ���������� �������� 1 ������ ��� ����� � ���� ��� �����������! <a target="_blank" rel=nofollow href="http://www.�">[link]</a>������-����.��
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:32:""Магазин от 18 лет!"";s:12:"author_email";s:23:"pied...@regency-rib.com";s:7:"updated";s:20:"2013-04-15T02:15:34Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/297fc098cc047f1a";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/297fc098cc047f1a";s:5:"title";s:93:"Магазин для взрослых! Вся для разнообразия в сексе!";s:7:"summary";s:280:"
+  ������� ��� �����, ����������� ����� � ������ ������! ��� ������ � ������ �� ����� http://��������-������.��
+  ";}i:7;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:16:"sun...@gmail.com";s:7:"updated";s:20:"2013-04-14T12:02:45Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/9e5519492cdbed5f";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/9e5519492cdbed5f";s:5:"title";s:16:"template1 vacuum";s:7:"summary";s:113:"
+  Should we do vacuum analyze for template1 too if we are not doing any changes in the same? <br> <p>Regards,
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:59:""Рисунок, Флористика, МОДЕРН АРТ"";s:12:"author_email";s:28:"abolitionists...@rmk-cpa.com";s:7:"updated";s:20:"2013-04-12T08:49:39Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/3caff1eb8cea522a";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/3caff1eb8cea522a";s:5:"title";s:96:"Мастер-классы и творческие курсы в креативном месте!";s:7:"summary";s:440:"
+  О©╫О©╫О©╫О©╫О©╫! О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ ! О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫! О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫ О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫ -
+  ";}i:9;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:42:""СтройПрогрессСервисс"";s:12:"author_email";s:22:"reparatio...@okoha.com";s:7:"updated";s:20:"2013-04-12T04:32:43Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/ed541a69cd63ac23";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/ed541a69cd63ac23";s:5:"title";s:100:"При заказе комплексного ремонта кондиционер в подарок";s:7:"summary";s:439:"
+  �����! <br> ��� ������ ������������ ������� ����������� � �������! <br> <p>��� ��� &quot;��������������������&quot; <br> <p>���������� ������ �������� ��������-������������ �����:
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:68:""Заказывайте рассылку на нашем сайте"";s:12:"author_email";s:29:"puffedp...@root00.fujitsu.com";s:7:"updated";s:20:"2013-04-11T11:38:57Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/45d98e2e278206db";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/45d98e2e278206db";s:5:"title";s:115:"Заказать или отписаться от рассылки по эл.почте можно на сайте!";s:7:"summary";s:321:"
+  ������������ �������� ������� �� ����� ����������� ����� ������ ������ ��� � ������! <a target="_blank" rel=nofollow href="http://www.�">[link]</a>�����.��
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:40:""Офис от собственника"";s:12:"author_email";s:27:"wheedle...@rofin-baasel.com";s:7:"updated";s:20:"2013-04-11T06:02:09Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/d3042f66e70cd34d";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/d3042f66e70cd34d";s:5:"title";s:77:"Недорогие офисы в Москве! Без посредников!";s:7:"summary";s:318:"
+  ���� �� ������������ <br> <p>���� ��� ���������� ��������� ���� ��� �����������!, <br> <p>������, �. ������������ ����� �� 55 ��.�
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:38:""Рассылка от Печкина"";s:12:"author_email";s:42:"interdenominationalbfa...@whiteliontea.com";s:7:"updated";s:20:"2013-04-11T05:08:04Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/9701b8a8ebbde5c8";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/9701b8a8ebbde5c8";s:5:"title";s:85:"РАССЫЛКА ВАШЕЙ РЕКЛАМЫ ПО ЭЛЕКТРОННЫМ АДРЕСАМ";s:7:"summary";s:275:"
+  �������� ����� ������� �� ����������� ������� <br> ������, �����������, ������ <br> <p>���+38(096)3028803 � � � � ICQ 624 657 171
+  ";}i:13;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:4:"Nick";s:12:"author_email";s:20:"nboutel...@gmail.com";s:7:"updated";s:20:"2013-04-10T20:30:52Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/fd82220f14e56e7a";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/fd82220f14e56e7a";s:5:"title";s:48:"Creating a somewhat complicated cartesian result";s:7:"summary";s:342:"
+  I have a table called &quot;where_clauses&quot; which contains a bunch of conditions I would like to use for building dynamic queries. I would like to know all possible queries I could perform using this data. Here is my &quot;where_clauses&quot; data... <br> <p>INSERT INTO where_clauses (id,col_name,clause) VALUES (1,'x','x &lt; 1');
+  ";}i:14;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:43:""Екатеринбург, область."";s:12:"author_email";s:20:"styrofoam...@rlq.com";s:7:"updated";s:20:"2013-04-10T14:34:43Z";s:2:"id";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/4c3ecfa2875e5322";s:5:"link_";s:82:"http://groups.google.com/group/pgsql.general/browse_thread/thread/4c3ecfa2875e5322";s:5:"title";s:54:"Свадебное платье за 2500 рублей";s:7:"summary";s:358:"
+  ���������� � �������? ���� ������������! <br> <p>2500, 3000 ������ �� ����� ������������ ������!!! ��� �� ��������� ����, � ���� �� �������������!
+  ";}}s:7:"channel";a:6:{s:2:"id";s:44:"http://groups.google.com/group/pgsql.general";s:5:"title";s:26:"pgsql.general Google Group";s:8:"subtitle";s:42:"
+  General Discussions about PostgreSQL
+  ";s:9:"link_self";s:46:"/group/pgsql.general/feed/atom_v1_0_topics.xml";s:7:"updated";s:8:"-0-0T::Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

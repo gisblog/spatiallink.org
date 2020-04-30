@@ -1,0 +1,109 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: SearchForm.html,v 1.2 2005/04/28 06:10:22 clint Exp $
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+<tr><td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+<form>
+		<td class="dataLabel" noWrap><slot>{MOD.LBL_FIRST_NAME}</slot>&nbsp;&nbsp;<slot><input type=text size="10" name="first_name" class=dataField value="{FIRST_NAME}"></slot></td>
+		<td class="dataLabel" noWrap><slot>{MOD.LBL_LAST_NAME}</slot>&nbsp;&nbsp;<slot><input type=text size="10" name="last_name" class=dataField  value="{LAST_NAME}"></slot></td>
+		<td class="dataLabel" noWrap><slot>{MOD.LBL_DEPARTMENT}</slot>&nbsp;&nbsp;<slot><input type=text size="10" name="department" class=dataField  value="{DEPARTMENT}"></slot></td>
+		<td class="dataLabel" noWrap><slot>{MOD.LBL_EMPLOYEE_STATUS}</slot>&nbsp;&nbsp;<slot><select name='employee_status'>{STATUS_OPTIONS}</select></slot></td>
+		<td align="right"><input type="hidden" name="action" value="ListView"/>
+			<input type="hidden" name="query" value="true"/>
+			<input type="hidden" name="module" value="Employees" />
+		<input title="{APP.LBL_SEARCH_BUTTON_TITLE}" accessKey="{APP.LBL_SEARCH_BUTTON_KEY}" class="button" type="submit" name="button" value="{APP.LBL_SEARCH_BUTTON_LABEL}"/>
+		<input title="{APP.LBL_CLEAR_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" onclick="clear_form(this.form);" class="button" type="button" name="clear" value=" {APP.LBL_CLEAR_BUTTON_LABEL} "/>
+		<br><a href='index.php?module=Employees&action=ListView&advanced=true' class="tabFormAdvLink">{ADVANCED_SEARCH_PNG}</a>&nbsp;<a href='index.php?module=Employees&action=ListView&advanced=true' class="tabFormAdvLink">{APP.LNK_ADVANCED_SEARCH}</a>
+		</td>
+</form>
+	</tr>
+	</table>
+</td></tr>
+</table>
+{JAVASCRIPT}
+<!-- END: main -->
+
+<!-- BEGIN: advanced -->
+
+<form>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabForm">
+<tr>
+<td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_FIRST_NAME}</slot></td>
+	<td width="30%" class="dataField"><slot><input name='first_name' tabindex='1' size='25' maxlength='25' type="text" value="{FIRST_NAME}"></slot></td>
+	<td width="15%" class="dataLabel"><slot>{MOD.LBL_USER_NAME}</slot></td>
+	<td width="30%" class="dataField"><slot><input name='user_name' tabindex='2' type="text" value='{USER_NAME}'></slot></td>
+	<td width="10%" align="right" valign="top" nowrap rowspan="8"><input type="hidden" name="action" value="ListView"/>
+		<input type="hidden" name="query" value="true"/>
+		<input type="hidden" name="advanced" value="true"/>
+		<input type="hidden" name="module" value="Employees" />
+	<input title="{APP.LBL_SEARCH_BUTTON_TITLE}" accessKey="{APP.LBL_SEARCH_BUTTON_KEY}" class="button" type="submit" name="button" value="{APP.LBL_SEARCH_BUTTON_LABEL}"/>
+	<input title="{APP.LBL_CLEAR_BUTTON_TITLE}" accessKey="{APP.LBL_CANCEL_BUTTON_KEY}" onclick="clear_form(this.form);" class="button" type="button" name="clear" value=" {APP.LBL_CLEAR_BUTTON_LABEL} "/>
+	<br>
+	<a href='index.php?module=Employees&action=ListView&query=true' class="tabFormAdvLink">{BASIC_SEARCH_PNG}</a>&nbsp;<a href='index.php?module=Employees&action=ListView&query=true'  class="tabFormAdvLink">{APP.LNK_BASIC_SEARCH}</a>
+	</td>
+	</tr><tr>
+	<td  class="dataLabel"><slot>{MOD.LBL_LAST_NAME}</slot></td>
+	<td  class="dataField"><slot><input name='last_name' type="text" tabindex='1' size='25' maxlength='25' value="{LAST_NAME}"></slot></td>
+	<td class="dataLabel"><slot>{MOD.LBL_EMPLOYEE_STATUS}</slot></td>
+	<td class='dataField'><slot><select  tabindex='2' name='employee_status'>{STATUS_OPTIONS}</select></slot></td>
+	</tr><tr>
+	<td  class="dataLabel"><slot>{MOD.LBL_TITLE}</slot></td>
+	<td  class="dataField"><slot><input name='title' type="text" tabindex='1' size='25' maxlength='100' value='{TITLE}'></slot></td>
+	<td  class="dataLabel"><slot>{MOD.LBL_ANY_PHONE}</slot></td>
+	<td  class="dataField"><slot><input name='phone' type="text" tabindex='2' size='20' maxlength='25' value='{PHONE}'></slot></td>
+	</tr><tr>
+	<td  class="dataLabel"><slot>{MOD.LBL_DEPARTMENT}</slot></td>
+	<td  class="dataField"><slot><input name='department' type="text" tabindex='1' size='25' maxlength='100' value='{DEPARTMENT}'></slot></td>
+	<td  class="dataLabel"><slot>{MOD.LBL_ANY_EMAIL}</slot></td>
+	<td  class="dataField"><slot><input name='email' type="text" tabindex='2' size='20' maxlength='100' value='{EMAIL}'></slot></td>
+	</tr><tr>
+	<td  class="dataLabel"><slot>{MOD.LBL_ADDRESS}</slot></td>
+	<td  class="dataField"><slot><input type="text" name='address_street' tabindex='1' value='{ADDRESS_STREET}'></slot></td>
+	<td  class="dataLabel"><slot>{MOD.LBL_CITY}</slot></td>
+	<td  class="dataField"><slot><input name='address_city' tabindex='2' size='15' maxlength='100' value='{ADDRESS_CITY}'></slot></td>
+	</tr><tr>
+	<td  class="dataLabel"><slot>{MOD.LBL_STATE}</slot></td>
+	<td  class="dataField"><slot><input name='address_state' tabindex='1' size='15' maxlength='100' value='{ADDRESS_STATE}'></slot></td>
+	<td  class="dataLabel"><slot>{MOD.LBL_POSTAL_CODE}</slot></td>
+	<td  class="dataField"><slot><input name='address_postalcode' tabindex='2' size='10' maxlength='20' value='{ADDRESS_POSTALCODE}'></slot></td>
+	</tr><tr>
+	<td  class="dataLabel"><slot>{MOD.LBL_COUNTRY}</slot></td>
+	<td  class="dataField"><slot><input name='address_country' tabindex='1' size='10' maxlength='20' value='{ADDRESS_COUNTRY}'></slot></td>
+	<td  class="dataLabel"><slot>&nbsp;</slot></td>
+	<td  class="dataField"><slot>&nbsp;</slot></td>
+</tr></table>
+</td></tr></table>
+	</form>
+{JAVASCRIPT}
+<!-- END: advanced -->

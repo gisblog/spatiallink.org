@@ -1,0 +1,75 @@
+O:9:"MagpieRSS":18:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:17:"محمد عيسى";s:12:"author_email";s:19:"m7md3i...@gmail.com";s:7:"updated";s:20:"2013-06-19T14:06:08Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/0701f0af40048e2b";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/0701f0af40048e2b";s:5:"title";s:13:"Shortest path";s:7:"summary";s:423:"
+  Hey guys,I am working on an app which gets the shortest path between two <br> points using &quot;Dijkstra&quot; algorithm.This process is done on a web server and <br> if the shortest path between point &quot;A&quot; and point &quot;D&quot; is A-C-F-T-D where <br> (A,C,F,T,D) are nodes on the road,i have to pass this data to an android <br> app to draw the way from A to D .The point here is that i should send alot
+  ";}i:1;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:13:"mat...@amt.in";s:7:"updated";s:20:"2013-06-17T11:29:35Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/c64a2e96c2ceb270";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/c64a2e96c2ceb270";s:5:"title";s:58:"how add two differnt place to joomla3.0 deafult map plugin";s:7:"summary";s:323:"
+  hi <br> please guide me to how to add two location in joomla 3.0 deafult plugin.in <br> my contact page there is two address in so create two contact page but the <br> map are showing only one palace , is there any possible way to add two <br> location in my joomla3.0 deafult google plugin. <br> Reagards <br> mathew
+  ";}i:2;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:23:"Vikramaditya Nimmagadda";s:12:"author_email";s:24:"n.vikramadi...@gmail.com";s:7:"updated";s:20:"2013-06-10T03:33:23Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/de7a0ccad8df091b";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/de7a0ccad8df091b";s:5:"title";s:27:"Google Gelolocation service";s:7:"summary";s:334:"
+  Hi friends, <br> Can some please post me how to use google geolocation service.. That is <br> to convert lac/cid pair cell toer info to latitude/longitude.. i tried in <br> multiple ways but not getting solution.. please give me suitable example.. <br> i am having lac/cid pairs i need to convert them to latitude , longitude...
+  ";}i:3;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:22:"adwo...@inallar.com.tr";s:7:"updated";s:20:"2013-06-08T09:30:31Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/a9664f33b04f58e5";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/a9664f33b04f58e5";s:5:"title";s:34:"Display in Google Maps [important]";s:7:"summary";s:340:"
+  Hi everyone, <br> <p>I have a problem. Maps, the company made ​​a record. As long as the map <br> does not appear, but not on a call bookmarked. But it does not seem to have <br> businesses that appear written İnallar automotive company. What can I do to <br> be displayed during the navigation. <br> <p>Very urgent can you help?
+  ";}i:4;a:7:{s:6:"author";s:6:"
+  
+  ";s:12:"author_email";s:23:"mtxblackcy...@gmail.com";s:7:"updated";s:20:"2013-06-07T06:56:26Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/a92b700cb716e7e4";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/a92b700cb716e7e4";s:5:"title";s:41:"HELP for get the distance from API goolge";s:7:"summary";s:280:"
+  Hallo , <br> i have some latitude dan longtitude <br> Example --&gt; <br> 1. City A <br> 106.801727-6.243327 <br> 2. City B <br> 106.798431-6.234957 <br> i want to show the distance about that city (km/ miles or whatwver ). <br> How to i get that ? please help me. i'm stuck
+  ";}i:5;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:7:"Punitha";s:12:"author_email";s:22:"vimaliorl...@gmail.com";s:7:"updated";s:20:"2013-06-04T11:40:47Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/4c665e69587cdf8b";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/4c665e69587cdf8b";s:5:"title";s:42:"Overlay my school.shp file on google maps.";s:7:"summary";s:76:"
+  Can anybody tell that how to overlay my school.shp file on google map.
+  ";}i:6;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:15:"Mimmo Dell'Atti";s:12:"author_email";s:24:"mimmo.della...@gmail.com";s:7:"updated";s:20:"2013-06-01T09:50:59Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/30d2e630de57d411";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/30d2e630de57d411";s:5:"title";s:19:"Google Maps to jpeg";s:7:"summary";s:343:"
+  Salve, <br> vorrei esportare una mappa in embeed su un immagine jpeg... ho visto le le <br> api delle staticmap, ma io non riesco ad estraplare le cordinate del mio <br> marker dal link dell embedeed. Vorrei sapere se fosse possibile trovare le <br> cordinate. <br> Personalmente, riesco ad estrapolare solo le cordinate centrali, ma non
+  ";}i:7;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:12:"aravinth raj";s:12:"author_email";s:18:"aravi...@gmail.com";s:7:"updated";s:20:"2013-05-31T04:48:18Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/2963f463b9546a4f";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/2963f463b9546a4f";s:5:"title";s:21:"Google map conversion";s:7:"summary";s:155:"
+  Hi <br> I need to convert some location into image format using google map.I am <br> new to developeing.Any one know pls help me <br> Thanks <br> Raj
+  ";}i:8;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:10:"bennacer m";s:12:"author_email";s:17:"appm...@gmail.com";s:7:"updated";s:20:"2013-05-28T19:49:11Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/ad61b110ba46f83c";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/ad61b110ba46f83c";s:5:"title";s:23:"la carte(Google Map V2)";s:7:"summary";s:96:"
+  Je veux faire mettre la carte(google Map V2) dans l'application du systèmeandroid.help me
+  ";}i:9;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:15:"Mudasser Tufail";s:12:"author_email";s:21:"togreatm...@gmail.com";s:7:"updated";s:20:"2013-05-28T11:14:03Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/54836ffac2f8b749";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/54836ffac2f8b749";s:5:"title";s:19:"Googlemaps Subgurim";s:7:"summary";s:324:"
+  Hello <br> i am using the Googlemaps Subgurim in my asp.net project and when <br> ever i open the map to view it giving me the message that &quot;Google has <br> disabled the use of Maps API for this application&quot;. you can also see the <br> message in attach doc. if i get the key from Googlemaps Subgurim then can
+  ";}i:10;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:9:"sushma cn";s:12:"author_email";s:21:"sushi.ma...@gmail.com";s:7:"updated";s:20:"2013-05-28T04:17:22Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/169f8bff296ee827";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/169f8bff296ee827";s:5:"title";s:12:"Map GRidding";s:7:"summary";s:228:"
+  Can anyone explain the concept of map gridding concept used in by google <br> maps. <br> I have been able to achieve the gridding for 1:1 million but facing problem <br> in designing for the scales 1:50,000 and further....
+  ";}i:11;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:12:"Raju Bishnoi";s:12:"author_email";s:23:"rajubishno...@gmail.com";s:7:"updated";s:20:"2013-05-25T14:23:15Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/3f228bcf8eeb20e4";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/3f228bcf8eeb20e4";s:5:"title";s:26:"hexagon polygen cordinates";s:7:"summary";s:357:"
+  Hi everyone, <br> I would like to get the coordinates of hexagon polygen using php goole api. <br> for e.g. <br> defaultMaxDistance = '20'; <br> latitude = '51.5738'; <br> longitude = '-1.7493'; <br> My center poing lang and lat is as above and get the hexagon polygen upon <br> distance(5,10,20) miles from cetner point. <br> i want response as below
+  ";}i:12;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:15:"Jonathan Bunday";s:12:"author_email";s:19:"jonbun...@gmail.com";s:7:"updated";s:20:"2013-05-23T23:40:14Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/d8531c3902faea1d";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/d8531c3902faea1d";s:5:"title";s:51:"google maps trying to get rid of the label shadows?";s:7:"summary";s:207:"
+  Im using the default labels it seems the shadow is completely off from <br> where the label is.... this isn't my issue i just want to get rid of the <br> shadow all together. Any way of achieving this?
+  ";}i:13;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:17:"Thiago Viana Enge";s:12:"author_email";s:20:"thiagoe...@gmail.com";s:7:"updated";s:20:"2013-05-22T20:13:53Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/06fa1d5db6ea5169";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/06fa1d5db6ea5169";s:5:"title";s:42:"Markers on the routeMarkers on trace route";s:7:"summary";s:355:"
+  I have some markers on the map and the option of the user to put his zipcode <br> . <br> Then the map return the marker which is closest to him. <br> However when I click on the marker Route (green marker A, B) in the info <br> window shows the map zoom of the marker location and I would like it to <br> appear the address marker in the infowindow.
+  ";}i:14;a:8:{s:6:"author";s:9:"
+  
+  
+  ";s:11:"author_name";s:17:"Thiago Viana Enge";s:12:"author_email";s:20:"thiagoe...@gmail.com";s:7:"updated";s:20:"2013-05-21T19:17:27Z";s:2:"id";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/f5623b3b3f7ec0d4";s:5:"link_";s:84:"http://groups.google.com/group/google-maps-api/browse_thread/thread/f5623b3b3f7ec0d4";s:5:"title";s:49:"Markers doesn't appear - only eleven markers show";s:7:"summary";s:389:"
+  Hello, <br> I am using the maps api v2 to display all the stores on the map and the user can <br> put his zip code and trace the route to the nearest store him. <br> The problem: the function there are approximately 190 markers(stores) and only <br> 11 appear on the map. <br> Page link: <a target="_blank" rel=nofollow href="http://186.202.149.68/web/onde_encontrar.aspx">[link]</a>
+  ";}}s:7:"channel";a:6:{s:2:"id";s:46:"http://groups.google.com/group/google-maps-api";s:5:"title";s:31:"Google Maps API V2 Google Group";s:8:"subtitle";s:300:"
+  The Google Maps API V2 Discussion Group Please remember the following: - Post a link, not code so that others can see your code in its proper context - Search the group, someone else has had the same issue - Read the documentation https://developers.google.com/maps/documentation/javascript/v2/
+  ";s:9:"link_self";s:48:"/group/google-maps-api/feed/atom_v1_0_topics.xml";s:7:"updated";s:8:"-0-0T::Z";s:9:"generator";s:13:"Google Groups";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}}

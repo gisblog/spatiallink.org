@@ -1,0 +1,1 @@
+function printdoc(text){text=document print(text)}function checkawk(){if(document.awk.queryword.value==''){alert('Please Enter Query Word(s)');return false}return true}

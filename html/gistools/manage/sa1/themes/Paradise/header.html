@@ -1,0 +1,359 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * {LBL_CURRENCY_SYM}Header: /cvsroot/sugarcrm/sugarcrm/themes/Amazon/header.html,v 1.14 2004/07/04 04:00:48 sugarclint Exp {LBL_CURRENCY_SYM}
+ ********************************************************************************/
+-->
+<!-- BEGIN: main -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html {DIR}>
+<head>
+<link REL="SHORTCUT ICON" HREF="include/images/sugar_icon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset={LBL_CHARSET}">
+<title>{APP.LBL_BROWSER_TITLE}</title>
+<style type="text/css">@import url("themes/{THEME}/style.css"); </style>
+<link type="text/css" href="themes/{THEME}/navigation.css" rel="stylesheet" />
+{the_script_stuff}
+<script type="text/javascript" src="themes/{THEME}/menu.js"></script>
+<script type="text/javascript" src="themes/{THEME}/cookie.js"></script>
+<script type="text/javascript">
+
+function hideLeftCol(id){
+
+	if(this.document.getElementById( id).style.display=='none'){
+		this.document.getElementById( id).style.display='inline';
+
+		Set_Cookie('showLeftCol','true',30,'/','','');
+		var show = Get_Cookie('showLeftCol');
+		document['HideHandle'].src = '{IMAGE_PATH}hide.gif';		
+	}else{
+		this.document.getElementById(  id).style.display='none';
+
+		Set_Cookie('showLeftCol','false',30,'/','','');
+		var show = Get_Cookie('showLeftCol');
+		document['HideHandle'].src = '{IMAGE_PATH}show.gif';	
+
+	}
+}
+
+function showSubMenu(id){
+	if(this.document.getElementById( id).style.display=='none'){
+		tbButtonMouseOver('HideHandle',118,'',10);
+	}
+}
+
+
+</script>
+</head>
+<script type="text/javascript">
+//Boat Screen Saver - by SugarCRM Inc.
+//Modified from: Flying planes - by John Ely
+//Modified from: Autumn leaves script- by Kurt Grigg (kurt.grigg@virgin.net)
+//Modified by Dynamic Drive for NS6 functionality
+//visit http://www.dynamicdrive.com for this script
+//Pre-load your image below!
+//CHANGE 5 to the number of images listed below
+grphcs=new Array(1)
+
+//PRELOAD the involved images (extend or contract variables according to # of images used)
+Image0=new Image();
+Image0.src=grphcs[0]="{IMAGE_PATH}/sailboat.gif"
+
+//SPECIFY number of images to randomly display concurrently from list above. Less the more efficient
+Amount=1;
+Ypos=new Array();
+Xpos=new Array();
+Speed=new Array();
+Step=new Array();
+timetrack=new Array();
+Cstep=new Array();
+ns=(document.layers)?1:0;
+ns6=(document.getElementById&&!document.all)?1:0;
+ie=document.all
+
+if (ns){
+	for (i = 0; i < Amount; i++){
+		var P=Math.floor(Math.random()*grphcs.length);
+		rndPic=grphcs[P];
+		document.write("<LAYER NAME='sn"+i+"' LEFT=-20 TOP=22><img src="+rndPic+"></LAYER>");
+
+	}
+}
+else{
+	document.write('<div style="position:absolute;top:22px;left:-20px"><div style="position:relative">');
+	for (i = 0; i < Amount; i++){
+		var P=Math.floor(Math.random()*grphcs.length);
+		rndPic=grphcs[P];
+		document.write('<img id="si'+i+'" src="'+rndPic+'" style="position:absolute;top:0px;left:0px;">');
+	}
+	document.write('</div></div>');
+}
+WinHeight=(ns||ns6)?window.innerHeight-70:window.document.body.clientHeight;
+WinWidth=(ns||ns6)?window.innerWidth:window.document.body.clientWidth;
+for (i=0; i < Amount; i++){
+ Ypos[i] = 0;
+ Xpos[i] = 0;
+ Speed[i]= 1;
+ Cstep[i]=0;
+ timetrack[i]=0;
+ Step[i]=Math.random()*0.1+0.05;
+}
+
+function fly(){
+	var WinHeight=(ns||ns6)?window.innerHeight:window.document.body.clientHeight;
+	var WinWidth=(ns||ns6)?window.innerWidth-70:window.document.body.clientWidth;
+	var hscrll=(ns||ns6)?window.pageYOffset:document.body.scrollTop;
+	var wscrll=(ns||ns6)?window.pageXOffset:document.body.scrollLeft;
+	document.onmousemove = stopBoatStartTimer;
+	document.onkeypress = stopBoatStartTimer;
+	for (i=0; i < Amount; i++){
+		sx = Speed[i];
+		timetrack[i]+=sx;
+		Xpos[i]+=sx;
+			if (Xpos[i] > (WinWidth/2)-20){
+				Speed[i]=.5;
+			}
+			if (Xpos[i] > (WinWidth/2)+20){
+				Speed[i]=1;
+			}
+			if (Xpos[i] > WinWidth){
+				Ypos[i]=0;
+				Xpos[i]=0;
+				Speed[i]=1;
+			}
+
+			if (ns){
+				document.layers['sn'+i].left=Xpos[i]+wscrll;
+				document.layers['sn'+i].top=Ypos[i];
+			}
+			else if (ns6){
+				document.getElementById("si"+i).style.left=Xpos[i]+wscrll;
+				document.getElementById("si"+i).style.top=Math.min(WinHeight,Ypos[i]);
+			}
+			else{
+				eval("document.all.si"+i).style.left=Xpos[i]+wscrll;
+				eval("document.all.si"+i).style.top=Ypos[i];
+			}
+		Cstep[i]+=Step[i];
+	}
+	flyTimeout = setTimeout('fly()',100);
+
+}
+
+
+function stopBoatStartTimer() {
+	seconds=0;
+	timer();
+	clearTimeout(flyTimeout);
+	for (i=0; i < Amount; i++){
+		Ypos[i]=0;
+		Xpos[i]=0;
+		Speed[i]=1;
+		if (ns){
+			document.layers['sn'+i].left=-20;
+			document.layers['sn'+i].top=22;
+		}
+		else if (ns6){
+			document.getElementById("si"+i).style.left=-20;
+			document.getElementById("si"+i).style.top=22;
+		}
+		else{
+			eval("document.all.si"+i).style.left=-20;
+			eval("document.all.si"+i).style.top=22;
+		}
+	}
+}
+
+var seconds=0;
+
+function timer() {
+	seconds=seconds+1;
+	timerID = setTimeout("timer()", 1000);
+		if (seconds>300) {// if no mouse movement or button presses for 5 mins, start animation
+			clearTimeout(timerID);
+			if (ie||ns||ns6) {
+				fly();
+			}
+	}
+	document.onmousemove = resetTimer;
+	document.onkeypress = resetTimer;
+}
+
+function resetTimer() {
+	seconds=0;
+}
+window.onload=timer;
+
+//-->
+</script>
+<body {ONLOAD} onMouseOut="closeMenus();">
+<div id="MoreMenu" class="menu">
+	<!-- BEGIN: more -->
+	<a href="index.php?module={MODULE_KEY}&action=index{MODULE_QUERY}" class="menuItem" id="{MODULE_KEY}Handle" parentid="MoreMenu" onMouseOver="hiliteItem(this,'yes'); closeSubMenus(this);" onMouseOut="unhiliteItem(this);">{MODULE_NAME}</a>
+	<!-- END: more -->
+	</div>
+	<div id="HideMenu" class="subDmenu">
+	<p>
+<table cellpadding="0" cellspacing="0" border="0" width="160" class="leftColumnModuleHead" onMouseOver="hiliteItem(this,'no');">
+  <tr>
+		<th width="5"><img src="{IMAGE_PATH}moduleTab_left.gif" width="9" height="21" alt="{SHORTCUTS}"  border="0"></th>
+		<th style="background-image : url({IMAGE_PATH}moduleTab_middle.gif);" width="100%">{SHORTCUTS}</th>
+		<th width="5"><img src="{IMAGE_PATH}moduleTab_right.gif" width="16" height="21" alt="{SHORTCUTS}"  border="0"></th></tr>
+		</table>
+	
+		<table cellpadding="0" cellspacing="0" border="0" class="subMenu" width="160" onMouseOver="hiliteItem(this,'no');">
+
+			<!-- BEGIN: hide -->
+			<tr>
+			<td id="{SC_MODULE_NAME}_sh" class="subMenuTD" onMouseOver="this.style.background='#EDD698';this.style.cursor='hand';" onMouseOut="this.style.background='#EDCF7D';this.style.cursor='auto';" onclick="location.href='{URL}'">&nbsp;&nbsp;<a onMouseOver="document.getElementById('{SC_MODULE_NAME}_sh').style.background='#EDD698';" onMouseOut="document.getElementById('{SC_MODULE_NAME}_sh').style.background='#EDD9A1';" class="subMenuLink" href="{URL}"><img src="{IMAGE_PATH}{SC_MODULE_NAME}.gif" alt="{LABEL}" width="16" height="16" border="0" align="absmiddle"></a>&nbsp;<a class="subMenuLink" href="{URL}">{LABEL}</A></td>
+					</tr>
+<!-- END: hide -->
+
+		    	</table>
+	</p>
+	</div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td colspan="2" style="background-image : url({IMAGE_PATH}/header_bg.gif);">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+		<tr height="50">
+		    <td width="253"><img src="{IMAGE_PATH}company_logo.png" width="212" height="40" alt="Company Logo" border="0" style="margin-left: 10px;"></td>
+			<td valign="bottom" width="49"><img src="{IMAGE_PATH}palm_tree.png" width="217" height="50" alt="Palm Tree" border="0"></td>
+		    <td align="right" nowrap class="myArea" style="padding-right: 10px;">
+				<a    href="index.php?module=Users&action=DetailView&record={CURRENT_USER_ID}" class="myAreaLink">{APP.LBL_MY_ACCOUNT}</a>&nbsp;|&nbsp;<a href="index.php?module=Employees&action=ListView" class="myAreaLink">{APP.LBL_EMPLOYEES}</a>&nbsp;|&nbsp;{ADMIN_LINK}<a href="index.php?module=Users&action=Logout" class="myAreaLink">{APP.LBL_LOGOUT}</a>&nbsp;|&nbsp;<a href="index.php?module=Home&action=About" class="myAreaLink">{APP.LNK_ABOUT}</a><br>
+<img src="include/images/sugarsales_myarea.png" alt="Sugar Sales" width="180" height="20" border="0" style="margin-top: 6px;">
+	</td>
+		</tr>
+		 <tr>
+		    <td colspan="3" width="100%">
+			<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr height="18">
+			    <td><img src="{IMAGE_PATH}/emptyTabSpace.gif" height="18" width="10"></td>
+				<!-- BEGIN: tab -->
+				<td>
+				<table cellspacing="0" cellpadding="0" border="0">
+			<tr height="18">
+				<td><img src="{IMAGE_PATH}{TAB_CLASS}_left.gif" width="8" height="18" border="0" alt="{MODULE_NAME}"></td>
+			    <td style="background-image : url({IMAGE_PATH}{TAB_CLASS}_middle.gif);" class="{TAB_CLASS}" nowrap><a   class="{TAB_CLASS}"  href="index.php?module={MODULE_KEY}&action=index{MODULE_QUERY}">{MODULE_NAME}</A></td>
+				<td><img src="{IMAGE_PATH}{TAB_CLASS}_right.gif" width="8" height="18" border="0" alt="{MODULE_NAME}"></td>
+				<td style="background-image : url({IMAGE_PATH}emptyTabSpace.gif);">{MORE}</td>
+				<td><img src="{IMAGE_PATH}emptyTabSpace.gif" height="18" width="1"></td>
+</tr>
+
+			</table>
+			</td>
+				<!-- END: tab -->
+				<td width="100%"><img src="{IMAGE_PATH}emptyTabSpace.gif" height="18" width="100%"></td>
+			</tr>
+
+			</table>
+     </td>
+  </tr>
+		<tr height="20"><form name='UnifiedSearch'>
+				  <input type="hidden" name="action" value="UnifiedSearch">
+				  <input type="hidden" name="module" value="Home">
+				  <input type="hidden" name="search_form" value="false">
+		    <td class="subTabBar" colspan="3"  width="100%">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0" height="20">
+			<tr>
+			    <td class="welcome" width="100%">{APP.NTC_WELCOME} {CURRENT_USER}</td>
+				<!-- BEGIN: left_form_search -->
+				<td class="search" style="padding: 0px" align="right" width="11"><img src="{IMAGE_PATH}searchSeparator.png" width="17" height="20" border="0" alt="Search"></td>
+				<td class="search" style="padding: 0px" align="right">&nbsp;<b>{TITLE}</b></td>
+				<td class="search" nowrap>&nbsp;<input type="text" class="searchField" name="query_string" size="14" value="{SEARCH}">&nbsp;<input type="image" class="searchButton" src="{IMAGE_PATH}searchButton.gif" width="30" height="15" value="{APP.LBL_SEARCH_BUTTON_LABEL}" align="absmiddle" alt="{SEARCH}"></td>
+		<!-- END: left_form_search -->
+			</tr>
+			</table>
+			</td>
+			</form>
+		</tr>
+		</table>	
+	
+	</td>
+</tr>
+<tr height="20">
+	<td class="lastView" nowrap colspan="2">	<!-- BEGIN: left_form_recent_view -->
+		<b>{TITLE_LAST_VIEW}:&nbsp;&nbsp;</b>
+		<!-- BEGIN: left_form_recent_view_row -->
+			 	<a class="lastViewLink" title="[{APP.LBL_ALT_HOT_KEY}{ROW_NUMBER}]" accessKey="{ROW_NUMBER}" href="{RECENT_URL}"><img alt="{RECENT_LABEL_FULL}" src="{IMAGE_PATH}{MODULE_NAME}.gif" width="16" height="16" border="0" align="absmiddle"></a>&nbsp;<a class="lastViewLink" title="[{APP.LBL_ALT_HOT_KEY}{ROW_NUMBER}]" accessKey="{ROW_NUMBER}" href="{RECENT_URL}">{RECENT_LABEL}</A>&nbsp;
+		<!-- END: left_form_recent_view_row -->
+		<!-- BEGIN: left_form_recent_view_empty -->
+
+			{APP.NTC_NO_ITEMS_DISPLAY}
+
+		<!-- END: left_form_recent_view_empty -->
+
+		<!-- END: left_form_recent_view --></td>
+</tr>
+<tr height="10">
+	<td colspan="2"></td>
+</tr>
+<tr>
+	<td colspan="2">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+    {LEFT_FORM_OTD}
+	<!-- BEGIN: left_form -->
+	<p>
+	      	<table cellpadding="0" cellspacing="0" border="0" width="100%" class="leftColumnModuleHead">
+  <tr>
+		<th width="5"><img src="{IMAGE_PATH}moduleTab_left.gif" width="9" height="21" alt="{SHORTCUTS}"  border="0"></th>
+		<th style="background-image : url({IMAGE_PATH}moduleTab_middle.gif);" width="100%">{SHORTCUTS}</th>
+		<th width="5"><img src="{IMAGE_PATH}moduleTab_right.gif" width="16" height="21" alt="{SHORTCUTS}"  border="0"></th></tr>
+		</table>
+<!-- BEGIN: sub_menu -->
+		<table cellpadding="0" cellspacing="0" border="0" class="subMenu" width="100%">
+
+			<!-- BEGIN: sub_menu_item -->
+			<tr>
+			<td id="{SC_MODULE_NAME}_sh" class="subMenuTD" onMouseOver="this.style.background='#EDD698';this.style.cursor='hand';" onMouseOut="this.style.background='#EDCF7D';this.style.cursor='auto';" onclick="location.href='{URL}'">&nbsp;&nbsp;<a onMouseOver="document.getElementById('{SC_MODULE_NAME}_sh').style.background='#EDD698';" onMouseOut="document.getElementById('{SC_MODULE_NAME}_sh').style.background='#EDD9A1';" class="subMenuLink" href="{URL}"><img src="{IMAGE_PATH}{SC_MODULE_NAME}.gif" alt="{LABEL}" width="16" height="16" border="0" align="absmiddle"></a>&nbsp;<a class="subMenuLink" href="{URL}">{LABEL}</A></td>
+					</tr>
+<!-- END: sub_menu_item -->
+
+		    	</table>
+
+			<!-- END: sub_menu -->
+		</p>
+	<script language="Javascript">
+	if (!Get_Cookie('showLeftCol')) {
+		Set_Cookie('showLeftCol','true',30,'/','','');
+	}
+	var show = Get_Cookie('showLeftCol');
+
+	if (show == 'true') {
+		this.document.getElementById('leftCol').style.display='inline';
+		document['HideHandle'].src = '{IMAGE_PATH}hide.gif';
+	} else {
+		this.document.getElementById('leftCol').style.display='none';
+		document['HideHandle'].src = '{IMAGE_PATH}show.gif';	
+		
+	}
+	</script>
+	<!-- END: left_form -->
+	<!-- BEGIN: left_form_new_record -->
+	{NEW_RECORD}
+	<!-- END: left_form_new_record -->
+	{LEFT_FORM_CTD}
+    <td style="padding-right: 10px; vertical-align: top; width: 100%;">
+<!-- END: main -->

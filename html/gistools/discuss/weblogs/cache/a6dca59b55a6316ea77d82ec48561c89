@@ -1,0 +1,38 @@
+O:9:"MagpieRSS":19:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:1:{i:0;a:7:{s:2:"id";s:75:"https://blogs.oracle.com/jonathan/entry/jersey_micro_benchmarking_framework";s:5:"title";s:35:"Jersey Micro Benchmarking Framework";s:11:"author_name";s:17:"Jonathan Benoit  ";s:4:"link";s:75:"https://blogs.oracle.com/jonathan/entry/jersey_micro_benchmarking_framework";s:9:"published";s:25:"2011-09-26T14:47:07+00:00";s:7:"updated";s:25:"2011-09-26T14:47:07+00:00";s:12:"atom_content";s:3443:"<p>A micro benchmarking framework has been created for Jersey/JAX-RS. This allows us to do continuous performance testing using <a href="http://hudson-ci.org/" title="Hudson continous testing">hudson</a> to make sure Jersey keeps 
+performing well as we are adding functionality.&nbsp; This test suite also allows us to test between different JAX-RS versions, 
+which helps us catch any regressions in Jersey 2, with respect to Jersey
+ 1.&nbsp; </p> 
+  <p>I am testing basic functionality such as media type to java type conversions,
+ and vice-versa.&nbsp; I am testing the most commonly used media types. 
+MediaType conversions covered in testing baseline results include: <br /></p> 
+  <blockquote> 
+    <ul> 
+      <li>XML</li> 
+      <li>JSON</li> 
+      <li>Strings</li> 
+      <li>InputStream</li> 
+    </ul> 
+  </blockquote> 
+  <p>Not only is there added support for different payloads, XML, pure text, JSON payload, but I am also testing:</p> 
+  <blockquote> 
+    <ul> 
+      <li>&nbsp;HTTP methods + JAXRS annotations GET, PUT, POST, DELETE.&nbsp; <br /></li> 
+      <li>&nbsp;annotations like @QueryParam, etc.
+  </li> 
+    </ul> 
+  </blockquote> 
+  <p>I can increase our testing coverage, testing various features, as required. </p> 
+  <p>I am utilizing <a href="http://japex.java.net/" title="Japex Micro-benchmark Framework">Japex Micro-benchmark Framework</a> to implement our testing suite. <a title="Japex docs" href="http://japex.java.net/docs/manual.html">Japex</a> includes a Maven2 <a title="japex maven plugin" href="http://japex.java.net/japex-maven-plugin/index.html">plugin</a>, which we use to
+	    run microbenchmarks from our maven build.&nbsp;&nbsp; Hudson includes a <a title="Hudson Japex Plugin" href="http://wiki.hudson-ci.org/display/HUDSON/Japex+Plugin">Japex plugin</a> to allow Japex Trend reports to be displayed within hudson.&nbsp; Here is a snapshot of Japex Trend report for JUnit testing of&nbsp; sample Root Element Collection method:</p> 
+  <p><img alt="Japex Trend Report for Root Element Collection test" src="/jonathan/resource/japex/testRootElementCollectionJapex.jpg" /><br /></p> 
+  <p> </p> 
+  <p> </p> 
+  <p> </p> 
+  <p> </p> 
+  <p>I'm trying to ensure that we eliminate &quot;<i>noise</i>&quot; from these performance number results.&nbsp; Initially the numbers were less stable, as there were multiple executors configured on hudson slave, allowing multiple jobs to run concurrently. That has been changed to now run single executor on hudson slave where micro benchmark tests are run. Also, I have analyzed hudson slave to ensure no cron jobs are triggered during performance testing. This is a work in progress, striving for more deterministic results moving forward.<br /></p> 
+  <p>I've configured the Japex hudson plugin to notify us when there is more than a 1% change in performance via the configure page of our hudson job:</p> 
+  <p><img hspace="40" vspace="26" alt="Japex Hudson plugin Config screenshot" src="/jonathan/resource/japex/japex-hudson-plugin-screenshot-resized-use-in-blog-2.JPG" /></p> 
+  <p>The usage of Hudson with Japex allows us to  continuously monitor the performance of Jersey as it moves forward.&nbsp; </p> 
+  <p>Special thanks to <a title="Santiago's blog" href="http://www.java.net/blogs/spericas/?force=644">Santiago</a> and <a title="Jakub's blog" href="/japod/category/REST">Jakub</a> for their help in putting the pieces together.<br /></p> 
+  <p> </p>";}}s:7:"channel";a:7:{s:5:"title";s:22:"Jonathan Benoit's blog";s:8:"subtitle";s:26:"weblog for Jonathan Benoit";s:2:"id";s:51:"https://blogs.oracle.com/jonathan/feed/entries/atom";s:9:"link_self";s:51:"https://blogs.oracle.com/jonathan/feed/entries/atom";s:4:"link";s:34:"https://blogs.oracle.com/jonathan/";s:7:"updated";s:25:"2011-09-28T21:44:29+00:00";s:9:"generator";s:13:"Apache Roller";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Wed, 28 Sep 2011 21:44:29 GMT
+";}

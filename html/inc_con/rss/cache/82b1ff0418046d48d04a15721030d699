@@ -1,0 +1,341 @@
+O:9:"magpierss":20:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:4:{i:0;a:7:{s:5:"title";s:28:"Brief ohloh.net stats update";s:4:"link";s:41:"http://www.osgeo.org/tyler/project_stats2";s:11:"description";s:627:"<p>Following up from my last entry - <a class="" href="/tyler/project_stats">Development stats for all OSGeo projects</a> - now that I have all project stats compiled, here is where we are sitting: <ul>
+    <li> Approx. number of lines of code: <strong>7,590,845</strong></li>
+    <li> Approx. person years of programming: <strong>2,135</strong></li>
+    <li> Committers in last year: <strong>161</strong></li>
+    <li> Committers in total: <strong>286</strong></li>
+</ul>
+
+</p>
+
+<p>The upcoming newsletter include more detailed breakdowns in the various project update reports.</p>
+
+<p>Tyler Mitchell<br />
+ 5-April-2007</p>
+
+";s:7:"pubdate";s:31:"Thu,  5 Apr 2007 15:54:55 -0400";s:2:"dc";a:1:{s:7:"creator";s:14:"Tyler Mitchell";}s:4:"guid";s:27:"305 at http://www.osgeo.org";s:7:"summary";s:627:"<p>Following up from my last entry - <a class="" href="/tyler/project_stats">Development stats for all OSGeo projects</a> - now that I have all project stats compiled, here is where we are sitting: <ul>
+    <li> Approx. number of lines of code: <strong>7,590,845</strong></li>
+    <li> Approx. person years of programming: <strong>2,135</strong></li>
+    <li> Committers in last year: <strong>161</strong></li>
+    <li> Committers in total: <strong>286</strong></li>
+</ul>
+
+</p>
+
+<p>The upcoming newsletter include more detailed breakdowns in the various project update reports.</p>
+
+<p>Tyler Mitchell<br />
+ 5-April-2007</p>
+
+";}i:1;a:7:{s:5:"title";s:40:"Development stats for all OSGeo projects";s:4:"link";s:40:"http://www.osgeo.org/tyler/project_stats";s:11:"description";s:2954:"<p>Every time I start to prepare for a presentation about OSGeo I start wishing I had some solid, measurable, statistics about the projects.  It is very difficult, if not impossible to accurately estimate software usage of open source projects - so I started to wonder about some of the things I could measure and report on more precisely.</p>
+
+<p>I thought it would be an interesting metric to see how many committers have contributed to each project over time, but realised this wasn't a task I really wanted to take on.  Then there was the idea of counting lines of code, which reminded me of the <a href="http://www.ohloh.net/">ohloh.net</a> website services that does both these things.</p>
+
+<p>I first learned about ohloh when the <a href="http://www.ossim.org/OSSIM/Welcome.html">OSSIM project</a> was being added to it.  Mark Lucas was telling us on IRC things like... &quot;80% done analysing OSSIM source code on ohloh.net&quot;.  What was all the interest about?  The mission statement of ohloh says it all:   <strong>Explore Open Source - Mapping the open source world by collecting objective information on open source projects</strong></p>
+
+<p>Sure enough there were the <a href="http://www.ohloh.net/projects/3665/analyses/latest">OSSIM stats</a> for code growth and other metrics.</p>
+
+<p>This week I went to visit ohloh with a particular purpose in mind, to scour through any OSGeo-related projects.  Thankfully I found that only a few were not already indexed by ohloh - so I added them (MapBuilder, GeoNetwork, MapGuide, FDO).  They also have this new feature called &quot;stacking&quot; - it's basically just a personalised list of the projects you are watching.  So I added all the projects to my stack - <a href="http://www.ohloh.net/accounts/666">have a look</a>.</p>
+
+<p>The stacks don't aggregate any stats for you, but I was able to quickly look through each project and wrote up a little summary - warts and all.  The stats have holes and I'm sure there are some logical reasons, but here is a summary of a few of the metrics for all projects combined (excluding FDO which wasn't completely added to ohloh yet): <ul>
+    <li> Approx. number of lines of code:    <strong>6,958,322</strong></li>
+    <li> Approx. person years of programming: <strong>1,962</strong></li>
+    <li> Committers in last year: <strong>157</strong></li>
+    <li> Committers in total: <strong>272</strong></li>
+</ul>
+
+</p>
+
+<p>Regardless of whether you like the &quot;years of programming&quot; value, there is no denying that there is a lot of code behind these projects.  In many cases, OSGeo-related projects are in the top 5-10% of projects indexed on ohloh.</p>
+
+<p>Tyler Mitchell<br />
+ 12-March-2007</p>
+
+<p>p.s. <a href="http://mateusz.loskot.net/"> Mateusz Łoskot</a> compared some of the stats and concluded that ohloh is using the <a href="http://en.wikipedia.org/wiki/COCOMO">COCOMO method</a> for computing software development stats.</p>
+
+";s:7:"pubdate";s:31:"Mon, 12 Mar 2007 22:13:37 -0400";s:2:"dc";a:1:{s:7:"creator";s:14:"Tyler Mitchell";}s:4:"guid";s:27:"291 at http://www.osgeo.org";s:7:"summary";s:2954:"<p>Every time I start to prepare for a presentation about OSGeo I start wishing I had some solid, measurable, statistics about the projects.  It is very difficult, if not impossible to accurately estimate software usage of open source projects - so I started to wonder about some of the things I could measure and report on more precisely.</p>
+
+<p>I thought it would be an interesting metric to see how many committers have contributed to each project over time, but realised this wasn't a task I really wanted to take on.  Then there was the idea of counting lines of code, which reminded me of the <a href="http://www.ohloh.net/">ohloh.net</a> website services that does both these things.</p>
+
+<p>I first learned about ohloh when the <a href="http://www.ossim.org/OSSIM/Welcome.html">OSSIM project</a> was being added to it.  Mark Lucas was telling us on IRC things like... &quot;80% done analysing OSSIM source code on ohloh.net&quot;.  What was all the interest about?  The mission statement of ohloh says it all:   <strong>Explore Open Source - Mapping the open source world by collecting objective information on open source projects</strong></p>
+
+<p>Sure enough there were the <a href="http://www.ohloh.net/projects/3665/analyses/latest">OSSIM stats</a> for code growth and other metrics.</p>
+
+<p>This week I went to visit ohloh with a particular purpose in mind, to scour through any OSGeo-related projects.  Thankfully I found that only a few were not already indexed by ohloh - so I added them (MapBuilder, GeoNetwork, MapGuide, FDO).  They also have this new feature called &quot;stacking&quot; - it's basically just a personalised list of the projects you are watching.  So I added all the projects to my stack - <a href="http://www.ohloh.net/accounts/666">have a look</a>.</p>
+
+<p>The stacks don't aggregate any stats for you, but I was able to quickly look through each project and wrote up a little summary - warts and all.  The stats have holes and I'm sure there are some logical reasons, but here is a summary of a few of the metrics for all projects combined (excluding FDO which wasn't completely added to ohloh yet): <ul>
+    <li> Approx. number of lines of code:    <strong>6,958,322</strong></li>
+    <li> Approx. person years of programming: <strong>1,962</strong></li>
+    <li> Committers in last year: <strong>157</strong></li>
+    <li> Committers in total: <strong>272</strong></li>
+</ul>
+
+</p>
+
+<p>Regardless of whether you like the &quot;years of programming&quot; value, there is no denying that there is a lot of code behind these projects.  In many cases, OSGeo-related projects are in the top 5-10% of projects indexed on ohloh.</p>
+
+<p>Tyler Mitchell<br />
+ 12-March-2007</p>
+
+<p>p.s. <a href="http://mateusz.loskot.net/"> Mateusz Łoskot</a> compared some of the stats and concluded that ohloh is using the <a href="http://en.wikipedia.org/wiki/COCOMO">COCOMO method</a> for computing software development stats.</p>
+
+";}i:2;a:7:{s:5:"title";s:28:"Starting an OSGeo Newsletter";s:4:"link";s:46:"http://www.osgeo.org/tyler/starting_newsletter";s:11:"description";s:1730:"<p>This week we kickstarted planning for the new <a href="http://wiki.osgeo.org/index.php/Newsletter#Open_Positions">OSGeo Newsletter</a> project.  This new newsletter will highlight projects, present code examples, case studies, news and event updates.  The style and concept is based on the successful GRASS-News publication.  Here is the <a href="http://osgeo.org/files/news/GRASS_OSGeo_News_vol4.pdf">previous volume (5.8MB)</a>.</p>
+
+<p>The first item we are working on is setting up an editorial team - individuals who can solicit articles, compile content and prepare articles for publication.  If you are interested in being part of this new team, you are more than welcome.  There are several <a href="http://wiki.osgeo.org/index.php/Newsletter#Open_Positions">open positions</a> still available.</p>
+
+<p>We are already well underway in gathering content for <a href="http://wiki.osgeo.org/index.php/Newsletter_Volume_1">Volume 1</a>.  If you have content ideas, especially for the categories that are more empty, please let us know.  If we run out of room then we'll be ahead of the game for Volume 2.</p>
+
+<p>A few other remaining questions are currently being discussed - how long should articles be and what deadlines are reasonable.  More to come on this soon.</p>
+
+<p>Several people have also asked if the newsletter will target only OSGeo projects.  By nature these projects will be well represented, however the purpose is to highlight other projects, regardless of their affiliation with OSGeo.</p>
+
+<p>Keep in touch by joining our <a href="http://lists.osgeo.org/mailman/listinfo/newsletter">Newsletter mailing list</a> and introducing yourself and your interests.</p>
+
+<p>3-Mar-2007<br />
+ Tyler Mitchell</p>
+
+";s:7:"pubdate";s:31:"Sat,  3 Mar 2007 18:18:30 -0500";s:2:"dc";a:1:{s:7:"creator";s:14:"Tyler Mitchell";}s:4:"guid";s:27:"284 at http://www.osgeo.org";s:7:"summary";s:1730:"<p>This week we kickstarted planning for the new <a href="http://wiki.osgeo.org/index.php/Newsletter#Open_Positions">OSGeo Newsletter</a> project.  This new newsletter will highlight projects, present code examples, case studies, news and event updates.  The style and concept is based on the successful GRASS-News publication.  Here is the <a href="http://osgeo.org/files/news/GRASS_OSGeo_News_vol4.pdf">previous volume (5.8MB)</a>.</p>
+
+<p>The first item we are working on is setting up an editorial team - individuals who can solicit articles, compile content and prepare articles for publication.  If you are interested in being part of this new team, you are more than welcome.  There are several <a href="http://wiki.osgeo.org/index.php/Newsletter#Open_Positions">open positions</a> still available.</p>
+
+<p>We are already well underway in gathering content for <a href="http://wiki.osgeo.org/index.php/Newsletter_Volume_1">Volume 1</a>.  If you have content ideas, especially for the categories that are more empty, please let us know.  If we run out of room then we'll be ahead of the game for Volume 2.</p>
+
+<p>A few other remaining questions are currently being discussed - how long should articles be and what deadlines are reasonable.  More to come on this soon.</p>
+
+<p>Several people have also asked if the newsletter will target only OSGeo projects.  By nature these projects will be well represented, however the purpose is to highlight other projects, regardless of their affiliation with OSGeo.</p>
+
+<p>Keep in touch by joining our <a href="http://lists.osgeo.org/mailman/listinfo/newsletter">Newsletter mailing list</a> and introducing yourself and your interests.</p>
+
+<p>3-Mar-2007<br />
+ Tyler Mitchell</p>
+
+";}i:3;a:7:{s:5:"title";s:32:"OSGeo Celebrates 1st Anniversary";s:4:"link";s:48:"http://www.osgeo.org/tyler/osgeo_1st_anniversary";s:11:"description";s:9093:"<p>February 4th, 2007 was the first anniversary of OSGeo.  One year ago 25 people met face-to-face, and many more via phone and IRC, to discuss the possibility of starting an umbrella organisation.  These participants represented over 13 different open source projects.  The foundational purpose of the organisation was to help promote and continue to develop open source tools in the geospatial sphere.  Since that time, much has happened and momentum around OSGeo continues to develop.  Here are only a few highlights from that first year.</p>
+
+
+<h2 id="toc0">Members Added</h2>
+<p>The initial 25 charter members were expanded to a full 45  <a href="http://www.osgeo.org/content/foundation/members/voting_members.html">voting members</a> after a public nomination process.  These are the members who are responsible for voting in the Board.  Regular members were also invited to join at no cost and without any formal process.  The development of a membership management application is currently underway, which will allow members to formally sign up.</p>
+
+
+<h2 id="toc1">Committees Established</h2>
+ Several committees are overseeing day-to-day work and special projects: <ul>
+    <li> A <strong>Board of Directors</strong> was created early on and expanded to include 9 representatives from around the world.  The Board has been very active in setting direction, policies and helping in general.</li>
+    <li> <strong>Website</strong> and <strong>Systems Administration</strong> committees - focused on website content and  infrastructure maintenance and development</li>
+    <li> Project <strong>Incubation</strong> - monitoring and guiding projects through the incubation process</li>
+    <li> <strong>Promotion and Visibility</strong> - developing promotional material, coordinating OSGeo presence at conferences, creating press releases</li>
+    <li> <strong>Conference</strong> planning - helping organise the annual OSGeo <a href="http://foss4g2007.org">FOSS4G</a> conference event</li>
+    <li> <strong>Fundraising</strong> - raising funds to cover day-to-day costs of the foundation and its projects</li>
+    <li> <strong>Public Geospatial Data</strong> - working towards making more data publicly available and building tools for finding it</li>
+    <li> <strong>Education/Curriculum</strong> development - working towards a set of teaching tools for bringing open source into the academic mapping and GIS environment</li>
+</ul>
+
+
+<h2 id="toc2">Projects Joining</h2>
+ The primary goal of OSGeo is to help further develop and promote particular software projects.  An initial set of projects joined the <a href="http://www.osgeo.org/incubator">incubation</a> process at the beginning and since then a couple have graduated and a few more have joined.  Even more are waiting for approval to join the process.  Projects can be loosely categorised into the following groupings. <br />
+ <strong>Web Mapping Software</strong> <ul>
+    <li> <a href="http://mapbender.org">Mapbender</a> (graduated)</li>
+    <li> <a href="http://communitymapbuilder.org">Community MapBuilder</a> (graduated)</li>
+    <li> <a href="http://mapguide.osgeo.org">MapGuide Open Source</a></li>
+    <li> <a href="http://mapserver.gis.umn.edu">MapServer</a></li>
+    <li> <a href="http://openlayers.org">OpenLayers</a></li>
+</ul>
+
+<p><strong>Desktop Applications</strong> <ul>
+    <li> <a href="http://grass.itc.it">GRASS GIS</a></li>
+    <li> <a href="http://www.ossim.org/OSSIM/Welcome.html">OSSIM</a></li>
+</ul>
+
+</p>
+
+<p><strong>Geospatial Libraries</strong> <ul>
+    <li> <a href="http://gdal.org">GDAL/OGR</a></li>
+    <li> <a href="http://geotools.org">GeoTools</a></li>
+</ul>
+
+</p>
+
+<p><strong>Metadata Catalog Software</strong> <ul>
+    <li> <a href="http://geonetwork-opensource.org/">GeoNetwork Opensource</a></li>
+</ul>
+
+</p>
+
+<p><strong>Other Projects Wanting to Join</strong> <ul>
+    <li> <a href="http://fdo.osgeo.org">FDO</a></li>
+    <li> <a href="http://qgis.org">Quantum GIS (QGIS)</a></li>
+    <li> <a href="http://moss4g.telascience.org/">MOSS4G</a> - mobile platform development</li>
+</ul>
+
+</p>
+
+<p>Together these projects represent a massive amount of development effort and cover a wide spectrum of core geospatial technologies.  All projects are being actively developed and have vibrant user communities behind them.</p>
+
+
+<h2 id="toc3">Local Chapter Development</h2>
+ OSGeo's goals and mission have garnered interest from many particular countries, regions and language groups.  Early on it was decided that there should be a way for these groups to associate with OSGeo, hence the creation of <a href="http://www.osgeo.org/local">Local Chapters</a>.  <p>To date there are 4 approved local chapters in: <strong>China</strong>, <strong>India</strong>, <strong>Japan</strong> and <strong>Ottawa</strong> (Canada).</p>
+
+<p>Many additional local chapters are hoping to form and at various stages of development, including: <strong>Australian</strong>, <strong>Brazilian</strong>, <strong>New Mexico</strong> (USA) regions and <strong>French</strong>, <strong>German</strong>, <strong>Italian</strong> languages.</p>
+
+
+<h2 id="toc4">Promotion / Events</h2>
+ OSGeo has been represented at several events in the past year.  Some with several thousands of participants.  The purpose of having OSGeo presence at events is to build awareness for the OSGeo projects.  Speakers and those managing an OSGeo booth help describe case studies or show demonstrations of applications.  Brochures for each project have been made available and are distributed.<p>The primary international conference that OSGeo members were involved in is <a href="http://foss4g2006.org">FOSS4G</a>.  The conference was a great success and very encouraging.</p>
+
+<p>Planning for the <a href="http://www.foss4g2007.org/">FOSS4G 2007</a> event is already well underway.</p>
+
+<p>Here are a few other events that OSGeo has had speakers or exhibition presence at in 2006 or early 2007: <ul>
+    <li> <a href="http://www.autodeskevents.com/au2006/">Autodesk University</a></li>
+    <li> <a href="http://wgrass.media.osaka-cu.ac.jp/gisideas06/">GIS-IDEAS</a></li>
+    <li> <a href="http://www.intergeo.de">Intergeo</a> </li>
+    <li> <a href="http://www.linuxtag.org/2006/">LinuxTag</a></li>
+    <li> <a href="http://www.mapworldforum.org/">Map World Forum</a></li>
+    <li> <a href="http://conferences.oreillynet.com/os2006/">OSCON</a></li>
+    <li> <a href="http://conferences.oreillynet.com/where2006/">Where 2.0</a></li>
+</ul>
+
+</p>
+
+
+<h2 id="toc5">Newsletter</h2>
+ OSGeo is joining with the famous GRASS GIS Newsletter to produce a new version that is targetted at a wider audience.  A joint <a href="http://osgeo.org/files/news/GRASS_OSGeo_News_vol4.pdf">GRASS/OSGeo Newsletter</a> was produced in 2006.  Further OSGeo newsletters are planned for 2007.
+<h2 id="toc6">Executive Director Hired</h2>
+ In November I was hired by the board as the Executive Director for OSGeo.  The goal of the position is to help facilitate day-to-day administrative operations, increase communication and serve as a formal contact for those who need to talk to the organisation.  Having this position has allowed us to get a handle on various administrative functions and provided a consistent point of contact for the community, public, sponsors and media.
+<h2 id="toc7">Additional Developments</h2>
+ <ul>
+    <li> Several new <a href="http://www.osgeo.org/sponsors">sponsors</a> - In addition to continuing Sustaining Sponsor Autodesk, new Associate Sponsors include <a href="http://lizardtech.com">Lizardtech</a> and <a href="http://1spatial.com">1Spatial</a>.  The GDAL/OGR project also has several <a href="http://www.gdal.org/sponsorship.html">project sponsors</a>.</li>
+    <li> A logo was selected for the organisation, based on submissions and voting from the community.  Some modifications of the original were recently completed to make the logo more usable for various printing and media purposes.  A brand guidebook is also being developed.</li>
+</ul>
+
+<p><img src="http://www.osgeo.org/content/logo/images/OSGeo_wTag.png" alt="This" title="This" /><!-- This -->  <ul>
+    <li> A <a href="http://www.cafepress.com/OSGeo">cafepress.com</a> store was started</li>
+    <li> Internet infrastructure services were upgraded at the end of 2006, allowing for more control over mailing lists and code repositories as well as implementing a content management system for the website</li>
+    <li> OSGeo has been featured in various news web sites and mentioned at several conferences and in magazine articles</li>
+</ul>
+
+</p>
+
+
+<h2 id="toc8">The Horizon for Year 2</h2>
+ I will leave the outlook for 2007 to another post, but it's looking to be even busier than 2006.  Here are a couple things to watch for: <ul>
+    <li> Formation of more local chapters</li>
+    <li> More software projects joining OSGeo</li>
+    <li> How to participate in international and local events</li>
+    <li> More great features added and bugs squished </li>
+    <li> Increased promotional opportunities</li>
+    <li> FOSS4G in Victoria, BC, Canada</li>
+</ul>
+
+";s:7:"pubdate";s:31:"Fri,  9 Feb 2007 14:33:24 -0500";s:2:"dc";a:1:{s:7:"creator";s:14:"Tyler Mitchell";}s:4:"guid";s:27:"240 at http://www.osgeo.org";s:7:"summary";s:9093:"<p>February 4th, 2007 was the first anniversary of OSGeo.  One year ago 25 people met face-to-face, and many more via phone and IRC, to discuss the possibility of starting an umbrella organisation.  These participants represented over 13 different open source projects.  The foundational purpose of the organisation was to help promote and continue to develop open source tools in the geospatial sphere.  Since that time, much has happened and momentum around OSGeo continues to develop.  Here are only a few highlights from that first year.</p>
+
+
+<h2 id="toc0">Members Added</h2>
+<p>The initial 25 charter members were expanded to a full 45  <a href="http://www.osgeo.org/content/foundation/members/voting_members.html">voting members</a> after a public nomination process.  These are the members who are responsible for voting in the Board.  Regular members were also invited to join at no cost and without any formal process.  The development of a membership management application is currently underway, which will allow members to formally sign up.</p>
+
+
+<h2 id="toc1">Committees Established</h2>
+ Several committees are overseeing day-to-day work and special projects: <ul>
+    <li> A <strong>Board of Directors</strong> was created early on and expanded to include 9 representatives from around the world.  The Board has been very active in setting direction, policies and helping in general.</li>
+    <li> <strong>Website</strong> and <strong>Systems Administration</strong> committees - focused on website content and  infrastructure maintenance and development</li>
+    <li> Project <strong>Incubation</strong> - monitoring and guiding projects through the incubation process</li>
+    <li> <strong>Promotion and Visibility</strong> - developing promotional material, coordinating OSGeo presence at conferences, creating press releases</li>
+    <li> <strong>Conference</strong> planning - helping organise the annual OSGeo <a href="http://foss4g2007.org">FOSS4G</a> conference event</li>
+    <li> <strong>Fundraising</strong> - raising funds to cover day-to-day costs of the foundation and its projects</li>
+    <li> <strong>Public Geospatial Data</strong> - working towards making more data publicly available and building tools for finding it</li>
+    <li> <strong>Education/Curriculum</strong> development - working towards a set of teaching tools for bringing open source into the academic mapping and GIS environment</li>
+</ul>
+
+
+<h2 id="toc2">Projects Joining</h2>
+ The primary goal of OSGeo is to help further develop and promote particular software projects.  An initial set of projects joined the <a href="http://www.osgeo.org/incubator">incubation</a> process at the beginning and since then a couple have graduated and a few more have joined.  Even more are waiting for approval to join the process.  Projects can be loosely categorised into the following groupings. <br />
+ <strong>Web Mapping Software</strong> <ul>
+    <li> <a href="http://mapbender.org">Mapbender</a> (graduated)</li>
+    <li> <a href="http://communitymapbuilder.org">Community MapBuilder</a> (graduated)</li>
+    <li> <a href="http://mapguide.osgeo.org">MapGuide Open Source</a></li>
+    <li> <a href="http://mapserver.gis.umn.edu">MapServer</a></li>
+    <li> <a href="http://openlayers.org">OpenLayers</a></li>
+</ul>
+
+<p><strong>Desktop Applications</strong> <ul>
+    <li> <a href="http://grass.itc.it">GRASS GIS</a></li>
+    <li> <a href="http://www.ossim.org/OSSIM/Welcome.html">OSSIM</a></li>
+</ul>
+
+</p>
+
+<p><strong>Geospatial Libraries</strong> <ul>
+    <li> <a href="http://gdal.org">GDAL/OGR</a></li>
+    <li> <a href="http://geotools.org">GeoTools</a></li>
+</ul>
+
+</p>
+
+<p><strong>Metadata Catalog Software</strong> <ul>
+    <li> <a href="http://geonetwork-opensource.org/">GeoNetwork Opensource</a></li>
+</ul>
+
+</p>
+
+<p><strong>Other Projects Wanting to Join</strong> <ul>
+    <li> <a href="http://fdo.osgeo.org">FDO</a></li>
+    <li> <a href="http://qgis.org">Quantum GIS (QGIS)</a></li>
+    <li> <a href="http://moss4g.telascience.org/">MOSS4G</a> - mobile platform development</li>
+</ul>
+
+</p>
+
+<p>Together these projects represent a massive amount of development effort and cover a wide spectrum of core geospatial technologies.  All projects are being actively developed and have vibrant user communities behind them.</p>
+
+
+<h2 id="toc3">Local Chapter Development</h2>
+ OSGeo's goals and mission have garnered interest from many particular countries, regions and language groups.  Early on it was decided that there should be a way for these groups to associate with OSGeo, hence the creation of <a href="http://www.osgeo.org/local">Local Chapters</a>.  <p>To date there are 4 approved local chapters in: <strong>China</strong>, <strong>India</strong>, <strong>Japan</strong> and <strong>Ottawa</strong> (Canada).</p>
+
+<p>Many additional local chapters are hoping to form and at various stages of development, including: <strong>Australian</strong>, <strong>Brazilian</strong>, <strong>New Mexico</strong> (USA) regions and <strong>French</strong>, <strong>German</strong>, <strong>Italian</strong> languages.</p>
+
+
+<h2 id="toc4">Promotion / Events</h2>
+ OSGeo has been represented at several events in the past year.  Some with several thousands of participants.  The purpose of having OSGeo presence at events is to build awareness for the OSGeo projects.  Speakers and those managing an OSGeo booth help describe case studies or show demonstrations of applications.  Brochures for each project have been made available and are distributed.<p>The primary international conference that OSGeo members were involved in is <a href="http://foss4g2006.org">FOSS4G</a>.  The conference was a great success and very encouraging.</p>
+
+<p>Planning for the <a href="http://www.foss4g2007.org/">FOSS4G 2007</a> event is already well underway.</p>
+
+<p>Here are a few other events that OSGeo has had speakers or exhibition presence at in 2006 or early 2007: <ul>
+    <li> <a href="http://www.autodeskevents.com/au2006/">Autodesk University</a></li>
+    <li> <a href="http://wgrass.media.osaka-cu.ac.jp/gisideas06/">GIS-IDEAS</a></li>
+    <li> <a href="http://www.intergeo.de">Intergeo</a> </li>
+    <li> <a href="http://www.linuxtag.org/2006/">LinuxTag</a></li>
+    <li> <a href="http://www.mapworldforum.org/">Map World Forum</a></li>
+    <li> <a href="http://conferences.oreillynet.com/os2006/">OSCON</a></li>
+    <li> <a href="http://conferences.oreillynet.com/where2006/">Where 2.0</a></li>
+</ul>
+
+</p>
+
+
+<h2 id="toc5">Newsletter</h2>
+ OSGeo is joining with the famous GRASS GIS Newsletter to produce a new version that is targetted at a wider audience.  A joint <a href="http://osgeo.org/files/news/GRASS_OSGeo_News_vol4.pdf">GRASS/OSGeo Newsletter</a> was produced in 2006.  Further OSGeo newsletters are planned for 2007.
+<h2 id="toc6">Executive Director Hired</h2>
+ In November I was hired by the board as the Executive Director for OSGeo.  The goal of the position is to help facilitate day-to-day administrative operations, increase communication and serve as a formal contact for those who need to talk to the organisation.  Having this position has allowed us to get a handle on various administrative functions and provided a consistent point of contact for the community, public, sponsors and media.
+<h2 id="toc7">Additional Developments</h2>
+ <ul>
+    <li> Several new <a href="http://www.osgeo.org/sponsors">sponsors</a> - In addition to continuing Sustaining Sponsor Autodesk, new Associate Sponsors include <a href="http://lizardtech.com">Lizardtech</a> and <a href="http://1spatial.com">1Spatial</a>.  The GDAL/OGR project also has several <a href="http://www.gdal.org/sponsorship.html">project sponsors</a>.</li>
+    <li> A logo was selected for the organisation, based on submissions and voting from the community.  Some modifications of the original were recently completed to make the logo more usable for various printing and media purposes.  A brand guidebook is also being developed.</li>
+</ul>
+
+<p><img src="http://www.osgeo.org/content/logo/images/OSGeo_wTag.png" alt="This" title="This" /><!-- This -->  <ul>
+    <li> A <a href="http://www.cafepress.com/OSGeo">cafepress.com</a> store was started</li>
+    <li> Internet infrastructure services were upgraded at the end of 2006, allowing for more control over mailing lists and code repositories as well as implementing a content management system for the website</li>
+    <li> OSGeo has been featured in various news web sites and mentioned at several conferences and in magazine articles</li>
+</ul>
+
+</p>
+
+
+<h2 id="toc8">The Horizon for Year 2</h2>
+ I will leave the outlook for 2007 to another post, but it's looking to be even busier than 2006.  Here are a couple things to watch for: <ul>
+    <li> Formation of more local chapters</li>
+    <li> More software projects joining OSGeo</li>
+    <li> How to participate in international and local events</li>
+    <li> More great features added and bugs squished </li>
+    <li> Increased promotional opportunities</li>
+    <li> FOSS4G in Victoria, BC, Canada</li>
+</ul>
+
+";}}s:7:"channel";a:4:{s:5:"title";s:21:"Tyler Mitchell's blog";s:4:"link";s:26:"http://www.osgeo.org/tyler";s:8:"language";s:2:"en";s:7:"tagline";N;}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:13:"current_field";s:0:"";s:17:"current_namespace";b:0;s:5:"ERROR";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:13:"last_modified";s:31:"Sat, 21 Apr 2007 18:27:13 GMT
+";s:4:"etag";s:36:""6d5d95bf47ea903bffc925fd04c4d09b"
+";}
