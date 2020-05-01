@@ -2,4 +2,4 @@
 
 This was a custom Linux-Apache(2)-MySQL(4)-PHP(5) CMS. Archived as part of Long Tail.
 
-[![IMAGE ALT TEXT HERE](https://github.com/gisblog/spatiallink.org/blob/master/spatiallink.jpg)](#)
+[![IMAGE ALT TEXT HERE](https://github.com/gisblog/spatiallink.org/blob/master/spatiallink.jpg)](http://www.spatiallink.org/)
