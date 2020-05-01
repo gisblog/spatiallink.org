@@ -2,7 +2,7 @@
 /* require $var AGAIN */
 	//	check for db variables
 	if (!$varhost) {
-		require '/var/chroot/home/content/57/3881957/sec/inc_db_variables.php';
+		require '/var/chroot/home/content/57/3881957/html/inc/inc_db_variables.php';
 	}
 	//	check for db csu
 	if (!$varconnect) {

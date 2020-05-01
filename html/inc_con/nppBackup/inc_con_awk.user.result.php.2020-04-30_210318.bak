@@ -36,7 +36,7 @@ if ($_SERVER['HTTP_REFERER'] ==
 	
 <?php
 // require database variables
-require '/var/chroot/home/content/57/3881957/sec/inc_db_variables.php'; 
+require '/var/chroot/home/content/57/3881957/html/inc/inc_db_variables.php'; 
 // done
 // connect and select
 $varconnect = mysql_connect($varhost, $varuser, $varpass) 

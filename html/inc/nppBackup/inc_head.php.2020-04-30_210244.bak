@@ -6,7 +6,7 @@
 	/* done */
 	/* require: first set environment and db variables */
 	require '/var/chroot/home/content/57/3881957/html/inc/inc_environment.php';
-	require '/var/chroot/home/content/57/3881957/sec/inc_db_variables.php';
+	require '/var/chroot/home/content/57/3881957/html/inc/inc_db_variables.php';
 	require '/var/chroot/home/content/57/3881957/html/inc/inc_db_csu.php';
 	// require '/var/chroot/home/content/57/3881957/html/inc/inc_access_deny.php';
 	require '/var/chroot/home/content/57/3881957/html/inc/inc_title.php';
