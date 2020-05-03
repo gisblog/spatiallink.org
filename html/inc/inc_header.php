@@ -79,7 +79,7 @@
 		</td>
 			</tr>
 			<tr>
-		<td colspan="3">
+		<td colspan="3" style="background-color: #000000; text-decoration: none; font: normal 12px verdana; color: #fff; cursor: pointer; text-align: center;">
 			<?php
 			// include menu_header: any. note that nowrap="nowrap" is deprecated. also, bear in mind that a DHTML menu floats over <span> and therefore covers part/all of the content inserted there.
 			include '/var/chroot/home/content/57/3881957/html/scripts/menu/header/any/index.php';
