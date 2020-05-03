@@ -33,7 +33,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<!-- desktop: -->
 	<link rel="stylesheet" type="text/css" href="/css/spatiallink.css" media="only screen and (min-device-width: 1224px)" />
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" media="only screen and (min-device-width: 1224px)" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" media="only screen and (min-device-width: 1224px)" />
 	<!-- mobile: tablet, ipad etc - custom theme + no theme. see dudamobile.com and mobilize.js -->
 	<link rel="stylesheet" href="/css/mobile/spatiallink.min.css" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.css" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" />

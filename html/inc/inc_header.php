@@ -23,6 +23,7 @@
 			// include headerflash:
 			include '/var/chroot/home/content/57/3881957/html/mmx/headerflash.php';
 			?>
+			<img src="/images/img-spatiallink-heartbeat-high.jpg" alt="spatiallink_org">
 			</a>
 			<span class="small">
 			<?php
