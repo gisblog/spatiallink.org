@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "User Backups"
-AuthUserFile /var/chroot/home/content/s/p/a/spatiallink/html/stats/.statspwd
-require valid-user
-Options +Indexes
