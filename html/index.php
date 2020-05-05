@@ -13,7 +13,7 @@ if (stristr($_SERVER['HTTP_ACCEPT'], "application/xhtml+xml"))
 print '<!DOCTYPE html>';
 print '<html>';
 // include head:
-    // // // include '/var/chroot/home/content/57/3881957/html/inc/inc_head.php';
+// // // include '/var/chroot/home/content/57/3881957/html/inc/inc_head.php';
 // // // include( $_SERVER[ "DOCUMENT_ROOT" ] . '/webroot/inc/inc_head.php' );
 // // // include( dirname( __FILE__ ) . '/webroot/inc/inc_head.php' );
 include '/home/content/57/3881957/html/inc/inc_head.php';
