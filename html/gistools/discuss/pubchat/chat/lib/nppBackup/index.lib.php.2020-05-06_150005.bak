@@ -192,8 +192,8 @@ if(isset($E) && $E != "")
 		$DbLink->query("DELETE FROM ".C_USR_TBL." WHERE username='$U' AND room='$E'");
 		if (isset($EN))
 		{
-			# # # $DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($EN, '$E', 'SYS exit', '', ".time().", '', 'sprintf(L_EXIT_ROM, .special_char($U,$Latin1))')");
-			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($EN, '$E', 'SYS exit', '', ".time().", '', ".sprintf(L_EXIT_ROM, .special_char($U,$Latin1)).")");
+			# # # $DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($EN, '$E', 'SYS exit', '', ".time().", '', 'sprintf(L_EXIT_ROM, ¥"".special_char($U,$Latin1)."¥")')");
+			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($EN, '$E', 'SYS exit', '', ".time().", '', ".sprintf(L_EXIT_ROM, "¥".special_char($U,$Latin1)."¥").")");			
 		}
 	}
 }
@@ -222,7 +222,7 @@ if(!isset($Reload) && isset($U) && (isset($N) && $N != ""))
 		$Error = L_ERR_USR_2;
 	}
 	// Check for invalid characters or empty nick
-	elseif (trim($U) == "" || preg_match("/[, ]/", stripslashes($U)))
+	elseif (trim($U) == "" || preg_match("/[¥, ]/", stripslashes($U)))
 	{
 		$Error = L_ERR_USR_16;
 	}
@@ -317,7 +317,7 @@ if(!isset($Error) && (isset($R2) && $R2 != ""))
 			$Error = L_ERR_USR_13;
 		}
 		// Check for invalid characters or empty room name
-		else if (trim($R2) == "" || preg_match("/[,]/", stripslashes($R2)))
+		else if (trim($R2) == "" || preg_match("/[,¥]/", stripslashes($R2)))
 		{
 			$Error = L_ERR_ROM_1;
 		}
@@ -507,8 +507,8 @@ if(!isset($Error) && (isset($N) && $N != ""))
 			$DbLink->query("SELECT type FROM ".C_MSG_TBL." WHERE room='".addslashes($room)."' LIMIT 1");
 			list($type) = $DbLink->next_record();
 			$DbLink->clean_results();
-			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ('$type', '".addslashes($room)."', 'SYS exit', '', '$current_time', '', 'sprintf(L_EXIT_ROM, .special_char($U,$Latin1))')");
-			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS enter', '', '$current_time', '', 'sprintf(L_ENTER_ROM, .special_char($U,$Latin1))')");
+			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ('$type', '".addslashes($room)."', 'SYS exit', '', '$current_time', '', 'sprintf(L_EXIT_ROM, ¥"".special_char($U,$Latin1)."¥")')");
+			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS enter', '', '$current_time', '', 'sprintf(L_ENTER_ROM, ¥"".special_char($U,$Latin1)."¥")')");
 			$DbLink->query("UPDATE ".C_USR_TBL." SET room='$R',u_time='$current_time', status='$status', ip='$IP' WHERE username='$U'");
 			if (C_WELCOME)
 			{
@@ -517,7 +517,7 @@ if(!isset($Error) && (isset($N) && $N != ""))
 				// Insert a new welcome message in the messages table
 				include("./${ChatPath}lib/welcome.lib.php");
 				$current_time_plus = $current_time + 1;	// ensures the welcome msg is the last one
-				$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS welcome', '', '$current_time_plus', '$U', 'sprintf(.WELCOME_MSG.)')");
+				$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS welcome', '', '$current_time_plus', '$U', 'sprintf(¥"".WELCOME_MSG."¥")')");
 			};
 		};
 	}
@@ -532,7 +532,7 @@ if(!isset($Error) && (isset($N) && $N != ""))
 	else
 	{
 		$DbLink->query("INSERT INTO ".C_USR_TBL." VALUES ('$R', '$U', '$Latin1', '$current_time', '$status','$IP')");
-		$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS enter', '', '$current_time', '', 'sprintf(L_ENTER_ROM, .special_char($U,$Latin1))')");
+		$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS enter', '', '$current_time', '', 'sprintf(L_ENTER_ROM, ¥"".special_char($U,$Latin1)."¥")')");
 		if (C_WELCOME)
 		{
 			// Delete old welcome messages sent to the current user
@@ -540,7 +540,7 @@ if(!isset($Error) && (isset($N) && $N != ""))
 			// Insert a new welcome message in the messages table
 			include("./${ChatPath}lib/welcome.lib.php");
 			$current_time_plus = $current_time + 1;	// ensures the welcome msg is the last one
-			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS welcome', '', '$current_time_plus', '$U', 'sprintf(.WELCOME_MSG.)')");
+			$DbLink->query("INSERT INTO ".C_MSG_TBL." VALUES ($T, '$R', 'SYS welcome', '', '$current_time_plus', '$U', 'sprintf(¥"".WELCOME_MSG."¥")')");
 		};
 	};
 
@@ -758,7 +758,7 @@ if(!isset($Error) && (isset($N) && $N != ""))
 		// Submission looks like a command?
 		isCmd	= (inputFrameForm.elements['M'].value.substring(0,1) == '/');
 		// RegExp to quick check for valid commands
-		re = /^/(!$|announce .+|ban .+|clear$|help$|?$|ignore|invite .+|join .+|kick .+|me .+|msg .+|to .+|notify$|order$|profile$|promote .+|quit|exit|bye|refresh|save|show|last|timestamp$|whois .+)/i;
+		re = /^¥/(!$|announce .+|ban .+|clear$|help$|¥?$|ignore|invite .+|join .+|kick .+|me .+|msg .+|to .+|notify$|order$|profile$|promote .+|quit|exit|bye|refresh|save|show|last|timestamp$|whois .+)/i;
 
 		// Ensure the message box isn't empty
 		if (inputFrameForm.elements['M'].value == '')
@@ -770,7 +770,7 @@ if(!isset($Error) && (isset($N) && $N != ""))
 		else if (isCmd && !re.test(inputFrameForm.elements['M'].value))
 		{
 			inputFrameForm.elements['M'].select();
-			alert("<?php echo(str_replace(",",L_BAD_CMD)); ?>");
+			alert("<?php echo(str_replace("¥"","¥¥¥"",L_BAD_CMD)); ?>");
 			return false;
 		}
 		// It doesn't look like a command -> it's a message, then ensure a message
@@ -833,7 +833,7 @@ function send_headers($title, $icon)
 	global $Charset, $FontName, $FontSize;
 
 	if ($title)
-		echo("t" . '<TITLE>' . APP_NAME . '</TITLE>' . "n");
+		echo("¥t" . '<TITLE>' . APP_NAME . '</TITLE>' . "¥n");
 	?>
 	<!--The lines below are usefull for debugging purpose, please do not remove them!
 		Release: phpMyChat 0.14.5 ｩ 2000-2001 
@@ -841,7 +841,7 @@ function send_headers($title, $icon)
 	<META NAME="description" CONTENT="phpMyChat">
 	<META NAME="keywords" CONTENT="phpMyChat">
 	<?php
-	if ($icon) echo("<LINK REL="SHORTCUT ICON" HREF="${ChatPath}favicon.ico">n");
+	if ($icon) echo("<LINK REL=¥"SHORTCUT ICON¥" HREF=¥"${ChatPath}favicon.ico¥">¥n");
 
 	// For translations with an explicit charset (not the 'x-user-defined' one)
 	if (!isset($FontName)) $FontName = "";
@@ -957,7 +957,7 @@ function layout($Err, $U, $R, $T)
 // Msg for translations with no real iso code
 if (isset($FontName) && $FontName != "" && file_exists($ChatPath."localization/${L}/${FontName}.zip"))
 {
-	if (!isset($Error) && $DisplayFontMsg) echo("<P CLASS="ChatError">This translation of ".APP_NAME." requires the <A HREF="${ChatPath}localization/${L}/${FontName}.zip" CLASS="ChatFonts">${FontName} font face</A></P>");
+	if (!isset($Error) && $DisplayFontMsg) echo("<P CLASS=¥"ChatError¥">This translation of ".APP_NAME." requires the <A HREF=¥"${ChatPath}localization/${L}/${FontName}.zip¥" CLASS=¥"ChatFonts¥">${FontName} font face</A></P>");
 }
 ?>
 
@@ -980,12 +980,12 @@ $DefaultRoomFound = 0;
 if($DbLink->query("SELECT DISTINCT u.username FROM ".C_USR_TBL." u, ".C_MSG_TBL." m WHERE u.room = m.room AND m.type = 1"))
 {
 	$Nb = $DbLink->num_rows();
-	$link = " <A HREF="${ChatPath}users_popupL.php?From=$From&L=$L" CLASS="ChatLink" onClick="users_popup(); return false" TARGET="_blank">";
-	echo("<P CLASS="ChatP1">".L_CUR_1.$link.$Nb." ".($Nb > 1 ? L_USERS : L_USER)."</A> ".L_CUR_2."</P>");
+	$link = " <A HREF=¥"${ChatPath}users_popupL.php?From=$From&L=$L¥" CLASS=¥"ChatLink¥" onClick=¥"users_popup(); return false¥" TARGET=¥"_blank¥">";
+	echo("<P CLASS=¥"ChatP1¥">".L_CUR_1.$link.$Nb." ".($Nb > 1 ? L_USERS : L_USER)."</A> ".L_CUR_2."</P>");
 }
 if(isset($Error))
 {
-	echo("<P CLASS="ChatError">$Error</P>");
+	echo("<P CLASS=¥"ChatError¥">$Error</P>");
 }
 if (!isset($Ver)) $Ver = "L";
 ?>
@@ -1015,8 +1015,8 @@ if (!isset($Ver)) $Ver = "L";
 				while(list($key, $name) = each($AvailableLanguages))
 				{
 					$i++;
-					echo("<A HREF="$Action?L=${name}">");
-					echo("<IMG SRC="${ChatPath}localization/${name}/flag.gif" BORDER=0 WIDTH=24 HEIGHT=16 ALT=.ucfirst(str_replace("_"," ",$name)).></A>&nbsp;");
+					echo("<A HREF=¥"$Action?L=${name}¥">");
+					echo("<IMG SRC=¥"${ChatPath}localization/${name}/flag.gif¥" BORDER=0 WIDTH=24 HEIGHT=16 ALT=¥"".ucfirst(str_replace("_"," ",$name))."¥"></A>&nbsp;");
 					if ($i % 15 == 0) echo ("<BR>");
 				};
 				unset($AvailableLanguages);
@@ -1104,7 +1104,7 @@ if (!isset($Ver)) $Ver = "L";
 						{
 							$tmpRoom = stripslashes($DefaultChatRooms[$i]);
 							$DefaultRoomsString .= ($DefaultRoomsString == "" ? "" : ",").$tmpRoom;
-							echo("<OPTION VALUE=.htmlspecialchars($tmpRoom).");
+							echo("<OPTION VALUE=¥"".htmlspecialchars($tmpRoom)."¥"");
 							if(strcasecmp($tmpRoom, $PrevRoom) == 0)
 							{
 								echo(" SELECTED");
@@ -1133,7 +1133,7 @@ if (!isset($Ver)) $Ver = "L";
 						{
 							if (!room_in($Room, $DefaultRoomsString))
 							{
-								echo("<OPTION VALUE=.htmlspecialchars($Room).");
+								echo("<OPTION VALUE=¥"".htmlspecialchars($Room)."¥"");
 								if(strcasecmp($Room, $PrevRoom) == 0 && $DefaultRoomFound == 0)
 								{
 									echo(" SELECTED");
@@ -1157,7 +1157,7 @@ if (!isset($Ver)) $Ver = "L";
 					<?php echo(" ".L_SET_12); ?> :
 				</TD>
 				<TD VALIGN="TOP" CLASS="ChatCell">
-					<INPUT TYPE="text" NAME="R2" SIZE=11 MAXLENGTH=10 <?php if($DefaultRoomFound == 0 && $R != "") echo("VALUE=.htmlspecialchars(urldecode($R))."); ?> CLASS="ChatBox" onChange="reset_R2();">
+					<INPUT TYPE="text" NAME="R2" SIZE=11 MAXLENGTH=10 <?php if($DefaultRoomFound == 0 && $R != "") echo("VALUE=¥"".htmlspecialchars(urldecode($R))."¥""); ?> CLASS="ChatBox" onChange="reset_R2();">
 				</TD>
 			</TR>
 			<?php
