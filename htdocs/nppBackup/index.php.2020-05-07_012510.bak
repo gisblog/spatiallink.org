@@ -13,7 +13,7 @@ if (stristr($_SERVER['HTTP_ACCEPT'], "application/xhtml+xml"))
 print '<!DOCTYPE html>';
 print '<html>';
 // include head:
-// // // include '/opt/bitnami/apache2/htdocs/inc/inc_head.php';
+    // // // include '/opt/bitnami/apache2/htdocs/inc/inc_head.php';
 // // // include( $_SERVER[ "DOCUMENT_ROOT" ] . '/webroot/inc/inc_head.php' );
 // // // include( dirname( __FILE__ ) . '/webroot/inc/inc_head.php' );
 include '/opt/bitnami/apache2/htdocs/inc/inc_head.php';
